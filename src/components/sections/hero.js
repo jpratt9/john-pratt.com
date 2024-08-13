@@ -65,10 +65,10 @@ const Hero = () => {
   const four = (
     <>
       <p>
-      I'm a software engineer focused on building cutting-edge digital solutions.
-      Currently, I'm handling a variety of short-term engagements working for
-      myself at Pratt Industries while I look for my next long-term
-      contract/W2 role.
+      I'm a software engineer all about creating top-tier digital solutions.
+      Right now, I'm grinding through short-term engagements at Pratt Industries,
+      working for myself while I hunt down my next long-term contract or W2 role.
+      No settling—just pushing to find the next big challenge.
       </p>
     </>
   );
