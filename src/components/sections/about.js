@@ -130,9 +130,11 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is John and I enjoy creating software to help people. My
-              interest in programming started when I decided to take a computer science class
-              in high school - turns out I was in the top 5% of students both years, so I've stuck with software engineering ever since.
+            I'm John, and I build software that makes a difference. My journey
+            with programming kicked off when I took a computer science class in
+            high school. I didn't just show up - I dominated, landing in the top
+            5% of students both years. That lit a fire in me, and I've been
+            pushing the limits in software engineering ever since
             </p>
 
             <p>
@@ -140,10 +142,10 @@ const About = () => {
               <a href="https://www.lockheedmartin.com/en-us/index.html">an aerospace company</a>,{' '}
               <a href="https://www.capitalone.com/">a bank</a>,{' '}
               <a href="https://www.duke-energy.com/home">an energy company</a>, and {' '}
-              <a href="https://john-pratt.com">myself</a>. My
-              main focus these days is building reliable, scalable, & secure solutions as a freelance
-              software developer/consultant for a variety of clients while I look for my next
-              long-term contract/W2 opportunity.
+              <a href="https://john-pratt.com">myself</a>. These days, I’m all
+              about building rock-solid, scalable, and secure solutions as a
+              freelance software developer and consultant, while I hunt down my
+              next long-term contract or W2 role. No excuses, just results.
             </p>
 
             <p>Here are a few technologies I've been working with recently:</p>
