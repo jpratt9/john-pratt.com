@@ -10,10 +10,10 @@ module.exports = {
       name: 'Linkedin',
       url: 'https://www.linkedin.com/in/jpratt444',
     },
-    {
-        name: 'Calendly',
-        url: 'https://www.calendly.com/johnpratt439/30min',
-    },
+    // {
+    //     name: 'Calendly',
+    //     url: 'https://www.calendly.com/johnpratt439/30min',
+    // },
   ],
 
   navLinks: [
