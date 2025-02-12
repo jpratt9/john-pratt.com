@@ -1,5 +1,5 @@
 ---
-date: '2017-12-21'
+date: '2020-05-01'
 title: 'Founder/CEO, Software Engineer, Coach'
 company: 'Pratt Solutions'
 location: 'Vienna, VA (Remote)'
