@@ -1,8 +1,8 @@
 ---
 date: '4'
-title: 'john-pratt.com v2'
+title: 'pratt-solutions.com'
 cover: './portfolio_site.png'
-external: 'https://www.john-pratt.com/'
+external: 'https://www.pratt-solutions.com/'
 github: 'https://github.com/jpratt9/john-pratt.com'
 tech:
   - gatsby
