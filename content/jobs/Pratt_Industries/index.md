@@ -1,7 +1,7 @@
 ---
 date: '2017-12-21'
 title: 'Founder/CEO, Software Engineer, Coach'
-company: 'Pratt Industries'
+company: 'Pratt Solutions'
 location: 'Vienna, VA (Remote)'
 range: 'May 2020 - Present'
 ---
