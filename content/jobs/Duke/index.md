@@ -7,7 +7,7 @@ range: 'Jul 2021-Jan 2024'
 url: 'https://www.duke-energy.com/home'
 ---
 
-- **_Saving Duke ~$1M in Labor Capacity by end of 2024_** by leading backend & DevOps for Orbit, an iPad app replacing manual data acquisition and logging at **_~100 Duke power plants with several thousand users_**. Used Python, AWS (Lambda, API Gateway, CloudWatch, VPC...), Terraform, Bash, Concourse, Node.js, & more
+- Saved Duke ~$1M in Labor Capacity annually by leading backend & DevOps for Orbit, an iPad app replacing manual data acquisition and logging at ~100 Duke power plants with several thousand users. Used Python, AWS (Lambda, API Gateway, S3, IAM, CloudWatch, DynamoDB, VPC...), Node.js, Terraform, Bash, Concourse, & more
 - Enabled user file attachments by integrating Orbit API with AWS S3 with custom Terraform module
 - Enforced 90% code coverage for Python unit tests, ensuring code reliability
 - Coordinated, managed, and performed production releases
@@ -20,5 +20,5 @@ url: 'https://www.duke-energy.com/home'
 - Enhanced code quality & security by integrating SonarQube, Sonatype IQ, & CheckMarx into CI/CD pipeline
 - Boosted reliability of Orbit API with Postman integration/load tests, written with auto-generating web-scraper
 - Reduced Integration Test PR merge time, & codebase size by ~94% with Chai.js/JavaScript Postman helper functions
-- Led collaborative efforts with 5+ Duke “Communities of Practice”, along with 6+ project teams, enabling scalable & reusable features and cross-project collaboration
+- Led collaborative efforts across ~100 engineers with 5+ “Communities of Practice”, along with 6+ project teams, enabling scalable & reusable features and cross-project collaboration
 - Enhanced custom SwaggerDoc security w/custom Node.js authorizer, ensuring incoming traffic was from Duke network
