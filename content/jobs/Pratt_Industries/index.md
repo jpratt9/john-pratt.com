@@ -1,6 +1,6 @@
 ---
 date: '2020-05-01'
-title: 'Founder/CEO, Software Engineer, Coach'
+title: 'Founder/CEO, Lead Software Engineer, Coach'
 company: 'Pratt Solutions'
 location: 'Vienna, VA (Remote)'
 range: 'May 2020 - Present'
