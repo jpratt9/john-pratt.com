@@ -8,11 +8,11 @@ module.exports = {
     },    
     {
       name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/jpratt444',
+      url: 'https://www.linkedin.com/in/john-pratt787',
     },
     // {
     //     name: 'Calendly',
-    //     url: 'https://www.calendly.com/johnpratt439/30min',
+    //     url: 'https://www.calendly.com/johnpratt439',
     // },
   ],
 
