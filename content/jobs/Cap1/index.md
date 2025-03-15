@@ -3,7 +3,7 @@ date: '2016-12-21'
 title: 'Software Engineer, TDP Mentor'
 company: 'Capital One'
 location: 'Richmond, VA; McLean, VA'
-range: 'May-Aug 2017, May-Aug 2018, Aug 2019-Jun 2021'
+range: 'May 2017-Jun 2021'
 url: 'https://www.capitalone.com'
 ---
 
