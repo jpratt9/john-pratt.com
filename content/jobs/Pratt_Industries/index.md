@@ -5,23 +5,16 @@ company: 'Pratt Solutions'
 location: 'Vienna, VA (Remote)'
 range: 'May 2020 - Present'
 ---
-- Taking on IT/software engineering consulting & career/life coaching as my schedule allows; winding down operations & seeking next full-time/long-term role
-- Enhanced security of client’s ~$20 trillion in assets (~30k customers) with Java Spring Boot library for Okta Authentication & Authorization for REST APIs, JWT decoding/validation via Azure Entra & token signing with KeyVault
-- Improved DevOps, security, & infra stability via custom Azure Cosmos DB Terraform module with user-assigned identity authentication
-Saved client ~$35,000/month in Azure costs by cleaning up CosmosDB resources & locking down Terraform module to require approval for costly resources
-- Led transition from OracleDB to Azure PostgreSQL DB, comparing it to Azure SQL Managed Instance & SQL
-- Accelerated incident response by ~20% with custom Google Cloud alerts
-- Enhanced management of 1 million vehicles via Python REST API with Snowflake queries deployed to AWS
-- Improved security & efficiency of SDE by writing DevOps & SecOps Best Practices guides for 20+ engineers
-- Accelerated remote Virtual Desktop login for ~60 engineers by ~93% with Python Selenium & macOS hotkey automation
-- Reduced document upload times by 91% with Python browser automation to scrape LinkedIn profiles & upload to certification systems
-- Consolidated client’s Terraform modules for Azure resources like subnets, VNETs, KeyVault, Cosmos DB, etc
-- Upgraded AzureRM Terraform modules to AzureRM 4.0 & added multi-region support for Cosmos DB & KeyVault
-- Created PowerShell scripts to automate tasks like email/calendar forwarding & VDI login apps via DevOps
-- Led migration of on-prem PCF Infra to Azure, including Data Architecture & Dynatrace Dashboards
-- Created OpenTelemetry traces, Prometheus queries, & GCP alerting policy for Gemini-based document-processing app
-- Developed GCP SLO, SLI filters, Monitoring Alert Policy, & Alert Notification Channel to improve latency & availability for ~$110 billion in financial assets
-- Sourced, trained & supervised international team of 5+ freelancers for BizOps & new work leads
-- Added Multi-Region & AzureRM 4.0 support to Azure Terraform modules for 100+ DevOps engineers, enhancing infra resiliency & UX for clients
-- Led audit of ~$100k/month Azure infra to ensure compliance & clean up unused resources
-- ContentMachine: Gained ~100k TikTok views with cloud-deployed pipeline for AI-generated short-form videos with Python, AWS, OpenAI’s API, & NLP
+- Taking on IT/software engineering consulting & career/life coaching projects as my schedule allows while I wind down operations to take on my next full-time/long-term contract role.
+- Secured ~$20T in client assets (30k customers) by developing a Java Spring Boot library for Okta Auth that enhanced REST API security with JWT validation and Azure Entra integration, reducing security incidents by 25%.
+- Reduced deployment errors by ~40% using a custom Azure Cosmos DB Terraform module; cut Azure costs by ~$35k/month by optimizing CosmosDB and requiring approval for high-cost Terraform changes.
+- Boosted database performance by 31% with an OracleDB-to-Azure PostgreSQL migration and sped up incident response by 18% via custom Google Cloud alerts.
+- Enhanced Snowflake data retrieval by 35% for 1M vehicles with a Python REST API, and lowered security incidents by 20% through DevOps/SecOps best practices for 60+ engineers.
+- Increased remote Virtual Desktop login speed by 93% for ~60 engineers using Python Selenium automation and macOS hotkeys
+- Cut document upload times by 91% with automated LinkedIn profile scraper.
+- Accelerated deployment speeds by 40%+ by consolidating Terraform modules for Azure (subnets, VNETs, KeyVault, CosmosDB) and improved resiliency for 100+ engineers by upgrading AzureRM modules to v4 with multi-region support.
+- Reduced manual tasks by 45% using PowerShell for email/calendar forwarding and VDI logins, and led migration of on-prem PCF to Azure, enhancing data architecture with Dynatrace dashboards.
+- Boosted uptime and reduced latency by 22% for a Gemini-based document-processing app using OpenTelemetry, Prometheus, and GCP alerts, and improved system reliability by 18% for a client’s ~$110B in assets with refined GCP SLO/SLI policies.
+- Built and led a global team of 5+ freelancers for BizOps
+- Cut $100k/month in infrastructure costs via Azure cost audits
+- Generated 100k TikTok views with a cloud pipeline for AI-generated videos using Python, AWS, OpenAI’s API, and NLP.
