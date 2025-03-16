@@ -256,7 +256,7 @@ const Certs = () => {
     query {
       certs: allMarkdownRemark(
         filter: { fileAbsolutePath: { regex: "/content/certs/" } }
-        sort: { fields: [frontmatter___issueDate], order: DESC }
+        sort: { fields: [frontmatter___company, frontmatter___title], order: ASC }
       ) {
         edges {
           node {
