@@ -1,5 +1,5 @@
 ---
-date: '3'
+date: '6'
 title: 'Manage Your Data'
 cover: './demo.png'
 external: 'https://mydata.capitalone.com/'
@@ -16,4 +16,4 @@ tech:
 
 ---
 
-To protect customers' privacy rights under the California Consumer Privacy Act (CCPA), I was a back-end software engineer on the team that developed Capital One's CCPA data fulfillment pipeline. This system empowers the firm's ~100 million customers to request their data be downloaded or deleted, giving them more control over their personal information.
+This system empowers the firm's ~100 million customers to request a copy or deletion of their data, giving them more control over their personal information.

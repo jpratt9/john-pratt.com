@@ -65,7 +65,7 @@ const Hero = () => {
   const four = (
     <>
       <p>
-      I'm a software engineer all about creating top-tier digital solutions.
+      I'm a software engineer all about creating top-tier cloud solutions.
       Right now, I'm grinding through short-term engagements at Pratt Solutions,
       working for myself while I hunt down my next long-term contract or W2 role.
       No hesitation - just getting after it. 
