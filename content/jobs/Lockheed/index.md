@@ -3,7 +3,7 @@ date: '2015-12-21'
 title: 'Tech Intern; Senior Tech Intern'
 company: 'Lockheed Martin'
 location: 'Manassas, VA'
-range: 'May 2015-Aug 2015, May 2016-Aug 2016'
+range: 'Summer 2015, Summer 2016'
 url: 'https://www.lockheedmartin.com/en-us/index.html'
 ---
 

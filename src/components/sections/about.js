@@ -120,7 +120,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['Python (2/3)', 'Bash', 'PowerShell', 'Terraform (OSS, Enterprise)', 'JavaScript (Node.js, React)', 'AWS', 'Azure', 'GCP', 'Java (Spring Boot)', 'Go', 'Jenkins', 'Concourse', 'OpenAI API', 'Docker', 'gatsby', 'Snowflake', 'Databricks', 'SQL', 'Kubernetes', 'HashiCorp Vault', 'HashiCorp Consul', 'Git', 'GitHub', 'Bitbucket', 'Apache Kafka', 'Selenium', 'Large Language Models (ChatGPT, Claude, Gemini, DeepSeek)'];
+  const skills = ['Python (2/3)', 'Amazon Web Services (AWS)', 'Microsoft Azure', 'Google Cloud (GCP)', 'Terraform (OSS, Enterprise)', 'Bash', 'PowerShell', 'JavaScript (Node.js, React)', 'Java (Spring Boot)', 'Go', 'Jenkins', 'Concourse', 'OpenAI API', 'Docker', 'gatsby', 'Snowflake', 'Databricks', 'SQL', 'Kubernetes', 'HashiCorp Vault', 'HashiCorp Consul', 'Git', 'GitHub', 'Bitbucket', 'Apache Kafka', 'Selenium', 'Large Language Models (ChatGPT, Claude, Gemini, DeepSeek)'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -140,7 +140,8 @@ const About = () => {
             <p>
               Fast-forward to today, and I've had the privilege of working for{' '}
               <a href="https://www.lockheedmartin.com/en-us/index.html">an aerospace company</a>,{' '}
-              <a href="https://www.capitalone.com/">a bank</a>,{' '}
+              <a href="https://www.capitalone.com/">two</a>{' '}
+              <a href="https://www.northerntrust.com/united-states/home">banks</a>,{' '}
               <a href="https://www.duke-energy.com/home">an energy company</a>, and {' '}
               <a href="https://pratt-solutions.com">myself</a>. These days, I’m all
               about building rock-solid, scalable, and secure solutions as a

@@ -1,7 +1,8 @@
 ---
-date: '1'
+date: '4'
 title: 'Orbit'
-cover: './duke2.png'
+cover: './duke.png'
+external: 'https://www.duke-energy.com/home'
 tech:
   - Python
   - Node.js

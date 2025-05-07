@@ -1,6 +1,6 @@
 ---
-date: '4'
-title: 'pratt-solutions.com'
+date: '7'
+title: 'pratt-solutions.com v2'
 cover: './portfolio_site.png'
 external: 'https://www.pratt-solutions.com/'
 github: 'https://github.com/jpratt9/john-pratt.com'
