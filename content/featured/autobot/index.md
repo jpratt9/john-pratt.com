@@ -1,6 +1,6 @@
 ---
 date: '3'
-title: 'UWM (United Wholesale Mortgage)'
+title: 'autobot'
 cover: './uwm.png'
 external: 'https://www.businesswire.com/news/home/20250408796561/en/Google-Cloud-and-United-Wholesale-Mortgage-Announce-Industry-Transformative-Partnership-to-Modernize-the-Mortgage-Lending-Process'
 tech:
