@@ -1,8 +1,8 @@
 ---
 date: '3'
-title: 'autobot'
+title: '(Fortune 500 Mortage Client)'
 cover: './uwm.png'
-external: 'https://www.businesswire.com/news/home/20250408796561/en/Google-Cloud-and-United-Wholesale-Mortgage-Announce-Industry-Transformative-Partnership-to-Modernize-the-Mortgage-Lending-Process'
+external: 'pratt-solutions.com'
 tech:
   - Python
   - Google Cloud Platform (GCP)
@@ -16,4 +16,4 @@ tech:
 
 ---
 
-High-throughput mortgage loan automation platform built by United Wholesale Mortage (UWM) and Google Cloud, leveraging Gemini Flash 1.5 to streamline underwriting, accelerate document processing, & power AI-driven borrower support at scale for UWM's ~$140B in annual mortage loans.
+High-throughput mortgage loan automation platform built by my team in collaboration with a Fortune 500 wholesale mortgage lender and Google Cloud, leveraging Gemini Flash 1.5 to streamline underwriting, accelerate document processing, & power AI-driven borrower support at scale for UWM's ~$140B in annual mortage loans.
