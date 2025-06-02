@@ -1,6 +1,6 @@
 ---
 date: '3'
-title: '(Fortune 500 Wholesale Mortgage Lender)'
+title: '(Fortune 500 Mortgage Lender)'
 cover: './uwm.png'
 external: 'pratt-solutions.com'
 tech:
