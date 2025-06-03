@@ -1,6 +1,6 @@
 ---
 title: 'Professional Python Programmer'
-company: 'Python Institute'
+company: 'Other'
 url: 'https://verify.openedg.org/?id=4EcC.L6fD.XGkF'
 issueDate: '09-01-2024'
 expiryDate: ''

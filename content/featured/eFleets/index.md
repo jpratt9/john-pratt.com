@@ -1,8 +1,8 @@
 ---
 date: '2'
-title: '(Fortune 500 Car Rental Company)'
-cover: './efleets.png'
-external: 'pratt-solutions.com'
+title: '(Large Car Rental Company)'
+cover: './car_rental_client.png'
+external: 'https://pratt-solutions.com'
 tech:
   - Python
   - AWS
@@ -14,4 +14,4 @@ tech:
 
 ---
 
-Cloud-based fleet management platform for Client's 1M vehicles that integrates real-time telematics, predictive analytics, & custom dashboards to optimize vehicle operations and lifecycle planning for large fleets.
+Cloud-based fleet management platform for Client's ~1M vehicles that integrates real-time telematics, predictive analytics, & custom dashboards to optimize vehicle operations and lifecycle planning for large fleets.
