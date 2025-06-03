@@ -266,6 +266,7 @@ const Certs = () => {
               issueDate
               expiryDate
               url
+              show
             }
             html
           }
@@ -279,10 +280,12 @@ const Certs = () => {
   // Group certifications by company so that each company has one tab.
   const groupedCerts = certsData.reduce((acc, { node }) => {
     const { company } = node.frontmatter;
-    if (!acc[company]) {
+    if (!acc[company] && node.frontmatter.show != false) {
       acc[company] = [];
     }
-    acc[company].push(node);
+    if (node.frontmatter.show != false) {
+      acc[company].push(node);
+    }
     return acc;
   }, {});
 
