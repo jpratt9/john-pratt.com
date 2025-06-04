@@ -3,6 +3,7 @@ date: '6'
 title: 'Manage Your Data'
 cover: './demo.png'
 external: 'https://mydata.capitalone.com/'
+classified: false
 tech:
   - Terraform
   - AWS

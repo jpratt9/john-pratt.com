@@ -3,6 +3,7 @@ date: '5'
 title: 'Slingshot'
 cover: './slingshot.png'
 external: 'https://www.capitalone.com/software/solutions/'
+classified: false
 tech:
   - Terraform
   - AWS

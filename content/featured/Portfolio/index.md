@@ -4,6 +4,7 @@ title: 'john-pratt.com v3'
 cover: './portfolio_site.png'
 external: 'https://www.john-pratt.com/'
 github: 'https://github.com/jpratt9/john-pratt.com'
+classified: false
 tech:
   - gatsby
   - GraphQL
