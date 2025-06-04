@@ -256,12 +256,13 @@ const Certs = () => {
     query {
       certs: allMarkdownRemark(
         filter: { fileAbsolutePath: { regex: "/content/certs/" } }
-        sort: { fields: [frontmatter___companyRank, frontmatter___title], order: ASC }
+        sort: { fields: [frontmatter___companyRank, frontmatter___certRank], order: ASC }
       ) {
         edges {
           node {
             frontmatter {
               title
+              certRank
               company
               issueDate
               expiryDate
@@ -356,7 +357,7 @@ const Certs = () => {
 
   return (
     <StyledCertsSection id="certs" ref={revealContainer}>
-      <h2 className="numbered-heading">My Certifications</h2>
+      <h2 className="numbered-heading">My Professional Certifications</h2>
       <div className="inner">
         <StyledTabList role="tablist" aria-label="Certification tabs" onKeyDown={onKeyDown}>
           {companies.map((company, i) => (

@@ -5,6 +5,7 @@ company: 'Capital One'
 location: 'Richmond, VA; McLean, VA'
 range: 'Aug 2019 - Jun 2021, Summer 2017, Summer 2018'
 url: 'https://www.capitalone.com'
+companyRank: 3
 ---
 
 - 2019-2020: **_Saved Capital One ~$10k in fines per customer annually_** by creating the data fulfillment pipeline for CCPA compliance for its **~100 million customers**, enhancing customer privacy. Used Python, AWS, Docker, Java Spring Boot, Apache Airflow, Apache Kafka & more

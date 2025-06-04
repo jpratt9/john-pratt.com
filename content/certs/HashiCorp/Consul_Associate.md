@@ -1,7 +1,8 @@
 ---
 title: 'Consul Associate'
-company: 'Other'
+company: 'HashiCorp'
+companyRank: 3
 url: 'https://drive.google.com/file/d/1i2itvXib8EICP9QS_B7glJjgnL8eIwDD/view'
-issueDate: '12-30-2022'
-expiryDate: '12-30-2024'
+issueDate: '09-13-2024'
+expiryDate: '09-13-2026'
 ---
