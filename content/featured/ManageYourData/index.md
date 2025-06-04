@@ -4,9 +4,10 @@ title: 'Manage Your Data'
 cover: './demo.png'
 external: 'https://mydata.capitalone.com/'
 tech:
+  - Terraform
+  - AWS
   - Python
   - Java
-  - AWS
   - Docker
   - Apache Airflow
   - Apache Kafka

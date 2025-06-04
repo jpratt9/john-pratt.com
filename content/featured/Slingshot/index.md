@@ -4,8 +4,9 @@ title: 'Slingshot'
 cover: './slingshot.png'
 external: 'https://www.capitalone.com/software/solutions/'
 tech:
-  - Java
+  - Terraform
   - AWS
+  - Java
   - Docker
   - Snowflake
   - React

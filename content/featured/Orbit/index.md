@@ -4,10 +4,10 @@ title: 'Orbit'
 cover: './duke.png'
 external: 'https://www.duke-energy.com/home'
 tech:
-  - Python
-  - Node.js
   - Terraform
   - AWS
+  - Python
+  - Node.js
   - Azure
   - Concourse CI
   - Bash
