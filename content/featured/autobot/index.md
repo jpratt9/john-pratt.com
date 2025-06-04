@@ -2,7 +2,7 @@
 date: '3'
 title: '(Fortune 500 Mortgage Lender)'
 cover: './mortgage_lender_client.png'
-external: 'https://pratt-solutions.com'
+external: 'https://john-pratt.com'
 tech:
   - Python
   - Google Cloud Platform (GCP)

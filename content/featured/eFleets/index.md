@@ -2,7 +2,7 @@
 date: '2'
 title: '(Large Car Rental Company)'
 cover: './car_rental_client.png'
-external: 'https://pratt-solutions.com'
+external: 'https://john-pratt.com'
 tech:
   - Python
   - AWS
