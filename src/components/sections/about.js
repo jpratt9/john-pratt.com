@@ -143,10 +143,10 @@ const About = () => {
               <a href="https://www.capitalone.com/">two</a>{' '}
               <a href="https://www.northerntrust.com/united-states/home">banks</a>,{' '}
               <a href="https://www.duke-energy.com/home">an energy company</a>, and {' '}
-              <a href="https://pratt-solutions.com">myself</a>. These days, I'm all
+              <a href="https://john-pratt.com">myself</a>. These days, I'm all
               about building rock-solid, scalable, and secure solutions as a
               freelance software developer and consultant, while I hunt down my
-              next long-term contract or W2 role. No excuses, just results.
+              next long-term W2/contract role. No excuses, just results.
             </p>
 
             <p>Here are a few technologies I've been working with recently:</p>

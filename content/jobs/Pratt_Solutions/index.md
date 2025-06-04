@@ -4,7 +4,7 @@ title: 'Founder/CEO, Lead Software Engineer, Coach'
 company: 'Pratt Solutions'
 location: 'Vienna, VA (Remote)'
 range: 'May 2020 - Present'
-url: 'https://www.pratt-solutions.com'
+url: 'https://www.john-pratt.com'
 companyRank: 0
 ---
 - Taking on IT/software engineering consulting & career/life coaching projects as my schedule allows while I hunt down my next full-time/long-term contract role
