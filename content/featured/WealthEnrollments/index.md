@@ -3,6 +3,7 @@ date: '1'
 title: 'NTRS Wealth Enrollments'
 cover: './ntrs.png'
 external: 'https://www.northerntrust.com/united-states/home'
+classified: false
 tech:
   - Microsoft Azure
   - Terraform
