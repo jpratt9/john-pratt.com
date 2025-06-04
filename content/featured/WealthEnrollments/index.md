@@ -6,11 +6,15 @@ external: 'https://www.northerntrust.com/united-states/home'
 tech:
   - Microsoft Azure
   - Terraform
+  - AWS
   - Java
   - Kubernetes
   - SQL
   - OracleDB
   - PCF
+  - Python
+  - GitHub Actions
+  - Node.js
   - GitHub Actions
 
 ---
