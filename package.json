@@ -1,8 +1,8 @@
 {
-  "name": "pratt-solutions.com",
+  "name": "john-pratt.com",
   "description": "Portfolio Site v3",
   "version": "1.0.0",
-  "author": "John Pratt <john@pratt-solutions.com>",
+  "author": "John Pratt <john@john-pratt.com>",
   "repository": {
     "type": "git",
     "url": "https://github.com/jpratt9/john-pratt.com"
