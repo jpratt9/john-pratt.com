@@ -3,7 +3,9 @@ date: '2024-02-01'
 title: 'Senior Software Engineer'
 company: 'Northern Trust'
 location: 'Remote'
-range: 'Mar 2024 - Present'
+range: 'Mar 2024 - May 2025'
+url: 'https://www.northerntrust.com/united-states/home'
+companyRank: 1
 ---
 - **Secured ~$17T in client assets under custody/administration** by developing a Java Spring Boot library for Okta Auth that enhanced REST API security with JWT validation and Azure Entra integration, reducing security incidents by ~25%
 - **Cut incident resolution times by ~19%** via Azure Monitor Action Groups & Alerts
