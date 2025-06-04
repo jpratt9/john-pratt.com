@@ -345,6 +345,7 @@ const Featured = () => {
                 }
               }
               tech
+              classified
               github
               external
             }
@@ -379,14 +380,14 @@ const Featured = () => {
         {featuredProjects &&
           featuredProjects.map(({ node }, i) => {
             const { frontmatter, html } = node;
-            const { external, title, tech, github, cover } = frontmatter;
+            const { external, title, tech, github, cover, classified } = frontmatter;
             const image = getImage(cover);
 
             return (
               <StyledProject key={i} ref={el => (revealProjects.current[i] = el)}>
                 <div className="project-content">
                   <div>
-                    <h3 className="project-title">
+                    <h3 className="project-title" style={{ fontStyle: classified ? 'italic' : 'normal' }}>
                       <a href={external}>{title}</a>
                     </h3>
 

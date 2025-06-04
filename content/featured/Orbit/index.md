@@ -3,6 +3,7 @@ date: '4'
 title: 'Orbit'
 cover: './duke.png'
 external: 'https://www.duke-energy.com/home'
+classified: false
 tech:
   - Terraform
   - AWS
