@@ -16,7 +16,7 @@ const prismColors = {
 // https://www.gatsbyjs.org/packages/gatsby-remark-prismjs
 
 const PrismStyles = css`
-  /**
+  /*
   * Add back the container background-color, border-radius, padding, margin
   * and overflow that we removed from <pre>.
   */
@@ -45,7 +45,7 @@ const PrismStyles = css`
     hyphens: none;
   }
 
-  /**
+  /*
   * Remove the default PrismJS theme background-color, border-radius, margin,
   * padding and overflow.
   * 1. Make the element just wide enough to fit its content.

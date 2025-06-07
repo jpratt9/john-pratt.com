@@ -8,7 +8,7 @@ url: 'https://www.capitalone.com'
 companyRank: 3
 ---
 
-- 2019-2020: **_Saved Capital One ~$10k in fines per customer annually_** by creating the data fulfillment pipeline for CCPA compliance for its **~100 million customers**, enhancing customer privacy. Used Python, AWS, Docker, Java Spring Boot, Apache Airflow, Apache Kafka & more
+- 2019-2020: _Saved Capital One ~$10k in fines per customer annually_ by creating the data fulfillment pipeline for CCPA compliance for its ~100 million customers, enhancing customer privacy. Used Python, AWS, Docker, Java Spring Boot, Apache Airflow, Apache Kafka & more
 - Wrote component for processing & uploading zip files of customer assets (CCPA records) to S3 & alerting web app team via Apache Kafka so they can email customers
 - Created Kafka consumer component to process privacy requests ready for processing by our pipeline
 - Helped create Python component “Query Builder” to dynamically generate PostgreSQL & Snowflake queries

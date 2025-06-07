@@ -32,7 +32,7 @@ const useScrollDirection = ({ initialDirection, thresholdPixels, off } = {}) => 
       }
     };
 
-    /**
+    /*
      * Bind the scroll handler if `off` is set to false.
      * If `off` is set to true reset the scroll direction.
      */
