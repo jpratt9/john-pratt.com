@@ -1,5 +1,5 @@
 module.exports = {
-  email: 'john@john-pratt.com',
+  email: 'johnpratt439@gmail.com',
 
   socialMedia: [
     {
@@ -30,12 +30,16 @@ module.exports = {
       url: '/#projects',
     },
     {
-        name: 'Certifications',
-        url: '/#certs',
-      },
+      name: 'Certifications',
+      url: '/#certs',
+    },
     {
       name: 'Contact',
       url: '/#contact',
+    },
+    {
+      name: 'Blog',
+      url: '/blog',
     },
   ],
 
