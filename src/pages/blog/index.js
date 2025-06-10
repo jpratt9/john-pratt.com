@@ -171,7 +171,7 @@ const BlogPage = ({ location, data }) => {
                     </header>
 
                     <footer>
-                      <span className="post__date">{formattedDate}</span>
+                      {/* <span className="post__date">{formattedDate}</span> */}
                       {/* <ul className="post__tags">
                         {tags.map((tag, i) => (
                           <li key={i}>
@@ -209,7 +209,6 @@ export const pageQuery = graphql`
         node {
           frontmatter {
             title
-            description
             slug
             date
             tags

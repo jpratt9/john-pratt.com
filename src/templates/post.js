@@ -67,14 +67,14 @@ const PostTemplate = ({ data, location }) => {
         <StyledPostHeader>
           <h1 className="medium-heading">{title}</h1>
           <p className="subtitle">
-            <time>
+            {/* <time>
               {new Date(date).toLocaleDateString('en-US', {
                 year: 'numeric',
                 month: 'long',
                 day: 'numeric',
               })}
-            </time>
-            <span>&nbsp;&mdash;&nbsp;</span>
+            </time> */}
+            {/* <span>&nbsp;&mdash;&nbsp;</span> */}
             {tags &&
               tags.length > 0 &&
               tags.map((tag, i) => (
