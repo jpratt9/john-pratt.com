@@ -17,4 +17,3 @@ It's hands down the best book I've ever read in my entire career.
 
 It breaks down advanced concepts behind how distributed systems, databases, and scaling works in a way that's super easy to understand.
 Read it and you'll instantly level up - I guarantee it.
-
