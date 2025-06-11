@@ -9,6 +9,7 @@ tech:
   - CloudFormation Templates
   - SQL
   - Snowflake
+  - Databricks
   - BitBucket
   - pytest
 
