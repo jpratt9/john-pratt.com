@@ -2,7 +2,6 @@
 date: '8'
 title: '(Telecom Platform)'
 cover: './telecom_client.png'
-external: 'https://john-pratt.com'
 classified: true
 tech:
   - Terraform
