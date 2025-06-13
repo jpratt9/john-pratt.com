@@ -1,5 +1,5 @@
 ---
-date: '3'
+date: '6'
 title: '(Fortune 500 Loan Platform)'
 cover: './mortgage_lender_client.png'
 classified: true

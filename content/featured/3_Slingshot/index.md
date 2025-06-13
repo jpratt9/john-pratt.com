@@ -1,5 +1,5 @@
 ---
-date: '5'
+date: '3'
 title: 'Slingshot'
 cover: './slingshot.png'
 external: 'https://www.capitalone.com/software/solutions/'
