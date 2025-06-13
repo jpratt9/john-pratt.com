@@ -1,5 +1,5 @@
 ---
-date: '6'
+date: '4'
 title: 'Manage Your Data'
 cover: './demo.png'
 external: 'https://mydata.capitalone.com/'
@@ -15,6 +15,7 @@ tech:
   - Jenkins
   - PostgreSQL
   - SnowFlake
+  - React
 
 ---
 
