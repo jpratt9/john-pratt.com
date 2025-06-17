@@ -5,7 +5,6 @@ cover: './slingshot.png'
 external: 'https://www.capitalone.com/software/solutions/'
 classified: false
 tech:
-  - Terraform
   - AWS
   - Java
   - Docker
@@ -14,4 +13,4 @@ tech:
 
 ---
 
-As Capital One's first commercial SaaS product, Slingshot empowers organizations to spend wisely, forecast confidently & make smart decisions using SnowFlake.
+As Capital One's first commercial SaaS product, Slingshot empowers organizations to spend wisely, forecast confidently & make smart decisions using Snowflake.

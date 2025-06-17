@@ -52,7 +52,7 @@ const StyledPostContent = styled.div`
 
 const PostTemplate = ({ data, location }) => {
   const { frontmatter, html } = data.markdownRemark;
-  const { title, date, tags } = frontmatter;
+  const { title, date, tags, draft } = frontmatter;
 
   return (
     <Layout location={location}>
@@ -75,7 +75,7 @@ const PostTemplate = ({ data, location }) => {
               })}
             </time> */}
             {/* <span>&nbsp;&mdash;&nbsp;</span> */}
-            {tags &&
+            {!draft && tags &&
               tags.length > 0 &&
               tags.map((tag, i) => (
                 <Link key={i} to={`/blog/tags/${kebabCase(tag)}/`} className="tag">
@@ -104,6 +104,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        draft
         description
         date
         slug

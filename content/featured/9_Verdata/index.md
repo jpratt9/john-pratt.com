@@ -8,8 +8,8 @@ tech:
   - Python
   - Terraform
   - SQL
-  - C#/.NET
   - GitHub
+  - Data Analytics
 
 ---
 

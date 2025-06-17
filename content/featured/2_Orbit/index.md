@@ -13,8 +13,7 @@ tech:
   - Concourse CI
   - Bash
   - Postman
-  - Firebase
-  - C#/.NET
+
 ---
 
 An iPad app designed to digitalize operator rounds (data collection) across Duke's 100+ power plants, enhancing the workflows of their ~8.5k plant workers & ~8.6 million customers.
