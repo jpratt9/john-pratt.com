@@ -6,11 +6,11 @@ classified: true
 tech:
   - Terraform
   - AWS
+  - Python
+  - GoLang
   - Java Springboot
   - Kubernetes
   - SQL
-  - Python
-  - GoLang
   - GitLab
   - AWS CodeDeploy
 

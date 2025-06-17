@@ -16,8 +16,7 @@ tech:
   - Python
   - GitHub Actions
   - Node.js
-  - GitHub Actions
-
+  
 ---
 
 The primary web interface to enroll new clients into Northern Trust's wealth management service.
