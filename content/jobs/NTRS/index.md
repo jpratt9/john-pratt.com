@@ -7,13 +7,13 @@ range: 'Mar 2024 - May 2025'
 url: 'https://www.northerntrust.com/united-states/home'
 companyRank: 1
 ---
-- Secured ~$17T in client assets under custody/administration by developing a Java Spring Boot library for Okta Auth that enhanced REST API security with JWT validation and Azure Entra integration, reducing security incidents by ~25%
-- Cut incident resolution times by ~19% via Azure Monitor Action Groups & Alerts
-- Reduced deployment errors by ~40% using a custom Azure Cosmos DB Terraform module; cut Azure/AWS costs by ~$35k/month by optimizing DBs & requiring approval for high-cost Terraform changes
-- Led migration & boosted database performance by 31% via on-prem PCF OracleDB to Azure Microsoft SQL migration with VMs & Azure Data Factory
-- Increased remote Virtual Desktop login speed by 93% for ~60 engineers using Python Selenium automation
-- Reduced security incidents related to misconfigured Azure/AWS resources & Terraform modules ~18% over 2 quarters thanks to my DevOps/SecOps best practice guides for team of ~60 engineers
-- Accelerated deployment speeds by ~40%+ by consolidating Terraform modules for Azure/AWS (subnets, VNETs, KeyVault, Cosmos DB, DynamoDB, Linux/Windows/Static Web Apps, Azure Kubernetes Service, Azure Container Apps & more) and improved resiliency for 100+ engineers by upgrading AzureRM modules to v4 with multi-region support
-- Reduced manual tasks by 45% using PowerShell for email/calendar forwarding for team of ~60 engineers
-- Achieved 94% tagging coverage across Terraform-managed Azure/AWS resources via automated tagging standards in Terraform service modules, improving cost allocation and resource traceability
-- Cut ~$100k/month in infrastructure costs via Azure cost audits & custom Dashboard & KQL queries
+- Led team to cut **~$100k/month in cloud spend** via end-to-end development of **Azure/AWS Terraform** service modules
+- To protect **~$450B assets** under management, built **Java Spring Boot Okta + Azure Entra oAuth** library 
+- **Cut Infrastructure costs by ~40%** for Wealth Enrollments by successfully migrating on-prem PCF infra to Azure with Azure Container Apps, Kubernetes Service, VNETs, VMs, Key Vault, Data Factory, Static Web Apps & more
+- **Saved NTRS $200k+ annually** in Labor Capacity by speeding up remote Virtual Desktop login speeds by ~93% for ~60 engineers using Python Selenium browser automation
+- **Cut incident resolution times by ~19%** via **Azure Monitor Action Groups** & email **Alerts**
+- **Reduced deployment errors by ~40%** using a custom Azure Cosmos DB Terraform module; cut infra costs by **~$35k/month** by optimizing DBs & requiring approval for high-cost Terraform changes
+- **Reduced security incidents ~11% YoY** related to misconfigured Azure/AWS resources & Terraform modules thanks to my DevOps/SecOps best practice guides & Module refactors
+- **Accelerated deployment speeds by ~35%+** by consolidating Terraform modules for Azure/AWS (subnets, VNETs, RBAC, NSGs, Static Web Apps, AKS, ACA & more) and improved resiliency for 100+ engineers by upgrading AzureRM modules to v4 with multi-region support
+- **Reduced manual tasks by 19%** using **PowerShell** for email/calendar forwarding for team of ~60 engineers
+- **Achieved 94% audit oversight** across Terraform-managed Azure/AWS resources via automated tagging standards in Terraform service modules, improving cost allocation and resource traceability

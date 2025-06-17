@@ -1,6 +1,6 @@
 ---
 date: '5'
-title: 'john-pratt.com v3'
+title: 'john-pratt.com v3.1'
 cover: './portfolio_site.png'
 external: 'https://www.john-pratt.com/'
 # github: 'https://github.com/jpratt9/john-pratt.com'
@@ -14,4 +14,4 @@ tech:
   - SquareSpace
 ---
 
-A revamped version of my personal portfolio website, hosted on Netlify.
+A revamped version of my portfolio website, hosted on Netlify.
