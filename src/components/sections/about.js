@@ -120,7 +120,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['Amazon Web Services (AWS)', 'Microsoft Azure', 'Terraform (OSS, Enterprise)', 'Python (2/3)', 'Google Cloud (GCP)', 'Bash', 'PowerShell', 'JavaScript (Node.js, React)', 'Java (Spring Boot)', 'Go', 'Jenkins', 'Concourse', 'OpenAI API', 'Docker', 'gatsby', 'Snowflake', 'Databricks', 'SQL', 'Kubernetes', 'HashiCorp Vault', 'HashiCorp Consul', 'Git', 'GitHub', 'Bitbucket', 'Apache Kafka', 'Selenium', 'Large Language Models (ChatGPT, Claude, Gemini, DeepSeek)'];
+  const skills = ['Amazon Web Services (AWS)', 'Microsoft Azure', 'Terraform (OSS, Enterprise)', 'Python (2/3)', 'Google Cloud (GCP)', 'Bash', 'PowerShell', 'JavaScript (Node.js, React)', 'Java (Spring Boot)', 'CI/CD pipelines', 'Docker', 'gatsby', 'Snowflake', 'SQL', 'Kubernetes', 'HashiCorp Products', 'Git', 'GitHub', 'Bitbucket', 'Selenium', 'Large Language Models (ChatGPT, OpenAI API, Claude, Gemini, DeepSeek)'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
