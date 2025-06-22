@@ -15,7 +15,7 @@ companyRank: 3
 - Boosted CI/CD reliability by increasing unit test coverage to 90%+
 - Enabled developers to quickly work on our Data Fulfillment Pipeline by thoroughly documenting all parts
 - Mentored 5 engineers and guided 2 interns toward high-impact projects and return offers
-- Conducted 20+ technical interviews and evaluated candidates for software engineering roles; referred 4 qualified peers who were independently hired
+- Conducted 20+ technical interviews and evaluated candidates for software engineering roles; referred 4 qualified peers with one independently hired
 - Supported Capital One’s Slingshot (data warehouse SaaS) pilot — Python, Java Spring Boot, AWS ECS, Docker, DynamoDB, gRPC/protobuf, React, Snowflake
 - **2018**: Aided migration of critical data from on-prem to AWS via Python `boto3` validation Lambdas & setup of Direct Connect + DataSync
 - **2017**: Built reusable OAuth2 library for internal commercial banking apps; contributed to commercial fraud OCR system
