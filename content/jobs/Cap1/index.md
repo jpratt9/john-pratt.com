@@ -8,14 +8,14 @@ url: 'https://www.capitalone.com'
 companyRank: 3
 ---
 
-- _Saved Capital One ~$10k in fines per customer annually_ by creating the data fulfillment pipeline for CCPA compliance for its ~100 million customers, enhancing customer privacy. Used Python, AWS, Docker, Java Spring Boot, Apache Airflow, Apache Kafka & more
-- Wrote component for processing & uploading zip files of customer assets (CCPA records) to S3 & alerting web app team via Apache Kafka so they can email customers
-- Created Kafka consumer component to process privacy requests ready for processing by our pipeline
-- Helped create Python component “Query Builder” to dynamically generate PostgreSQL & Snowflake queries
-- Ensured seamless CI/CD by increasing unit test coverage to 90%+
+- Saved Capital One **~$10k per customer annually in fines** by creating the data fulfillment pipeline for CCPA compliance for its ~100M customers, enhancing customer privacy. Used Python, AWS, Docker, Java Spring Boot, Apache Airflow, Apache Kafka & more
+- Built component to process and upload customer asset ZIP files (CCPA records) to S3 and notify the web app team via Kafka for customer outreach emails
+- Developed Kafka consumer to process privacy requests for downstream processing
+- Co-developed “Query Builder,” a Python module to dynamically generate PostgreSQL and Snowflake queries
+- Boosted CI/CD reliability by increasing unit test coverage to 90%+
 - Enabled developers to quickly work on our Data Fulfillment Pipeline by thoroughly documenting all parts
-- Facilitated project shifts for improved value-add & return offers for 2 interns while leading professional development for 5 engineers
-- Screened 20+ software engineer applicants & got 1 peer hired at the firm by engaging in technical interviews & recruiting
-- Supported Capital One pilot-program data warehouse SaaS (Slingshot) - Python, Java Spring Boot, AWS ECS, Docker, AWS DynamoDB, protobuf/gRPC, React, Snowflake
-- 2018: Helped transfer essential Capital One data from on-prem data centers to AWS via Python boto3 data validation Lambda functions & setup of AWS Direct Connect + DataSync via AWS CDK
-- 2017: Developed reusable OAuth2 library for internal commercial banking applications. Helped with commercial fraud OCR system.
+- Mentored 5 engineers and guided 2 interns toward high-impact projects and return offers
+- Conducted 20+ technical interviews and evaluated candidates for software engineering roles; referred 4 qualified peers who were independently hired
+- Supported Capital One’s Slingshot (data warehouse SaaS) pilot — Python, Java Spring Boot, AWS ECS, Docker, DynamoDB, gRPC/protobuf, React, Snowflake
+- **2018**: Aided migration of critical data from on-prem to AWS via Python `boto3` validation Lambdas & setup of Direct Connect + DataSync
+- **2017**: Built reusable OAuth2 library for internal commercial banking apps; contributed to commercial fraud OCR system
