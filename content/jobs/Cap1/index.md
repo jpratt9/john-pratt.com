@@ -8,14 +8,14 @@ url: 'https://www.capitalone.com'
 companyRank: 3
 ---
 
-- Saved Capital One **~$10k per customer annually in fines** by creating the data fulfillment pipeline for CCPA compliance for its ~100M customers, enhancing customer privacy. Used Python, AWS, Docker, Java Spring Boot, Apache Airflow, Apache Kafka & more
-- Built component to process and upload customer asset ZIP files (CCPA records) to S3 and notify the web app team via Kafka for customer outreach emails
+- Saved Capital One ~$10k per customer annually in fines by creating the data fulfillment pipeline for legal compliance for its ~100M customers. Used Python, AWS, Docker, Java Spring Boot, Apache Airflow, Kafka & more
+- Built component to ETL customer data to AWS and notify our web app team via Kafka for customer outreach emails
 - Developed Kafka consumer to process privacy requests for downstream processing
 - Co-developed “Query Builder,” a Python module to dynamically generate PostgreSQL and Snowflake queries
-- Boosted CI/CD reliability by increasing unit test coverage to 90%+
+- Boosted CI/CD reliability by raising unit test coverage to 90%+
 - Enabled developers to quickly work on our Data Fulfillment Pipeline by thoroughly documenting all parts
 - Mentored 5 engineers and guided 2 interns toward high-impact projects and return offers
-- Conducted 20+ technical interviews and evaluated candidates for software engineering roles; referred 4 qualified peers with one independently hired
-- Supported Capital One’s Slingshot (data warehouse SaaS) pilot — Python, Java Spring Boot, AWS ECS, Docker, DynamoDB, gRPC/protobuf, React, Snowflake
+- Conducted 20+ technical interviews for software engineer roles; referred 4 qualified peers, 1 who was independently hired
+- Supported Capital One pilot-program data warehouse SaaS “Slingshot” - AWS, Python, Java Spring Boot, Docker, protobuf/gRPC, React, Snowflake
 - **2018**: Aided migration of critical data from on-prem to AWS via Python `boto3` validation Lambdas & setup of Direct Connect + DataSync
 - **2017**: Built reusable OAuth2 library for internal commercial banking apps; contributed to commercial fraud OCR system
