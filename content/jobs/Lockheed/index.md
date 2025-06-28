@@ -3,9 +3,9 @@ date: '2015-12-21'
 title: 'Tech Intern; Senior Tech Intern'
 company: 'Lockheed Martin'
 location: 'Manassas, VA'
-range: 'Summer 2015, Summer 2016'
+range: '2015 - 2016'
 url: 'https://www.lockheedmartin.com/en-us/index.html'
-companyRank: 4
+companyRank: 5
 ---
 
 - 2015: _Saved firm ~$125k annually_ by reducing errors in auto-generated technical documentation by ~26% in 1.5 months. Did so by creating stand-alone Java desktop app for sanitizing malformed output from legacy proprietary software.
