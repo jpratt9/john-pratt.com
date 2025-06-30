@@ -8,7 +8,7 @@ range: '2016 - 2017'
 companyRank: 4
 ---
 
-- Genie brings a modern look and feel to genealogy software. Built in Angular and Node.js, with family visualizations based on D3, & deployed with Electron.
+- Genie brings a modern look and feel to genealogy software. Built in Angular and Node.js, Genie is deployed with Electron & enables users to visualize their family lineage with D3
 - Architected and implemented Genie’s core back-end using Node.js, supporting fast, modular genealogy data operations
 - Integrated Electron to deliver a cross-platform desktop experience independent of browser or OS constraints
 - Developed a local file-based persistence layer for storing and syncing complex family tree structures
