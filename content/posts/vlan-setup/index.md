@@ -3,7 +3,7 @@ title: Case Study - Enhancing Content Delivery for a Digital Media Startup with 
 description:
 date: '2025-06-17'
 draft: false
-slug: '/blog/digital-media-case-study'
+slug: '/digital-media-case-study'
 tags:
   - consulting
   - solution architecture

@@ -3,7 +3,7 @@ title: 5 things I wish somebody told me when I started writing production code
 description:
 date: '2025-06-07'
 draft: false
-slug: '/blog/5-things-i-wish'
+slug: '/5-things-i-wish'
 tags:
   - dev tips
   - software dev

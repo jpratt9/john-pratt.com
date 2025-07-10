@@ -3,7 +3,7 @@ title: Bulkhead Pattern
 description:
 date: '2025-06-07'
 draft: false
-slug: '/blog/bulkhead-pattern'
+slug: '/bulkhead-pattern'
 tags:
   - software dev
   - resiliency patterns

@@ -3,7 +3,7 @@ title: Log-structured Merge-trees
 description: 
 date: '2025-06-09'
 draft: false
-slug: '/blog/lsm-trees'
+slug: '/lsm-trees'
 tags:
   - computer science
   - data structures
