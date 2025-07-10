@@ -3,7 +3,7 @@ title: The Inverted Index
 description: a
 date: '2025-06-06'
 draft: false
-slug: '/blog/inverted-index'
+slug: '/inverted-index'
 tags:
   - data structures
   - algorithms

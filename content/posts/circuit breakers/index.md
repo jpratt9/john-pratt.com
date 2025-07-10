@@ -3,7 +3,7 @@ title: The "Circuit Breaker" Design Pattern
 description: a
 date: '2025-06-06'
 draft: false
-slug: '/blog/circuit-breakers'
+slug: '/circuit-breakers'
 tags:
   - design patterns
   - software dev
