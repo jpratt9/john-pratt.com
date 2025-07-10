@@ -3,7 +3,7 @@ title: The "HyperLogLog"
 description: a
 date: '2025-06-06'
 draft: false
-slug: '/blog/hyperloglogs'
+slug: '/hyperloglogs'
 tags:
   - data structures
   - algorithms

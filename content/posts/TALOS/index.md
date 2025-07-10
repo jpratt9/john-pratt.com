@@ -3,7 +3,7 @@ title: Case Study - TALOS
 description:
 date: '2025-07-10'
 draft: false
-slug: '/blog/talos'
+slug: '/talos'
 tags:
   - solution architecture
   - terraform

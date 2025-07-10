@@ -3,7 +3,7 @@ title: You WILL break prod, unless...
 description: a
 date: '2025-06-06'
 draft: false
-slug: '/blog/breaking-prod'
+slug: '/breaking-prod'
 tags:
   - data structures
   - algorithms

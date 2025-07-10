@@ -3,7 +3,7 @@ title: Bloom Filters
 description:
 date: '2025-06-08'
 draft: false
-slug: '/blog/bloom-filters'
+slug: '/bloom-filters'
 tags:
   - computing
   - data structures
