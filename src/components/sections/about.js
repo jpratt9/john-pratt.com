@@ -139,7 +139,8 @@ const About = () => {
 
             <p>
               Fast-forward to today, and I've had the privilege of working for{' '}
-              <a href="https://www.lockheedmartin.com/en-us/index.html">an aerospace company</a>,{' '}
+              <a href="https://www.lockheedmartin.com/en-us/index.html">an aerospace company</a>, two {' '}
+              <a href="https://pallotone.com">startups</a>,{' '}
               <a href="https://www.capitalone.com/">two</a>{' '}
               <a href="https://www.northerntrust.com/united-states/home">banks</a>,{' '}
               <a href="https://www.duke-energy.com/home">an energy company</a>, and {' '}
