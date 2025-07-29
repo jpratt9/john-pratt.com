@@ -7,7 +7,7 @@ range: 'May 2020 - Present'
 url: 'https://www.john-pratt.com'
 companyRank: 0
 ---
-- Taking on IT/software engineering consulting & career/life coaching projects as my schedule allows while I seek my next W2/long-term contract role
+- Taking on IT/software engineering consulting and coaching projects as availability permits while pursuing my next long-term opportunity (W2 or contract)
 - Taught two Clients to build out **CI/CD pipelines, automate security scans** & convert **Cloud Infra** to **IaC** for their risk analysis & Telecom platforms
 - Enhanced **Snowflake** data retrieval for Client’s **~1M vehicles** with **Python REST API on AWS**
 - **Cut document upload times by ~91%** with automated Python browser automation

@@ -47,27 +47,27 @@ We had to bridge the on-prem and cloud worlds - intelligently.
 
 Here's what the final architecture looks like:
 
-#### 💻 **On-Prem VLAN**
+#### **On-Prem VLAN**
 
 * **Tailscale**: Our zero-config, mesh VPN glue. Lets personal laptops talk securely to on-prem compute nodes.
 * **Compute Server (Beelink Mini-PC)**: Handles intensive media encoding and AI inference tasks. Think FFMPEG, custom ML models, etc.
 
-#### 📦 **DMZ VLAN**
+#### **DMZ VLAN**
 
 * **MySQL Server (Kamrui Mini-PC)**: Lightweight, persistent storage layer.
 * **Nginx**: Reverse proxies traffic into the DMZ, balancing access to database and compute functions.
 
-#### ☁️ **AWS EC2 (t2.micro)**
+#### **AWS EC2 (t2.micro)**
 
 * Minimalist frontend API + presentation layer.
 * All exposed endpoints are static/dynamic pages piped through CloudFront.
 
-#### 🚀 **CloudFront**
+#### **CloudFront**
 
 * Blazing fast delivery of content and APIs.
 * Handles TLS termination, caching, and acts as the secure front gate to the architecture.
 
-#### 👨‍💻 **End User**
+#### **End User**
 
 * Doesn't know or care where the compute lives - just gets instant access to media content.
 
@@ -77,15 +77,15 @@ This hybrid design merges on-prem power with cloud elasticity. It's affordable, 
 
 ### Results
 
-#### ✅ Topic: *Modernizing Infrastructure for Content-Driven Startups*
+#### Topic: *Modernizing Infrastructure for Content-Driven Startups*
 
-#### ⚠️ Importance & Risks:
+#### Importance & Risks:
 
 * **Cost Drift**: Pure cloud infra often results in surprise AWS bills.
 * **Developer Bottlenecks**: Without fast, secure access to compute and storage, productivity drops.
 * **Poor UX**: High latency or media load failures kill user retention.
 
-#### 💡 Our Advice (from the trenches):
+#### Our Advice (from the trenches):
 
 * **Start at the Edge**: Use local hardware (mini-PCs are criminally underrated) for predictable compute costs.
 * **Mesh is Might**: Tools like Tailscale make complex networking setups obsolete.
