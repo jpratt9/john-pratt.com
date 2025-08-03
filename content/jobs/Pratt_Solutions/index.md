@@ -1,17 +1,17 @@
 ---
 date: '2022-05-01'
-title: 'Founder/CEO, Lead Software Engineer, Coach'
+title: 'Founder/CEO, Lead Software Engineer'
 company: 'Pratt Solutions'
-location: 'Vienna, VA (Remote)'
+location: 'Washington DC Metro Area (Hybrid)'
 range: 'May 2020 - Present'
 url: 'https://www.john-pratt.com'
 companyRank: 0
 ---
-- Taking on IT/software engineering consulting & career/life coaching projects as my schedule allows while I seek my next full-time/long-term role
+- Taking on IT/software engineering consulting projects as my schedule allows while I find my next full-time/long-term role
 - Taught two Clients to build out **CI/CD pipelines, automate security scans** & convert **Cloud Infra** to **IaC** for their risk analysis & Telecom platforms
 - Enhanced **Snowflake** data retrieval for Client’s **~1M vehicles** with **Python REST API on AWS**
 - **Cut document upload times by ~91%** with automated Python browser automation
-- Generated **~200k TikTok views** with pipeline for AI-generated videos using **Python, AWS, OpenAI’s API, & NLP**
+- ContentMachine: Generated **~200k TikTok views** with pipeline for AI-generated videos using **Python, AWS, OpenAI’s API, & NLP**
 - Helped Client design + implement AI-based Cloud Infrastructure Deployment tool with AWS Bedrock, Terraform & more
 - Reduced manual tasks by ~10% for Client’s 100+ employees/contractors via enhancements to internal employee-tracking web app using AWS, Docker, Postgres & more.
 - Built and lead a global team of 5+ freelancers for BizOps
