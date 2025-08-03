@@ -2,7 +2,7 @@
 date: '2016-12-21'
 title: 'Software Engineer, TDP Mentor, Software Engineer Intern'
 company: 'Capital One'
-location: 'Richmond, VA; McLean, VA'
+location: 'Richmond, VA; McLean, VA; Remote'
 range: 'Aug 2019 - Jun 2021, Summer 2017, Summer 2018'
 url: 'https://www.capitalone.com'
 companyRank: 3
@@ -18,4 +18,4 @@ companyRank: 3
 - Conducted 20+ technical interviews for software engineer roles; referred 4 qualified peers, 1 who was independently hired
 - Supported Capital One pilot-program data warehouse SaaS “Slingshot” - AWS, Python, Java Spring Boot, Docker, protobuf/gRPC, React, Snowflake
 - **2018**: Aided migration of critical data from on-prem to AWS via Python `boto3` validation Lambdas & setup of Direct Connect + DataSync
-- **2017**: Built reusable OAuth2 library for internal commercial banking apps; contributed to commercial fraud OCR system
+- **2017**: Built reusable OAuth2 library for internal commercial banking web apps; contributed to commercial fraud OCR system
