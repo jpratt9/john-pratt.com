@@ -7,8 +7,10 @@ slug: '/cloud-migration-challenges'
 tags:
   - cloud
   - enterprise modernization
-  - AWS  
+  - AWS
 ---
+
+![cloud](./cloud.jpg)
 
 # Top 8 Cloud Migration Challenges of 2025 & How to Solve Them
 
