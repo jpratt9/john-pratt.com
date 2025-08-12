@@ -7,7 +7,7 @@ import styled from 'styled-components';
 import { Layout } from '@components';
 
 const StyledPostContainer = styled.main`
-  max-width: 1000px;
+  max-width: 1200px;
 `;
 const StyledPostHeader = styled.header`
   margin-bottom: 50px;
@@ -47,6 +47,26 @@ const StyledPostContent = styled.div`
   pre code {
     background-color: transparent;
     padding: 0;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1.5em 0;
+    font-size: 0.90rem;
+  }
+
+  th, td {
+    border: 1px solid var(--slate);
+    
+    padding: 12px 15px;
+    text-align: left;
+    vertical-align: top;
+    color: var(--lightest-slate);
+  }
+
+  th {
+    font-weight: bold;
   }
 `;
 
