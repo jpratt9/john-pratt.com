@@ -18,12 +18,14 @@ jobs:
       - name: Create folder
         run: |
           mkdir -p "${{ github.event.inputs.folder_name }}"
+          touch "${{ github.event.inputs.folder_name }}/.keep"
           echo "Created folder: ${{ github.event.inputs.folder_name }}"
 
       - name: Commit and push changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          echo "${{ github.event.inputs.folder_name }}"
           git add "${{ github.event.inputs.folder_name }}"
           git commit -m "Add folder ${{ github.event.inputs.folder_name }}"
           git push
