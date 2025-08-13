@@ -35,4 +35,4 @@ override.tf.json
 *_override.tf.json
 
 # secrets
-.env
+secrets.tfvars
