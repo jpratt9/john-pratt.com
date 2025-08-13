@@ -1,33 +1,19 @@
 import os
 import json
-import requests
+# import requests
 import boto3
-
-OUTRANK_WEBHOOK_TOKEN = os.environ.get("OUTRANK_WEBHOOK_TOKEN")
-GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN")
 
 github_url = "https://api.github.com/repos/jpratt9/john-pratt.com/actions/workflows/create-blog-post.yml/dispatches"
 
 _sm = boto3.client("secretsmanager")
-_cached_secrets = {}
+# _cached_secrets = {}
 
-def _get_secret(env_var):
-    if env_var in _cached_secrets:
-        return _cached_secrets[env_var]
-
-    secret_id_or_value = os.environ.get(env_var)
-    if not secret_id_or_value:
-        return ""
-
-    # If env var holds the actual token, return it
-    if not secret_id_or_value.startswith("arn:") and "/" not in secret_id_or_value:
-        _cached_secrets[env_var] = secret_id_or_value
-        return secret_id_or_value
+def _get_secret(secret_name):
 
     # Otherwise fetch from Secrets Manager
-    resp = _sm.get_secret_value(SecretId=secret_id_or_value)
+    resp = _sm.get_secret_value(SecretId=secret_name)
     token = resp.get("SecretString", "")
-    _cached_secrets[env_var] = token
+    # _cached_secrets[env_var] = token
     return token
 
 def lambda_handler(event, context):
@@ -36,7 +22,7 @@ def lambda_handler(event, context):
     auth = headers.get("Authorization") or headers.get("authorization") or ""
 
     # only pull from secrets manager if cache is empty
-    outrank_token = OUTRANK_WEBHOOK_TOKEN or get_secret("OUTRANK_WEBHOOK_TOKEN")
+    outrank_token = _get_secret("outrank_access_token")
     if not auth.startswith("Bearer ") or auth.split(" ", 1)[1] != outrank_token:
         return {"statusCode": 401, "body": json.dumps({"error": "Invalid access token"})}
 
@@ -51,10 +37,10 @@ def lambda_handler(event, context):
     # process article
     print("Processing + publishing article...")
 
-    article_json = body.get("data").get("articles")[0]
-    slug = article_json.get("slug")
-    markdown = article_json.get("content_markdown")
-    github_token = GITHUB_TOKEN or get_secret("GITHUB_TOKEN")
+    # article_json = body.get("data").get("articles")[0]
+    # slug = article_json.get("slug")
+    # markdown = article_json.get("content_markdown")
+    github_token = _get_secret("github_token")
 
     # post article
 
