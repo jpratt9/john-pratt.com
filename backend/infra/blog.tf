@@ -106,7 +106,8 @@ resource "aws_lambda_function" "webhook" {
 
   environment {
     variables = {
-      SECRET_ID = aws_secretsmanager_secret.bearer_token.name
+      OUTRANK_WEBHOOK_BEARER_TOKEN = aws_secretsmanager_secret.bearer_token.name
+      GITHUB_TOKEN = aws_secretsmanager_secret.github_token.name
     }
   }
 
