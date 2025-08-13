@@ -32,19 +32,28 @@ variable "aws_region" {
 ############################
 # Secrets: API key value (opaque)
 ############################
-resource "random_password" "bearer_token" {
+resource "random_password" "outrank_access_token" {
   length  = 48
   special = false
 }
 
-resource "aws_secretsmanager_secret" "bearer_token" {
-  name        = "webhook_bearer_token"
-  description = "Bearer token used in Authorization header"
+resource "aws_secretsmanager_secret" "outrank_access_token" {
+  name        = "outrank_access_token"
+  description = "Bearer token used in Authorization header ('Access Token' on Outrank)"
 }
 
-resource "aws_secretsmanager_secret_version" "bearer_token" {
-  secret_id     = aws_secretsmanager_secret.bearer_token.id
-  secret_string = random_password.bearer_token.result
+resource "aws_secretsmanager_secret_version" "outrank_access_token" {
+  secret_id     = aws_secretsmanager_secret.outrank_access_token.id
+  secret_string = random_password.outrank_access_token.result
+}
+
+############################
+# IAM for Lambda
+############################
+
+resource "aws_secretsmanager_secret" "github_token" {
+  name        = "github_token"
+  description = "GitHub token used for GitHub API calls - to modify current repo"
 }
 
 ############################
@@ -70,7 +79,10 @@ resource "aws_iam_role_policy_attachment" "lambda_basic" {
 data "aws_iam_policy_document" "lambda_secrets_read" {
   statement {
     actions   = ["secretsmanager:GetSecretValue"]
-    resources = [aws_secretsmanager_secret.bearer_token.arn]
+    resources = [
+      aws_secretsmanager_secret.outrank_access_token.arn,
+      aws_secretsmanager_secret.github_token.arn
+      ]
   }
 }
 
@@ -103,13 +115,6 @@ resource "aws_lambda_function" "webhook" {
   handler          = "lambda_function.lambda_handler"
   filename         = data.archive_file.handler_zip.output_path
   source_code_hash = data.archive_file.handler_zip.output_base64sha256
-
-  environment {
-    variables = {
-      OUTRANK_WEBHOOK_BEARER_TOKEN = aws_secretsmanager_secret.bearer_token.name
-      GITHUB_TOKEN = aws_secretsmanager_secret.github_token.name
-    }
-  }
 
   # Safety: cap concurrency so floods can't scale costlessly
   reserved_concurrent_executions = 5
@@ -191,61 +196,3 @@ resource "aws_api_gateway_method_settings" "dev_all" {
 
   depends_on = [aws_api_gateway_stage.dev]
 }
-
-############################
-# API Key + Usage Plan (throttle/quotas)
-############################
-# resource "aws_api_gateway_api_key" "key" {
-#   name    = "webhook_key"
-#   enabled = true
-#   value   = random_password.api_key_value.result
-# }
-
-# resource "aws_api_gateway_usage_plan" "plan" {
-#   name = "webhook_plan"
-
-#   # plan-wide throttling (optional)
-#   throttle_settings {
-#     burst_limit = 50
-#     rate_limit  = 25
-#   }
-
-#   # attach to stage, with optional per-method override
-#   api_stages {
-#     api_id = aws_api_gateway_rest_api.api.id
-#     stage  = aws_api_gateway_stage.dev.stage_name
-
-#     # per-method throttle (optional)
-#     throttle {
-#       path        = "/webhook/POST"  # "<resource-path>/<HTTP-VERB>"
-#       burst_limit = 50
-#       rate_limit  = 25
-#     }
-#   }
-# }
-
-# resource "aws_api_gateway_usage_plan_key" "attach" {
-#   key_id        = aws_api_gateway_api_key.key.id
-#   key_type      = "API_KEY"
-#   usage_plan_id = aws_api_gateway_usage_plan.plan.id
-# }
-
-############################
-# Outputs
-############################
-output "invoke_url" {
-  description = "Public HTTPS URL for the webhook"
-  value       = "https://${aws_api_gateway_rest_api.api.id}.execute-api.${var.aws_region}.amazonaws.com/${aws_api_gateway_stage.dev.stage_name}/webhook"
-}
-
-output "bearer_token_value" {
-  description = "Bearer token to send in Authorization header"
-  value       = random_password.bearer_token.result
-  sensitive   = true
-}
-
-output "bearer_token_secret_arn" {
-  description = "Secrets Manager ARN storing the bearer token"
-  value       = aws_secretsmanager_secret.bearer_token.arn
-}
-
