@@ -10,3 +10,26 @@ package-lock.json
 
 .vscode/
 npm-debug.log
+
+
+# terraform
+# Lock file (optional to ignore)
+terraform.lock.hcl
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+terraform.tfstate
+terraform.tfstate.backup
+
+# Terraform working directory
+.terraform/
+.terraform/*
+
+# Ignore variable files (often contain secrets)
+*.tfvars
+*.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
