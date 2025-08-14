@@ -1,5 +1,6 @@
 import os
 import json
+from datetime import datetime
 # import requests
 import boto3
 
@@ -37,9 +38,16 @@ def lambda_handler(event, context):
     # process article
     print("Processing + publishing article...")
 
-    # article_json = body.get("data").get("articles")[0]
-    # slug = article_json.get("slug")
-    # markdown = article_json.get("content_markdown")
+    article_json = body.get("data").get("articles")[0]
+
+    title = article_json.get("title")
+    date = datetime.fromisoformat(article_json.get("created_at")).date().isoformat()
+    slug = "/" + article_json.get("slug")
+    tags = article_json.get("tags")
+    header_image = article_json.get("image_url")
+    markdown = article_json.get("content_markdown").replace(_get_secret("article_blacklist_strings"), "")
+
+    # TODO modify article markdown so it references images to be hosted on our repo, not externally
     github_token = _get_secret("github_token")
 
     # post article

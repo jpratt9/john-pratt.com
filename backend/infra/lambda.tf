@@ -7,19 +7,20 @@ resource "random_password" "outrank_access_token" {
   special = false
 }
 
-resource "aws_secretsmanager_secret" "outrank_access_token" {
-  name        = "outrank_access_token"
-  description = "Bearer token used in Authorization header ('Access Token' on Outrank)"
+## 
+resource "aws_secretsmanager_secret" "blog_poster_secrets" {
+  name        = "blog_poster_secrets"
+  description = "Dict of secrets to be used by this application"
 }
 
-resource "aws_secretsmanager_secret_version" "outrank_access_token" {
-  secret_id     = aws_secretsmanager_secret.outrank_access_token.id
-  secret_string = random_password.outrank_access_token.result
-}
-
-resource "aws_secretsmanager_secret" "github_token" {
-  name        = "github_token"
-  description = "GitHub token used for GitHub API calls - to modify current repo"
+resource "aws_secretsmanager_secret_version" "blog_poster_secrets" {
+  secret_id     = aws_secretsmanager_secret.blog_poster_secrets.id
+  secret_string = jsonencode({
+    outrank_access_token        = random_password.outrank_access_token.result
+    github_token                = var.github_token
+    article_blacklist_strings   = var.article_blacklist_strings
+    external_url_regex          = var.external_url_regex
+  })
 }
 
 ############################
@@ -46,8 +47,7 @@ data "aws_iam_policy_document" "lambda_secrets_read" {
   statement {
     actions   = ["secretsmanager:GetSecretValue"]
     resources = [
-      aws_secretsmanager_secret.outrank_access_token.arn,
-      aws_secretsmanager_secret.github_token.arn
+      aws_secretsmanager_secret.blog_poster_secrets.arn
     ]
   }
 }
@@ -77,11 +77,44 @@ data "archive_file" "handler_zip" {
 resource "aws_lambda_function" "webhook" {
   function_name    = "webhook_handler"
   role             = aws_iam_role.lambda_role.arn
-  runtime          = "python3.11"
+  runtime          = var.python_runtime
   handler          = "lambda_function.lambda_handler"
   filename         = data.archive_file.handler_zip.output_path
   source_code_hash = data.archive_file.handler_zip.output_base64sha256
 
   # Safety: cap concurrency so floods can't scale costlessly
   reserved_concurrent_executions = 5
+
+  layers = [
+    aws_lambda_layer_version.requests.arn
+  ]
+}
+
+###############################
+# Lambda Layer for requests.py
+###############################
+
+# Build the requests layer ZIP using pip in a local-exec provisioner
+resource "null_resource" "build_requests_layer" {
+  # Change the trigger if you want to rebuild (e.g., version bumps)
+  triggers = {
+    requests_version = "2.32.4"
+  }
+
+  provisioner "local-exec" {
+    command = <<EOT
+      mkdir -p dist/python
+      pip install requests==${self.triggers.requests_version} -t dist/python
+      cd dist && zip -r requests_layer.zip python
+    EOT
+  }
+}
+
+# Create Lambda layer from the locally built ZIP
+resource "aws_lambda_layer_version" "requests" {
+  layer_name          = "requests"
+  filename            = "${path.module}/dist/requests_layer.zip"
+  compatible_runtimes = [var.python_runtime]
+
+  depends_on = [null_resource.build_requests_layer]
 }
