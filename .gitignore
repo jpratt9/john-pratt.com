@@ -36,3 +36,6 @@ override.tf.json
 
 # secrets
 secrets.tfvars
+
+# python
+**/dist
