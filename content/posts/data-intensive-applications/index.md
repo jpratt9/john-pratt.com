@@ -5,9 +5,9 @@ date: '2025-06-09'
 draft: false
 slug: '/designing-data-intensive-applications'
 tags:
-  - software engineering
+  - software-engineering
   - development
-  - software dev
+  - software-dev
   - sde
 ---
 

@@ -5,7 +5,7 @@ date: '2025-06-06'
 draft: false
 slug: '/inverted-index'
 tags:
-  - data structures
+  - data-structures
   - algorithms
 ---
 

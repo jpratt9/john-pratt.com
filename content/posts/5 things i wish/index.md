@@ -5,8 +5,8 @@ date: '2025-06-07'
 draft: false
 slug: '/5-things-i-wish'
 tags:
-  - dev tips
-  - software dev
+  - dev-tips
+  - software-dev
   - sde
 ---
 

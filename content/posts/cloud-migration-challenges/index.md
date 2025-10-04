@@ -6,7 +6,7 @@ draft: false
 slug: '/cloud-migration-challenges'
 tags:
   - cloud
-  - enterprise modernization
+  - enterprise-modernization
   - AWS
 ---
 

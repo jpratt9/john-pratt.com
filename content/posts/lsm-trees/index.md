@@ -5,8 +5,8 @@ date: '2025-06-09'
 draft: false
 slug: '/lsm-trees'
 tags:
-  - computer science
-  - data structures
+  - computer-science
+  - data-structures
   - databases
 ---
 

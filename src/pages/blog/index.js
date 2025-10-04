@@ -143,7 +143,7 @@ const BlogPage = ({ location, data }) => {
         <header>
           <h1 className="big-heading">Blog</h1>
           <p className="subtitle">
-            <a>Notes from the Field: Building, Thinking, Iterating</a>
+            <span>Notes from the Field: Building, Thinking, Iterating</span>
           </p>
         </header>
 
@@ -151,8 +151,7 @@ const BlogPage = ({ location, data }) => {
           {posts.length > 0 &&
             posts.map(({ node }, i) => {
               const { frontmatter } = node;
-              const { title, description, slug /*, date, tags */ } = frontmatter;
-              // const formattedDate = new Date(date).toLocaleDateString();
+              const { title, description, slug } = frontmatter;
 
               return (
                 <StyledPost key={i}>
@@ -166,10 +165,6 @@ const BlogPage = ({ location, data }) => {
                       </h5>
                       <p className="post__desc">{description}</p>
                     </header>
-
-                    <footer>
-                      {/* date/tags UI intentionally commented as before */}
-                    </footer>
                   </div>
                 </StyledPost>
               );

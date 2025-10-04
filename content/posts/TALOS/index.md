@@ -5,11 +5,11 @@ date: '2025-07-10'
 draft: false
 slug: '/talos'
 tags:
-  - solution architecture
+  - solution-architecture
   - terraform
   - AWS
   - AI
-  - large language models
+  - large-language-models
   
 ---
 

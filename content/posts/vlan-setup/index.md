@@ -6,7 +6,7 @@ draft: false
 slug: '/digital-media-case-study'
 tags:
   - consulting
-  - solution architecture
+  - solution-architecture
   - AWS
   - on-prem
 ---

@@ -9,54 +9,31 @@ import SEO from '@components/head';
 const StyledTagsContainer = styled.main`
   max-width: 1000px;
 
-  a {
-    ${({ theme }) => theme.mixins.inlineLink};
-  }
+  a { ${({ theme }) => theme.mixins.inlineLink}; }
 
   h1 {
     ${({ theme }) => theme.mixins.flexBetween};
     margin-bottom: 50px;
-
-    a {
-      font-size: var(--fz-lg);
-      font-weight: 400;
-    }
+    a { font-size: var(--fz-lg); font-weight: 400; }
   }
 
-  ul {
-    li {
-      font-size: 24px;
-      h2 {
-        font-size: inherit;
-        margin: 0;
-        a { color: var(--light-slate); }
-      }
-      .subtitle {
-        color: var(--slate);
-        font-size: var(--fz-sm);
-        .tag { margin-right: 10px; }
-      }
-    }
-  }
+  ul li { font-size: 24px; }
+  ul li h2 { font-size: inherit; margin: 0; }
+  ul li h2 a { color: var(--light-slate); }
+
+  .subtitle { color: var(--slate); font-size: var(--fz-sm); }
+  .subtitle .tag { margin-right: 10px; }
 `;
 
 const TagTemplate = ({ pageContext, data, location }) => {
-  const tag = pageContext?.tag;
-  const edges = data?.allMarkdownRemark?.edges ?? [];
+  const displayTag = pageContext?.tag ?? '';
+  const allEdges = data?.allMarkdownRemark?.edges ?? [];
 
-  // If Gatsby couldn't fetch page-data for some reason,
-  // avoid crashing the HTML build:
-  if (!data?.allMarkdownRemark) {
-    // Render a minimal shell (or <NotFound />) to keep the build going
-    return (
-      <Layout location={location}>
-        <main>
-          <h1>#{tag}</h1>
-          <p>No posts found for this tag.</p>
-        </main>
-      </Layout>
-    );
-  }
+  // Case-insensitive match of the tag against string tags[]
+  const edges = allEdges.filter(({ node }) => {
+    const tags = node.frontmatter?.tags || [];
+    return tags.some(t => (t || '').toLowerCase() === displayTag.toLowerCase());
+  });
 
   return (
     <Layout location={location}>
@@ -67,41 +44,37 @@ const TagTemplate = ({ pageContext, data, location }) => {
         </span>
 
         <h1>
-          <span>#{tag}</span>
-          <span>
-            <Link to="/blog/tags">View all tags</Link>
-          </span>
+          <span>#{displayTag}</span>
+          <span><Link to="/blog/tags">View all tags</Link></span>
         </h1>
 
-        <ul className="fancy-list">
-          {edges.map(({ node }) => {
-            const { title, slug, date, tags } = node.frontmatter;
-            return (
-              <li key={slug}>
-                <h2>
-                  <Link to={slug}>{title}</Link>
-                </h2>
-                <p className="subtitle">
-                  <time>
-                    {new Date(date).toLocaleDateString('en-US', {
-                      year: 'numeric',
-                      month: 'long',
-                      day: 'numeric',
-                    })}
-                  </time>
-                  <span>&nbsp;&mdash;&nbsp;</span>
-                  {tags &&
-                    tags.length > 0 &&
-                    tags.map((tag, i) => (
-                      <Link key={i} to={`/blog/tags/${kebabCase(tag)}/`} className="tag">
-                        #{tag}
+        {edges.length === 0 ? (
+          <p>No posts found for this tag.</p>
+        ) : (
+          <ul className="fancy-list">
+            {edges.map(({ node }) => {
+              const { title, slug, date, tags } = node.frontmatter;
+              return (
+                <li key={slug}>
+                  <h2><Link to={slug}>{title}</Link></h2>
+                  <p className="subtitle">
+                    <time>
+                      {new Date(date).toLocaleDateString('en-US', {
+                        year: 'numeric', month: 'long', day: 'numeric',
+                      })}
+                    </time>
+                    <span>&nbsp;&mdash;&nbsp;</span>
+                    {tags?.length > 0 && tags.map((t, i) => (
+                      <Link key={i} to={`/blog/tags/${kebabCase(t)}/`} className="tag">
+                        #{t}
                       </Link>
                     ))}
-                </p>
-              </li>
-            );
-          })}
-        </ul>
+                  </p>
+                </li>
+              );
+            })}
+          </ul>
+        )}
       </StyledTagsContainer>
     </Layout>
   );
@@ -109,4 +82,51 @@ const TagTemplate = ({ pageContext, data, location }) => {
 
 export default TagTemplate;
 
-TagTemplate.propTypes
+TagTemplate.propTypes = {
+  pageContext: PropTypes.shape({ tag: PropTypes.string.isRequired }),
+  data: PropTypes.shape({
+    allMarkdownRemark: PropTypes.shape({
+      edges: PropTypes.arrayOf(
+        PropTypes.shape({
+          node: PropTypes.shape({
+            frontmatter: PropTypes.shape({
+              title: PropTypes.string.isRequired,
+            }),
+          }),
+        }).isRequired,
+      ),
+    }),
+  }),
+  location: PropTypes.object,
+};
+
+export function Head({ location, pageContext }) {
+  const displayTag = pageContext?.tag;
+  return <SEO title={`Tagged: #${displayTag}`} pathname={location?.pathname} />;
+}
+
+// No variables - fetch posts once, filter in JS
+export const pageQuery = graphql`
+  {
+    allMarkdownRemark(
+      limit: 2000
+      sort: { frontmatter: { date: DESC } }
+      filter: {
+        fileAbsolutePath: { regex: "/content/posts/" }
+        frontmatter: { draft: { ne: true } }
+      }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            title
+            description
+            date
+            slug
+            tags
+          }
+        }
+      }
+    }
+  }
+`;

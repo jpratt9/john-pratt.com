@@ -5,8 +5,8 @@ date: '2025-06-06'
 draft: false
 slug: '/circuit-breakers'
 tags:
-  - design patterns
-  - software dev
+  - design-patterns
+  - software-dev
   - resiliency
 ---
 

@@ -26,32 +26,31 @@ const StyledTagsContainer = styled.main`
   }
 `;
 
-const TagsPage = ({
-  data: {
-    allMarkdownRemark: { group },
-  },
-  location,
-}) => (
-  <Layout location={location}>
-    <StyledTagsContainer>
-      <span className="breadcrumb">
-        <span className="arrow">&larr;</span>
-        <Link to="/blog">All blog posts</Link>
-      </span>
+const TagsPage = ({ data, location }) => {
+  const group = data?.allMarkdownRemark?.group ?? [];
 
-      <h1>Tags</h1>
-      <ul className="fancy-list">
-        {group.map(tag => (
-          <li key={tag.fieldValue}>
-            <Link to={`/blog/tags/${kebabCase(tag.fieldValue)}/`} className="inline-link">
-              {tag.fieldValue} <span className="count">({tag.totalCount})</span>
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </StyledTagsContainer>
-  </Layout>
-);
+  return (
+    <Layout location={location}>
+      <StyledTagsContainer>
+        <span className="breadcrumb">
+          <span className="arrow">&larr;</span>
+          <Link to="/blog">All blog posts</Link>
+        </span>
+
+        <h1>Tags</h1>
+        <ul className="fancy-list">
+          {group.map(tag => (
+            <li key={tag.fieldValue}>
+              <Link to={`/blog/tags/${kebabCase(tag.fieldValue)}/`} className="inline-link">
+                {tag.fieldValue} <span className="count">({tag.totalCount})</span>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </StyledTagsContainer>
+    </Layout>
+  );
+};
 
 TagsPage.propTypes = {
   data: PropTypes.shape({
@@ -75,8 +74,14 @@ export function Head({ location }) {
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(limit: 2000, filter: { frontmatter: { draft: { ne: true } } }) {
-      group(field: {frontmatter: {tags: SELECT}}) {
+    allMarkdownRemark(
+      limit: 2000
+      filter: {
+        fileAbsolutePath: { regex: "/content/posts/" }
+        frontmatter: { draft: { ne: true } }
+      }
+    ) {
+      group(field: { frontmatter: { tags: SELECT } }) {
         fieldValue
         totalCount
       }
