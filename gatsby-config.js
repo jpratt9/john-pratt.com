@@ -1,4 +1,3 @@
-const isProd = process.env.NODE_ENV === 'production'
 const config = require('./src/config');
 const adapter = require("gatsby-adapter-netlify").default
 
@@ -12,13 +11,13 @@ module.exports = {
     image: '/og.png', // Path to your image you placed in the 'static' folder
   },
   plugins: [
+    'gatsby-plugin-preact',
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-robots-txt`,
-    (isProd ? ['gatsby-plugin-preact'] : []),
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
