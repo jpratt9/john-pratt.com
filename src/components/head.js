@@ -1,46 +1,39 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Helmet } from 'react-helmet';
-import { useLocation } from '@reach/router';
 import { useStaticQuery, graphql } from 'gatsby';
 
-// https://www.gatsbyjs.com/docs/add-seo-component/
-
-const Head = ({ title, description, image }) => {
-  const { pathname } = useLocation();
-
-  const { site } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            defaultTitle: title
-            defaultDescription: description
-            siteUrl
-            defaultImage: image
-          }
+export default function Head({ title, description, image, pathname }) {
+  const { site } = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          defaultTitle: title
+          defaultDescription: description
+          siteUrl
+          defaultImage: image
         }
       }
-    `,
-  );
+    }
+  `);
 
-  const {
-    defaultTitle,
-    defaultDescription,
-    siteUrl,
-    defaultImage,
-  } = site.siteMetadata;
+  const { defaultTitle, defaultDescription, siteUrl, defaultImage } =
+    site.siteMetadata;
 
   const seo = {
     title: title || defaultTitle,
     description: description || defaultDescription,
     image: `${siteUrl}${image || defaultImage}`,
-    url: `${siteUrl}${pathname}`,
+    url: `${siteUrl}${pathname || ''}`,
   };
 
+  const fullTitle = title ? `${title} | ${defaultTitle}` : defaultTitle;
+
   return (
-    <Helmet title={title} defaultTitle={seo.title} titleTemplate={`%s | ${defaultTitle}`}>
+    <>
+      {/* Head API supports editing <html> attributes */}
       <html lang="en" />
+
+      <title>{fullTitle}</title>
 
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
@@ -51,21 +44,24 @@ const Head = ({ title, description, image }) => {
       <meta property="og:url" content={seo.url} />
       <meta property="og:type" content="website" />
 
-      <meta name="google-site-verification" content="DCl7VAf9tcz6eD9gb67NfkNnJ1PKRNcg8qQiwpbx9Lk" />
-    </Helmet>
+      <meta
+        name="google-site-verification"
+        content="DCl7VAf9tcz6eD9gb67NfkNnJ1PKRNcg8qQiwpbx9Lk"
+      />
+    </>
   );
-};
-
-export default Head;
+}
 
 Head.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
   image: PropTypes.string,
+  pathname: PropTypes.string, // <-- passed in from page Head
 };
 
 Head.defaultProps = {
   title: null,
   description: null,
   image: null,
+  pathname: '',
 };

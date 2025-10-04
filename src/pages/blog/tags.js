@@ -2,25 +2,20 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 import kebabCase from 'lodash/kebabCase';
 import PropTypes from 'prop-types';
-import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
 import { Layout } from '@components';
+import SEO from '@components/head'; // ✅ add this
 
 const StyledTagsContainer = styled.main`
   max-width: 1000px;
 
-  h1 {
-    margin-bottom: 50px;
-  }
+  h1 { margin-bottom: 50px; }
   ul {
     color: var(--light-slate);
-
     li {
       font-size: var(--fz-xxl);
-
       a {
         color: var(--light-slate);
-
         .count {
           color: var(--slate);
           font-family: var(--font-mono);
@@ -38,12 +33,10 @@ const TagsPage = ({
   location,
 }) => (
   <Layout location={location}>
-    <Helmet title="Tags" />
-
     <StyledTagsContainer>
       <span className="breadcrumb">
         <span className="arrow">&larr;</span>
-        <Link to="/blog">All memories</Link>
+        <Link to="/blog">All blog posts</Link>
       </span>
 
       <h1>Tags</h1>
@@ -70,16 +63,15 @@ TagsPage.propTypes = {
         }).isRequired,
       ),
     }),
-    site: PropTypes.shape({
-      siteMetadata: PropTypes.shape({
-        title: PropTypes.string.isRequired,
-      }),
-    }),
   }),
   location: PropTypes.object,
 };
 
 export default TagsPage;
+
+export function Head({ location }) {
+  return <SEO title="Tags" pathname={location?.pathname} />;
+}
 
 export const pageQuery = graphql`
   query {

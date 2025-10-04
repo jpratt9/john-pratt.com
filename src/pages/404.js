@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'gatsby';
-import { Helmet } from 'react-helmet';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { navDelay } from '@utils';
 import { Layout } from '@components';
 import { usePrefersReducedMotion } from '@hooks';
+import SEO from '@components/head'; // ⬅️ add this
 
 const StyledMainContainer = styled.main`
   ${({ theme }) => theme.mixins.flexCenter};
@@ -32,13 +32,10 @@ const NotFoundPage = ({ location }) => {
   const prefersReducedMotion = usePrefersReducedMotion();
 
   useEffect(() => {
-    if (prefersReducedMotion) {
-      return;
-    }
-
+    if (prefersReducedMotion) return;
     const timeout = setTimeout(() => setIsMounted(true), navDelay);
     return () => clearTimeout(timeout);
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const content = (
     <StyledMainContainer className="fillHeight">
@@ -50,8 +47,6 @@ const NotFoundPage = ({ location }) => {
 
   return (
     <Layout location={location}>
-      <Helmet title="Page Not Found" />
-
       {prefersReducedMotion ? (
         <>{content}</>
       ) : (
@@ -72,3 +67,7 @@ NotFoundPage.propTypes = {
 };
 
 export default NotFoundPage;
+
+export function Head({ location }) {
+  return <SEO title="Page Not Found" pathname={location?.pathname} />;
+}

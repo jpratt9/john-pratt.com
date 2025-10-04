@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Helmet } from 'react-helmet';
 import PropTypes from 'prop-types';
 import { createTimeline, svg } from 'animejs';
 import styled from 'styled-components';
@@ -29,9 +28,7 @@ const StyledLoader = styled.div`
       margin: 0 auto;
       fill: none;
       user-select: none;
-      #B {
-        opacity: 0;
-      }
+      #B { opacity: 0; }
     }
   }
 `;
@@ -41,28 +38,28 @@ const Loader = ({ finishLoading }) => {
 
   const animateLogo = () => {
     const loader = createTimeline({
-      onComplete: () => finishLoading(), // v4 timeline callback name
+      onComplete: () => finishLoading(),
     });
 
-    // 1) Draw the logo paths using the new drawable + `draw` property
+    // 1) draw the logo paths (v4 "draw" replaces setDashoffset)
     loader.add(
-      svg.createDrawable('#logo path'), // returns drawable proxies
+      svg.createDrawable('#logo path'),
       {
         delay: 300,
         duration: 1500,
         ease: 'inOutQuart',
-        draw: '0 1', // replaces strokeDashoffset + setDashoffset
+        draw: '0 1',
       }
     );
 
-    // 2) Fade in the #B part
+    // 2) fade in the "B"
     loader.add('#logo #B', {
       duration: 700,
       ease: 'inOutQuart',
       opacity: 1,
     });
 
-    // 3) Fade/scale out the whole logo
+    // 3) fade + scale out logo
     loader.add('#logo', {
       delay: 500,
       duration: 300,
@@ -71,7 +68,7 @@ const Loader = ({ finishLoading }) => {
       scale: 0.1,
     });
 
-    // 4) Hide the loader container
+    // 4) hide the loader container
     loader.add('.loader', {
       duration: 200,
       ease: 'inOutQuart',
@@ -81,15 +78,21 @@ const Loader = ({ finishLoading }) => {
   };
 
   useEffect(() => {
+    document.body.classList.add('hidden');
     const timeout = setTimeout(() => setIsMounted(true), 10);
-    animateLogo();
-    return () => clearTimeout(timeout);
+    return () => {
+      clearTimeout(timeout);
+      document.body.classList.remove('hidden');
+    };
   }, []);
+
+  // Start the animation once mounted (ensures DOM is ready)
+  useEffect(() => {
+    if (isMounted) animateLogo();
+  }, [isMounted]);
 
   return (
     <StyledLoader className="loader" isMounted={isMounted}>
-      <Helmet bodyAttributes={{ class: `hidden` }} />
-
       <div className="logo-wrapper">
         <IconLoader />
       </div>
