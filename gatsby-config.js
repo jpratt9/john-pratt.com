@@ -138,15 +138,15 @@ module.exports = {
       options: {
         trackingIds: ['G-ZFHREMYV1Q'],
         gtagConfig: {
-          anonymize_ip: true,      // replaces old "anonymize"
+          anonymize_ip: true,
           send_page_view: false,   // set true/omit if you want the default auto pageview
         },
 
         // Plugin-level config
         pluginConfig: {
-          head: true,              // replaces old "head"
-          respectDNT: true,        // replaces old "respectDNT"
-          exclude: ["/preview/**"],// replaces old "exclude"
+          head: true,
+          respectDNT: true,
+          exclude: ["/preview/**"],
           delayOnRouteUpdate: 0,
         },
       },
