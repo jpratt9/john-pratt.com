@@ -61,7 +61,6 @@ module.exports = {
               maxWidth: 700,
               linkImagesToOriginal: true,
               quality: 90,
-              // ✅ replace tracedSVG with a fixed brand background color
               backgroundColor: config.colors.green,
             },
           },

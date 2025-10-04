@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Layout } from '@components';
 import { IconBookmark } from '@components/icons';
-import SEO from '@components/head'; // ✅ add this
+import SEO from '@components/head';
 
 const StyledMainContainer = styled.main`
   & > header {
