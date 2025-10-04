@@ -17,7 +17,6 @@
     "npm": ">=11.6.0"
   },
   "scripts": {
-    "prebuild": "npm ci",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
