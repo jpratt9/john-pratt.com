@@ -134,10 +134,23 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
         trackingId: 'UA-45666519-2',
+        gtagConfig: {
+          anonymize_ip: true,      // replaces old "anonymize"
+          send_page_view: false,   // set true/omit if you want the default auto pageview
+        },
+
+        // Plugin-level config
+        pluginConfig: {
+          head: true,              // replaces old "head"
+          respectDNT: true,        // replaces old "respectDNT"
+          exclude: ["/preview/**"],// replaces old "exclude"
+          delayOnRouteUpdate: 0,
+        },
       },
+      
     },
   ],
 };
