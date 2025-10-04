@@ -1,3 +1,4 @@
+const isProd = process.env.NODE_ENV === 'production'
 const config = require('./src/config');
 const adapter = require("gatsby-adapter-netlify").default
 
@@ -17,6 +18,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-robots-txt`,
+    (isProd ? ['gatsby-plugin-preact'] : []),
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
