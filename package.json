@@ -17,7 +17,7 @@
     "npm": ">=11.6.0"
   },
   "scripts": {
-    "build": "rm -rf node_modules/ package-lock.json .cache; npm cache clean --force; gatsby build",
+    "build": "rm -rf node_modules/ package-lock.json .cache; npm cache clean --force; npm i --force; gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
