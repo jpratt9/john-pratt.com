@@ -36,14 +36,15 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   posts.forEach(({ node }) => {
     const pathFromFM = node.frontmatter?.slug;
     if (!pathFromFM) return;
+
     createPage({
       path: pathFromFM,
       component: postTemplate,
-      context: { slug: pathFromFM },
+      context: { slug: pathFromFM }, // must match $slug in post template query
     });
   });
 
-  // Build a map: kebab-case tag -> Set of original-casing variants
+  // Derive tags from the same posts so every tag page has data
   const tagsByKey = new Map();
   posts.forEach(({ node }) => {
     const tags = node.frontmatter?.tags || [];
@@ -51,23 +52,55 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       if (typeof t !== 'string') return;
       const raw = t.trim();
       if (!raw) return;
-      const key = _.kebabCase(raw);      // one URL per kebab-cased tag
+      const key = _.kebabCase(raw);
       if (!tagsByKey.has(key)) tagsByKey.set(key, new Set());
-      tagsByKey.get(key).add(raw);       // store original variants
+      tagsByKey.get(key).add(raw);
     });
   });
 
-  // Create one page per kebab tag, pass all original variants for filtering
+  // Create one page per kebab-cased tag
   for (const [key, set] of tagsByKey.entries()) {
     const variants = Array.from(set);
-    const display = variants[0]; // choose one for the H1
+    const display = variants[0]; // pick one for the H1
     createPage({
       path: `/blog/tags/${key}/`,
       component: tagTemplate,
       context: {
         tag: display,
-        tagVariants: variants,    // <-- used by `in: $tagVariants` in the template
       },
     });
   }
+};
+
+// Add Webpack aliases + skip browser-only libs during SSR
+exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+  // Skip modules that reference window/document during SSR
+  if (stage === 'build-html' || stage === 'develop-html') {
+    actions.setWebpackConfig({
+      module: {
+        rules: [
+          { test: /scrollreveal/, use: loaders.null() },
+          { test: /animejs/, use: loaders.null() },
+          { test: /miniraf/, use: loaders.null() },
+        ],
+      },
+    });
+  }
+
+  // Make alias imports like @components/... work in all stages
+  actions.setWebpackConfig({
+    resolve: {
+      alias: {
+        '@components': path.resolve(__dirname, 'src/components'),
+        '@config': path.resolve(__dirname, 'src/config.js'), // file is src/config.js
+        '@fonts': path.resolve(__dirname, 'src/fonts'),
+        '@hooks': path.resolve(__dirname, 'src/hooks'),
+        '@images': path.resolve(__dirname, 'src/images'),
+        '@pages': path.resolve(__dirname, 'src/pages'),
+        '@styles': path.resolve(__dirname, 'src/styles'),
+        '@utils': path.resolve(__dirname, 'src/utils'),
+      },
+      extensions: ['.mjs', '.js', '.jsx', '.ts', '.tsx', '.json'],
+    },
+  });
 };
