@@ -16,52 +16,44 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     {
       postsRemark: allMarkdownRemark(
         filter: { fileAbsolutePath: { regex: "/content/posts/" } }
-        sort: { order: DESC, fields: [frontmatter___date] }
+        sort: {frontmatter: {date: DESC}}
         limit: 1000
       ) {
         edges {
           node {
-            frontmatter {
-              slug
-            }
+            frontmatter { slug }
           }
         }
       }
       tagsGroup: allMarkdownRemark(limit: 2000) {
-        group(field: frontmatter___tags) {
-          fieldValue
-        }
+        group(field: {frontmatter: {tags: SELECT}}) { fieldValue }
       }
     }
   `);
 
-  // Handle errors
   if (result.errors) {
     reporter.panicOnBuild(`Error while running GraphQL query.`);
     return;
   }
 
-  // Create post detail pages
   const posts = result.data.postsRemark.edges;
 
+  // use `node` INSIDE the loop, and pass it via `context`
   posts.forEach(({ node }) => {
+    const pathFromFM = node.frontmatter.slug; // e.g. "/cloud-migration-challenges"
     createPage({
-      path: node.frontmatter.slug,
+      path: pathFromFM,
       component: postTemplate,
-      context: {},
+      context: { path: pathFromFM }, // must match $path in your page query
     });
   });
 
-  // Extract tag data from query
   const tags = result.data.tagsGroup.group;
-  // Make tag pages
   tags.forEach(tag => {
     createPage({
       path: `/blog/tags/${_.kebabCase(tag.fieldValue)}/`,
       component: tagTemplate,
-      context: {
-        tag: tag.fieldValue,
-      },
+      context: { tag: tag.fieldValue },
     });
   });
 };
