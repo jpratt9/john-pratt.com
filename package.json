@@ -67,7 +67,8 @@
     "react-dom": "^18.0.0",
     "react-transition-group": "^4.4.5",
     "scrollreveal": "^4.0.9",
-    "styled-components": "^6.1.19"
+    "styled-components": "^6.1.19",
+    "webpack": "^5.102.0"
   },
   "devDependencies": {
     "@babel/core": "^7.28.4",
