@@ -5,7 +5,7 @@ date: '2025-06-06'
 draft: false
 slug: '/breaking-prod'
 tags:
-  - data structures
+  - data-structures
   - algorithms
   - databases
   - data

@@ -5,7 +5,7 @@ date: '2025-06-06'
 draft: false
 slug: '/hyperloglogs'
 tags:
-  - data structures
+  - data-structures
   - algorithms
   - databases
   - data

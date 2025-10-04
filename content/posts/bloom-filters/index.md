@@ -6,7 +6,7 @@ draft: false
 slug: '/bloom-filters'
 tags:
   - computing
-  - data structures
+  - data-structures
   - databases
   - python
 ---

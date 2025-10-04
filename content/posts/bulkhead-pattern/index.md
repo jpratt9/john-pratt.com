@@ -5,9 +5,9 @@ date: '2025-06-07'
 draft: false
 slug: '/bulkhead-pattern'
 tags:
-  - software dev
-  - resiliency patterns
-  - error handling
+  - software-dev
+  - resiliency-patterns
+  - error-handling
 ---
 
 ![Bulkhead Pattern](./bulkhead.png)
