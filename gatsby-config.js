@@ -1,6 +1,8 @@
 const config = require('./src/config');
+const adapter = require("gatsby-adapter-netlify").default
 
 module.exports = {
+  adapter: adapter(),
   siteMetadata: {
     title: 'John Pratt',
     description:
