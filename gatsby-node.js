@@ -44,7 +44,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     createPage({
       path: pathFromFM,
       component: postTemplate,
-      context: { path: pathFromFM }, // must match $path in your page query
+      context: { slug: pathFromFM }, // must match $path in your page query
     });
   });
 
