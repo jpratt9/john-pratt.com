@@ -136,7 +136,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingIds: ['UA-45666519-2'],
+        trackingIds: ['G-ZFHREMYV1Q'],
         gtagConfig: {
           anonymize_ip: true,      // replaces old "anonymize"
           send_page_view: false,   // set true/omit if you want the default auto pageview
