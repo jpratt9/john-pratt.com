@@ -2,9 +2,9 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 import kebabCase from 'lodash/kebabCase';
 import PropTypes from 'prop-types';
-import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
 import { Layout } from '@components';
+import SEO from '@components/head';
 
 const StyledTagsContainer = styled.main`
   max-width: 1000px;
@@ -29,34 +29,41 @@ const StyledTagsContainer = styled.main`
       h2 {
         font-size: inherit;
         margin: 0;
-        a {
-          color: var(--light-slate);
-        }
+        a { color: var(--light-slate); }
       }
       .subtitle {
         color: var(--slate);
         font-size: var(--fz-sm);
-
-        .tag {
-          margin-right: 10px;
-        }
+        .tag { margin-right: 10px; }
       }
     }
   }
 `;
 
 const TagTemplate = ({ pageContext, data, location }) => {
-  const { tag } = pageContext;
-  const { edges } = data.allMarkdownRemark;
+  const tag = pageContext?.tag;
+  const edges = data?.allMarkdownRemark?.edges ?? [];
+
+  // If Gatsby couldn't fetch page-data for some reason,
+  // avoid crashing the HTML build:
+  if (!data?.allMarkdownRemark) {
+    // Render a minimal shell (or <NotFound />) to keep the build going
+    return (
+      <Layout location={location}>
+        <main>
+          <h1>#{tag}</h1>
+          <p>No posts found for this tag.</p>
+        </main>
+      </Layout>
+    );
+  }
 
   return (
     <Layout location={location}>
-      <Helmet title={`Tagged: #${tag}`} />
-
       <StyledTagsContainer>
         <span className="breadcrumb">
           <span className="arrow">&larr;</span>
-          <Link to="/blog">All memories</Link>
+          <Link to="/blog">All blog posts</Link>
         </span>
 
         <h1>
@@ -102,46 +109,4 @@ const TagTemplate = ({ pageContext, data, location }) => {
 
 export default TagTemplate;
 
-TagTemplate.propTypes = {
-  pageContext: PropTypes.shape({
-    tag: PropTypes.string.isRequired,
-  }),
-  data: PropTypes.shape({
-    allMarkdownRemark: PropTypes.shape({
-      totalCount: PropTypes.number.isRequired,
-      edges: PropTypes.arrayOf(
-        PropTypes.shape({
-          node: PropTypes.shape({
-            frontmatter: PropTypes.shape({
-              title: PropTypes.string.isRequired,
-            }),
-          }),
-        }).isRequired,
-      ),
-    }),
-  }),
-  location: PropTypes.object,
-};
-
-export const pageQuery = graphql`
-  query($tag: String!) {
-    allMarkdownRemark(
-      limit: 2000
-      sort: {frontmatter: {date: DESC}}
-      filter: {frontmatter: {tags: {in: [$tag]}}}
-    ) {
-      totalCount
-      edges {
-        node {
-          frontmatter {
-            title
-            description
-            date
-            slug
-            tags
-          }
-        }
-      }
-    }
-  }
-`;
+TagTemplate.propTypes

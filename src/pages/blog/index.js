@@ -2,10 +2,10 @@ import React from 'react';
 import { graphql, Link } from 'gatsby';
 import kebabCase from 'lodash/kebabCase';
 import PropTypes from 'prop-types';
-import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
 import { Layout } from '@components';
 import { IconBookmark } from '@components/icons';
+import SEO from '@components/head'; // ✅ add this
 
 const StyledMainContainer = styled.main`
   & > header {
@@ -138,15 +138,12 @@ const BlogPage = ({ location, data }) => {
 
   return (
     <Layout location={location}>
-      <Helmet title="Blog" />
 
       <StyledMainContainer>
         <header>
           <h1 className="big-heading">Blog</h1>
           <p className="subtitle">
-            <a>
-            Notes from the Field: Building, Thinking, Iterating
-            </a>
+            <a>Notes from the Field: Building, Thinking, Iterating</a>
           </p>
         </header>
 
@@ -154,8 +151,8 @@ const BlogPage = ({ location, data }) => {
           {posts.length > 0 &&
             posts.map(({ node }, i) => {
               const { frontmatter } = node;
-              const { title, description, slug, date, tags } = frontmatter;
-              const formattedDate = new Date(date).toLocaleDateString();
+              const { title, description, slug /*, date, tags */ } = frontmatter;
+              // const formattedDate = new Date(date).toLocaleDateString();
 
               return (
                 <StyledPost key={i}>
@@ -171,16 +168,7 @@ const BlogPage = ({ location, data }) => {
                     </header>
 
                     <footer>
-                      {/* <span className="post__date">{formattedDate}</span> */}
-                      {/* <ul className="post__tags">
-                        {tags.map((tag, i) => (
-                          <li key={i}>
-                            <Link to={`/blog/tags/${kebabCase(tag)}/`} className="inline-link">
-                              #{tag}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul> */}
+                      {/* date/tags UI intentionally commented as before */}
                     </footer>
                   </div>
                 </StyledPost>
@@ -198,6 +186,16 @@ BlogPage.propTypes = {
 };
 
 export default BlogPage;
+
+export function Head({ location }) {
+  return (
+    <SEO
+      title="Blog"
+      description="Notes from the Field: Building, Thinking, Iterating"
+      pathname={location?.pathname}
+    />
+  );
+}
 
 export const pageQuery = graphql`
   {

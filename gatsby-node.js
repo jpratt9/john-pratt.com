@@ -1,3 +1,4 @@
+// gatsby-node.js
 /*
  * Implement Gatsby's Node APIs in this file.
  *
@@ -16,17 +17,17 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     {
       postsRemark: allMarkdownRemark(
         filter: { fileAbsolutePath: { regex: "/content/posts/" } }
-        sort: {frontmatter: {date: DESC}}
+        sort: { frontmatter: { date: DESC } }
         limit: 1000
       ) {
         edges {
           node {
-            frontmatter { slug }
+            frontmatter {
+              slug
+              tags
+            }
           }
         }
-      }
-      tagsGroup: allMarkdownRemark(limit: 2000) {
-        group(field: {frontmatter: {tags: SELECT}}) { fieldValue }
       }
     }
   `);
@@ -36,31 +37,47 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     return;
   }
 
-  const posts = result.data.postsRemark.edges;
+  const posts = result.data.postsRemark?.edges || [];
 
-  // use `node` INSIDE the loop, and pass it via `context`
+  // Create individual post pages
   posts.forEach(({ node }) => {
-    const pathFromFM = node.frontmatter.slug; // e.g. "/cloud-migration-challenges"
+    const pathFromFM = node.frontmatter?.slug;
+    if (!pathFromFM) return;
+
     createPage({
       path: pathFromFM,
       component: postTemplate,
-      context: { slug: pathFromFM }, // must match $path in your page query
+      context: { slug: pathFromFM }, // match $slug in your post template query
     });
   });
 
-  const tags = result.data.tagsGroup.group;
-  tags.forEach(tag => {
+  // Derive tags from the posts we just queried to avoid mismatches
+  const tagSet = new Set();
+  posts.forEach(({ node }) => {
+    const tags = node.frontmatter?.tags;
+    if (Array.isArray(tags)) {
+      tags.forEach((t) => {
+        if (typeof t === 'string' && t.trim()) {
+          tagSet.add(t.trim()); // preserve original case for exact GraphQL match
+        }
+      });
+    }
+  });
+
+  // Create tag pages only for tags that actually exist on posts
+  Array.from(tagSet).forEach((rawTag) => {
     createPage({
-      path: `/blog/tags/${_.kebabCase(tag.fieldValue)}/`,
+      path: `/blog/tags/${_.kebabCase(rawTag)}/`,
       component: tagTemplate,
-      context: { tag: tag.fieldValue },
+      context: { tag: rawTag }, // must match $tag in src/templates/tag.js
     });
   });
 };
 
-// https://www.gatsbyjs.org/docs/node-apis/#onCreateWebpackConfig
+// https://www.gatsbyjs.org/docs/oncreatewebpackconfig/
+// Fix third-party modules for SSR + provide aliases
 exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
-  // https://www.gatsbyjs.org/docs/debugging-html-builds/#fixing-third-party-modules
+  // Avoid SSR issues for browser-only libs
   if (stage === 'build-html' || stage === 'develop-html') {
     actions.setWebpackConfig({
       module: {
