@@ -152,7 +152,6 @@ ArchivePage.propTypes = {
 
 export default ArchivePage;
 
-// ✅ Page Head using your shared SEO component
 export function Head({ location }) {
   return (
     <SEO

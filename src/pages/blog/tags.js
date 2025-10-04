@@ -4,7 +4,7 @@ import kebabCase from 'lodash/kebabCase';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Layout } from '@components';
-import SEO from '@components/head'; // ✅ add this
+import SEO from '@components/head';
 
 const StyledTagsContainer = styled.main`
   max-width: 1000px;
