@@ -12,7 +12,6 @@ module.exports = {
     image: '/og.png', // Path to your image you placed in the 'static' folder
   },
   plugins: [
-    `gatsby-plugin-loadable-components-ssr`,
     `gatsby-plugin-preact`,
     {
       resolve: `gatsby-plugin-styled-components`,
