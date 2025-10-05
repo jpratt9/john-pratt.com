@@ -1,5 +1,6 @@
 const config = require('./src/config');
 const adapter = require("gatsby-adapter-netlify").default
+const isAnalyze = process.env.ANALYZE_BUNDLE === 'true';
 
 module.exports = {
   adapter: adapter(),
@@ -19,14 +20,12 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-robots-txt`,
-    {
-      resolve: `gatsby-plugin-webpack-bundle-analyser-v2`,
-      options: {
-        analyzerMode: `static`,
-        reportFilename: `report.html`,
-        openAnalyzer: false
-      }
-    },
+    ...(isAnalyze
+      ? [{
+          resolve: 'gatsby-plugin-webpack-bundle-analyser-v2',
+          options: { analyzerMode: 'static', openAnalyzer: false, reportFilename: 'report.html' }
+        }]
+    : []),
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
