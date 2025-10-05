@@ -24,7 +24,7 @@ module.exports = {
         ssr: true,
         disableVendorPrefixes: true
       }
-    }
+    },
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
