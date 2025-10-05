@@ -4,7 +4,7 @@ import { CSSTransition } from 'react-transition-group';
 import styled from 'styled-components';
 import { srConfig } from '@config';
 import { KEY_CODES } from '@utils';
-import sr from '@utils/sr';
+import { getSr } from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
 
 const StyledCertsSection = styled.section`
@@ -301,7 +301,11 @@ const Certs = () => {
 
   useEffect(() => {
     if (!prefersReducedMotion) {
-      sr.reveal(revealContainer.current, srConfig());
+      let mounted = true;
+      getSr().then((sr) => {
+        if (mounted && sr) sr.reveal(revealContainer.current, srConfig());
+      });
+      return () => { mounted = false };
     }
   }, [prefersReducedMotion]);
 

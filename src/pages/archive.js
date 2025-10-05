@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { srConfig } from '@config';
-import sr from '@utils/sr';
+import { getSr } from '@utils/sr'; // ⬅️ changed
 import { Layout } from '@components';
 import { Icon } from '@components/icons';
 import { usePrefersReducedMotion } from '@hooks';
@@ -61,10 +61,28 @@ const ArchivePage = ({ location, data }) => {
 
   useEffect(() => {
     if (prefersReducedMotion) return;
-    sr.reveal(revealTitle.current, srConfig());
-    sr.reveal(revealTable.current, srConfig(200, 0));
-    revealProjects.current.forEach((ref, i) => sr.reveal(ref, srConfig(i * 10)));
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
+    let mounted = true;
+
+    (async () => {
+      const sr = await getSr(); // dynamically load scrollreveal on the client only
+      if (!mounted || !sr) return;
+
+      if (revealTitle.current) {
+        sr.reveal(revealTitle.current, srConfig());
+      }
+      if (revealTable.current) {
+        sr.reveal(revealTable.current, srConfig(200, 0));
+      }
+      revealProjects.current.forEach((ref, i) => {
+        if (ref) sr.reveal(ref, srConfig(i * 10));
+      });
+    })();
+
+    return () => {
+      mounted = false;
+    };
+  }, [prefersReducedMotion]);
 
   return (
     <Layout location={location}>

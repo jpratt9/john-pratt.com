@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import { srConfig, email } from '@config';
-import sr from '@utils/sr';
+import { getSr } from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
 
 const StyledContactSection = styled.section`
@@ -50,7 +50,11 @@ const Contact = () => {
       return;
     }
 
-    sr.reveal(revealContainer.current, srConfig());
+    let mounted = true;
+    getSr().then((sr) => {
+      if (mounted && sr) sr.reveal(revealContainer.current, srConfig());
+    });
+    return () => { mounted = false };
   }, []);
 
   return (

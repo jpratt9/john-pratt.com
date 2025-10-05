@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
-import sr from '@utils/sr';
+import { getSr } from '@utils/sr';
 import { srConfig } from '@config';
 import { Icon } from '@components/icons';
 import { usePrefersReducedMotion } from '@hooks';
@@ -327,13 +327,12 @@ const StyledProject = styled.li`
   }
 `;
 
-
 const Featured = () => {
   const data = useStaticQuery(graphql`
     {
       featured: allMarkdownRemark(
         filter: { fileAbsolutePath: { regex: "/content/featured/" } }
-        sort: {frontmatter: {date: ASC}}
+        sort: { frontmatter: { date: ASC } }
       ) {
         edges {
           node {
@@ -362,13 +361,27 @@ const Featured = () => {
   const prefersReducedMotion = usePrefersReducedMotion();
 
   useEffect(() => {
-    if (prefersReducedMotion) {
-      return;
-    }
+    if (prefersReducedMotion) return;
 
-    sr.reveal(revealTitle.current, srConfig());
-    revealProjects.current.forEach((ref, i) => sr.reveal(ref, srConfig(i * 100)));
-  }, []);
+    let mounted = true;
+
+    (async () => {
+      const sr = await getSr(); // dynamically loads scrollreveal only in the browser
+      if (!mounted || !sr) return;
+
+      if (revealTitle.current) {
+        sr.reveal(revealTitle.current, srConfig());
+      }
+
+      revealProjects.current.forEach((ref, i) => {
+        if (ref) sr.reveal(ref, srConfig(i * 100));
+      });
+    })();
+
+    return () => {
+      mounted = false;
+    };
+  }, [prefersReducedMotion]); // re-check if user toggles reduced motion
 
   return (
     <section id="projects">
@@ -387,7 +400,10 @@ const Featured = () => {
               <StyledProject key={i} ref={el => (revealProjects.current[i] = el)}>
                 <div className="project-content">
                   <div>
-                    <h3 className="project-title" style={{ fontStyle: classified ? 'italic' : 'normal' }}>
+                    <h3
+                      className="project-title"
+                      style={{ fontStyle: classified ? 'italic' : 'normal' }}
+                    >
                       <a href={external}>{title}</a>
                     </h3>
 
