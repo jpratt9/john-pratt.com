@@ -1,7 +1,7 @@
 const config = require('./src/config');
 const adapter = require("gatsby-adapter-netlify").default
 const isAnalyze = process.env.ANALYZE_BUNDLE === 'true';
-
+ 
 module.exports = { 
   adapter: adapter(),
   siteMetadata: {
