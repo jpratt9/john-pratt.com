@@ -1,15 +1,14 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Layout, Hero } from '@components';
-import loadable from '@loadable/component';
 
-const About    = loadable(() => import('@components/sections/about'    /* webpackChunkName: "about"    , webpackPrefetch: true */));
-const Jobs     = loadable(() => import('@components/sections/jobs'     /* webpackChunkName: "jobs"     , webpackPrefetch: true */));
-const Featured = loadable(() => import('@components/sections/featured' /* webpackChunkName: "featured" , webpackPrefetch: true */));
-const Certs    = loadable(() => import('@components/sections/certs'    /* webpackChunkName: "certs"    , webpackPrefetch: true */));
-const Projects = loadable(() => import('@components/sections/projects' /* webpackChunkName: "projects" , webpackPrefetch: true */));
-const Contact  = loadable(() => import('@components/sections/contact'  /* webpackChunkName: "contact"  , webpackPrefetch: true */));
+const About = lazy(() => import('@components/sections/about' /* webpackChunkName: "about", webpackPrefetch: true */));
+const Jobs = lazy(() => import('@components/sections/jobs' /* webpackChunkName: "jobs", webpackPrefetch: true */));
+const Featured = lazy(() => import('@components/sections/featured' /* webpackChunkName: "featured", webpackPrefetch: true */));
+const Certs = lazy(() => import('@components/sections/certs' /* webpackChunkName: "certs", webpackPrefetch: true */));
+const Projects = lazy(() => import('@components/sections/projects' /* webpackChunkName: "projects", webpackPrefetch: true */));
+const Contact = lazy(() => import('@components/sections/contact' /* webpackChunkName: "contact", webpackPrefetch: true */));
 
 const StyledMainContainer = styled.main`
   counter-reset: section;
@@ -19,12 +18,14 @@ const IndexPage = ({ location }) => (
   <Layout location={location}>
     <StyledMainContainer className="fillHeight">
       <Hero />
-      <About />
-      <Jobs />
-      <Featured />
-      <Certs />
-      <Projects />
-      <Contact />
+      <Suspense fallback={null}>
+        <About />
+        <Jobs />
+        <Featured />
+        <Certs />
+        <Projects />
+        <Contact />
+      </Suspense>
     </StyledMainContainer>
   </Layout>
 );

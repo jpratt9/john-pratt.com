@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, lazy, Suspense } from 'react';
 import PropTypes from 'prop-types';
 import styled, { ThemeProvider } from 'styled-components';
 import { Head, Nav, Social, Email, Footer } from '@components';
-import loadable from '@loadable/component';
 import { GlobalStyle, theme } from '@styles';
 
-const Loader = loadable(() => import('./loader' /* webpackChunkName: "loader" */));
+const Loader = lazy(() => import('./loader' /* webpackChunkName: "loader" */));
 
 const StyledContent = styled.div`
   display: flex;
@@ -31,12 +30,10 @@ const Layout = ({ children, location }) => {
   };
 
   useEffect(() => {
-    if (isLoading) {
-      return;
-    }
+    if (isLoading) return;
 
     if (location.hash) {
-      const id = location.hash.substring(1); // location.hash without the '#'
+      const id = location.hash.substring(1);
       setTimeout(() => {
         const el = document.getElementById(id);
         if (el) {
@@ -47,7 +44,7 @@ const Layout = ({ children, location }) => {
     }
 
     handleExternalLinks();
-  }, [isLoading]);
+  }, [isLoading, location.hash]);
 
   return (
     <>
@@ -62,7 +59,11 @@ const Layout = ({ children, location }) => {
           </a>
 
           {isLoading && isHome ? (
-            <Loader finishLoading={() => setIsLoading(false)} />
+            // Gatsby 5 supports Suspense/SSR with React 18.
+            // Fallback can be null or a tiny skeleton; choose null to keep parity with your current UX.
+            <Suspense fallback={null}>
+              <Loader finishLoading={() => setIsLoading(false)} />
+            </Suspense>
           ) : (
             <StyledContent>
               <Nav isHome={isHome} />
