@@ -48,7 +48,7 @@ const TagsPage = ({ data, location }) => {
           ))}
         </ul>
       </StyledTagsContainer>
-    </Layout>
+    </Layout> 
   );
 };
 
