@@ -14,7 +14,17 @@ module.exports = {
   plugins: [
     `gatsby-plugin-loadable-components-ssr`,
     `gatsby-plugin-preact`,
-    `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        displayName: false,
+        minify: true,
+        pure: true,
+        transpileTemplateLiterals: true,
+        ssr: true,
+        disableVendorPrefixes: true
+      }
+    }
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
