@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 import { srConfig } from '@config';
-import sr from '@utils/sr';
+import { getSr } from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
 
 const StyledAboutSection = styled.section`
@@ -117,7 +117,11 @@ const About = () => {
       return;
     }
 
-    sr.reveal(revealContainer.current, srConfig());
+    let mounted = true;
+    getSr().then((sr) => {
+      if (mounted && sr) sr.reveal(revealContainer.current, srConfig());
+    });
+    return () => { mounted = false };
   }, []);
 
   const skills = ['Amazon Web Services (AWS)', 'Microsoft Azure', 'Terraform (OSS, Enterprise)', 'Python (2/3)', 'Google Cloud (GCP)', 'Bash', 'PowerShell', 'JavaScript (Node.js, React)', 'Java (Spring Boot)', 'CI/CD pipelines', 'Docker', 'gatsby', 'Snowflake', 'SQL', 'Kubernetes', 'HashiCorp Products', 'Git', 'GitHub', 'Bitbucket', 'Selenium', 'Large Language Models (ChatGPT, OpenAI API, Claude, Gemini, DeepSeek)'];

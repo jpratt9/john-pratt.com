@@ -11,13 +11,22 @@ module.exports = {
     image: '/og.png', // Path to your image you placed in the 'static' folder
   },
   plugins: [
-    'gatsby-plugin-preact',
+    `gatsby-plugin-loadable-components-ssr`,
+    `gatsby-plugin-preact`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-robots-txt`,
+    {
+      resolve: `gatsby-plugin-webpack-bundle-analyser-v2`,
+      options: {
+        analyzerMode: `static`,
+        reportFilename: `report.html`,
+        openAnalyzer: false
+      }
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
