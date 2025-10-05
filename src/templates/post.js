@@ -4,7 +4,10 @@ import kebabCase from 'lodash/kebabCase';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Layout } from '@components';
-import SEO from '@components/head'; // ⬅️ add this
+import SEO from '@components/head';
+import { createGlobalStyle } from 'styled-components';
+import PrismStyles from '@styles/PrismStyles';
+const PrismGlobal = createGlobalStyle`${PrismStyles}`;
 
 const StyledPostContainer = styled.main`
   max-width: 1200px;
@@ -37,7 +40,7 @@ const PostTemplate = ({ data, location }) => {
 
   return (
     <Layout location={location}>
-
+      <PrismGlobal />
       <StyledPostContainer>
         <span className="breadcrumb">
           <span className="arrow">&larr;</span>
