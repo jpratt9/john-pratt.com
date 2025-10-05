@@ -21,7 +21,6 @@ module.exports = {
         minify: true,
         pure: true,
         transpileTemplateLiterals: true,
-        ssr: true,
         disableVendorPrefixes: true
       }
     },
