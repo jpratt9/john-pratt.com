@@ -77,7 +77,7 @@ def lambda_handler(event, context):
     header_image = article_json.get("image_url")
     article_text = article_json.get("content_markdown").replace(
         _get_secret_value(_blog_poster_secret_name, "article_blacklist_strings"), ""
-    )
+    ).replace('’', '\'').replace('’', '\'')
 
     github_token = _get_secret_value(_blog_poster_secret_name, "github_token")
     github_headers = {
@@ -87,22 +87,22 @@ def lambda_handler(event, context):
     }
 
     # generate our article from source
-    os.makedirs(f"/tmp/{slug}")
+    os.makedirs(f"/tmp/{slug}", exist_ok=True)
     with open(f"/tmp/{slug}/index.md", "w") as file:
-        file.write(f"""
----
+        file.write(f"""---
 title: {title}
 description:
 date: '{date}'
 draft: false
 slug: '/{slug}'
 tags:
+
 """
         )
         for tag in tags:
-            file.write(f"  - {tag.replace(' ', '-')}")
-        file.write("---\n")
-        file.write(f"{header_image}\n\n")
+            file.write(f"  - {tag.replace(' ', '-')}\n")
+        file.write("\n---\n\n")
+        file.write(f"![Article Header Image]({header_image})\n\n")
         file.write(article_text)
         file.write(f"\n")
     
