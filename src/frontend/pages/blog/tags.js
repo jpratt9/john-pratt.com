@@ -77,7 +77,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(
       limit: 2000
       filter: {
-        fileAbsolutePath: { regex: "/content/posts/" }
+        fileAbsolutePath: { regex: "/src/frontend/content/posts/" }
         frontmatter: { draft: { ne: true } }
       }
     ) {

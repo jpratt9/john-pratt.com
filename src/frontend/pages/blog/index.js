@@ -194,7 +194,7 @@ export function Head({ location }) {
 export const pageQuery = graphql`
   {
     allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/content/posts/" }, frontmatter: { draft: { ne: true } } }
+      filter: { fileAbsolutePath: { regex: "/src/frontend/content/posts/" }, frontmatter: { draft: { ne: true } } }
       sort: {frontmatter: {date: DESC}}
     ) {
       edges {

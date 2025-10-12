@@ -255,7 +255,7 @@ const Certs = () => {
   const data = useStaticQuery(graphql`
     query {
       certs: allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/content/certs/" } }
+        filter: { fileAbsolutePath: { regex: "/src/frontend/content/certs/" } }
         sort: [{frontmatter: {companyRank: ASC}}, {frontmatter: {certRank: ASC}}]
       ) {
         edges {
