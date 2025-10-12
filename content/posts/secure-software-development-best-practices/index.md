@@ -1,6 +1,5 @@
 ---
 title: Top Secure Software Development Best Practices for 2025
-description:
 date: '2025-09-30'
 draft: false
 slug: '/secure-software-development-best-practices'

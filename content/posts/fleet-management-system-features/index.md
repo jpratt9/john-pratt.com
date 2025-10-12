@@ -1,17 +1,14 @@
 ---
 title: 7 Essential Fleet Management System Features for 2025
-description:
 date: '2025-10-07'
 draft: false
 slug: '/fleet-management-system-features'
 tags:
-
   - fleet-management-system-features
   - fleet-telematics
   - gps-fleet-tracking
   - fleet-safety
   - vehicle-maintenance-software
-
 ---
 
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-3fee3f9c-c7c8-4a30-8ff2-8ee61e3af83a.jpg)

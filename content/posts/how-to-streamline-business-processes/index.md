@@ -1,6 +1,5 @@
 ---
 title: How to Streamline Business Processes - A Practical Guide
-description:
 date: '2025-10-06'
 draft: false
 slug: '/how-to-streamline-business-processes'

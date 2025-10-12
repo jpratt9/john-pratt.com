@@ -1,6 +1,5 @@
 ---
 title: The "Circuit Breaker" Design Pattern
-description: a
 date: '2025-06-06'
 draft: false
 slug: '/circuit-breakers'

@@ -1,6 +1,5 @@
 ---
 title: Log-structured Merge-trees
-description: 
 date: '2025-06-09'
 draft: false
 slug: '/lsm-trees'

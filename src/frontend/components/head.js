@@ -21,7 +21,6 @@ export default function Head({ title, description, image, pathname }) {
 
   const seo = {
     title: title || defaultTitle,
-    description: description || defaultDescription,
     image: `${siteUrl}${image || defaultImage}`,
     url: `${siteUrl}${pathname || ''}`,
   };

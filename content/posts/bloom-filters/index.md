@@ -1,6 +1,5 @@
 ---
 title: Bloom Filters
-description:
 date: '2025-06-08'
 draft: false
 slug: '/bloom-filters'

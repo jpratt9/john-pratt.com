@@ -91,7 +91,6 @@ def lambda_handler(event, context):
         file.write(f"""
 ---
 title: {title}
-description:
 date: '{date}'
 draft: false
 slug: '/{slug}'

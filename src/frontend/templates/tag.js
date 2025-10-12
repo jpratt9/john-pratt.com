@@ -120,7 +120,6 @@ export const pageQuery = graphql`
         node {
           frontmatter {
             title
-            description
             date
             slug
             tags

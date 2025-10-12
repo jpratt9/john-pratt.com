@@ -1,17 +1,14 @@
 ---
 title: Top Cloud Migration Success Stories for Your 2025 Strategy
-description:
 date: '2025-10-09'
 draft: false
 slug: '/cloud-migration-success-stories'
 tags:
-
   - cloud-migration-success-stories
   - cloud-migration
   - aws-migration
   - gcp-migration
   - it-strategy
-
 ---
 
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-dc72895e-346d-4e60-b610-cb8aa6a0e4cf.jpg)

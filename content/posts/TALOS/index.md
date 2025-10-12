@@ -1,6 +1,5 @@
 ---
 title: Case Study - TALOS
-description:
 date: '2025-07-10'
 draft: false
 slug: '/talos'
@@ -10,7 +9,6 @@ tags:
   - AWS
   - AI
   - large-language-models
-  
 ---
 
 ![TALOS](./talos.png)

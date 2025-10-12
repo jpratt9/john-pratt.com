@@ -1,6 +1,5 @@
 ---
 title: 8 Software Testing Best Practices to Implement in 2025
-description:
 date: '2025-10-01'
 draft: false
 slug: '/software-testing-best-practices'

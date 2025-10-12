@@ -1,6 +1,5 @@
 ---
 title: Bulkhead Pattern
-description:
 date: '2025-06-07'
 draft: false
 slug: '/bulkhead-pattern'

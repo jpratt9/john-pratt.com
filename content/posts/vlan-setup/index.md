@@ -1,6 +1,5 @@
 ---
 title: Case Study - Enhancing Content Delivery for a Digital Media Startup with a Hybrid On-Prem + AWS Stack
-description:
 date: '2025-06-17'
 draft: false
 slug: '/digital-media-case-study'
