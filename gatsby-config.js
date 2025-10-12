@@ -14,6 +14,12 @@ module.exports = {
   plugins: [
     `gatsby-plugin-preact`,
     {
+      resolve: `gatsby-plugin-page-creator`,
+      options: {
+        path: `${__dirname}/src/frontend/pages`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-styled-components`,
       options: {
         displayName: false,
