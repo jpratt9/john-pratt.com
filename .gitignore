@@ -5,7 +5,7 @@ yarn-error.log
 package-lock.json
 
 # Build directory
-/dist
+/public
 .DS_Store
 
 .vscode/
