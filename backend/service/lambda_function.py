@@ -1,28 +1,22 @@
 import json
-from datetime import datetime
+import datetime
+from datetime import date
 import requests
 import re
 import boto3
 import os
 import base64
 
-github_url = "https://api.github.com/repos/jpratt9/john-pratt.com/actions/workflows/create-blog-post.yml/dispatches"
-
 _sm = boto3.client("secretsmanager")
 _secret_cache = {}
 _blog_poster_secret_name = "blog_poster_secrets"
-DOWNLOAD_TIMEOUT = 15  # seconds
-DOWNLOAD_DEST_DIR = "downloads"
-DOWNLOAD_CHUNK_SIZE = 8192
-DATE_STR = datetime.date.today().isoformat().replace("-","_")
+DATE_STR = date.today().isoformat()
 
 github_payload = {
-    "message": f"add blog post for {DATE_STR.replace("_","-")}",
+    "message": f"add blog post for {DATE_STR}",
     "committer": {"name": "John Pratt", "email": "john@john-pratt.com"},
     "content": None,
 }
-
-os.makedirs(DOWNLOAD_DEST_DIR, exist_ok=True)
 
 def _get_secret_value(secret_name, *nested_keys):
     """
@@ -53,31 +47,6 @@ def _get_secret_value(secret_name, *nested_keys):
         value = value[key]
     return value
 
-def _download(url, index):
-    try:
-        r = requests.get(url, stream=True, timeout=DOWNLOAD_TIMEOUT)
-        r.raise_for_status()
-    except Exception as e:
-        print(f"[ERR] {url} -> request failed: {e}")
-        return False
-
-    fname = f"{DATE_STR}-{index}"
-    out_path = os.path.join(DOWNLOAD_DEST_DIR, fname)
-
-    try:
-        with open(out_path, "wb") as f:
-            for chunk in r.iter_content(chunk_size=DOWNLOAD_CHUNK_SIZE):
-                if chunk:
-                    f.write(chunk)
-        print(f"[OK]  {url} -> {out_path}")
-        return out_path
-    except Exception as e:
-        print(f"[ERR] {url} -> write failed: {e}")
-        if os.path.exists(out_path):
-            try: os.remove(out_path)
-            except Exception: pass
-        return False
-
 def lambda_handler(event, context):
     # headers in REST API keep original case; check both just in case
     headers = event.get("headers") or {}
@@ -102,26 +71,13 @@ def lambda_handler(event, context):
     article_json = body.get("data").get("articles")[0]
 
     title = article_json.get("title")
-    date = datetime.fromisoformat(article_json.get("created_at")).date().isoformat()
-    slug = "/" + article_json.get("slug")
+    date = datetime.datetime.fromisoformat(article_json.get("created_at")).date().isoformat()
+    slug = article_json.get("slug")
     tags = article_json.get("tags")
     header_image = article_json.get("image_url")
-    markdown = article_json.get("content_markdown").replace(
+    article_text = article_json.get("content_markdown").replace(
         _get_secret_value(_blog_poster_secret_name, "article_blacklist_strings"), ""
     )
-
-
-    # TODO modify article markdown so it references images to be hosted on our repo, not externally
-    full_external_url_regex = re.compile(rf'{_get_secret_value(_blog_poster_secret_name, "full_external_url_regex")}')
-    external_url_regex = re.compile(rf'{_get_secret_value(_blog_poster_secret_name, "external_url_regex")}')
-    full_external_urls = full_external_url_regex.findall(markdown)
-    prog = re.compile(external_url_regex)
-    external_urls = [(m.group(0) if (m := prog.search(s)) else None) for s in full_external_urls]
-    print(f"External URLs (with text): {full_external_urls}")
-    print(f"External URLs (no text): {external_urls}")
-    downloaded_images_paths = []
-    for i, u in enumerate(external_urls, start=1):
-        downloaded_images_paths.push(_download(u, i))
 
     github_token = _get_secret_value(_blog_poster_secret_name, "github_token")
     github_headers = {
@@ -129,19 +85,37 @@ def lambda_handler(event, context):
         "Authorization" : f"Bearer {github_token}",
         "X-GitHub-Api-Version" : "2022-11-28"
     }
+
+    # generate our article from source
+    os.makedirs(f"/tmp/{slug}")
+    with open(f"/tmp/{slug}/index.md", "w") as file:
+        file.write(f"""
+---
+title: {title}
+description:
+date: '{date}'
+draft: false
+slug: '/{slug}'
+tags:
+"""
+        )
+        for tag in tags:
+            file.write(f"  - {tag.replace(' ', '-')}")
+        file.write("---\n")
+        file.write(f"{header_image}\n\n")
+        file.write(article_text)
+        file.write(f"\n")
     
     # post article
-    api_repo_article_folder_path = f"https://api.github.com/repos/jpratt9/john-pratt.com/contents/content/posts/{DATE_STR}"
+    api_repo_article_folder_path = f"https://api.github.com/repos/jpratt9/john-pratt.com/contents/content/posts/{slug}"
 
-    for iter, img_path in enumerate(downloaded_images_paths, start=1):
-        # read file contents
-        with open(img_path, "rb") as f:
-            content_b64 = base64.b64encode(f.read()).decode()
+    with open(f"/tmp/{slug}/index.md", "rb") as f:
+        content_b64 = base64.b64encode(f.read()).decode()
 
-        # send payload to github
-        github_payload["content"] = content_b64
-        resp = requests.put(f"{api_repo_article_folder_path}/{DATE_STR}_{iter}", headers=github_headers, json=github_payload)
-        resp.raise_for_status()
-        print("Response:", resp.json())
+    # send payload to github
+    github_payload["content"] = content_b64
+    resp = requests.put(f"{api_repo_article_folder_path}/index.md", headers=github_headers, json=github_payload)
+    resp.raise_for_status()
+    print("Response:", resp.json())
 
     return {"statusCode": 200, "body": json.dumps({"message": "ok"})}
