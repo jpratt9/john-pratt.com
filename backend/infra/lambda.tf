@@ -19,7 +19,8 @@ resource "aws_secretsmanager_secret_version" "blog_poster_secrets" {
     outrank_access_token        = random_password.outrank_access_token.result
     github_token                = var.github_token
     article_blacklist_strings   = var.article_blacklist_strings
-    external_url_regex          = var.external_url_regex
+    full_external_url_regex     = var.full_external_url_regex
+    external_url_regex     = var.external_url_regex
   })
 }
 
