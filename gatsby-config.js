@@ -17,6 +17,7 @@ module.exports = {
       resolve: `gatsby-plugin-page-creator`,
       options: {
         path: `${__dirname}/src/frontend/pages`,
+        ignore: ["archive.(js|ts)?(x)"]
       },
     },
     {
