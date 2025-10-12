@@ -17,7 +17,7 @@
     "npm": ">=11.6.0"
   },
   "scripts": {
-    "build": "npm cache clean --force; gatsby build",
+    "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
