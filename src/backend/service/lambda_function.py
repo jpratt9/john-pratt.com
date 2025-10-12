@@ -96,7 +96,6 @@ date: '{date}'
 draft: false
 slug: '/{slug}'
 tags:
-
 """
         )
         for tag in tags:
