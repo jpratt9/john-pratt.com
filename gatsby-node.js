@@ -3,8 +3,8 @@ const _ = require('lodash');
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
-  const postTemplate = path.resolve(`src/templates/post.js`);
-  const tagTemplate = path.resolve('src/templates/tag.js');
+  const postTemplate = path.resolve(`src/frontend/templates/post.js`);
+  const tagTemplate = path.resolve('src/frontend/templates/tag.js');
 
   const result = await graphql(`
     {
@@ -91,14 +91,14 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
   actions.setWebpackConfig({
     resolve: {
       alias: {
-        '@components': path.resolve(__dirname, 'src/components'),
-        '@config': path.resolve(__dirname, 'src/config.js'), // file is src/config.js
-        '@fonts': path.resolve(__dirname, 'src/fonts'),
-        '@hooks': path.resolve(__dirname, 'src/hooks'),
-        '@images': path.resolve(__dirname, 'src/images'),
-        '@pages': path.resolve(__dirname, 'src/pages'),
-        '@styles': path.resolve(__dirname, 'src/styles'),
-        '@utils': path.resolve(__dirname, 'src/utils'),
+        '@components': path.resolve(__dirname, 'src/frontend/components'),
+        '@config': path.resolve(__dirname, 'src/frontend/config.js'), // file is src/config.js
+        '@fonts': path.resolve(__dirname, 'src/frontend/fonts'),
+        '@hooks': path.resolve(__dirname, 'src/frontend/hooks'),
+        '@images': path.resolve(__dirname, 'src/frontend/images'),
+        '@pages': path.resolve(__dirname, 'src/frontend/pages'),
+        '@styles': path.resolve(__dirname, 'src/frontend/styles'),
+        '@utils': path.resolve(__dirname, 'src/frontend/utils'),
       },
       extensions: ['.mjs', '.js', '.jsx', '.ts', '.tsx', '.json'],
     },
