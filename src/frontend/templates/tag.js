@@ -112,7 +112,7 @@ export const pageQuery = graphql`
       limit: 2000
       sort: { frontmatter: { date: DESC } }
       filter: {
-        fileAbsolutePath: { regex: "/content/posts/" }
+        fileAbsolutePath: { regex: "/src/frontend/content/posts/" }
         frontmatter: { draft: { ne: true } }
       }
     ) {
