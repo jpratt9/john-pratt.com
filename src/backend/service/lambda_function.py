@@ -88,7 +88,8 @@ def lambda_handler(event, context):
     # generate our article from source
     os.makedirs(f"/tmp/{slug}", exist_ok=True)
     with open(f"/tmp/{slug}/index.md", "w") as file:
-        file.write(f"""---
+        file.write(f"""
+---
 title: {title}
 description:
 date: '{date}'
