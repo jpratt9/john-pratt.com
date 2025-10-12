@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkjohn_pratt_com=self.webpackChunkjohn_pratt_com||[]).push([[597],{7282:function(t,n,u){u.r(n);n.default=()=>null}}]);
+//# sourceMappingURL=projects-0b6a6d752aa2e276bbed.js.map
