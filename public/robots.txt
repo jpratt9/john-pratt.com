@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://john-pratt.com/sitemap-index.xml
-Host: https://john-pratt.com
