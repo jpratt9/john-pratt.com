@@ -1,4 +1,4 @@
-const config = require('./src/config');
+const config = require('./src/frontend/config');
 const adapter = require("gatsby-adapter-netlify").default
 const isAnalyze = process.env.ANALYZE_BUNDLE === 'true';
  
@@ -43,7 +43,7 @@ module.exports = {
         background_color: config.colors.darkNavy,
         theme_color: config.colors.navy,
         display: 'minimal-ui',
-        icon: 'src/images/logo.png',
+        icon: 'src/frontend/images/logo.png',
       },
     },
     `gatsby-plugin-offline`,
@@ -51,7 +51,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/src/frontend/images`,
       },
     },
     {
