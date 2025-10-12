@@ -77,7 +77,6 @@ export function Head({ data, location }) {
   return (
     <SEO
       title={fm.title}
-      description={fm.description}
       pathname={location?.pathname}
     />
   );
@@ -90,7 +89,6 @@ export const pageQuery = graphql`
       frontmatter {
         title
         draft
-        description
         date
         slug
         tags

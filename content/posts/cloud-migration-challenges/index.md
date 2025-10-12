@@ -1,6 +1,5 @@
 ---
 title: Top 8 Cloud Migration Challenges of 2025 & How to Solve Them
-description:
 date: '2025-08-11'
 draft: false
 slug: '/cloud-migration-challenges'

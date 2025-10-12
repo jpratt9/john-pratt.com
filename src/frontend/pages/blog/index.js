@@ -151,7 +151,7 @@ const BlogPage = ({ location, data }) => {
           {posts.length > 0 &&
             posts.map(({ node }, i) => {
               const { frontmatter } = node;
-              const { title, description, slug } = frontmatter;
+              const { title, slug } = frontmatter;
 
               return (
                 <StyledPost key={i}>
@@ -163,7 +163,6 @@ const BlogPage = ({ location, data }) => {
                       <h5 className="post__title">
                         <Link to={slug}>{title}</Link>
                       </h5>
-                      <p className="post__desc">{description}</p>
                     </header>
                   </div>
                 </StyledPost>
