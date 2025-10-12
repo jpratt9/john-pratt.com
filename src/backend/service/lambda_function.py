@@ -69,7 +69,7 @@ def lambda_handler(event, context):
 
     article_json = body.get("data").get("articles")[0]
 
-    title = article_json.get("title")
+    title = article_json.get("title").replace(":", " -")
     date = datetime.datetime.fromisoformat(article_json.get("created_at")).date().isoformat()
     slug = article_json.get("slug")
     tags = article_json.get("tags")
