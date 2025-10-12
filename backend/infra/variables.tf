@@ -18,18 +18,8 @@ variable "article_blacklist_strings" {
     sensitive = true
 }
 
-variable "full_external_url_regex" {
-    type      = string
-    sensitive = true
-}
-
-variable "external_url_regex" {
-    type      = string
-    sensitive = true
-}
-
 variable "python_runtime" {
-  default = "python3.11"
+  default = "python3.12"
 }
 
 # variable

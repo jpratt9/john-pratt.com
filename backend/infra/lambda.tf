@@ -19,8 +19,6 @@ resource "aws_secretsmanager_secret_version" "blog_poster_secrets" {
     outrank_access_token        = random_password.outrank_access_token.result
     github_token                = var.github_token
     article_blacklist_strings   = var.article_blacklist_strings
-    full_external_url_regex     = var.full_external_url_regex
-    external_url_regex     = var.external_url_regex
   })
 }
 
@@ -100,6 +98,7 @@ resource "null_resource" "build_requests_layer" {
   # Change the trigger if you want to rebuild (e.g., version bumps)
   triggers = {
     requests_version = "2.32.4"
+    # zip_hash = data.archive_file.handler_zip.output_base64sha256
   }
 
   provisioner "local-exec" {
