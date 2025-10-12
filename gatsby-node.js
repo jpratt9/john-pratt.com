@@ -4,6 +4,7 @@ const fs = require("fs")
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
+  const { createRedirect } = actions;
   const postTemplate = path.resolve(`src/frontend/templates/post.js`);
   const tagTemplate = path.resolve('src/frontend/templates/tag.js');
 
@@ -71,6 +72,12 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       },
     });
   }
+
+  createRedirect({
+    fromPath: "/archive",
+    toPath: "/blog", // or "/"
+    isPermanent: true,
+  });
 };
 
 // Add Webpack aliases + skip browser-only libs during SSR
