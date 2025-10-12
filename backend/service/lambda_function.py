@@ -12,12 +12,6 @@ _secret_cache = {}
 _blog_poster_secret_name = "blog_poster_secrets"
 DATE_STR = date.today().isoformat()
 
-github_payload = {
-    "message": f"add blog post for {DATE_STR}",
-    "committer": {"name": "John Pratt", "email": "john@john-pratt.com"},
-    "content": None,
-}
-
 def _get_secret_value(secret_name, *nested_keys):
     """
     Retrieve a value from a Secrets Manager secret by walking the provided key path.
@@ -48,6 +42,11 @@ def _get_secret_value(secret_name, *nested_keys):
     return value
 
 def lambda_handler(event, context):
+    github_payload = {
+        "message": "add blog post for $DATE",
+        "committer": {"name": "John Pratt", "email": "john@john-pratt.com"},
+        "content": None,
+    }
     # headers in REST API keep original case; check both just in case
     headers = event.get("headers") or {}
     auth = headers.get("Authorization") or headers.get("authorization") or ""
@@ -108,14 +107,14 @@ tags:
     
     # post article
     api_repo_article_folder_path = f"https://api.github.com/repos/jpratt9/john-pratt.com/contents/content/posts/{slug}"
-
+    github_payload["message"] = github_payload["message"].replace("$DATE", date)
     with open(f"/tmp/{slug}/index.md", "rb") as f:
         content_b64 = base64.b64encode(f.read()).decode()
 
-    # send payload to github
-    github_payload["content"] = content_b64
-    resp = requests.put(f"{api_repo_article_folder_path}/index.md", headers=github_headers, json=github_payload)
-    resp.raise_for_status()
-    print("Response:", resp.json())
+        # send payload to github
+        github_payload["content"] = content_b64
+        resp = requests.put(f"{api_repo_article_folder_path}/index.md", headers=github_headers, json=github_payload)
+        resp.raise_for_status()
+        print("Response:", resp.json())
 
     return {"statusCode": 200, "body": json.dumps({"message": "ok"})}
