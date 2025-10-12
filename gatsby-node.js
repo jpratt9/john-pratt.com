@@ -1,5 +1,6 @@
 const path = require('path');
 const _ = require('lodash');
+const fs = require("fs")
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
