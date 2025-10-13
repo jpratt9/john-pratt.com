@@ -104,7 +104,7 @@ tags:
         file.write(f"\n")
     
     # post article
-    api_repo_article_folder_path = f"https://api.github.com/repos/jpratt9/john-pratt.com/contents/content/posts/{slug}"
+    api_repo_article_folder_path = f"https://api.github.com/repos/jpratt9/john-pratt.com/contents/src/frontend/content/posts/{slug}"
     github_payload["message"] = github_payload["message"].replace("$DATE", date)
     with open(f"/tmp/{slug}/index.md", "rb") as f:
         content_b64 = base64.b64encode(f.read()).decode()
