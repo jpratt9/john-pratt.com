@@ -97,7 +97,7 @@ tags:
         )
         for tag in tags:
             file.write(f"\n  - {tag.replace(' ', '-')}")
-        file.write("\n---\n\n")
+        file.write("---\n\n")
         file.write(f"![Article Header Image]({header_image})\n\n")
         file.write(article_text)
         file.write(f"\n")
