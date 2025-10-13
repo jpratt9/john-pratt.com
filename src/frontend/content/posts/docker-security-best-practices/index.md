@@ -1,4 +1,3 @@
-
 ---
 title: Docker Security Best Practices - Essential Tips for 2025
 description:
