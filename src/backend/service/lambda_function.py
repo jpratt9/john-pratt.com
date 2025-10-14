@@ -5,6 +5,7 @@ import requests
 import boto3
 import os
 import base64
+import re
 
 _sm = boto3.client("secretsmanager")
 _secret_cache = {}
@@ -75,7 +76,10 @@ def lambda_handler(event, context):
     header_image = article_json.get("image_url")
     article_text = article_json.get("content_markdown").replace(
         _get_secret_value(_blog_poster_secret_name, "article_blacklist_strings"), ""
-    ).replace('’', '\'').replace('’', '\'')
+    ).replace('’', '\'')
+
+    article_text = (re.sub(r'\s+—\s+', ' - ', article_text)).replace('—', '-')
+    article_text = (re.sub(r'\s+–\s+', ' - ', article_text)).replace('–', '-')
 
     github_token = _get_secret_value(_blog_poster_secret_name, "github_token")
     github_headers = {
