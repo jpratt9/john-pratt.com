@@ -1,6 +1,28 @@
 const config = require('./src/frontend/config');
-const adapter = require("gatsby-adapter-netlify").default
+const adapter = require('gatsby-adapter-netlify').default;
 const isAnalyze = process.env.ANALYZE_BUNDLE === 'true';
+
+const EXCLUDED_SITEMAP_PATHS = new Set([
+  '/dev-404-page/',
+  '/404/',
+  '/404.html',
+  '/offline-plugin-app-shell-fallback/',
+]);
+
+const BLOG_TAG_PREFIX = '/blog/tags/';
+
+const toSitemapPath = (value) => {
+  if (!value) return null;
+  let normalized = value.trim();
+  if (!normalized) return null;
+  if (!normalized.startsWith('/')) {
+    normalized = `/${normalized}`;
+  }
+  if (!normalized.endsWith('/')) {
+    normalized = `${normalized}/`;
+  }
+  return normalized;
+};
  
 module.exports = { 
   adapter: adapter(),
@@ -8,11 +30,142 @@ module.exports = {
     title: 'John Pratt',
     description:
       'John Pratt is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences.',
-    siteUrl: 'https://john-pratt.com', // No trailing slash allowed!
+    siteUrl: 'https://www.john-pratt.com', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
   },
   plugins: [
     `gatsby-plugin-preact`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                siteUrl
+              }
+            }
+            allSitePage {
+              nodes {
+                path
+              }
+            }
+            allMarkdownRemark(
+              filter: { fileAbsolutePath: { regex: "/src/frontend/content/posts/" } }
+            ) {
+              nodes {
+                frontmatter {
+                  slug
+                  date
+                }
+              }
+            }
+          }
+        `,
+        resolveSiteUrl: ({ site }) => site.siteMetadata.siteUrl,
+        resolvePages: ({ allSitePage, allMarkdownRemark }) => {
+          const postsByPath = new Map();
+          let latestPostTimestamp = 0;
+
+          allMarkdownRemark.nodes.forEach((node) => {
+            const slugPath = toSitemapPath(node.frontmatter?.slug);
+            if (!slugPath) return;
+
+            let lastmod;
+            if (node.frontmatter?.date) {
+              const timestamp = Date.parse(node.frontmatter.date);
+              if (!Number.isNaN(timestamp)) {
+                lastmod = new Date(timestamp).toISOString();
+                if (timestamp > latestPostTimestamp) {
+                  latestPostTimestamp = timestamp;
+                }
+              }
+            }
+
+            postsByPath.set(slugPath, { lastmod });
+          });
+
+          const latestPostIso = latestPostTimestamp ? new Date(latestPostTimestamp).toISOString() : null;
+
+          const pages = allSitePage.nodes
+            .filter(({ path }) => !EXCLUDED_SITEMAP_PATHS.has(path))
+            .map(({ path }) => {
+              const entry = {
+                path,
+                postMeta: postsByPath.get(path),
+              };
+
+              if (path === '/') {
+                entry.type = 'homepage';
+              } else if (path === '/blog/') {
+                entry.type = 'blogIndex';
+                entry.collectionLastmod = latestPostIso;
+              } else if (path.startsWith(BLOG_TAG_PREFIX)) {
+                entry.type = 'blogTag';
+                entry.collectionLastmod = latestPostIso;
+              } else if (entry.postMeta) {
+                entry.type = 'blogPost';
+              }
+
+              return entry;
+            });
+
+          pages.push({
+            path: '/resume.pdf',
+            type: 'resume',
+          });
+
+          return pages;
+        },
+        serialize: (page) => {
+          let changefreq = 'monthly';
+          let priority = 0.5;
+          let lastmod = page.postMeta?.lastmod;
+
+          switch (page.type) {
+            case 'homepage':
+              changefreq = 'weekly';
+              priority = 1.0;
+              break;
+            case 'resume':
+              changefreq = 'weekly';
+              priority = 1.0;
+              break;
+            case 'blogIndex':
+              changefreq = 'daily';
+              priority = 0.8;
+              if (page.collectionLastmod) lastmod = page.collectionLastmod;
+              break;
+            case 'blogTag':
+              changefreq = 'daily';
+              priority = 0.6;
+              if (page.collectionLastmod) lastmod = page.collectionLastmod;
+              break;
+            case 'blogPost':
+              changefreq = 'monthly';
+              priority = 0.6;
+              break;
+            default:
+              if (page.path.startsWith('/blog/')) {
+                changefreq = 'weekly';
+                priority = 0.6;
+              }
+          }
+
+          const entry = {
+            url: page.path,
+            changefreq,
+            priority,
+          };
+
+          if (lastmod) {
+            entry.lastmod = lastmod;
+          }
+
+          return entry;
+        },
+      },
+    },
     {
       resolve: `gatsby-plugin-page-creator`,
       options: {
@@ -33,7 +186,6 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sitemap`,
     `gatsby-plugin-robots-txt`,
     ...(isAnalyze
       ? [{
@@ -98,41 +250,12 @@ module.exports = {
             // https://www.gatsbyjs.org/packages/gatsby-remark-prismjs
             resolve: `gatsby-remark-prismjs`,
             options: {
-              // Class prefix for <pre> tags containing syntax highlighting;
-              // defaults to 'language-' (e.g. <pre class="language-js">).
-              // If your site loads Prism into the browser at runtime,
-              // (e.g. for use with libraries like react-live),
-              // you may use this to prevent Prism from re-processing syntax.
-              // This is an uncommon use-case though;
-              // If you're unsure, it's best to use the default value.
               classPrefix: 'language-',
-              // This is used to allow setting a language for inline code
-              // (i.e. single backticks) by creating a separator.
-              // This separator is a string and will do no white-space
-              // stripping.
-              // A suggested value for English speakers is the non-ascii
-              // character '›'.
               inlineCodeMarker: null,
-              // This lets you set up language aliases.  For example,
-              // setting this to '{ sh: "bash" }' will let you use
-              // the language "sh" which will highlight using the
-              // bash highlighter.
               aliases: {},
-              // This toggles the display of line numbers globally alongside the code.
-              // To use it, add the following line in gatsby-browser.js
-              // right after importing the prism color scheme:
-              //  require("prismjs/plugins/line-numbers/prism-line-numbers.css")
-              // Defaults to false.
-              // If you wish to only show line numbers on certain code blocks,
-              // leave false and use the {numberLines: true} syntax below
               showLineNumbers: false,
-              // If setting this to true, the parser won't handle and highlight inline
-              // code used in markdown i.e. single backtick code like `this`.
               noInlineHighlight: false,
-              // This adds a new language definition to Prism or extend an already
-              // existing language definition. More details on this option can be
-              // found under the header "Add new language definition or extend an
-              // existing language" below.
+
               languageExtensions: [
                 {
                   language: 'superscript',
