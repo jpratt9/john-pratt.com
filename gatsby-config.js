@@ -35,6 +35,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-preact`,
+    `gatsby-plugin-remove-serviceworker`,
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
