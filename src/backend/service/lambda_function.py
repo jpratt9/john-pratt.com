@@ -78,8 +78,10 @@ def lambda_handler(event, context):
         _get_secret_value(_blog_poster_secret_name, "article_blacklist_strings"), ""
     ).replace('’', '\'')
 
-    article_text = (re.sub(r'\s+—\s+', ' - ', article_text)).replace('—', '-')
-    article_text = (re.sub(r'\s+–\s+', ' - ', article_text)).replace('–', '-')
+    article_text = re.sub(r'\s*—\s*', ' - ', article_text).strip()
+    article_text = re.sub(r'\s*–\s*', ' - ', article_text).strip()
+    article_text = re.sub(r'\s*[—–]\s*', ' - ', article_text).strip()
+    article_text = re.sub(r' {2,}', ' ', article_text)
 
     github_token = _get_secret_value(_blog_poster_secret_name, "github_token")
     github_headers = {

@@ -207,7 +207,7 @@ GPS Insight uses a quote-based pricing model. Prospective customers need to cont
 
 **Learn more at: [https://www.gpsinsight.com](https://www.gpsinsight.com)**
 
-## 7. Capterra — Fleet Management Software category
+## 7. Capterra - Fleet Management Software category
 
 Instead of being a single solution, Capterra serves as a comprehensive marketplace where businesses can discover, compare, and shortlist hundreds of fleet management tools. It acts as a crucial starting point for any company trying to navigate the complex software landscape, providing an aggregated view of the industry from a neutral, user-driven perspective. This platform is ideal for decision-makers who want to conduct thorough due diligence before committing to a provider.
 
@@ -246,7 +246,7 @@ Capterra is completely free for users searching for software. The platform is su
 | Motive (formerly KeepTruckin) | Moderate (hardware and apps)              | Hardware, telematics, AI dash cams          | Enhanced safety, fuel management, driver coaching | Trucking, delivery, field service fleets | AI safety coaching, spend/fuel management |
 | Fleetio                | Low to Moderate (software-focused)           | SaaS subscription with telematics integration | Efficient maintenance, lifecycle management | Fleets prioritizing maintenance and asset tracking | Transparent pricing, easy onboarding  |
 | GPS Insight            | Moderate (hardware and software)              | Hardware, AI camera system, mobile apps    | Safety coaching, fleet monitoring          | SMB fleets needing strong safety features | AI video coaching, extensive reporting |
-| Capterra — Fleet Management Software category | Low (marketplace for research)             | Internet access and user review analysis    | Vendor shortlisting, informed purchasing   | Buyers researching or comparing fleet software | Large catalog, verified reviews, buyer guides |
+| Capterra - Fleet Management Software category | Low (marketplace for research)             | Internet access and user review analysis    | Vendor shortlisting, informed purchasing   | Buyers researching or comparing fleet software | Large catalog, verified reviews, buyer guides |
 
 ## Choosing Your Path to Fleet Optimization
 
