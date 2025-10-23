@@ -1,6 +1,7 @@
 const path = require('path');
 const _ = require('lodash');
-const fs = require("fs")
+const fs = require('fs');
+const fsp = fs.promises;
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
@@ -111,4 +112,37 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
       extensions: ['.mjs', '.js', '.jsx', '.ts', '.tsx', '.json'],
     },
   });
+};
+
+exports.onPostBuild = async ({ reporter }) => {
+  const sourceDir = path.resolve(__dirname, 'src/frontend/static');
+  const destDir = path.resolve(__dirname, 'public');
+
+  try {
+    await fsp.access(sourceDir);
+  } catch (error) {
+    reporter.warn(`[gatsby-node] Static directory not found at ${sourceDir}; skipping copy.`);
+    return;
+  }
+
+  try {
+    const entries = await fsp.readdir(sourceDir, { withFileTypes: true });
+
+    await Promise.all(
+      entries.map(async (entry) => {
+        const sourcePath = path.join(sourceDir, entry.name);
+        const destPath = path.join(destDir, entry.name);
+
+        if (entry.isDirectory()) {
+          await fsp.cp(sourcePath, destPath, { recursive: true });
+        } else {
+          await fsp.copyFile(sourcePath, destPath);
+        }
+      })
+    );
+
+    reporter.info(`[gatsby-node] Copied ${entries.length} asset(s) from src/frontend/static to public.`);
+  } catch (error) {
+    reporter.panic(`[gatsby-node] Failed to copy static assets from ${sourceDir}`, error);
+  }
 };

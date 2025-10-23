@@ -29,7 +29,7 @@ module.exports = {
   siteMetadata: {
     title: 'John Pratt',
     description:
-      'John Pratt is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences.',
+      'John Pratt is a software engineer who specializes in building (and occasionally designing) top-tier digital solutions.',
     siteUrl: 'https://www.john-pratt.com', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
   },
