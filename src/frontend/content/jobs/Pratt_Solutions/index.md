@@ -18,4 +18,5 @@ companyRank: 0
 - Led High Level Designs & Implementation Roadmaps & Python feature work for startup Client
 - Fixed critical production bug in Client’s Java/Postgres SOAP API costing them **~$43k/mo in lost bookings**
 - **Helped Client save ~$1M annually** in licensing fees by migrating from Oracle DB to Postgres
+- Designing, building & deploying company websites for several local businesses with React, Supabase & Netlify 
 - Built and leading a global team of 5+ full-time employees & freelancers for development & BizOps
