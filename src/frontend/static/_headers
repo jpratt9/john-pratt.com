@@ -10,9 +10,6 @@
 /app-data.json
   Cache-Control: public, max-age=0, must-revalidate
 
-/static/*
-  Cache-Control: public, max-age=31536000, immutable
-
 /*.js
   Cache-Control: public, max-age=31536000, immutable
 
