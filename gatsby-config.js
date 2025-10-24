@@ -206,7 +206,6 @@ module.exports = {
         icon: 'src/frontend/images/logo.png',
       },
     },
-    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
