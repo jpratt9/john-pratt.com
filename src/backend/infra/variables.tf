@@ -22,4 +22,7 @@ variable "python_runtime" {
   default = "python3.12"
 }
 
-# variable
+variable "openai_api_key" {
+  type      = string
+  sensitive = true
+}

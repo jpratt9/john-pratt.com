@@ -84,6 +84,12 @@ resource "aws_lambda_function" "webhook" {
   # Safety: cap concurrency so floods can't scale costlessly
   reserved_concurrent_executions = 5
 
+  environment {
+    variables = {
+      OPENAI_API_KEY = var.openai_api_key
+    }
+  }
+
   layers = [
     aws_lambda_layer_version.requests.arn
   ]
