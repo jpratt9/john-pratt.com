@@ -7,20 +7,14 @@ resource "random_password" "outrank_access_token" {
   special = false
 }
 
-## 
-resource "aws_secretsmanager_secret" "blog_poster_secrets" {
-  name        = "blog_poster_secrets"
-  description = "Dict of secrets to be used by this application"
-}
-
-resource "aws_secretsmanager_secret_version" "blog_poster_secrets" {
-  secret_id     = aws_secretsmanager_secret.blog_poster_secrets.id
-  secret_string = jsonencode({
-    outrank_access_token        = random_password.outrank_access_token.result
-    github_token                = var.github_token
-    article_blacklist_strings   = var.article_blacklist_strings
-  })
-}
+# resource "aws_secretsmanager_secret_version" "blog_poster_secrets" {
+#   secret_id     = aws_secretsmanager_secret.blog_poster_secrets.id
+#   secret_string = jsonencode({
+#     outrank_access_token        = random_password.outrank_access_token.result
+#     github_token                = var.github_token
+#     article_blacklist_strings   = var.article_blacklist_strings
+#   })
+# }
 
 ############################
 # IAM for Lambda
@@ -40,25 +34,6 @@ resource "aws_iam_role" "lambda_role" {
 resource "aws_iam_role_policy_attachment" "lambda_basic" {
   role       = aws_iam_role.lambda_role.name
   policy_arn = "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
-}
-
-data "aws_iam_policy_document" "lambda_secrets_read" {
-  statement {
-    actions   = ["secretsmanager:GetSecretValue"]
-    resources = [
-      aws_secretsmanager_secret.blog_poster_secrets.arn
-    ]
-  }
-}
-
-resource "aws_iam_policy" "lambda_secrets_read" {
-  name   = "lambda_secrets_read"
-  policy = data.aws_iam_policy_document.lambda_secrets_read.json
-}
-
-resource "aws_iam_role_policy_attachment" "attach_secrets_read" {
-  role       = aws_iam_role.lambda_role.name
-  policy_arn = aws_iam_policy.lambda_secrets_read.arn
 }
 
 ############################
@@ -87,11 +62,14 @@ resource "aws_lambda_function" "webhook" {
   environment {
     variables = {
       OPENAI_API_KEY = var.openai_api_key
+      github_token = var.github_token
+      article_blacklist_strings = var.article_blacklist_strings
+      outrank_access_token = random_password.outrank_access_token.result
     }
   }
 
   layers = [
-    aws_lambda_layer_version.requests.arn
+    aws_lambda_layer_version.new_requests.arn
   ]
 }
 
@@ -100,7 +78,7 @@ resource "aws_lambda_function" "webhook" {
 ###############################
 
 # Build the requests layer ZIP using pip in a local-exec provisioner
-resource "null_resource" "build_requests_layer" {
+resource "null_resource" "build_new_requests_layer" {
   # Change the trigger if you want to rebuild (e.g., version bumps)
   triggers = {
     requests_version = "2.32.4"
@@ -109,19 +87,16 @@ resource "null_resource" "build_requests_layer" {
 
   provisioner "local-exec" {
     command = <<EOT
-mkdir -p dist/python_
-mv dist/python_ dist/python_
-pip install requests==${self.triggers.requests_version} openai -t dist/python_
-cd dist && zip -r requests_layer.zip python_
+mkdir -p dist/python; mv dist/python dist/python; pip install requests openai -t dist/python; cd dist && zip -r new_requests_layer.zip python
     EOT
   }
 }
 
 # Create Lambda layer from the locally built ZIP
-resource "aws_lambda_layer_version" "requests" {
-  layer_name          = "requests"
-  filename            = "${path.module}/dist/requests_layer.zip"
+resource "aws_lambda_layer_version" "new_requests" {
+  layer_name          = "new_requests"
+  filename            = "${path.module}/dist/new_requests_layer.zip"
   compatible_runtimes = [var.python_runtime]
 
-  depends_on = [null_resource.build_requests_layer]
+  depends_on = [null_resource.build_new_requests_layer]
 }
