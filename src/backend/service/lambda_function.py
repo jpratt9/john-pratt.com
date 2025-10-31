@@ -6,6 +6,9 @@ import boto3
 import os
 import base64
 import re
+from openai import OpenAI
+
+client = OpenAI()
 
 _sm = boto3.client("secretsmanager")
 _secret_cache = {}
@@ -25,7 +28,7 @@ def _get_secret_value(secret_name, *nested_keys):
         *nested_keys: Sequence of keys that point to the desired value inside the secret payload.
 
     Returns:
-        The value stored at the provided path.
+        The value stored at the provided path.  
 
     Raises:
         KeyError: If any key in the path is not present.
@@ -67,7 +70,7 @@ def lambda_handler(event, context):
 
     # your processing
     print("Webhook received:", body)
-
+ 
     # process article
     print("Processing + publishing article...")
 
@@ -102,26 +105,37 @@ def lambda_handler(event, context):
     openai_key = os.environ["OPENAI_API_KEY"]
 
     # prepare request
-    url = "https://api.openai.com/v1/responses"
-    headers = {
-        "Authorization": f"Bearer {openai_key}",
-        "Content-Type": "application/json",
-    }
-    payload = {
-        "model": "gpt-5",
-        "input": prompt
-    }
-    print(prompt)
-    print(payload)
-    print(headers)
+    # url = "https://api.openai.com/v1/responses"
+    # headers = {
+    #     "Authorization": f"Bearer {openai_key}",
+    #     "Content-Type": "application/json",
+    # }
+    # payload = {
+    #     "model": "gpt-5",
+    #     "input": prompt
+    # }
+    # print(prompt)
+    # print(payload)
+    # print(headers)
 
-    # call OpenAI Responses API via requests (timeout to avoid hanging)
-    resp = requests.post(url, headers=headers, json=payload, timeout=10)
-    print(resp)
-    resp_json = resp.json()
+    response = client.responses.create(
+        model="gpt-5",
+        input=prompt
+    )
 
+    print(response.output_text)
+    simplified_output = response.output_text
+
+    # try:
+    #     # call OpenAI Responses API via requests (timeout to avoid hanging)
+    #     resp = requests.post(url, headers=headers, json=payload, timeout=10)
+    #     print(resp)
+    #     resp_json = resp.json()
+    # except Exception as e:
+    #     print("Error while using OpenAI API: ", str(e))
+    #     return {"statusCode": 502, "body": json.dumps({"message": str(e)})}
     # robustly extract text from the Responses API JSON
-    simplified_output = resp_json.get("output")[1].get("content")[0].get("text")
+    # simplified_output = resp_json.get("output")[1].get("content")[0].get("text")
     
     print("OpenAI simplified tags raw output:", simplified_output)
 
@@ -149,7 +163,7 @@ def lambda_handler(event, context):
 
     # generate our article from source
     os.makedirs(f"/tmp/{slug}", exist_ok=True)
-    print("Doing something else...")
+    print("Doing something else...") 
     with open(f"/tmp/{slug}/index.md", "w") as file:
         file.write(f"""---
 title: {title}
@@ -159,7 +173,7 @@ slug: '/{slug}'
 tags:
 """
         )
-        for tag in tags:
+        for tag in tags: 
             file.write(f"\n  - {tag.replace(' ', '-')}")  # existing behavior kept
         file.write("\n---\n\n")
         file.write(f"![Article Header Image]({header_image})\n\n")
