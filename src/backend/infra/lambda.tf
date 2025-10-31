@@ -104,14 +104,15 @@ resource "null_resource" "build_requests_layer" {
   # Change the trigger if you want to rebuild (e.g., version bumps)
   triggers = {
     requests_version = "2.32.4"
-    # zip_hash = data.archive_file.handler_zip.output_base64sha256
+    zip_hash = data.archive_file.handler_zip.output_base64sha256
   }
 
   provisioner "local-exec" {
     command = <<EOT
-      mkdir -p dist/python
-      pip install requests==${self.triggers.requests_version} -t dist/python
-      cd dist && zip -r requests_layer.zip python
+mkdir -p dist/python_
+mv dist/python_ dist/python_
+pip install requests==${self.triggers.requests_version} openai -t dist/python_
+cd dist && zip -r requests_layer.zip python_
     EOT
   }
 }
