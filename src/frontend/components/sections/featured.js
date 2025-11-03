@@ -316,6 +316,8 @@ const StyledProject = styled.li`
 
     .img {
       border-radius: var(--border-radius);
+      filter: blur(1px);
+      transition: var(--transition);
 
       @media (max-width: 768px) {
         object-fit: cover;
@@ -385,7 +387,7 @@ const Featured = () => {
   return (
     <section id="projects">
       <h2 className="numbered-heading" ref={revealTitle}>
-        Some Things I've Helped Build
+        Some Things I've Built
       </h2>
 
       <StyledProjectsGrid>

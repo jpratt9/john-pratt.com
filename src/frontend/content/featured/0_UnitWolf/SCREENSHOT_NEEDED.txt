@@ -1,0 +1,12 @@
+ADD SCREENSHOT HERE
+==================
+
+Please add your UnitWolf project screenshot to this directory.
+
+Required:
+- Filename: unitwolf.png
+- Format: PNG (or JPG/JPEG)
+- Recommended dimensions: 700px width or larger
+- The cover image path in index.md is currently set to './unitwolf.png'
+
+Once you add the screenshot, delete this file.
