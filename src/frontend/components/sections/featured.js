@@ -367,7 +367,7 @@ const Featured = () => {
     let mounted = true;
 
     (async () => {
-      const sr = await getSr(); // dynamically loads scrollreveal only in the browser
+      const sr = await getSr();
       if (!mounted || !sr) return;
 
       if (revealTitle.current) {
@@ -382,7 +382,7 @@ const Featured = () => {
     return () => {
       mounted = false;
     };
-  }, [prefersReducedMotion]); // re-check if user toggles reduced motion
+  }, [prefersReducedMotion]);
 
   return (
     <section id="projects">

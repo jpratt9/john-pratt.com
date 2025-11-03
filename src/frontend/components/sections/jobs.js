@@ -200,7 +200,7 @@ const Jobs = () => {
     let mounted = true;
 
     (async () => {
-      const sr = await getSr(); // dynamically load scrollreveal on the client only
+      const sr = await getSr();
       if (!mounted || !sr) return;
       if (revealContainer.current) {
         sr.reveal(revealContainer.current, srConfig());
