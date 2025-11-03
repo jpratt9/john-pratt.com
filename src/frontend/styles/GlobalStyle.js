@@ -148,6 +148,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0 auto;
     padding: 100px 0;
     max-width: 1000px;
+    scroll-margin-top: var(--nav-height);
 
     @media (max-width: 768px) {
       padding: 80px 0;

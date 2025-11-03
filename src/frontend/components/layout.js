@@ -37,7 +37,7 @@ const Layout = ({ children, location }) => {
       setTimeout(() => {
         const el = document.getElementById(id);
         if (el) {
-          el.scrollIntoView();
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
           el.focus();
         }
       }, 0);
