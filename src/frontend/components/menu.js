@@ -82,7 +82,6 @@ const StyledSidebar = styled.aside`
     }
     a { ${({ theme }) => theme.mixins.link}; width: 100%; padding: 3px 20px 20px; }
   }
-  .resume-link { ${({ theme }) => theme.mixins.bigButton}; padding: 18px 50px; margin: 10% auto 0; width: max-content; }
 `;
 
 const Menu = () => {
@@ -174,17 +173,19 @@ const Menu = () => {
               <ol>
                 {navLinks.map(({ url, name }, i) => (
                   <li key={i}>
-                    <Link to={url} onClick={() => setMenuOpen(false)}>
-                      {name}
-                    </Link>
+                    {url.endsWith('.pdf') ? (
+                      <a href={url} target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)}>
+                        {name}
+                      </a>
+                    ) : (
+                      <Link to={url} onClick={() => setMenuOpen(false)}>
+                        {name}
+                      </Link>
+                    )}
                   </li>
                 ))}
               </ol>
             )}
-
-            <a href="/resume.pdf" className="resume-link">
-              Resume
-            </a>
           </nav>
         </StyledSidebar>
       </div>
