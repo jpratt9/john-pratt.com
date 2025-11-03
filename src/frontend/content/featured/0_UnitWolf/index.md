@@ -2,7 +2,7 @@
 date: '0'
 title: 'UnitWolf'
 cover: './unitwolf.png'
-external: 'https://unitwolf.netlify.app'
+external: 'https://unitwolf.net'
 github: 'https://github.com/jpratt9/unitwolf'
 classified: false
 tech:
