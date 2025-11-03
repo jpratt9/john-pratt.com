@@ -347,6 +347,7 @@ const Featured = () => {
               }
               tech
               classified
+              github
               external
             }
             html
