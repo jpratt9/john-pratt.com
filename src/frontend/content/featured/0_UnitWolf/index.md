@@ -12,4 +12,4 @@ tech:
   - Netlify
 ---
 
-A modern unit converter web application for quick and easy conversions between various units of measurement.
+A modern unit converter web application for quick and easy conversions between hundreds units of measurement.
