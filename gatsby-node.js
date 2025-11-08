@@ -6,8 +6,8 @@ const fsp = fs.promises;
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
   const { createRedirect } = actions;
-  const postTemplate = path.resolve(`src/frontend/templates/post.js`);
-  const tagTemplate = path.resolve('src/frontend/templates/tag.js');
+  const postTemplate = path.resolve(`src/frontend/templates/post.tsx`);
+  const tagTemplate = path.resolve('src/frontend/templates/tag.tsx');
 
   const result = await graphql(`
     {

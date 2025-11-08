@@ -1,4 +1,6 @@
-const config = {
+import { SiteConfig } from '../types';
+
+const config: SiteConfig = {
   email: 'john@john-pratt.com',
 
   socialMedia: [
@@ -58,4 +60,4 @@ const config = {
   }),
 };
 
-module.exports = config;
+export default config;

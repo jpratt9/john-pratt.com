@@ -1,0 +1,67 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "ES2020",
+    "lib": ["DOM", "DOM.Iterable", "ES2020"],
+    "jsx": "react",
+
+    /* Modules */
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+
+    /* JavaScript Support */
+    "allowJs": true,
+    "checkJs": false,
+
+    /* Emit */
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "removeComments": true,
+    "noEmit": true,
+
+    /* Interop Constraints */
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+
+    /* Type Checking */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "skipLibCheck": true,
+
+    /* Path Mapping (match webpack aliases) */
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["src/frontend/components/*"],
+      "@components": ["src/frontend/components"],
+      "@config": ["src/frontend/config"],
+      "@fonts/*": ["src/frontend/fonts/*"],
+      "@hooks/*": ["src/frontend/hooks/*"],
+      "@hooks": ["src/frontend/hooks"],
+      "@images/*": ["src/frontend/images/*"],
+      "@pages/*": ["src/frontend/pages/*"],
+      "@styles/*": ["src/frontend/styles/*"],
+      "@styles": ["src/frontend/styles"],
+      "@utils/*": ["src/frontend/utils/*"],
+      "@utils": ["src/frontend/utils"]
+    }
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "public",
+    ".cache",
+    "dist"
+  ]
+}
