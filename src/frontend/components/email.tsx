@@ -10,15 +10,7 @@ const StyledLinkWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   position: relative;
-
-  &:after {
-    content: '';
-    display: block;
-    width: 1px;
-    height: 90px;
-    margin: 0 auto;
-    background-color: var(--light-slate);
-  }
+  ${({ theme }) => theme.mixins.verticalLine};
 
   a {
     margin: 20px auto;

@@ -13,15 +13,7 @@ const StyledSocialList = styled.ul`
   margin: 0;
   padding: 0;
   list-style: none;
-
-  &:after {
-    content: '';
-    display: block;
-    width: 1px;
-    height: 90px;
-    margin: 0 auto;
-    background-color: var(--light-slate);
-  }
+  ${({ theme }) => theme.mixins.verticalLine};
 
   li {
     &:last-of-type {

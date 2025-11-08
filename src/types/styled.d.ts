@@ -25,6 +25,7 @@ declare module 'styled-components' {
       boxShadow: RuleSet;
       fancyList: RuleSet;
       resetList: RuleSet;
+      verticalLine: RuleSet;
     };
   }
 }
