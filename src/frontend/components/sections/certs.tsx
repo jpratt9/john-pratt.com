@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import { CSSTransition } from 'react-transition-group';
 import styled from 'styled-components';
+import { media } from '@styles';
 import config from '@config';
 import { KEY_CODES } from '@utils';
 import { getSr } from '@utils/sr';
@@ -34,7 +35,7 @@ const StyledCertsSection = styled.section`
   .inner {
     display: flex;
 
-    @media (max-width: 600px) {
+    ${media.tablet} {
       display: block;
     }
 
@@ -53,7 +54,7 @@ const StyledTabList = styled.div`
   list-style: none;
   border-left: 2px solid var(--lightest-navy);
 
-  @media (max-width: 600px) {
+  ${media.tablet} {
     display: flex;
     overflow-x: auto;
     width: calc(100% + 100px);
@@ -63,7 +64,7 @@ const StyledTabList = styled.div`
     border-left: 0;
     border-bottom: 2px solid var(--lightest-navy);
   }
-  @media (max-width: 480px) {
+  ${media.mobile} {
     width: calc(100% + 50px);
     padding-left: 25px;
     margin-left: -25px;
@@ -71,18 +72,18 @@ const StyledTabList = styled.div`
 
   li {
     &:first-of-type {
-      @media (max-width: 600px) {
+      ${media.tablet} {
         margin-left: 50px;
       }
-      @media (max-width: 480px) {
+      ${media.mobile} {
         margin-left: 25px;
       }
     }
     &:last-of-type {
-      @media (max-width: 600px) {
+      ${media.tablet} {
         padding-right: 50px;
       }
-      @media (max-width: 480px) {
+      ${media.mobile} {
         padding-right: 25px;
       }
     }
@@ -104,10 +105,10 @@ const StyledTabButton = styled.button<StyledTabButtonProps>`
   text-align: left;
   white-space: nowrap;
 
-  @media (max-width: 768px) {
+  ${media.desktop} {
     padding: 0 15px 2px;
   }
-  @media (max-width: 600px) {
+  ${media.tablet} {
     ${({ theme }) => theme.mixins.flexCenter};
     min-width: 120px;
     padding: 0 15px;
@@ -135,7 +136,7 @@ const StyledHighlight = styled.div<StyledHighlightProps>`
   transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition-delay: 0.1s;
 
-  @media (max-width: 600px) {
+  ${media.tablet} {
     top: auto;
     bottom: 0;
     width: 100%;
@@ -144,7 +145,7 @@ const StyledHighlight = styled.div<StyledHighlightProps>`
     margin-left: 50px;
     transform: translateX(calc(${({ activeTabId }) => activeTabId} * var(--tab-width)));
   }
-  @media (max-width: 480px) {
+  ${media.mobile} {
     margin-left: 25px;
   }
 `;
@@ -154,7 +155,7 @@ const StyledTabPanels = styled.div`
   width: 100%;
   margin-left: 20px;
 
-  @media (max-width: 600px) {
+  ${media.tablet} {
     margin-left: 0;
   }
 `;
@@ -207,7 +208,7 @@ const CertsGrid = styled.div<CertsGridProps>`
   gap: 25px;
   width: 100%;
 
-  @media (max-width: 768px) {
+  ${media.desktop} {
     grid-template-columns: 1fr;
   }
 `;
