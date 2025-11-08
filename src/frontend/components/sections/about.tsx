@@ -1,12 +1,8 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 import { media } from '@styles';
-import config from '@config';
-import { getSr } from '@utils/sr';
-import { usePrefersReducedMotion } from '@hooks';
-
-const { srConfig } = config;
+import { useScrollReveal } from '@hooks';
 
 const StyledAboutSection = styled.section`
   max-width: 1000px;
@@ -113,24 +109,7 @@ const StyledPic = styled.div`
 
 const About: React.FC = () => {
   const revealContainer = useRef<HTMLElement>(null);
-  const prefersReducedMotion = usePrefersReducedMotion();
-
-  useEffect(() => {
-    if (prefersReducedMotion) {
-      return;
-    }
-
-    let mounted = true;
-    getSr().then(sr => {
-      if (mounted && sr && revealContainer.current) {
-        sr.reveal(revealContainer.current, srConfig());
-      }
-    });
-    return () => {
-      mounted = false;
-    };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  useScrollReveal(revealContainer);
 
   const skills = [
     'Amazon Web Services (AWS)',

@@ -1,11 +1,10 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import styled from 'styled-components';
 import { media } from '@styles';
 import config from '@config';
-import { getSr } from '@utils/sr';
-import { usePrefersReducedMotion } from '@hooks';
+import { useScrollReveal } from '@hooks';
 
-const { srConfig, email } = config;
+const { email } = config;
 
 const StyledContactSection = styled.section`
   max-width: 600px;
@@ -46,24 +45,7 @@ const StyledContactSection = styled.section`
 
 const Contact: React.FC = () => {
   const revealContainer = useRef<HTMLElement>(null);
-  const prefersReducedMotion = usePrefersReducedMotion();
-
-  useEffect(() => {
-    if (prefersReducedMotion) {
-      return;
-    }
-
-    let mounted = true;
-    getSr().then(sr => {
-      if (mounted && sr && revealContainer.current) {
-        sr.reveal(revealContainer.current, srConfig());
-      }
-    });
-    return () => {
-      mounted = false;
-    };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  useScrollReveal(revealContainer);
 
   return (
     <StyledContactSection id="contact" ref={revealContainer}>
