@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
 import { media } from '@styles';
 import { loaderDelay } from '@utils';
-import { usePrefersReducedMotion } from '@hooks';
+import { useDelayedMount, usePrefersReducedMotion } from '@hooks';
 
 interface StyledSideElementProps {
   orientation: string;
@@ -35,16 +35,8 @@ interface SideProps {
 }
 
 const Side: React.FC<SideProps> = ({ children, isHome, orientation }) => {
-  const [isMounted, setIsMounted] = useState(!isHome);
+  const isMounted = useDelayedMount(loaderDelay, isHome || false);
   const prefersReducedMotion = usePrefersReducedMotion();
-
-  useEffect(() => {
-    if (!isHome || prefersReducedMotion) {
-      return;
-    }
-    const timeout = setTimeout(() => setIsMounted(true), loaderDelay);
-    return () => clearTimeout(timeout);
-  }, [isHome, prefersReducedMotion]);
 
   return (
     <StyledSideElement orientation={orientation}>
