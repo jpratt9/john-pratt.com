@@ -5,7 +5,7 @@ import styled, { css } from 'styled-components';
 import config from '@config';
 import { loaderDelay } from '@utils';
 import { useScrollDirection, usePrefersReducedMotion, useDelayedMount } from '@hooks';
-import { Menu } from '@components';
+import { Menu, NavLink } from '@components';
 import { IconLogo, IconHex } from '@components/icons';
 import { ScrollDirection } from '../../types';
 import { media } from '@styles';
@@ -203,13 +203,7 @@ const Nav: React.FC<NavProps> = ({ isHome }) => {
                 {navLinks &&
                   navLinks.map(({ url, name }, i) => (
                     <li key={i}>
-                      {url.endsWith('.pdf') ? (
-                        <a href={url} target="_blank" rel="noopener noreferrer">
-                          {name}
-                        </a>
-                      ) : (
-                        <Link to={url}>{name}</Link>
-                      )}
+                      <NavLink url={url} name={name} />
                     </li>
                   ))}
               </ol>
@@ -235,13 +229,7 @@ const Nav: React.FC<NavProps> = ({ isHome }) => {
                     navLinks.map(({ url, name }, i) => (
                       <CSSTransition key={i} classNames={fadeDownClass} timeout={timeout}>
                         <li key={i} style={{ transitionDelay: `${isHome ? i * 100 : 0}ms` }}>
-                          {url.endsWith('.pdf') ? (
-                            <a href={url} target="_blank" rel="noopener noreferrer">
-                              {name}
-                            </a>
-                          ) : (
-                            <Link to={url}>{name}</Link>
-                          )}
+                          <NavLink url={url} name={name} />
                         </li>
                       </CSSTransition>
                     ))}
