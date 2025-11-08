@@ -1,27 +1,34 @@
 import { css, RuleSet } from 'styled-components';
 
-const button = css`
+const createButton = (
+  padding = '1.25rem 1.75rem',
+  fontSize = 'var(--fz-xs)',
+  shadowSize = '4px',
+  translateSize = '-5px'
+) => css`
   color: var(--green);
   background-color: transparent;
   border: 1px solid var(--green);
   border-radius: var(--border-radius);
-  font-size: var(--fz-xs);
+  font-size: ${fontSize};
   font-family: var(--font-mono);
   line-height: 1;
   text-decoration: none;
-  padding: 1.25rem 1.75rem;
+  padding: ${padding};
   transition: var(--transition);
 
   &:hover,
   &:focus-visible {
     outline: none;
-    box-shadow: 4px 4px 0 0 var(--green);
-    transform: translate(-5px, -5px);
+    box-shadow: ${shadowSize} ${shadowSize} 0 0 var(--green);
+    transform: translate(${translateSize}, ${translateSize});
   }
   &:after {
     display: none !important;
   }
 `;
+
+const button = createButton();
 
 const mixins: {
   flexCenter: RuleSet;
@@ -97,51 +104,9 @@ const mixins: {
 
   button,
 
-  smallButton: css`
-    color: var(--green);
-    background-color: transparent;
-    border: 1px solid var(--green);
-    border-radius: var(--border-radius);
-    padding: 0.75rem 1rem;
-    font-size: var(--fz-xs);
-    font-family: var(--font-mono);
-    line-height: 1;
-    text-decoration: none;
-    transition: var(--transition);
+  smallButton: createButton('0.75rem 1rem', 'var(--fz-xs)', '3px', '-4px'),
 
-    &:hover,
-    &:focus-visible {
-      outline: none;
-      box-shadow: 3px 3px 0 0 var(--green);
-      transform: translate(-4px, -4px);
-    }
-    &:after {
-      display: none !important;
-    }
-  `,
-
-  bigButton: css`
-    color: var(--green);
-    background-color: transparent;
-    border: 1px solid var(--green);
-    border-radius: var(--border-radius);
-    padding: 1.25rem 1.75rem;
-    font-size: var(--fz-sm);
-    font-family: var(--font-mono);
-    line-height: 1;
-    text-decoration: none;
-    transition: var(--transition);
-
-    &:hover,
-    &:focus-visible {
-      outline: none;
-      box-shadow: 4px 4px 0 0 var(--green);
-      transform: translate(-5px, -5px);
-    }
-    &:after {
-      display: none !important;
-    }
-  `,
+  bigButton: createButton('1.25rem 1.75rem', 'var(--fz-sm)', '4px', '-5px'),
 
   boxShadow: css`
     box-shadow: 0 10px 30px -15px var(--navy-shadow);
