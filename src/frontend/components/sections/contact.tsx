@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
+import { media } from '@styles';
 import config from '@config';
 import { getSr } from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
@@ -11,7 +12,7 @@ const StyledContactSection = styled.section`
   margin: 0 auto 100px;
   text-align: center;
 
-  @media (max-width: 768px) {
+  ${media.desktop} {
     margin: 0 auto 50px;
   }
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql, Link, HeadFC, PageProps } from 'gatsby';
 import styled from 'styled-components';
+import { media } from '@styles';
 import { Layout } from '@components';
 import { IconBookmark } from '@components/icons';
 import SEO from '@components/head';
@@ -32,7 +33,7 @@ const StyledGrid = styled.ul`
   margin-top: 50px;
   position: relative;
 
-  @media (max-width: 1080px) {
+  ${media.wide} {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
 `;

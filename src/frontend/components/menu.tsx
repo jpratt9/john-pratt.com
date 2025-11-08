@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
+import { media } from '@styles';
 import config from '@config';
 import { KEY_CODES } from '@utils';
 import { useOnClickOutside } from '@hooks';
@@ -9,7 +10,7 @@ const { navLinks } = config;
 
 const StyledMenu = styled.div`
   display: none;
-  @media (max-width: 768px) {
+  ${media.desktop} {
     display: block;
   }
 `;
@@ -20,7 +21,7 @@ interface StyledHamburgerButtonProps {
 
 const StyledHamburgerButton = styled.button<StyledHamburgerButtonProps>`
   display: none;
-  @media (max-width: 768px) {
+  ${media.desktop} {
     ${({ theme }) => theme.mixins.flexCenter};
     position: relative;
     z-index: 10;
@@ -92,7 +93,7 @@ interface StyledSidebarProps {
 
 const StyledSidebar = styled.aside<StyledSidebarProps>`
   display: none;
-  @media (max-width: 768px) {
+  ${media.desktop} {
     ${({ theme }) => theme.mixins.flexCenter};
     position: fixed;
     top: 0;
@@ -127,7 +128,7 @@ const StyledSidebar = styled.aside<StyledSidebarProps>`
       margin: 0 auto 20px;
       counter-increment: item 1;
       font-size: clamp(var(--fz-sm), 4vw, var(--fz-lg));
-      @media (max-width: 600px) {
+      ${media.tablet} {
         margin: 0 auto 10px;
       }
       &:before {

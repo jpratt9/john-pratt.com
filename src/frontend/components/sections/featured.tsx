@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import { GatsbyImage, getImage, IGatsbyImageData } from 'gatsby-plugin-image';
 import styled from 'styled-components';
+import { media } from '@styles';
 import { getSr } from '@utils/sr';
 import config from '@config';
 import { Icon } from '@components/icons';
@@ -32,18 +33,18 @@ const StyledProject = styled.li`
   grid-template-columns: repeat(12, 1fr);
   align-items: center;
 
-  @media (max-width: 768px) {
+  ${media.desktop} {
     ${({ theme }) => theme.mixins.boxShadow};
   }
 
   &:not(:last-of-type) {
     margin-bottom: 100px;
 
-    @media (max-width: 768px) {
+    ${media.desktop} {
       margin-bottom: 70px;
     }
 
-    @media (max-width: 480px) {
+    ${media.mobile} {
       margin-bottom: 30px;
     }
   }
@@ -57,14 +58,14 @@ const StyledProject = styled.li`
       margin: 10px 0 0 0;
       list-style: none;
 
-      @media (max-width: 768px) {
+      ${media.desktop} {
         justify-content: center;
       }
 
       li {
         margin: 0 0 5px 20px;
 
-        @media (max-width: 768px) {
+        ${media.desktop} {
           margin: 0 10px 5px 0;
         }
       }
@@ -76,15 +77,15 @@ const StyledProject = styled.li`
       grid-column: 7 / -1;
       text-align: right;
 
-      @media (max-width: 1080px) {
+      ${media.wide} {
         grid-column: 5 / -1;
       }
-      @media (max-width: 768px) {
+      ${media.desktop} {
         grid-column: 1 / -1;
         padding: 40px 40px 30px;
         text-align: left;
       }
-      @media (max-width: 480px) {
+      ${media.mobile} {
         padding: 25px 25px 20px;
       }
     }
@@ -96,14 +97,14 @@ const StyledProject = styled.li`
       margin: 10px 0 0 0;
       list-style: none;
 
-      @media (max-width: 768px) {
+      ${media.desktop} {
         justify-content: center;
       }
 
       li {
         margin: 0 0 5px 20px;
 
-        @media (max-width: 768px) {
+        ${media.desktop} {
           margin: 0 10px 5px 0;
         }
       }
@@ -114,7 +115,7 @@ const StyledProject = styled.li`
       margin-right: -10px;
       margin-bottom: 20px;
 
-      @media (max-width: 768px) {
+      ${media.desktop} {
         justify-content: flex-start;
         margin-left: -10px;
         margin-right: 0;
@@ -124,7 +125,7 @@ const StyledProject = styled.li`
     .project-image {
       grid-column: 1 / 8;
 
-      @media (max-width: 768px) {
+      ${media.desktop} {
         grid-column: 1 / -1;
       }
     }
@@ -135,11 +136,11 @@ const StyledProject = styled.li`
     grid-column: 1 / 7;
     grid-row: 1 / -1;
 
-    @media (max-width: 1080px) {
+    ${media.wide} {
       grid-column: 1 / 9;
     }
 
-    @media (max-width: 768px) {
+    ${media.desktop} {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -149,7 +150,7 @@ const StyledProject = styled.li`
       z-index: 5;
     }
 
-    @media (max-width: 480px) {
+    ${media.mobile} {
       padding: 30px 25px 20px;
     }
   }
@@ -170,7 +171,7 @@ const StyledProject = styled.li`
       margin: 0 0 20px;
     }
 
-    @media (max-width: 768px) {
+    ${media.desktop} {
       color: var(--white);
 
       a {
@@ -200,7 +201,7 @@ const StyledProject = styled.li`
     color: var(--light-slate);
     font-size: var(--fz-lg);
 
-    @media (max-width: 768px) {
+    ${media.desktop} {
       padding: 20px 0;
       background-color: transparent;
       box-shadow: none;
@@ -239,7 +240,7 @@ const StyledProject = styled.li`
       font-weight: bold;
     }
 
-    @media (max-width: 768px) {
+    ${media.desktop} {
       margin: 10px 0;
 
       li {
@@ -283,7 +284,7 @@ const StyledProject = styled.li`
     position: relative;
     z-index: 1;
 
-    @media (max-width: 768px) {
+    ${media.desktop} {
       grid-column: 1 / -1;
       height: 100%;
       opacity: 0.25;
@@ -328,7 +329,7 @@ const StyledProject = styled.li`
       filter: blur(1px);
       transition: var(--transition);
 
-      @media (max-width: 768px) {
+      ${media.desktop} {
         object-fit: cover;
         width: auto;
         height: 100%;

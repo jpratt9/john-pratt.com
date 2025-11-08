@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
+import { media } from '@styles';
 import { loaderDelay } from '@utils';
 import { usePrefersReducedMotion } from '@hooks';
 
@@ -17,12 +18,12 @@ const StyledSideElement = styled.div<StyledSideElementProps>`
   z-index: 10;
   color: var(--light-slate);
 
-  @media (max-width: 1080px) {
+  ${media.wide} {
     left: ${props => (props.orientation === 'left' ? '20px' : 'auto')};
     right: ${props => (props.orientation === 'left' ? 'auto' : '20px')};
   }
 
-  @media (max-width: 768px) {
+  ${media.desktop} {
     display: none;
   }
 `;
