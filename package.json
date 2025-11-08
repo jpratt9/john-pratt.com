@@ -17,19 +17,23 @@
     "npm": ">=11.6.0"
   },
   "scripts": {
-    "build": "gatsby build",
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "tsc --noEmit --watch",
+    "cache-nuke" : "npm cache clear --force; rm -rf node_modules .cache package-lock.json public; npm i --legacy-peer-deps",
+    "build": "npm run cache-nuke; npm run type-check && gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "format": "prettier --write \"**/*.{ts,tsx,js,json,md}\"",
     "start": "gatsby serve",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "verify-no-js": "bash -c 'JS_COUNT=$(find src -name \"*.js\" -type f | wc -l); if [ $JS_COUNT -eq 0 ]; then echo \"No JavaScript files in src/\"; else echo \"Found $JS_COUNT JavaScript files in src/:\"; find src -name \"*.js\" -type f; exit 1; fi'"
   },
   "lint-staged": {
-    "*.{js,css,json,md}": [
+    "*.{ts,tsx,js,css,json,md}": [
       "prettier --write"
     ],
-    "*.js": [
+    "*.{ts,tsx,js}": [
       "eslint --fix"
     ]
   },
@@ -74,12 +78,22 @@
     "@gatsbyjs/webpack-hot-middleware": "^2.25.3",
     "@prefresh/babel-plugin": "^0.5.2",
     "@prefresh/core": "^1.5.8",
+    "@types/lodash": "^4.17.20",
+    "@types/node": "^24.10.0",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "@types/react-transition-group": "^4.4.12",
+    "@types/scrollreveal": "^0.0.11",
+    "@types/styled-components": "^5.1.35",
+    "@typescript-eslint/eslint-plugin": "^8.46.3",
+    "@typescript-eslint/parser": "^8.46.3",
     "babel-preset-gatsby": "3.15.0",
     "eslint": "9.37.0",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-jsx-a11y": "6.10.2",
     "eslint-plugin-react": "7.37.5",
     "gatsby-plugin-perf-budgets": "0.0.18",
+    "gatsby-plugin-typescript": "^5.15.0",
     "gatsby-plugin-webpack-bundle-analyser-v2": "1.1.32",
     "gatsby-remark-code-titles": "1.1.0",
     "husky": "9.1.7",
@@ -87,6 +101,7 @@
     "preact": "^10.27.2",
     "preact-render-to-string": "^6.6.2",
     "prettier": "3.6.2",
+    "typescript": "^5.9.3",
     "webpack": "5.98.0"
   },
   "overrides": {
