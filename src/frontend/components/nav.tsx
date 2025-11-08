@@ -4,7 +4,7 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled, { css } from 'styled-components';
 import config from '@config';
 import { loaderDelay } from '@utils';
-import { useScrollDirection, usePrefersReducedMotion } from '@hooks';
+import { useScrollDirection, usePrefersReducedMotion, useDelayedMount } from '@hooks';
 import { Menu } from '@components';
 import { IconLogo, IconHex } from '@components/icons';
 import { ScrollDirection } from '../../types';
@@ -146,7 +146,7 @@ interface NavProps {
 }
 
 const Nav: React.FC<NavProps> = ({ isHome }) => {
-  const [isMounted, setIsMounted] = useState(!isHome);
+  const isMounted = useDelayedMount(100);
   const scrollDirection = useScrollDirection({ initialDirection: 'down' });
   const [scrolledToTop, setScrolledToTop] = useState(true);
   const prefersReducedMotion = usePrefersReducedMotion();
@@ -156,18 +156,8 @@ const Nav: React.FC<NavProps> = ({ isHome }) => {
   };
 
   useEffect(() => {
-    if (prefersReducedMotion) {
-      return;
-    }
-
-    const timeout = setTimeout(() => {
-      setIsMounted(true);
-    }, 100);
-
     window.addEventListener('scroll', handleScroll);
-
     return () => {
-      clearTimeout(timeout);
       window.removeEventListener('scroll', handleScroll);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps

@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
 import { media } from '@styles';
 import { navDelay, loaderDelay } from '@utils';
-import { usePrefersReducedMotion } from '@hooks';
+import { useDelayedMount, usePrefersReducedMotion } from '@hooks';
 
 const StyledHeroSection = styled.section`
   ${({ theme }) => theme.mixins.flexCenter};
@@ -48,18 +48,8 @@ const StyledHeroSection = styled.section`
 `;
 
 const Hero: React.FC = () => {
-  const [isMounted, setIsMounted] = useState(false);
+  const isMounted = useDelayedMount(navDelay);
   const prefersReducedMotion = usePrefersReducedMotion();
-
-  useEffect(() => {
-    if (prefersReducedMotion) {
-      return;
-    }
-
-    const timeout = setTimeout(() => setIsMounted(true), navDelay);
-    return () => clearTimeout(timeout);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
 
   const one = <h1>Hi, my name is</h1>;
   const two = <h2 className="big-heading">John Pratt.</h2>;
