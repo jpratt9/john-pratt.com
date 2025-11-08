@@ -1,15 +1,11 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import { GatsbyImage, getImage, IGatsbyImageData } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 import { media } from '@styles';
-import { getSr } from '@utils/sr';
-import config from '@config';
 import { Icon } from '@components/icons';
-import { usePrefersReducedMotion } from '@hooks';
+import { useScrollReveal, useScrollRevealMultiple } from '@hooks';
 import { FeaturedProjectFrontmatter, GraphQLEdge } from '../../../types';
-
-const { srConfig } = config;
 
 interface FeaturedQueryData {
   featured: {
@@ -370,30 +366,9 @@ const Featured: React.FC = () => {
   const featuredProjects = data.featured.edges.filter(({ node }) => node);
   const revealTitle = useRef<HTMLHeadingElement>(null);
   const revealProjects = useRef<(HTMLLIElement | null)[]>([]);
-  const prefersReducedMotion = usePrefersReducedMotion();
 
-  useEffect(() => {
-    if (prefersReducedMotion) return;
-
-    let mounted = true;
-
-    (async () => {
-      const sr = await getSr();
-      if (!mounted || !sr) return;
-
-      if (revealTitle.current) {
-        sr.reveal(revealTitle.current, srConfig());
-      }
-
-      revealProjects.current.forEach((ref, i) => {
-        if (ref) sr.reveal(ref, srConfig(i * 100));
-      });
-    })();
-
-    return () => {
-      mounted = false;
-    };
-  }, [prefersReducedMotion]);
+  useScrollReveal(revealTitle);
+  useScrollRevealMultiple(revealProjects);
 
   return (
     <section id="projects">

@@ -3,13 +3,9 @@ import { useStaticQuery, graphql } from 'gatsby';
 import { CSSTransition } from 'react-transition-group';
 import styled from 'styled-components';
 import { media } from '@styles';
-import config from '@config';
 import { KEY_CODES } from '@utils';
-import { getSr } from '@utils/sr';
-import { usePrefersReducedMotion } from '@hooks';
+import { useScrollReveal } from '@hooks';
 import { JobFrontmatter, GraphQLEdge } from '../../../types';
-
-const { srConfig } = config;
 
 interface JobsQueryData {
   jobs: {
@@ -210,25 +206,8 @@ const Jobs: React.FC = () => {
   const [tabFocus, setTabFocus] = useState<number | null>(null);
   const tabs = useRef<(HTMLButtonElement | null)[]>([]);
   const revealContainer = useRef<HTMLElement>(null);
-  const prefersReducedMotion = usePrefersReducedMotion();
 
-  useEffect(() => {
-    if (prefersReducedMotion) return;
-
-    let mounted = true;
-
-    (async () => {
-      const sr = await getSr();
-      if (!mounted || !sr) return;
-      if (revealContainer.current) {
-        sr.reveal(revealContainer.current, srConfig());
-      }
-    })();
-
-    return () => {
-      mounted = false;
-    };
-  }, [prefersReducedMotion]);
+  useScrollReveal(revealContainer);
 
   const focusTab = () => {
     if (tabFocus !== null && tabs.current[tabFocus]) {
