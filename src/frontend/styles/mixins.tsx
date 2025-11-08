@@ -41,6 +41,7 @@ const mixins: {
   boxShadow: RuleSet;
   fancyList: RuleSet;
   resetList: RuleSet;
+  verticalLine: RuleSet;
 } = {
   flexCenter: css`
     display: flex;
@@ -140,6 +141,17 @@ const mixins: {
     list-style: none;
     padding: 0;
     margin: 0;
+  `,
+
+  verticalLine: css`
+    &:after {
+      content: '';
+      display: block;
+      width: 1px;
+      height: 90px;
+      margin: 0 auto;
+      background-color: var(--light-slate);
+    }
   `,
 };
 
