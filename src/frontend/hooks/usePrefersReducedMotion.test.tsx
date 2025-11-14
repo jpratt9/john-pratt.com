@@ -40,7 +40,7 @@ describe('usePrefersReducedMotion', () => {
   });
 
   it('should update when preference changes', () => {
-    let changeListener: ((event: any) => void) | null = null;
+    let changeListener: ((_event: any) => void) | null = null;
 
     window.matchMedia = vi.fn().mockImplementation(query => ({
       matches: true, // Initially prefers motion
@@ -48,7 +48,7 @@ describe('usePrefersReducedMotion', () => {
       onchange: null,
       addListener: vi.fn(),
       removeListener: vi.fn(),
-      addEventListener: vi.fn((event, listener) => {
+      addEventListener: vi.fn((_event, listener) => {
         changeListener = listener;
       }),
       removeEventListener: vi.fn(),

@@ -1,6 +1,5 @@
 import { describe, it, expect, vi } from 'vitest';
 import { renderHook } from '@testing-library/react';
-import { useRef } from 'react';
 import useOnClickOutside from './useOnClickOutside';
 
 describe('useOnClickOutside', () => {
@@ -74,7 +73,7 @@ describe('useOnClickOutside', () => {
 
   it('should not call handler with null refs', () => {
     const handler = vi.fn();
-    const ref = { current: null };
+    const ref = { current: null } as unknown as React.RefObject<HTMLElement>;
 
     renderHook(() => useOnClickOutside(ref, handler));
 

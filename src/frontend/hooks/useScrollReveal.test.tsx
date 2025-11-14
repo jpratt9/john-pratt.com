@@ -1,9 +1,9 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { renderHook } from '@testing-library/react';
-import { useRef } from 'react';
 import { useScrollReveal, useScrollRevealMultiple } from './useScrollReveal';
 import * as srModule from '@utils/sr';
 import * as usePrefersReducedMotionModule from './usePrefersReducedMotion';
+import type { ScrollRevealConfig } from '../../types';
 
 vi.mock('@utils/sr');
 vi.mock('./usePrefersReducedMotion');
@@ -83,10 +83,10 @@ describe('useScrollReveal', () => {
   it('should use custom config when provided', async () => {
     const ref = { current: document.createElement('div') };
     const customConfig = {
-      origin: 'left' as const,
+      origin: 'left',
       distance: '50px',
       duration: 1000,
-    };
+    } as ScrollRevealConfig;
 
     renderHook(() => useScrollReveal(ref, customConfig));
 
@@ -151,10 +151,10 @@ describe('useScrollRevealMultiple', () => {
     const div1 = document.createElement('div');
     const div2 = document.createElement('div');
     const refs = { current: [div1, div2] };
-    const configFn = (index: number) => ({
-      origin: 'bottom' as const,
+    const configFn = (index: number): ScrollRevealConfig => ({
+      origin: 'bottom',
       delay: index * 100,
-    });
+    } as ScrollRevealConfig);
 
     renderHook(() => useScrollRevealMultiple(refs, configFn));
 
@@ -208,7 +208,7 @@ describe('useScrollRevealMultiple', () => {
   });
 
   it('should not initialize when refs.current is null', async () => {
-    const refs = { current: null };
+    const refs = { current: null } as unknown as React.RefObject<(HTMLElement | null)[]>;
 
     renderHook(() => useScrollRevealMultiple(refs));
 
