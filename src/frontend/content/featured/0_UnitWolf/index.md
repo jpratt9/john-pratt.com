@@ -9,6 +9,7 @@ tech:
   - React
   - TypeScript
   - Gatsby
+  - Vitest
   - Netlify
 ---
 

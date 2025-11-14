@@ -10,6 +10,7 @@ tech:
   - gatsby
   - GraphQL
   - React
+  - Vitest
   - Netlify
 ---
 
