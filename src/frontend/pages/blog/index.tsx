@@ -81,7 +81,13 @@ const StyledPost = styled.li`
     transition: var(--transition);
     background-color: var(--light-navy);
 
-    header,
+    header {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
     a {
       width: 100%;
     }
@@ -129,7 +135,8 @@ const StyledPost = styled.li`
     color: var(--slate);
     font-family: var(--font-mono);
     font-size: var(--fz-sm);
-    margin-top: 5px;
+    margin-top: auto;
+    padding-top: 15px;
   }
 
   ul.post__tags {
