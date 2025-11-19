@@ -20,6 +20,18 @@ interface PostTemplateContext {
 
 const StyledPostContainer = styled.main`
   max-width: 1200px;
+  width: 100%;
+  padding: 200px 150px;
+
+  @media (max-width: 1080px) {
+    padding: 200px 100px;
+  }
+  @media (max-width: 768px) {
+    padding: 150px 50px;
+  }
+  @media (max-width: 480px) {
+    padding: 125px 25px;
+  }
 `;
 const StyledPostHeader = styled.header`
   margin-bottom: 50px;

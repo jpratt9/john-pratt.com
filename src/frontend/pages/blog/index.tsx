@@ -14,6 +14,20 @@ interface BlogPageData {
 }
 
 const StyledMainContainer = styled.main`
+  max-width: 1600px;
+  width: 100%;
+  padding: 200px 150px;
+
+  @media (max-width: 1080px) {
+    padding: 200px 100px;
+  }
+  @media (max-width: 768px) {
+    padding: 150px 50px;
+  }
+  @media (max-width: 480px) {
+    padding: 125px 25px;
+  }
+
   & > header {
     margin-bottom: 100px;
     text-align: center;
