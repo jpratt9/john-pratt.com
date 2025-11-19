@@ -126,10 +126,10 @@ const StyledPost = styled.li`
   }
 
   .post__date {
-    color: var(--light-slate);
+    color: var(--slate);
     font-family: var(--font-mono);
-    font-size: var(--fz-xxs);
-    text-transform: uppercase;
+    font-size: var(--fz-sm);
+    margin-top: 5px;
   }
 
   ul.post__tags {
@@ -156,6 +156,11 @@ const StyledPost = styled.li`
 const BlogPage: React.FC<PageProps<BlogPageData>> = ({ location, data }) => {
   const posts = data.allMarkdownRemark.edges;
 
+  const formatDate = (dateString: string) => {
+    const d = new Date(dateString);
+    return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+  };
+
   return (
     <Layout location={location}>
       <StyledMainContainer>
@@ -170,7 +175,7 @@ const BlogPage: React.FC<PageProps<BlogPageData>> = ({ location, data }) => {
           {posts.length > 0 &&
             posts.map(({ node }, i) => {
               const { frontmatter } = node;
-              const { title, slug } = frontmatter;
+              const { title, slug, date } = frontmatter;
 
               return (
                 <StyledPost key={i}>
@@ -182,6 +187,7 @@ const BlogPage: React.FC<PageProps<BlogPageData>> = ({ location, data }) => {
                       <h5 className="post__title">
                         <Link to={slug}>{title}</Link>
                       </h5>
+                      {date && <p className="post__date">{formatDate(date)}</p>}
                     </header>
                   </div>
                 </StyledPost>
