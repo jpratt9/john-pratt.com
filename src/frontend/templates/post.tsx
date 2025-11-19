@@ -34,8 +34,15 @@ const StyledPostContainer = styled.main`
   }
 `;
 const StyledPostHeader = styled.header`
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   .tag { margin-right: 10px; }
+  .post__date {
+    display: block;
+    margin-top: 10px;
+    color: var(--slate);
+    font-size: var(--fz-sm);
+    font-family: var(--font-mono);
+  }
 `;
 const StyledPostContent = styled.div`
   margin-bottom: 100px;
@@ -57,7 +64,12 @@ const PostTemplate: React.FC<PageProps<PostTemplateData, PostTemplateContext>> =
   if (!post) return null;
 
   const { frontmatter, html } = post;
-  const { title, tags, draft } = frontmatter;
+  const { title, date, tags, draft } = frontmatter;
+
+  const formatDate = (dateString: string) => {
+    const d = new Date(dateString);
+    return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+  };
 
   return (
     <Layout location={location}>
@@ -78,6 +90,7 @@ const PostTemplate: React.FC<PageProps<PostTemplateData, PostTemplateContext>> =
                 </Link>
               ))}
           </p>
+          {date && <span className="post__date">{formatDate(date)}</span>}
         </StyledPostHeader>
 
         <StyledPostContent dangerouslySetInnerHTML={{ __html: html }} />
