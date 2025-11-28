@@ -19,4 +19,5 @@ companyRank: 0
 - Fixed critical production bug in Client’s Java/Postgres SOAP API costing them **~$43k/mo in lost bookings**
 - **Helped Client save ~$1M annually** in licensing fees by migrating from Oracle DB to Postgres
 - Designing, building & deploying custom software solutions for several local businesses with React, Python, Netlify & more
+- Built Client automated prospecting + email cold outreach system that searches for relevant sales prospects, analyzes their personal information, then adds them to a cold email sequence using Apollo.io API
 - Built and leading a global team of 5+ full-time employees & freelancers for development & BizOps
