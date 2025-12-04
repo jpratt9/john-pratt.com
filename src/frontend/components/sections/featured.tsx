@@ -396,7 +396,7 @@ const Featured: React.FC = () => {
                       className="project-title"
                       style={{ fontStyle: classified ? 'italic' : 'normal' }}
                     >
-                      <a href={external}>{title}</a>
+                      {external ? <a href={external}>{title}</a> : title}
                     </h3>
 
                     <div className="project-description" dangerouslySetInnerHTML={{ __html: html }} />
