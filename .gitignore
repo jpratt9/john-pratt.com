@@ -40,3 +40,6 @@ secrets.tfvars
 
 # python
 **/dist
+
+# notes
+lambda-cold-start-notes.md
