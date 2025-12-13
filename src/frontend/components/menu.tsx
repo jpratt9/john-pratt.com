@@ -93,6 +93,7 @@ interface StyledSidebarProps {
 
 const StyledSidebar = styled.aside<StyledSidebarProps>`
   display: none;
+  visibility: hidden;
   ${media.desktop} {
     ${({ theme }) => theme.mixins.flexCenter};
     position: fixed;
@@ -106,9 +107,14 @@ const StyledSidebar = styled.aside<StyledSidebarProps>`
     background-color: var(--light-navy);
     box-shadow: -10px 0px 30px -15px var(--navy-shadow);
     z-index: 9;
-    transform: translateX(${props => (props.menuOpen ? 0 : 100)}vw);
-    visibility: ${props => (props.menuOpen ? 'visible' : 'hidden')};
+    transform: translateX(100vw);
+    visibility: hidden;
     transition: var(--transition);
+
+    ${props => props.menuOpen && `
+      transform: translateX(0);
+      visibility: visible;
+    `}
   }
   nav {
     ${({ theme }) => theme.mixins.flexBetween};
