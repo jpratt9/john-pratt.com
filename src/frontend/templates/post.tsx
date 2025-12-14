@@ -22,6 +22,8 @@ const StyledPostContainer = styled.main`
   max-width: 1200px;
   width: 100%;
   padding: 200px 150px;
+  overflow-x: hidden;
+  overflow-y: hidden;
 
   @media (max-width: 1080px) {
     padding: 200px 100px;
@@ -46,17 +48,22 @@ const StyledPostHeader = styled.header`
 `;
 const StyledPostContent = styled.div`
   margin-bottom: 100px;
+  overflow-x: hidden;
+  overflow-y: hidden;
   h1, h2, h3, h4, h5, h6 { margin: 2em 0 1em; }
   p { margin: 1em 0; line-height: 1.5; color: var(--light-slate); }
   a { ${({ theme }) => theme.mixins.inlineLink}; }
   code { background-color: var(--lightest-navy); color: var(--lightest-slate);
          border-radius: var(--border-radius); font-size: var(--fz-sm);
          padding: 0.2em 0.4em; }
+  pre { overflow-x: auto; }
   pre code { background-color: transparent; padding: 0; }
-  table { border-collapse: collapse; width: 100%; margin: 1.5em 0; font-size: 0.90rem; }
+  table { border-collapse: collapse; width: 100%; margin: 1.5em 0; font-size: 0.90rem;
+          display: block; overflow-x: auto; }
   th, td { border: 1px solid var(--slate); padding: 12px 15px; text-align: left;
            vertical-align: top; color: var(--lightest-slate); }
   th { font-weight: bold; }
+  img { max-width: 100%; max-height: 100%; height: auto; }
 `;
 
 const PostTemplate: React.FC<PageProps<PostTemplateData, PostTemplateContext>> = ({ data, location }) => {
