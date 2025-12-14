@@ -92,9 +92,12 @@ interface StyledSidebarProps {
 }
 
 const StyledSidebar = styled.aside<StyledSidebarProps>`
-  display: none;
-  visibility: hidden;
+  display: none !important;
+  visibility: hidden !important;
+  transform: translateX(100vw);
+
   ${media.desktop} {
+    display: flex !important;
     ${({ theme }) => theme.mixins.flexCenter};
     position: fixed;
     top: 0;
@@ -108,14 +111,15 @@ const StyledSidebar = styled.aside<StyledSidebarProps>`
     box-shadow: -10px 0px 30px -15px var(--navy-shadow);
     z-index: 9;
     transform: translateX(100vw);
-    visibility: hidden;
+    visibility: hidden !important;
     transition: var(--transition);
 
     ${props => props.menuOpen && `
       transform: translateX(0);
-      visibility: visible;
+      visibility: visible !important;
     `}
   }
+
   nav {
     ${({ theme }) => theme.mixins.flexBetween};
     width: 100%;
@@ -124,19 +128,23 @@ const StyledSidebar = styled.aside<StyledSidebarProps>`
     font-family: var(--font-mono);
     text-align: center;
   }
+
   ol {
     padding: 0;
     margin: 0;
     list-style: none;
     width: 100%;
+
     li {
       position: relative;
       margin: 0 auto 20px;
       counter-increment: item 1;
       font-size: clamp(var(--fz-sm), 4vw, var(--fz-lg));
+
       ${media.tablet} {
         margin: 0 auto 10px;
       }
+
       &:before {
         content: '0' counter(item) '.';
         display: block;
@@ -145,6 +153,7 @@ const StyledSidebar = styled.aside<StyledSidebarProps>`
         font-size: var(--fz-sm);
       }
     }
+
     a {
       ${({ theme }) => theme.mixins.link};
       width: 100%;
