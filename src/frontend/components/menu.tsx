@@ -87,17 +87,11 @@ const StyledHamburgerButton = styled.button<StyledHamburgerButtonProps>`
   }
 `;
 
-interface StyledSidebarProps {
-  menuOpen: boolean;
-}
-
-const StyledSidebar = styled.aside<StyledSidebarProps>`
-  display: none !important;
-  visibility: hidden !important;
-  transform: translateX(100vw);
+const StyledSidebar = styled.aside`
+  display: none;
 
   ${media.desktop} {
-    display: flex !important;
+    display: flex;
     ${({ theme }) => theme.mixins.flexCenter};
     position: fixed;
     top: 0;
@@ -111,13 +105,13 @@ const StyledSidebar = styled.aside<StyledSidebarProps>`
     box-shadow: -10px 0px 30px -15px var(--navy-shadow);
     z-index: 9;
     transform: translateX(100vw);
-    visibility: hidden !important;
+    visibility: hidden;
     transition: var(--transition);
 
-    ${props => props.menuOpen && `
+    &.open {
       transform: translateX(0);
-      visibility: visible !important;
-    `}
+      visibility: visible;
+    }
   }
 
   nav {
@@ -257,7 +251,7 @@ const Menu: React.FC = () => {
 
         <StyledSidebar
           id="mobile-nav"
-          menuOpen={menuOpen}
+          className={menuOpen ? 'open' : ''}
           aria-hidden={!menuOpen}
           tabIndex={menuOpen ? 1 : -1}
         >
