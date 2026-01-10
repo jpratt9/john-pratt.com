@@ -1,5 +1,5 @@
 ---
-date: '5'
+date: '2024-08-01'
 title: 'john-pratt.com v4.0'
 cover: './portfolio_site.png'
 external: 'https://www.john-pratt.com/'

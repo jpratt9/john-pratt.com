@@ -21,3 +21,4 @@ companyRank: 0
 - Designing, building & deploying custom software solutions for several local businesses with React, Python, Netlify & more
 - Built Client automated prospecting + email cold outreach system that searches for relevant sales prospects, analyzes their personal information, then adds them to a cold email sequence using Apollo.io API
 - Built and leading a global team of 5+ full-time employees & freelancers for development & BizOps
+- Built a distributed media acquisition system for personal infrastructure featuring stealth browser automation (fingerprint spoofing, hardware profile randomization, cubic Bézier mouse trajectories with stochastic motor control modeling, drift/correction simulation, anti-bot evasion), VPN lease coordination across 10+ concurrent VMs, PostgreSQL job orchestration, and multi-protocol download pipelines (aria2, HLS/m3u8) — engineered graceful failure recovery, signal handling, and cross-platform network storage sync

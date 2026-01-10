@@ -102,7 +102,7 @@ export const pageQuery = graphql`
   {
     allMarkdownRemark(
       limit: 2000
-      sort: { frontmatter: { date: DESC } }
+      sort: { frontmatter: { date: ASC } }
       filter: {
         fileAbsolutePath: { regex: "/src/frontend/content/posts/" }
         frontmatter: { draft: { ne: true } }

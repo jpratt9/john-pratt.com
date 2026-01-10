@@ -1,5 +1,5 @@
 ---
-date: '2'
+date: '2021-07-01'
 title: 'Orbit'
 cover: './duke.png'
 external: 'https://www.duke-energy.com/home'

@@ -1,5 +1,5 @@
 ---
-date: '8'
+date: '2022-03-01'
 title: '(Telecom Platform)'
 cover: './telecom_client.png'
 classified: true
