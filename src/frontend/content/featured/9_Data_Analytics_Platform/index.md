@@ -1,5 +1,5 @@
 ---
-date: '9'
+date: '2022-02-01'
 title: '(Data Analytics Platform)'
 cover: './counterparty_intelligence_platform.jpg'
 classified: true

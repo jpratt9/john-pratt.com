@@ -1,5 +1,5 @@
 ---
-date: '4'
+date: '2019-08-01'
 title: 'Manage Your Data'
 cover: './demo.png'
 external: 'https://mydata.capitalone.com/'

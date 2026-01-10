@@ -1,5 +1,5 @@
 ---
-date: '0'
+date: '2025-11-01'
 title: 'UnitWolf'
 cover: './unitwolf.png'
 external: 'https://unitwolf.net'

@@ -1,5 +1,5 @@
 ---
-date: '-1'
+date: '2025-07-01'
 title: '(Fortune 500 Client)'
 cover: './f500_client.png'
 classified: true

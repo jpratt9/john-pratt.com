@@ -340,7 +340,7 @@ const Featured: React.FC = () => {
     {
       featured: allMarkdownRemark(
         filter: { fileAbsolutePath: { regex: "/src/frontend/content/featured/" } }
-        sort: { frontmatter: { date: ASC } }
+        sort: { frontmatter: { date: DESC } }
       ) {
         edges {
           node {
@@ -363,7 +363,9 @@ const Featured: React.FC = () => {
     }
   `);
 
-  const featuredProjects = data.featured.edges.filter(({ node }) => node);
+  const featuredProjects = data.featured.edges
+    .filter(({ node }) => node)
+    .sort((a, b) => parseInt(a.node.frontmatter.date ?? '0', 10) - parseInt(b.node.frontmatter.date ?? '0', 10));
   const revealTitle = useRef<HTMLHeadingElement>(null);
   const revealProjects = useRef<(HTMLLIElement | null)[]>([]);
 
