@@ -28,6 +28,7 @@ export const useDelayedMount = (delay: number, condition: boolean = true): boole
       const timeout = setTimeout(() => setIsMounted(true), delay);
       return () => clearTimeout(timeout);
     }
+    return undefined;
   }, [condition, prefersReducedMotion, delay, isMounted]);
 
   // Once visible, stay visible
