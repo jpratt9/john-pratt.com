@@ -32,7 +32,7 @@ variable "cloudflare_api_token" {
   sensitive = true
 }
 
-variable "cloudflare_zone_id" {
-  description = "Zone ID for pratt-solutions.com"
+variable "cloudflare_account_id" {
+  description = "Cloudflare account ID"
   type        = string
 }
