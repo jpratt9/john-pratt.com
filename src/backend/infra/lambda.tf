@@ -61,10 +61,10 @@ resource "aws_lambda_function" "webhook" {
 
   environment {
     variables = {
-      OPENAI_API_KEY = var.openai_api_key
-      github_token = var.github_token
+      OPENAI_API_KEY            = var.openai_api_key
+      github_token              = var.github_token
       article_blacklist_strings = var.article_blacklist_strings
-      outrank_access_token = random_password.outrank_access_token.result
+      outrank_access_token      = random_password.outrank_access_token.result
     }
   }
 
@@ -82,7 +82,7 @@ resource "null_resource" "build_new_requests_layer" {
   # Change the trigger if you want to rebuild (e.g., version bumps)
   triggers = {
     requests_version = "2.32.4"
-    zip_hash = data.archive_file.handler_zip.output_base64sha256
+    zip_hash         = data.archive_file.handler_zip.output_base64sha256
   }
 
   provisioner "local-exec" {

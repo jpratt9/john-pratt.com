@@ -13,10 +13,10 @@ resource "aws_api_gateway_resource" "webhook" {
 }
 
 resource "aws_api_gateway_method" "post_webhook" {
-  rest_api_id     = aws_api_gateway_rest_api.api.id
-  resource_id     = aws_api_gateway_resource.webhook.id
-  http_method     = "POST"
-  authorization   = "NONE"
+  rest_api_id   = aws_api_gateway_rest_api.api.id
+  resource_id   = aws_api_gateway_resource.webhook.id
+  http_method   = "POST"
+  authorization = "NONE"
   #api_key_required = true  # <<— pre-invoke enforcement by API GW
 }
 
@@ -43,7 +43,7 @@ resource "aws_api_gateway_deployment" "deploy" {
   rest_api_id = aws_api_gateway_rest_api.api.id
 
   # Force new deployment when these resources change
-  triggers = { redeploy = timestamp() }  # force new deployment
+  triggers = { redeploy = timestamp() } # force new deployment
 
   lifecycle {
     create_before_destroy = true

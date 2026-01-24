@@ -14,8 +14,8 @@ variable "github_token" {
 }
 
 variable "article_blacklist_strings" {
-    type      = string
-    sensitive = true
+  type      = string
+  sensitive = true
 }
 
 variable "python_runtime" {
@@ -25,4 +25,14 @@ variable "python_runtime" {
 variable "openai_api_key" {
   type      = string
   sensitive = true
+}
+
+variable "cloudflare_api_token" {
+  type      = string
+  sensitive = true
+}
+
+variable "cloudflare_zone_id" {
+  description = "Zone ID for pratt-solutions.com"
+  type        = string
 }
