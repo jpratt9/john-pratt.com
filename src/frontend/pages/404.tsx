@@ -35,7 +35,7 @@ const NotFoundPage: React.FC<PageProps> = ({ location }) => {
     if (prefersReducedMotion) return;
     const timeout = setTimeout(() => setIsMounted(true), navDelay);
     return () => clearTimeout(timeout);
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [prefersReducedMotion]);
 
   const content = (
     <StyledMainContainer className="fillHeight">

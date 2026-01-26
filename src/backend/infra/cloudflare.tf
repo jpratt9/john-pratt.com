@@ -10,12 +10,27 @@ data "cloudflare_zones" "all" {
   max_items = 100
 }
 
-# Build a map of zones to redirect (exclude john-pratt.com)
+# Build maps of zones to redirect (exclude john-pratt.com)
 locals {
+  # All zones except john-pratt.com
   redirect_zones = {
     for zone in data.cloudflare_zones.all.result :
     zone.name => zone.id
     if zone.name != "john-pratt.com"
+  }
+
+  # Static: redirect to homepage only (no path preservation)
+  static_redirect_zones = {
+    for name, id in local.redirect_zones :
+    name => id
+    if contains(var.static_redirect_domains, name)
+  }
+
+  # Dynamic: preserve path (typos/variations of john-pratt.com)
+  dynamic_redirect_zones = {
+    for name, id in local.redirect_zones :
+    name => id
+    if !contains(var.static_redirect_domains, name)
   }
 }
 
@@ -51,13 +66,13 @@ resource "cloudflare_dns_record" "www" {
   ttl     = 1
 }
 
-# Create redirect rule for each zone
-resource "cloudflare_ruleset" "redirect_to_john_pratt" {
-  for_each = local.redirect_zones
+# Dynamic redirect: preserve path (for typos/variations like johnpratt.com)
+resource "cloudflare_ruleset" "redirect_dynamic" {
+  for_each = local.dynamic_redirect_zones
 
   zone_id     = each.value
-  name        = "Redirect to john-pratt.com"
-  description = "Redirect all ${each.key} traffic to john-pratt.com"
+  name        = "Redirect to john-pratt.com (dynamic)"
+  description = "Redirect ${each.key} traffic to john-pratt.com with path preservation"
   kind        = "zone"
   phase       = "http_request_dynamic_redirect"
 
@@ -74,7 +89,36 @@ resource "cloudflare_ruleset" "redirect_to_john_pratt" {
         }
       }
       expression  = "true"
-      description = "Redirect all traffic to john-pratt.com"
+      description = "Redirect all traffic to john-pratt.com (preserve path)"
+      enabled     = true
+    }
+  ]
+}
+
+# Static redirect: homepage only (for separate brands/concepts)
+resource "cloudflare_ruleset" "redirect_static" {
+  for_each = local.static_redirect_zones
+
+  zone_id     = each.value
+  name        = "Redirect to john-pratt.com (static)"
+  description = "Redirect ${each.key} traffic to john-pratt.com homepage"
+  kind        = "zone"
+  phase       = "http_request_dynamic_redirect"
+
+  rules = [
+    {
+      action = "redirect"
+      action_parameters = {
+        from_value = {
+          status_code           = 301
+          preserve_query_string = false
+          target_url = {
+            value = "https://john-pratt.com"
+          }
+        }
+      }
+      expression  = "true"
+      description = "Redirect all traffic to john-pratt.com homepage"
       enabled     = true
     }
   ]

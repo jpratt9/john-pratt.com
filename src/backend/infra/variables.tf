@@ -36,3 +36,9 @@ variable "cloudflare_account_id" {
   description = "Cloudflare account ID"
   type        = string
 }
+
+variable "static_redirect_domains" {
+  description = "Domains that redirect to homepage only (no path preservation)"
+  type        = list(string)
+  default     = []
+}
