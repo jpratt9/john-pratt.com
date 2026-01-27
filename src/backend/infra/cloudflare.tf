@@ -10,13 +10,13 @@ data "cloudflare_zones" "all" {
   max_items = 100
 }
 
-# Build maps of zones to redirect (exclude john-pratt.com)
+# Build maps of zones to redirect (exclude primary domains)
 locals {
-  # All zones except john-pratt.com
+  # All zones except those in no_redirect_domains
   redirect_zones = {
     for zone in data.cloudflare_zones.all.result :
     zone.name => zone.id
-    if zone.name != "john-pratt.com"
+    if !contains(var.no_redirect_domains, zone.name)
   }
 
   # Static: redirect to homepage only (no path preservation)

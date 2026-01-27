@@ -42,3 +42,9 @@ variable "static_redirect_domains" {
   type        = list(string)
   default     = []
 }
+
+variable "no_redirect_domains" {
+  description = "Domains that should NOT redirect (primary sites, not aliases)"
+  type        = list(string)
+  default     = []
+}
