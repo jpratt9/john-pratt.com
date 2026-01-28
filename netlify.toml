@@ -1,7 +1,0 @@
-[build.environment]
-  NPM_FLAGS = "--force"
-  NODE_VERSION = "24.9.0"
-
-[build]
-  command = "npm run build"
-  publish = "public/"
