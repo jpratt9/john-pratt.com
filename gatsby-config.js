@@ -1,5 +1,4 @@
 const config = require('./src/frontend/config');
-const adapter = require('gatsby-adapter-netlify').default;
 const isAnalyze = process.env.ANALYZE_BUNDLE === 'true';
 
 const EXCLUDED_SITEMAP_PATHS = new Set([
@@ -24,8 +23,7 @@ const toSitemapPath = (value) => {
   return normalized;
 };
  
-module.exports = { 
-  adapter: adapter(),
+module.exports = {
   siteMetadata: {
     title: 'John Pratt',
     description:
