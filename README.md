@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/4cea606f-ba31-4f5f-9dd6-188d2178a3b8/deploy-status)](https://app.netlify.com/projects/dancing-choux-3e45c8/deploys)
+ [![Cloudflare Pages](https://img.shields.io/endpoint?url=https://cloudflare-pages-badges.john-551.workers.dev/?projectName=john-pratt)](https://john-pratt.pages.dev)
 
 ## To run locally:
 
