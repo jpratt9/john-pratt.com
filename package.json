@@ -19,7 +19,7 @@
   "scripts": {
     "type-check": "tsc --noEmit",
     "type-check:watch": "tsc --noEmit --watch",
-    "cache-nuke": "npm cache clear --force; rm -rf node_modules .cache package-lock.json public; npm i --legacy-peer-deps",
+    "cache-nuke": "npm cache clear --force; rm -rf node_modules .cache public; npm i --legacy-peer-deps",
     "build": "npm run cache-nuke; npm run type-check && npm run test:run && gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{ts,tsx,js,json,md}\"",
