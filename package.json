@@ -19,7 +19,7 @@
   "scripts": {
     "type-check": "tsc --noEmit",
     "type-check:watch": "tsc --noEmit --watch",
-    "cache-nuke": "npm cache clear --force; rm -rf node_modules .cache public; npm i --legacy-peer-deps",
+    "cache-nuke": "npm cache clear --force; rm -rf node_modules .cache package-lock.json public; npm i --force --legacy-peer-deps",
     "build": "npm run cache-nuke; npm run type-check && npm run test:run && gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{ts,tsx,js,json,md}\"",
@@ -100,6 +100,7 @@
     "@vitejs/plugin-react": "^5.1.1",
     "@vitest/coverage-v8": "^4.0.9",
     "@vitest/ui": "^4.0.9",
+    "ajv": "^7.2.4",
     "babel-preset-gatsby": "3.15.0",
     "eslint": "9.37.0",
     "eslint-config-prettier": "8.3.0",
