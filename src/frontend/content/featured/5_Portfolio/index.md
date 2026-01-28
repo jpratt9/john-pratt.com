@@ -11,7 +11,9 @@ tech:
   - GraphQL
   - React
   - Vitest
-  - Netlify
+  - Cloudflare
+  - Terraform
+  - Python
 ---
 
 A revamped version of my portfolio website, hosted on Netlify.

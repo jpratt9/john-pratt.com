@@ -10,7 +10,8 @@ tech:
   - TypeScript
   - Gatsby
   - Vitest
-  - Netlify
+  - Cloudflare
+  - Terraform
 ---
 
 The answer's already there.

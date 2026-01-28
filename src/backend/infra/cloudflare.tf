@@ -9,6 +9,7 @@ provider "cloudflare" {
 locals {
   package_json = jsondecode(file("${path.module}/../../../package.json"))
   node_version = trimprefix(local.package_json.engines.node, ">=")
+  
 }
 
 resource "cloudflare_pages_project" "john_pratt" {
