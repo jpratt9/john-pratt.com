@@ -2,6 +2,63 @@ provider "cloudflare" {
   api_token = var.cloudflare_api_token
 }
 
+# =============================================================================
+# Cloudflare Pages - john-pratt.com
+# =============================================================================
+
+locals {
+  package_json = jsondecode(file("${path.module}/../../../package.json"))
+  node_version = trimprefix(local.package_json.engines.node, ">=")
+}
+
+resource "cloudflare_pages_project" "john_pratt" {
+  account_id = var.cloudflare_account_id
+  name       = "john-pratt"
+
+  production_branch = "master"
+
+  build_config = {
+    build_command   = "npm run build"
+    destination_dir = "public"
+  }
+
+  deployment_configs = {
+    production = {
+      environment_variables = {
+        ANALYZE_BUNDLE = "false"
+        NODE_VERSION   = local.node_version
+        NPM_FLAGS      = "--force --legacy-peer-deps"
+      }
+    }
+    preview = {
+      environment_variables = {
+        ANALYZE_BUNDLE = "false"
+        NODE_VERSION   = local.node_version
+        NPM_FLAGS      = "--force --legacy-peer-deps"
+      }
+    }
+  }
+
+  # Note: GitHub integration configured via dashboard, then imported:
+  # terraform import cloudflare_pages_project.john_pratt 551cbfe060cfcb87bf35d0d3fddc6ad6/john-pratt
+}
+
+resource "cloudflare_pages_domain" "john_pratt_root" {
+  account_id   = var.cloudflare_account_id
+  project_name = cloudflare_pages_project.john_pratt.name
+  name         = "john-pratt.com"
+}
+
+resource "cloudflare_pages_domain" "john_pratt_www" {
+  account_id   = var.cloudflare_account_id
+  project_name = cloudflare_pages_project.john_pratt.name
+  name         = "www.john-pratt.com"
+}
+
+output "john_pratt_pages_url" {
+  value = "https://${cloudflare_pages_project.john_pratt.name}.pages.dev"
+}
+
 # Fetch all zones in the account
 data "cloudflare_zones" "all" {
   account = {
