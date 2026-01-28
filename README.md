@@ -1,4 +1,4 @@
- [![Cloudflare Pages](https://img.shields.io/endpoint?url=https://cloudflare-pages-badges.john-551.workers.dev/?projectName=john-pratt)](https://john-pratt.pages.dev)
+ [![Cloudflare Pages](https://img.shields.io/endpoint?url=https://cloudflare-pages-badges.john-551.workers.dev/?projectName=john-pratt)](https://john-pratt.com)
 
 ## To run locally:
 
