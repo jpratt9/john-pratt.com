@@ -20,7 +20,7 @@
     "type-check": "tsc --noEmit",
     "type-check:watch": "tsc --noEmit --watch",
     "cache-nuke": "npm cache clear --force; rm -rf node_modules .cache package-lock.json public; npm i --force --legacy-peer-deps",
-    "build": "npm run cache-nuke; npm run type-check && npm run test:run && gatsby build",
+    "build": "npm run type-check && npm run test:run && gatsby build",
     "develop": "gatsby develop",
     "start": "gatsby serve",
     "serve": "gatsby serve",

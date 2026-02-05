@@ -48,3 +48,9 @@ variable "no_redirect_domains" {
   type        = list(string)
   default     = []
 }
+
+variable "google_site_verification_token" {
+  description = "Google Search Console DNS verification token"
+  type        = string
+  sensitive   = true
+}
