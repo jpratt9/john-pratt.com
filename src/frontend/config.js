@@ -10,6 +10,10 @@ const config = {
       name: 'Linkedin',
       url: 'https://www.linkedin.com/in/john-pratt787',
     },
+    {
+      name: 'Calendly',
+      url: 'https://calendly.com/johnpratt439/intro',
+    },
   ],
 
   navLinks: [

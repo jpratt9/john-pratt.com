@@ -56,6 +56,48 @@ resource "cloudflare_pages_domain" "john_pratt_www" {
   name         = "www.john-pratt.com"
 }
 
+# john-pratt.com redirects (resume + blog prefix strip)
+resource "cloudflare_ruleset" "resume_redirect" {
+  zone_id     = local.john_pratt_zone_id
+  name        = "Resume redirect"
+  description = "Redirect /resume to /resume.pdf"
+  kind        = "zone"
+  phase       = "http_request_dynamic_redirect"
+
+  rules = [
+    {
+      action = "redirect"
+      action_parameters = {
+        from_value = {
+          status_code           = 301
+          preserve_query_string = false
+          target_url = {
+            value = "https://john-pratt.com/resume.pdf"
+          }
+        }
+      }
+      expression  = "http.request.uri.path eq \"/resume\""
+      description = "Redirect /resume to /resume.pdf"
+      enabled     = true
+    },
+    {
+      action = "redirect"
+      action_parameters = {
+        from_value = {
+          status_code           = 301
+          preserve_query_string = true
+          target_url = {
+            expression = "concat(\"https://john-pratt.com\", substring(http.request.uri.path, 5))"
+          }
+        }
+      }
+      expression  = "starts_with(http.request.uri.path, \"/blog/\")"
+      description = "Redirect /blog/* to /*"
+      enabled     = true
+    }
+  ]
+}
+
 output "john_pratt_pages_url" {
   value = "https://${cloudflare_pages_project.john_pratt.name}.pages.dev"
 }
@@ -70,6 +112,9 @@ data "cloudflare_zones" "all" {
 
 # Build maps of zones to redirect (exclude primary domains)
 locals {
+  # john-pratt.com zone ID from the fetched zones
+  john_pratt_zone_id = [for zone in data.cloudflare_zones.all.result : zone.id if zone.name == "john-pratt.com"][0]
+
   # All zones except those in no_redirect_domains
   redirect_zones = {
     for zone in data.cloudflare_zones.all.result :

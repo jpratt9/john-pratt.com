@@ -44,3 +44,4 @@ secrets.tfvars
 # notes
 lambda-cold-start-notes.md
 netlify_cloudflare_migration_plan.md
+**/*.secret.md

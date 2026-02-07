@@ -7,7 +7,7 @@ import {
   IconFolder,
   IconFork,
   IconGitHub,
-  //   IconCalendly,
+  IconCalendly,
   IconInstagram,
   IconLinkedin,
   IconLoader,
@@ -19,6 +19,7 @@ import {
 export type IconName =
   | 'AppStore'
   | 'Bookmark'
+  | 'Calendly'
   | 'Codepen'
   | 'External'
   | 'Folder'
@@ -51,8 +52,8 @@ const Icon: React.FC<IconProps> = ({ name }) => {
       return <IconFork />;
     case 'GitHub':
       return <IconGitHub />;
-    // case 'Calendly':
-    //     return <IconCalendly />
+    case 'Calendly':
+      return <IconCalendly />;
     case 'Instagram':
       return <IconInstagram />;
     case 'Linkedin':
