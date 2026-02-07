@@ -91,7 +91,7 @@ const Jobs: React.FC = () => {
 
   return (
     <StyledJobsSection id="jobs" ref={revealContainer}>
-      <h2 className="numbered-heading">Where I've Worked</h2>
+      <h2 className="numbered-heading">Featured Engagements</h2>
       <TabNavigation tabs={tabs} ariaLabel="Job tabs" />
     </StyledJobsSection>
   );

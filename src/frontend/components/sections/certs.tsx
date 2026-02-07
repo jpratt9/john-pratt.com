@@ -182,7 +182,7 @@ const Certs: React.FC = () => {
 
   return (
     <StyledCertsSection id="certs" ref={revealContainer}>
-      <h2 className="numbered-heading">My Professional Certifications</h2>
+      <h2 className="numbered-heading">My Certifications</h2>
       <TabNavigation tabs={tabs} ariaLabel="Certification tabs" />
     </StyledCertsSection>
   );

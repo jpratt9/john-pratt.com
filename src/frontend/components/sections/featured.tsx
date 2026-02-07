@@ -375,7 +375,7 @@ const Featured: React.FC = () => {
   return (
     <section id="projects">
       <h2 className="numbered-heading" ref={revealTitle}>
-        Some Things I've Built
+        Solutions in Action
       </h2>
 
       <StyledProjectsGrid>
