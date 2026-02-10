@@ -24,12 +24,12 @@ const config: SiteConfig = {
       url: '/#about',
     },
     {
-      name: 'Experience',
-      url: '/#jobs',
+      name: 'Engagements',
+      url: '/#engagements',
     },
     {
-      name: 'Projects',
-      url: '/#projects',
+      name: 'Solutions',
+      url: '/#solutions',
     },
     {
       name: 'Blog',

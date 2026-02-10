@@ -22,11 +22,11 @@ const config = {
       url: '/#about',
     },
     {
-      name: 'Experience',
+      name: 'Engagements',
       url: '/#jobs',
     },
     {
-      name: 'Projects',
+      name: 'Solutions',
       url: '/#projects',
     },
     {

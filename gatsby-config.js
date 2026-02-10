@@ -31,6 +31,7 @@ module.exports = {
     siteUrl: 'https://www.john-pratt.com', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
   },
+  trailingSlash: 'never',
   plugins: [
     `gatsby-plugin-typescript`,
     `gatsby-plugin-preact`,
