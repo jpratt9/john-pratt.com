@@ -14,6 +14,7 @@ tags:
 ---
 
 
+
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/959f2396-ffcd-4e68-9058-85dbe4f053a7/cost-of-robotic-process-automation-rpa-cost.jpg)
 
 So, how much does Robotic Process Automation actually cost? The honest answer is: it depends. You could be looking at a few thousand dollars for a simple, single-task bot, or well over a million for a company-wide automation overhaul.

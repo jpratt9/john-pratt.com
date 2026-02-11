@@ -14,6 +14,7 @@ tags:
 ---
 
 
+
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-16820f39-2489-4acf-aa62-3f56404fbc6c.jpg)
 
 Before you can learn **how to build a data pipeline**, you need to grasp what it actually *is*. Think of it as an automated plumbing system for your data. It takes raw, messy data from all your different sources, cleans it up, transforms it into a standard format, and then delivers it to a destination where it can finally be analyzed. This whole process is what turns a flood of scattered information into real business intelligence.

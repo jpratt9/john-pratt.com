@@ -14,6 +14,7 @@ tags:
 ---
 
 
+
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/774d1520-a9f2-4992-a8f9-7c48104abece/what-is-continuous-integration-ci-pipeline.jpg)
 
 So, what is **Continuous Integration (CI)** all about? At its core, it's a software development practice where developers make a habit of merging their code changes into a central, shared repository multiple times a day.

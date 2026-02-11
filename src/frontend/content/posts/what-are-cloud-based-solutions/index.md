@@ -14,6 +14,7 @@ tags:
 ---
 
 
+
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/648d4bf4-c7dd-4ea1-8cbc-fe19bb6afd20/what-are-cloud-based-solutions-cloud-solutions.jpg)
 
 Cloud-based solutions are computing services - think software, storage, databases, and servers - delivered over the internet. Instead of buying and managing your own physical hardware, you're essentially accessing resources from a provider.

@@ -14,6 +14,7 @@ tags:
 ---
 
 
+
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/3afb14e9-7498-4816-842d-7c2d0e1a6d09/vendor-lock-in-cloud-computing-cloud-lock-in.jpg)
 
 Ever earned a ton of loyalty points with an airline, only to see their ticket prices and fees mysteriously spike right when you need to book a flight? That's **vendor lock-in in cloud computing** in a nutshell. It's that sinking feeling you get when you realize moving away from your current cloud provider is so costly or technically complicated that you're essentially stuck.

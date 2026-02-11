@@ -14,6 +14,7 @@ tags:
 ---
 
 
+
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-b418fe52-cbdb-49d1-966d-257ba75a8015.jpg)
 
 Figuring out the **cost of RPA** is a bit more involved than just checking a software price tag. The real investment is a blend of the software itself, the experts who build the automations, the digital environment they run in, and the care needed to keep them humming along.

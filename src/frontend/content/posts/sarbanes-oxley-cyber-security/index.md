@@ -14,6 +14,7 @@ tags:
 ---
 
 
+
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/93233dca-491c-488b-aea2-65d1fdb4a290/sarbanes-oxley-cyber-security-cloud-security.jpg)
 
 You can't talk about Sarbanes-Oxley (SOX) compliance today without putting cybersecurity front and center. The simple truth is that you can't guarantee the integrity of your financial reports if the IT systems holding that data aren't secure. A major data breach isn't just an IT headache; it's a direct path to a SOX compliance failure by putting the accuracy of your financial statements at risk.

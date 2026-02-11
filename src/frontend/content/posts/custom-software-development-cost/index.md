@@ -14,6 +14,7 @@ tags:
 ---
 
 
+
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-4b6a9f71-9c6b-457f-b2f6-4349ca12dab6.jpg)
 
 Let's get right to it. You want to know what custom software costs, and the honest answer is: it depends. The price tag can swing from **$10,000** for a simple proof-of-concept to well over **$500,000** for a complex system that runs an entire enterprise.

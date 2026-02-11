@@ -14,6 +14,7 @@ tags:
 ---
 
 
+
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/cb7e35b9-3994-40be-a540-b8211e664d89/what-is-rest-api-rest-api.jpg)
 
 A REST API is a bit like a universal adapter for the digital world. The full name, **Representational State Transfer**, sounds academic, but the idea is simple: it's a set of rules that lets completely different software applications talk to each other over the internet using a common, predictable language.

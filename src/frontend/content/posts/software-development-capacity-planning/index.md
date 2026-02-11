@@ -14,6 +14,7 @@ tags:
 ---
 
 
+
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/4efb0292-02ae-4223-af34-e1dddf93f115/software-development-capacity-planning-problem-solving.jpg)
 
 Software development capacity planning is really just the process of making sure you have the right people, with the right skills, ready to go when you need them. It's about looking ahead at the project pipeline and matching that work to your team's actual ability to get it done. The goal is to move from a constant state of reactive fire-fighting to a more predictable, proactive rhythm of delivery.

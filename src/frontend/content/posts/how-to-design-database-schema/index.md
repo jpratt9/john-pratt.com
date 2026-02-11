@@ -14,6 +14,7 @@ tags:
 ---
 
 
+
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/3e360495-d58d-4420-8984-28f0113cefbd/how-to-design-database-schema-database-architecture.jpg)
 
 Designing a database schema is all about defining the structure for your data - what it looks like, what types of information you'll store, and how different pieces of data relate to each other. The whole process starts with a high-level **conceptual model** that captures the business needs, then gets refined into a **logical model** with specific entities and relationships, and finally becomes a **physical model** built for a specific database technology like [PostgreSQL](https://www.postgresql.org/) or [Snowflake](https://www.snowflake.com/en/).

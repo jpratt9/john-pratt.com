@@ -11,29 +11,34 @@ import os
 import sys
 import re
 
-def update_frontmatter_description(md_path: str, description: str) -> bool:
-    """Update the description field in a markdown file's frontmatter."""
+def update_frontmatter_description(md_path: str, description: str) -> str:
+    """Update the description field in a markdown file's frontmatter.
+
+    Returns: 'updated', 'skipped', or 'error'
+    """
     with open(md_path, 'r') as f:
         content = f.read()
 
-    # Check if file has frontmatter
     if not content.startswith('---'):
         print(f"  SKIP: No frontmatter found")
-        return False
+        return 'error'
 
-    # Find the end of frontmatter
-    end_match = re.search(r'\n---\n', content[3:])
-    if not end_match:
+    # Find closing ---
+    end_idx = content.find('\n---\n', 3)
+    if end_idx == -1:
         print(f"  SKIP: Malformed frontmatter")
-        return False
+        return 'error'
 
-    fm_end = end_match.start() + 3
-    frontmatter = content[3:fm_end]
-    body = content[fm_end + 4:]  # +4 for '\n---\n'
+    frontmatter = content[4:end_idx]  # skip opening ---\n
+    body = content[end_idx + 5:]      # skip \n---\n
 
-    # Check if description already exists
+    # Check if description already matches
+    existing = re.search(r'^description:\s*"?([^"\n]*)"?\s*$', frontmatter, re.MULTILINE)
+    if existing and existing.group(1) == description:
+        return 'skipped'
+
+    # Update or add description
     if re.search(r'^description:', frontmatter, re.MULTILINE):
-        # Update existing description
         new_fm = re.sub(
             r'^description:.*$',
             f'description: "{description}"',
@@ -41,7 +46,6 @@ def update_frontmatter_description(md_path: str, description: str) -> bool:
             flags=re.MULTILINE
         )
     else:
-        # Add description after title
         new_fm = re.sub(
             r'^(title:.*\n)',
             f'\\1description: "{description}"\n',
@@ -49,12 +53,12 @@ def update_frontmatter_description(md_path: str, description: str) -> bool:
             flags=re.MULTILINE
         )
 
-    # Write back
-    new_content = f'---{new_fm}\n---\n{body}'
+    new_content = f'---\n{new_fm}\n---\n{body}'
+
     with open(md_path, 'w') as f:
         f.write(new_content)
 
-    return True
+    return 'updated'
 
 
 def main():
@@ -95,15 +99,18 @@ def main():
             skipped += 1
             continue
 
-        print(f"Updating: {slug}")
-        if update_frontmatter_description(md_path, desc):
+        result = update_frontmatter_description(md_path, desc)
+        if result == 'updated':
+            print(f"Updated: {slug}")
             updated += 1
+        elif result == 'skipped':
+            skipped += 1
         else:
             skipped += 1
 
     print(f"\nDone!")
     print(f"  Updated: {updated}")
-    print(f"  Skipped: {skipped}")
+    print(f"  Skipped (already correct): {skipped}")
     print(f"  No folder: {no_folder}")
 
 

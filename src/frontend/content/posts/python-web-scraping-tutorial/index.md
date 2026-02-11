@@ -14,6 +14,7 @@ tags:
 ---
 
 
+
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-8ed9d45a-7670-4273-a125-0085f9f5c8e3.jpg)
 
 If you're looking to pull data from websites, you've come to the right place. This guide will walk you through everything you need to know about web scraping with Python, from setting up your environment to exporting your first dataset.

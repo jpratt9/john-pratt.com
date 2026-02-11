@@ -14,6 +14,7 @@ tags:
 ---
 
 
+
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/3641eea0-9f81-4c30-a578-c5783d232396/image.jpg)
 
 ## Understanding GitOps At A Glance

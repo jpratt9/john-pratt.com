@@ -14,6 +14,7 @@ tags:
 ---
 
 
+
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-4c74dfbe-0863-44ff-927b-9516547c31be.jpg)
 
 This **Terraform tutorial for beginners** is all about showing you how to manage cloud infrastructure using code. We're going to take what used to be a complex, manual setup process and turn it into simple, repeatable text files. You'll learn the core workflow - write, plan, and apply - and by the end, you'll be building real resources in the cloud, even if you're starting from scratch.

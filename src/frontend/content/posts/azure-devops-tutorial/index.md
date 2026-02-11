@@ -14,6 +14,7 @@ tags:
 ---
 
 
+
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-e3befd4c-b0b1-47a4-a679-ba1028a662c1.jpg)
 
 Alright, let's get our hands dirty and start building. This guide is all about the practical side of [Azure DevOps](https://azure.microsoft.com/en-us/products/devops), walking you through setting up your first project from scratch. We'll skip the high-level theory and focus on the real-world decisions you'll make, so you can build a solid foundation and get comfortable with the interface right away.

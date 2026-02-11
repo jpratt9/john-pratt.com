@@ -14,6 +14,7 @@ tags:
 ---
 
 
+
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/940be892-5a1a-4457-a675-d983ff3f05eb/what-is-database-replication-database-replication.jpg)
 
 Database replication is all about creating and maintaining multiple, identical copies of a database across different servers or locations. It's not just a simple backup; think of it more like a *live, synchronized photocopy* of your data. When a change happens in the original database, that same change is almost instantly mirrored in all the copies.

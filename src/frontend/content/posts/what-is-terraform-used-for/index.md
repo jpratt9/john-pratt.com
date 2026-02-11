@@ -14,6 +14,7 @@ tags:
 ---
 
 
+
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/024a73ee-e57b-49b7-8a79-914b03ebd3bf/what-is-terraform-used-for-infrastructure.jpg)
 
 Let's get right to it. Terraform is a tool for building, changing, and versioning your infrastructure safely and efficiently. Instead of manually clicking through a cloud provider's console, you **write simple, human-readable code to define your resources**. Terraform then takes that code and builds your environment for you - identically, every single time.

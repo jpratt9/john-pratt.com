@@ -12,6 +12,7 @@ tags:
 
 
 
+
 ![cloud](./cloud.jpg)
 
 Moving to the cloud can unlock serious gains in scalability, efficiency, and speed of innovation. But the path is rarely linear. Projects can stall, budgets can drift, and security gaps appear if you treat migration like a simple “lift and shift.” Winning here means planning with intent, anticipating where things break, and aligning tech, people, and process from day one. Many teams underestimate the complexity and pay for it with delays and missed outcomes.

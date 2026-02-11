@@ -14,6 +14,7 @@ tags:
 ---
 
 
+
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-62a2a777-4c99-4029-846c-a4ffe9a76177.jpg)
 
 It's a scary thought, isn't it? The idea of purposely breaking parts of your own system. But that's exactly what **chaos engineering** is all about: **deliberately injecting controlled failures into a system** to find weaknesses before they turn into real-world outages.

@@ -14,6 +14,7 @@ tags:
 ---
 
 
+
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/afebf9c4-0758-459f-a0b7-2100199a7d47/what-is-message-queue-message-balancing.jpg)
 
 At its most basic, **what is a message queue**? Think of it as a digital middleman, a post office for your software. It allows different parts of an application to talk to each other without having to be directly connected, temporarily holding messages until the receiving service is ready to grab them. This creates a reliable, asynchronous communication channel.

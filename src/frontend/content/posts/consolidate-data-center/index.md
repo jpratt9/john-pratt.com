@@ -14,6 +14,7 @@ tags:
 ---
 
 
+
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-1a820e26-d4ec-432c-a5db-19859729bc24.jpg)
 
 So, what does it actually mean to consolidate a data center? It's the process of shrinking your physical IT footprint. You're either combining several data center sites into a smaller number of more efficient ones or moving workloads over to modern infrastructure, like the cloud. The end game is always the same: *slash operational costs* and **boost overall performance**.
