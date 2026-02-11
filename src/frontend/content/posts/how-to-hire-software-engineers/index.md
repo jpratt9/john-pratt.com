@@ -1,5 +1,6 @@
 ---
 title: How To Hire Software Engineers - A Practical Guide For Tech Firms
+description: "Learn how to hire software engineers with a practical playbook for sourcing, interviewing, and onboarding top tech talent."
 date: '2026-01-19'
 draft: false
 slug: '/how-to-hire-software-engineers'
@@ -11,6 +12,7 @@ tags:
   - tech-talent-acquisition
   - consulting-firm-hiring
 ---
+
 
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/0127d300-64ab-4570-915a-4c12a9a1e502/how-to-hire-software-engineers-hiring-process.jpg)
 

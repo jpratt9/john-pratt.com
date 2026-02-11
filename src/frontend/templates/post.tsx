@@ -113,6 +113,7 @@ export const Head: HeadFC<PostTemplateData> = ({ data, location }) => {
   return (
     <SEO
       title={fm.title}
+      description={fm.description}
       pathname={location?.pathname}
     />
   );
@@ -128,6 +129,7 @@ export const pageQuery = graphql`
         date
         slug
         tags
+        description
       }
     }
   }

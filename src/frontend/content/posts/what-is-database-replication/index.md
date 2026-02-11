@@ -1,5 +1,6 @@
 ---
 title: What Is Database Replication? A Guide To Scaling And High Availability
+description: "Learn what is database replication and how it delivers high availability, disaster recovery, and massive scalability for your applications."
 date: '2026-01-03'
 draft: false
 slug: '/what-is-database-replication'
@@ -11,6 +12,7 @@ tags:
   - database-scaling
   - data-architecture
 ---
+
 
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/940be892-5a1a-4457-a675-d983ff3f05eb/what-is-database-replication-database-replication.jpg)
 

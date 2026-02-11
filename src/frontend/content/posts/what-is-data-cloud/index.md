@@ -1,5 +1,6 @@
 ---
 title: What Is Data Cloud - What Is Data Cloud And How It Works
+description: "Explore what is data cloud and how it unifies data beyond lakes and warehouses - read the guide to learn more."
 date: '2026-01-08'
 draft: false
 slug: '/what-is-data-cloud'
@@ -11,6 +12,7 @@ tags:
   - data-architecture
   - data-management
 ---
+
 
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/eac35b5b-bc5d-4f5e-ba07-5a2cbb0b2d92/what-is-data-cloud-data-cloud.jpg)
 

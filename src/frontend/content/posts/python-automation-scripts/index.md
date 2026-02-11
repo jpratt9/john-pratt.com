@@ -1,5 +1,6 @@
 ---
 title: Python Automation Scripts That Actually Work
+description: "A practical guide to building Python automation scripts that solve real problems. Learn to create, test, and deploy scripts that boost your productivity."
 date: '2025-10-22'
 draft: false
 slug: '/python-automation-scripts'
@@ -11,6 +12,7 @@ tags:
   - scripting-guide
   - automation-examples
 ---
+
 
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-caf5cbca-6923-41e1-b42d-90d91b51af42.jpg)
 

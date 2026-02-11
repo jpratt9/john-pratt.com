@@ -43,6 +43,7 @@ def lambda_handler(event, context):
     date = datetime.datetime.fromisoformat(article_json.get("created_at")).date().isoformat()
     slug = article_json.get("slug")
     tags = article_json.get("tags")
+    description  = article_json.get("meta_description", "")
     header_image = article_json.get("image_url")
     article_text = article_json.get("content_markdown").replace(os.environ["article_blacklist_strings"], "").replace('’', '\'')
 
@@ -64,6 +65,7 @@ def lambda_handler(event, context):
         file.write(f"""---
 title: {title}
 date: '{date}'
+description: {description}
 draft: false
 slug: '/{slug}'
 tags:

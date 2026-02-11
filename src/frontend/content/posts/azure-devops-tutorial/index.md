@@ -1,5 +1,6 @@
 ---
 title: Azure DevOps Tutorial for Modern CI/CD
+description: "A practical Azure DevOps tutorial on mastering CI/CD. Learn to build pipelines, manage repos, and organize workflows with real-world examples."
 date: '2025-10-23'
 draft: false
 slug: '/azure-devops-tutorial'
@@ -11,6 +12,7 @@ tags:
   - devops-guide
   - azure-repos
 ---
+
 
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-e3befd4c-b0b1-47a4-a679-ba1028a662c1.jpg)
 

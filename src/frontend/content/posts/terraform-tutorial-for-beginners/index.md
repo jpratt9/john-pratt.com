@@ -1,5 +1,6 @@
 ---
 title: Terraform Tutorial For Beginners Your First Iac Project
+description: "This Terraform tutorial for beginners guides you from zero to deployment. Learn Infrastructure as Code (IaC) with practical, real-world examples."
 date: '2025-11-11'
 draft: false
 slug: '/terraform-tutorial-for-beginners'
@@ -11,6 +12,7 @@ tags:
   - Cloud-Infrastructure
   - AWS-Terraform
 ---
+
 
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-4c74dfbe-0863-44ff-927b-9516547c31be.jpg)
 

@@ -1,5 +1,6 @@
 ---
 title: What Is Rest Api - A Clear Guide To Restful Apis
+description: "Discover what is rest api and how RESTful APIs work, with simple explanations, key HTTP methods, and practical real-world examples."
 date: '2026-01-04'
 draft: false
 slug: '/what-is-rest-api'
@@ -11,6 +12,7 @@ tags:
   - web-services
   - http-methods
 ---
+
 
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/cb7e35b9-3994-40be-a540-b8211e664d89/what-is-rest-api-rest-api.jpg)
 

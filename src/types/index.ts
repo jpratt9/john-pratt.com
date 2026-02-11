@@ -108,6 +108,7 @@ export interface BlogPostFrontmatter {
   date: string;
   tags: string[];
   draft?: boolean;
+  description?: string;
 }
 
 // GraphQL node types

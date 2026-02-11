@@ -1,5 +1,6 @@
 ---
 title: What Is A Message Queue? What Is Message Queue And Why It Matters For Your App
+description: "Curious what is message queue? Learn how it coordinates tasks, boosts reliability, and scales modern apps."
 date: '2025-12-13'
 draft: false
 slug: '/what-is-message-queue'
@@ -11,6 +12,7 @@ tags:
   - microservice-architecture
   - system-design
 ---
+
 
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/afebf9c4-0758-459f-a0b7-2100199a7d47/what-is-message-queue-message-balancing.jpg)
 

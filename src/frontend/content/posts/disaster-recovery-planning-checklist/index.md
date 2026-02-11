@@ -1,5 +1,6 @@
 ---
 title: Disaster Recovery Planning Checklist - 2025 Essentials
+description: "Discover a practical disaster recovery planning checklist to safeguard your organization in 2025. Get a concise, step-by-step guide to resilience."
 date: '2025-10-28'
 draft: false
 slug: '/disaster-recovery-planning-checklist'
@@ -11,6 +12,7 @@ tags:
   - risk-management
   - cyber-resilience
 ---
+
 
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-f6d4207c-cb14-4f39-a980-77d26beddd6a.jpg)
 

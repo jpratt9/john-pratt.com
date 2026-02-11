@@ -1,5 +1,6 @@
 ---
 title: Cost Of Rpa - Understand The True Investment
+description: "Discover the cost of rpa beyond licenses. A practical breakdown of implementation, infrastructure, and ongoing maintenance to help you budget smarter."
 date: '2025-11-10'
 draft: false
 slug: '/cost-of-rpa'
@@ -11,6 +12,7 @@ tags:
   - rpa-implementation
   - rpa-roi
 ---
+
 
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-b418fe52-cbdb-49d1-966d-257ba75a8015.jpg)
 

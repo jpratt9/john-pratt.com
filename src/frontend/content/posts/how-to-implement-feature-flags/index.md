@@ -1,5 +1,6 @@
 ---
 title: How To Implement Feature Flags In Your Devops Workflow
+description: "Learn how to implement feature flags to safely test and roll out new features. Our practical guide covers everything DevOps teams need to know."
 date: '2025-12-01'
 draft: false
 slug: '/how-to-implement-feature-flags'
@@ -11,6 +12,7 @@ tags:
   - ci/cd-pipeline
   - software-delivery
 ---
+
 
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/ea472ee1-565b-4e63-b57d-7b44087aa3ee/how-to-implement-feature-flags-workflow.jpg)
 

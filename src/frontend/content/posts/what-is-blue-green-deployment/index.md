@@ -1,5 +1,6 @@
 ---
 title: What Is Blue Green Deployment Explained
+description: "What is blue green deployment? Discover how this powerful DevOps strategy eliminates downtime and ensures safer, stress-free software releases."
 date: '2025-10-26'
 draft: false
 slug: '/what-is-blue-green-deployment'
@@ -11,6 +12,7 @@ tags:
   - CI/CD
   - devops
 ---
+
 
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-edd1fc13-57e6-4dd7-af48-e6e010d8a92d.jpg)
 

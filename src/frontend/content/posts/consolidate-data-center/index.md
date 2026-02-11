@@ -1,5 +1,6 @@
 ---
 title: A Practical Guide To Consolidate Data Center Operations
+description: "Learn how to consolidate data center operations with our practical guide. We cover proven migration strategies, security planning, and cost optimization."
 date: '2025-11-19'
 draft: false
 slug: '/consolidate-data-center'
@@ -11,6 +12,7 @@ tags:
   - hybrid-cloud-strategy
   - cost-optimization
 ---
+
 
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-1a820e26-d4ec-432c-a5db-19859729bc24.jpg)
 

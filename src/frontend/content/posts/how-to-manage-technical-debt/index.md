@@ -1,5 +1,6 @@
 ---
 title: How to Manage Technical Debt Before It Sinks Your Project
+description: "Learn how to manage technical debt with this practical guide. Discover proven strategies to identify, prioritize, and reduce technical debt effectively."
 date: '2025-10-18'
 draft: false
 slug: '/how-to-manage-technical-debt'
@@ -11,6 +12,7 @@ tags:
   - software-development
   - agile-development
 ---
+
 
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-04c9aa34-21f8-4b08-b86a-13541744c0da.jpg)
 

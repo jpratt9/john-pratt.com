@@ -1,5 +1,6 @@
 ---
 title: A Practical Guide To Automation In Financial Services
+description: "Discover how automation in financial services drives efficiency, ROI, and compliance. Learn key strategies, use cases, and how to implement them successfully."
 date: '2026-01-10'
 draft: false
 slug: '/automation-in-financial-services'
@@ -11,6 +12,7 @@ tags:
   - ai-financial-services
   - financial-process-automation
 ---
+
 
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/9b150b51-60fe-4edb-a1dd-5abd28eaedba/automation-in-financial-services-financial-automation.jpg)
 

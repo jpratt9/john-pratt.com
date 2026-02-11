@@ -1,5 +1,6 @@
 ---
 title: Database Query Optimization - Boost SQL Performance
+description: "Unlock real-world gains with database query optimization. Learn plan analysis, indexing strategies, and SQL rewrites to speed up your apps."
 date: '2025-10-24'
 draft: false
 slug: '/database-query-optimization'
@@ -11,6 +12,7 @@ tags:
   - database-indexing
   - sql-rewriting
 ---
+
 
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-ebb98c95-6124-4058-a2da-f92d81072300.jpg)
 

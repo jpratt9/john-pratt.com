@@ -1,5 +1,6 @@
 ---
 title: What Is Terraform Used For? A Quick Guide To What Is Terraform Used For
+description: "Curious about what is terraform used for? Learn how Terraform automates cloud infrastructure, manages multi-cloud deployments, and speeds up IaC."
 date: '2025-12-12'
 draft: false
 slug: '/what-is-terraform-used-for'
@@ -11,6 +12,7 @@ tags:
   - DevOps
   - Multi-Cloud
 ---
+
 
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/024a73ee-e57b-49b7-8a79-914b03ebd3bf/what-is-terraform-used-for-infrastructure.jpg)
 

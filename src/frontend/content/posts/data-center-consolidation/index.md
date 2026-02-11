@@ -1,5 +1,6 @@
 ---
 title: A Practical Guide To Data Center Consolidation
+description: "Discover how data center consolidation can cut costs and boost efficiency. This guide covers strategies, execution plans, and real-world examples."
 date: '2026-01-01'
 draft: false
 slug: '/data-center-consolidation'
@@ -11,6 +12,7 @@ tags:
   - cost-optimization
   - colocation-services
 ---
+
 
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/55f5a617-8a13-45b6-8b4f-dac5b9e426a4/data-center-consolidation-server-migration.jpg)
 
