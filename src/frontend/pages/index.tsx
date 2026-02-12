@@ -1,6 +1,8 @@
 import React, { lazy, Suspense } from 'react';
 import styled from 'styled-components';
+import { HeadFC } from 'gatsby';
 import { Layout, Hero } from '@components';
+import SEO from '@components/head';
 import { PageProps } from '../../types';
 
 const About = lazy(() => import('@components/sections/about' /* webpackChunkName: "about", webpackPrefetch: true */));
@@ -31,3 +33,5 @@ const IndexPage: React.FC<PageProps> = ({ location }) => (
 );
 
 export default IndexPage;
+
+export const Head: HeadFC = () => <SEO />;

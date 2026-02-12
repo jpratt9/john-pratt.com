@@ -1,6 +1,6 @@
 import React, { useState, useEffect, lazy, Suspense } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
-import { Head, Nav, Social, Email, Footer } from '@components';
+import { Nav, Social, Email, Footer } from '@components';
 import { GlobalStyle, theme } from '@styles';
 import { Location } from '../../types';
 
@@ -53,8 +53,6 @@ const Layout: React.FC<LayoutProps> = ({ children, location }) => {
 
   return (
     <>
-      <Head />
-
       <div id="root">
         <ThemeProvider theme={theme}>
           <GlobalStyle />
