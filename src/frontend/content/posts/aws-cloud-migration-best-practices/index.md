@@ -1,5 +1,5 @@
 ---
-title: Top 9 Aws Cloud Migration Best Practices For 2025 Success
+title: Top 9 AWS Cloud Migration Best Practices For 2025 Success
 date: '2025-08-12'
 description: Learn essential AWS cloud migration best practices to ensure a smooth, secure, and efficient transition in 2025. Get expert tips now!
 draft: false
