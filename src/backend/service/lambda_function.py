@@ -6,15 +6,27 @@ import boto3
 import os
 import base64
 import re
+import anthropic
 
 _sm = boto3.client("secretsmanager")
 _secret_cache = {}
 _blog_poster_secret_name = "blog_poster_secrets"
 DATE_STR = date.today().isoformat()
+client = anthropic.Anthropic(api_key=os.environ["anthropic_api_key"])
+title_prompt = os.environ["bedrock_title_prompt"]
+desc_prompt = os.environ["bedrock_description_prompt"]
+
+def ask_claude(prompt: str, max_tokens: int = 256) -> str:
+    response = client.messages.create(
+        model="claude-sonnet-4-5-20250929",
+        max_tokens=max_tokens,
+        messages=[{"role": "user", "content": prompt}]
+    )
+    return response.content[0].text
 
 def lambda_handler(event, context):
     github_payload = {
-        "message": "add blog post for $DATE",
+        "message": "fix blog post for $DATE",
         "committer": {"name": "John Pratt", "email": "john@john-pratt.com"},
     }
     # headers in REST API keep original case; check both just in case
@@ -39,11 +51,19 @@ def lambda_handler(event, context):
 
     article_json = body.get("data").get("articles")[0]
 
-    title = article_json.get("title").replace(":", " -").title()
+    raw_title = article_json.get("title").replace(":", " -").title()
+    clean_title = ask_claude(title_prompt.replace("{{TITLE}}", raw_title))
+    print(f"Title before: \"{raw_title}\"")
+    print(f"Title after : \"{clean_title}\"")
+
     date = datetime.datetime.fromisoformat(article_json.get("created_at")).date().isoformat()
     slug = article_json.get("slug")
     tags = article_json.get("tags")
-    description  = article_json.get("meta_description", "")
+    raw_description  = article_json.get("meta_description", "")
+    clean_desc = ask_claude(desc_prompt.replace("{{DESCRIPTION}}", raw_description))
+    print(f"Desc before: \"{raw_description}\"")
+    print(f"Desc after : \"{clean_desc}\"")
+
     header_image = article_json.get("image_url")
     article_text = article_json.get("content_markdown").replace(os.environ["article_blacklist_strings"], "").replace('’', '\'')
 
@@ -63,9 +83,9 @@ def lambda_handler(event, context):
     os.makedirs(f"/tmp/{slug}", exist_ok=True)
     with open(f"/tmp/{slug}/index.md", "w") as file:
         file.write(f"""---
-title: {title}
+title: {clean_title}
 date: '{date}'
-description: {description}
+description: {clean_desc}
 draft: false
 slug: '/{slug}'
 tags:

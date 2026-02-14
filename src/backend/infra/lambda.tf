@@ -55,16 +55,19 @@ resource "aws_lambda_function" "webhook" {
   handler          = "lambda_function.lambda_handler"
   filename         = data.archive_file.handler_zip.output_path
   source_code_hash = data.archive_file.handler_zip.output_base64sha256
+  timeout          = 900  # 15 minutes max
 
   # Safety: cap concurrency so floods can't scale costlessly
   reserved_concurrent_executions = 5
 
   environment {
     variables = {
-      OPENAI_API_KEY            = var.openai_api_key
-      github_token              = var.github_token
-      article_blacklist_strings = var.article_blacklist_strings
-      outrank_access_token      = random_password.outrank_access_token.result
+      bedrock_title_prompt        = var.bedrock_title_prompt
+      bedrock_description_prompt  = var.bedrock_description_prompt
+      github_token                = var.github_token
+      article_blacklist_strings   = var.article_blacklist_strings
+      outrank_access_token        = random_password.outrank_access_token.result
+      anthropic_api_key           = var.anthropic_api_key
     }
   }
 
@@ -87,7 +90,7 @@ resource "null_resource" "build_new_requests_layer" {
 
   provisioner "local-exec" {
     command = <<EOT
-mkdir -p dist/python; mv dist/python dist/python; pip install requests openai -t dist/python; cd dist && zip -r new_requests_layer.zip python
+rm -rf dist/python && mkdir -p dist/python && pip install --platform manylinux2014_x86_64 --python-version 3.12 --only-binary=:all: requests anthropic -t dist/python && cd dist && zip -r new_requests_layer.zip python
     EOT
   }
 }

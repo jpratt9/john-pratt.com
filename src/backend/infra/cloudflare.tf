@@ -40,8 +40,19 @@ resource "cloudflare_pages_project" "john_pratt" {
     }
   }
 
-  # Note: GitHub integration configured via dashboard, then imported:
-  # terraform import cloudflare_pages_project.john_pratt 551cbfe060cfcb87bf35d0d3fddc6ad6/john-pratt
+  source = {
+    type = "github"
+    config = {
+      owner                          = "jpratt9"
+      repo_name                      = "john-pratt.com"
+      production_branch              = "master"
+      deployments_enabled            = true
+      production_deployments_enabled = true
+      pr_comments_enabled            = true
+      preview_deployment_setting     = "all"
+      preview_branch_includes        = ["*"]
+    }
+  }
 }
 
 resource "cloudflare_pages_domain" "john_pratt_root" {
