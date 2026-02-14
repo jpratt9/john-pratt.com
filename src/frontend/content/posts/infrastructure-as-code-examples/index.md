@@ -1,7 +1,7 @@
 ---
-title: Top Infrastructure As Code Examples To Streamline Your Projects
+title: "Top Infrastructure As Code Examples To Streamline Your Projects"
 date: '2025-08-16'
-description: Discover 8 practical infrastructure as code examples with Terraform, AWS CloudFormation, Ansible, and more. Boost your automation skills today!
+description: "Discover 8 practical infrastructure as code examples with Terraform, AWS CloudFormation, Ansible, and more. Boost your automation skills today!"
 draft: false
 slug: '/infrastructure-as-code-examples'
 tags:
