@@ -1,7 +1,7 @@
 ---
-title: Cloud Infrastructure Optimization A Practical Guide
+title: "Cloud Infrastructure Optimization: A Practical Guide"
 date: '2025-08-14'
-description: Unlock peak performance and reduce costs with our guide to cloud infrastructure optimization. Learn actionable strategies, tools, and best practices.
+description: "Unlock peak performance and reduce costs with our guide to cloud infrastructure optimization. Learn actionable strategies, tools, and best practices."
 draft: false
 slug: '/cloud-infrastructure-optimization'
 tags:
