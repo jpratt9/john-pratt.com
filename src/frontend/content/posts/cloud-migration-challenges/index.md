@@ -1,7 +1,7 @@
 ---
-title: Top 8 Cloud Migration Challenges Of 2025 & How To Solve Them
+title: "Top 8 Cloud Migration Challenges of 2025 & How to Solve Them"
 date: '2025-08-11'
-description: Facing cloud migration challenges? Discover the top 8 obstacles in 2025 and learn expert strategies to ensure a successful, secure, and cost-effective move.
+description: "Facing cloud migration challenges? Discover the top 8 obstacles in 2025 and learn expert strategies to ensure a successful, secure, and cost-effective move."
 draft: false
 slug: '/cloud-migration-challenges'
 tags:
