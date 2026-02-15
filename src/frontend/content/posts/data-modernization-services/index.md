@@ -1,5 +1,5 @@
 ---
-title: "A Guide To Data Modernization Services"
+title: "A Guide to Data Modernization Services"
 date: '2025-10-14'
 description: "Unlock your business potential with this guide to data modernization services. Learn core strategies, implementation steps, and how to drive real growth."
 draft: false
