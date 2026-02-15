@@ -1,5 +1,5 @@
 ---
-title: "Mastering Your Move With Cloud Migration Consulting"
+title: "Mastering Your Move with Cloud Migration Consulting"
 date: '2025-12-02'
 description: "Unlock a seamless transition to the cloud. Our guide to cloud migration consulting covers strategy, partner selection, and cost management for your business."
 draft: false
