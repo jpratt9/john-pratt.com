@@ -1,5 +1,5 @@
 ---
-title: "A Guide To Legacy System Modernization"
+title: "A Guide to Legacy System Modernization"
 date: '2025-08-28'
 description: "Discover proven legacy system modernization strategies to boost agility and cut costs. Our guide explains how to transform your tech effectively."
 draft: false
