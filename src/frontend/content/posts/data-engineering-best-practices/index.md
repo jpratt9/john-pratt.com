@@ -1,5 +1,5 @@
 ---
-title: "Data Engineering Best Practices For Scalable Systems"
+title: "Data Engineering Best Practices for Scalable Systems"
 date: '2025-11-18'
 description: "Master data engineering best practices to design scalable systems, optimize pipelines, and boost reliability with practical tips and proven patterns."
 draft: false
