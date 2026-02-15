@@ -1,5 +1,5 @@
 ---
-title: "10 Agile Development Best Practices To Master In 2025"
+title: "10 Agile Development Best Practices to Master in 2025"
 date: '2025-09-01'
 description: "Discover 10 essential agile development best practices. Learn how to implement CI/CD, TDD, and more to boost your team's efficiency and software quality."
 draft: false
