@@ -1,5 +1,5 @@
 ---
-title: "What Is Blue Green Deployment Explained"
+title: "Blue Green Deployment Explained"
 date: '2025-10-26'
 description: "What is blue green deployment? Discover how this powerful DevOps strategy eliminates downtime and ensures safer, stress-free software releases."
 draft: false
