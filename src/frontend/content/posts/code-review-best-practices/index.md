@@ -1,5 +1,5 @@
 ---
-title: "Master Code Review Best Practices For Better Software"
+title: "Master Code Review Best Practices for Better Software"
 date: '2025-09-10'
 description: "Discover top code review best practices to boost quality, speed up cycles, and strengthen your team. Learn actionable strategies today!"
 draft: false
