@@ -1,5 +1,5 @@
 ---
-title: "9 Essential Technical Project Manager Skills For 2025"
+title: "9 Essential Technical Project Manager Skills for 2025"
 date: '2025-09-07'
 description: "Master the 9 essential technical project manager skills you need for 2025. Dive deep into Agile, DevOps, architecture, and risk management."
 draft: false
