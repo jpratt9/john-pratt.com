@@ -1,5 +1,5 @@
 ---
-title: "How To Measure Software Quality"
+title: "How to Measure Software Quality"
 date: '2025-11-20'
 description: "Discover how to measure software quality with our practical guide. Learn the metrics, tools, and frameworks that connect quality to real business outcomes."
 draft: false
