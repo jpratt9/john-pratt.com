@@ -1,5 +1,5 @@
 ---
-title: "How To Streamline Business Processes: A Practical Guide"
+title: "How to Streamline Business Processes: A Practical Guide"
 date: '2025-10-06'
 description: "Learn how to streamline business processes effectively. Discover actionable tips to map workflows, use automation, and boost efficiency today!"
 draft: false
