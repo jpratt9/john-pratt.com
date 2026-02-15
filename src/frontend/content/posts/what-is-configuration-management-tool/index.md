@@ -1,5 +1,5 @@
 ---
-title: "What Is a Configuration Management Tool: A Practical Guide To Automation"
+title: "What is a Configuration Management Tool: A Practical Guide to Automation"
 date: '2026-02-15'
 description: "Curious what a configuration management tool is? Learn how automation tools like Ansible and Puppet stabilize infrastructure and enable reliable deployments."
 draft: false
