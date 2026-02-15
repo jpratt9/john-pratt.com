@@ -1,5 +1,5 @@
 ---
-title: "Terraform Tutorial For Beginners: Your First IaC Project"
+title: "Terraform Tutorial for Beginners: Your First IaC Project"
 date: '2025-11-11'
 description: "This Terraform tutorial for beginners guides you from zero to deployment. Learn Infrastructure as Code (IaC) with practical, real-world examples."
 draft: false
