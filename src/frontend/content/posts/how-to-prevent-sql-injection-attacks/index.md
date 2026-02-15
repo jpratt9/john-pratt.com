@@ -1,5 +1,5 @@
 ---
-title: "How To Prevent SQL Injection Attacks: A Practical Guide"
+title: "How to Prevent SQL Injection Attacks: A Practical Guide"
 date: '2025-11-23'
 description: "How to prevent SQL injection attacks: Learn practical steps, best practices, and real-world tips to secure your application's data."
 draft: false
