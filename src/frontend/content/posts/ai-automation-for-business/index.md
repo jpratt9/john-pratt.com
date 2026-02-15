@@ -1,5 +1,5 @@
 ---
-title: "AI Automation For Business Unlocked"
+title: "AI Automation for Business Unlocked"
 date: '2025-10-17'
 description: "Discover how AI automation for business can boost efficiency, drive growth, and reshape your operations. Your guide to strategy, tools, and real-world success."
 draft: false
