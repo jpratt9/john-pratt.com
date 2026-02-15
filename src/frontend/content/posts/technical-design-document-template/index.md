@@ -1,7 +1,7 @@
 ---
-title: Your Ultimate Technical Design Document Template
-description: "Download our comprehensive technical design document template with examples for cloud, DevOps, and data engineering. Improve clarity and accelerate projects."
+title: "Your Ultimate Technical Design Document Template"
 date: '2026-01-11'
+description: "Download our comprehensive technical design document template with examples for cloud, DevOps, and data engineering. Improve clarity and accelerate projects."
 draft: false
 slug: '/technical-design-document-template'
 tags:
@@ -12,8 +12,6 @@ tags:
   - solution-architecture
   - DevOps
 ---
-
-
 
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/7ada55fa-5eab-4e5d-8f35-855cde1bbd34/technical-design-document-template-design-document.jpg)
 
