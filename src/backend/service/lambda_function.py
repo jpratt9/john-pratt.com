@@ -8,6 +8,23 @@ import base64
 import re
 import anthropic
 
+SMALL_WORDS = {'a', 'an', 'the', 'and', 'but', 'or', 'nor', 'for', 'yet', 'so',
+               'to', 'of', 'in', 'on', 'at', 'by', 'with', 'as', 'is', 'if'}
+
+def titlecase(text):
+    words = text.split()
+    result = []
+    for i, word in enumerate(words):
+        # Check if previous char was sentence-ending punctuation
+        prev_ends_sentence = i > 0 and result[-1][-1] in ':;!?'
+        if i == 0 or i == len(words) - 1 or prev_ends_sentence:
+            result.append(word.capitalize())
+        elif word.lower() in SMALL_WORDS:
+            result.append(word.lower())
+        else:
+            result.append(word.capitalize())
+    return ' '.join(result)
+
 _sm = boto3.client("secretsmanager")
 _secret_cache = {}
 _blog_poster_secret_name = "blog_poster_secrets"
@@ -51,7 +68,7 @@ def lambda_handler(event, context):
 
     article_json = body.get("data").get("articles")[0]
 
-    raw_title = article_json.get("title").title()
+    raw_title = titlecase(article_json.get("title"))
     clean_title = '"' + ask_claude(title_prompt.replace("{{TITLE}}", raw_title)).strip().strip("\"'`""''") + '"'
     print(f"Title before: \"{raw_title}\"")
     print(f"Title after : \"{clean_title}\"")
