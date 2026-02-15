@@ -1,5 +1,5 @@
 ---
-title: "Unlocking The Benefits Of Infrastructure As Code"
+title: "Unlocking the Benefits of Infrastructure as Code"
 date: '2025-08-18'
 description: "Discover the key benefits of Infrastructure as Code. Learn how IaC drives speed, consistency, security, and cost savings for modern businesses."
 draft: false
