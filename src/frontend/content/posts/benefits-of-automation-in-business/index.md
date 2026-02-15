@@ -1,5 +1,5 @@
 ---
-title: "Benefits Of Automation In Business: Drive Efficiency & Growth"
+title: "Benefits of Automation in Business: Drive Efficiency & Growth"
 date: '2025-10-12'
 description: "Discover the benefits of automation in business and how it can boost efficiency, cut costs, and support scalable growth. Learn more today!"
 draft: false
