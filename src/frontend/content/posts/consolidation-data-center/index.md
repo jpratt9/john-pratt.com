@@ -1,7 +1,7 @@
 ---
-title: Your Guide To A Flawless Consolidation Data Center Strategy
-description: "Discover how to plan and execute a successful consolidation data center project. Learn proven strategies for assessment, migration, and post-launch operations."
+title: "Your Guide To A Flawless Consolidation Data Center Strategy"
 date: '2025-12-15'
+description: "Discover how to plan and execute a successful consolidation data center project. Learn proven strategies for assessment, migration, and post-launch operations."
 draft: false
 slug: '/consolidation-data-center'
 tags:
@@ -12,8 +12,6 @@ tags:
   - cloud-migration
   - hybrid-cloud
 ---
-
-
 
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/d7d28211-c7eb-4ee7-bbc5-b3d37fddd18a/consolidation-data-center-it-infrastructure.jpg)
 
