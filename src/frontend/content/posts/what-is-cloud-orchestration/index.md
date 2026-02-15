@@ -1,5 +1,5 @@
 ---
-title: "What Is Cloud Orchestration Explained"
+title: "Cloud Orchestration Explained"
 date: '2025-09-24'
 description: "Discover what cloud orchestration is and how it transforms cloud management. This guide explains key benefits, tools, and best practices for automation."
 draft: false
