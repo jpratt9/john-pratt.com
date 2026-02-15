@@ -1,5 +1,5 @@
 ---
-title: "A Kubernetes Tutorial For Beginners To Launch Cloud Apps"
+title: "A Kubernetes Tutorial for Beginners to Launch Cloud Apps"
 date: '2025-12-30'
 description: "Ready to launch cloud-native apps? This Kubernetes tutorial for beginners provides hands-on guidance for deploying, scaling, and managing your first cluster."
 draft: false
