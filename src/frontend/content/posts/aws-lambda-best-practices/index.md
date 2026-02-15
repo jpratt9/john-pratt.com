@@ -1,5 +1,5 @@
 ---
-title: "10 AWS Lambda Best Practices For 2025: A Deep Dive"
+title: "10 AWS Lambda Best Practices for 2025: A Deep Dive"
 date: '2025-11-12'
 description: "Unlock peak performance and efficiency with our deep dive into 10 AWS Lambda best practices. Learn essential tips for security, cost, and optimization."
 draft: false
