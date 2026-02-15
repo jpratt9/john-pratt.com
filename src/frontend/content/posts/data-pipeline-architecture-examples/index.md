@@ -1,5 +1,5 @@
 ---
-title: "Top Data Pipeline Architecture Examples To Boost Your Business"
+title: "Top Data Pipeline Architecture Examples to Boost Your Business"
 date: '2025-10-10'
 description: "Discover key data pipeline architecture examples to optimize your data flow and achieve business growth. Explore practical solutions today!"
 draft: false
