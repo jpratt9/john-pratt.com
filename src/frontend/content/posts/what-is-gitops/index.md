@@ -1,7 +1,7 @@
 ---
-title: What Is Gitops And How It Transforms Your Deployment Workflow
-description: "Discover what is gitops and how it streamlines cloud deployments, improves reliability, and strengthens auditability for modern DevOps teams."
+title: "What Is GitOps And How It Transforms Your Deployment Workflow"
 date: '2025-12-18'
+description: "Discover what GitOps is and how it streamlines cloud deployments, improves reliability, and strengthens auditability for modern DevOps teams."
 draft: false
 slug: '/what-is-gitops'
 tags:
@@ -12,8 +12,6 @@ tags:
   - Continuous-Delivery
   - Infrastructure-as-Code
 ---
-
-
 
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/3641eea0-9f81-4c30-a578-c5783d232396/image.jpg)
 
