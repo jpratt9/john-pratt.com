@@ -1,5 +1,5 @@
 ---
-title: "Terraform Modules Best Practices: 8 Tips For 2025"
+title: "Terraform Modules Best Practices: 8 Tips for 2025"
 date: '2025-09-19'
 description: "Discover essential Terraform modules best practices to build scalable, maintainable infrastructure. Learn top tips for 2025 and beyond!"
 draft: false
