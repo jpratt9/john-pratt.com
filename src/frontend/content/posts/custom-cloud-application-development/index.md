@@ -1,5 +1,5 @@
 ---
-title: "Mastering Custom Cloud Application Development From Start To Finish"
+title: "Mastering Custom Cloud Application Development From Start to Finish"
 date: '2025-12-20'
 description: "A practical guide to custom cloud application development. Learn how to plan, architect, and deploy scalable cloud-native apps that drive real business results."
 draft: false
