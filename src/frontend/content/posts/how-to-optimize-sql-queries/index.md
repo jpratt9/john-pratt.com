@@ -1,5 +1,5 @@
 ---
-title: "How To Optimize SQL Queries For Peak Performance"
+title: "How to Optimize SQL Queries for Peak Performance"
 date: '2025-11-14'
 description: "Learn how to optimize SQL queries with our guide. Discover practical tips on indexing, execution plans, and rewriting queries to boost database speed."
 draft: false
