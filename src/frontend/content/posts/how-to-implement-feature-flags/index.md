@@ -1,5 +1,5 @@
 ---
-title: "How To Implement Feature Flags In Your DevOps Workflow"
+title: "How to Implement Feature Flags in Your DevOps Workflow"
 date: '2025-12-01'
 description: "Learn how to implement feature flags to safely test and roll out new features. Our practical guide covers everything DevOps teams need to know."
 draft: false
