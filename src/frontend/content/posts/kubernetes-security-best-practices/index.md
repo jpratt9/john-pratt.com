@@ -1,7 +1,7 @@
 ---
-title: 10 Actionable Kubernetes Security Best Practices For 2025
-description: "Secure your clusters with our deep dive into 10 essential Kubernetes security best practices. Learn RBAC, network policies, image scanning, and more."
+title: "10 Actionable Kubernetes Security Best Practices For 2025"
 date: '2025-11-26'
+description: "Secure your clusters with our deep dive into 10 essential Kubernetes security best practices. Learn RBAC, network policies, image scanning, and more."
 draft: false
 slug: '/kubernetes-security-best-practices'
 tags:
@@ -12,8 +12,6 @@ tags:
   - cluster-hardening
   - devsecops
 ---
-
-
 
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/d5bf9fbd-7efe-414c-82fe-4a72728db37b/kubernetes-security-best-practices-architecture-diagram.jpg)
 
