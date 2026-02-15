@@ -1,5 +1,5 @@
 ---
-title: "Choosing A Cloud Provider: A Guide To Cost And Security"
+title: "Choosing a Cloud Provider: A Guide to Cost and Security"
 date: '2025-11-17'
 description: "A practical guide to choosing a cloud provider. We break down costs, security, and performance with real-world examples to help you select the right partner."
 draft: false
