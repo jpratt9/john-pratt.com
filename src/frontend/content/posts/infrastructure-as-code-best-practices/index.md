@@ -1,5 +1,5 @@
 ---
-title: "8 Infrastructure As Code Best Practices For 2025"
+title: "8 Infrastructure as Code Best Practices for 2025"
 date: '2025-08-17'
 description: "Discover 8 essential infrastructure as code best practices. Learn to improve security, scalability, and efficiency with our expert guide for 2025."
 draft: false
