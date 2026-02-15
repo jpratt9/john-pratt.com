@@ -1,5 +1,5 @@
 ---
-title: "How To Choose Your Cloud Provider: A Practical Guide For Business"
+title: "How to Choose Your Cloud Provider: A Practical Guide for Business"
 date: '2025-10-27'
 description: "Discover how to choose a cloud provider in one clear guide. Compare AWS, Azure, and GCP on cost, security, and performance to help you decide."
 draft: false
