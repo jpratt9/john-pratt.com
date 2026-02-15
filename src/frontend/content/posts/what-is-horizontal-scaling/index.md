@@ -1,5 +1,5 @@
 ---
-title: "What Is Horizontal Scaling And How It Works"
+title: "What is Horizontal Scaling and How It Works"
 date: '2025-10-20'
 description: "Discover what horizontal scaling is with our complete guide. We compare it to vertical scaling and explore real-world examples to help you scale smarter."
 draft: false
