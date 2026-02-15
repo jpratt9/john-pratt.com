@@ -1,5 +1,5 @@
 ---
-title: "What Is Continuous Integration A Developer's Guide"
+title: "What is Continuous Integration: a Developer's Guide"
 date: '2025-12-31'
 description: "What is continuous integration? This guide explains CI with real-world examples, its core benefits, and the best tools to streamline your development workflow."
 draft: false
