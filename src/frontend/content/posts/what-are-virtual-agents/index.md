@@ -1,7 +1,7 @@
 ---
-title: What Are Virtual Agents? A Quick, Clear Overview
-description: "What are virtual agents? Learn what are virtual agents and how these AI-powered assistants automate tasks, boost productivity, and transform your business."
+title: "What Are Virtual Agents? A Quick, Clear Overview"
 date: '2025-11-21'
+description: "What are virtual agents? Learn what virtual agents are and how these AI-powered assistants automate tasks, boost productivity, and transform your business."
 draft: false
 slug: '/what-are-virtual-agents'
 tags:
@@ -12,8 +12,6 @@ tags:
   - intelligent-agents
   - business-automation
 ---
-
-
 
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-d1c33682-82c3-481a-92a5-2185933c47e7.jpg)
 
