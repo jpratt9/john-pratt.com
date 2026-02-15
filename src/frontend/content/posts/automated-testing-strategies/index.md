@@ -1,5 +1,5 @@
 ---
-title: "Smarter Automated Testing Strategies For Devs"
+title: "Smarter Automated Testing Strategies for Devs"
 date: '2025-12-04'
 description: "Discover powerful automated testing strategies that accelerate development and boost software quality. Learn how to build a scalable plan from the ground up."
 draft: false
