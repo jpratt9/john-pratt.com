@@ -1,5 +1,5 @@
 ---
-title: "How To Write Technical Requirements That Actually Work"
+title: "How to Write Technical Requirements That Actually Work"
 date: '2025-12-08'
 description: "Learn how to write technical requirements that guide development, prevent scope creep, and ensure project success. A practical, step-by-step guide."
 draft: false
