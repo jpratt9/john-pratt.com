@@ -1,5 +1,5 @@
 ---
-title: "Your Guide To Custom Software Development Solutions"
+title: "Your Guide to Custom Software Development Solutions"
 date: '2025-11-29'
 description: "Discover how custom software development solutions solve unique business challenges. Learn the process, technologies, and how to choose the right partner."
 draft: false
