@@ -1,5 +1,5 @@
 ---
-title: "Data Engineering Consulting Services To Unlock Data ROI"
+title: "Data Engineering Consulting Services to Unlock Data ROI"
 date: '2025-11-30'
 description: "data engineering consulting services that transform raw data into actionable insights, optimize cloud pipelines, and drive measurable ROI."
 draft: false
