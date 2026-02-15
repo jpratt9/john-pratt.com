@@ -1,7 +1,7 @@
 ---
-title: Mastering Software Development Capacity Planning
-description: "Transform your software development capacity planning from guesswork to a science. Learn practical forecasting, metrics, and tools to deliver projects on time."
+title: "Mastering Software Development Capacity Planning"
 date: '2026-02-07'
+description: "Transform your software development capacity planning from guesswork to a science. Learn practical forecasting, metrics, and tools to deliver projects on time."
 draft: false
 slug: '/software-development-capacity-planning'
 tags:
@@ -12,8 +12,6 @@ tags:
   - development-metrics
   - team-capacity
 ---
-
-
 
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/4efb0292-02ae-4223-af34-e1dddf93f115/software-development-capacity-planning-problem-solving.jpg)
 
