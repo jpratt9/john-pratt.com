@@ -1,7 +1,7 @@
 ---
-title: A React Js Tutorial For Beginners Your First Modern Project
-description: "Start your journey with this React JS tutorial for beginners. Learn modern setup with Vite, master JSX and hooks, and build a real-world app from scratch."
+title: "A React Js Tutorial for Beginners: Your First Modern Project"
 date: '2026-02-02'
+description: "Start your journey with this React JS tutorial for beginners. Learn modern setup with Vite, master JSX and hooks, and build a real-world app from scratch."
 draft: false
 slug: '/react-js-tutorial-for-beginners'
 tags:
@@ -12,8 +12,6 @@ tags:
   - vite-setup
   - javascript-projects
 ---
-
-
 
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/085201a2-159d-42c9-a9ed-31ecb8a368fa/react-js-tutorial-for-beginners-react-hooks.jpg)
 
