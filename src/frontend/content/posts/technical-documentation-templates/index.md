@@ -1,5 +1,5 @@
 ---
-title: "12 Best Technical Documentation Templates For 2025"
+title: "12 Best Technical Documentation Templates for 2025"
 date: '2025-10-30'
 description: "Discover the top 12 technical documentation templates to streamline your workflow. Find platforms and downloadable files for APIs, runbooks, and more."
 draft: false
