@@ -1,7 +1,7 @@
 ---
-title: 8 Essential Database Migration Best Practices For 2025
+title: "8 Essential Database Migration Best Practices For 2025"
 date: '2025-08-19'
-description: Discover 8 essential database migration best practices for a seamless transition. Learn expert tips on planning, testing, and execution to avoid costly errors.
+description: "Discover 8 essential database migration best practices for a seamless transition. Learn expert tips on planning, testing, and execution to avoid costly errors."
 draft: false
 slug: '/database-migration-best-practices'
 tags:
