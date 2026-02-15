@@ -1,5 +1,5 @@
 ---
-title: "Top Secure Software Development Best Practices For 2025"
+title: "Top Secure Software Development Best Practices for 2025"
 date: '2025-09-30'
 description: "Learn essential secure software development best practices to enhance security and quality in your projects. Discover key tips for 2025."
 draft: false
