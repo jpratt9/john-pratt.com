@@ -1,5 +1,5 @@
 ---
-title: "What Is Chaos Engineering Explained Simply"
+title: "What is Chaos Engineering? Explained Simply"
 date: '2025-11-01'
 description: "What is chaos engineering? Discover how deliberately breaking your systems in a controlled way builds unbreakable resilience and prevents costly outages."
 draft: false
