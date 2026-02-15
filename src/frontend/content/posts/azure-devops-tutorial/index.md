@@ -1,7 +1,7 @@
 ---
-title: Azure DevOps Tutorial for Modern CI/CD
-description: "A practical Azure DevOps tutorial on mastering CI/CD. Learn to build pipelines, manage repos, and organize workflows with real-world examples."
+title: "Azure DevOps Tutorial For Modern CI/CD"
 date: '2025-10-23'
+description: "A practical Azure DevOps tutorial on mastering CI/CD. Learn to build pipelines, manage repos, and organize workflows with real-world examples."
 draft: false
 slug: '/azure-devops-tutorial'
 tags:
@@ -12,8 +12,6 @@ tags:
   - devops-guide
   - azure-repos
 ---
-
-
 
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-e3befd4c-b0b1-47a4-a679-ba1028a662c1.jpg)
 
@@ -31,7 +29,7 @@ When you first sign into Azure DevOps, you'll be guided to create both your Orga
 
 The power behind this platform is, of course, Microsoft's massive cloud infrastructure. In fact, as of 2025, Microsoft Azure commands nearly **25%** of the global cloud market, with its revenue surging by **33%** in the first quarter alone. This incredible growth reflects just how many companies rely on Azure, and you can discover more insights about its market position and why it's a go-to for enterprise tools.
 
-Here's what the project creation screen looks like-this is where you'll plug in the core details for your new workspace.
+Here's what the project creation screen looks like - this is where you'll plug in the core details for your new workspace.
 
 ![Screenshot of the Azure DevOps project creation screen, showing fields for Project name, Description, Visibility, Version control, and Work item process.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/44426e10-eaa1-4a43-b377-2e1372afbf1f.jpg)
 
@@ -41,8 +39,8 @@ This screen brings together the most important choices you need to make upfront,
 
 During this setup, you'll hit two big decision points: **Version Control** and **Work Item Process**.
 
-*   **Version Control**: Your options are **Git** and Team Foundation Version Control (TFVC). Let me make this easy for you: for any project starting today, **always choose Git**. It's the industry standard for a reason. As a distributed system, its branching and merging capabilities are just far superior for modern development.
-*   **Work Item Process**: This choice dictates the vocabulary and structure for how you track work (think User Stories, Bugs, Tasks, etc.). The right one really depends on how your team likes to operate.
+* **Version Control**: Your options are **Git** and Team Foundation Version Control (TFVC). Let me make this easy for you: for any project starting today, **always choose Git**. It's the industry standard for a reason. As a distributed system, its branching and merging capabilities are just far superior for modern development.
+* **Work Item Process**: This choice dictates the vocabulary and structure for how you track work (think User Stories, Bugs, Tasks, etc.). The right one really depends on how your team likes to operate.
 
 > For most teams just getting started, the **Agile** or **Scrum** templates are the way to go. Agile offers a great deal of flexibility, while Scrum is more structured around sprints and defined roles. My advice? Steer clear of CMMI unless you're in a highly regulated industry that explicitly requires that level of formal process and appraisal.
 
@@ -50,11 +48,11 @@ During this setup, you'll hit two big decision points: **Version Control** and *
 
 To help you decide which work item process is the best fit, here's a quick breakdown. Each template provides a different set of work item types and workflows designed to support specific development methodologies.
 
-| Process Template | Best For                                                                  | Key Work Items                          |
+| Process Template | Best For | Key Work Items |
 | ---------------- | ------------------------------------------------------------------------- | --------------------------------------- |
-| **Agile**        | Teams that need flexibility and follow methods similar to Agile.          | User Story, Feature, Epic, Bug, Task    |
-| **Scrum**        | Teams practicing Scrum who need to track product backlog items and bugs.  | Product Backlog Item, Bug, Task, Epic |
-| **CMMI**         | Teams requiring a more formal, process-driven approach with traceability. | Requirement, Change Request, Risk, Bug  |
+| **Agile** | Teams that need flexibility and follow methods similar to Agile. | User Story, Feature, Epic, Bug, Task |
+| **Scrum** | Teams practicing Scrum who need to track product backlog items and bugs. | Product Backlog Item, Bug, Task, Epic |
+| **CMMI** | Teams requiring a more formal, process-driven approach with traceability. | Requirement, Change Request, Risk, Bug |
 
 Ultimately, the goal is to pick the template that feels most natural to your team. You want a system that helps you organize work, not one that gets in your way. For most, Agile is a perfect starting point.
 
@@ -72,9 +70,9 @@ Honestly, setting up a solid branch policy should be the very first thing you do
 
 Here are the non-negotiable policies I recommend enabling on your `main` branch from day one:
 
-*   **Require a minimum number of reviewers:** This is the big one. Setting this to at least **one** (or two for larger teams) means no code gets merged without a second pair of eyes on it. Simple as that.
-*   **Check for linked work items:** This policy creates an unbreakable link between your code and your project plan. It forces every PR to be associated with a User Story or Bug in [Azure Boards](https://azure.microsoft.com/en-us/products/devops/boards), so you always know *why* a change was made.
-*   **Check for comment resolution:** A small but powerful rule. This prevents a PR from being merged until every single comment left by a reviewer has been marked as resolved. It ensures no feedback gets ignored.
+* **Require a minimum number of reviewers:** This is the big one. Setting this to at least **one** (or two for larger teams) means no code gets merged without a second pair of eyes on it. Simple as that.
+* **Check for linked work items:** This policy creates an unbreakable link between your code and your project plan. It forces every PR to be associated with a User Story or Bug in [Azure Boards](https://azure.microsoft.com/en-us/products/devops/boards), so you always know *why* a change was made.
+* **Check for comment resolution:** A small but powerful rule. This prevents a PR from being merged until every single comment left by a reviewer has been marked as resolved. It ensures no feedback gets ignored.
 
 These policies create a safety net, catching mistakes and enforcing best practices automatically.
 
@@ -84,15 +82,15 @@ These policies create a safety net, catching mistakes and enforcing best practic
 
 Let's see how this all comes together in a typical scenario. A developer, Alex, needs to add a new login button to the company's web app.
 
-1.  **Branch Out:** First things first, Alex creates a new local branch off `main`. He gives it a clear name, like `feature/add-login-button`, and gets to work on the code.
-2.  **Push and Open a PR:** Once the button is working, Alex pushes his new branch up to Azure Repos. He then hops into the web UI to create a pull request, targeting `main` from his `feature/add-login-button` branch.
-3.  **Connect the Dots:** On the PR screen, Alex links his work to the User Story he was assigned in Azure Boards. He then adds Maria, a senior developer on his team, as a required reviewer.
-4.  **The Review Cycle:** Maria gets a notification and dives into the code. She leaves a couple of comments suggesting a better way to handle a specific CSS class. Alex sees the feedback, makes the change, pushes an update, and resolves her comments. Satisfied, Maria approves the PR.
-5.  **Merge It:** All the gates are now green. The branch policy checks have passed: it has an approval, a linked work item, and all comments are resolved. Alex can now confidently click "Complete," and Azure Repos will merge his code into the `main` branch. The new login button is now officially part of the codebase.
+1. **Branch Out:** First things first, Alex creates a new local branch off `main`. He gives it a clear name, like `feature/add-login-button`, and gets to work on the code.
+2. **Push and Open a PR:** Once the button is working, Alex pushes his new branch up to Azure Repos. He then hops into the web UI to create a pull request, targeting `main` from his `feature/add-login-button` branch.
+3. **Connect the Dots:** On the PR screen, Alex links his work to the User Story he was assigned in Azure Boards. He then adds Maria, a senior developer on his team, as a required reviewer.
+4. **The Review Cycle:** Maria gets a notification and dives into the code. She leaves a couple of comments suggesting a better way to handle a specific CSS class. Alex sees the feedback, makes the change, pushes an update, and resolves her comments. Satisfied, Maria approves the PR.
+5. **Merge It:** All the gates are now green. The branch policy checks have passed: it has an approval, a linked work item, and all comments are resolved. Alex can now confidently click "Complete," and Azure Repos will merge his code into the `main` branch. The new login button is now officially part of the codebase.
 
 ## Building Your First CI/CD Pipeline
 
-With your code tucked away safely in a repository, it's time for the real magic: automating the path from a fresh commit to a live deployment. This is the heart of what Azure DevOps does-taking your raw source code and turning it into a working application without you having to manually intervene.
+With your code tucked away safely in a repository, it's time for the real magic: automating the path from a fresh commit to a live deployment. This is the heart of what Azure DevOps does - taking your raw source code and turning it into a working application without you having to manually intervene.
 
 We're going to walk through building a complete CI/CD pipeline for a sample .NET web application, starting with the build.
 
@@ -104,7 +102,7 @@ The whole process kicks off with a simple, developer-centric workflow.
 
 ![Infographic about azure devops tutorial](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/145373b5-fdd5-444b-a545-a50f4c9ba642.jpg)
 
-This three-step dance-write code, create a pull request, get it approved-is the trigger that sets our entire automated build and test cycle in motion.
+This three-step dance - write code, create a pull request, get it approved - is the trigger that sets our entire automated build and test cycle in motion.
 
 ### Defining Your Build with YAML
 
@@ -114,16 +112,16 @@ The good news is you don't have to start from scratch. When you create a new pip
 
 ![Screenshot from https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/media/pipeline-editor-template-picker.png](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/145373b5-fdd5-444b-a545-a50f4c9ba642.jpg)
 
-Just pick a template that matches your project-like ".NET Core" in our case-and it will generate a starter `azure-pipelines.yml` file with all the standard steps for building and testing that type of application.
+Just pick a template that matches your project - like ".NET Core" in our case - and it will generate a starter `azure-pipelines.yml` file with all the standard steps for building and testing that type of application.
 
 For our .NET web app, a basic CI pipeline will boil down to a few key stages:
 
-*   **Restore:** This step pulls down all the necessary NuGet package dependencies your project relies on.
-*   **Build:** Here, the C# code is compiled into DLLs and executables.
-*   **Test:** The pipeline automatically runs all the unit tests in your project to make sure nothing broke.
-*   **Publish:** Finally, it bundles all the build outputs into a single package. We call this package an **artifact**, and it's what we'll use for the actual deployment.
+* **Restore:** This step pulls down all the necessary NuGet package dependencies your project relies on.
+* **Build:** Here, the C# code is compiled into DLLs and executables.
+* **Test:** The pipeline automatically runs all the unit tests in your project to make sure nothing broke.
+* **Publish:** Finally, it bundles all the build outputs into a single package. We call this package an **artifact**, and it's what we'll use for the actual deployment.
 
-Every one of these steps is executed on a **build agent**-basically, a virtual machine that runs the tasks from your YAML file. You can use the convenient Microsoft-hosted agents or, for more granular control, set up your own self-hosted agents.
+Every one of these steps is executed on a **build agent** - basically, a virtual machine that runs the tasks from your YAML file. You can use the convenient Microsoft-hosted agents or, for more granular control, set up your own self-hosted agents.
 
 ### Creating the Release Pipeline for Deployment
 
@@ -141,7 +139,7 @@ Another must-use feature is **environment variables**. Instead of hardcoding thi
 
 ## Organizing Workflows with Azure Boards
 
-A slick, automated pipeline is great, but without a solid plan behind it, it's just automation for automation's sake. That's where [Azure Boards](https://azure.microsoft.com/en-us/products/devops/boards) comes into the picture. It's the nerve center for your entire project-the place you plan sprints, manage the product backlog, track every piece of work, and give the whole team a clear view of what's happening.
+A slick, automated pipeline is great, but without a solid plan behind it, it's just automation for automation's sake. That's where [Azure Boards](https://azure.microsoft.com/en-us/products/devops/boards) comes into the picture. It's the nerve center for your entire project - the place you plan sprints, manage the product backlog, track every piece of work, and give the whole team a clear view of what's happening.
 
 ![A Kanban board in Azure Boards showing columns like 'New', 'Active', 'Resolved', and 'Closed', with work item cards distributed across them.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/2a7b2603-69f7-460d-8cfe-e6c7f3e78752.jpg)
 
@@ -155,10 +153,10 @@ Once you have your work items, the best way to see what's going on is with a Kan
 
 The real magic of the Kanban board, and what makes this part of our Azure DevOps tutorial so practical, is its flexibility. You can, and absolutely should, customize the columns to mirror exactly how your team works. A common starting point looks something like this:
 
-*   **New:** All the new tasks ready to be started.
-*   **Active:** What a developer is currently working on.
-*   **Code Review:** The code is written, and a pull request is open for review.
-*   **Done:** The PR has been approved, merged, and the task is complete.
+* **New:** All the new tasks ready to be started.
+* **Active:** What a developer is currently working on.
+* **Code Review:** The code is written, and a pull request is open for review.
+* **Done:** The PR has been approved, merged, and the task is complete.
 
 This kind of visualization is a lifesaver. It immediately shows you where work is piling up and helps you spot bottlenecks before they derail a sprint.
 
@@ -176,7 +174,7 @@ This is where you see the true power of an integrated platform. A single User St
 
 <iframe width="100%" style="aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/krK4HTmaCJc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-Let's be honest, modern applications are never built from scratch. They're assembled from countless open-source packages and internal libraries, creating a complex software supply chain. Relying solely on public registries is risky-they can go down, packages can get pulled, and security vulnerabilities can pop up without warning.
+Let's be honest, modern applications are never built from scratch. They're assembled from countless open-source packages and internal libraries, creating a complex software supply chain. Relying solely on public registries is risky - they can go down, packages can get pulled, and security vulnerabilities can pop up without warning.
 
 This is exactly the problem [Azure Artifacts](https://azure.microsoft.com/en-us/products/devops/artifacts) was built to solve. Think of it as your own private, secure package manager. It becomes the single source of truth for all your critical dependencies, whether they're public packages from NuGet and npm or your own shared code. By setting up a private feed, you insulate your builds from the chaos of the public internet and gain total control over what goes into your software.
 
@@ -190,9 +188,9 @@ The professional approach is to package it and publish it to a private Azure Art
 
 Here's how you'd get that done:
 
-*   **Set Up Your Feed:** First, head over to the **Artifacts** section in your Azure DevOps project and create a new feed. You'll give it a clear name and set permissions for who can publish to it (contributors) and who can pull packages from it (readers).
-*   **Package the Library:** In your shared library's source code, you'll run the `dotnet pack` command. This compiles your code and bundles it into a neat little NuGet package, a `.nupkg` file.
-*   **Publish via a Pipeline:** The best part is automating the publish step. You'll add a task to your shared library's CI pipeline that authenticates with your new feed and then pushes the generated `.nupkg` file straight to it.
+* **Set Up Your Feed:** First, head over to the **Artifacts** section in your Azure DevOps project and create a new feed. You'll give it a clear name and set permissions for who can publish to it (contributors) and who can pull packages from it (readers).
+* **Package the Library:** In your shared library's source code, you'll run the `dotnet pack` command. This compiles your code and bundles it into a neat little NuGet package, a `.nupkg` file.
+* **Publish via a Pipeline:** The best part is automating the publish step. You'll add a task to your shared library's CI pipeline that authenticates with your new feed and then pushes the generated `.nupkg` file straight to it.
 
 > Treating your internal code like a first-class package is a massive step up for code reuse. It introduces proper versioning, promotes consistency, and gives you a clear audit trail of which projects are using which version of your shared library.
 
@@ -214,9 +212,9 @@ These aren't just academic questions; they're the real-world decisions and trade
 
 This is probably the number one question people ask, especially since Microsoft owns both platforms. It's a great question, too. The simplest way to think about it is that they're both fantastic CI/CD tools, but they're built for different home turfs.
 
-*   **Azure Pipelines** is the native, deeply embedded CI/CD engine for the whole Azure DevOps ecosystem. If your team is already running projects on Azure Boards and storing code in Azure Repos, Pipelines creates a beautifully integrated, all-in-one workflow. It's a powerhouse, especially for enterprise teams that are all-in on the Azure cloud.
+* **Azure Pipelines** is the native, deeply embedded CI/CD engine for the whole Azure DevOps ecosystem. If your team is already running projects on Azure Boards and storing code in Azure Repos, Pipelines creates a beautifully integrated, all-in-one workflow. It's a powerhouse, especially for enterprise teams that are all-in on the Azure cloud.
 
-*   **GitHub Actions**, on the other hand, lives and breathes inside the [GitHub](https://github.com/) platform. Its biggest win is the incredibly tight connection to the developer workflow you already know-pull requests, issues, and managing code. Plus, the community marketplace for pre-built actions is enormous, letting you automate almost anything right where your code is hosted.
+* **GitHub Actions**, on the other hand, lives and breathes inside the [GitHub](https://github.com/) platform. Its biggest win is the incredibly tight connection to the developer workflow you already know - pull requests, issues, and managing code. Plus, the community marketplace for pre-built actions is enormous, letting you automate almost anything right where your code is hosted.
 
 So, how do you choose? It really comes down to where your team's center of gravity is. If you're managing everything inside Azure DevOps, sticking with Azure Pipelines just makes sense. If your team lives in GitHub, then GitHub Actions will feel like a much more natural extension of your process.
 
