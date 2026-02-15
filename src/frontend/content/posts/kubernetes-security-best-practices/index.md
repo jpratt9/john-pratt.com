@@ -1,5 +1,5 @@
 ---
-title: "10 Actionable Kubernetes Security Best Practices For 2025"
+title: "10 Actionable Kubernetes Security Best Practices for 2025"
 date: '2025-11-26'
 description: "Secure your clusters with our deep dive into 10 essential Kubernetes security best practices. Learn RBAC, network policies, image scanning, and more."
 draft: false
