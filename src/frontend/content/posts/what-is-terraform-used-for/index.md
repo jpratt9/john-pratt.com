@@ -1,5 +1,5 @@
 ---
-title: "What Is Terraform Used For? A Quick Guide To What Is Terraform Used For"
+title: "What is Terraform Used For? A Quick Guide to What Terraform Used For"
 date: '2025-12-12'
 description: "Curious about what Terraform is used for? Learn how Terraform automates cloud infrastructure, manages multi-cloud deployments, and speeds up IaC."
 draft: false
