@@ -1,7 +1,7 @@
 ---
-title: What Is Chaos Engineering Explained Simply
-description: "What is chaos engineering? Discover how deliberately breaking your systems in a controlled way builds unbreakable resilience and prevents costly outages."
+title: "What Is Chaos Engineering Explained Simply"
 date: '2025-11-01'
+description: "What is chaos engineering? Discover how deliberately breaking your systems in a controlled way builds unbreakable resilience and prevents costly outages."
 draft: false
 slug: '/what-is-chaos-engineering'
 tags:
@@ -12,8 +12,6 @@ tags:
   - reliability-engineering
   - failure-testing
 ---
-
-
 
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-62a2a777-4c99-4029-846c-a4ffe9a76177.jpg)
 
