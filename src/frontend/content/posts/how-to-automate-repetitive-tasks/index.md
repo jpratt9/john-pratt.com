@@ -1,5 +1,5 @@
 ---
-title: "How To Automate Repetitive Tasks And Reclaim Your Time"
+title: "How to Automate Repetitive Tasks and Reclaim Your Time"
 date: '2025-12-14'
 description: "Discover how to automate repetitive tasks with our guide. Learn to identify, prioritize, and implement automation using RPA, scripts, and no-code tools."
 draft: false
