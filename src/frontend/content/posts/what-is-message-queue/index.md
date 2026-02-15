@@ -1,5 +1,5 @@
 ---
-title: "What Is A Message Queue? What Is Message Queue And Why It Matters For Your App"
+title: "What is a Message Queue? What is Message Queue and Why It Matters for Your App"
 date: '2025-12-13'
 description: "Curious what a message queue is? Learn how it coordinates tasks, boosts reliability, and scales modern apps."
 draft: false
