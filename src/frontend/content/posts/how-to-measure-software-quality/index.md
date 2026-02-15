@@ -1,7 +1,7 @@
 ---
-title: How To Measure Software Quality
-description: "Discover how to measure software quality with our practical guide. Learn the metrics, tools, and frameworks that connect quality to real business outcomes."
+title: "How To Measure Software Quality"
 date: '2025-11-20'
+description: "Discover how to measure software quality with our practical guide. Learn the metrics, tools, and frameworks that connect quality to real business outcomes."
 draft: false
 slug: '/how-to-measure-software-quality'
 tags:
@@ -12,8 +12,6 @@ tags:
   - devops-metrics
   - ci/cd-pipeline
 ---
-
-
 
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-3fccc2cc-3dc1-4cf6-bb04-0af6283f4328.jpg)
 
