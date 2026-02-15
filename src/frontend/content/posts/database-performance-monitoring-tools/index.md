@@ -1,5 +1,5 @@
 ---
-title: "12 Best Database Performance Monitoring Tools In 2025"
+title: "12 Best Database Performance Monitoring Tools in 2025"
 date: '2025-10-05'
 description: "Discover the top 12 database performance monitoring tools for 2025. Compare features, pricing, and use cases to find the best solution for your needs."
 draft: false
