@@ -1,5 +1,5 @@
 ---
-title: "Azure DevOps Tutorial For Modern CI/CD"
+title: "Azure DevOps Tutorial for Modern CI/CD"
 date: '2025-10-23'
 description: "A practical Azure DevOps tutorial on mastering CI/CD. Learn to build pipelines, manage repos, and organize workflows with real-world examples."
 draft: false
