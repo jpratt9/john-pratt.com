@@ -1,5 +1,5 @@
 ---
-title: "Top 10 Software Developer Interview Questions To Master In 2025"
+title: "Top 10 Software Developer Interview Questions to Master in 2025"
 date: '2025-12-26'
 description: "Master our curated list of software developer interview questions for 2025. Covers cloud, DevOps, coding, and system design with expert answers."
 draft: false
