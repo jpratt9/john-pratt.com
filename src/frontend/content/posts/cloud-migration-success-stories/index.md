@@ -1,5 +1,5 @@
 ---
-title: "Top Cloud Migration Success Stories For Your 2025 Strategy"
+title: "Top Cloud Migration Success Stories for Your 2025 Strategy"
 date: '2025-10-09'
 description: "Explore inspiring cloud migration success stories to guide your 2025 strategy. Discover real-world results and best practices today!"
 draft: false
