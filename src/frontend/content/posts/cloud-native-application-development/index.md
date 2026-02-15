@@ -1,7 +1,7 @@
 ---
-title: Cloud Native Application Development Guide
-description: "Explore cloud native application development. Learn how microservices, containers, and CI/CD build resilient, scalable apps with proven strategies."
+title: "Cloud Native Application Development Guide"
 date: '2025-11-25'
+description: "Explore cloud native application development. Learn how microservices, containers, and CI/CD build resilient, scalable apps with proven strategies."
 draft: false
 slug: '/cloud-native-application-development'
 tags:
@@ -12,8 +12,6 @@ tags:
   - devops
   - ci/cd-pipeline
 ---
-
-
 
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/57a9908a-eb98-47f7-a023-580e4eca3173/cloud-native-application-development-infrastructure-architecture.jpg)
 
