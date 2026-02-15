@@ -1,7 +1,7 @@
 ---
-title: Unlocking The Benefits Of Infrastructure As Code
+title: "Unlocking The Benefits Of Infrastructure As Code"
 date: '2025-08-18'
-description: Discover the key benefits of Infrastructure as Code. Learn how IaC drives speed, consistency, security, and cost savings for modern businesses.
+description: "Discover the key benefits of Infrastructure as Code. Learn how IaC drives speed, consistency, security, and cost savings for modern businesses."
 draft: false
 slug: '/benefits-of-infrastructure-as-code'
 tags:
