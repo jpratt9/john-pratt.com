@@ -1,5 +1,5 @@
 ---
-title: "Docker Security Best Practices: Essential Tips For 2025"
+title: "Docker Security Best Practices: Essential Tips for 2025"
 date: '2025-10-13'
 description: "Learn top Docker security best practices for 2025. Discover practical tips to secure containers, images, secrets, and runtime environments effectively."
 draft: false
