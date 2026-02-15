@@ -1,5 +1,5 @@
 ---
-title: "A Guide To Machine Learning Model Deployment"
+title: "A Guide to Machine Learning Model Deployment"
 date: '2025-09-21'
 description: "Master machine learning model deployment with this end-to-end guide. Learn MLOps best practices, from containerization and CI/CD to cloud scaling."
 draft: false
