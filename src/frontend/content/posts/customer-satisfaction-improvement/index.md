@@ -1,5 +1,5 @@
 ---
-title: "A Guide To Customer Satisfaction Improvement"
+title: "A Guide to Customer Satisfaction Improvement"
 date: '2025-09-08'
 description: "Discover proven strategies for customer satisfaction improvement. This guide covers how to use tech, automation, and data to build lasting customer loyalty."
 draft: false
