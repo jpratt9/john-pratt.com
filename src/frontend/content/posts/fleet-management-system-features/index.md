@@ -1,5 +1,5 @@
 ---
-title: "7 Essential Fleet Management System Features For 2025"
+title: "7 Essential Fleet Management System Features for 2025"
 date: '2025-10-07'
 description: "Discover the 7 essential fleet management system features to boost efficiency. Compare top platforms like Samsara and Geotab to optimize your operations."
 draft: false
