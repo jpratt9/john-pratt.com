@@ -1,5 +1,5 @@
 ---
-title: "10 Real-World Business Process Automation Examples For 2025"
+title: "10 Real-world Business Process Automation Examples for 2025"
 date: '2025-09-25'
 description: "Discover 10 powerful business process automation examples to streamline operations. Learn how CRM, AP, and HR automation can boost efficiency and cut costs."
 draft: false
