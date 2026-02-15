@@ -1,5 +1,5 @@
 ---
-title: "Your Guide To A Flawless Consolidation Data Center Strategy"
+title: "Your Guide to a Flawless Consolidation Data Center Strategy"
 date: '2025-12-15'
 description: "Discover how to plan and execute a successful consolidation data center project. Learn proven strategies for assessment, migration, and post-launch operations."
 draft: false
