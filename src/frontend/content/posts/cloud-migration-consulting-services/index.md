@@ -1,7 +1,7 @@
 ---
 title: "Cloud Migration Consulting Services: A Strategic Guide"
 date: '2025-08-11'
-description: Discover how cloud migration consulting services accelerate business growth. This guide covers strategy, process, and choosing the right expert partner.
+description: "Discover how cloud migration consulting services accelerate business growth. This guide covers strategy, process, and choosing the right expert partner."
 draft: false
 slug: '/cloud-migration-consulting-services'
 tags:
