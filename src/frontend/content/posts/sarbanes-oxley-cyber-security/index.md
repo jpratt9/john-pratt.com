@@ -1,5 +1,5 @@
 ---
-title: "A Practical Guide To Sarbanes-Oxley Cyber Security Compliance"
+title: "A Practical Guide to Sarbanes-Oxley Cyber Security Compliance"
 date: '2025-12-09'
 description: "Navigate Sarbanes-Oxley cyber security with our practical guide. Learn to implement SOX controls, manage audits, and protect your financial data effectively."
 draft: false
