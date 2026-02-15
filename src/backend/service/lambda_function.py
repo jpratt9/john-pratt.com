@@ -51,8 +51,8 @@ def lambda_handler(event, context):
 
     article_json = body.get("data").get("articles")[0]
 
-    raw_title = article_json.get("title").replace(":", " -").title()
-    clean_title = ask_claude(title_prompt.replace("{{TITLE}}", raw_title))
+    raw_title = article_json.get("title").title()
+    clean_title = '"' + ask_claude(title_prompt.replace("{{TITLE}}", raw_title)).strip().strip("\"'`""''") + '"'
     print(f"Title before: \"{raw_title}\"")
     print(f"Title after : \"{clean_title}\"")
 
@@ -60,7 +60,7 @@ def lambda_handler(event, context):
     slug = article_json.get("slug")
     tags = article_json.get("tags")
     raw_description  = article_json.get("meta_description", "")
-    clean_desc = ask_claude(desc_prompt.replace("{{DESCRIPTION}}", raw_description))
+    clean_desc = '"' + ask_claude(desc_prompt.replace("{{DESCRIPTION}}", raw_description)).strip().strip("\"'`""''") + '"'
     print(f"Desc before: \"{raw_description}\"")
     print(f"Desc after : \"{clean_desc}\"")
 
