@@ -1,5 +1,5 @@
 ---
-title: "Cloud Migration Best Practices: 2025 Guide To Success"
+title: "Cloud Migration Best Practices: 2025 Guide to Success"
 date: '2025-11-15'
 description: "Discover cloud migration best practices to streamline your 2025 transition, mitigate risk, save costs, and accelerate success with proven strategies."
 draft: false
