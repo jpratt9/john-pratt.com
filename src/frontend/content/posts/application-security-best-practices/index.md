@@ -1,5 +1,5 @@
 ---
-title: "10 Application Security Best Practices For 2025"
+title: "10 Application Security Best Practices for 2025"
 date: '2025-08-25'
 description: "Discover the top 10 application security best practices for 2025. This guide provides actionable insights for secure design, development, and deployment."
 draft: false
