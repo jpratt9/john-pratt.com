@@ -1,5 +1,5 @@
 ---
-title: "8 Must-Know Infrastructure As Code Benefits In 2025"
+title: "8 Must-Know Infrastructure as Code Benefits in 2025"
 date: '2025-09-18'
 description: "Discover the top infrastructure as code benefits with real-world examples, use cases, and best practices to boost your DevOps and cloud workflows in 2025."
 draft: false
