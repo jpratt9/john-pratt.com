@@ -1,5 +1,5 @@
 ---
-title: "How To Manage Technical Debt Before It Sinks Your Project"
+title: "How to Manage Technical Debt Before It Sinks Your Project"
 date: '2025-10-18'
 description: "Learn how to manage technical debt with this practical guide. Discover proven strategies to identify, prioritize, and reduce technical debt effectively."
 draft: false
