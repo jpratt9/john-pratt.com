@@ -1,7 +1,7 @@
 ---
-title: A Practical Docker Container Tutorial For Beginners
-description: "Dive into our hands-on docker container tutorial for beginners. Learn to install Docker, manage containers and images, and use Docker Compose."
+title: "A Practical Docker Container Tutorial for Beginners"
 date: '2026-01-27'
+description: "Dive into our hands-on Docker container tutorial for beginners. Learn to install Docker, manage containers and images, and use Docker Compose."
 draft: false
 slug: '/docker-container-tutorial-for-beginners'
 tags:
@@ -12,8 +12,6 @@ tags:
   - Intro-to-DevOps
   - Docker-Compose
 ---
-
-
 
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/79352ca1-0fba-4a97-8547-f7eec19d66c9/docker-container-tutorial-for-beginners-docker-tutorial.jpg)
 
