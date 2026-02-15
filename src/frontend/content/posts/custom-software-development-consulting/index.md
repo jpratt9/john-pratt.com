@@ -1,5 +1,5 @@
 ---
-title: "A Guide To Custom Software Development Consulting"
+title: "A Guide to Custom Software Development Consulting"
 date: '2025-08-31'
 description: "Unlock growth with our guide to custom software development consulting. Learn the process, benefits, and how to select the right technology partner."
 draft: false
