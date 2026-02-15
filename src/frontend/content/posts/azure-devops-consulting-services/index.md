@@ -1,5 +1,5 @@
 ---
-title: "Unlocking Potential With Azure DevOps Consulting Services"
+title: "Unlocking Potential with Azure DevOps Consulting Services"
 date: '2025-12-28'
 description: "Discover how expert Azure DevOps consulting services can streamline your software delivery, enhance security, and drive measurable business growth."
 draft: false
