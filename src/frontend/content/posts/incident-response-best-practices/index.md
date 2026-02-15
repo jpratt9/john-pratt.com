@@ -1,5 +1,5 @@
 ---
-title: "8 Essential Incident Response Best Practices For 2025"
+title: "8 Essential Incident Response Best Practices for 2025"
 date: '2025-08-24'
 description: "Discover the top incident response best practices for 2025. Learn to build a robust plan, team, and process to handle cyber threats effectively."
 draft: false
