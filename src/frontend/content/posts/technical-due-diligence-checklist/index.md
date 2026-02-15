@@ -1,7 +1,7 @@
 ---
-title: Your Ultimate Technical Due Diligence Checklist - 8 Core Areas For 2026
-description: "Master your next M&A or investment with our definitive technical due diligence checklist. Covers code, security, cloud infra, and data for flawless evaluation."
+title: "Your Ultimate Technical Due Diligence Checklist: 8 Core Areas for 2026"
 date: '2026-01-22'
+description: "Master your next M&A or investment with our definitive technical due diligence checklist. Covers code, security, cloud infra, and data for flawless evaluation."
 draft: false
 slug: '/technical-due-diligence-checklist'
 tags:
@@ -12,8 +12,6 @@ tags:
   - software-evaluation
   - cloud-infrastructure-audit
 ---
-
-
 
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/5bc291f3-237e-4337-9bd9-f1f672b7ea75/technical-due-diligence-checklist-evaluation-points.jpg)
 
