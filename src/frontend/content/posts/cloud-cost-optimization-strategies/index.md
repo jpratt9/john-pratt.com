@@ -1,5 +1,5 @@
 ---
-title: "8 Cloud Cost Optimization Strategies For 2025"
+title: "8 Cloud Cost Optimization Strategies for 2025"
 date: '2025-08-13'
 description: "Discover 8 proven cloud cost optimization strategies to reduce your AWS, Azure, and GCP spend. Actionable tips for right-sizing, FinOps, and more."
 draft: false
