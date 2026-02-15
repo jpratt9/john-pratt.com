@@ -1,5 +1,5 @@
 ---
-title: "What Is GitOps And How It Transforms Your Deployment Workflow"
+title: "What is GitOps and How It Transforms Your Deployment Workflow"
 date: '2025-12-18'
 description: "Discover what GitOps is and how it streamlines cloud deployments, improves reliability, and strengthens auditability for modern DevOps teams."
 draft: false
