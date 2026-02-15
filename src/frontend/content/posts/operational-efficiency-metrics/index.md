@@ -1,5 +1,5 @@
 ---
-title: "Master Operational Efficiency Metrics To Boost Growth"
+title: "Master Operational Efficiency Metrics to Boost Growth"
 date: '2025-09-04'
 description: "Learn how operational efficiency metrics can enhance your business. Track and improve KPIs to drive growth and improve profitability."
 draft: false
