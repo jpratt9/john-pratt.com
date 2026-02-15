@@ -1,7 +1,7 @@
 ---
-title: Avoiding The Top Data Migration Risks
+title: "Avoiding The Top Data Migration Risks"
 date: '2025-08-20'
-description: Discover the most common data migration risks that derail projects. Learn a proven framework with real-world examples to ensure your migration is a success.
+description: "Discover the most common data migration risks that derail projects. Learn a proven framework with real-world examples to ensure your migration is a success."
 draft: false
 slug: '/data-migration-risks'
 tags:
