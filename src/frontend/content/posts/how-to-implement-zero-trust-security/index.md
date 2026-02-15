@@ -1,5 +1,5 @@
 ---
-title: "How To Implement Zero Trust Security: A Practical Blueprint For Organizations"
+title: "How to Implement Zero Trust Security: A Practical Blueprint for Organizations"
 date: '2025-12-07'
 description: "how to implement zero trust security: a practical guide with actionable steps for architecture, policy automation, and a successful rollout."
 draft: false
