@@ -1,5 +1,5 @@
 ---
-title: "Cost Of RPA: Understand The True Investment"
+title: "Cost of RPA: Understand the True Investment"
 date: '2025-11-10'
 description: "Discover the cost of RPA beyond licenses. A practical breakdown of implementation, infrastructure, and ongoing maintenance to help you budget smarter."
 draft: false
