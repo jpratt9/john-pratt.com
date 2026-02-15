@@ -1,7 +1,7 @@
 ---
-title: A Modern Python Web Scraping Tutorial
-description: "Our Python web scraping tutorial covers everything from Requests and BeautifulSoup to handling dynamic sites with Selenium. Learn practical skills."
+title: "A Modern Python Web Scraping Tutorial"
 date: '2025-10-29'
+description: "Our Python web scraping tutorial covers everything from Requests and BeautifulSoup to handling dynamic sites with Selenium. Learn practical skills."
 draft: false
 slug: '/python-web-scraping-tutorial'
 tags:
@@ -12,8 +12,6 @@ tags:
   - data-scraping
   - python-requests
 ---
-
-
 
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-8ed9d45a-7670-4273-a125-0085f9f5c8e3.jpg)
 
