@@ -1,20 +1,17 @@
 ---
-title: Docker Security Best Practices - Essential Tips for 2025
-description: "Learn top Docker security best practices for 2025. Discover practical tips to secure containers, images, secrets, and runtime environments effectively."
+title: "Docker Security Best Practices: Essential Tips For 2025"
 date: '2025-10-13'
+description: "Learn top Docker security best practices for 2025. Discover practical tips to secure containers, images, secrets, and runtime environments effectively."
 draft: false
 slug: '/docker-security-best-practices'
 tags:
+
   - docker-security-best-practices
   - container-security
   - devsecops
   - docker-hardening
   - kubernetes-security
-
 ---
-
-
-
 
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-31aaf7ae-e729-427b-93d8-489bd937aa29.jpg)
 
@@ -24,10 +21,10 @@ We'll move beyond generic advice and dive into actionable, in-depth strategies t
 
 By following this guide, you will learn how to:
 
-*   **Harden Docker Images:** Select secure base images, minimize attack surfaces with multi-stage builds, and run containers as non-root users.
-*   **Implement Robust Scanning and Management:** Integrate vulnerability scanning into your CI/CD pipeline and manage secrets securely, keeping them out of your images entirely.
-*   **Secure the Runtime Environment:** Limit container resources and capabilities, implement network segmentation for isolation, and configure content trust to ensure image integrity.
-*   **Establish Continuous Monitoring:** Enable comprehensive logging and leverage runtime security tools to detect and respond to threats in real time.
+* **Harden Docker Images:** Select secure base images, minimize attack surfaces with multi-stage builds, and run containers as non-root users.
+* **Implement Robust Scanning and Management:** Integrate vulnerability scanning into your CI/CD pipeline and manage secrets securely, keeping them out of your images entirely.
+* **Secure the Runtime Environment:** Limit container resources and capabilities, implement network segmentation for isolation, and configure content trust to ensure image integrity.
+* **Establish Continuous Monitoring:** Enable comprehensive logging and leverage runtime security tools to detect and respond to threats in real time.
 
 This list is designed to be a practical, hands-on resource for developers and operations teams looking to elevate their container security. Let's dive into the essential **Docker security best practices** that will protect your applications and infrastructure.
 
@@ -47,11 +44,11 @@ Think of a base image as the foundation of a house. A weak, compromised foundati
 
 To effectively implement this practice, go beyond simply choosing an image with an "Official" badge. A disciplined approach is crucial for maintaining long-term security.
 
-*   **Verify Publisher and Popularity:** On Docker Hub, always check for the "Docker Official Image" or "Verified Publisher" badge. High download counts and star ratings can also indicate community trust, but should be secondary to official verification.
-*   **Use Specific Version Tags:** Avoid using the `:latest` tag in production. It can lead to unpredictable builds and makes it difficult to track vulnerabilities to a specific image version. Instead, pin to a specific version, like `python:3.9.18-slim-bookworm`, for reproducible and stable builds.
-*   **Establish an Internal Registry:** For larger organizations, maintain a private registry containing a curated list of approved and pre-scanned base images. This provides developers with a secure, golden repository and gives security teams centralized control.
-*   **Review the Dockerfile:** Most official images link to their source `Dockerfile` on GitHub. Take a few minutes to review it to understand exactly what software, configurations, and users are included in the base layer.
-*   **Automate Scanning:** Integrate automated image scanning tools into your CI/CD pipeline. This ensures that even approved base images are continuously checked for newly discovered vulnerabilities before they reach production.
+* **Verify Publisher and Popularity:** On Docker Hub, always check for the "Docker Official Image" or "Verified Publisher" badge. High download counts and star ratings can also indicate community trust, but should be secondary to official verification.
+* **Use Specific Version Tags:** Avoid using the `:latest` tag in production. It can lead to unpredictable builds and makes it difficult to track vulnerabilities to a specific image version. Instead, pin to a specific version, like `python:3.9.18-slim-bookworm`, for reproducible and stable builds.
+* **Establish an Internal Registry:** For larger organizations, maintain a private registry containing a curated list of approved and pre-scanned base images. This provides developers with a secure, golden repository and gives security teams centralized control.
+* **Review the Dockerfile:** Most official images link to their source `Dockerfile` on GitHub. Take a few minutes to review it to understand exactly what software, configurations, and users are included in the base layer.
+* **Automate Scanning:** Integrate automated image scanning tools into your CI/CD pipeline. This ensures that even approved base images are continuously checked for newly discovered vulnerabilities before they reach production.
 
 ## 2. Run Containers as Non-Root Users
 
@@ -69,11 +66,11 @@ Executing as a non-root user is a foundational defense-in-depth strategy. Major 
 
 Implementing non-root execution requires a few explicit steps in your `Dockerfile` but provides a significant security payoff. A disciplined approach ensures your applications have only the permissions they need.
 
-*   **Create a Dedicated User:** In your `Dockerfile`, create a specific user and group for your application. Use the `RUN` command to add the user early in the build process, like: `RUN groupadd -r appgroup && useradd -r -s /bin/false -g appgroup appuser`.
-*   **Set File Ownership:** After creating the user, ensure they own the necessary application files and directories. Use the `chown` command, for example: `COPY --chown=appuser:appgroup . /app`.
-*   **Use the `USER` Directive:** Before your `CMD` or `ENTRYPOINT` instruction, switch to the non-root user with the `USER` directive. You can specify the user by name (`USER appuser`) or, for better compatibility with platforms like OpenShift, by a numeric UID (`USER 1001`).
-*   **Test Non-Root Execution:** Thoroughly test your application to ensure it runs correctly with limited permissions. Some applications may attempt to write logs or temporary files to privileged locations, which will fail when running as a non-root user.
-*   **Enforce in Orchestrators:** In Kubernetes, you can enforce this practice cluster-wide by setting `securityContext.runAsNonRoot: true` in your Pod or Deployment specifications, which prevents pods from starting if the container is configured to run as root.
+* **Create a Dedicated User:** In your `Dockerfile`, create a specific user and group for your application. Use the `RUN` command to add the user early in the build process, like: `RUN groupadd -r appgroup && useradd -r -s /bin/false -g appgroup appuser`.
+* **Set File Ownership:** After creating the user, ensure they own the necessary application files and directories. Use the `chown` command, for example: `COPY --chown=appuser:appgroup . /app`.
+* **Use the `USER` Directive:** Before your `CMD` or `ENTRYPOINT` instruction, switch to the non-root user with the `USER` directive. You can specify the user by name (`USER appuser`) or, for better compatibility with platforms like OpenShift, by a numeric UID (`USER 1001`).
+* **Test Non-Root Execution:** Thoroughly test your application to ensure it runs correctly with limited permissions. Some applications may attempt to write logs or temporary files to privileged locations, which will fail when running as a non-root user.
+* **Enforce in Orchestrators:** In Kubernetes, you can enforce this practice cluster-wide by setting `securityContext.runAsNonRoot: true` in your Pod or Deployment specifications, which prevents pods from starting if the container is configured to run as root.
 
 ## 3. Implement Image Scanning and Vulnerability Management
 
@@ -95,11 +92,11 @@ This quick reference underscores that effective scanning is not a one-time event
 
 A successful image scanning strategy goes beyond simply running a tool; it requires integration, automation, and clear policies to be truly effective.
 
-*   **Scan at Multiple Stages:** Integrate scanning into your CI/CD pipeline to catch issues at build time. Scan images stored in your registry to prevent vulnerable artifacts from being deployed. Finally, use runtime scanners to monitor containers in production for newly discovered threats.
-*   **Set Strict Severity Thresholds:** Configure your pipeline to fail the build if vulnerabilities of `HIGH` or `CRITICAL` severity are detected. This creates a non-negotiable security gate, preventing the most dangerous flaws from proceeding.
-*   **Automate and Integrate:** Connect your scanning tool's findings to your issue-tracking system (like Jira) to automatically create tickets for developers. Integrate with notification systems (like Slack) to alert security teams of critical findings immediately.
-*   **Schedule Regular Rescans:** New vulnerabilities are discovered daily. Schedule automated, recurring scans of all images in your registry, even those not actively being developed, to ensure you are aware of newly disclosed risks in older artifacts.
-*   **Establish an Exception Process:** For unavoidable vulnerabilities or false positives, create a formal exception workflow. This should require documented justification, a risk assessment, and an expiration date for the exception to ensure it is reviewed periodically.
+* **Scan at Multiple Stages:** Integrate scanning into your CI/CD pipeline to catch issues at build time. Scan images stored in your registry to prevent vulnerable artifacts from being deployed. Finally, use runtime scanners to monitor containers in production for newly discovered threats.
+* **Set Strict Severity Thresholds:** Configure your pipeline to fail the build if vulnerabilities of `HIGH` or `CRITICAL` severity are detected. This creates a non-negotiable security gate, preventing the most dangerous flaws from proceeding.
+* **Automate and Integrate:** Connect your scanning tool's findings to your issue-tracking system (like Jira) to automatically create tickets for developers. Integrate with notification systems (like Slack) to alert security teams of critical findings immediately.
+* **Schedule Regular Rescans:** New vulnerabilities are discovered daily. Schedule automated, recurring scans of all images in your registry, even those not actively being developed, to ensure you are aware of newly disclosed risks in older artifacts.
+* **Establish an Exception Process:** For unavoidable vulnerabilities or false positives, create a formal exception workflow. This should require documented justification, a risk assessment, and an expiration date for the exception to ensure it is reviewed periodically.
 
 ## 4. Minimize Image Layers and Use Multi-Stage Builds
 
@@ -117,11 +114,11 @@ A bloated image is a less secure image. Every extra package is another potential
 
 Implementing multi-stage builds is straightforward and yields significant security benefits. A disciplined Dockerfile structure is key to maximizing its effectiveness.
 
-*   **Name Your Stages:** Use the `AS` keyword to give each stage a clear, descriptive name, like `FROM golang:1.19 AS builder`. This makes the `Dockerfile` more readable and simplifies copying artifacts between stages.
-*   **Copy Only Essential Artifacts:** Be explicit when copying from a previous stage. Instead of copying entire directories, target only the compiled binary or built assets, for example: `COPY --from=builder /app/main /main`.
-*   **Use a Minimal Final Stage:** For the final production stage, use a minimal base image like `scratch`, a distroless image (e.g., `gcr.io/distroless/static-debian11`), or a slim Alpine image. This drastically reduces the final attack surface.
-*   **Optimize Layer Caching:** Structure your `Dockerfile` stages by ordering commands from least to most frequently changing. This leverages Docker's layer caching to speed up subsequent builds.
-*   **Leverage `.dockerignore`:** Create a `.dockerignore` file to exclude unnecessary files and directories like `.git`, local logs, and `node_modules` from the build context entirely, keeping all stages clean.
+* **Name Your Stages:** Use the `AS` keyword to give each stage a clear, descriptive name, like `FROM golang:1.19 AS builder`. This makes the `Dockerfile` more readable and simplifies copying artifacts between stages.
+* **Copy Only Essential Artifacts:** Be explicit when copying from a previous stage. Instead of copying entire directories, target only the compiled binary or built assets, for example: `COPY --from=builder /app/main /main`.
+* **Use a Minimal Final Stage:** For the final production stage, use a minimal base image like `scratch`, a distroless image (e.g., `gcr.io/distroless/static-debian11`), or a slim Alpine image. This drastically reduces the final attack surface.
+* **Optimize Layer Caching:** Structure your `Dockerfile` stages by ordering commands from least to most frequently changing. This leverages Docker's layer caching to speed up subsequent builds.
+* **Leverage `.dockerignore`:** Create a `.dockerignore` file to exclude unnecessary files and directories like `.git`, local logs, and `node_modules` from the build context entirely, keeping all stages clean.
 
 ## 5. Limit Container Resources and Capabilities
 
@@ -137,11 +134,11 @@ An unconstrained container is a liability. A bug causing a memory leak or a mali
 
 Implementing these limits requires a deliberate approach to define what a container is allowed to do and consume, rather than letting it run with default, overly permissive settings.
 
-*   **Drop All Capabilities First:** Start with the most secure posture by using `--cap-drop=ALL` in your `docker run` command or the equivalent in your orchestrator. Then, selectively add back only the specific capabilities your application requires using `--cap-add`.
-*   **Prevent Privilege Escalation:** Always run containers with the `--security-opt=no-new-privileges` flag. This critical setting prevents processes inside the container from gaining additional privileges, such as through `setuid` or `setgid` binaries.
-*   **Set Memory and CPU Limits:** Define hard limits for memory (`--memory` or `-m`) and CPU (`--cpus`) to prevent any single container from starving others. Monitor application performance to set a realistic limit with a 20-30% buffer.
-*   **Implement a Read-Only Filesystem:** Where possible, run your container with a read-only root filesystem (`--read-only`). This is a powerful security measure that prevents an attacker from modifying application binaries or writing malicious scripts to disk. Use `tmpfs` mounts for directories that require temporary write access.
-*   **Test Limits Under Load:** Before deploying to production, profile your application under a realistic load to understand its true resource requirements. This ensures your limits prevent abuse without accidentally killing legitimate processes during peak traffic.
+* **Drop All Capabilities First:** Start with the most secure posture by using `--cap-drop=ALL` in your `docker run` command or the equivalent in your orchestrator. Then, selectively add back only the specific capabilities your application requires using `--cap-add`.
+* **Prevent Privilege Escalation:** Always run containers with the `--security-opt=no-new-privileges` flag. This critical setting prevents processes inside the container from gaining additional privileges, such as through `setuid` or `setgid` binaries.
+* **Set Memory and CPU Limits:** Define hard limits for memory (`--memory` or `-m`) and CPU (`--cpus`) to prevent any single container from starving others. Monitor application performance to set a realistic limit with a 20-30% buffer.
+* **Implement a Read-Only Filesystem:** Where possible, run your container with a read-only root filesystem (`--read-only`). This is a powerful security measure that prevents an attacker from modifying application binaries or writing malicious scripts to disk. Use `tmpfs` mounts for directories that require temporary write access.
+* **Test Limits Under Load:** Before deploying to production, profile your application under a realistic load to understand its true resource requirements. This ensures your limits prevent abuse without accidentally killing legitimate processes during peak traffic.
 
 ## 6. Keep Secrets Out of Images and Use Secret Management
 
@@ -159,11 +156,11 @@ Storing secrets in images is like leaving the keys to your house under the doorm
 
 Implementing a secure secret management strategy requires discipline and the right tools. Simply avoiding hardcoding is not enough; a comprehensive approach is necessary to protect your applications.
 
-*   **Never Use Build-Time Arguments for Secrets:** Avoid using `ARG` or `ENV` in your `Dockerfile` for secrets. These values can persist in the image layers and be inspected using commands like `docker history`.
-*   **Leverage Orchestrator-Native Secrets:** If you use Docker Swarm, utilize `docker secret create` and mount the secrets into your containers at `/run/secrets`. For Kubernetes, use the built-in Secrets objects or integrate an external secret store using a CSI driver.
-*   **Use External Secret Management Tools:** For advanced needs like dynamic secret generation and centralized control, adopt tools like HashiCorp Vault, AWS Secrets Manager, or Azure Key Vault. These systems provide robust APIs, access controls, and audit logs.
-*   **Scan for Leaked Secrets:** Integrate tools like `truffleHog` or `git-secrets` into your CI pipeline to proactively scan code repositories and prevent developers from accidentally committing credentials.
-*   **Rotate Secrets Regularly:** Implement a policy for regular secret rotation. Centralized secret management systems can often automate this process, significantly reducing the risk window if a secret is ever compromised.
+* **Never Use Build-Time Arguments for Secrets:** Avoid using `ARG` or `ENV` in your `Dockerfile` for secrets. These values can persist in the image layers and be inspected using commands like `docker history`.
+* **Leverage Orchestrator-Native Secrets:** If you use Docker Swarm, utilize `docker secret create` and mount the secrets into your containers at `/run/secrets`. For Kubernetes, use the built-in Secrets objects or integrate an external secret store using a CSI driver.
+* **Use External Secret Management Tools:** For advanced needs like dynamic secret generation and centralized control, adopt tools like HashiCorp Vault, AWS Secrets Manager, or Azure Key Vault. These systems provide robust APIs, access controls, and audit logs.
+* **Scan for Leaked Secrets:** Integrate tools like `truffleHog` or `git-secrets` into your CI pipeline to proactively scan code repositories and prevent developers from accidentally committing credentials.
+* **Rotate Secrets Regularly:** Implement a policy for regular secret rotation. Centralized secret management systems can often automate this process, significantly reducing the risk window if a secret is ever compromised.
 
 ## 7. Use Immutable Tags and Content Trust
 
@@ -179,11 +176,11 @@ Using mutable tags like `:latest` creates a window of risk; the image content ca
 
 Enforcing image provenance and immutability requires a systematic approach integrated directly into your development and deployment workflows.
 
-*   **Enable Docker Content Trust:** In your client or CI/CD environment, enable trust enforcement by setting the environment variable: `export DOCKER_CONTENT_TRUST=1`. This will block any pull operations for unsigned images.
-*   **Use Specific, Immutable Tags:** Always tag images with a specific, unique identifier. Instead of `myapp:latest`, use semantic versioning like `myapp:1.2.3` or a Git commit hash like `myapp:a1b2c3d`. For ultimate immutability, reference images by their content digest: `myapp@sha256:f6a8...`.
-*   **Automate Signing in CI/CD:** Integrate image signing directly into your build pipeline. After a successful build and scan, use commands like `docker trust sign myregistry.com/myapp:1.2.3` to automatically sign the image before pushing.
-*   **Secure Your Keys:** Manage your signing keys with extreme care. Store the root key offline in a secure location, like a hardware security module (HSM) or a managed vault, and use separate repository keys for different teams or applications.
-*   **Implement Policy Enforcement:** Use policy-as-code tools like Open Policy Agent (OPA) or Kyverno to create admission controller policies in your Kubernetes cluster that reject any deployment attempting to use an unsigned or unverified image.
+* **Enable Docker Content Trust:** In your client or CI/CD environment, enable trust enforcement by setting the environment variable: `export DOCKER_CONTENT_TRUST=1`. This will block any pull operations for unsigned images.
+* **Use Specific, Immutable Tags:** Always tag images with a specific, unique identifier. Instead of `myapp:latest`, use semantic versioning like `myapp:1.2.3` or a Git commit hash like `myapp:a1b2c3d`. For ultimate immutability, reference images by their content digest: `myapp@sha256:f6a8...`.
+* **Automate Signing in CI/CD:** Integrate image signing directly into your build pipeline. After a successful build and scan, use commands like `docker trust sign myregistry.com/myapp:1.2.3` to automatically sign the image before pushing.
+* **Secure Your Keys:** Manage your signing keys with extreme care. Store the root key offline in a secure location, like a hardware security module (HSM) or a managed vault, and use separate repository keys for different teams or applications.
+* **Implement Policy Enforcement:** Use policy-as-code tools like Open Policy Agent (OPA) or Kyverno to create admission controller policies in your Kubernetes cluster that reject any deployment attempting to use an unsigned or unverified image.
 
 ## 8. Implement Network Segmentation and Isolation
 
@@ -199,11 +196,11 @@ Imagine your container environment is an office building. Without segmentation, 
 
 Effectively segmenting your container networks requires a strategic approach that goes beyond simply creating custom networks. A multi-layered strategy is key to robust security.
 
-*   **Avoid the Default Bridge Network:** Never use the default `bridge` network in production. It lacks fine-grained control. Always create custom bridge networks for different applications or tiers, which provides better isolation and DNS resolution.
-*   **Create Tier-Based Networks:** Separate your application components into distinct networks. For example, create a `frontend-net`, an `api-net`, and a `database-net`. This ensures your web-facing containers cannot directly access the database.
-*   **Implement Default-Deny Policies:** In orchestration platforms like Kubernetes, start with a network policy that denies all ingress and egress traffic by default. Then, create specific policies to explicitly allow only the required communication paths.
-*   **Use Internal Networks:** For backend services like databases or caches that should never be exposed to the internet, connect them to an internal-only Docker network using the `--internal` flag. This prevents Docker from adding any firewall rules that would allow external routing.
-*   **Leverage Service Mesh Technology:** For advanced control, encryption, and observability, implement a service mesh like Istio or Linkerd. A service mesh can enforce mutual TLS (mTLS) for all inter-container communication, ensuring traffic is encrypted and authenticated.
+* **Avoid the Default Bridge Network:** Never use the default `bridge` network in production. It lacks fine-grained control. Always create custom bridge networks for different applications or tiers, which provides better isolation and DNS resolution.
+* **Create Tier-Based Networks:** Separate your application components into distinct networks. For example, create a `frontend-net`, an `api-net`, and a `database-net`. This ensures your web-facing containers cannot directly access the database.
+* **Implement Default-Deny Policies:** In orchestration platforms like Kubernetes, start with a network policy that denies all ingress and egress traffic by default. Then, create specific policies to explicitly allow only the required communication paths.
+* **Use Internal Networks:** For backend services like databases or caches that should never be exposed to the internet, connect them to an internal-only Docker network using the `--internal` flag. This prevents Docker from adding any firewall rules that would allow external routing.
+* **Leverage Service Mesh Technology:** For advanced control, encryption, and observability, implement a service mesh like Istio or Linkerd. A service mesh can enforce mutual TLS (mTLS) for all inter-container communication, ensuring traffic is encrypted and authenticated.
 
 ## 9. Enable Logging, Monitoring, and Runtime Security
 
@@ -219,25 +216,25 @@ Imagine a thief breaking into a house with no alarms or cameras. They can operat
 
 To build a robust monitoring and runtime security posture, you need a multi-layered approach that captures data from all relevant sources and provides actionable alerts.
 
-*   **Standardize Log Formatting:** Configure the Docker daemon to use the JSON logging driver (`--log-driver json-file`). Structured logs are significantly easier to parse, query, and analyze in a centralized logging system.
-*   **Centralize Log Collection:** Use logging drivers for `syslog`, `fluentd`, or `splunk` to automatically forward container logs to a centralized platform. This aggregates data for correlation and prevents log loss if a container or host fails.
-*   **Implement Runtime Security Tools:** Deploy a dedicated runtime security tool like Falco, Tracee, or Sysdig Secure. These tools use technologies like eBPF for low-overhead system call monitoring, providing deep visibility without impacting application performance.
-*   **Establish Behavioral Baselines:** Before deploying alerting rules, run your applications in a staging environment to establish a baseline of normal activity. This helps reduce false positives by teaching the system what "normal" looks like for each service.
-*   **Monitor the Docker Daemon:** Don't forget to monitor the Docker daemon's own logs (often found via `journalctl -u docker.service`). These logs contain critical information about API access, daemon-level errors, and potential misconfigurations that affect the entire host.
+* **Standardize Log Formatting:** Configure the Docker daemon to use the JSON logging driver (`--log-driver json-file`). Structured logs are significantly easier to parse, query, and analyze in a centralized logging system.
+* **Centralize Log Collection:** Use logging drivers for `syslog`, `fluentd`, or `splunk` to automatically forward container logs to a centralized platform. This aggregates data for correlation and prevents log loss if a container or host fails.
+* **Implement Runtime Security Tools:** Deploy a dedicated runtime security tool like Falco, Tracee, or Sysdig Secure. These tools use technologies like eBPF for low-overhead system call monitoring, providing deep visibility without impacting application performance.
+* **Establish Behavioral Baselines:** Before deploying alerting rules, run your applications in a staging environment to establish a baseline of normal activity. This helps reduce false positives by teaching the system what "normal" looks like for each service.
+* **Monitor the Docker Daemon:** Don't forget to monitor the Docker daemon's own logs (often found via `journalctl -u docker.service`). These logs contain critical information about API access, daemon-level errors, and potential misconfigurations that affect the entire host.
 
 ## Docker Security Best Practices Comparison Matrix
 
-| Practice                                   | Implementation Complexity | Resource Requirements                | Expected Outcomes                                  | Ideal Use Cases                         | Key Advantages                                             |
+| Practice | Implementation Complexity | Resource Requirements | Expected Outcomes | Ideal Use Cases | Key Advantages |
 |--------------------------------------------|----------------------------|-------------------------------------|---------------------------------------------------|-----------------------------------------|------------------------------------------------------------|
-| Use Official and Verified Base Images      | Easy                       | Low (use trusted images)             | Secure, stable base; fewer vulnerabilities         | Secure container foundations             | Reduced supply chain risk, regular updates, strong support |
-| Run Containers as Non-Root Users            | Medium                     | Moderate (user management)           | Lower privilege escalation risks                    | Security-critical workloads               | Limits exploit impact, compliance alignment                |
-| Implement Image Scanning and Vulnerability Management | Medium                     | Moderate to High (scanning tools, pipelines) | Early vulnerability detection, compliance enforcement | DevSecOps, continuous security            | Automated vulnerability detection, faster remediation      |
-| Minimize Image Layers and Use Multi-Stage Builds | Medium                     | Moderate (build complexity)          | Smaller images, reduced attack surface              | Optimized builds, resource-limited environments | Faster deployments, less storage, higher security          |
-| Limit Container Resources and Capabilities | Medium to Hard             | Moderate (resource planning, kernel knowledge) | Prevents resource exhaustion and privilege escalation | Multi-tenant, high-security environments | Improved stability, attack surface reduction               |
-| Keep Secrets Out of Images and Use Secret Management | Medium                     | Moderate (secret managers, integrations) | Prevents secret leakage, supports rotation          | Applications handling sensitive data     | Credential protection, centralized control                  |
-| Use Immutable Tags and Content Trust       | Hard                       | Moderate (key management, CI/CD changes) | Ensures image integrity and authenticity             | High security, compliance focused          | Prevents tampering, non-repudiation                         |
-| Implement Network Segmentation and Isolation | Medium to Hard             | Moderate to High (network configs, policies) | Limits lateral movement and blast radius             | Microservices, regulated industries        | Strong isolation, zero-trust enforcement                    |
-| Enable Logging, Monitoring, and Runtime Security | Medium                     | High (storage, monitoring tools)    | Real-time threat detection and audit readiness      | Production, compliance, incident response  | Early incident detection, forensic investigation           |
+| Use Official and Verified Base Images | Easy | Low (use trusted images) | Secure, stable base; fewer vulnerabilities | Secure container foundations | Reduced supply chain risk, regular updates, strong support |
+| Run Containers as Non-Root Users | Medium | Moderate (user management) | Lower privilege escalation risks | Security-critical workloads | Limits exploit impact, compliance alignment |
+| Implement Image Scanning and Vulnerability Management | Medium | Moderate to High (scanning tools, pipelines) | Early vulnerability detection, compliance enforcement | DevSecOps, continuous security | Automated vulnerability detection, faster remediation |
+| Minimize Image Layers and Use Multi-Stage Builds | Medium | Moderate (build complexity) | Smaller images, reduced attack surface | Optimized builds, resource-limited environments | Faster deployments, less storage, higher security |
+| Limit Container Resources and Capabilities | Medium to Hard | Moderate (resource planning, kernel knowledge) | Prevents resource exhaustion and privilege escalation | Multi-tenant, high-security environments | Improved stability, attack surface reduction |
+| Keep Secrets Out of Images and Use Secret Management | Medium | Moderate (secret managers, integrations) | Prevents secret leakage, supports rotation | Applications handling sensitive data | Credential protection, centralized control |
+| Use Immutable Tags and Content Trust | Hard | Moderate (key management, CI/CD changes) | Ensures image integrity and authenticity | High security, compliance focused | Prevents tampering, non-repudiation |
+| Implement Network Segmentation and Isolation | Medium to Hard | Moderate to High (network configs, policies) | Limits lateral movement and blast radius | Microservices, regulated industries | Strong isolation, zero-trust enforcement |
+| Enable Logging, Monitoring, and Runtime Security | Medium | High (storage, monitoring tools) | Real-time threat detection and audit readiness | Production, compliance, incident response | Early incident detection, forensic investigation |
 
 ## Moving From Theory to a Hardened Container Strategy
 
@@ -251,13 +248,13 @@ The key to success is incremental adoption. Attempting to implement all nine pra
 
 Here's a practical way to begin:
 
-1.  **Prioritize the Critical Risks:** Start with the practices that address the most severe and common threats. Implementing **image scanning** (Practice #3) and robust **secret management** (Practice #6) should be at the top of your list. These two actions alone drastically reduce your attack surface by eliminating known vulnerabilities and preventing credential exposure.
+1. **Prioritize the Critical Risks:** Start with the practices that address the most severe and common threats. Implementing **image scanning** (Practice #3) and robust **secret management** (Practice #6) should be at the top of your list. These two actions alone drastically reduce your attack surface by eliminating known vulnerabilities and preventing credential exposure.
 
-2.  **Solidify the Foundation:** Next, turn your attention to the source of your containers. Mandate the use of **official and verified base images** (Practice #1) and enforce the principle of least privilege by running containers as **non-root users** (Practice #2). This foundational hardening makes every subsequent security measure more effective.
+2. **Solidify the Foundation:** Next, turn your attention to the source of your containers. Mandate the use of **official and verified base images** (Practice #1) and enforce the principle of least privilege by running containers as **non-root users** (Practice #2). This foundational hardening makes every subsequent security measure more effective.
 
-3.  **Optimize and Restrict:** With a secure foundation, you can then focus on optimization and containment. Adopt **multi-stage builds** to create lean, minimal images (Practice #4) and strictly define **resource limits and kernel capabilities** (Practice #5). This not only improves security by reducing the potential impact of a compromise but also enhances performance and stability.
+3. **Optimize and Restrict:** With a secure foundation, you can then focus on optimization and containment. Adopt **multi-stage builds** to create lean, minimal images (Practice #4) and strictly define **resource limits and kernel capabilities** (Practice #5). This not only improves security by reducing the potential impact of a compromise but also enhances performance and stability.
 
-4.  **Mature Your Operations:** Finally, advance your operational maturity. Implement **network segmentation** (Practice #8) to isolate workloads and enable **comprehensive logging and runtime security** (Practice #9). These steps provide the visibility and control needed to detect and respond to threats in real-time, completing your transition to a truly hardened environment.
+4. **Mature Your Operations:** Finally, advance your operational maturity. Implement **network segmentation** (Practice #8) to isolate workloads and enable **comprehensive logging and runtime security** (Practice #9). These steps provide the visibility and control needed to detect and respond to threats in real-time, completing your transition to a truly hardened environment.
 
 ### The End Goal: Secure by Default
 
