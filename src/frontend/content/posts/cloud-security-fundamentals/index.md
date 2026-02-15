@@ -1,5 +1,5 @@
 ---
-title: "Your Guide To Cloud Security Fundamentals"
+title: "Your Guide to Cloud Security Fundamentals"
 date: '2025-09-13'
 description: "Master cloud security fundamentals with this clear guide. Learn the shared responsibility model, IAM, and key strategies to protect your cloud environment."
 draft: false
