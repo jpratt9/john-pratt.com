@@ -1,5 +1,5 @@
 ---
-title: "Avoiding The Top Data Migration Risks"
+title: "Avoiding the Top Data Migration Risks"
 date: '2025-08-20'
 description: "Discover the most common data migration risks that derail projects. Learn a proven framework with real-world examples to ensure your migration is a success."
 draft: false
