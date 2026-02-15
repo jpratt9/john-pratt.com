@@ -1,7 +1,7 @@
 ---
-title: What Are Cloud Based Solutions A Practical Explainer
-description: "What are cloud based solutions? Go beyond definitions to understand how they work, the different types, and their real-world impact on industries like yours."
+title: "What Are Cloud Based Solutions: a Practical Explainer"
 date: '2026-01-15'
+description: "What are cloud based solutions? Go beyond definitions to understand how they work, the different types, and their real-world impact on industries like yours."
 draft: false
 slug: '/what-are-cloud-based-solutions'
 tags:
@@ -12,8 +12,6 @@ tags:
   - cloud-infrastructure
   - IaaS-PaaS-SaaS
 ---
-
-
 
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/648d4bf4-c7dd-4ea1-8cbc-fe19bb6afd20/what-are-cloud-based-solutions-cloud-solutions.jpg)
 
