@@ -1,5 +1,5 @@
 ---
-title: "Your Ultimate Web Application Security Checklist For 2025"
+title: "Your Ultimate Web Application Security Checklist for 2025"
 date: '2025-08-26'
 description: "Fortify your digital assets with our comprehensive web application security checklist. Explore 7 critical controls to prevent attacks and ensure compliance."
 draft: false
