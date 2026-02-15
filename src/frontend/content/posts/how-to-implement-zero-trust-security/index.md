@@ -1,7 +1,7 @@
 ---
-title: How To Implement Zero Trust Security - A Practical Blueprint For Organizations
-description: "how to implement zero trust security: a practical guide with actionable steps for architecture, policy automation, and a successful rollout."
+title: "How To Implement Zero Trust Security: A Practical Blueprint For Organizations"
 date: '2025-12-07'
+description: "how to implement zero trust security: a practical guide with actionable steps for architecture, policy automation, and a successful rollout."
 draft: false
 slug: '/how-to-implement-zero-trust-security'
 tags:
@@ -12,8 +12,6 @@ tags:
   - IAM
   - microsegmentation
 ---
-
-
 
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/0296bee1-6de2-4d65-b03d-fb3a4fadaa04/how-to-implement-zero-trust-security-zero-trust.jpg)
 
