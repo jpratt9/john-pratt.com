@@ -1,5 +1,5 @@
 ---
-title: "What Is Continuous Deployment? A Complete Guide To Automation"
+title: "What is Continuous Deployment? A Complete Guide to Automation"
 date: '2025-08-22'
 description: "Learn what continuous deployment is, how it enhances your CI/CD pipeline, and best practices for automating software releases. Get started today!"
 draft: false
