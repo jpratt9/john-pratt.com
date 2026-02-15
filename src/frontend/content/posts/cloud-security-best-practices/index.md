@@ -1,5 +1,5 @@
 ---
-title: "10 Cloud Security Best Practices For DevOps Teams In 2025"
+title: "10 Cloud Security Best Practices for DevOps Teams in 2025"
 date: '2025-09-26'
 description: "Discover 10 essential cloud security best practices for 2025. Protect your AWS, Azure, or GCP environments with actionable advice for DevOps and security teams."
 draft: false
