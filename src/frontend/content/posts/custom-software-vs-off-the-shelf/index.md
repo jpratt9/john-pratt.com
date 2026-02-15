@@ -1,5 +1,5 @@
 ---
-title: "Custom Software Vs Off-The-Shelf Software Guide"
+title: "Custom Software Vs Off-the-Shelf Software Guide"
 date: '2025-11-16'
 description: "Deciding between custom software vs off the shelf solutions? Our expert guide analyzes cost, scalability, and ROI to help you make the right choice."
 draft: false
