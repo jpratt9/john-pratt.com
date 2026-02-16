@@ -1,5 +1,5 @@
 ---
-title: "How to Secure Web Applications: a Practical Guide"
+title: "How to Secure Web Applications: A Practical Guide"
 date: '2025-10-02'
 description: "Learn how to secure web applications with this practical guide. Discover actionable strategies for threat modeling, authentication, and secure coding."
 draft: false

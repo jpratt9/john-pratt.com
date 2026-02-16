@@ -1,5 +1,5 @@
 ---
-title: "A Guide to Consolidate Data Centers for Efficiency"
+title: "A Guide to Consolidating Data Centers for Efficiency"
 date: '2025-10-15'
 description: "Learn how to consolidate data centers with our expert guide. Discover proven strategies to optimize your IT infrastructure, cut costs, and boost performance."
 draft: false

@@ -1,5 +1,5 @@
 ---
-title: "A React Js Tutorial for Beginners: Your First Modern Project"
+title: "A React Tutorial for Beginners: Your First Modern Project"
 date: '2026-02-02'
 description: "Start your journey with this React JS tutorial for beginners. Learn modern setup with Vite, master JSX and hooks, and build a real-world app from scratch."
 draft: false

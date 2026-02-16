@@ -1,7 +1,7 @@
 ---
-title: "Cloud Native Application Development Guide"
+title: "Cloud-Native Application Development Guide"
 date: '2025-11-25'
-description: "Explore cloud native application development. Learn how microservices, containers, and CI/CD build resilient, scalable apps with proven strategies."
+description: "Explore cloud-native application development. Learn how microservices, containers, and CI/CD build resilient, scalable apps with proven strategies."
 draft: false
 slug: '/cloud-native-application-development'
 tags:

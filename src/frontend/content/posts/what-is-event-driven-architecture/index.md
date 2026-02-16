@@ -1,5 +1,5 @@
 ---
-title: "What is Event Driven Architecture? The Modern System Design Explained"
+title: "What is Event-Driven Architecture? The Modern System Design Explained"
 date: '2025-08-23'
 description: "Learn what event-driven architecture is, its core patterns, benefits, and real-world examples to understand modern system design effectively."
 draft: false

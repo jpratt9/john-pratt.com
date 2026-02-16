@@ -1,5 +1,5 @@
 ---
-title: "A Practical Guide to Consolidate Data Center Operations"
+title: "A Practical Guide to Consolidating Data Center Operations"
 date: '2025-11-19'
 description: "Learn how to consolidate data center operations with our practical guide. We cover proven migration strategies, security planning, and cost optimization."
 draft: false

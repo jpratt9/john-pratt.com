@@ -1,7 +1,7 @@
 ---
 title: "Top 12 Serverless Framework Alternatives for Cloud Teams in 2026"
 date: '2026-02-04'
-description: "Explore 12 top serverless framework alternatives. Our guide covers AWS SAM, CDK, Pulumi, and more to help you choose the right tool for your next project."
+description: "Explore 12 top Serverless Framework alternatives. Our guide covers AWS SAM, CDK, Pulumi, and more to help you choose the right tool for your next project."
 draft: false
 slug: '/serverless-framework-alternatives'
 tags:

@@ -1,7 +1,7 @@
 ---
 title: "How to Build a Data Pipeline: A Practical Guide"
 date: '2025-11-09'
-description: "How to build data pipeline: Discover a practical, scalable approach with architecture, tools, and monitoring tips to boost data engineering outcomes."
+description: "How to build a data pipeline: Discover a practical, scalable approach with architecture, tools, and monitoring tips to boost data engineering outcomes."
 draft: false
 slug: '/how-to-build-data-pipeline'
 tags:

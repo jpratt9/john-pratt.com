@@ -1,5 +1,5 @@
 ---
-title: "What is Database Replication? A Guide to Scaling and High Availability"
+title: "What Is Database Replication? A Guide to Scaling and High Availability"
 date: '2026-01-03'
 description: "Learn what database replication is and how it delivers high availability, disaster recovery, and massive scalability for your applications."
 draft: false

@@ -1,5 +1,5 @@
 ---
-title: "Custom Software Development Services: Custom Software Development Services"
+title: "Custom Software Development Services"
 date: '2026-01-09'
 description: "Discover how custom software development services drive growth, streamline processes, and help you pick the right partner with actionable steps. Learn more."
 draft: false

@@ -1,7 +1,7 @@
 ---
-title: "What is Data Cloud: What is Data Cloud and How It Works"
+title: "What Is Data Cloud and How It Works"
 date: '2026-01-08'
-description: "Explore what a data cloud is and how it unifies data beyond lakes and warehouses - read the guide to learn more."
+description: "Explore what a data cloud is and how it unifies data beyond lakes and warehouses — read the guide to learn more."
 draft: false
 slug: '/what-is-data-cloud'
 tags:

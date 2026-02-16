@@ -1,5 +1,5 @@
 ---
-title: "How to Modernize Legacy Applications: a Practical Guide"
+title: "How to Modernize Legacy Applications: A Practical Guide"
 date: '2026-01-13'
 description: "Learn how to modernize legacy applications with our practical guide. Discover proven strategies for assessment, execution, and cloud-native transformation."
 draft: false

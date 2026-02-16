@@ -1,5 +1,5 @@
 ---
-title: "What is a Data Cloud: A Clear Path to Modern Analytics"
+title: "What Is a Data Cloud: A Clear Path to Modern Analytics"
 date: '2026-02-05'
 description: "Discover what a data cloud is and why it's essential for analytics. Learn its architecture, benefits, and how to choose the right platform."
 draft: false

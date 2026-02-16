@@ -1,5 +1,5 @@
 ---
-title: "A Practical Java Spring Boot Tutorial for Real-world Apps"
+title: "A Practical Java Spring Boot Tutorial for Real-World Apps"
 date: '2026-01-17'
 description: "Go from setup to deployment with this practical Java Spring Boot tutorial. Learn to build, test, and containerize a production-ready application."
 draft: false

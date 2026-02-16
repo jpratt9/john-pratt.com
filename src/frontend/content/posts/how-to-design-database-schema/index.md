@@ -1,7 +1,7 @@
 ---
-title: "How to Design Database Schema for Scalable Applications"
+title: "How to Design a Database Schema for Scalable Applications"
 date: '2026-01-20'
-description: "Learn how to design database schema for modern, scalable applications. This guide covers data modeling, normalization, performance, and real-world strategies."
+description: "Learn how to design database schemas for modern, scalable applications. This guide covers data modeling, normalization, performance, and real-world strategies."
 draft: false
 slug: '/how-to-design-database-schema'
 tags:

@@ -1,7 +1,7 @@
 ---
-title: "What Are Cloud Based Solutions: a Practical Explainer"
+title: "What Are Cloud-Based Solutions: A Practical Explainer"
 date: '2026-01-15'
-description: "What are cloud based solutions? Go beyond definitions to understand how they work, the different types, and their real-world impact on industries like yours."
+description: "What are cloud-based solutions? Go beyond definitions to understand how they work, the different types, and their real-world impact on industries like yours."
 draft: false
 slug: '/what-are-cloud-based-solutions'
 tags:

@@ -1,5 +1,5 @@
 ---
-title: "How to Hire a Software Developer: A Software Developer Hiring Playbook"
+title: "How to Hire a Software Developer: The Complete Playbook"
 date: '2025-12-21'
 description: "Discover how to hire a software developer with our expert playbook. Get actionable strategies for sourcing, assessing, and onboarding top tech talent."
 draft: false

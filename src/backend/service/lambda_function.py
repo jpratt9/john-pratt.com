@@ -35,7 +35,7 @@ desc_prompt = os.environ["bedrock_description_prompt"]
 
 def ask_claude(prompt: str, max_tokens: int = 256) -> str:
     response = client.messages.create(
-        model="claude-sonnet-4-5-20250929",
+        model="claude-opus-4-6",
         max_tokens=max_tokens,
         messages=[{"role": "user", "content": prompt}]
     )

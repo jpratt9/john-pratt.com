@@ -1,5 +1,5 @@
 ---
-title: "Vendor Lock-in Cloud Computing: Practical Guide to Flexible Cloud Architecture"
+title: "Vendor Lock-in in Cloud Computing: Practical Guide to Flexible Cloud Architecture"
 date: '2026-01-18'
 description: "Discover how vendor lock-in in cloud computing affects strategy, identify risks, and choose flexible, future-proof cloud architecture with proven techniques."
 draft: false

@@ -1,5 +1,5 @@
 ---
-title: "Mastering Route Optimization For Last-Mile Delivery"
+title: "Mastering Route Optimization for Last-Mile Delivery"
 date: '2025-11-08'
 description: "Unlock the secrets of route optimization for last-mile delivery. Learn proven strategies to reduce costs, boost efficiency, and delight your customers."
 draft: false

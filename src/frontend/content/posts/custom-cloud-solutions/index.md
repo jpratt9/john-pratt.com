@@ -1,5 +1,5 @@
 ---
-title: "Custom Cloud Solutions: Custom Cloud Solutions That Scale with Your Business"
+title: "Custom Cloud Solutions That Scale with Your Business"
 date: '2025-12-25'
 description: "Explore how custom cloud solutions can be tailored to your unique needs, guiding you to architect, deploy, and optimize a scalable cloud strategy."
 draft: false

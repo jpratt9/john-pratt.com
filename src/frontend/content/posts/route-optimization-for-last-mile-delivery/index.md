@@ -1,7 +1,7 @@
 ---
-title: "Route Optimization for Last Mile Delivery: Smarter, Faster Routing"
+title: "Route Optimization for Last-Mile Delivery: Smarter, Faster Routing"
 date: '2025-12-16'
-description: "Discover route optimization for last mile delivery to cut costs, boost efficiency, and delight customers with proven routing strategies."
+description: "Discover route optimization for last-mile delivery to cut costs, boost efficiency, and delight customers with proven routing strategies."
 draft: false
 slug: '/route-optimization-for-last-mile-delivery'
 tags:

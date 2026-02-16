@@ -1,7 +1,7 @@
 ---
 title: "Data Engineering Consulting Services to Unlock Data ROI"
 date: '2025-11-30'
-description: "data engineering consulting services that transform raw data into actionable insights, optimize cloud pipelines, and drive measurable ROI."
+description: "Data engineering consulting services that transform raw data into actionable insights, optimize cloud pipelines, and drive measurable ROI."
 draft: false
 slug: '/data-engineering-consulting-services'
 tags:

@@ -1,7 +1,7 @@
 ---
-title: "Your Guide to the Consolidation of Data Centers"
+title: "Your Guide to Data Center Consolidation"
 date: '2026-02-06'
-description: "A practical guide to the consolidation of data centers. Learn how to plan, migrate, and optimize your IT infrastructure for performance and cost savings."
+description: "A practical guide to data center consolidation. Learn how to plan, migrate, and optimize your IT infrastructure for performance and cost savings."
 draft: false
 slug: '/consolidation-of-data-centers'
 tags:

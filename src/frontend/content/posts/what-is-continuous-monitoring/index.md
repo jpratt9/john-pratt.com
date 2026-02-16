@@ -1,5 +1,5 @@
 ---
-title: "What is Continuous Monitoring: Real-time Security Essentials"
+title: "What Is Continuous Monitoring: Real-Time Security Essentials"
 date: '2026-01-05'
 description: "What is Continuous Monitoring? Learn what continuous monitoring is and how real-time visibility strengthens your security."
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "Consolidation in the Data Center: A Modern IT Guide"
 date: '2025-11-24'
-description: "Discover practical strategies for consolidation in the data center to simplify workflows, reduce costs, and boost performance with actionable IT guidance."
+description: "Discover practical strategies for data center consolidation to simplify workflows, reduce costs, and boost performance with actionable IT guidance."
 draft: false
 slug: '/consolidation-in-the-data-center'
 tags:

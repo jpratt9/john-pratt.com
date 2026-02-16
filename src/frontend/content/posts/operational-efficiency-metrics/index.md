@@ -1,7 +1,7 @@
 ---
 title: "Master Operational Efficiency Metrics to Boost Growth"
 date: '2025-09-04'
-description: "Learn how operational efficiency metrics can enhance your business. Track and improve KPIs to drive growth and improve profitability."
+description: "Learn how operational efficiency metrics can enhance your business. Track and improve KPIs to drive growth and profitability."
 draft: false
 slug: '/operational-efficiency-metrics'
 tags:

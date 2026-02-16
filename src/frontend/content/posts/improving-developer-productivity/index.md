@@ -1,7 +1,7 @@
 ---
 title: "Improving Developer Productivity: Practical Team Strategies"
 date: '2025-11-06'
-description: "Explore proven tips for improving developer productivity, from efficient workflows and tools to culture that accelerates team performance."
+description: "Explore proven tips for improving developer productivity, from efficient workflows and tools to a culture that accelerates team performance."
 draft: false
 slug: '/improving-developer-productivity'
 tags:
