@@ -1,7 +1,7 @@
 ---
-title: "Last Mile Delivery Optimization: Routes to Cut Costs and Speed Deliveries"
+title: "Last Mile Delivery Optimization: Routes to Cut Costs and Speed Up Deliveries"
 date: '2026-02-09'
-description: "Discover how last mile delivery optimization uses AI, data, and smart routing to lower costs, speed up deliveries, and delight customers."
+description: "Discover how last-mile delivery optimization uses AI, data, and smart routing to lower costs, speed up deliveries, and delight customers."
 draft: false
 slug: '/last-mile-delivery-optimization'
 tags:
