@@ -250,3 +250,39 @@ class TestDateExtraction:
         match = re.search(r"date:\s*['\"]?(\d{4}-\d{2}-\d{2})['\"]?", content)
         assert match
         assert match.group(1) == "2025-01-15"
+
+
+# ============================================================================
+# Commit message fix/add logic tests
+# ============================================================================
+
+class TestCommitMessageAction:
+    """Test the fix vs add commit message logic."""
+
+    def test_new_file_returns_add(self):
+        """File doesn't exist -> add."""
+        file_exists = False
+        date = "2025-02-12"
+        is_update = file_exists and date in ""
+        action = "fix" if is_update else "add"
+        assert action == "add"
+
+    def test_existing_file_same_date_returns_fix(self):
+        """File exists with same date -> fix."""
+        date = "2025-02-12"
+        content = f"---\ntitle: Test\ndate: '{date}'\n---\nContent here"
+        encoded = base64.b64encode(content.encode()).decode()
+        file_exists = True
+        is_update = file_exists and date in base64.b64decode(encoded).decode()
+        action = "fix" if is_update else "add"
+        assert action == "fix"
+
+    def test_existing_file_different_date_returns_add(self):
+        """File exists but different date (slug collision) -> add."""
+        date = "2025-02-12"
+        old_content = "---\ntitle: Test\ndate: '2025-01-01'\n---\nOld content"
+        encoded = base64.b64encode(old_content.encode()).decode()
+        file_exists = True
+        is_update = file_exists and date in base64.b64decode(encoded).decode()
+        action = "fix" if is_update else "add"
+        assert action == "add"

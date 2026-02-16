@@ -43,7 +43,6 @@ def ask_claude(prompt: str, max_tokens: int = 256) -> str:
 
 def lambda_handler(event, context):
     github_payload = {
-        "message": "fix blog post for $DATE",
         "committer": {"name": "John Pratt", "email": "john@john-pratt.com"},
     }
     # headers in REST API keep original case; check both just in case
@@ -117,22 +116,22 @@ tags:
     
     # post article
     api_repo_article_folder_path = f"https://api.github.com/repos/jpratt9/john-pratt.com/contents/src/frontend/content/posts/{slug}"
-    github_payload["message"] = github_payload["message"].replace("$DATE", date)
     with open(f"/tmp/{slug}/index.md", "rb") as f:
         content_b64 = base64.b64encode(f.read()).decode().strip()
         print(f"content base64: {content_b64}")
 
-        # see if file already exists in GitHub so we can replace it if so
-        try:
-            resp = requests.get(f"{api_repo_article_folder_path}/index.md", headers=github_headers)
-            old_sha = resp.json().get("sha")
-        except Exception as e:
-            print("Received exception while fetching old file contents: ", str(e))
-            print("No file found at existing path in repo, proceeding...")
+        # check if this exact article (same date+slug) already exists
+        resp = requests.get(f"{api_repo_article_folder_path}/index.md", headers=github_headers)
+        file_exists = resp.status_code == 200
+        is_update = file_exists and date in base64.b64decode(resp.json().get("content", "")).decode()
+
+        action = "fix" if is_update else "add"
+        github_payload["message"] = f"{action} blog post for {date}"
 
         # send payload to github
         github_payload["content"] = content_b64
-        if old_sha: github_payload["sha"] = old_sha
+        if file_exists:
+            github_payload["sha"] = resp.json().get("sha")
         
         resp = requests.put(f"{api_repo_article_folder_path}/index.md", headers=github_headers, json=github_payload)
         resp.raise_for_status()
