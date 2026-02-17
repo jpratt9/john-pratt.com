@@ -103,3 +103,11 @@ resource "aws_lambda_layer_version" "new_requests" {
 
   depends_on = [null_resource.build_new_requests_layer]
 }
+
+############################
+# Lambda Function URL (direct HTTPS, no API Gateway)
+############################
+resource "aws_lambda_function_url" "webhook" {
+  function_name      = aws_lambda_function.webhook.function_name
+  authorization_type = "NONE"
+}

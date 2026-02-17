@@ -3,7 +3,7 @@
 ############################
 output "invoke_url" {
   description = "Public HTTPS URL for the webhook"
-  value       = "https://${aws_api_gateway_rest_api.api.id}.execute-api.${var.aws_region}.amazonaws.com/${aws_api_gateway_stage.dev.stage_name}/webhook"
+  value       = aws_lambda_function_url.webhook.function_url
 }
 
 output "outrank_access_token_value" {
