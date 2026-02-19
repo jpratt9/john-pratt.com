@@ -102,7 +102,7 @@ resource "cloudflare_ruleset" "resume_redirect" {
           }
         }
       }
-      expression  = "starts_with(http.request.uri.path, \"/blog/\") and not http.request.uri.path in {\"/blog\" \"/blog/\"}"
+      expression  = "starts_with(http.request.uri.path, \"/blog/\") and not http.request.uri.path in {\"/blog\" \"/blog/\"} and not starts_with(http.request.uri.path, \"/blog/tags\")"
       description = "Redirect /blog/post-slug to /post-slug (but not /blog/ index)"
       enabled     = true
     }
