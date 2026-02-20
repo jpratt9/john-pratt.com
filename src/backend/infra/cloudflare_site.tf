@@ -19,6 +19,7 @@ resource "cloudflare_pages_project" "john_pratt" {
   production_branch = "master"
 
   build_config = {
+    build_caching   = true
     build_command   = "npm run build"
     destination_dir = "public"
   }
