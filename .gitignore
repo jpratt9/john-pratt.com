@@ -17,6 +17,7 @@ npm-debug.log
 # terraform
 # Lock file (optional to ignore)
 *.terraform.lock.hcl
+tfplan
 
 # Terraform state files
 *.tfstate
