@@ -99,40 +99,42 @@ def fix_image(client, fix_prompt, image_bytes, mime_type, filename):
     prompt = fix_prompt.replace("{{FILENAME}}", filename)
     image_part = genai_types.Part.from_bytes(data=image_bytes, mime_type=mime_type)
     config = genai_types.GenerateContentConfig(response_modalities=["TEXT", "IMAGE"])
-    models = ["gemini-3-pro-image-preview", "gemini-2.5-flash-image"]
-    for model in models:
-        delays = [5, 10]
-        for attempt in range(3):
-            try:
-                print(f"    [fix] {filename} -> {model} (attempt {attempt + 1}/3)...", flush=True)
-                response = client.models.generate_content(
-                    model=model, contents=[image_part, prompt], config=config,
-                )
-                if not response.candidates or not response.candidates[0].content.parts:
-                    print(f"    [fix] {filename}: empty response", flush=True)
-                    return None, None
-                for part in response.candidates[0].content.parts:
-                    if part.inline_data:
-                        print(f"    [fix] {filename}: {len(part.inline_data.data)} bytes", flush=True)
-                        return part.inline_data.data, part.inline_data.mime_type
-                print(f"    [fix] {filename}: no image in response", flush=True)
+    model = "gemini-3-pro-image-preview"
+    delays = [5, 10]
+    for attempt in range(3):
+        try:
+            print(f"    [fix] {filename} -> {model} (attempt {attempt + 1}/3)...", flush=True)
+            response = client.models.generate_content(
+                model=model, contents=[image_part, prompt], config=config,
+            )
+            if not response.candidates or not response.candidates[0].content.parts:
+                print(f"    [fix] {filename}: empty response", flush=True)
                 return None, None
-            except Exception as e:
-                status = getattr(e, 'code', None) or getattr(e, 'status_code', 0)
-                retryable = isinstance(status, int) and (500 <= status < 600 or status == 429)
-                if retryable and attempt < 2:
-                    print(f"    [fix] {model} returned {status}, retrying in {delays[attempt]}s...", flush=True)
-                    time.sleep(delays[attempt])
-                elif retryable:
-                    print(f"    [fix] {model} failed after 3 attempts, trying fallback...", flush=True)
-                    break
-                else:
-                    raise
+            for part in response.candidates[0].content.parts:
+                if part.inline_data:
+                    print(f"    [fix] {filename}: {len(part.inline_data.data)} bytes", flush=True)
+                    return part.inline_data.data, part.inline_data.mime_type
+            print(f"    [fix] {filename}: no image in response", flush=True)
+            return None, None
+        except Exception as e:
+            status = getattr(e, 'code', None) or getattr(e, 'status_code', 0)
+            retryable = isinstance(status, int) and (500 <= status < 600 or status == 429)
+            if retryable and attempt < 2:
+                print(f"    [fix] {model} returned {status}, retrying in {delays[attempt]}s...", flush=True)
+                time.sleep(delays[attempt])
+            elif retryable:
+                print(f"    [fix] {model} failed after 3 attempts", flush=True)
+            else:
+                raise
     return None, None
 
 
 def process_single_image(client, fix_prompt, url, slug, post_dir):
     filename = url.split('/')[-1]
+    out_path = os.path.join(post_dir, filename)
+    if os.path.exists(out_path) and os.path.getsize(out_path) > 0:
+        print(f"    [cached] {filename}: already on disk, skipping download+fix", flush=True)
+        return url, filename, f"{RAW_BASE}/{slug}/{filename}"
     try:
         print(f"    [dl] {filename}...", flush=True)
         raw, mime = download_image(url)
@@ -179,9 +181,10 @@ def main():
     posts = sorted(glob.glob(os.path.join(POSTS_DIR, "*/index.md")))
     print(f"Found {len(posts)} blog posts\n", flush=True)
 
-    # Phase 1: collect all jobs across all matching posts
-    all_jobs = []  # (md_path, slug, post_dir, url)
+    # Collect matching posts
+    post_jobs = []  # (md_path, slug, post_dir, urls)
     total_skipped = 0
+    total_images = 0
 
     for md_path in posts:
         slug = os.path.basename(os.path.dirname(md_path))
@@ -215,48 +218,53 @@ def main():
                 print(f"    {url}", flush=True)
             continue
 
-        for url in urls:
-            all_jobs.append((md_path, slug, post_dir, url))
+        post_jobs.append((md_path, slug, post_dir, urls))
+        total_images += len(urls)
 
     if args.dry_run:
-        print(f"\nDry run: {len(all_jobs)} images across matching posts, Skipped (no CDN): {total_skipped}")
+        print(f"\nDry run: {total_images} images across {len(post_jobs)} posts, Skipped (no CDN): {total_skipped}")
         return
 
-    if not all_jobs:
+    if not post_jobs:
         print(f"\nNo images to fix. Skipped (no CDN): {total_skipped}")
         return
 
-    print(f"\nProcessing {len(all_jobs)} images across {len(set(j[0] for j in all_jobs))} posts with {args.workers} workers...\n", flush=True)
+    print(f"\nProcessing {total_images} images across {len(post_jobs)} posts with {args.workers} workers...\n", flush=True)
 
-    # Phase 2: process all images in one pool
-    with ThreadPoolExecutor(max_workers=args.workers) as executor:
-        futures = [
-            executor.submit(process_single_image, client, fix_prompt, url, slug, post_dir)
-            for md_path, slug, post_dir, url in all_jobs
-        ]
-        results = [f.result() for f in futures]
-
-    # Phase 3: group results by post and update markdown
-    post_results = {}  # md_path -> [(original_url, raw_url)]
+    # Submit ALL images across ALL posts into one pool, write each post as its futures complete
     total_fixed = 0
-    for (md_path, slug, post_dir, url), (original_url, filename, raw_url) in zip(all_jobs, results):
-        if raw_url:
-            post_results.setdefault(md_path, []).append((original_url, raw_url))
-            total_fixed += 1
-
     total_posts = 0
-    for md_path, replacements in post_results.items():
-        with open(md_path) as f:
-            content = f.read()
-        for original_url, raw_url in replacements:
-            content = content.replace(original_url, raw_url)
-        with open(md_path, "w") as f:
-            f.write(content)
-        slug = os.path.basename(os.path.dirname(md_path))
-        print(f"  [{slug}] Updated {len(replacements)} URL(s)", flush=True)
-        total_posts += 1
 
-    print(f"\nDone! Posts updated: {total_posts}, Images fixed: {total_fixed}/{len(all_jobs)}, Skipped (no CDN): {total_skipped}")
+    with ThreadPoolExecutor(max_workers=args.workers) as executor:
+        # Submit everything up front
+        post_futures = []
+        for md_path, slug, post_dir, urls in post_jobs:
+            futures = [
+                executor.submit(process_single_image, client, fix_prompt, url, slug, post_dir)
+                for url in urls
+            ]
+            post_futures.append((md_path, slug, urls, futures))
+
+        # Collect results per-post and write immediately
+        for md_path, slug, urls, futures in post_futures:
+            results = [f.result() for f in futures]
+
+            replacements = [(orig, raw) for orig, _, raw in results if raw]
+            total_fixed += len(replacements)
+
+            if replacements:
+                with open(md_path) as f:
+                    content = f.read()
+                for original_url, raw_url in replacements:
+                    content = content.replace(original_url, raw_url)
+                with open(md_path, "w") as f:
+                    f.write(content)
+                total_posts += 1
+                print(f"  [{slug}] Updated {len(replacements)}/{len(urls)} URL(s) — SAVED", flush=True)
+            else:
+                print(f"  [{slug}] 0/{len(urls)} fixed", flush=True)
+
+    print(f"\nDone! Posts updated: {total_posts}, Images fixed: {total_fixed}/{total_images}, Skipped (no CDN): {total_skipped}")
 
 
 if __name__ == "__main__":

@@ -898,28 +898,19 @@ class TestFixImage:
 
     @patch("lambda_function.time.sleep")
     @patch("lambda_function.genai_client")
-    def test_falls_back_to_flash_after_3_5xx(self, mock_client, mock_sleep):
-        image_part = Mock()
-        image_part.inline_data = Mock(data=b"fixed", mime_type="image/png")
-        mock_response = Mock()
-        mock_response.candidates = [Mock(content=Mock(parts=[image_part]))]
-
+    def test_gives_up_after_3_5xx(self, mock_client, mock_sleep):
         err_503 = Exception("overloaded")
         err_503.code = 503
 
-        mock_client.models.generate_content.side_effect = [
-            err_503, err_503, err_503,  # 3 failures on primary
-            mock_response,               # success on fallback
-        ]
+        mock_client.models.generate_content.side_effect = [err_503] * 3
 
         from lambda_function import fix_image
         data, mime = fix_image(b"raw", "image/jpeg", "test.jpg")
 
-        assert data == b"fixed"
-        calls = mock_client.models.generate_content.call_args_list
-        assert calls[0][1]["model"] == "gemini-3-pro-image-preview"
-        assert calls[3][1]["model"] == "gemini-2.5-flash-image"
-        assert mock_sleep.call_count == 2  # 2 retries before giving up on primary
+        assert data is None
+        assert mime is None
+        assert mock_client.models.generate_content.call_count == 3
+        assert mock_sleep.call_count == 2
 
     @patch("lambda_function.time.sleep")
     @patch("lambda_function.genai_client")
@@ -945,27 +936,19 @@ class TestFixImage:
 
     @patch("lambda_function.time.sleep")
     @patch("lambda_function.genai_client")
-    def test_falls_back_on_429(self, mock_client, mock_sleep):
-        image_part = Mock()
-        image_part.inline_data = Mock(data=b"fixed", mime_type="image/png")
-        mock_response = Mock()
-        mock_response.candidates = [Mock(content=Mock(parts=[image_part]))]
-
+    def test_gives_up_after_3_429(self, mock_client, mock_sleep):
         err_429 = Exception("rate limited")
         err_429.code = 429
 
-        mock_client.models.generate_content.side_effect = [
-            err_429, err_429, err_429,  # 3 failures on primary
-            mock_response,               # success on fallback
-        ]
+        mock_client.models.generate_content.side_effect = [err_429] * 3
 
         from lambda_function import fix_image
         data, mime = fix_image(b"raw", "image/jpeg", "test.jpg")
 
-        assert data == b"fixed"
-        calls = mock_client.models.generate_content.call_args_list
-        assert calls[0][1]["model"] == "gemini-3-pro-image-preview"
-        assert calls[3][1]["model"] == "gemini-2.5-flash-image"
+        assert data is None
+        assert mime is None
+        assert mock_client.models.generate_content.call_count == 3
+        assert mock_sleep.call_count == 2
 
     @patch("lambda_function.genai_client")
     def test_non_5xx_raises_immediately(self, mock_client):

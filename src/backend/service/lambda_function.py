@@ -7,6 +7,7 @@ import os
 import base64
 import re
 import time
+from concurrent.futures import ThreadPoolExecutor
 import anthropic
 import urllib.parse
 from google import genai
@@ -95,33 +96,45 @@ def fix_image(image_bytes, mime_type, filename):
     prompt = os.environ.get("image_fix_prompt", "").replace("{{FILENAME}}", filename)
     image_part = genai_types.Part.from_bytes(data=image_bytes, mime_type=mime_type)
     config = genai_types.GenerateContentConfig(response_modalities=["TEXT", "IMAGE"])
-    models = ["gemini-3-pro-image-preview", "gemini-2.5-flash-image"]
-    for model in models:
-        delays = [5, 10]
-        for attempt in range(3):
-            try:
-                print(f"[fix_image] Sending {filename} to {model} (attempt {attempt + 1}/3)...")
-                response = genai_client.models.generate_content(
-                    model=model, contents=[image_part, prompt], config=config
-                )
-                for part in response.candidates[0].content.parts:
-                    if part.inline_data:
-                        print(f"[fix_image] Got fixed image for {filename}: {len(part.inline_data.data)} bytes ({part.inline_data.mime_type})")
-                        return part.inline_data.data, part.inline_data.mime_type
-                print(f"[fix_image] No image in response for {filename}")
-                return None, None
-            except Exception as e:
-                status = getattr(e, 'code', None) or getattr(e, 'status_code', 0)
-                retryable = isinstance(status, int) and (500 <= status < 600 or status == 429)
-                if retryable and attempt < 2:
-                    print(f"{model} returned {status} (attempt {attempt + 1}/3), retrying in {delays[attempt]}s...")
-                    time.sleep(delays[attempt])
-                elif retryable:
-                    print(f"{model} failed after 3 attempts, trying fallback...")
-                    break
-                else:
-                    raise
+    model = "gemini-3-pro-image-preview"
+    delays = [5, 10]
+    for attempt in range(3):
+        try:
+            print(f"[fix_image] Sending {filename} to {model} (attempt {attempt + 1}/3)...")
+            response = genai_client.models.generate_content(
+                model=model, contents=[image_part, prompt], config=config
+            )
+            for part in response.candidates[0].content.parts:
+                if part.inline_data:
+                    print(f"[fix_image] Got fixed image for {filename}: {len(part.inline_data.data)} bytes ({part.inline_data.mime_type})")
+                    return part.inline_data.data, part.inline_data.mime_type
+            print(f"[fix_image] No image in response for {filename}")
+            return None, None
+        except Exception as e:
+            status = getattr(e, 'code', None) or getattr(e, 'status_code', 0)
+            retryable = isinstance(status, int) and (500 <= status < 600 or status == 429)
+            if retryable and attempt < 2:
+                print(f"{model} returned {status} (attempt {attempt + 1}/3), retrying in {delays[attempt]}s...")
+                time.sleep(delays[attempt])
+            elif retryable:
+                print(f"{model} failed after 3 attempts")
+            else:
+                raise
     return None, None
+
+def _process_single_image(url, slug):
+    filename = url.split('/')[-1]
+    try:
+        raw, mime = download_image(url)
+        fixed, _ = fix_image(raw, mime, filename)
+        if fixed:
+            raw_url = f"https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/{slug}/{filename}"
+            return url, filename, fixed, raw_url
+        else:
+            print(f"GenAI returned no image for {url}, keeping CDN URL")
+    except Exception as e:
+        print(f"Failed to process image {url}: {e}")
+    return url, filename, None, None
 
 def process_images(markdown, header_image_url, slug):
     urls = set(re.findall(OUTRANK_CDN_PATTERN, markdown))
@@ -131,18 +144,13 @@ def process_images(markdown, header_image_url, slug):
     image_files = {}
     url_to_raw = {}
 
-    for url in urls:
-        filename = url.split('/')[-1]
-        try:
-            raw, mime = download_image(url)
-            fixed, _ = fix_image(raw, mime, filename)
-            if fixed:
-                image_files[filename] = fixed
-                url_to_raw[url] = f"https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/{slug}/{filename}"
-            else:
-                print(f"GenAI returned no image for {url}, keeping CDN URL")
-        except Exception as e:
-            print(f"Failed to process image {url}: {e}")
+    with ThreadPoolExecutor(max_workers=5) as executor:
+        results = list(executor.map(lambda u: _process_single_image(u, slug), urls))
+
+    for original_url, filename, fixed_bytes, raw_url in results:
+        if fixed_bytes:
+            image_files[filename] = fixed_bytes
+            url_to_raw[original_url] = raw_url
 
     for original_url, raw_url in url_to_raw.items():
         markdown = markdown.replace(original_url, raw_url)
