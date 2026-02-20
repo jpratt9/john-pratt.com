@@ -47,7 +47,7 @@ Think of it like an expert mechanic's toolkit. Each tool is for a specific job, 
 
 This visual helps frame the journey, showing how a strategic partner acts as the bridge between your business objectives and the raw power of the cloud.
 
-![A diagram illustrating the cloud consulting journey from goals and planning to implementation and cloud.](https://cdnimg.co/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/196e7fea-d2e1-4d28-9538-4caa6fa0e47b/cloud-consulting-services-cloud-journey.jpg)
+![A diagram illustrating the cloud consulting journey from goals and planning to implementation and cloud.](./cloud-consulting-services-cloud-journey.jpg)
 
 As the diagram shows, the path from initial goals to a fully realized cloud environment needs a guide. That's where consulting comes in. To get a handle on what's available, it helps to understand what expert [cloud computing management services](https://www.cloudtoggle.com/blog-en/cloud-computing-management-services/) bring to the table right from the start.
 
@@ -109,7 +109,7 @@ It's one thing to understand the technical side of what a cloud consultant does,
 
 This means we have to look past the technical jargon and focus on the tangible benefits. When you bring in an experienced **cloud consulting** partner, you're not just buying a service - you're gaining a set of advantages that can fundamentally change how your business operates.
 
-![Infographic illustrating business outcomes of cloud consulting, including cost optimization, enhanced security, and expert support.](https://cdnimg.co/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/51e65103-980b-48c2-a8ad-05d46634319c/cloud-consulting-services-business-outcomes.jpg)
+![Infographic illustrating business outcomes of cloud consulting, including cost optimization, enhanced security, and expert support.](./cloud-consulting-services-business-outcomes.jpg)
 
 The demand for these outcomes is skyrocketing. Cloud professional services are at the heart of major digital projects, with the market predicted to jump from **USD 39.19 billion in 2025** to a massive **USD 98.13 billion by 2035**. With over **94%** of businesses now using cloud services in some form, this growth highlights how critical expert guidance has become for turning old, clunky systems into flexible and efficient cloud environments. You can dive deeper into [this explosive industry growth on grandviewresearch.com](https://www.grandviewresearch.com/industry-analysis/cloud-computing-industry).
 
