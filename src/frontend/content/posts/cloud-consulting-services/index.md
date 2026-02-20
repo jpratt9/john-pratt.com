@@ -13,7 +13,7 @@ tags:
   - it-consulting
 ---
 
-![Article Header Image](https://cdnimg.co/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/e8e3edd0-cd6f-4ef5-b1b5-b72cc19e0542/cloud-consulting-services-business-strategy.jpg)
+![Article Header Image](./cloud-consulting-services-business-strategy.jpg)
 
 Think of cloud consulting services as your expert guide for the journey into complex platforms like AWS, Azure, and Google Cloud. They're the ones who draw the map and provide the technical know-how to turn all that cloud potential into a genuine competitive edge.
 
@@ -146,7 +146,7 @@ The true power of cloud consulting isn't in the theory; it's in seeing how it so
 
 This is where the rubber meets the road. Let's look at how a smart cloud approach delivers tangible results across a few key sectors.
 
-![A businessman in a cloud pointing to diverse industries: finance, energy, telecom, and aerospace.](https://cdnimg.co/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/8935085b-e789-40f7-9b74-3bb6f2b65505/cloud-consulting-services-cloud-applications.jpg)
+![A businessman in a cloud pointing to diverse industries: finance, energy, telecom, and aerospace.](./cloud-consulting-services-cloud-applications.jpg)
 
 ### Finance: High-Frequency Trading Platforms
 
