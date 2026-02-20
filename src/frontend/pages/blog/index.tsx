@@ -164,7 +164,7 @@ const BlogPage: React.FC<PageProps<BlogPageData>> = ({ location, data }) => {
   const posts = data.allMarkdownRemark.edges;
 
   const formatDate = (dateString: string) => {
-    const d = new Date(dateString);
+    const d = new Date(dateString + 'T00:00:00');
     return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
   };
 

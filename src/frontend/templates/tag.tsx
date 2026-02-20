@@ -69,7 +69,7 @@ const TagTemplate: React.FC<PageProps<TagTemplateData, TagTemplateContext>> = ({
                   <h2><Link to={slug}>{title}</Link></h2>
                   <p className="subtitle">
                     <time>
-                      {new Date(date).toLocaleDateString('en-US', {
+                      {new Date(date + 'T00:00:00').toLocaleDateString('en-US', {
                         year: 'numeric', month: 'long', day: 'numeric',
                       })}
                     </time>

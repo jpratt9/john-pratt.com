@@ -74,7 +74,7 @@ const PostTemplate: React.FC<PageProps<PostTemplateData, PostTemplateContext>> =
   const { title, date, tags, draft } = frontmatter;
 
   const formatDate = (dateString: string) => {
-    const d = new Date(dateString);
+    const d = new Date(dateString + 'T00:00:00');
     return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
   };
 

@@ -56,18 +56,24 @@ resource "aws_lambda_function" "webhook" {
   filename         = data.archive_file.handler_zip.output_path
   source_code_hash = data.archive_file.handler_zip.output_base64sha256
   timeout          = 900  # 15 minutes max
+  memory_size      = 256
 
   # Safety: cap concurrency so floods can't scale costlessly
   reserved_concurrent_executions = 5
 
   environment {
     variables = {
-      bedrock_title_prompt        = var.bedrock_title_prompt
-      bedrock_description_prompt  = var.bedrock_description_prompt
+      bedrock_title_prompt        = var.claude_title_prompt
+      bedrock_description_prompt  = var.claude_description_prompt
+      image_fix_prompt            = var.image_fix_prompt
       github_token                = var.github_token
       article_blacklist_strings   = var.article_blacklist_strings
       outrank_access_token        = random_password.outrank_access_token.result
       anthropic_api_key           = var.anthropic_api_key
+      google_genai_api_key        = var.google_genai_api_key
+      cloudflare_worker_url        = var.cloudflare_worker_url
+      cloudflare_worker_auth_token = random_password.worker_auth_token.result
+      image_cdn_pattern            = var.image_cdn_pattern
     }
   }
 
@@ -90,7 +96,7 @@ resource "null_resource" "build_new_requests_layer" {
 
   provisioner "local-exec" {
     command = <<EOT
-rm -rf dist/python && mkdir -p dist/python && pip install --platform manylinux2014_x86_64 --python-version 3.12 --only-binary=:all: requests anthropic -t dist/python && cd dist && zip -r new_requests_layer.zip python
+rm -rf dist/python && mkdir -p dist/python && pip install --platform manylinux2014_x86_64 --python-version 3.12 --only-binary=:all: requests anthropic google-genai -t dist/python && touch dist/python/google/__init__.py && cd dist && zip -r new_requests_layer.zip python
     EOT
   }
 }

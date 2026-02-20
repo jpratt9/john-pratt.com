@@ -8,9 +8,23 @@ import base64
 import re
 import time
 import anthropic
+import urllib.parse
+from google import genai
+from google.genai import types as genai_types
 
 SMALL_WORDS = {'a', 'an', 'the', 'and', 'but', 'or', 'nor', 'for', 'yet', 'so',
                'to', 'of', 'in', 'on', 'at', 'by', 'with', 'as', 'is', 'if'}
+PRIMARY_MODEL = "claude-opus-4-6"
+FALLBACK_MODEL = "claude-opus-4-5"
+DATE_STR = date.today().isoformat()
+OUTRANK_CDN_PATTERN = os.environ.get("image_cdn_pattern", "")
+
+client = anthropic.Anthropic(api_key=os.environ["anthropic_api_key"])
+title_prompt = os.environ["bedrock_title_prompt"]
+desc_prompt = os.environ["bedrock_description_prompt"]
+
+_genai_api_key = os.environ.get("google_genai_api_key", "")
+genai_client = genai.Client(api_key=_genai_api_key) if _genai_api_key else None
 
 def titlecase(text):
     words = text.split()
@@ -25,17 +39,6 @@ def titlecase(text):
         else:
             result.append(word.capitalize())
     return ' '.join(result)
-
-_sm = boto3.client("secretsmanager")
-_secret_cache = {}
-_blog_poster_secret_name = "blog_poster_secrets"
-DATE_STR = date.today().isoformat()
-client = anthropic.Anthropic(api_key=os.environ["anthropic_api_key"])
-title_prompt = os.environ["bedrock_title_prompt"]
-desc_prompt = os.environ["bedrock_description_prompt"]
-
-PRIMARY_MODEL = "claude-opus-4-6"
-FALLBACK_MODEL = "claude-opus-4-5"
 
 def ask_claude(prompt: str, max_tokens: int = 256) -> str:
     # Try primary model once
@@ -70,6 +73,104 @@ def ask_claude(prompt: str, max_tokens: int = 256) -> str:
             else:
                 print(f"{FALLBACK_MODEL} overloaded after 3 attempts, giving up")
                 raise
+
+def download_image(image_url):
+    worker_url = os.environ.get("cloudflare_worker_url", "")
+    worker_token = os.environ.get("cloudflare_worker_auth_token", "")
+    headers = {"Authorization": f"Bearer {worker_token}"} if worker_token else {}
+    print(f"[download] Fetching {image_url} via worker...")
+    resp = requests.get(
+        f"{worker_url}?url={urllib.parse.quote(image_url, safe='')}",
+        headers=headers,
+        timeout=30
+    )
+    resp.raise_for_status()
+    ct = resp.headers.get("content-type", "image/jpeg")
+    print(f"[download] Got {len(resp.content)} bytes ({ct})")
+    return resp.content, ct
+
+def fix_image(image_bytes, mime_type, filename):
+    if not genai_client:
+        return None, None
+    prompt = os.environ.get("image_fix_prompt", "").replace("{{FILENAME}}", filename)
+    image_part = genai_types.Part.from_bytes(data=image_bytes, mime_type=mime_type)
+    config = genai_types.GenerateContentConfig(response_modalities=["TEXT", "IMAGE"])
+    models = ["gemini-3-pro-image-preview", "gemini-2.5-flash-image"]
+    for model in models:
+        delays = [5, 10]
+        for attempt in range(3):
+            try:
+                print(f"[fix_image] Sending {filename} to {model} (attempt {attempt + 1}/3)...")
+                response = genai_client.models.generate_content(
+                    model=model, contents=[image_part, prompt], config=config
+                )
+                for part in response.candidates[0].content.parts:
+                    if part.inline_data:
+                        print(f"[fix_image] Got fixed image for {filename}: {len(part.inline_data.data)} bytes ({part.inline_data.mime_type})")
+                        return part.inline_data.data, part.inline_data.mime_type
+                print(f"[fix_image] No image in response for {filename}")
+                return None, None
+            except Exception as e:
+                status = getattr(e, 'code', None) or getattr(e, 'status_code', 0)
+                retryable = isinstance(status, int) and (500 <= status < 600 or status == 429)
+                if retryable and attempt < 2:
+                    print(f"{model} returned {status} (attempt {attempt + 1}/3), retrying in {delays[attempt]}s...")
+                    time.sleep(delays[attempt])
+                elif retryable:
+                    print(f"{model} failed after 3 attempts, trying fallback...")
+                    break
+                else:
+                    raise
+    return None, None
+
+def process_images(markdown, header_image_url, slug):
+    urls = set(re.findall(OUTRANK_CDN_PATTERN, markdown))
+    if header_image_url and re.match(OUTRANK_CDN_PATTERN, header_image_url):
+        urls.add(header_image_url)
+
+    image_files = {}
+    url_to_raw = {}
+
+    for url in urls:
+        filename = url.split('/')[-1]
+        try:
+            raw, mime = download_image(url)
+            fixed, _ = fix_image(raw, mime, filename)
+            if fixed:
+                image_files[filename] = fixed
+                url_to_raw[url] = f"https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/{slug}/{filename}"
+            else:
+                print(f"GenAI returned no image for {url}, keeping CDN URL")
+        except Exception as e:
+            print(f"Failed to process image {url}: {e}")
+
+    for original_url, raw_url in url_to_raw.items():
+        markdown = markdown.replace(original_url, raw_url)
+
+    return markdown, image_files
+
+def github_commit(files, message, github_headers):
+    repo = "https://api.github.com/repos/jpratt9/john-pratt.com"
+    committer = {"name": "John Pratt", "email": "john@john-pratt.com"}
+
+    base_sha = requests.get(f"{repo}/git/refs/heads/master", headers=github_headers).json()["object"]["sha"]
+    base_tree = requests.get(f"{repo}/git/commits/{base_sha}", headers=github_headers).json()["tree"]["sha"]
+
+    tree_items = []
+    for f in files:
+        if f.get("encoding") == "base64":
+            sha = requests.post(f"{repo}/git/blobs", headers=github_headers,
+                json={"content": f["content"], "encoding": "base64"}).json()["sha"]
+            tree_items.append({"path": f["path"], "mode": "100644", "type": "blob", "sha": sha})
+        else:
+            tree_items.append({"path": f["path"], "mode": "100644", "type": "blob", "content": f["content"]})
+
+    tree_sha = requests.post(f"{repo}/git/trees", headers=github_headers,
+        json={"base_tree": base_tree, "tree": tree_items}).json()["sha"]
+    commit_sha = requests.post(f"{repo}/git/commits", headers=github_headers,
+        json={"message": message, "tree": tree_sha, "parents": [base_sha], "committer": committer}).json()["sha"]
+    requests.patch(f"{repo}/git/refs/heads/master", headers=github_headers,
+        json={"sha": commit_sha}).raise_for_status()
 
 def lambda_handler(event, context):
     github_payload = {
@@ -117,6 +218,9 @@ def lambda_handler(event, context):
     article_text = re.sub(r'\s*–\s*', ' - ', article_text).strip()
     article_text = re.sub(r'\s*[—–]\s*', ' - ', article_text).strip()
     article_text = re.sub(r' {2,}', ' ', article_text)
+
+    full_body = f"![Article Header Image]({header_image})\n\n{article_text}"
+    full_body, image_files = process_images(full_body, header_image, slug)
 
     github_token = os.environ["github_token"]
     github_headers = {
@@ -168,18 +272,16 @@ tags:
         for tag in tags:
             file.write(f"\n  - {tag.replace(' ', '-')}")
         file.write("\n---\n\n")
-        file.write(f"![Article Header Image]({header_image})\n\n")
-        file.write(article_text)
+        file.write(full_body)
         file.write(f"\n")
 
-    # post article to github
+    # post article + images to github in one commit
     with open(f"/tmp/{slug}/index.md", "rb") as f:
-        content_b64 = base64.b64encode(f.read()).decode().strip()
-        github_payload["content"] = content_b64
-        if existing_sha:
-            github_payload["sha"] = existing_sha
-        resp = requests.put(f"{api_repo_article_folder_path}/index.md", headers=github_headers, json=github_payload)
-        resp.raise_for_status()
-        print("Response:", resp.json())
+        md_text = f.read().decode()
+    post_path = f"src/frontend/content/posts/{slug}"
+    files = [{"path": f"{post_path}/index.md", "content": md_text}]
+    for name, img_bytes in image_files.items():
+        files.append({"path": f"{post_path}/{name}", "content": base64.b64encode(img_bytes).decode(), "encoding": "base64"})
+    github_commit(files, github_payload["message"], github_headers)
 
     return {"statusCode": 200, "body": json.dumps({"message": "ok"})}

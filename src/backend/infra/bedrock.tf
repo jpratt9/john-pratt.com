@@ -4,16 +4,6 @@
 
 data "aws_caller_identity" "current" {}
 
-variable "bedrock_description_prompt" {
-  type      = string
-  sensitive = true
-}
-
-variable "bedrock_title_prompt" {
-  type      = string
-  sensitive = true
-}
-
 # IAM policy for Lambda to invoke Bedrock
 resource "aws_iam_policy" "lambda_bedrock" {
   name        = "webhook_lambda_bedrock_access"
