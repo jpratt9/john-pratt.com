@@ -218,6 +218,7 @@ module.exports = {
       options: {
         name: 'content',
         path: `${__dirname}/src/frontend/content/`,
+        ignore: [`**/posts/**/*.{jpg,jpeg,png,webp}`],
       },
     },
     {

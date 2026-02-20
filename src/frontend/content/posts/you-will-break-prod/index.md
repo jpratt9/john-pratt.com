@@ -20,6 +20,6 @@ You **WILL** break production Unless you know these 5 backend dev tips:
 
 Back end isn't just about writing code, it's about not breaking stuff.
 
-![breaking prod](./breaking_prod.jpg)
+![breaking prod](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/you-will-break-prod/breaking_prod.jpg)
 
 [Follow](https://www.linkedin.com/in/john-pratt787) for more dev tips!

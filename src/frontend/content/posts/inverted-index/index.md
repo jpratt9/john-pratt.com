@@ -8,7 +8,7 @@ tags:
   - algorithms
 ---
 
-![inverted index](./inverted_index.png)
+![inverted index](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/inverted-index/inverted_index.png)
 
 One of the most powerful concepts I've come across in backend systems is the **Inverted Index**.
 

@@ -10,7 +10,7 @@ tags:
   - on-prem
 ---
 
-![infra](./infra.png)
+![infra](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/vlan-setup/infra.png)
 
 **Author:** John Pratt, AWS Solutions Architect Professional
 

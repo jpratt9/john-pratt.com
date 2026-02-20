@@ -9,7 +9,7 @@ tags:
   - databases
 ---
 
-![LSM tree](./lsm-tree.png)
+![LSM tree](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/lsm-trees/lsm-tree.png)
 
 One of the most clever data structures in back end systems is the Log-structured merge-tree, or **LSM tree.**
 

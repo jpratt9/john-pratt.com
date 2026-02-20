@@ -10,7 +10,7 @@ tags:
   - python
 ---
 
-![Bloom Filter](./bloom-filter.png)
+![Bloom Filter](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/bloom-filters/bloom-filter.png)
 
 One of the most clever space saving data structures and back end systems is the **Bloom Filter.**
 

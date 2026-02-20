@@ -9,7 +9,7 @@ tags:
   - resiliency
 ---
 
-![Circuit Breaker](./circuit_breaker.png)
+![Circuit Breaker](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/circuit breakers/circuit_breaker.png)
 
 One of the most helpful patterns I've used in back end systems is the circuit breaker.
 

@@ -9,7 +9,7 @@ tags:
   - error-handling
 ---
 
-![Bulkhead Pattern](./bulkhead.png)
+![Bulkhead Pattern](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/bulkhead-pattern/bulkhead.png)
 
 One of the most overlooked resilience patterns and back end systems is the **bulkhead pattern.**
 

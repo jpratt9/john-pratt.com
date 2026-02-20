@@ -10,7 +10,7 @@ tags:
   - data
 ---
 
-![hash](./hash.webp)
+![hash](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/hyperloglogs/hash.webp)
 
 One of the coolest data structures in back end systems is the Bloom filter's
 cousin, the **HyperLogLog**.

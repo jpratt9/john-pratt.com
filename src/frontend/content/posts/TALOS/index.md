@@ -11,7 +11,7 @@ tags:
   - large-language-models
 ---
 
-![TALOS](./talos.png)
+![TALOS](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/TALOS/talos.png)
 
 **Author:** John Pratt, AWS Solutions Architect Professional
 
