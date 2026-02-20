@@ -13,7 +13,7 @@ tags:
   - cloud-security
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-1cc2d6a9-40e3-4e98-990f-9f42c3b55dc3.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-migration-challenges/featured-image-1cc2d6a9-40e3-4e98-990f-9f42c3b55dc3.jpg)
 
 Migrating to the cloud promises unparalleled scalability, efficiency, and innovation. Yet, the path is often fraught with unexpected obstacles that can derail projects, inflate budgets, and introduce security vulnerabilities. A successful transition isn't just about 'lifting and shifting'; it's about strategic planning, anticipating roadblocks, and understanding the complex interplay of technology, people, and processes. Many businesses underestimate the intricacies involved, leading to stalled initiatives and missed opportunities.
 
@@ -30,7 +30,7 @@ By understanding these challenges upfront, you can build a resilient migration r
 
 Among the most significant **cloud migration challenges** is ensuring the robust security of sensitive data and maintaining strict regulatory compliance. When you move critical information from on-premise data centers to a third-party cloud environment, you enter a shared responsibility model. This shift requires a meticulous re-evaluation of your entire security posture to protect against breaches and adhere to complex legal frameworks like GDPR, HIPAA, or PCI DSS.
 
-![Data Security and Compliance Concerns](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/97703c63-9088-43df-a8a4-2a65db4d2db1.jpg)
+![Data Security and Compliance Concerns](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-migration-challenges/97703c63-9088-43df-a8a4-2a65db4d2db1.jpg)
 
 Many organizations mistakenly assume the cloud provider handles all security. In reality, while providers like Amazon Web Services (AWS) or Microsoft Azure secure the underlying infrastructure, you are responsible for securing your data *in* the cloud. This includes managing access controls, encrypting data both in transit and at rest, and configuring security services correctly. Failure to address these concerns can lead to severe financial penalties, reputational damage, and loss of customer trust.
 
@@ -89,7 +89,7 @@ To avoid budget overruns, you must treat cloud cost management as an ongoing dis
 
 Another of the critical **cloud migration challenges** involves managing network performance and ensuring stable connectivity. When you distribute applications and data between on-premise infrastructure and the cloud, the network becomes the central nervous system of your operations. Inadequate bandwidth, high latency, or unreliable connections can cripple application performance, disrupt data synchronization, and create a frustrating experience for end-users, negating many of the cloud's benefits.
 
-![Network Connectivity and Performance Issues](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/25e3d9ae-6f19-4de5-be9c-11e95ec96718.jpg)
+![Network Connectivity and Performance Issues](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-migration-challenges/25e3d9ae-6f19-4de5-be9c-11e95ec96718.jpg)
 
 Many migrations falter because the network's role is underestimated. A public internet connection may suffice for initial testing, but it often lacks the reliability and throughput needed for production workloads or large-scale data transfers. Addressing these connectivity issues proactively is essential for a successful migration, especially for latency-sensitive applications like financial trading platforms, real-time analytics, or high-quality video streaming services.
 

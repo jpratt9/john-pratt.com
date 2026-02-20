@@ -12,7 +12,7 @@ tags:
   - it-transformation
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-d6e15caf-16f2-473f-a98d-ba18f32d8080.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-migration-consulting-services/featured-image-d6e15caf-16f2-473f-a98d-ba18f32d8080.jpg)
 
 So, you're thinking about moving to the cloud, but the whole process feels a bit daunting. That's where cloud migration consulting services come in. Think of them as your expert guides and technical crew, dedicated to moving your company's digital operations - your applications, your data, your entire infrastructure - from your own servers into the cloud.
 
@@ -20,7 +20,7 @@ This isn't just a simple "lift-and-shift" operation. A good consulting partner e
 
 ## What Are Cloud Migration Consulting Services, Really?
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/4985479b-ad29-4ea6-8c1f-97c8187710fe.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-migration-consulting-services/4985479b-ad29-4ea6-8c1f-97c8187710fe.jpg)
 
 Let's use an analogy. Imagine you need to move a state-of-the-art manufacturing plant across the country. You wouldn't just start packing up heavy machinery and hope it all works when you plug it in at the new site. You'd hire a team of industrial architects, engineers, and logistics specialists to plan every single detail. They'd design the new layout, figure out how to safely transport sensitive equipment, and make sure you don't lose a single day of production.
 
@@ -58,7 +58,7 @@ Ultimately, a good consultant turns what could be a chaotic, high-risk endeavor 
 
 ## The Real Business Value of an Expert-Led Migration
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/316b87de-03d9-447b-b110-85310f6aff0a.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-migration-consulting-services/316b87de-03d9-447b-b110-85310f6aff0a.jpg)
 
 While the promise of cost savings often gets companies talking about the cloud, that's really just the tip of the iceberg. Focusing only on trimming IT expenses means you're missing the bigger, more strategic picture. The true value of bringing in **cloud migration consulting services** isn't just about spending less - it's about fundamentally changing what your business can do.
 
@@ -111,7 +111,7 @@ This process is typically broken down into five critical phases. Each stage serv
 
 Here's a look at how that journey typically unfolds.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/f51a4c12-cebd-4470-9448-4c3b57d7f74e.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-migration-consulting-services/f51a4c12-cebd-4470-9448-4c3b57d7f74e.jpg)
 
 As you can see, a great migration isn't a single flip of a switch. It's a deliberate progression that moves from deep analysis to smart planning and, finally, to a well-managed execution.
 
@@ -164,7 +164,7 @@ This final step is what turns a one-time migration project into a lasting strate
 
 ## Choosing Your Cloud Migration Path
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/805fc7cc-1dbb-418d-9bfd-d9948186c9ed.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-migration-consulting-services/805fc7cc-1dbb-418d-9bfd-d9948186c9ed.jpg)
 
 Once you decide to move your operations to the cloud, you'll find that it's less of a single road and more of a crossroads with multiple paths. Choosing the right one is one of the most critical decisions you'll make, and it's where **cloud migration consulting services** really prove their worth. A good consultant helps you navigate the options to find the strategy that truly fits your business.
 
