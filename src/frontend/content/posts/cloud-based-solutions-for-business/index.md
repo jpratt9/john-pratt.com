@@ -13,7 +13,7 @@ tags:
   - cloud-cost-optimization
 ---
 
-![Article Header Image](https://cdnimg.co/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/427b7e97-ccd8-47c8-b208-bd75e41cbfb6/cloud-based-solutions-for-business-cloud-computing.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-based-solutions-for-business/cloud-based-solutions-for-business-cloud-computing.jpg)
 
 Cloud-based solutions aren't just a tech upgrade anymore - they've become the core engine for growth, agility, and getting a real edge in the market. When you adopt these solutions, you stop spending capital on maintaining hardware and start investing it in projects that actually create value. It's about being able to scale resources instantly and innovate much, much faster.
 
@@ -21,7 +21,7 @@ Cloud-based solutions aren't just a tech upgrade anymore - they've become the co
 
 Moving to the cloud is a fundamental shift in how a business operates and competes. It's about moving quicker, working smarter, and ultimately, delivering a better experience to your customers. This transition is what powers everything from modern data analytics to artificial intelligence, unlocking capabilities that used to be reserved for massive enterprises. The market growth we're seeing is staggering and tells the whole story.
 
-![Illustration of a business building connected to cloud computing, data analytics, AI, and neural networks.](https://cdnimg.co/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/7a8c605e-6eed-4d81-abb5-9d0f64eb185c/cloud-based-solutions-for-business-cloud-solutions.jpg)
+![Illustration of a business building connected to cloud computing, data analytics, AI, and neural networks.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-based-solutions-for-business/cloud-based-solutions-for-business-cloud-solutions.jpg)
 
 Just look at the numbers. The global cloud computing market is expected to hit **USD 781.27 billion in 2025** and is on track to explode to **USD 2,904.52 billion by 2034**. That's a compound annual growth rate of **15.7%**, a clear signal that businesses are leaning into cloud services to stay competitive. You can see more on this explosive growth over at [Fortune Business Insights](https://www.fortunebusinessinsights.com/cloud-computing-market-102697).
 
@@ -47,7 +47,7 @@ This levels the playing field. It makes creativity and speed the true differenti
 
 ## Choosing The Right Cloud Platform For Your Business
 
-![Icons of AWS, Azure, and GCP cloud platforms above server racks for Compliance, AI, and Data Analytics.](https://cdnimg.co/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/05346fc6-9bf4-4555-aecb-97954d594812/cloud-based-solutions-for-business-cloud-services.jpg)
+![Icons of AWS, Azure, and GCP cloud platforms above server racks for Compliance, AI, and Data Analytics.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-based-solutions-for-business/cloud-based-solutions-for-business-cloud-services.jpg)
 
 Picking a cloud provider is one of the most critical technology decisions your company will make. It goes way beyond just comparing a list of services; it's about finding a platform whose core strengths align with your long-term business goals. Your choice between [Amazon Web Services (AWS)](https://aws.amazon.com/), [Microsoft Azure](https://azure.microsoft.com/), and [Google Cloud Platform (GCP)](https://cloud.google.com/) will impact everything from development speed and innovation to your bottom-line operational costs.
 
@@ -146,7 +146,7 @@ Think of it like moving into a new house:
 
 This entire process, from initial blueprint to locking the doors, follows a logical flow.
 
-![Diagram showing a cloud architecture process flow: Design (Requirements Analysis), Build (Infrastructure Deployment), Secure (Compliance & Monitoring).](https://cdnimg.co/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/a1df9d8f-e1af-4c03-ab14-6cb4672d1fbe/cloud-based-solutions-for-business-cloud-architecture.jpg)
+![Diagram showing a cloud architecture process flow: Design (Requirements Analysis), Build (Infrastructure Deployment), Secure (Compliance & Monitoring).](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-based-solutions-for-business/cloud-based-solutions-for-business-cloud-architecture.jpg)
 
 As you can see, a solid migration is more than just a technical move; it's a structured project with distinct design, build, and security phases.
 
@@ -170,7 +170,7 @@ Another crucial task is setting up your security and governance policies *before
 
 Getting your applications into the cloud is a huge milestone, but it's really just the starting line. The real power of the cloud comes from what you do *after* the migration. This is where you unlock operational excellence, and that's all about embracing DevOps and aggressive automation. It's a complete shift in how you build, ship, and run your software.
 
-![Workflow diagram illustrating code processing, deployment using a rocket, containerization, and infrastructure as code.](https://cdnimg.co/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/7baa0890-1bbf-4d96-8381-2b704a911fde/cloud-based-solutions-for-business-deployment-workflow.jpg)
+![Workflow diagram illustrating code processing, deployment using a rocket, containerization, and infrastructure as code.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-based-solutions-for-business/cloud-based-solutions-for-business-deployment-workflow.jpg)
 
 The old-school approach of throwing code over the wall from developers to an operations team just doesn't fly in a fast-paced cloud environment. DevOps tears down that wall, fostering a culture of shared ownership that makes software delivery faster and far more reliable. The engine driving this whole process is the CI/CD pipeline.
 
