@@ -13,7 +13,7 @@ tags:
   - IT-consulting
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-0635c8e6-519c-45cb-b804-2c56a134804f.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/database-migration-best-practices/featured-image-0635c8e6-519c-45cb-b804-2c56a134804f.jpg)
 
 Moving a database is like performing open-heart surgery on your application's data layer. It's complex, high-stakes, and requires surgical precision. A minor oversight can lead to irreversible data loss, extended downtime, and significant financial impact. The difference between a seamless transition and a catastrophic failure often comes down to adhering to a set of proven **database migration best practices**.
 
@@ -32,7 +32,7 @@ Each point is a crucial component of a flawless migration blueprint, offering a 
 
 A robust backup and recovery plan is the non-negotiable foundation of any successful database migration. This practice involves creating a complete, point-in-time snapshot of the entire source database ecosystem before initiating any changes. A common mistake is to only back up the data tables, but a truly comprehensive strategy extends to every component: the schema definitions, stored procedures, user roles, triggers, configuration files, and even related application dependencies. This meticulous preparation provides a critical safety net, ensuring a reliable rollback path to the original, stable state if the migration encounters insurmountable errors.
 
-![Comprehensive Backup and Recovery Strategy](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/dd77c83c-7131-4ccb-a5c3-71c7bb7eae83.jpg)
+![Comprehensive Backup and Recovery Strategy](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/database-migration-best-practices/dd77c83c-7131-4ccb-a5c3-71c7bb7eae83.jpg)
 
 This strategy isn't just about disaster recovery; it's about mitigating risk and building confidence in the migration process. Having a tested recovery plan transforms potential catastrophes, such as data corruption or extended downtime, into manageable incidents. It allows the team to proceed with the migration knowing they have a proven method to restore operations quickly and completely.
 
@@ -57,7 +57,7 @@ This structured approach is not about creating red tape; it's about building a p
 
 The following process flow infographic outlines the critical sequence of a well-structured assessment phase.
 
-![Infographic showing the key steps in the database migration planning process](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/infographic-8ddaf3ab-de63-4d3f-94c5-86606fa0faee.jpg)
+![Infographic showing the key steps in the database migration planning process](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/database-migration-best-practices/infographic-8ddaf3ab-de63-4d3f-94c5-86606fa0faee.jpg)
 
 Following this logical progression from inventory analysis to timeline creation ensures that each step informs the next, building a comprehensive and data-driven migration plan.
 
@@ -78,7 +78,7 @@ To integrate thorough planning and assessment into your database migration best 
 
 Instead of a high-risk, all-at-once "big bang" migration, an incremental approach breaks the process down into smaller, manageable, and sequential phases. This strategy involves migrating data in distinct chunks, such as by schema, functional area, or even individual tables, while keeping the legacy system operational. By phasing the transition, teams can de-risk the entire project, allowing for continuous testing, validation, and performance monitoring at each stage. This methodical process significantly reduces the likelihood of catastrophic failure and minimizes downtime.
 
-![Incremental Migration Approach](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/46cfce86-d9f6-483c-9dc5-4cd22113805f.jpg)
+![Incremental Migration Approach](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/database-migration-best-practices/46cfce86-d9f6-483c-9dc5-4cd22113805f.jpg)
 
 This approach is one of the most effective database migration best practices for complex, mission-critical systems where prolonged outages are unacceptable. It transforms a monumental task into a series of achievable milestones, making it easier to manage resources, track progress, and adapt to unforeseen challenges. The ability to pause or adjust the plan between phases provides a level of control and flexibility that monolithic migrations simply cannot offer.
 
@@ -139,7 +139,7 @@ To integrate data validation and integrity verification into your database migra
 
 Continuous performance monitoring is a critical practice for de-risking a database migration by providing clear, empirical data on system health. This involves establishing a comprehensive monitoring framework to track key metrics-such as query latency, CPU utilization, I/O operations, and application response times-before, during, and after the migration. By capturing a detailed performance baseline from the source system, teams can set realistic benchmarks and immediately identify any performance regressions or anomalies in the new environment. This data-driven approach moves beyond guesswork, enabling precise, targeted troubleshooting and optimization.
 
-![Performance Monitoring and Optimization](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/997a03a0-bc59-4269-a8d0-ca4fbbe86cc8.jpg)
+![Performance Monitoring and Optimization](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/database-migration-best-practices/997a03a0-bc59-4269-a8d0-ca4fbbe86cc8.jpg)
 
 This practice is essential for validating the success of the migration and ensuring the new system meets or exceeds user expectations. Without it, a migration might be technically complete but functionally a failure due to slow queries or poor application performance that degrade the user experience. A solid monitoring strategy provides the visibility needed to proactively address issues, tune the new database, and confidently manage the transition with minimal disruption.
 

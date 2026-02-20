@@ -13,7 +13,7 @@ tags:
   - cloud-infrastructure
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-f2f0f463-4ae9-4005-ac7f-0457170a827e.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/infrastructure-as-code-best-practices/featured-image-f2f0f463-4ae9-4005-ac7f-0457170a827e.jpg)
 
 In today's fast-paced digital landscape, the ability to rapidly and reliably deploy cloud infrastructure is no longer a luxury, it's a necessity. Infrastructure as Code (IaC) has revolutionized how teams manage complex environments, but simply writing code isn't enough. Adhering to proven principles is the key to unlocking its full potential, preventing costly configuration drift, enhancing security, and fostering seamless collaboration. This guide dives into 8 essential **Infrastructure as Code best practices** that move beyond the basics, offering actionable insights and real-world examples to help you build a robust, scalable, and secure foundation for your systems.
 
@@ -25,7 +25,7 @@ The absolute cornerstone of modern infrastructure as code best practices is trea
 
 This foundational practice ensures every change is meticulously tracked, auditable, and, crucially, reversible. When infrastructure is managed through a VCS, it stops being an opaque, manually configured system and becomes a transparent, collaborative asset. Teams can review proposed changes through pull requests, discuss potential impacts, and maintain a complete, chronological history of how the environment evolved.
 
-![Version Control Everything](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/ce94e2b6-d953-4076-ae73-06eba59e3de9.jpg)
+![Version Control Everything](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/infrastructure-as-code-best-practices/ce94e2b6-d953-4076-ae73-06eba59e3de9.jpg)
 
 ### Why It's a Foundational Practice
 
@@ -46,7 +46,7 @@ Just as software engineering evolved beyond monolithic scripts to embrace functi
 
 This approach is one of the most critical infrastructure as code best practices because it directly combats complexity and enforces consistency. By creating a module for a common pattern, like a virtual private cloud (VPC) or a web server cluster, you encapsulate best practices and ensure that every deployment of that component is identical. This significantly reduces manual errors, speeds up provisioning, and simplifies updates.
 
-![Implement Modular and Reusable Code](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/4ee3dc4b-f746-428a-9b19-a4f608bf0f86.jpg)
+![Implement Modular and Reusable Code](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/infrastructure-as-code-best-practices/4ee3dc4b-f746-428a-9b19-a4f608bf0f86.jpg)
 
 ### Why It's a Foundational Practice
 
@@ -67,7 +67,7 @@ A critical infrastructure as code best practice is to enforce strict separation 
 
 This practice is essential for creating a stable and predictable deployment pipeline. It allows developers to experiment safely in isolated development environments without affecting production systems, while staging provides a high-fidelity replica for final testing. Managing environment-specific details, like resource sizes, network rules, and external endpoints, through configuration rather than code changes prevents errors and simplifies promotions between stages.
 
-![Environment Separation and Configuration Management](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/51f412ab-8a38-4e17-8ec4-402a5fc973cc.jpg)
+![Environment Separation and Configuration Management](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/infrastructure-as-code-best-practices/51f412ab-8a38-4e17-8ec4-402a5fc973cc.jpg)
 
 ### Why It's a Foundational Practice
 
@@ -88,7 +88,7 @@ Just as application code requires rigorous testing, so does your infrastructure 
 
 Automated testing shifts quality control to the left, catching errors, security vulnerabilities, and policy violations early in the development cycle. By integrating tests into your CI/CD pipeline, you build a safety net that prevents misconfigurations and ensures infrastructure behaves exactly as intended. This proactive validation drastically reduces the risk of costly production failures and security breaches.
 
-![Automated Testing and Validation](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/50db50bc-7369-44c8-8a72-2b87885a508a.jpg)
+![Automated Testing and Validation](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/infrastructure-as-code-best-practices/50db50bc-7369-44c8-8a72-2b87885a508a.jpg)
 
 ### Why It's a Foundational Practice
 

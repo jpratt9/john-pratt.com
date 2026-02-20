@@ -13,7 +13,7 @@ tags:
   - multi-cloud-strategy
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-c4e66ccd-f195-40a6-a9f7-f7f90ea48cbf.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-infrastructure-optimization/featured-image-c4e66ccd-f195-40a6-a9f7-f7f90ea48cbf.jpg)
 
 Cloud infrastructure optimization is the ongoing practice of fine-tuning your cloud environment to get the best possible balance of spending, performance, and security. This isn't just about slashing your monthly bill; it's about making your entire setup faster, more resilient, and perfectly aligned with what your business actually needs to succeed.
 
@@ -23,7 +23,7 @@ Think of your cloud setup like a high-performance race car. You wouldn't win the
 
 This proactive mindset is becoming non-negotiable as more companies move to the cloud. The global market for cloud infrastructure services is absolutely exploding - it's projected to grow from **USD 166.51 billion** in 2025 to a staggering **USD 679.61 billion by 2034**. That massive growth, detailed in market analysis from [Precedence Research](https://www.precedenceresearch.com/cloud-infrastructure-services-market), underscores just how critical it is for businesses to get a handle on their cloud resources.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/a22c44db-7a35-46d4-bc4c-0d2061fb8c2e.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-infrastructure-optimization/a22c44db-7a35-46d4-bc4c-0d2061fb8c2e.jpg)
 
 ### Why a Holistic View Is Everything
 
@@ -88,7 +88,7 @@ Another area to check is idle load balancers or unused static IP addresses. The 
 
 An inexpensive cloud infrastructure that underperforms isn't optimized - it's a liability. True **cloud infrastructure optimization** goes far beyond just trimming your monthly bill. It's about engineering your setup for speed, reliability, and a fantastic user experience. After all, a slow, lagging system will frustrate customers and stunt your growth, no matter how much you're saving.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/5848e80b-1728-438f-ba0a-b0de9ded36a8.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-infrastructure-optimization/5848e80b-1728-438f-ba0a-b0de9ded36a8.jpg)
 
 Performance tuning really boils down to a simple, timeless principle: use the right tool for the job. You wouldn't use a hammer to turn a screw, so why would you run a specialized workload on a generic virtual machine? This is all about precision at the infrastructure level.
 
@@ -122,7 +122,7 @@ Ultimately, boosting performance is a continuous cycle of measuring, analyzing, 
 
 ## Optimizing for a Hybrid and Multi-Cloud World
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/0269616e-1c39-461a-9421-27ca114fe52a.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-infrastructure-optimization/0269616e-1c39-461a-9421-27ca114fe52a.jpg)
 
 Let's face it: modern infrastructure is rarely a single-provider affair. The days of putting all your digital eggs in one cloud provider's basket are over. Today, savvy businesses are deliberately adopting hybrid and multi-cloud strategies, and this isn't about adding complexity for complexity's sake - it's a smart, strategic decision.
 
@@ -166,7 +166,7 @@ By thoughtfully placing each workload, you transform what could be a complex mes
 
 ## The Role of AI in Automated Cloud Optimization
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/fc4713d3-1a34-43fc-b5f9-6e47eb8336f6.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-infrastructure-optimization/fc4713d3-1a34-43fc-b5f9-6e47eb8336f6.jpg)
 
 Manually optimizing a cloud environment can feel like trying to plug leaks in a dam with your fingers. As your infrastructure expands, keeping track of every resource and forecasting every need becomes an impossible task. This is where **artificial intelligence** steps in, completely changing how we approach **cloud infrastructure optimization**.
 

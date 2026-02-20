@@ -13,7 +13,7 @@ tags:
   - azure-cost-management
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-6df29457-d91a-4fd3-b8fb-e55c73dfcaea.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-cost-optimization-strategies/featured-image-6df29457-d91a-4fd3-b8fb-e55c73dfcaea.jpg)
 
 The cloud offers unparalleled scalability and innovation, but its pay-as-you-go model can quickly lead to budget overruns if left unchecked. As organizations deepen their reliance on cloud infrastructure, mastering cost control is no longer just good practice; it's a critical business imperative. The challenge lies in navigating complex pricing models and a vast array of services, where small inefficiencies can quietly balloon into significant expenses. Without a deliberate approach, the very flexibility that makes the cloud powerful can become a financial liability.
 
@@ -47,7 +47,7 @@ Successfully implementing right-sizing requires a systematic approach. Instead o
 
 The following graphic summarizes the tangible impact of a well-executed right-sizing initiative.
 
-![Infographic showing key data about Right-sizing Resources](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/infographic-1e5eb5b7-809b-4ff6-9313-c70af13ae723.jpg)
+![Infographic showing key data about Right-sizing Resources](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-cost-optimization-strategies/infographic-1e5eb5b7-809b-4ff6-9313-c70af13ae723.jpg)
 
 As the data illustrates, optimizing a fleet of instances can dramatically increase average resource utilization while yielding substantial cost reductions. These gains, demonstrated by industry leaders like Netflix and Capital One who saved millions, prove that right-sizing is a cornerstone of any robust cloud financial management strategy.
 
@@ -70,7 +70,7 @@ A successful commitment strategy relies on careful analysis and planning to maxi
 
 The following graphic highlights the financial benefits of adopting a commitment-based purchasing strategy for consistent workloads.
 
-![Chart showing the cost difference between On-Demand, Savings Plans, and Reserved Instances.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/5e50a359-21f0-481e-b0f7-3cb595a16524.jpg)
+![Chart showing the cost difference between On-Demand, Savings Plans, and Reserved Instances.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-cost-optimization-strategies/5e50a359-21f0-481e-b0f7-3cb595a16524.jpg)
 
 As demonstrated by companies like Pinterest, which saved $20 million annually through strategic RI planning, this approach delivers substantial returns. By identifying stable usage and applying the correct commitment model, organizations can drastically lower their compute spend, freeing up capital for innovation and growth.
 
@@ -80,7 +80,7 @@ One of the most potent cloud cost optimization strategies involves leveraging **
 
 The core principle is to trade availability for a massive cost reduction. By bidding on this spare capacity, you can run large-scale computations for a fraction of the standard cost. This strategy is not suitable for critical, stateful applications like a primary database, but it is exceptionally powerful for tasks like big data processing, CI/CD pipelines, rendering, and machine learning model training. For example, Spotify processes billions of music recommendations and Airbnb runs complex machine learning training jobs using spot instances, saving up to 80% on compute costs.
 
-![A graphic illustrating how Spot Instances work by using spare cloud capacity at a lower price, with a warning icon indicating they can be reclaimed.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/dd11a08b-b326-4853-a1cb-8d1171b11058.jpg)
+![A graphic illustrating how Spot Instances work by using spare cloud capacity at a lower price, with a warning icon indicating they can be reclaimed.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-cost-optimization-strategies/dd11a08b-b326-4853-a1cb-8d1171b11058.jpg)
 
 > **Key Insight:** Spot Instances are not just for background tasks. When architected correctly with fault tolerance, they can power significant portions of your application stack, turning variable cloud capacity into a strategic financial advantage.
 
@@ -161,7 +161,7 @@ Adopting a **serverless and event-driven architecture** is a transformative clou
 
 The core principle is to pay for execution, not provisioned capacity. For workloads that are intermittent, unpredictable, or event-based, this is incredibly efficient. Instead of running a server 24/7 to process occasional requests, a serverless function spins up on demand, executes its task, and then scales down to zero, incurring no further cost. Companies like Bustle have leveraged this model to slash infrastructure spending by over 80% by moving away from traditional server setups.
 
-![A diagram illustrating the cost benefits of serverless architecture, showing a pay-per-use model compared to traditional server costs](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/a2e9efc9-55d3-43a6-b672-146b455ecc51.jpg)
+![A diagram illustrating the cost benefits of serverless architecture, showing a pay-per-use model compared to traditional server costs](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-cost-optimization-strategies/a2e9efc9-55d3-43a6-b672-146b455ecc51.jpg)
 
 > **Key Insight:** Serverless architecture fundamentally changes the cost model from paying for "always-on" resources to paying only for "value-delivered" execution. This makes it a powerful tool for achieving extreme cost efficiency, especially for new projects or microservices with variable traffic.
 

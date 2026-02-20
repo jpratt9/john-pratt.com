@@ -13,7 +13,7 @@ tags:
   - eda
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-1491ee4f-dd00-4f63-a211-60d48921c25b.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-event-driven-architecture/featured-image-1491ee4f-dd00-4f63-a211-60d48921c25b.jpg)
 
 Event-driven architecture, or EDA, is a software design approach where different parts of your system talk to each other by creating and reacting to **events**. Instead of one service directly telling another what to do, it simply announces that something has happened.
 
@@ -21,7 +21,7 @@ Think of it like a news broadcast. A field reporter (the **producer**) sends a s
 
 ## Shifting From Commands To Conversations
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/d1b7c88a-da69-4a16-8018-9627880b73ef.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-event-driven-architecture/d1b7c88a-da69-4a16-8018-9627880b73ef.jpg)
 
 To really get a feel for what makes event-driven architecture so powerful, it helps to compare it to the old-school request-response model. In a traditional system, services are tightly linked. One service sends a direct request to another and then just… waits. It's stuck until it gets a response back. If the second service is down or just slow, the whole operation can grind to a halt.
 
@@ -83,7 +83,7 @@ A few popular tools that act as event routers include:
 
 This diagram shows that straightforward, linear flow from the producer, through the router, and finally to the consumer.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/e87d7967-006a-4e9c-a7b0-3a337c05553a.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-event-driven-architecture/e87d7967-006a-4e9c-a7b0-3a337c05553a.jpg)
 
 What this image really drives home is the clear separation between each component. That separation is the bedrock of any loosely coupled architecture.
 
@@ -97,7 +97,7 @@ An `InventoryService` might grab the event to update stock levels. At the exact 
 
 ## Understanding Key Event-Driven Architecture Patterns
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/33756b2e-bec5-4c19-8150-159f5b572c60.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-event-driven-architecture/33756b2e-bec5-4c19-8150-159f5b572c60.jpg)
 
 Now that we have a handle on the core components, we can get to the fun part: seeing how they all fit together. An event-driven architecture isn't a single, rigid blueprint. Think of it more as a philosophy supported by a set of powerful design patterns that offer road-tested solutions to common problems in distributed systems.
 
@@ -176,7 +176,7 @@ This freedom allows your teams to experiment, iterate, and respond to the market
 
 ## Event Driven Architecture in the Real World
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/4f2cf043-5141-4c87-babd-2b79c2960a17.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-event-driven-architecture/4f2cf043-5141-4c87-babd-2b79c2960a17.jpg)
 
 Theory and design patterns are great, but the real magic of event-driven architecture happens when you see it solving actual problems. Let's move past the diagrams and look at how different industries rely on EDA to build fast, scalable, and tough systems - the kind that would be a nightmare to create with a traditional request-response model.
 

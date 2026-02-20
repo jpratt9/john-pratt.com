@@ -13,7 +13,7 @@ tags:
   - web-security
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-f040cf59-f8d9-407b-93f5-3ee4273804e8.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/web-application-security-checklist/featured-image-f040cf59-f8d9-407b-93f5-3ee4273804e8.jpg)
 
 A web application is a primary business asset and a prime target for malicious actors. A single vulnerability can lead to catastrophic data breaches, financial loss, and irreparable reputational damage. Proactive defense is the only viable strategy, and a reactive approach is a recipe for disaster. This means moving beyond simply patching problems as they arise and instead building security into the very fabric of your development lifecycle.
 
@@ -33,7 +33,7 @@ The goal is to provide a practical, actionable framework you can implement immed
 
 At the forefront of any robust web application security checklist is the non-negotiable practice of input validation and sanitization. This foundational defense mechanism involves scrutinizing every piece of data a user submits to your application. It's the digital equivalent of a security checkpoint, ensuring that only safe, expected, and correctly formatted data can enter and be processed by your system. Neglecting this step is like leaving your front door wide open for attackers to inject malicious code, leading to devastating exploits like SQL Injection (SQLi) and Cross-Site Scripting (XSS).
 
-![Input Validation and Sanitization](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/3ccf55f1-b406-4e32-8d8c-1413960d9658.jpg)
+![Input Validation and Sanitization](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/web-application-security-checklist/3ccf55f1-b406-4e32-8d8c-1413960d9658.jpg)
 
 The process works in two stages: **validation** confirms that the data matches predefined rules (e.g., a phone number field contains only numbers and is a specific length), while **sanitization** cleanses the input by removing or encoding potentially harmful characters (like `<script>` tags). This dual approach ensures data integrity and thwarts attempts to manipulate application logic.
 
@@ -62,7 +62,7 @@ Here are specific actions to take:
 
 Following closely behind input validation are the critical security pillars of authentication and authorization. These two distinct but interconnected controls form the gatekeeping system of your application. **Authentication** is the process of verifying a user's identity, answering the question, "Who are you?". **Authorization** follows, determining what an authenticated user is allowed to do, answering, "What are you permitted to access?". Without robust controls for both, your application is vulnerable to unauthorized access, privilege escalation, and massive data breaches.
 
-![Authentication and Authorization Controls](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/b9db735a-c2e2-42f1-954c-fde2bdca4040.jpg)
+![Authentication and Authorization Controls](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/web-application-security-checklist/b9db735a-c2e2-42f1-954c-fde2bdca4040.jpg)
 
 A proper implementation involves multiple layers, from strong password policies and multi-factor authentication (MFA) to secure session management and granular access controls. This ensures that even if one layer is compromised, others stand in the way of an attacker, protecting sensitive data and critical functionalities from unauthorized users.
 
@@ -91,7 +91,7 @@ Here are specific actions to take:
 
 An indispensable part of any modern web application security checklist is the robust implementation of HTTPS through proper SSL/TLS configuration. This critical security layer encrypts all data transmitted between a user's browser and your server, creating a secure, private channel. It acts as a digital seal of trust, preventing eavesdroppers and attackers from intercepting or tampering with sensitive information like login credentials, personal data, and payment details during transit. Failing to secure this channel leaves data exposed and vulnerable to man-in-the-middle (MitM) attacks.
 
-![HTTPS and SSL/TLS Configuration](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/01ab013c-d1c0-4304-8352-e7902156c41d.jpg)
+![HTTPS and SSL/TLS Configuration](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/web-application-security-checklist/01ab013c-d1c0-4304-8352-e7902156c41d.jpg)
 
 The core technology, Secure Sockets Layer (SSL) and its successor Transport Layer Security (TLS), uses digital certificates to authenticate the server's identity and establish an encrypted link. A correctly configured server ensures data **confidentiality** (it can't be read), **integrity** (it can't be altered), and **authentication** (you're talking to the right server), which are non-negotiable for user trust and data protection.
 
@@ -119,7 +119,7 @@ Here are specific actions to take:
 
 A critical component of any web application security checklist is a multi-layered defense against Cross-Site Scripting (XSS). This pervasive attack occurs when a malicious actor injects harmful scripts into a trusted website, which are then executed in the browsers of unsuspecting users. Unlike attacks that target the server, XSS exploits the user's trust in a site, allowing attackers to steal session cookies, deface web pages, or redirect users to malicious sites.
 
-![Cross-Site Scripting (XSS) Prevention](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/708c3515-8c1a-4d0d-a263-aaba1a256a5a.jpg)
+![Cross-Site Scripting (XSS) Prevention](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/web-application-security-checklist/708c3515-8c1a-4d0d-a263-aaba1a256a5a.jpg)
 
 Preventing XSS involves a combination of validating user inputs and, more importantly, **encoding output** before it is rendered on a page. By converting special characters like `<` and `>` into their HTML entity equivalents (e.g., `&lt;` and `&gt;`), the browser interprets them as harmless text instead of executable code. This strategy neutralizes stored, reflected, and DOM-based XSS attacks.
 

@@ -13,13 +13,13 @@ tags:
   - scalability
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-464181d2-63c6-4e2c-9f27-679a774ec026.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/distributed-systems-design-patterns/featured-image-464181d2-63c6-4e2c-9f27-679a774ec026.jpg)
 
 When you're building an application out of multiple, independent services, you're bound to run into the same kinds of problems over and over again. Distributed systems design patterns are the proven, reusable solutions to those common headaches. Think of them as a *blueprint* for building systems that are reliable, scalable, and won't fall over when something inevitably goes wrong.
 
 ## What Are Distributed Systems and Why Do They Need Patterns?
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/8319302a-c4fd-4b94-b2c7-c157aa3b7e68.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/distributed-systems-design-patterns/8319302a-c4fd-4b94-b2c7-c157aa3b7e68.jpg)
 
 Imagine a busy, high-end restaurant kitchen. It's not just one person trying to cook everything. Instead, you've got specialized stations - one for grilling, another for sauces, and a third just for plating desserts. Each station is its own little world, but they all have to communicate and coordinate perfectly to get a complete, delicious meal out to the customer.
 
@@ -66,7 +66,7 @@ Here's a quick rundown of how it works in its three states:
 
 The impact of this is huge. By stopping requests to a failing service, the system frees up resources and maintains its overall health.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/eccb06fa-530e-4c18-9b46-911d3b6a1844.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/distributed-systems-design-patterns/eccb06fa-530e-4c18-9b46-911d3b6a1844.jpg)
 
 As you can see, when a circuit breaker is in place, the system experiences a much lower error rate and maintains faster response times. It's no longer wasting time and threads on calls that are doomed to fail.
 
@@ -105,7 +105,7 @@ By combining these three **distributed systems design patterns** - Circuit Break
 
 ## Managing Data Across Distributed Services
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/9dbbcd68-81fd-4f04-8693-3c1692c2cace.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/distributed-systems-design-patterns/9dbbcd68-81fd-4f04-8693-3c1692c2cace.jpg)
 
 While fault tolerance patterns are great for keeping your services online, they don't touch one of the thorniest problems in distributed architecture: **data consistency**. When your data is scattered across multiple services, each with its own database, how do you keep everything in sync? The classic "all-or-nothing" database transaction just doesn't work when you need to update several services at once.
 
@@ -201,7 +201,7 @@ As distributed systems have become more complex, so have the patterns for managi
 
 ## Implementing Design Patterns in Your Architecture
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/5981f09d-ee59-4de3-a708-bfcaa6b42054.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/distributed-systems-design-patterns/5981f09d-ee59-4de3-a708-bfcaa6b42054.jpg)
 
 Knowing the patterns is one thing. Actually weaving them into a living, breathing architecture is another beast entirely. This is where the rubber meets the road. The goal isn't to collect patterns like Pokémon; it's to strategically pick the ones that solve *your* problems without burying your team in needless complexity. It all starts with a realistic look at your system's needs and the trade-offs you're willing to make.
 

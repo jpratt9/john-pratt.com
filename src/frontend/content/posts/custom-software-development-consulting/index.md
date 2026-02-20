@@ -12,13 +12,13 @@ tags:
   - digital-transformation
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-ba3bb913-5bf8-4d78-9423-688e817ef7a8.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/custom-software-development-consulting/featured-image-ba3bb913-5bf8-4d78-9423-688e817ef7a8.jpg)
 
 So, what exactly is custom software development consulting? Think of it as a strategic partnership. Your business teams up with a firm of experts to design, build, and launch software that fits your operational needs like a glove. It's the complete opposite of off-the-shelf software, giving you a real competitive edge by solving *your* specific problems instead of offering a one-size-fits-all fix.
 
 ## Unpacking the Role of a Software Consultant
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/68709dfe-07a6-4665-bec5-13624bc722c6.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/custom-software-development-consulting/68709dfe-07a6-4665-bec5-13624bc722c6.jpg)
 
 It's a common mistake to think custom software development is just about coding. While writing clean, efficient code is a huge piece of the puzzle, a true consulting engagement is so much more. You're not just hiring a programmer; you're bringing in a master architect for your digital operations.
 
@@ -45,7 +45,7 @@ After that, they move into design, development, and thorough testing before goin
 
 ## Unlocking Your Competitive Edge with Custom Software
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/abea5fa7-7f57-4679-925f-39f1a96daaf6.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/custom-software-development-consulting/abea5fa7-7f57-4679-925f-39f1a96daaf6.jpg)
 
 Off-the-shelf software can be a quick fix, but it often feels like trying to fit a square peg into a round hole. You end up bending your unique business processes to fit a generic template. This is where **custom software development consulting** completely flips the script. Instead of changing your business to fit the software, you build software that perfectly fits - and even improves - your business.
 
@@ -85,7 +85,7 @@ Think of it as a collaborative expedition with clearly marked phases. This appro
 
 Let's walk through the typical consulting roadmap, from the first conversation to launch day and beyond.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/82e78d22-a03d-4ffb-830e-1f9209461c9b.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/custom-software-development-consulting/82e78d22-a03d-4ffb-830e-1f9209461c9b.jpg)
 
 This process isn't just about writing code; it's a logical progression that makes sure a solid foundation is in place before a single feature is built.
 
@@ -177,7 +177,7 @@ This table compares the primary consulting engagement models to help you make an
 Ultimately, the best model depends entirely on your project's complexity, your comfort with ambiguity, and your long-term goals. A good consulting partner will walk you through these options and help you land on the one that sets your project up for success.
 
 ## What's Under the Hood? Key Technologies in Modern Custom Software
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/1e588920-8060-4435-914d-b6290fb08e9a.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/custom-software-development-consulting/1e588920-8060-4435-914d-b6290fb08e9a.jpg)
 
 To really grasp what custom software can do, you have to look at the powerful tools used to build it. These aren't just trendy buzzwords; they're the engines that create real business value. A good **custom software development consulting** partner doesn't just grab the latest shiny object. They carefully select the right technologies to solve *your* specific problems, building software that's smart, durable, and ready for the future.
 

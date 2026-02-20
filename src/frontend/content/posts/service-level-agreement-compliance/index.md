@@ -13,7 +13,7 @@ tags:
   - vendor-management
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-fd50694b-e728-48e6-ac4a-dca95f8143d8.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/service-level-agreement-compliance/featured-image-fd50694b-e728-48e6-ac4a-dca95f8143d8.jpg)
 
 At its most basic level, **SLA compliance** is all about keeping promises. It's the process of making sure a service provider is actually delivering on the commitments laid out in their contract - things like guaranteeing **99.9% uptime** or a *two-hour support response time*.
 
@@ -21,7 +21,7 @@ In short, it's the proof in the pudding.
 
 ## Understanding the Foundation of Service Promises
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/a45c7c44-0b1e-47f8-88df-345acd8712c8.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/service-level-agreement-compliance/a45c7c44-0b1e-47f8-88df-345acd8712c8.jpg)
 
 Think of a **Service Level Agreement (SLA)** as the official rulebook for the relationship between a service provider and their client. It's a formal contract that doesn't just list the services being offered; it sets clear, measurable standards that the provider is expected to hit consistently.
 
@@ -83,7 +83,7 @@ The tale of these two providers makes one thing crystal clear: **service level a
 
 ## Tracking The Metrics That Actually Matter
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/deb072c6-d7c0-43ca-af5c-820da4be509a.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/service-level-agreement-compliance/deb072c6-d7c0-43ca-af5c-820da4be509a.jpg)
 
 There's an old saying in management: you can't manage what you don't measure. This idea is the absolute bedrock of effective **service level agreement compliance**. Without clear, measurable metrics, an SLA is just a piece of paper filled with good intentions. To really know if you're hitting your promises, you need to track the key performance indicators (KPIs) that turn those abstract goals into cold, hard data.
 
@@ -164,7 +164,7 @@ This protocol should map out who communicates, what they need to say, and when t
 
 The infographic below shows a typical flow for responding to an incident, from the initial automated alert to the final resolution.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/bec03808-1edc-4f89-b4d3-6c821daf0f36.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/service-level-agreement-compliance/bec03808-1edc-4f89-b4d3-6c821daf0f36.jpg)
 
 This visual shows why an automated, systematic approach is so important for handling issues - it ensures nothing gets missed in the chaos.
 
@@ -215,7 +215,7 @@ Here are the non-negotiables to look for:
 
 ## Keeping SLA Compliance High for the Long Haul
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/fccce328-7973-4205-8ad3-458a5b4bc926.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/service-level-agreement-compliance/fccce328-7973-4205-8ad3-458a5b4bc926.jpg)
 
 Hitting your SLA compliance targets for a single quarter feels good. But keeping that performance steady, year after year? That's what really separates the great service providers from the merely good ones. It's a discipline that goes way beyond just reacting to alerts. It's about building a culture of continuous improvement and ownership deep within your team.
 

@@ -13,7 +13,7 @@ tags:
   - cloud-management
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-8be6feb7-f9fe-4880-ae8f-fcd88390942b.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-automation-solutions/featured-image-8be6feb7-f9fe-4880-ae8f-fcd88390942b.jpg)
 
 Think of cloud automation solutions as the central nervous system for your cloud infrastructure. They're the tools and practices that let you manage everything - from servers to software updates - using code and pre-set rules, completely removing the need for hands-on, manual effort. It's like setting your entire cloud operation on autopilot so your team can stop putting out fires and start building what comes next.
 
@@ -99,7 +99,7 @@ A classic example is deploying a new application. This isn't just one task; it's
 
 This is where all the pieces come together to drive real business outcomes.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/99026d1d-c629-497f-a05e-c670ddb97549.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-automation-solutions/99026d1d-c629-497f-a05e-c670ddb97549.jpg)
 
 As the visual shows, combining these core functions allows companies to cut costs, boost efficiency, and scale their operations without friction. Orchestration is the intelligence that makes these complex processes flow smoothly from start to finish, delivering real results with minimal human intervention. Together, these three capabilities form the very backbone of modern **cloud automation solutions**.
 
@@ -109,7 +109,7 @@ Bringing automation into your cloud environment delivers some serious wins that 
 
 Let's break down the real-world advantages you can expect.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/c1fc5c57-6455-464f-93f1-1ada1c77096d.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-automation-solutions/c1fc5c57-6455-464f-93f1-1ada1c77096d.jpg)
 
 For most businesses, the first thing that catches their eye is the chance to drastically cut costs. When you manage the cloud by hand, it's easy to end up with "resource sprawl" - servers and services left running in the background, quietly bleeding your budget. Automation is the perfect antidote to this kind of waste.
 
@@ -184,7 +184,7 @@ Enough with the theory - let's look at the real world. The true value of **cloud
 
 Every industry has its own unique pressures, and they're all finding ways to turn operational headaches into a competitive edge with automation.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/9fcc96d0-7d88-4908-833a-cde946b96608.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-automation-solutions/9fcc96d0-7d88-4908-833a-cde946b96608.jpg)
 
 The numbers back this up. By 2025, cloud adoption in **healthcare** has climbed to **76%**. In **financial services**, it's even higher at **84%**, with many firms leaning on private clouds to stay compliant. You see similar trends in **retail** (**89%**) and **manufacturing** (**69%**), where automation is key for streamlining operations and managing customer data. If you want to dig deeper into the data, these [cloud computing statistics across industries](https://sqmagazine.co.uk/cloud-computing-statistics/) are a great resource.
 

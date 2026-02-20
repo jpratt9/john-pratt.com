@@ -13,7 +13,7 @@ tags:
   - devsecops
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-be597cd3-18d8-47a7-a625-2cb0565f126f.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/application-security-best-practices/featured-image-be597cd3-18d8-47a7-a625-2cb0565f126f.jpg)
 
 In a connected ecosystem, application security is no longer a final checkbox but a foundational pillar of software development. A single, overlooked vulnerability can rapidly escalate into a catastrophic data breach, leading to significant financial loss, erosion of customer trust, and severe reputational damage. Proactive, integrated security measures are not just advisable; they are an absolute business necessity. This is about building a culture of resilience, not just reacting to threats.
 
@@ -46,7 +46,7 @@ A cornerstone of application security best practices is treating all user-suppli
 
 By implementing validation on both the client and server sides, applications can reject malicious or malformed data at the earliest opportunity. This process ensures that only expected data formats, types, and values are accepted, preventing attackers from manipulating application logic or corrupting data.
 
-![Input Validation and Sanitization](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/c2e23509-778a-43b1-9148-e17996213231.jpg)
+![Input Validation and Sanitization](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/application-security-best-practices/c2e23509-778a-43b1-9148-e17996213231.jpg)
 
 ### Why It's a Top Practice
 
@@ -67,7 +67,7 @@ Relying solely on passwords for user authentication is a significant security ri
 
 MFA transforms a compromised password from a critical breach into a minor, contained incident. It is a cornerstone of modern application security best practices because it directly addresses the most common attack vector: stolen credentials.
 
-![Multi-Factor Authentication (MFA) Implementation](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/ebe39bbf-d819-4686-b137-2030ca639654.jpg)
+![Multi-Factor Authentication (MFA) Implementation](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/application-security-best-practices/ebe39bbf-d819-4686-b137-2030ca639654.jpg)
 
 ### Why It's a Top Practice
 
@@ -147,7 +147,7 @@ A critical application security best practice involves protecting data throughou
 
 Data in transit is typically secured using protocols like TLS (Transport Layer Security), which encrypts data moving between a client and a server. Data at rest is protected by encrypting files, databases, or entire storage volumes before they are written to disk, using robust algorithms like AES-256.
 
-![Encryption at Rest and in Transit](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/33c3d4ed-fd9a-4aa1-927a-7588dd799fb7.jpg)
+![Encryption at Rest and in Transit](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/application-security-best-practices/33c3d4ed-fd9a-4aa1-927a-7588dd799fb7.jpg)
 
 ### Why It's a Top Practice
 

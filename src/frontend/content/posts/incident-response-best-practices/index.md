@@ -13,7 +13,7 @@ tags:
   - digital-forensics
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-d4556665-3142-47d3-94d7-3bd022af087f.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/incident-response-best-practices/featured-image-d4556665-3142-47d3-94d7-3bd022af087f.jpg)
 
 In an environment where cyber threats are not a matter of *if* but *when*, a reactive approach to security incidents is a direct path to significant financial and reputational damage. The speed and sophistication of modern attacks mean that organizations can no longer afford to improvise when a breach occurs. A well-defined, proactive strategy is the only effective defense, transforming chaotic scrambles into structured, efficient, and predictable actions. This shift from reaction to readiness minimizes downtime, protects sensitive data, and preserves customer trust.
 
@@ -43,7 +43,7 @@ While an IR plan provides the script, the Incident Response Team (IRT), often ca
 
 A formally established IRT is a critical component of mature incident response best practices. It ensures that the necessary skills, authority, and processes are in place *before* an attack occurs, transforming a frantic reaction into a coordinated, professional operation.
 
-![Establish a Dedicated Incident Response Team (IRT)](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/593aafb1-a646-49b6-ae39-b6c433941581.jpg)
+![Establish a Dedicated Incident Response Team (IRT)](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/incident-response-best-practices/593aafb1-a646-49b6-ae39-b6c433941581.jpg)
 
 ### Key Components of an Effective IRT
 
@@ -61,7 +61,7 @@ A proactive defense is always more effective than a reactive one. Continuous mon
 
 This approach is a critical component of modern incident response best practices because it directly targets the reduction of Mean Time to Detect (MTTD). The sooner you identify a potential security incident, the less time an attacker has to move laterally, exfiltrate data, or deploy ransomware, significantly limiting the potential damage.
 
-![Implement Continuous Monitoring and Early Detection](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/caedf937-393f-45f3-baf7-2b00638d81ed.jpg)
+![Implement Continuous Monitoring and Early Detection](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/incident-response-best-practices/caedf937-393f-45f3-baf7-2b00638d81ed.jpg)
 
 ### Key Components of a Strong Monitoring Strategy
 
@@ -111,7 +111,7 @@ Once an incident is identified, the immediate priority shifts to limiting its im
 
 This phase is where strategy meets action, turning a widespread crisis into a controlled problem. Executing these steps effectively, as outlined in frameworks from NIST and the SANS Institute, is a core tenet of modern incident response best practices, preventing a minor issue from escalating into a catastrophic business disruption, like the Colonial Pipeline shutdown.
 
-![Execute Structured Containment and Eradication Procedures](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/08e756b7-2808-4448-8d59-418a947c724c.jpg)
+![Execute Structured Containment and Eradication Procedures](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/incident-response-best-practices/08e756b7-2808-4448-8d59-418a947c724c.jpg)
 
 ### Key Components of Containment and Eradication
 

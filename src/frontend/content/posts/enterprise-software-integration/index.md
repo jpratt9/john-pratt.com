@@ -13,7 +13,7 @@ tags:
   - ESB-architecture
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-7a989510-02bb-4a5c-91cc-b733f8a70a11.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/enterprise-software-integration/featured-image-7a989510-02bb-4a5c-91cc-b733f8a70a11.jpg)
 
 At its core, enterprise software integration is about making all your different business applications talk to each other. It's the process of connecting separate, often specialized, software so they can share data and work as one unified system.
 
@@ -76,7 +76,7 @@ The image below shows the real-world business impact that a solid integration st
 
 This data shows how effective integration can lead to **30% faster workflows**, slash IT spending by **20%**, and dramatically improve data consistency by giving everyone a single, reliable view of information.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/4dcdc1eb-7e10-4262-b813-a5a563b5d95b.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/enterprise-software-integration/4dcdc1eb-7e10-4262-b813-a5a563b5d95b.jpg)
 
 These numbers really drive home the point: the goal of any integration pattern is to turn technical plumbing into tangible business value.
 
@@ -106,7 +106,7 @@ Choosing an integration pattern is a bit like picking a car for a road trip. But
 
 A well-designed integration architecture isn't an afterthought; it's a non-negotiable part of the plan. It's about more than just connecting System A to System B. It's about building a resilient, secure, and manageable digital ecosystem. Without this strong foundation, even the most innovative integration project is destined to create more problems than it solves.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/e3fb8fe6-3b49-42e2-8ba8-de6b2c973e06.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/enterprise-software-integration/e3fb8fe6-3b49-42e2-8ba8-de6b2c973e06.jpg)
 
 ### Planning for Scalability
 
@@ -200,7 +200,7 @@ It's one thing to talk about architectural diagrams and integration patterns, bu
 
 A smart integration strategy isn't just another IT project; it's the engine that drives operational excellence and gives you a serious competitive edge. Let's dig into three different scenarios where connecting the dots between systems led to some impressive, measurable results.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/f663a5d7-a8c3-4845-9235-af1029c8c1ce.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/enterprise-software-integration/f663a5d7-a8c3-4845-9235-af1029c8c1ce.jpg)
 
 ### Retail Reinvented with Omnichannel Synchronization
 
@@ -234,7 +234,7 @@ This kind of strategic connection is becoming more common. The global data integ
 
 ## Essential Best Practices for Sustainable Integration
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/b49d07ef-20b8-49b4-b7c9-86154cff8535.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/enterprise-software-integration/b49d07ef-20b8-49b4-b7c9-86154cff8535.jpg)
 
 Pulling off a successful **enterprise software integration** isn't about flipping a switch and calling it a day. It's about building a strategic capability that grows with your business. To get lasting value, you have to think beyond the initial setup and embrace principles that make your integrations sustainable, adaptable, and tough enough to handle whatever comes next.
 

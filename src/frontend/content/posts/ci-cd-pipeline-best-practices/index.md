@@ -13,7 +13,7 @@ tags:
   - list
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-050be1af-c10a-4f60-b16f-880da28290df.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/ci-cd-pipeline-best-practices/featured-image-050be1af-c10a-4f60-b16f-880da28290df.jpg)
 
 In modern software development, a well-structured CI/CD pipeline is the engine that drives velocity, reliability, and quality. It's the automated pathway that transforms source code into a deployed application, enabling teams to release features faster and with greater confidence. However, simply having a pipeline isn't enough. The difference between a fragile, slow process and a robust, efficient one lies in adhering to a set of proven principles. Without them, pipelines can become bottlenecks, introducing more risk than they mitigate and slowing down the entire development lifecycle.
 
@@ -34,7 +34,7 @@ The "Fail Fast, Fail Early" principle is a cornerstone of effective CI/CD pipeli
 
 By front-loading the fastest and most critical checks, teams get nearly instant feedback. This immediate loop allows developers to correct issues while the context is still fresh in their minds, dramatically improving productivity and reducing the cost associated with fixing bugs later in the development cycle. It transforms the pipeline from a simple build-and-deploy tool into a rapid, responsive quality assurance mechanism.
 
-![Fail Fast, Fail Early](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/8cd4d162-1941-4b3d-98d8-2480b95fb04b.jpg)
+![Fail Fast, Fail Early](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/ci-cd-pipeline-best-practices/8cd4d162-1941-4b3d-98d8-2480b95fb04b.jpg)
 
 ### How to Implement a Fail-Fast Strategy
 
@@ -57,7 +57,7 @@ Infrastructure as Code (IaC) is the practice of managing and provisioning infras
 
 This approach eliminates "configuration drift," where production environments slowly diverge from staging or development, leading to unpredictable deployment failures. By defining your infrastructure in code, you can version control it, peer-review changes, and integrate it directly into your CI/CD workflow. This ensures that the environment being tested is an exact replica of the one being deployed to, creating a reliable and deterministic process from commit to production.
 
-![Infrastructure as Code (IaC)](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/757caed7-3b5f-4680-9788-7f5ce4a3f785.jpg)
+![Infrastructure as Code (IaC)](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/ci-cd-pipeline-best-practices/757caed7-3b5f-4680-9788-7f5ce4a3f785.jpg)
 
 ### How to Implement Infrastructure as Code
 
@@ -80,7 +80,7 @@ A comprehensive testing strategy is fundamental to reliable software delivery an
 
 By automating tests across various scopes, teams can catch a wide range of issues efficiently. Unit tests provide rapid feedback on granular logic, integration tests ensure components interact correctly, and end-to-end tests confirm the system meets business requirements. This multi-level validation builds a robust quality gate, preventing regressions and ensuring that new features work as expected before reaching users.
 
-![Automated Testing at Multiple Levels](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/dfed8633-b50a-4308-8473-71720292e2c8.jpg)
+![Automated Testing at Multiple Levels](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/ci-cd-pipeline-best-practices/dfed8633-b50a-4308-8473-71720292e2c8.jpg)
 
 ### How to Implement a Multi-Level Testing Strategy
 
@@ -103,7 +103,7 @@ Automating deployments and integrating robust rollback strategies are fundamenta
 
 This approach ensures consistency, eliminates human error, and dramatically reduces the mean time to recovery (MTTR) when issues arise. By building in the ability to quickly and safely undo a problematic deployment, teams can release new features with confidence, knowing they have a safety net. This makes the entire CI/CD pipeline more resilient and trustworthy.
 
-![Deployment Automation and Rollback Strategies](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/ff55e118-55de-4f8b-bab0-0a33b39f28b5.jpg)
+![Deployment Automation and Rollback Strategies](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/ci-cd-pipeline-best-practices/ff55e118-55de-4f8b-bab0-0a33b39f28b5.jpg)
 
 ### How to Implement Automated Deployments with Rollbacks
 

@@ -13,7 +13,7 @@ tags:
   - cloud-security
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-33fad381-ecd2-4143-81dc-e8f75f65fa67.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/aws-cloud-migration-best-practices/featured-image-33fad381-ecd2-4143-81dc-e8f75f65fa67.jpg)
 
 Moving to the AWS cloud is more than a technical task; it's a fundamental business transformation. While the promise of scalability, agility, and cost savings is compelling, achieving these benefits requires a deliberate, strategic approach. Simply 'lifting and shifting' your existing infrastructure often leads to unforeseen costs, security vulnerabilities, and missed optimization opportunities. A successful migration hinges on a deep understanding of proven methodologies that align technology directly with business outcomes.
 
@@ -23,7 +23,7 @@ This guide cuts through the noise to present nine critical **AWS cloud migration
 
 A successful AWS cloud migration begins long before the first server is provisioned. The foundational step, and arguably the most critical, is a meticulous assessment and planning phase. This involves creating a complete inventory of your current IT estate, including hardware, software, applications, and all their intricate dependencies. Rushing this stage is a common pitfall that leads to unexpected costs, extended downtime, and migration failures. A comprehensive plan provides the blueprint for your entire cloud journey.
 
-![Comprehensive Assessment and Planning](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/77c598ba-e0de-4c34-b752-a882b7f3ac04.jpg)
+![Comprehensive Assessment and Planning](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/aws-cloud-migration-best-practices/77c598ba-e0de-4c34-b752-a882b7f3ac04.jpg)
 
 The goal is to move beyond a simple list of assets. You need to understand performance metrics, business value, and technical complexity for each application. This deep analysis, central to the [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/), helps determine the appropriate migration strategy (the "7 Rs": Rehost, Replatform, Refactor, etc.) for each workload. For instance, GE systematically evaluated over 9,000 applications, deciding which to retire, retain, or migrate, ensuring resources were focused on what mattered most.
 
@@ -43,7 +43,7 @@ This framework provides six distinct options: Rehost, Replatform, Repurchase, Re
 
 The following decision tree illustrates how to align application characteristics with the most suitable migration strategy, helping you make informed choices.
 
-![Infographic showing a decision tree for choosing a migration strategy based on application complexity and business value.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/infographic-d9631159-292c-402e-a124-62d057587682.jpg)
+![Infographic showing a decision tree for choosing a migration strategy based on application complexity and business value.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/aws-cloud-migration-best-practices/infographic-d9631159-292c-402e-a124-62d057587682.jpg)
 
 The visualization clearly shows that your decision should be driven by an application's specific business value and technical complexity, guiding you toward the most efficient path.
 
@@ -62,7 +62,7 @@ To effectively apply the 6 R's framework, focus on these practical steps:
 
 Security should not be an afterthought in your cloud migration; it must be a core component from day one. Implementing a robust security and compliance framework means proactively integrating security controls and compliance checks throughout the entire migration process. This involves a shared responsibility model, where AWS secures the cloud's infrastructure, and you are responsible for securing everything you put *in* the cloud, from data to applications and identity management. Neglecting this is a significant risk that can lead to data breaches, regulatory fines, and reputational damage.
 
-![Implement Robust Security and Compliance Framework](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/651031e6-749d-4b74-9e40-2fe518424e7a.jpg)
+![Implement Robust Security and Compliance Framework](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/aws-cloud-migration-best-practices/651031e6-749d-4b74-9e40-2fe518424e7a.jpg)
 
 This approach is non-negotiable for organizations in regulated industries. For example, healthcare providers migrating to AWS must ensure their architecture adheres to HIPAA regulations to protect patient data. Similarly, European companies must design their systems to be GDPR-compliant from the ground up. By embedding security into your migration strategy, you build a resilient, trustworthy environment that leverages the full power of AWS security services. This proactive stance is a cornerstone of modern **AWS cloud migration best practices**.
 
@@ -92,7 +92,7 @@ To execute a successful pilot project, focus on structured learning and validati
 
 One of the most compelling reasons to move to the cloud is cost efficiency, but these savings are not automatic. A critical AWS cloud migration best practice is to embed cost management and optimization into your strategy from the very beginning. This involves establishing governance, monitoring spending in real-time, and continuously seeking opportunities to reduce waste. Failing to proactively manage costs can lead to budget overruns that negate the financial benefits of the migration.
 
-![Optimize for Cost Management and Monitoring](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/bc350602-9156-494f-a10c-51fb6618431e.jpg)
+![Optimize for Cost Management and Monitoring](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/aws-cloud-migration-best-practices/bc350602-9156-494f-a10c-51fb6618431e.jpg)
 
 This principle is a core component of the [AWS Well-Architected Framework's Cost Optimization Pillar](https://aws.amazon.com/architecture/well-architected/?wa-lens-cost-optimization). It's about building a culture of cost awareness, not just reacting to a high monthly bill. For example, by combining rightsizing, utilizing Reserved Instances, and implementing automated cost controls, companies like Lyft have managed to achieve massive savings, demonstrating the power of a disciplined financial operations (FinOps) approach within the AWS environment.
 

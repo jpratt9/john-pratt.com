@@ -13,7 +13,7 @@ tags:
   - CloudFormation-templates
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-be2560dd-1f85-415c-b05f-74da86d6b336.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/infrastructure-as-code-examples/featured-image-be2560dd-1f85-415c-b05f-74da86d6b336.jpg)
 
 Transitioning from manual infrastructure management to automated, version-controlled code is a game-changer for any engineering team. It introduces consistency, speed, and reliability into provisioning and managing complex systems. This guide moves beyond theory to provide a curated collection of practical **infrastructure as code examples**, breaking down not just the "what" but the strategic "why" behind each one.
 
@@ -43,7 +43,7 @@ Terraform excels at managing complex, interdependent infrastructure. For example
 
 AWS CloudFormation is Amazon's native Infrastructure as Code (IaC) service, allowing you to model, provision, and manage AWS resources using templates written in JSON or YAML. It functions as a single source of truth for your AWS environment. You define your desired state in a template, and CloudFormation handles the provisioning and configuration of resources in the correct order with dependency management.
 
-![AWS CloudFormation](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/0ca993cd-5437-4165-88a7-79dff7d54a62.jpg)
+![AWS CloudFormation](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/infrastructure-as-code-examples/0ca993cd-5437-4165-88a7-79dff7d54a62.jpg)
 
 This deep integration with the AWS ecosystem is its core advantage. CloudFormation supports nearly all AWS services, often on day one of their release. It also includes features like automatic rollback on error, which reverts your infrastructure to its last known stable state if an update fails. This makes it a reliable and secure choice for managing AWS-exclusive infrastructure, as demonstrated by organizations like Capital One and NASA JPL for mission-critical applications.
 
@@ -83,7 +83,7 @@ Pulumi is a modern, open-source IaC platform that empowers developers to define 
 
 This makes Pulumi a compelling choice for development teams who want to apply software engineering best practices to their infrastructure management. Companies like Snowflake and Mercedes-Benz use Pulumi to streamline multi-cloud deployments and cloud-native application infrastructure, treating their infrastructure with the same rigor as their application code.
 
-![Pulumi](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/482513d1-eecc-477a-940a-41a69c4954f8.jpg)
+![Pulumi](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/infrastructure-as-code-examples/482513d1-eecc-477a-940a-41a69c4954f8.jpg)
 
 ### Strategic Breakdown
 
@@ -137,7 +137,7 @@ Deployment Manager excels at automating complex, GCP-native architectures. Its a
 
 Kubernetes YAML manifests are declarative configuration files that define the desired state of resources within a Kubernetes cluster. While often seen as application-layer configuration, they function as a crucial form of Infrastructure as Code for the container orchestration world. These manifests specify everything from pods and deployments to services and ingresses, enabling version-controlled and reproducible application environments.
 
-![Kubernetes YAML Manifests](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/a385fbea-e9b4-438f-9d55-b9db5c0645c6.jpg)
+![Kubernetes YAML Manifests](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/infrastructure-as-code-examples/a385fbea-e9b4-438f-9d55-b9db5c0645c6.jpg)
 
 Pioneered by Google and now managed by the Cloud Native Computing Foundation, Kubernetes has become the standard for container orchestration. Companies like Shopify and Spotify use YAML manifests extensively to manage their complex microservices architectures. This approach treats the application's runtime environment as code, which can be stored in Git, reviewed, and deployed automatically, forming the foundation of GitOps workflows.
 

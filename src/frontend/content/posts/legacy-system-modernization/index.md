@@ -13,7 +13,7 @@ tags:
   - technical-debt
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-c79bf1a0-3cc9-42df-8c0b-d5745d42f68d.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/legacy-system-modernization/featured-image-c79bf1a0-3cc9-42df-8c0b-d5745d42f68d.jpg)
 
 Think of legacy system modernization as a major home renovation. You're not just slapping a new coat of paint on a crumbling foundation; you're updating the plumbing, wiring, and structure to make the house safer, more efficient, and ready for the future. In business terms, it's the process of overhauling or replacing outdated software and infrastructure.
 
@@ -21,7 +21,7 @@ This isn't just a job for the IT department. It's a core business strategy. Movi
 
 ## Why Modernizing Legacy Systems Is a Business Imperative
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/e08c5d93-f6a8-4a2d-b5ab-57072c9c62fa.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/legacy-system-modernization/e08c5d93-f6a8-4a2d-b5ab-57072c9c62fa.jpg)
 
 Running a business on an outdated system is like entering a Formula 1 race with a vintage car. It might be a classic, and you might know exactly how it handles, but it just can't compete. It lacks the performance, safety features, and raw efficiency you need to have any chance of winning. The same goes for old technology - it might still "work," but it's actively holding your business back.
 
@@ -63,7 +63,7 @@ At the end of the day, legacy system modernization is about so much more than ju
 
 ## The Hidden Costs of Outdated Technology
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/57d414c2-687a-4f44-89b6-18af70d80707.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/legacy-system-modernization/57d414c2-687a-4f44-89b6-18af70d80707.jpg)
 
 When the conversation turns to **legacy system modernization**, it's easy to get fixated on the price tag of the new system. That number is big, tangible, and sits right there on the proposal. In contrast, the cost of keeping the old tech around feels known and comfortable - just another line item in the budget.
 
@@ -116,7 +116,7 @@ This one's a small step up from rehosting. You move your application to the clou
 
 Even these foundational steps can have a massive impact on your operations.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/62faafc6-7660-4f05-9779-372bbf88fe92.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/legacy-system-modernization/62faafc6-7660-4f05-9779-372bbf88fe92.jpg)
 
 As the data shows, modern systems can dramatically cut maintenance costs and downtime. This frees up your teams and budget to focus on building new things, not just keeping the lights on.
 

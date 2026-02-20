@@ -12,13 +12,13 @@ tags:
   - Cloud-Automation
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-e43731ad-aa76-488e-98fc-1b604c0b5578.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/benefits-of-infrastructure-as-code/featured-image-e43731ad-aa76-488e-98fc-1b604c0b5578.jpg)
 
 The real magic of Infrastructure as Code (IaC) boils down to three huge wins: **speed**, **consistency**, and **cost savings**. When you stop configuring things by hand and start managing them with code, you can automate deployments, sidestep human error, and spin up perfectly identical environments whenever you need them.
 
 ## What Is Infrastructure as Code, Really?
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/c635e754-ddd1-4d87-9db2-47e660bbbcaa.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/benefits-of-infrastructure-as-code/c635e754-ddd1-4d87-9db2-47e660bbbcaa.jpg)
 
 Let's break it down with an analogy. Think about building a house. The old-school way is like having a construction crew build from memory - every house ends up with slight, unpredictable differences. IaC is the opposite; it's like having a master blueprint that a robotic system uses to construct a perfect, flawless replica every single time.
 
@@ -34,7 +34,7 @@ With that foundation, we can start exploring how each of these core benefits pla
 
 ## Accelerate Your Deployments with Unmatched Speed
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/bb05072e-21b4-4238-a621-cd7fb080ee76.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/benefits-of-infrastructure-as-code/bb05072e-21b4-4238-a621-cd7fb080ee76.jpg)
 
 One of the biggest game-changers with **Infrastructure as Code (IaC)** is the sheer speed it brings to the table. We're talking about setting up entire environments - development, staging, production, you name it - in just a few minutes. This is a process that used to be a slog, often taking days or even weeks of manual work.
 
@@ -54,7 +54,7 @@ This real-world scenario shows exactly how IaC keeps a business running smoothly
 
 ## Guarantee Consistency and Eliminate Configuration Drift
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/ef81a08a-442a-4aee-901f-d9a46ccb42a1.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/benefits-of-infrastructure-as-code/ef81a08a-442a-4aee-901f-d9a46ccb42a1.jpg)
 
 If you've ever managed infrastructure manually, you know the silent killer: **configuration drift**. It starts small. A quick manual patch here, a tweaked setting there - all undocumented. Over time, these tiny changes pile up, creating maddening inconsistencies between your environments.
 
@@ -84,7 +84,7 @@ When you define security policies in code, you give your team the power to **“
 
 This is where the automation really shines, turning code into consistent, scalable cloud infrastructure.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/27ef8a53-37f5-47ba-b083-431839cab8c3.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/benefits-of-infrastructure-as-code/27ef8a53-37f5-47ba-b083-431839cab8c3.jpg)
 
 As the visual shows, IaC creates a repeatable process that systematically cuts down on human error and enforces your standards with every single deployment. This automated muscle is what keeps your security posture strong. For example, you can write a policy that flat-out prevents anyone from creating a public S3 bucket or ensures every database is encrypted by default. These rules are then checked automatically every single time a change is proposed.
 

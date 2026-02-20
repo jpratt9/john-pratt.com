@@ -13,7 +13,7 @@ tags:
   - project-management
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-044c914e-cf9e-4323-9c5c-14bdd92537b2.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/data-migration-risks/featured-image-044c914e-cf9e-4323-9c5c-14bdd92537b2.jpg)
 
 Data migration risks are all the things that can go wrong when you move data - think **data loss, security breaches, or painful downtime**. The real problem isn't the technology itself; it's that projects often go off the rails because of hidden complexities and a simple lack of good planning.
 
@@ -51,7 +51,7 @@ In the end, a successful migration isn't measured by how fast the data moves, bu
 
 ## The Five Critical Risks in Every Data Migration
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/1942dc71-2746-4a3b-b043-d14875552ea2.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/data-migration-risks/1942dc71-2746-4a3b-b043-d14875552ea2.jpg)
 
 It's one thing to know that a data migration *could* fail. It's another thing entirely to know exactly *why* it will fail. Every single project, no matter how big or small, runs up against a handful of core challenges that can stop it dead in its tracks. And make no mistake, these aren't just technical glitches - they're real business threats with painful, tangible consequences.
 
@@ -115,7 +115,7 @@ Without a strong project manager and a crystal-clear scope document signed off b
 
 ## The Hidden Threat of Poor Data Quality
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/eec3086a-e530-4e85-9183-9c8e2f7d9284.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/data-migration-risks/eec3086a-e530-4e85-9183-9c8e2f7d9284.jpg)
 
 Of all the things that can derail a data migration, underestimating the true state of your current data is probably the most destructive. It's a direct path to failure, all thanks to that timeless principle: "Garbage In, Garbage Out." It doesn't matter how powerful or sophisticated your new system is; if you feed it flawed information, it's hamstrung from the start.
 
@@ -156,7 +156,7 @@ By dedicating real time and resources to these upfront activities, you turn data
 
 ## Lessons Learned from Real Migration Failures
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/46426793-2d24-4667-9466-7d5c1839fe28.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/data-migration-risks/46426793-2d24-4667-9466-7d5c1839fe28.jpg)
 
 Talking about migration risks in theory is one thing, but seeing how they play out in the real world is where the lessons really stick. When a project goes sideways, it leaves behind some painful but incredibly valuable insights. By looking at a few (anonymized) war stories, we can connect the dots between a specific oversight and the business disaster that followed.
 
@@ -205,7 +205,7 @@ Think of it like building a house. You don't just start hammering boards togethe
 
 The process boils down to a continuous cycle of assessing what you have, mapping where it needs to go, and validating that it got there intact.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/59baffec-837d-4637-b00c-5b2e624172fe.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/data-migration-risks/59baffec-837d-4637-b00c-5b2e624172fe.jpg)
 
 This loop highlights a critical truth: a great migration is never a one-and-done event. It's an iterative process of discovery, planning, and verification.
 

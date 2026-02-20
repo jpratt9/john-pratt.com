@@ -13,13 +13,13 @@ tags:
   - automated-release
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-a0dadc9e-3bff-4d38-b2bf-a2bd833dddd8.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-continuous-deployment/featured-image-a0dadc9e-3bff-4d38-b2bf-a2bd833dddd8.jpg)
 
 Continuous deployment is the practice of automatically releasing every code change that successfully passes through your automated testing pipeline directly to your users. It's a completely hands-off approach that gets new features, bug fixes, and improvements into customers' hands the moment they're ready, cutting out all the manual steps that traditionally slow down a release.
 
 ## Unpacking Continuous Deployment
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/9f2274e4-1242-4f82-b93d-4795a7283745.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-continuous-deployment/9f2274e4-1242-4f82-b93d-4795a7283745.jpg)
 
 To really get a feel for what continuous deployment is, picture a fully automated factory assembly line. A developer commits a new piece of code, and from there, the system takes over entirely. The code is automatically compiled, put through a rigorous gauntlet of quality and security checks, and if it passes every single test, it's immediately deployed to the live production environment.
 
@@ -59,7 +59,7 @@ The term "CI/CD" actually covers **three** core ideas that build on each other: 
 
 This visual shows how the three concepts connect, with each one representing a greater level of automation.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/1de92aac-0f85-485c-85a6-147aff3edd7e.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-continuous-deployment/1de92aac-0f85-485c-85a6-147aff3edd7e.jpg)
 
 As you can see, it's a progression. You can't have Continuous Deployment without first mastering the other two.
 
@@ -99,7 +99,7 @@ When it's all said and done, continuous deployment is the destination. Continuou
 
 It's one thing to know what continuous deployment is, but it's another to truly understand the impact it can have on your business. Bringing this practice into your workflow isn't just a technical tweak; it fundamentally changes how your team delivers value to your customers. It turns the entire development cycle from a series of stressful, high-stakes events into a steady, predictable flow of improvements.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/f40e9d14-4acc-4bfe-b403-80360ead6bc1.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-continuous-deployment/f40e9d14-4acc-4bfe-b403-80360ead6bc1.jpg)
 
 Here's a good way to think about it: traditional deployments are like planning a massive, risky convoy that only hits the road once a month. In contrast, continuous deployment is like having a fleet of small, autonomous delivery drones that send out packages the second they're ready. Each delivery is tiny, fast, and incredibly low-risk.
 
@@ -189,7 +189,7 @@ These are the brains of the operation. They orchestrate the entire workflow, fro
 
 This screenshot from GitHub shows what a workflow looks like in GitHub Actions.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/599f46cc-98f1-4290-8ff6-0f1cd371079c.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-continuous-deployment/599f46cc-98f1-4290-8ff6-0f1cd371079c.jpg)
 
 You can see how the visualization maps out each automated step, from the initial build to the various testing stages. It makes the whole process transparent and easy to track.
 
