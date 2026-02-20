@@ -13,7 +13,7 @@ tags:
   - process-automation
 ---
 
-![Article Header Image](https://cdnimg.co/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/a1c2bcac-04d5-4115-b64f-d401cf40dc26/how-to-automate-workflows-workflow-automation.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-automate-workflows/how-to-automate-workflows-workflow-automation.jpg)
 
 Before you can automate anything, you first have to figure out what's manual, map how it currently works, and then pick the right tools - like RPA or orchestration platforms - to build a better, hands-off system. This is how you turn a time-consuming, manual process into a scalable, automated operation.
 
@@ -80,7 +80,7 @@ Once you have that current-state map, you can start hunting for the perfect auto
 
 This flowchart breaks down the three areas where you'll find the most valuable opportunities.
 
-![Flowchart showing three areas for automation opportunity spotting: bottlenecks, errors, and scaling challenges.](https://cdnimg.co/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/f4f54c71-a388-4cdd-a44d-f61ac82ab543/how-to-automate-workflows-automation-opportunities.jpg)
+![Flowchart showing three areas for automation opportunity spotting: bottlenecks, errors, and scaling challenges.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-automate-workflows/how-to-automate-workflows-automation-opportunities.jpg)
 
 The sweet spot for automation is almost always found in tasks that are both mind-numbingly repetitive and a constant source of operational friction.
 
@@ -103,7 +103,7 @@ This decision is huge. The technology you choose dictates everything - your capa
 
 There's no single "best" tool, just the right tool for the job at hand. The trick is to match the technology to the task's complexity, the systems it needs to touch, and the skills your team already has. In my experience, most enterprise automation projects fall into one of three major tech categories.
 
-![Diagram showing three automation types: RPA, Orchestration, and Serverless, with their respective agents and services.](https://cdnimg.co/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/1b5a25d5-3d22-45b3-8cab-b60c02075057/how-to-automate-workflows-automation-types.jpg)
+![Diagram showing three automation types: RPA, Orchestration, and Serverless, with their respective agents and services.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-automate-workflows/how-to-automate-workflows-automation-types.jpg)
 
 ### Core Automation Technologies
 
@@ -203,7 +203,7 @@ Automated workflows are incredibly powerful, but with great power comes great re
 
 This means shifting your mindset. Every decision, from how you manage credentials to what you log, needs to be looked at through a security lens. This proactive approach ensures your automation efforts are a business accelerant, not a source of unnecessary risk.
 
-![A diagram showing a security shield protecting logs, generating alerts, and managing actions.](https://cdnimg.co/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/28d7501e-e3d7-459c-aaf6-245dc26d0df0/how-to-automate-workflows-security-workflow.jpg)
+![A diagram showing a security shield protecting logs, generating alerts, and managing actions.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-automate-workflows/how-to-automate-workflows-security-workflow.jpg)
 
 ### Locking Down Your Workflows
 
