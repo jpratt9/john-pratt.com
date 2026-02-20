@@ -13,7 +13,7 @@ tags:
   - it-consulting
 ---
 
-![Article Header Image](./cloud-consulting-services-business-strategy.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-consulting-services/cloud-consulting-services-business-strategy.jpg)
 
 Think of cloud consulting services as your expert guide for the journey into complex platforms like AWS, Azure, and Google Cloud. They're the ones who draw the map and provide the technical know-how to turn all that cloud potential into a genuine competitive edge.
 
@@ -47,7 +47,7 @@ Think of it like an expert mechanic's toolkit. Each tool is for a specific job, 
 
 This visual helps frame the journey, showing how a strategic partner acts as the bridge between your business objectives and the raw power of the cloud.
 
-![A diagram illustrating the cloud consulting journey from goals and planning to implementation and cloud.](./cloud-consulting-services-cloud-journey.jpg)
+![A diagram illustrating the cloud consulting journey from goals and planning to implementation and cloud.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-consulting-services/cloud-consulting-services-cloud-journey.jpg)
 
 As the diagram shows, the path from initial goals to a fully realized cloud environment needs a guide. That's where consulting comes in. To get a handle on what's available, it helps to understand what expert [cloud computing management services](https://www.cloudtoggle.com/blog-en/cloud-computing-management-services/) bring to the table right from the start.
 
@@ -109,7 +109,7 @@ It's one thing to understand the technical side of what a cloud consultant does,
 
 This means we have to look past the technical jargon and focus on the tangible benefits. When you bring in an experienced **cloud consulting** partner, you're not just buying a service - you're gaining a set of advantages that can fundamentally change how your business operates.
 
-![Infographic illustrating business outcomes of cloud consulting, including cost optimization, enhanced security, and expert support.](./cloud-consulting-services-business-outcomes.jpg)
+![Infographic illustrating business outcomes of cloud consulting, including cost optimization, enhanced security, and expert support.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-consulting-services/cloud-consulting-services-business-outcomes.jpg)
 
 The demand for these outcomes is skyrocketing. Cloud professional services are at the heart of major digital projects, with the market predicted to jump from **USD 39.19 billion in 2025** to a massive **USD 98.13 billion by 2035**. With over **94%** of businesses now using cloud services in some form, this growth highlights how critical expert guidance has become for turning old, clunky systems into flexible and efficient cloud environments. You can dive deeper into [this explosive industry growth on grandviewresearch.com](https://www.grandviewresearch.com/industry-analysis/cloud-computing-industry).
 
@@ -146,7 +146,7 @@ The true power of cloud consulting isn't in the theory; it's in seeing how it so
 
 This is where the rubber meets the road. Let's look at how a smart cloud approach delivers tangible results across a few key sectors.
 
-![A businessman in a cloud pointing to diverse industries: finance, energy, telecom, and aerospace.](./cloud-consulting-services-cloud-applications.jpg)
+![A businessman in a cloud pointing to diverse industries: finance, energy, telecom, and aerospace.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-consulting-services/cloud-consulting-services-cloud-applications.jpg)
 
 ### Finance: High-Frequency Trading Platforms
 
