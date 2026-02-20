@@ -108,6 +108,9 @@ def fix_image(client, fix_prompt, image_bytes, mime_type, filename):
                 response = client.models.generate_content(
                     model=model, contents=[image_part, prompt], config=config,
                 )
+                if not response.candidates or not response.candidates[0].content.parts:
+                    print(f"    [fix] {filename}: empty response", flush=True)
+                    return None, None
                 for part in response.candidates[0].content.parts:
                     if part.inline_data:
                         print(f"    [fix] {filename}: {len(part.inline_data.data)} bytes", flush=True)
@@ -176,9 +179,8 @@ def main():
     posts = sorted(glob.glob(os.path.join(POSTS_DIR, "*/index.md")))
     print(f"Found {len(posts)} blog posts\n", flush=True)
 
-    total_images = 0
-    total_fixed = 0
-    total_posts = 0
+    # Phase 1: collect all jobs across all matching posts
+    all_jobs = []  # (md_path, slug, post_dir, url)
     total_skipped = 0
 
     for md_path in posts:
@@ -201,7 +203,6 @@ def main():
         if start and (not date or date < start or date > end):
             continue
 
-        # find CDN URLs in the full content
         urls = set(re.findall(cdn_pattern, content))
         if not urls:
             total_skipped += 1
@@ -212,36 +213,50 @@ def main():
         if args.dry_run:
             for url in urls:
                 print(f"    {url}", flush=True)
-            total_posts += 1
-            total_images += len(urls)
             continue
 
-        # process images in parallel
-        url_to_raw = {}
-        with ThreadPoolExecutor(max_workers=args.workers) as executor:
-            futures = [
-                executor.submit(process_single_image, client, fix_prompt, url, slug, post_dir)
-                for url in urls
-            ]
-            results = [f.result() for f in futures]
+        for url in urls:
+            all_jobs.append((md_path, slug, post_dir, url))
 
-        for original_url, filename, raw_url in results:
-            if raw_url:
-                url_to_raw[original_url] = raw_url
-                total_fixed += 1
-            total_images += 1
+    if args.dry_run:
+        print(f"\nDry run: {len(all_jobs)} images across matching posts, Skipped (no CDN): {total_skipped}")
+        return
 
-        if url_to_raw:
-            for original_url, raw_url in url_to_raw.items():
-                content = content.replace(original_url, raw_url)
-            with open(md_path, "w") as f:
-                f.write(content)
-            print(f"  -> Updated {len(url_to_raw)} URL(s) in index.md", flush=True)
-            total_posts += 1
-        else:
-            print(f"  -> No images fixed, markdown unchanged", flush=True)
+    if not all_jobs:
+        print(f"\nNo images to fix. Skipped (no CDN): {total_skipped}")
+        return
 
-    print(f"\nDone! Posts updated: {total_posts}, Images fixed: {total_fixed}/{total_images}, Skipped (no CDN): {total_skipped}")
+    print(f"\nProcessing {len(all_jobs)} images across {len(set(j[0] for j in all_jobs))} posts with {args.workers} workers...\n", flush=True)
+
+    # Phase 2: process all images in one pool
+    with ThreadPoolExecutor(max_workers=args.workers) as executor:
+        futures = [
+            executor.submit(process_single_image, client, fix_prompt, url, slug, post_dir)
+            for md_path, slug, post_dir, url in all_jobs
+        ]
+        results = [f.result() for f in futures]
+
+    # Phase 3: group results by post and update markdown
+    post_results = {}  # md_path -> [(original_url, raw_url)]
+    total_fixed = 0
+    for (md_path, slug, post_dir, url), (original_url, filename, raw_url) in zip(all_jobs, results):
+        if raw_url:
+            post_results.setdefault(md_path, []).append((original_url, raw_url))
+            total_fixed += 1
+
+    total_posts = 0
+    for md_path, replacements in post_results.items():
+        with open(md_path) as f:
+            content = f.read()
+        for original_url, raw_url in replacements:
+            content = content.replace(original_url, raw_url)
+        with open(md_path, "w") as f:
+            f.write(content)
+        slug = os.path.basename(os.path.dirname(md_path))
+        print(f"  [{slug}] Updated {len(replacements)} URL(s)", flush=True)
+        total_posts += 1
+
+    print(f"\nDone! Posts updated: {total_posts}, Images fixed: {total_fixed}/{len(all_jobs)}, Skipped (no CDN): {total_skipped}")
 
 
 if __name__ == "__main__":

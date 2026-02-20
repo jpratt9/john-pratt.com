@@ -13,13 +13,13 @@ tags:
   - sql-tutorial
 ---
 
-![Article Header Image](https://cdnimg.co/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/376c24f6-5cb8-4da2-a886-9c8509a8d79c/learn-sql-for-data-analysis-data-analytics.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/learn-sql-for-data-analysis/learn-sql-for-data-analysis-data-analytics.jpg)
 
 If you're serious about getting into data analysis, your first and most important step is learning SQL. Focus on mastering the core commands - **SELECT**, **JOINs**, and **aggregations** - because these are the tools you'll use every single day to pull, combine, and make sense of raw data straight from the source. It's the universal language for getting the information that drives real business decisions.
 
 ## Why SQL Is the Cornerstone of Data Analysis
 
-![A person uses a magnifying glass to analyze a stack of SQL query bricks, connected to databases and a data visualization dashboard.](https://cdnimg.co/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/08fe39bd-7096-4b05-9c51-ba5c204214f1/learn-sql-for-data-analysis-sql-analysis.jpg)
+![A person uses a magnifying glass to analyze a stack of SQL query bricks, connected to databases and a data visualization dashboard.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/learn-sql-for-data-analysis/learn-sql-for-data-analysis-sql-analysis.jpg)
 
 Let's be blunt: if you want a career in data, you have to know SQL. It's not just another nice-to-have skill on your resume; it's the fundamental language for talking to databases. This one skill is what separates someone who just looks at spreadsheets from someone who can truly dig into the data, ask complex questions, and pull out meaningful insights.
 
@@ -57,7 +57,7 @@ If you're ready to get serious and build a structured learning path, a formal [D
 
 ## Writing Your First Meaningful SQL Queries
 
-![Hand typing on a laptop displaying a SQL query for top products and e-commerce data analysis.](https://cdnimg.co/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/291b1dab-884f-4174-b2bc-e7d4efcb2d90/learn-sql-for-data-analysis-sql-query.jpg)
+![Hand typing on a laptop displaying a SQL query for top products and e-commerce data analysis.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/learn-sql-for-data-analysis/learn-sql-for-data-analysis-sql-query.jpg)
 
 Okay, this is where the rubber meets the road. Reading about SQL is one thing, but you only truly **learn SQL for data analysis** when you start writing queries that pull real answers from data. It's time to move past the definitions and get your hands dirty with the commands you'll be using day in and day out.
 
@@ -239,7 +239,7 @@ As your queries grow more complex, they can quickly become a tangled mess of nes
 
 A CTE lets you define a temporary, named result set that you can then reference later in your main query. It's like breaking a huge problem down into smaller, logical, and more manageable steps. This not only makes your code vastly more readable but also helps you structure your analytical thinking before you even write the final `SELECT` statement.
 
-![A diagram illustrating data linking concepts: Joins combine shared columns into tables, which are summarized into aggregations.](https://cdnimg.co/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/d4d28e5e-b2f6-432c-a99d-81e7a2f41006/learn-sql-for-data-analysis-data-linking.jpg)
+![A diagram illustrating data linking concepts: Joins combine shared columns into tables, which are summarized into aggregations.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/learn-sql-for-data-analysis/learn-sql-for-data-analysis-data-linking.jpg)
 
 This flow - starting with separate tables, using Joins to link them, and then applying aggregations to distill insights - is exactly the kind of process that CTEs help clarify and organize.
 
@@ -268,7 +268,7 @@ The demand for these skills is exploding. The overall data analytics market was 
 
 ## Bringing SQL into Your Broader Data Toolkit
 
-![Diagram showing a central database connected to Python, a code notebook, data visualization, and machine learning.](https://cdnimg.co/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/750bdac9-8ad4-4f8f-923e-969bf17f9855/learn-sql-for-data-analysis-data-workflow.jpg)
+![Diagram showing a central database connected to Python, a code notebook, data visualization, and machine learning.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/learn-sql-for-data-analysis/learn-sql-for-data-analysis-data-workflow.jpg)
 
 SQL is a powerhouse on its own, but it truly shines when you plug it into the rest of your data analysis stack. Mastering SQL isn't just about memorizing syntax; it's about making it a natural part of your entire workflow, from grabbing raw data to building out sophisticated models and dashboards. This is where you level up from simply writing queries to becoming a full-fledged data pro.
 
