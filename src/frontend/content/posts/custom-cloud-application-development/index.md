@@ -13,13 +13,13 @@ tags:
   - cloud-application-security
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/44ba9320-1202-40ad-a143-203013f2a819/custom-cloud-application-development-cloud-services.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/custom-cloud-application-development/custom-cloud-application-development-cloud-services.jpg)
 
 So, you're thinking about building a custom cloud application. This isn't just about moving an existing piece of software online; it's about creating something from scratch, designed to live in the cloud and solve your unique business challenges. When done right, this approach gives you incredible **scalability, flexibility, and performance** because the app's very architecture is aligned with your specific goals.
 
 ## Building a Solid Foundation for Your Cloud App
 
-![Three colleagues in an office collaborate on a project, reviewing charts on a large screen.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/96446626-7216-4782-9704-dc8da0b46aa8/custom-cloud-application-development-team-meeting.jpg)
+![Three colleagues in an office collaborate on a project, reviewing charts on a large screen.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/custom-cloud-application-development/custom-cloud-application-development-team-meeting.jpg)
 
 Before a single line of code gets written, the real work begins. The success of a custom cloud app hinges on the clarity of your vision. This early planning stage is where you move past the buzzwords and get down to the practical work of defining *what* you're building and, more importantly, *why*. It's all about translating business needs into a technical blueprint.
 
@@ -69,7 +69,7 @@ Thinking through these concepts ensures that the application you build is not ju
 
 ## Choosing the Right Cloud-Native Architecture
 
-![Illustration comparing Monolith, Microservices, and Serverless cloud application architectures with icons.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/df5e1d37-dac2-4eb2-b8f7-fa1a660db09f/custom-cloud-application-development-cloud-architectures.jpg)
+![Illustration comparing Monolith, Microservices, and Serverless cloud application architectures with icons.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/custom-cloud-application-development/custom-cloud-application-development-cloud-architectures.jpg)
 
 The architectural decisions you make today will be the blueprint for your application's future. This isn't just theory; it directly impacts how your app scales, what it costs to run, and how easy (or painful) it is to update down the line.
 
@@ -198,7 +198,7 @@ Even the most careful developers can make mistakes or use a third-party library 
 
 The pipeline becomes your automated security guard, checking code before it ever gets a chance to be deployed.
 
-![A clear diagram illustrating the three key steps of a CI/CD pipeline: commit, build, and deploy.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/6a73446c-38e7-4cdd-87dd-233830598986/custom-cloud-application-development-ci-cd-pipeline.jpg)
+![A clear diagram illustrating the three key steps of a CI/CD pipeline: commit, build, and deploy.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/custom-cloud-application-development/custom-cloud-application-development-ci-cd-pipeline.jpg)
 
 Here are the types of automated scans you should integrate:
 * **Static Application Security Testing (SAST):** These tools read your source code like a security expert, looking for common bug patterns like SQL injection or buffer overflows before the code is even run.

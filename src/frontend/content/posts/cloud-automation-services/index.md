@@ -13,7 +13,7 @@ tags:
   - ci/cd-pipeline
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/68c5389a-ba47-475c-942a-8e21e056555e/cloud-automation-services-cloud-capabilities.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-automation-services/cloud-automation-services-cloud-capabilities.jpg)
 
 Think of cloud automation services as the central nervous system for your digital infrastructure - an intelligent system that handles the heavy lifting without needing someone to constantly click buttons. It's less about a single tool and more about a strategic approach that uses powerful software to build, deploy, and manage your cloud environment with incredible **speed, consistency, and precision**.
 
@@ -70,7 +70,7 @@ Think of it like building a high-tech, self-driving car. You need more than just
 
 The image below gives a high-level view of the shift from slow, manual management to a fast, automated approach.
 
-![Comparison of manual versus automated cloud management showing differences in setup time, cost, and scalability.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/a3de204e-61c6-4f32-ae1f-4a63a0be6cdf/cloud-automation-services-cloud-comparison.jpg)
+![Comparison of manual versus automated cloud management showing differences in setup time, cost, and scalability.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-automation-services/cloud-automation-services-cloud-comparison.jpg)
 
 This move from human-driven tasks to machine-driven processes is exactly what these four pillars are designed to achieve.
 
@@ -156,7 +156,7 @@ You can't build a powerful automation engine by just picking a single tool off t
 
 A strong **cloud automation services** architecture works the same way, combining best-in-class tools for each specific job. This creates a cohesive system where different technologies handle distinct parts of the automation lifecycle. From spinning up infrastructure to deploying code and locking down security, each piece has a critical role to play.
 
-![Diagram illustrating cloud automation with Terraform, Kubernetes, CI/CD, and security integration.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/89f393fa-f9c4-4b35-9738-b78f909504f5/cloud-automation-services-devops-workflow.jpg)
+![Diagram illustrating cloud automation with Terraform, Kubernetes, CI/CD, and security integration.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-automation-services/cloud-automation-services-devops-workflow.jpg)
 
 ### Selecting the Core Components of Your Toolchain
 
@@ -185,7 +185,7 @@ Ultimately, you want an architecture that's both modular and extensible. By pick
 
 Jumping into cloud automation can feel overwhelming, but you don't have to boil the ocean. The key is a structured, phased approach that turns a massive project into a series of manageable wins. This roadmap breaks it all down, making sure each step builds on the last to create a stable, scalable, and genuinely efficient environment.
 
-![A four-step process for cloud automation: Assess & Strategy, Build Foundations, Scale Pipelines, Continuous Optimize.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/48b2dcdc-6346-43d3-85a2-f9e408db3279/cloud-automation-services-process-flow.jpg)
+![A four-step process for cloud automation: Assess & Strategy, Build Foundations, Scale Pipelines, Continuous Optimize.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-automation-services/cloud-automation-services-process-flow.jpg)
 
 Following a logical progression like this helps you gain momentum, show value quickly, and build the real-world skills your team needs for long-term success with **cloud automation services**.
 

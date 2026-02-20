@@ -13,7 +13,7 @@ tags:
   - rpa-roi
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-b418fe52-cbdb-49d1-966d-257ba75a8015.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cost-of-rpa/featured-image-b418fe52-cbdb-49d1-966d-257ba75a8015.jpg)
 
 Figuring out the **cost of RPA** is a bit more involved than just checking a software price tag. The real investment is a blend of the software itself, the experts who build the automations, the digital environment they run in, and the care needed to keep them humming along.
 
@@ -34,7 +34,7 @@ To paint a clearer picture, let's break down the main expenses that make up your
 
 This infographic gives a great visual of how these costs typically stack up against each other.
 
-![Infographic showing a pie chart of RPA costs, with slices for Licensing, Development, and Maintenance](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/a32ecd1b-8314-4948-8d04-8b4ddcd995f2.jpg)
+![Infographic showing a pie chart of RPA costs, with slices for Licensing, Development, and Maintenance](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cost-of-rpa/a32ecd1b-8314-4948-8d04-8b4ddcd995f2.jpg)
 
 As you can see, building and maintaining the bots often make up a huge chunk of the total cost. This is exactly why you need to budget for more than just the initial license.
 
@@ -89,7 +89,7 @@ The major players in the space, like [UiPath](https://www.uipath.com/) and [Auto
 
 This screenshot from UiPath's pricing page gives a good look at how these tiered platform plans are structured.
 
-![Screenshot from https://www.uipath.com/product/platform/pricing](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/0887e364-5079-47cc-9d95-324486b1dd68.jpg)
+![Screenshot from https://www.uipath.com/product/platform/pricing](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cost-of-rpa/0887e364-5079-47cc-9d95-324486b1dd68.jpg)
 
 These packages are typically built to serve different needs, from a single developer tinkering with ideas to a massive enterprise deploying automation at scale. While the upfront cost might seem higher, these subscriptions give you the entire toolkit to grow your automation program without getting nickel-and-dimed for every component.
 
@@ -131,7 +131,7 @@ For most companies, a hybrid approach works best. You can kick things off with a
 
 ## Planning for Infrastructure and Long-Term Maintenance
 
-![Engineers reviewing plans for digital infrastructure and maintenance schedules.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/df409c67-6003-41f8-ac1e-ac709af4f2a1.jpg)
+![Engineers reviewing plans for digital infrastructure and maintenance schedules.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cost-of-rpa/df409c67-6003-41f8-ac1e-ac709af4f2a1.jpg)
 
 Getting your first bot up and running isn't the finish line - it's just the start. A huge chunk of the long-term **cost of RPA** comes from what happens *after* deployment. We're talking about the day-to-day operational work that keeps your digital workforce humming along.
 
@@ -175,7 +175,7 @@ This constant care is absolutely critical. Without a solid maintenance plan, the
 
 ## How to Calculate Your Real RPA Return on Investment
 
-![A person at a desk using a calculator with charts and graphs in the background, symbolizing financial analysis and ROI calculation.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/c45957e0-9777-40de-b3e4-b5038904032e.jpg)
+![A person at a desk using a calculator with charts and graphs in the background, symbolizing financial analysis and ROI calculation.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cost-of-rpa/c45957e0-9777-40de-b3e4-b5038904032e.jpg)
 
 Once you've mapped out all the potential expenses, the conversation naturally pivots from cost to value. Justifying the **cost of RPA** isn't about handing stakeholders an expense sheet; it's about building a compelling case that shows exactly what the business gets back. This is where calculating your Return on Investment (ROI) becomes your most important tool.
 

@@ -13,7 +13,7 @@ tags:
   - azure-security
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-943416a1-0d85-448c-87bb-5ad67cb64b0f.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-security-best-practices/featured-image-943416a1-0d85-448c-87bb-5ad67cb64b0f.jpg)
 
 The cloud offers unprecedented agility and scalability, but it also introduces complex security challenges. As organizations migrate more critical workloads to providers like AWS, Azure, and GCP, the attack surface expands, and traditional security perimeters dissolve. This fundamental shift requires a proactive, modern approach to defense that goes beyond legacy, on-premises mindsets.
 
@@ -29,7 +29,7 @@ A foundational cloud security best practice is to move away from the traditional
 
 This approach treats the network as constantly compromised, requiring strict identity verification and device validation for every connection. Continuous monitoring and validation ensure that trust is never implicit and is re-evaluated based on real-time risk signals.
 
-![Zero Trust Architecture](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/80b3e1ab-38d0-4e84-89c2-7f3243bc7d7d.jpg)
+![Zero Trust Architecture](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-security-best-practices/80b3e1ab-38d0-4e84-89c2-7f3243bc7d7d.jpg)
 
 ### Why It's a Top Practice
 
@@ -52,7 +52,7 @@ A core pillar of any effective cloud security strategy is a robust Identity and 
 
 In essence, IAM answers the fundamental questions of **who** can access **what**, **when**, and **why**. It provides a centralized way to manage user permissions, enforce access policies, and audit user activity across complex cloud environments like AWS and Azure.
 
-![Identity and Access Management (IAM)](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/85d6be4a-9280-4fb1-a7fe-381511b8ffa9.jpg)
+![Identity and Access Management (IAM)](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-security-best-practices/85d6be4a-9280-4fb1-a7fe-381511b8ffa9.jpg)
 
 ### Why It's a Top Practice
 
@@ -75,7 +75,7 @@ Another non-negotiable cloud security best practice is the comprehensive use of 
 
 Encryption must be applied to data in two primary states: **at rest** (when stored in databases, object storage, or on virtual disks) and **in transit** (when moving between services, users, and applications over a network). This dual-layer approach protects data throughout its entire lifecycle.
 
-![Data Encryption](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/d968d6e8-24a0-4319-b053-83f95024ec35.jpg)
+![Data Encryption](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-security-best-practices/d968d6e8-24a0-4319-b053-83f95024ec35.jpg)
 
 ### Why It's a Top Practice
 
@@ -98,7 +98,7 @@ Mandating Multi-Factor Authentication (MFA) is a non-negotiable cloud security b
 
 This layered approach is simple but profoundly effective. A compromised password alone is no longer enough to breach your defenses, as the attacker would also need physical access to the user's second factor.
 
-![Multi-Factor Authentication (MFA)](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/6f2aad29-3869-4e22-9e7f-fba05e72a0e1.jpg)
+![Multi-Factor Authentication (MFA)](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-security-best-practices/6f2aad29-3869-4e22-9e7f-fba05e72a0e1.jpg)
 
 ### Why It's a Top Practice
 

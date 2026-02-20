@@ -13,7 +13,7 @@ tags:
   - code-quality
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-a065a56b-79c8-4f6d-9fe9-9a385b8edf05.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/code-review-best-practices/featured-image-a065a56b-79c8-4f6d-9fe9-9a385b8edf05.jpg)
 
 Code review is more than just catching typos; it's a critical process for high-performing engineering teams where quality is enforced, knowledge is shared, and collaborative culture is forged. A poorly executed review process, however, can quickly become a major bottleneck, breeding frustration and letting critical bugs slip through to production. It's the difference between a team that scales gracefully and one that accumulates technical debt.
 
@@ -25,7 +25,7 @@ Readers will learn how to structure reviews for maximum efficiency, from keeping
 
 One of the most impactful code review best practices is to limit the size and scope of each change. This principle, often summarized as "small pull requests," dictates that each submission should address a single, well-defined concern, whether it's a bug fix, a small feature, or a targeted refactor. By keeping changes small, you transform the review process from a daunting archaeological dig into a quick, focused conversation.
 
-![Review Small, Focused Changes](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/7e9aa836-faff-43ed-b60c-e44c480820fb.jpg)
+![Review Small, Focused Changes](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/code-review-best-practices/7e9aa836-faff-43ed-b60c-e44c480820fb.jpg)
 
 When a developer submits a 1,000-line pull request touching a dozen files, reviewers face cognitive overload. It becomes nearly impossible to grasp the full context, identify subtle logic errors, or provide meaningful feedback. Conversely, a change of under 200 lines allows the reviewer to build a complete mental model of the modification, leading to a much more thorough and effective review.
 
@@ -48,7 +48,7 @@ Adopting this practice requires a shift in how features are planned and develope
 
 One of the most effective code review best practices is to offload mundane checks to automated tools. By integrating static analyzers, linters, and auto-formatters into the development workflow, teams can enforce coding standards and catch common errors before a human reviewer even sees the code. This frees up reviewers to concentrate on what they do best: evaluating logic, architecture, and alignment with business requirements.
 
-![Use Automated Tools and Linters](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/73d76823-1182-488a-841c-492cae912921.jpg)
+![Use Automated Tools and Linters](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/code-review-best-practices/73d76823-1182-488a-841c-492cae912921.jpg)
 
 When reviewers are forced to comment on trivial issues like inconsistent spacing, missing semicolons, or incorrect variable naming, they waste valuable time and energy. Automating these style and syntax checks removes the "noise" from the review process, making it faster and less prone to bikeshedding. The conversation shifts from subjective stylistic preferences to objective improvements in code quality and design.
 
@@ -71,7 +71,7 @@ Integrating automation is a gradual process that should be tailored to your team
 
 Effective code reviews are built on the quality of communication. The practice of providing constructive and specific feedback transforms a review from a simple error check into a powerful tool for mentorship and collective code ownership. This means moving beyond just pointing out what is wrong and instead explaining the reasoning behind a suggestion, offering actionable alternatives, and maintaining a respectful, collaborative tone.
 
-![Provide Constructive and Specific Feedback](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/073734da-0cee-4ae5-a476-866b1c71628a.jpg)
+![Provide Constructive and Specific Feedback](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/code-review-best-practices/073734da-0cee-4ae5-a476-866b1c71628a.jpg)
 
 A comment like "This is inefficient" leaves the author guessing. A much better comment is, "Using a `Set` for lookups here instead of an `Array.prototype.includes()` call would improve performance from O(n) to O(1) because..." This specificity not only helps fix the immediate issue but also teaches a valuable performance concept for the future.
 
@@ -94,7 +94,7 @@ Adopting a constructive feedback model requires conscious effort from every team
 
 While consistent code style is important, one of the most critical code review best practices is to prioritize human attention on high-impact areas that automated tools cannot evaluate. This means reviewers should concentrate their efforts on system architecture, business logic, algorithmic efficiency, and potential security vulnerabilities, rather than nitpicking stylistic preferences like comma placement or variable naming conventions. The most valuable feedback addresses the "what" and "why," not just the "how."
 
-![Focus on Architecture and Logic Over Style](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/40018d2f-0aaa-4ed4-9be3-1ea1338e5ebd.jpg)
+![Focus on Architecture and Logic Over Style](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/code-review-best-practices/40018d2f-0aaa-4ed4-9be3-1ea1338e5ebd.jpg)
 
 When reviewers get bogged down in stylistic debates, they divert cognitive energy from where it's needed most. A well-designed system with a minor formatting inconsistency is far better than a poorly architected but perfectly styled one. This approach leverages human expertise for complex problem-solving and delegates repetitive, rule-based tasks to linters and auto-formatters.
 

@@ -13,7 +13,7 @@ tags:
   - software-engineering
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-2743f61b-8407-4db8-a14f-61ef9c51d3b8.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/api-design-best-practices/featured-image-2743f61b-8407-4db8-a14f-61ef9c51d3b8.jpg)
 
 In a world powered by interconnected services, APIs (Application Programming Interfaces) are the critical connective tissue. They are the fundamental building blocks that allow disparate systems to communicate, share data, and unlock new functionalities. However, creating an API that is merely functional is a low bar. A poorly designed API can become a significant bottleneck, leading to frustrated developers, security vulnerabilities, and a brittle, hard-to-maintain system.
 
@@ -56,7 +56,7 @@ A core tenet of effective **api design best practices** is the systematic use of
 
 This practice involves mapping the result of an API operation to the correct status code from the IETF standard. For example, a successful resource creation should return a `201 Created` status, not just a generic `200 OK`. Similarly, a client-side validation error should be met with a `422 Unprocessable Entity`, clearly distinguishing it from a `400 Bad Request` caused by malformed syntax. This level of precision is fundamental to building a robust and developer-friendly interface.
 
-![Proper HTTP Status Code Usage](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/a7186c80-70a6-4b9e-8108-aa79940afaf4.jpg)
+![Proper HTTP Status Code Usage](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/api-design-best-practices/a7186c80-70a6-4b9e-8108-aa79940afaf4.jpg)
 
 ### Why It's a Best Practice
 
@@ -89,7 +89,7 @@ Without versioning, any change, no matter how small, could potentially disrupt s
 
 This infographic outlines the foundational process for implementing a systematic API versioning workflow.
 
-![Infographic showing key data about Comprehensive API Versioning Strategy](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/infographic-d11f9c31-e444-4306-8502-478750a61bd6.jpg)
+![Infographic showing key data about Comprehensive API Versioning Strategy](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/api-design-best-practices/infographic-d11f9c31-e444-4306-8502-478750a61bd6.jpg)
 
 The visual flow highlights that a successful strategy begins with a deliberate choice, is executed with robust tooling like an API gateway, and is completed with clear communication about deprecation.
 
@@ -151,7 +151,7 @@ One of the most critical, yet often overlooked, **api design best practices** is
 
 This practice transforms documentation from a simple reference list into an interactive learning experience. It guides developers from their first API call to complex integration scenarios, drastically reducing the time it takes for them to become productive. Clear, up-to-date, and accessible documentation is the cornerstone of a positive developer experience (DX) and is directly linked to API adoption and success.
 
-![Comprehensive API Documentation](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/0faf6480-648f-4d5b-adf3-62d4da993f97.jpg)
+![Comprehensive API Documentation](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/api-design-best-practices/0faf6480-648f-4d5b-adf3-62d4da993f97.jpg)
 
 ### Why It's a Best Practice
 

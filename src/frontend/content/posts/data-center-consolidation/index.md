@@ -13,7 +13,7 @@ tags:
   - colocation-services
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/55f5a617-8a13-45b6-8b4f-dac5b9e426a4/data-center-consolidation-server-migration.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/data-center-consolidation/data-center-consolidation-server-migration.jpg)
 
 Think of your company's IT infrastructure like a cluttered garage. Over the years, it's gotten filled with all sorts of tools and equipment, some of which you don't even use anymore. **Data center consolidation** is the process of tidying up that garage - getting rid of the redundant junk, organizing what's left, and making the whole space work better for you.
 
@@ -21,7 +21,7 @@ At its core, it's about reducing your IT footprint. That means fewer physical lo
 
 ## Why Data Center Consolidation Is a Strategic Imperative
 
-![Illustration showing old, messy servers consolidating into a modern, efficient data center rack.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/4395452d-9547-46db-8218-12aad88b8097/data-center-consolidation-efficiency.jpg)
+![Illustration showing old, messy servers consolidating into a modern, efficient data center rack.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/data-center-consolidation/data-center-consolidation-efficiency.jpg)
 
 In the past, as businesses grew, so did their IT. This often led to "server sprawl," where organizations ended up with racks of underused servers, each one quietly burning through electricity, cooling, and staff time. This isn't just inefficient; it's a huge drain on the budget and a management nightmare. Consolidation tackles this problem head-on, turning what was once a clunky cost center into a lean, strategic asset for the business.
 
@@ -114,7 +114,7 @@ This strategy gets you out of the business of managing physical infrastructure a
 
 The decision tree below shows how a solid blueprint - built from your desired outcomes, discovery data, and stakeholder input - naturally points you toward the right strategy.
 
-![Flowchart illustrating a consolidation blueprint decision tree process.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/fae14045-13ce-4218-b5fc-01bb0ca91f02/data-center-consolidation-decision-tree.jpg)
+![Flowchart illustrating a consolidation blueprint decision tree process.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/data-center-consolidation/data-center-consolidation-decision-tree.jpg)
 
 As you can see, a clear understanding of your goals and your current inventory is the essential first step before you commit to a specific consolidation path.
 
@@ -143,7 +143,7 @@ Ultimately, the best approach is rarely a single one. Most large-scale consolida
 
 ## Making the Move: A Blueprint for Flawless Migration
 
-![Robotic arm automates IaC and CI/CD deployment to a secure, tested cloud data center server rack.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/5dc718c5-d0e4-4b75-8a1d-5a8706ba5b20/data-center-consolidation-devops-pipeline.jpg)
+![Robotic arm automates IaC and CI/CD deployment to a secure, tested cloud data center server rack.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/data-center-consolidation/data-center-consolidation-devops-pipeline.jpg)
 
 With your strategy and a solid blueprint in hand, it's time to move your **data center consolidation** from the whiteboard into the real world. This is where the rubber meets the road - where meticulous planning translates into technical execution. A successful migration comes down to precision, consistency, and taking human error out of the equation. Automation isn't just a "nice-to-have" here; it's essential.
 

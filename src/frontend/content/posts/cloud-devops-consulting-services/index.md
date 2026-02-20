@@ -13,13 +13,13 @@ tags:
   - kubernetes-consulting
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/5d1c8762-5f59-4111-a6a0-fc0797b846ea/cloud-devops-consulting-services-cloud-devops.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-devops-consulting-services/cloud-devops-consulting-services-cloud-devops.jpg)
 
 Think of Cloud DevOps consulting services as bringing in a seasoned Formula 1 pit crew for your software development team. Their job is to fine-tune your entire process, swapping out clunky manual steps for high-speed, automated workflows. This expert team brings specialized tools and coordination to help you launch new software features faster and more reliably than ever before.
 
 ## Why Cloud DevOps Consulting Is a Business Accelerator
 
-![Four pit crew members service a race car, connected to cloud computing and data icons, illustrating DevOps.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/68a0cc27-02bf-4d58-9489-87cb4e515db3/cloud-devops-consulting-services-cloud-devops.jpg)
+![Four pit crew members service a race car, connected to cloud computing and data icons, illustrating DevOps.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-devops-consulting-services/cloud-devops-consulting-services-cloud-devops.jpg)
 
 In a world where market speed is everything, the old walls between software development (Dev) and IT operations (Ops) just create bottlenecks. Cloud DevOps consulting is all about tearing down those walls. It's a complete shift in culture, tools, and process that champions automation, tight collaboration, and continuous improvement.
 
@@ -46,7 +46,7 @@ This transformation is about more than just implementing new tools; it demands a
 
 ## What You're Really Paying For: A Breakdown of Core DevOps Consulting Services
 
-![A DevOps pipeline visualizing code, packages, a container, Terraform, and Kubernetes integration.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/61c1e9ec-ea73-4114-9d21-a31feb8e85bc/cloud-devops-consulting-services-devops-pipeline.jpg)
+![A DevOps pipeline visualizing code, packages, a container, Terraform, and Kubernetes integration.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-devops-consulting-services/cloud-devops-consulting-services-devops-pipeline.jpg)
 
 When you hire a DevOps consultancy, you're not just buying a bunch of tech tools. You're bringing in experts to build a well-oiled machine that delivers software faster and more reliably. Each service they offer tackles a specific bottleneck that plagues traditional development, turning manual, error-prone tasks into a smooth, automated workflow.
 
@@ -93,7 +93,7 @@ The goal isn't just to move to the cloud - it's to build a more flexible, scalab
 
 ## The Tangible Business Benefits of a DevOps Partnership
 
-![Illustration showing tangible business benefits: increased speeds, faster time to market, and high ROI.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/01e9544f-d5c4-40d2-9081-ecb1b18f48fe/cloud-devops-consulting-services-business-benefits.jpg)
+![Illustration showing tangible business benefits: increased speeds, faster time to market, and high ROI.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-devops-consulting-services/cloud-devops-consulting-services-business-benefits.jpg)
 
 Bringing in a **cloud DevOps consulting service** isn't just about tweaking your tech stack - it's an investment that pays real dividends in agility, efficiency, and your competitive edge. This isn't just another IT expense; it's about fundamentally changing how your business operates for the better.
 
@@ -242,7 +242,7 @@ Here are a few questions you absolutely have to ask:
 
 This infographic lays out the typical journey a good consultant will take you on, from the initial discovery phase all the way to scaling up the new way of working.
 
-![A four-stage Cloud DevOps roadmap showing Discovery, Strategy, Pilot, and Scaling, with associated benefits.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/8a7ff556-0e04-4013-9a20-647bfdf93347/cloud-devops-consulting-services-devops-roadmap.jpg)
+![A four-stage Cloud DevOps roadmap showing Discovery, Strategy, Pilot, and Scaling, with associated benefits.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-devops-consulting-services/cloud-devops-consulting-services-devops-roadmap.jpg)
 
 As you can see, it's a phased approach. Everything is built on a solid foundation of discovery, and you only scale what you've proven works in a pilot.
 

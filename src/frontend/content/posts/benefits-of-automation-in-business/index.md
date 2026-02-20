@@ -13,7 +13,7 @@ tags:
   - cost-reduction
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-14d8e4df-eb30-4b0a-abd5-efd30f0df0b6.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/benefits-of-automation-in-business/featured-image-14d8e4df-eb30-4b0a-abd5-efd30f0df0b6.jpg)
 
 When people talk about the benefits of business automation, three things usually come to mind: getting more done, saving money, and making fewer mistakes. But it's more than just swapping out a person for a piece of software. It's a strategic shift that builds a smarter, more resilient engine for your business, giving you a serious competitive edge.
 
@@ -25,7 +25,7 @@ This evolution is precisely why automation has become so crucial for any company
 
 This infographic lays out the domino effect that automation can trigger.
 
-![Infographic about benefits of automation in business](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/44e10b34-a876-4f39-814a-d3e4ccee02ab.jpg)
+![Infographic about benefits of automation in business](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/benefits-of-automation-in-business/44e10b34-a876-4f39-814a-d3e4ccee02ab.jpg)
 
 As you can see, it all starts with efficiency. That initial boost in speed and output directly fuels cost savings, which in turn frees up resources to focus on improving accuracy and quality across the board.
 
@@ -57,7 +57,7 @@ Each of these advantages represents a significant step forward for any organizat
 
 ## Achieving Exponential Efficiency Gains
 
-![An abstract image representing interconnected data points and process flows, symbolizing hyperautomation.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/a3728ed5-1976-45e7-aac4-422b05338398.jpg)
+![An abstract image representing interconnected data points and process flows, symbolizing hyperautomation.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/benefits-of-automation-in-business/a3728ed5-1976-45e7-aac4-422b05338398.jpg)
 
 Real operational speed isn't about making one person work faster. It's about getting your entire workflow to operate like a single, intelligent unit. This is where automation delivers its most dramatic punch. Think of it as the difference between a talented solo guitarist and a full rock band playing in perfect sync - the combined sound is infinitely more powerful.
 
@@ -81,7 +81,7 @@ This deep integration is at the heart of modern business process automation. Com
 
 ## Unlocking Real-World Cost Reductions
 
-![An image showing a graph with a downward trending line made of coins, symbolizing cost reduction.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/4f1a391b-1959-4634-9198-1d7adb0e4064.jpg)
+![An image showing a graph with a downward trending line made of coins, symbolizing cost reduction.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/benefits-of-automation-in-business/4f1a391b-1959-4634-9198-1d7adb0e4064.jpg)
 
 Let's be honest, the biggest draw for automation has always been its promise to slash costs. But if you're only thinking about reducing payroll, you're missing the bigger picture. It's like seeing only the tip of an iceberg. The real financial wins come from optimizing costs across your *entire* operation, building a much leaner and more resilient company.
 
@@ -139,7 +139,7 @@ Think about what this looks like in practice:
 By letting machines do what they do best, you empower your people to focus on the work that truly drives growth. This shift in how you use your team's talent is one of the most significant, yet underrated, benefits of bringing automation into your business.
 
 ## Building a Foundation for Scalable Growth
-![An image showing a small seedling growing into a large, sturdy tree with interconnected roots, symbolizing scalable growth supported by a strong foundation.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/20c354de-40f7-4ef2-b6d8-e5ea46a668af.jpg)
+![An image showing a small seedling growing into a large, sturdy tree with interconnected roots, symbolizing scalable growth supported by a strong foundation.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/benefits-of-automation-in-business/20c354de-40f7-4ef2-b6d8-e5ea46a668af.jpg)
 
 Sure, the immediate wins in efficiency and cost are great, but the real game-changer with automation is how it sets you up for future growth. I've seen it time and again: manual processes are the single biggest anchor holding a company back from scaling up. As your business gets bigger, those manual tasks don't just add up - they multiply, creating friction that grinds everything to a halt.
 

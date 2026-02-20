@@ -13,7 +13,7 @@ tags:
   - software-pricing
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-4b6a9f71-9c6b-457f-b2f6-4349ca12dab6.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/custom-software-development-cost/featured-image-4b6a9f71-9c6b-457f-b2f6-4349ca12dab6.jpg)
 
 Let's get right to it. You want to know what custom software costs, and the honest answer is: it depends. The price tag can swing from **$10,000** for a simple proof-of-concept to well over **$500,000** for a complex system that runs an entire enterprise.
 
@@ -21,7 +21,7 @@ Think of it like building a house. A small, functional cabin and a sprawling, mu
 
 ## Decoding the Real Cost of Custom Software
 
-![An abstract image representing the process of custom software development with code and design elements.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/77a30428-b413-4556-b784-904dddd8d89f.jpg)
+![An abstract image representing the process of custom software development with code and design elements.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/custom-software-development-cost/77a30428-b413-4556-b784-904dddd8d89f.jpg)
 
 So, where do these numbers come from? Your final budget really boils down to three core factors: the project's **scope**, the **complexity of its features**, and where your **development team** is located. Just like a blueprint dictates a building's size and materials, your project scope defines the boundaries of what your team needs to build. The more features you add - and the more intricate they get - the more time, skill, and money it takes.
 
@@ -93,7 +93,7 @@ Think of building software like producing a movie. You wouldn't try to make a bl
 
 This infographic breaks down how different parts of a project, like its size and complexity, stack up to influence the total cost.
 
-![Infographic about custom software development cost](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/0402899a-3c40-4779-b4e9-245ce8c74a46.jpg)
+![Infographic about custom software development cost](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/custom-software-development-cost/0402899a-3c40-4779-b4e9-245ce8c74a46.jpg)
 
 As you can see, while design definitely plays a part, the project's overall scope and complexity are what really move the needle on the final budget.
 
@@ -219,7 +219,7 @@ For an enterprise system, the budget reflects this immense complexity. A huge ch
 
 ## The Hidden Costs Beyond Initial Development
 
-![An iceberg with the tip visible above water and a much larger, hidden mass below the surface.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/85f66ae6-1310-401b-94c7-f0b17afab95b.jpg)
+![An iceberg with the tip visible above water and a much larger, hidden mass below the surface.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/custom-software-development-cost/85f66ae6-1310-401b-94c7-f0b17afab95b.jpg)
 
 That final invoice for your software build feels like crossing the finish line, but it's really just the end of the first lap. Believing the initial development fee is the total **custom software development cost** is like looking at the tip of an iceberg - most of the investment is actually hidden just beneath the surface. This is why we need to talk about the **Total Cost of Ownership (TCO)**.
 

@@ -13,7 +13,7 @@ tags:
   - scaling-devops
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-c2cac613-6b10-4f61-9393-0a55530234d8.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/devops-team-structure/featured-image-c2cac613-6b10-4f61-9393-0a55530234d8.jpg)
 
 It's a common myth that the best way to do DevOps is to smash your development and operations teams into one big, happy family. While that sounds good on paper, the reality is a bit more complicated. Real-world success often comes from a more thoughtful approach: a **‘Separate but Collaborative'** model.
 
@@ -35,7 +35,7 @@ The collaboration part is what makes it all work, ensuring the code that develop
 
 This infographic breaks down what those collaborative roles can look like, showing how different specialists all contribute to the final product.
 
-![Infographic about devops team structure](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/58d853ee-7e28-4974-a79d-2d56e450c558.jpg)
+![Infographic about devops team structure](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/devops-team-structure/58d853ee-7e28-4974-a79d-2d56e450c558.jpg)
 
 As you can see, development is a big piece of the puzzle, but operations and QA are right there with them - distinct but essential partners in getting the job done.
 
@@ -61,7 +61,7 @@ Choosing the right model isn't about finding a single "best" answer, but about u
 
 ## A Look at Different DevOps Organizational Models
 
-![Several people collaborating at a desk, illustrating different DevOps team models.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/35ad90df-025e-4b18-a395-9dced748f752.jpg)
+![Several people collaborating at a desk, illustrating different DevOps team models.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/devops-team-structure/35ad90df-025e-4b18-a395-9dced748f752.jpg)
 
 When it comes to building a DevOps team, there's no magic blueprint. Picking a structure is less about following a trend and more about designing an organization that fits your company's unique DNA. A speedboat and a cargo ship are both boats, but they're built for entirely different purposes. The same logic applies here - your team's design has to match its purpose, size, and the waters it sails in.
 
@@ -100,7 +100,7 @@ Spotting these anti-patterns is the first real step toward building a **devops t
 
 ## Defining the Essential Roles in Your DevOps Team
 
-![Engineers discussing plans around a whiteboard, illustrating key DevOps team roles.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/ce0ca17d-d0af-4438-80d0-20944c8b6385.jpg)
+![Engineers discussing plans around a whiteboard, illustrating key DevOps team roles.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/devops-team-structure/ce0ca17d-d0af-4438-80d0-20944c8b6385.jpg)
 
 A well-designed **DevOps team structure** is only as good as the people who bring it to life. While job titles can differ from company to company, a few key functions are absolutely essential for a collaborative culture to take root and flourish.
 
@@ -132,7 +132,7 @@ By clearly defining these roles, you create a map of ownership. It ensures that 
 
 So, you've seen the different ways to structure a DevOps team. Now comes the million-dollar question: Which one is right for *you*?
 
-![A person at a crossroads, considering different paths, symbolizing the choice of a DevOps structure.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/21f7dc59-c082-468f-8556-6b0494f5e032.jpg)
+![A person at a crossroads, considering different paths, symbolizing the choice of a DevOps structure.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/devops-team-structure/21f7dc59-c082-468f-8556-6b0494f5e032.jpg)
 
 There's no magic bullet here. Picking the "best" **DevOps team structure** is less about finding a perfect universal model and more about finding the perfect fit for your company's reality. I've seen too many organizations try to copy-and-paste what a big tech giant does, only to end up tangled in a system that just doesn't work for them. Their challenges, resources, and culture are worlds apart from yours.
 

@@ -13,7 +13,7 @@ tags:
   - devsecops-strategy
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/579796a4-20eb-4d0f-880e-a56e04811855/devops-consulting-firm-devops-growth.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/devops-consulting-firm/devops-consulting-firm-devops-growth.jpg)
 
 Is your team struggling to ship software fast without things breaking? It's a classic problem. A DevOps consulting firm is the strategic partner you bring in to fix it. They're not just tool jockeys; they're transformation architects who reshape your culture, fine-tune your processes, and upgrade your technology to create a smooth, reliable, and fast-moving development pipeline.
 
@@ -45,7 +45,7 @@ Their work isn't just about tech; it translates directly into tangible business 
 
 A good partnership always looks at the big picture - how your company's culture, its day-to-day processes, and the technology all fit together.
 
-![A strategic DevOps partnership model showing collaboration, agile automation, and technology infrastructure.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/5cbf84ec-c7f7-4b21-9813-bc80f6e07284/devops-consulting-firm-devops-model.jpg)
+![A strategic DevOps partnership model showing collaboration, agile automation, and technology infrastructure.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/devops-consulting-firm/devops-consulting-firm-devops-model.jpg)
 
 As you can see, a true DevOps partner doesn't just install new tools. They make sure the technology serves the people and the workflows, creating a system that's built to last.
 
@@ -104,7 +104,7 @@ By catching security issues early and often, you drastically reduce risk and avo
 
 Knowing when to call for backup is the first real step toward a breakthrough. While every team hits bumps in the road, some problems aren't just minor speed bumps - they're giant, flashing signs that your entire software delivery process is fundamentally broken. Ignoring them won't make them go away; it just leads to blown deadlines, burnt-out engineers, and watching your competitors pass you by.
 
-![A clipboard checklist featuring icons representing IT issues: slow performance, system failure, security alerts, and unknown risks.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/6586b8ef-8322-40ee-8605-2a185822c0ba/devops-consulting-firm-risk-assessment.jpg)
+![A clipboard checklist featuring icons representing IT issues: slow performance, system failure, security alerts, and unknown risks.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/devops-consulting-firm/devops-consulting-firm-risk-assessment.jpg)
 
 If any of the following situations sound all too familiar, it's time to seriously consider bringing in a **DevOps consulting firm**. These aren't just symptoms of a bad week; they're deep-rooted issues that an experienced consultant can diagnose and fix for good.
 
@@ -231,7 +231,7 @@ Bringing on a DevOps consulting firm is a serious investment. So, how do you pro
 
 The good news is that a solid DevOps transformation leaves behind a clear trail of evidence. Measuring the return on investment (ROI) isn't about guesswork; it's about tracking specific, concrete metrics that connect all those technical improvements directly to business outcomes. Let's break down how to do it.
 
-![A clean digital dashboard displaying a 50% gauge and various DevOps performance indicators.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/610aebb7-51da-49b1-acfa-6e73ad300e8f/devops-consulting-firm-devops-dashboard.jpg)
+![A clean digital dashboard displaying a 50% gauge and various DevOps performance indicators.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/devops-consulting-firm/devops-consulting-firm-devops-dashboard.jpg)
 
 We can essentially split these metrics into two buckets: the high-level business KPIs that your leadership team really cares about, and the nitty-gritty technical metrics that make those results possible.
 

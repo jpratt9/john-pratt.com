@@ -13,7 +13,7 @@ tags:
   - multi-cloud
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/c6261e07-6acd-45b8-a64c-24b84e7c4580/custom-cloud-solutions-cloud-computing.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/custom-cloud-solutions/custom-cloud-solutions-cloud-computing.jpg)
 
 Ever feel like your public cloud platform is a suit that just doesn't quite fit? You're not alone. Many businesses start with off-the-shelf cloud services only to find them restrictive, inefficient, and surprisingly expensive over time. A **custom cloud solution** is the alternative - it's less like renting a generic office and more like designing a high-performance workshop built specifically for your business.
 
@@ -48,7 +48,7 @@ This custom design is how we address your core business drivers. For some, the m
 
 The diagram below shows this progression perfectly, moving from a generic, one-size-fits-all model toward highly specialized solutions built for demanding industries like finance and aerospace.
 
-![A diagram showing a cloud service hierarchy, moving from generic to custom, then branching into finance and AEROROACE services.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/c7b60895-c696-4265-840e-b3b867c54372/custom-cloud-solutions-cloud-hierarchy.jpg)
+![A diagram showing a cloud service hierarchy, moving from generic to custom, then branching into finance and AEROROACE services.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/custom-cloud-solutions/custom-cloud-solutions-cloud-hierarchy.jpg)
 
 The key takeaway here is simple: the more specialized your needs, the more a bespoke architecture becomes a competitive advantage, not just a nice-to-have.
 
@@ -83,7 +83,7 @@ Second is **[Kubernetes](https://kubernetes.io/)**, which acts as the master con
 
 ## The Modern Toolkit for Building Custom Clouds
 
-![A 'Cloud Toolkit' graphic featuring Kubernetes, Terraform, and CI/CD tools on a white table.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/235969d0-ab1c-41b0-95ee-9ee4692577b3/custom-cloud-solutions-cloud-toolkit.jpg)
+![A 'Cloud Toolkit' graphic featuring Kubernetes, Terraform, and CI/CD tools on a white table.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/custom-cloud-solutions/custom-cloud-solutions-cloud-toolkit.jpg)
 
 Building a truly **custom cloud solution** isn't just about picking the right services; it's about having the right tools to put them all together. Think of it like a master carpenter's workshop. You don't just have wood; you have specific saws, sanders, and drills to shape it into something functional and reliable. In the cloud world, our tools are what turn a great architectural plan into a high-performance reality.
 
@@ -184,7 +184,7 @@ Every solid cloud strategy is a constant balancing act. You're always juggling t
 
 This isn't about making sacrifices. It's about making smart, deliberate trade-offs. Instead of settling for a generic setup that's just "okay" at everything, a custom architecture lets you dial in each element precisely. You can optimize all three at once, creating a system that's fast, efficient, and secure because it was designed that way from the start.
 
-![A seesaw balancing performance (lightning bolt) against security (shield), with cost (dollar sign) at the fulcrum, illustrating trade-offs.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/a4cf1cb2-541a-482f-abf5-39b8984885f4/custom-cloud-solutions-trade-offs.jpg)
+![A seesaw balancing performance (lightning bolt) against security (shield), with cost (dollar sign) at the fulcrum, illustrating trade-offs.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/custom-cloud-solutions/custom-cloud-solutions-trade-offs.jpg)
 
 ### Driving Performance Without Overprovisioning
 

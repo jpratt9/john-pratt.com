@@ -13,13 +13,13 @@ tags:
   - it-consulting
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/58c14f8a-20a1-4fe9-afc0-2a260f12fc0b/cloud-migration-service-provider-cloud-migration.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-migration-service-provider/cloud-migration-service-provider-cloud-migration.jpg)
 
 Thinking about moving to the cloud? It's a huge step, and not just a simple tech upgrade. It's a real shift in how your business operates. To get it right, you need more than just a plan; you need a partner. A **cloud migration service provider** is that expert guide who can steer you through the complexities of moving from your own servers to a fully optimized cloud setup. They're there to make sure the transition is smooth, successful, and doesn't break the bank.
 
 ## Why a Cloud Migration Partner Is Your Most Critical Asset
 
-![Business people journey on clouds towards a city, symbolizing progress, time management, and financial success.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/b6274e32-a900-4577-9977-b59588ae77e0/cloud-migration-service-provider-business-journey.jpg)
+![Business people journey on clouds towards a city, symbolizing progress, time management, and financial success.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-migration-service-provider/cloud-migration-service-provider-business-journey.jpg)
 
 Trying to move to the cloud on your own is like setting off on a cross-country road trip with a hand-drawn map. You know where you want to go, but you have no idea about the roadblocks, detours, or hidden dangers along the way. You're almost guaranteed to hit unexpected costs, security holes, and frustrating downtime.
 
@@ -104,7 +104,7 @@ Ultimately, there's no single "best" strategy. The right choice depends entirely
 
 ## What to Expect From an Elite Migration Provider
 
-![Circular diagram showing cloud migration process: Assessment, Optimization, Execution, and Planning steps.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/520e9a10-bd11-4856-9774-9d8ad87aca5b/cloud-migration-service-provider-migration-process.jpg)
+![Circular diagram showing cloud migration process: Assessment, Optimization, Execution, and Planning steps.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-migration-service-provider/cloud-migration-service-provider-migration-process.jpg)
 
 A top-tier cloud migration service provider does far more than just move your data from Point A to Point B. Think of them less as a moving company and more as a strategic partner who guides you through the entire journey, ensuring you not only arrive safely but thrive in your new environment.
 
@@ -183,7 +183,7 @@ If you're ready to start building your strategy, our team offers in-depth [cloud
 
 ## Common Migration Pitfalls and How Experts Avoid Them
 
-![Illustrates common data migration pitfalls like complexity and data loss, contrasted with expert cloud solutions for security and growth.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/44340b62-b94e-40a1-911e-18e64278de8a/cloud-migration-service-provider-cloud-migration.jpg)
+![Illustrates common data migration pitfalls like complexity and data loss, contrasted with expert cloud solutions for security and growth.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-migration-service-provider/cloud-migration-service-provider-cloud-migration.jpg)
 
 Knowing what can go wrong is your best defense. A cloud migration is a massive project, and without a seasoned guide, it's easy to hit expensive and frustrating roadblocks. These common traps can blow up your timeline, drain your budget, and even put your data at risk.
 
@@ -276,7 +276,7 @@ Choosing a partner for your cloud migration naturally brings up a lot of questio
 
 The image below lays out the typical phases you can expect in a migration project. It's a journey, not a single leap.
 
-![Cloud migration timeline showing four phases: Assess, Pilot, Execute, and Optimize with key milestones.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/84950aa2-02f2-4572-82df-5fca448b6924/cloud-migration-service-provider-cloud-timeline.jpg)
+![Cloud migration timeline showing four phases: Assess, Pilot, Execute, and Optimize with key milestones.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-migration-service-provider/cloud-migration-service-provider-cloud-timeline.jpg)
 
 As you can see, a successful migration is a structured process. Each step builds on the last, moving you from initial discovery to a fully optimized cloud environment.
 

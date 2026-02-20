@@ -13,7 +13,7 @@ tags:
   - tech-stack
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/253e80ab-9c37-46c4-b92c-22548ab2de98/custom-software-development-solutions-tailored-solution.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/custom-software-development-solutions/custom-software-development-solutions-tailored-solution.jpg)
 
 So, what exactly is a custom software development solution? In simple terms, it's software that's designed and built from scratch for one specific company or user. It's not a one-size-fits-all product you buy off the shelf; it's a unique application engineered to solve your exact business challenges.
 
@@ -54,7 +54,7 @@ Building a custom software solution is a lot like commissioning a custom-built c
 
 Before the first line of code is ever written, the journey starts with a fundamental choice: build or buy?
 
-![Process flow diagram showing problem to off-the-shelf and custom software development solutions.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/ce347870-c496-43cf-8094-bef2408fe75c/custom-software-development-solutions-solution-flow.jpg)
+![Process flow diagram showing problem to off-the-shelf and custom software development solutions.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/custom-software-development-solutions/custom-software-development-solutions-solution-flow.jpg)
 
 As you can see, the path to a custom solution begins when you realize that an off-the-shelf product just won't cut it for your specific business problem. Once that decision is made, the real building process begins.
 
@@ -96,7 +96,7 @@ But launch day is just the beginning. Any worthwhile custom software solution ne
 
 ## The Technology Powering Your Custom Solution
 
-![A person interacts with a server rack, cloud, and data flows in a digital computing concept.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/b1e736b1-91e5-4c24-a523-7437b0d8880a/custom-software-development-solutions-cloud-computing.jpg)
+![A person interacts with a server rack, cloud, and data flows in a digital computing concept.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/custom-software-development-solutions/custom-software-development-solutions-cloud-computing.jpg)
 
 Behind every powerful piece of custom software, there's a carefully chosen mix of technologies known as a **"tech stack."** This isn't just about a programming language; it's the entire ecosystem of tools and platforms working in concert to bring your application to life.
 
@@ -136,7 +136,7 @@ An AI-powered solution doesn't just store data; it analyzes it. It can predict c
 
 ## Weaving Security and Compliance into Your Software's DNA
 
-![A blue shield with a white padlock and a checklist document, representing data security and compliance.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/53a923c4-8f79-4d3a-9bbe-0b2a8f078adc/custom-software-development-solutions-data-security.jpg)
+![A blue shield with a white padlock and a checklist document, representing data security and compliance.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/custom-software-development-solutions/custom-software-development-solutions-data-security.jpg)
 
 You can't just bolt on security at the end of a project. It has to be part of the blueprint from day one. Trying to add security measures after the fact is like building a house and only checking the foundation's integrity after the roof is on - it's incredibly risky and expensive to fix.
 

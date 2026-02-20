@@ -13,7 +13,7 @@ tags:
   - devops
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-70954144-1af5-4e80-b69b-a64eb8f0ff49.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/agile-development-best-practices/featured-image-70954144-1af5-4e80-b69b-a64eb8f0ff49.jpg)
 
 In the competitive landscape of software development, simply "doing agile" isn't a guarantee of success. Many teams adopt the ceremonies, like stand-ups and sprints, but fail to see significant improvements in their workflow or output. The difference between a team that struggles and one that excels often comes down to the disciplined application of core principles. True agility is achieved not by just following a process, but by deeply integrating proven **agile development best practices** that foster collaboration, enhance quality, and accelerate value delivery.
 
@@ -27,7 +27,7 @@ A cornerstone of agile development best practices, the daily stand-up, or daily 
 
 During the meeting, each team member answers three core questions: What did I complete yesterday? What will I work on today? What obstacles are in my way? This structured format ensures the conversation remains focused and efficient, fostering transparency and collective ownership of the project's progress.
 
-![Daily Stand-ups (Daily Scrums)](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/6a129b38-d780-439e-9fcb-c39fecb68489.jpg)
+![Daily Stand-ups (Daily Scrums)](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/agile-development-best-practices/6a129b38-d780-439e-9fcb-c39fecb68489.jpg)
 
 ### Why It's a Best Practice
 
@@ -49,7 +49,7 @@ Sprint planning is the collaborative event that kicks off a sprint. The entire d
 
 This structured approach prevents aimless discussions and forces prioritization, which is essential for agile development best practices. By setting a clear plan and scope, the team is empowered to work autonomously toward a well-defined objective, minimizing distractions and maximizing productivity.
 
-![Sprint Planning and Time-boxing](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/ecfbf5f9-9fed-4a90-95cc-e9545cde6947.jpg)
+![Sprint Planning and Time-boxing](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/agile-development-best-practices/ecfbf5f9-9fed-4a90-95cc-e9545cde6947.jpg)
 
 ### Why It's a Best Practice
 
@@ -71,7 +71,7 @@ A foundational element of modern agile development best practices, Continuous In
 
 This pipeline approach minimizes manual intervention, reducing the risk of human error and creating a consistent, repeatable deployment process. By automating the build-test-deploy cycle, teams can release new features and fixes to users faster, gaining a significant competitive advantage.
 
-![Continuous Integration and Continuous Deployment (CI/CD)](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/fa6faa9c-a591-4a20-bee7-644b2340023c.jpg)
+![Continuous Integration and Continuous Deployment (CI/CD)](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/agile-development-best-practices/fa6faa9c-a591-4a20-bee7-644b2340023c.jpg)
 
 ### Why It's a Best Practice
 
@@ -91,7 +91,7 @@ To successfully adopt CI/CD, focus on building a robust and trustworthy pipeline
 
 A foundational agile development best practice, user story writing is the art of capturing software requirements from the perspective of an end-user. These concise, plain-language descriptions follow a simple template: "As a [type of user], I want [some goal] so that [some reason]." This approach shifts the focus from technical specifications to user value, ensuring the team builds features that solve real problems. Effective backlog management is the continuous process of prioritizing, refining, and maintaining these stories to create a clear roadmap for development.
 
-![User Story Writing and Backlog Management](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/81c71b8e-976b-45bc-bfbf-6db9bca52743.jpg)
+![User Story Writing and Backlog Management](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/agile-development-best-practices/81c71b8e-976b-45bc-bfbf-6db9bca52743.jpg)
 
 ### Why It's a Best Practice
 

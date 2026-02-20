@@ -13,7 +13,7 @@ tags:
   - service-automation
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-616f6827-7dd2-4368-9d05-59f19248e4c4.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/customer-satisfaction-improvement/featured-image-616f6827-7dd2-4368-9d05-59f19248e4c4.jpg)
 
 Keeping customers happy feels like an uphill battle these days, and it's not just a feeling. The hard truth is that **customer satisfaction improvement** has become a do-or-die strategy. In a world where customer expectations are skyrocketing and patience is at an all-time low, simply "meeting expectations" is the new "failing."
 
@@ -35,7 +35,7 @@ This is where your tech stack becomes your greatest asset. We're going to move p
 
 This chart drives home what customers are really asking for.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/1f6eacaf-2d3d-4ed0-a307-b80f92313799.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/customer-satisfaction-improvement/1f6eacaf-2d3d-4ed0-a307-b80f92313799.jpg)
 
 It's clear that speed isn't just a nice-to-have; it accounts for half of what customers value most. They want their problems solved, and they want it done now.
 
@@ -57,7 +57,7 @@ This table lays out the core framework. Now, let's dive into the practical steps
 
 ## Unify Your Support with Cloud Technology
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/039e1a18-229f-43ef-bb9b-f20bd67f309d.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/customer-satisfaction-improvement/039e1a18-229f-43ef-bb9b-f20bd67f309d.jpg)
 
 There's nothing that kills a customer's goodwill faster than making them repeat their story. When your marketing, sales, and support teams are all working from different playbooks, it's the customer who ultimately suffers. This disjointed mess is a massive roadblock to **customer satisfaction improvement** because it makes your brand feel like a collection of strangers, not a unified team.
 
@@ -96,7 +96,7 @@ This is the tangible result of a smart cloud strategy. You're not just answering
 
 ## Use Intelligent Automation to Elevate Your Team
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/406ecb11-e4d8-4aa0-aa04-ffd66b489be8.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/customer-satisfaction-improvement/406ecb11-e4d8-4aa0-aa04-ffd66b489be8.jpg)
 
 Let's be clear: automation in customer service isn't about replacing your best people. It's about letting them do what they do best. The biggest killer of time and morale for any support team is that constant flood of repetitive, simple questions.
 
@@ -108,7 +108,7 @@ The easiest and often most effective place to start is with a chatbot. And no, I
 
 This screenshot from [Wikipedia's chatbot page](https://en.wikipedia.org/wiki/Chatbot) shows a pretty standard interaction.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/406ecb11-e4d8-4aa0-aa04-ffd66b489be8.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/customer-satisfaction-improvement/406ecb11-e4d8-4aa0-aa04-ffd66b489be8.jpg)
 
 You can see how the bot guides the conversation, offering clear options to get things done quickly. It's efficient for everyone.
 
@@ -181,7 +181,7 @@ Imagine your sentiment analysis tool detects a sudden wave of negative language 
 
 ## Measure What Matters in Your CX Strategy
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/609cd39e-5329-48ab-ab40-c661f95bd469.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/customer-satisfaction-improvement/609cd39e-5329-48ab-ab40-c661f95bd469.jpg)
 
 Let's be honest: if you aren't measuring your customer experience, you're just guessing. A real strategy for **customer satisfaction improvement** is built on data - hard numbers that tell you what's working, what's broken, and where to put your money next.
 

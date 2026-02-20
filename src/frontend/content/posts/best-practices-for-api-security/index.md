@@ -13,7 +13,7 @@ tags:
   - devsecops
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-ad9418f1-6d1a-46ef-b4d0-1af00f990f2c.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/best-practices-for-api-security/featured-image-ad9418f1-6d1a-46ef-b4d0-1af00f990f2c.jpg)
 
 In today's interconnected ecosystem, APIs are the foundational pillars of modern applications, facilitating critical data exchange between services, platforms, and devices. This central role, however, also makes them a prime target for malicious attacks. As organizations increasingly rely on APIs to power innovation, understanding and implementing robust security measures is no longer optional. It's essential for protecting sensitive data, maintaining user trust, and ensuring business continuity.
 
@@ -33,7 +33,7 @@ Each point is designed to be a practical, standalone recommendation you can inte
 
 One of the most fundamental **best practices for API security** is implementing a robust authentication and authorization mechanism. The combination of OAuth 2.0 as an authorization framework and JSON Web Tokens (JWT) for representing claims provides a powerful, industry-standard solution for securing modern APIs. OAuth 2.0 allows applications to obtain limited, delegated access to user resources without ever exposing the user's credentials.
 
-![OAuth 2.0 and JWT Token-Based Authentication](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/23c688ee-8399-4777-b2aa-a0bd3aaf61f1.jpg)
+![OAuth 2.0 and JWT Token-Based Authentication](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/best-practices-for-api-security/23c688ee-8399-4777-b2aa-a0bd3aaf61f1.jpg)
 
 When a client successfully authenticates, the authorization server issues a JWT access token. This token, a compact and self-contained JSON object, is digitally signed and contains claims (like user ID and permissions) that the API can verify on every request. This stateless approach eliminates the need for servers to maintain session state, making the system highly scalable and efficient.
 
@@ -54,7 +54,7 @@ To effectively implement this security measure, follow these critical guidelines
 
 A critical component of a multi-layered defense strategy, and a core tenet of **best practices for API security**, is the implementation of rate limiting and throttling. This technique controls the frequency of requests a client can make to an API within a specific time window. By setting these boundaries, you protect your backend services from various threats, including brute-force attacks on credentials, Denial-of-Service (DoS) attacks, and general resource exhaustion caused by misbehaving scripts or abusive users.
 
-![API Rate Limiting and Throttling](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/a7703152-c4d7-4739-893f-eb8c140da800.jpg)
+![API Rate Limiting and Throttling](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/best-practices-for-api-security/a7703152-c4d7-4739-893f-eb8c140da800.jpg)
 
 Effective rate limiting ensures fair usage and maintains a high quality of service for all legitimate clients by preventing any single user from monopolizing system resources. Major platforms like the GitHub API, which allows 5,000 requests per hour for authenticated users, and the Stripe API, which limits to 100 requests per second in live mode, demonstrate the importance of this practice in maintaining API stability and reliability.
 
@@ -75,7 +75,7 @@ To apply this security measure correctly, consider these essential guidelines:
 
 Enforcing encryption for all data in transit is a non-negotiable component of modern API security. One of the most critical **best practices for API security** is the universal implementation of HTTPS (HTTP Secure), which uses Transport Layer Security (TLS) to create a secure, encrypted channel between the client and the API server. This prevents attackers from intercepting, reading, or modifying data as it travels across the network.
 
-![HTTPS/TLS Encryption and Certificate Management](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/59f67333-0b87-4e06-87e5-62498db7b4cb.jpg)
+![HTTPS/TLS Encryption and Certificate Management](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/best-practices-for-api-security/59f67333-0b87-4e06-87e5-62498db7b4cb.jpg)
 
 Without TLS, sensitive information such as API keys, authentication tokens (like JWTs), and personal user data is sent in plain text, making it vulnerable to man-in-the-middle (MITM) attacks. Proper TLS implementation, managed through SSL/TLS certificates, ensures data confidentiality, integrity, and server authenticity, building a foundational layer of trust for all API interactions. Major platforms like Google APIs and AWS now require HTTPS for all communications.
 
@@ -96,7 +96,7 @@ To effectively secure your data in transit, adhere to these essential guidelines
 
 A critical layer in any defense-in-depth strategy, and a cornerstone of the **best practices for API security**, is rigorous input validation and sanitization. This practice involves strictly defining and enforcing rules for all data the API receives before it is processed or stored. Input validation confirms that data conforms to expected formats, types, and lengths, while sanitization cleanses it of any potentially malicious characters or code fragments.
 
-![Input Validation and Sanitization](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/850cf43d-6d38-445f-bc1c-39ea010f4470.jpg)
+![Input Validation and Sanitization](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/best-practices-for-api-security/850cf43d-6d38-445f-bc1c-39ea010f4470.jpg)
 
 By treating all incoming data as untrusted, this approach serves as a primary defense against a wide array of injection attacks, including SQL injection, Cross-Site Scripting (XSS), and command injection. Without proper validation, an attacker could submit malicious payloads disguised as legitimate data, potentially leading to data breaches, system compromise, or denial of service. It is a non-negotiable step for building secure and resilient APIs.
 

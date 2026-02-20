@@ -13,7 +13,7 @@ tags:
   - cloud-native-ci-cd
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/29b0a70b-2212-4bb8-981e-bf676e14e947/ci-cd-pipeline-best-practices-delivery.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/ci-cd-pipeline-best-practices-2/ci-cd-pipeline-best-practices-delivery.jpg)
 
 In a competitive market, the speed and reliability of software delivery are foundational to success. A well-architected Continuous Integration and Continuous Deployment (CI/CD) pipeline is the engine that drives this modern delivery lifecycle, automating the complex path from a developer's code commit to a live production environment. However, simply having a pipeline is not enough to guarantee efficiency or stability. To truly unlock its potential, engineering teams must implement and consistently refine a set of proven **CI/CD pipeline best practices** designed for security, stability, and scalability.
 
@@ -25,7 +25,7 @@ By implementing these strategies, you create a more resilient, transparent, and 
 
 One of the most critical CI/CD pipeline best practices is integrating comprehensive automated testing at every stage of the development lifecycle. This approach transforms testing from a manual, time-consuming phase into an automated, continuous quality gate. By embedding unit, integration, and end-to-end (E2E) tests directly into the pipeline, you create a robust safety net that catches bugs early, ensures code quality, and prevents defective builds from ever reaching production.
 
-![A diagram illustrating software testing stages: unit tests, integration testing catching bugs, and end-to-end testing.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/2f586bed-f393-4b97-ae55-b474dca9c96f/ci-cd-pipeline-best-practices-software-testing.jpg)
+![A diagram illustrating software testing stages: unit tests, integration testing catching bugs, and end-to-end testing.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/ci-cd-pipeline-best-practices-2/ci-cd-pipeline-best-practices-software-testing.jpg)
 
 This practice is the bedrock of confident, high-velocity deployments. Tech giants like Google, which runs billions of tests daily, and Amazon, which deploys thousands of times a day, rely on this level of automation to maintain stability at scale. The goal is to make testing a non-negotiable step for every single code commit, effectively shifting quality assurance left.
 
@@ -48,7 +48,7 @@ To successfully implement this practice, focus on a layered testing strategy.
 
 A cornerstone of modern CI/CD pipeline best practices is managing your infrastructure through code. Infrastructure as Code (IaC) is the practice of provisioning and managing infrastructure, like servers, networks, and databases, using version-controlled, machine-readable definition files. This eliminates manual configuration, ensuring that environments are reproducible, auditable, and scalable across development, staging, and production.
 
-![Diagram illustrating Infrastructure as Code workflow from code to version control to secure cloud deployment.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/03fe6187-e461-4425-a744-b37e6531c49b/ci-cd-pipeline-best-practices-iac-workflow.jpg)
+![Diagram illustrating Infrastructure as Code workflow from code to version control to secure cloud deployment.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/ci-cd-pipeline-best-practices-2/ci-cd-pipeline-best-practices-iac-workflow.jpg)
 
 By treating infrastructure definitions as you would application code, you can version, review, and test them, effectively preventing configuration drift and accelerating environment setup. Tech giants like Netflix leverage IaC to manage thousands of AWS resources dynamically, while LinkedIn uses it to maintain consistency across its complex multi-cloud deployments. The goal is to make infrastructure provisioning a reliable, automated, and integral part of your CI/CD workflow.
 
@@ -201,7 +201,7 @@ To effectively weave observability into your pipeline, focus on creating a unifi
 
 A truly modern CI/CD pipeline best practice involves decoupling code deployment from feature release using feature flags and progressive rollouts. This strategy allows teams to merge new code into the main branch and deploy it to production environments without immediately exposing it to users. By wrapping new functionality in a conditional block (a feature flag), you gain precise control over who sees what and when, effectively creating a remote control for your application's features.
 
-![A diagram illustrating the concept of feature flags, showing a toggle switch that either enables or disables a new feature for different user segments.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/d5e7c045-51a7-4502-84df-e536bc523b91/ci-cd-pipeline-best-practices-observability.jpg)
+![A diagram illustrating the concept of feature flags, showing a toggle switch that either enables or disables a new feature for different user segments.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/ci-cd-pipeline-best-practices-2/ci-cd-pipeline-best-practices-observability.jpg)
 
 This approach is foundational for high-velocity, low-risk deployments. Tech giants like Meta and Slack rely on feature flags to test new functionality with small internal groups or specific user segments before a full-scale launch. This practice enables canary deployments and A/B testing directly within the pipeline, minimizing the blast radius of any potential issues and allowing for data-driven release decisions.
 

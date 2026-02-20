@@ -13,7 +13,7 @@ tags:
   - CI/CD-services
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/bb059019-c4dd-4abb-88c0-6face7b69e33/devops-consulting-company-business-meeting.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/devops-consulting-company/devops-consulting-company-business-meeting.jpg)
 
 Think of a DevOps consulting company as a strategic partner, not just a technical vendor. Their real job is to untangle the knots in your software development and IT operations, merging them into a single, efficient process that gets your products to market faster and keeps them running smoothly.
 
@@ -33,7 +33,7 @@ A consultant's playbook is all about injecting efficiency into every part of you
 
 This isn't just about tech for tech's sake. Each service is a direct line to a business goal.
 
-![Diagram illustrating DevOps outcomes, showing faster releases, resilient systems, and lower costs for business goals.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/289c0e87-1d68-42cb-a14d-4443619a0edb/devops-consulting-company-outcomes.jpg)
+![Diagram illustrating DevOps outcomes, showing faster releases, resilient systems, and lower costs for business goals.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/devops-consulting-company/devops-consulting-company-outcomes.jpg)
 
 As you can see, the technical work - the automation, the infrastructure, the security - is all in service of achieving faster releases, more resilient systems, and lower operational costs.
 
@@ -63,7 +63,7 @@ The market for this kind of expertise is white-hot right now. The global DevOps 
 
 Your evaluation has to start with their hands-on experience across the big three cloud platforms: [AWS](https://aws.amazon.com/), [Azure](https://azure.microsoft.com/), and [GCP](https://cloud.google.com/). A genuinely capable partner won't just be “familiar” with these environments. They'll have a portfolio of complex, challenging projects to back up their claims.
 
-![A clipboard with a 'DevOps Partner Vetting' checklist, showing various partner names and their vetting status.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/a00728db-31a9-43de-8c48-ed244b673de4/devops-consulting-company-devops-vetting.jpg)
+![A clipboard with a 'DevOps Partner Vetting' checklist, showing various partner names and their vetting status.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/devops-consulting-company/devops-consulting-company-devops-vetting.jpg)
 
 Think of this checklist as your framework for making an evidence-based decision, so you're not just relying on their word alone.
 
@@ -101,7 +101,7 @@ To find out if a DevOps consulting firm has the deep-seated experience your proj
 
 Let's ditch the trivia and get into the real-world situations they've had to navigate.
 
-![Two colleagues work on laptops, discussing a production incident in a modern office.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/5a05505e-d4a1-44b7-b463-58ac806248f4/devops-consulting-company-production-incident.jpg)
+![Two colleagues work on laptops, discussing a production incident in a modern office.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/devops-consulting-company/devops-consulting-company-production-incident.jpg)
 
 ### Uncovering Technical Problem-Solving Skills
 
@@ -161,7 +161,7 @@ On the other hand, team extensions and retainers usually operate on **hourly or 
 
 A partnership with a DevOps consultant should deliver real, measurable results - not just a laundry list of completed tasks. Vague promises of "improvement" aren't good enough. You need to see tangible data proving that you're getting the value you're paying for. This is about moving past gut feelings and focusing on key performance indicators (KPIs) that truly reflect the health of your software delivery process.
 
-![A digital dashboard displaying various DevOps metrics, including deployment frequency and failure rates.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/d5127bb0-7a6a-4858-9ed3-4b32b5dc0b88/devops-consulting-company-dashboard.jpg)
+![A digital dashboard displaying various DevOps metrics, including deployment frequency and failure rates.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/devops-consulting-company/devops-consulting-company-dashboard.jpg)
 
 The gold standard for measuring engineering performance comes from the DevOps Research and Assessment (DORA) team. Any consultant worth their salt should be fluent in these metrics and have a clear strategy for improving them. They offer an unbiased, data-driven view of your team's speed and stability.
 

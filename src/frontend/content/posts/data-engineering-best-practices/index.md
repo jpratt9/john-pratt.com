@@ -13,7 +13,7 @@ tags:
   - DevOps-for-data
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-e800842b-272c-4999-bed2-e887661db3af.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/data-engineering-best-practices/featured-image-e800842b-272c-4999-bed2-e887661db3af.jpg)
 
 In a world driven by data, the difference between market leaders and followers often lies in how they manage their most valuable asset. Effective data engineering isn't just about moving data from A to B; it's the bedrock of reliable analytics, powerful machine learning models, and insightful business intelligence. But building robust, scalable, and secure data systems requires more than just tools, it demands a commitment to proven principles and a disciplined approach. Without this foundation, data platforms become brittle, expensive, and untrustworthy, undermining the very initiatives they were built to support.
 
@@ -48,7 +48,7 @@ Automating your workflows reduces the operational burden on your team, improves 
 
 Untrustworthy data is worse than no data at all, as it leads to flawed analysis, poor business decisions, and a loss of confidence in data systems. A cornerstone of modern data engineering best practices is establishing systematic processes for data quality and validation. This involves implementing automated checks at every critical stage of the data pipeline to ensure data is accurate, complete, consistent, and timely, preventing bad data from ever reaching downstream consumers.
 
-![Data Quality and Validation](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/ca214e2b-f570-40b9-996c-17bae5adf5f1.jpg)
+![Data Quality and Validation](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/data-engineering-best-practices/ca214e2b-f570-40b9-996c-17bae5adf5f1.jpg)
 
 Frameworks like Great Expectations or Soda allow you to define data quality rules as code, which can be versioned and integrated directly into your CI/CD and orchestration workflows. For example, a pipeline moving financial transaction data could automatically validate that a `transaction_amount` column is never null, always positive, and falls within a statistically normal range. If a batch of data fails these checks, the pipeline can be configured to halt, quarantine the problematic data, and send an alert, ensuring data integrity is maintained proactively.
 
@@ -67,7 +67,7 @@ Implementing a proactive data quality strategy builds trust in your data platfor
 
 A data storage architecture that cannot handle increasing data volumes and query complexity will inevitably become a performance bottleneck and a cost sink. Designing a scalable storage system is a fundamental data engineering best practice that involves selecting the right technologies and structuring data for long-term efficiency. This means choosing between data lakes for raw, unstructured data (like Amazon S3 or Google Cloud Storage), data warehouses for structured, query-optimized data (like Snowflake or BigQuery), and hybrid models like the data lakehouse.
 
-![Scalable Data Storage Architecture](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/b09103b7-b9f7-4629-b973-45efc04c844f.jpg)
+![Scalable Data Storage Architecture](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/data-engineering-best-practices/b09103b7-b9f7-4629-b973-45efc04c844f.jpg)
 
 This strategic approach allows organizations to manage petabyte-scale datasets effectively. For instance, Netflix leverages Amazon S3 as its central data lake, storing vast amounts of raw data in columnar formats like Parquet, which drastically improves analytical query performance for its recommendation engines. Similarly, platforms like Databricks are built on the concept of the data lakehouse, combining the low-cost, flexible storage of a data lake with the data management and transactional features of a data warehouse.
 
@@ -151,7 +151,7 @@ By embedding testing throughout the development lifecycle, you significantly red
 
 A data pipeline that runs without any oversight is a black box waiting to fail. Implementing comprehensive monitoring, logging, and observability is one of the most essential data engineering best practices for maintaining data reliability and trust. This involves instrumenting every component of your data infrastructure to emit logs, metrics, and traces that provide real-time insight into pipeline health, performance, and data quality. It's the only way to proactively detect and resolve issues before they impact downstream analytics or business operations.
 
-![Monitoring, Logging, and Observability](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/85e54dcb-5023-4f3d-a2c5-4dedcdd02f2c.jpg)
+![Monitoring, Logging, and Observability](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/data-engineering-best-practices/85e54dcb-5023-4f3d-a2c5-4dedcdd02f2c.jpg)
 
 Platforms like Datadog, Prometheus, and the ELK Stack (Elasticsearch, Logstash, Kibana) are foundational to building a robust observability strategy. For example, a system might use Prometheus to scrape performance metrics from a Kubernetes cluster running Spark jobs, send structured logs from those jobs to Elasticsearch, and use Grafana to build dashboards that visualize everything from CPU usage to data freshness. This unified view allows teams at companies like Shopify and Netflix to quickly diagnose bottlenecks, debug failures, and ensure their complex data ecosystems are running smoothly.
 

@@ -13,13 +13,13 @@ tags:
   - data-architecture
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/c43ed627-fae0-45d2-a0f0-50d78ec61fdf/data-engineering-consulting-services-engineer.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/data-engineering-consulting-services/data-engineering-consulting-services-engineer.jpg)
 
 Data engineering consulting is all about bringing in an expert to design and build the systems that gather, manage, and prepare your raw data for analysis. Think of these consultants as the master plumbers and architects of your company's data infrastructure. They ensure that information flows smoothly and reliably from all its different sources to the people who need it to make critical business decisions.
 
 ## What Exactly Are Data Engineering Consulting Services?
 
-![A visual metaphor for data engineering with a raw data barrel, fire, and a processing machine.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/d911da5f-4713-4e92-8d42-a114517ee4b1/data-engineering-consulting-services-data-processing.jpg)
+![A visual metaphor for data engineering with a raw data barrel, fire, and a processing machine.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/data-engineering-consulting-services/data-engineering-consulting-services-data-processing.jpg)
 
 Let's use an analogy. Imagine your company's data is like crude oil - incredibly valuable but totally useless in its raw, messy state. A data engineering consultant is the specialist who designs and builds the refinery. They construct the pipelines, processing plants, and storage facilities needed to turn that chaotic resource into high-grade fuel.
 
@@ -54,7 +54,7 @@ To learn more about the core principles that guide this work, check out our guid
 
 ## What You Actually Get From a Data Engineering Consultant
 
-![Conveyor belt carrying boxes labeled Marketing, Finance, and other business units towards a processing building.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/abf529d5-3b29-47cf-bd0e-501804b395da/data-engineering-consulting-services-data-flow.jpg)
+![Conveyor belt carrying boxes labeled Marketing, Finance, and other business units towards a processing building.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/data-engineering-consulting-services/data-engineering-consulting-services-data-flow.jpg)
 
 When you hire a data engineering consultant, you're not just paying for advice or a stack of strategy documents. You're investing in real, functional systems that will form the operational core of your company's data capabilities. These aren't just ideas; they are tangible assets you can see, use, and measure every day.
 
@@ -124,7 +124,7 @@ Jumping into a data engineering project can feel a bit overwhelming. I get it. T
 
 The journey generally follows this path, starting with a solid cloud foundation and evolving into a state of continuous improvement with DataOps.
 
-![Diagram illustrating the data future, showing a flow from Cloud to Platforms and then to DataOps.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/c1c063a5-1bfa-4d66-a6b8-4b7053214bf7/data-engineering-consulting-services-data-flow.jpg)
+![Diagram illustrating the data future, showing a flow from Cloud to Platforms and then to DataOps.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/data-engineering-consulting-services/data-engineering-consulting-services-data-flow.jpg)
 
 Think of each phase as a crucial building block. We lay the groundwork first, then build the structure, and finally, install the systems that keep it all running smoothly for the long haul.
 

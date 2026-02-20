@@ -13,7 +13,7 @@ tags:
   - cloud-strategy
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/27d2f7f6-ff6d-4074-996d-82807303de81/azure-devops-consulting-services-cloud-architecture.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/azure-devops-consulting-services/azure-devops-consulting-services-cloud-architecture.jpg)
 
 So, what exactly *is* an Azure DevOps consulting service? At its core, it's a partnership designed to help your business get the absolute most out of Microsoft's Azure platform for software development. It's all about translating powerful, complex tools into real-world business results like **faster product launches**, **rock-solid security**, and *dependable infrastructure*.
 
@@ -21,7 +21,7 @@ So, what exactly *is* an Azure DevOps consulting service? At its core, it's a pa
 
 Why do so many successful companies bring in outside experts for Azure DevOps? The reason isn't just about the technology itself - it's about hitting key business targets. In today's market, how quickly and reliably you can deliver software can be the difference between leading the pack and falling behind. Just having the tools isn't enough.
 
-![Illustration showing business benefits of Azure DevOps: Speed, Security, and Scalability, represented by blocks over a building.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/d9370787-c29d-4d03-9e63-0c6f505db6bd/azure-devops-consulting-services-business-wins.jpg)
+![Illustration showing business benefits of Azure DevOps: Speed, Security, and Scalability, represented by blocks over a building.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/azure-devops-consulting-services/azure-devops-consulting-services-business-wins.jpg)
 
 Think of a consultant as a master architect for your entire software factory. They don't just give you a generic blueprint; they design a system that's efficient, resilient, and ready for the future, using all the best practices Azure has to offer. This kind of strategic partnership is what gives a business a genuine competitive edge.
 
@@ -43,7 +43,7 @@ An expert **[Azure DevOps consulting service](https://www.john-pratt.com/devops-
 
 When the biggest names in the industry pick a technology stack, it's never by chance. It's a calculated bet on reliability, integration, and what will keep them competitive for years to come. That's exactly why so many businesses are standardizing their entire software delivery process on the [Azure DevOps](https://azure.microsoft.com/en-us/products/devops) ecosystem. It's not just a grab bag of tools; it's a single, cohesive platform built to take an idea from a whiteboard sketch all the way to a live production environment.
 
-![Illustration showing a DevOps workflow from planning, CI/CD, enterprise systems, security, to cloud deployment.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/3d4d4208-f86b-49a4-a3b2-78f1cf3a9f2d/azure-devops-consulting-services-devops-workflow.jpg)
+![Illustration showing a DevOps workflow from planning, CI/CD, enterprise systems, security, to cloud deployment.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/azure-devops-consulting-services/azure-devops-consulting-services-devops-workflow.jpg)
 
 This all-in-one approach directly tackles one of the biggest drags on modern development teams: **tool fragmentation**. We've all seen it - teams juggling a messy patchwork of disconnected tools for planning, coding, building, and deploying. The result is always the same: communication breakdowns, blind spots in the workflow, and friction that just grinds progress to a halt.
 
@@ -134,7 +134,7 @@ We break down every project into clear, predictable phases. Each one has its own
 
 This workflow is our blueprint for untangling complex DevOps knots. We start with the fundamentals of CI/CD, build on that with solid Infrastructure as Code practices, and then enable modern, container-based deployments with Kubernetes.
 
-![Diagram illustrating DevOps challenge resolution workflow with three steps: CI/CD, IaC, and Kubernetes.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/afb112da-c145-4cc7-8dd5-b6dbc815ffd8/azure-devops-consulting-services-devops-workflow.jpg)
+![Diagram illustrating DevOps challenge resolution workflow with three steps: CI/CD, IaC, and Kubernetes.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/azure-devops-consulting-services/azure-devops-consulting-services-devops-workflow.jpg)
 
 As you can see, each piece logically builds on the last, creating an integrated system that truly speeds up software delivery.
 

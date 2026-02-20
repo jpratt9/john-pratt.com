@@ -13,13 +13,13 @@ tags:
   - aws-consulting
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/f6905fdb-6d20-4f68-95f5-d5c4bca6171f/cloud-infrastructure-consulting-cloud-journey.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-infrastructure-consulting/cloud-infrastructure-consulting-cloud-journey.jpg)
 
 Think of a cloud infrastructure consultant as the master architect for your company's digital home. Instead of brick and mortar, they design and build your entire cloud environment on platforms like **[AWS](https://aws.amazon.com/)**, **[Azure](https://azure.microsoft.com/)**, or **[GCP](https://cloud.google.com/)**. Their job is to bring strategic expertise to the table, helping you build a technical foundation that's solid, secure, and ready to grow with you - without falling into common, costly traps.
 
 ## What Does Cloud Infrastructure Consulting Actually Do
 
-![An engineer reviews cloud infrastructure connections to physical servers, with icons for security, cost, and performance.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/46047aa1-d600-4291-86b9-f0c1a96ea199/cloud-infrastructure-consulting-cloud-management.jpg)
+![An engineer reviews cloud infrastructure connections to physical servers, with icons for security, cost, and performance.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-infrastructure-consulting/cloud-infrastructure-consulting-cloud-management.jpg)
 
 Fundamentally, cloud infrastructure consulting is about getting expert help to plan, build, and manage your cloud setup. It's crucial to start by **[understanding the fundamental differences between consulting and other service models like staff augmentation](https://lathire.com/staff-augmentation-vs-consulting/)**. While some services just give you extra hands to do the work, a true consultant provides the strategic brainpower to solve deep-seated business problems.
 
@@ -111,7 +111,7 @@ This whole world is growing at an incredible clip. The market for cloud infrastr
 
 This diagram shows how consulting pulls strategy, security, and DevOps together into a cohesive plan.
 
-![Diagram illustrating cloud transformation consulting, connecting strategy, security, and DevOps for direction, trust, and delivery.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/0d444820-6fc2-4677-a2cf-23c580d14e2b/cloud-infrastructure-consulting-consulting-model.jpg)
+![Diagram illustrating cloud transformation consulting, connecting strategy, security, and DevOps for direction, trust, and delivery.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-infrastructure-consulting/cloud-infrastructure-consulting-consulting-model.jpg)
 
 It's a great visual reminder that getting the cloud right is about more than just technology; it's a balanced approach that needs an expert guide to keep everything on track.
 
@@ -197,7 +197,7 @@ This is a really smart way to get top-tier expertise without the cost of a full-
 
 ## Guiding Principles for Successful Cloud Projects
 
-![An illustration of five pillars representing guiding principles for cloud projects: Security, Resilience, Cost, Automation, Governance.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/4a76cbc5-6f6d-4b85-be89-54bb4823e055/cloud-infrastructure-consulting-cloud-principles.jpg)
+![An illustration of five pillars representing guiding principles for cloud projects: Security, Resilience, Cost, Automation, Governance.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-infrastructure-consulting/cloud-infrastructure-consulting-cloud-principles.jpg)
 
 Getting a cloud project right takes more than just technical chops; it demands a strategic mindset. The real difference between an initiative that propels the business forward and one that just creates a mess of technical debt often boils down to a few core principles. Expert **cloud infrastructure consulting** firms live by these ideas, using them as a blueprint for building modern, tough, and cost-effective systems.
 

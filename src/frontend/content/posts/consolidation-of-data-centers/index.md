@@ -13,7 +13,7 @@ tags:
   - DevOps
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/412a9aad-063d-4762-9448-fccb5dafb713/consolidation-of-data-centers-server-consolidation.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/consolidation-of-data-centers/consolidation-of-data-centers-server-consolidation.jpg)
 
 Data center consolidation is much more than just an IT cleanup project. At its core, it's about strategically reducing your physical IT footprint, often by merging multiple locations or making a significant move to the cloud. This isn't just about unplugging old servers - it's a complete rethink of your infrastructure to drive efficiency, tighten security, and slash operational expenses. You're essentially trading a scattered, often underused collection of hardware for a lean, modern, and powerful environment.
 
@@ -23,7 +23,7 @@ If you're only looking at consolidation as a way to cut IT costs, you're missing
 
 The most successful projects I've seen are championed by leaders who focus on three things: saving money, moving faster, and locking things down.
 
-![Diagram illustrating the data center consolidation process flow, detailing drivers, agility, and security benefits.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/6dfc72d7-facb-4b74-a3ec-2fdc4633c0ca/consolidation-of-data-centers-process-flow.jpg)
+![Diagram illustrating the data center consolidation process flow, detailing drivers, agility, and security benefits.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/consolidation-of-data-centers/consolidation-of-data-centers-process-flow.jpg)
 
 This process flow really nails it - you start with the financial motivation, which then fuels the agility needed to build a far more secure and capable infrastructure.
 
@@ -45,7 +45,7 @@ You can't move what you don't know you have. It sounds simple, but I've seen mor
 
 The whole point is to build a rock-solid **Configuration Management Database (CMDB)** that becomes your single source of truth. Think of it less as a static spreadsheet and more as a dynamic repository. It needs to document every asset, its configuration, and - most critically - how it connects to everything else. Without this, you're essentially flying blind and making huge migration decisions based on guesswork instead of data.
 
-![Illustration of cloud computing and data center consolidation with security, agility, and cost benefits.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/ee4ce967-a730-466b-b913-67029645aec5/consolidation-of-data-centers-cloud-benefits.jpg)
+![Illustration of cloud computing and data center consolidation with security, agility, and cost benefits.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/consolidation-of-data-centers/consolidation-of-data-centers-cloud-benefits.jpg)
 
 ### Blending Automated Tools with Good Old-Fashioned Detective Work
 
@@ -84,7 +84,7 @@ This blueprint - your combination of automated scanning, manual audits, and dili
 
 ## Choosing Your Migration Path: Lift-and-Shift vs. Cloud-Native
 
-![A magnifying glass inspects a network diagram on a tablet, with a CMDB stack revealing 'shadow IT'.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/03bbc353-e80d-4e6c-aff0-84ffa536eb8c/consolidation-of-data-centers-network-discovery.jpg)
+![A magnifying glass inspects a network diagram on a tablet, with a CMDB stack revealing 'shadow IT'.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/consolidation-of-data-centers/consolidation-of-data-centers-network-discovery.jpg)
 
 With a detailed inventory in hand, you've hit the project's most critical fork in the road. The decision you make now for each application will shape your costs, agility, and technical capabilities for years. This is where you have to weigh the immediate speed of a **lift-and-shift** against the long-term power of a **cloud-native** strategy.
 
@@ -248,7 +248,7 @@ You've moved the last server, the final application is live in its new home, but
 
 First up is pulling the plug on your legacy infrastructure, but it's far more involved than just flipping a switch. You have to treat this as a major security and compliance exercise. Every single drive needs to be wiped clean of sensitive data, and you need a certified audit trail to prove it before that hardware ever leaves your possession.
 
-![Diagram showing data migration from on-premise servers via a conveyor belt to a cloud platform with blue-green deployment.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/43bfd3cb-8ebc-4307-9580-b5920aa331df/consolidation-of-data-centers-cloud-migration.jpg)
+![Diagram showing data migration from on-premise servers via a conveyor belt to a cloud platform with blue-green deployment.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/consolidation-of-data-centers/consolidation-of-data-centers-cloud-migration.jpg)
 
 Once everything is migrated and you have a clear list of what's staying and what's going, getting familiar with [the data center decommissioning process](https://www.greenatlanta.com/data-center-decommissioning-process/) is absolutely essential. This isn't just about destroying data; it's about asset management - reselling what you can, recycling responsibly, and ensuring every component is disposed of correctly.
 

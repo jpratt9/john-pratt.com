@@ -13,7 +13,7 @@ tags:
   - hybrid-cloud
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/d7d28211-c7eb-4ee7-bbc5-b3d37fddd18a/consolidation-data-center-it-infrastructure.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/consolidation-data-center/consolidation-data-center-it-infrastructure.jpg)
 
 Data center consolidation projects aren't just about shuffling servers around. They're a major business decision aimed at shrinking your IT footprint, simplifying operations, and, yes, saving a significant amount of money. The goal is to merge multiple, often aging, data centers into fewer, more efficient locations - or even into the cloud.
 
@@ -21,7 +21,7 @@ This isn't just a physical move; it's a fundamental shift. You're building a mor
 
 ## Why Data Center Consolidation Is a Strategic Move
 
-![Illustration depicting server racks growing and consolidating into a large data center connected to cloud services.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/58930a24-0294-4a7d-96ae-b21cbdbf701a/consolidation-data-center-server-migration.jpg)
+![Illustration depicting server racks growing and consolidating into a large data center connected to cloud services.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/consolidation-data-center/consolidation-data-center-server-migration.jpg)
 
 Over the years, it's easy for IT infrastructure to get out of hand. A history of organic growth, company acquisitions, and decentralized management often leads to "server sprawl." You end up with a messy collection of underused, outdated, and power-hungry data centers that soak up resources without giving much back.
 
@@ -65,7 +65,7 @@ If a project like this is on your radar, it's worth digging into the specifics o
 
 ## Building Your Consolidation Blueprint
 
-![Two individuals examine a large blueprint of a data architecture with databases and a magnifying glass.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/e48e8e8d-2267-4ce5-a247-38b9398ddebe/consolidation-data-center-data-blueprint.jpg)
+![Two individuals examine a large blueprint of a data architecture with databases and a magnifying glass.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/consolidation-data-center/consolidation-data-center-data-blueprint.jpg)
 
 A successful **consolidation data center** project hinges on one thing: a brutally honest assessment of what you actually have. This discovery phase is where good intentions often go to die. It's not a failure of technical skill but a failure to dig deep enough.
 
@@ -178,7 +178,7 @@ The "6 Rs" framework is more than just theory - it's a practical decision-making
 
 The decision often involves moving to a new on-premise location, a colocation facility, or the cloud, as the evolution of IT infrastructure shows.
 
-![A diagram showing the evolution of IT infrastructure: on-premise data center, colocation shared facility, and cloud managed services.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/726a6d92-cc6b-4d67-b373-3be582b1736d/consolidation-data-center-it-evolution.jpg)
+![A diagram showing the evolution of IT infrastructure: on-premise data center, colocation shared facility, and cloud managed services.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/consolidation-data-center/consolidation-data-center-it-evolution.jpg)
 
 This highlights that consolidation isn't just about shrinking your footprint; it's about modernizing how and where your IT services are delivered.
 
@@ -210,7 +210,7 @@ Stakeholders hate surprises. Keep them in the loop before, during, and after eac
 
 ## Managing Your New Environment After the Move
 
-![A man presents data visualizations and security metrics on a large screen, showing data management and analytics.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/2a9d4d8a-802e-40b4-b157-4693f2aadaf4/consolidation-data-center-data-presentation.jpg)
+![A man presents data visualizations and security metrics on a large screen, showing data management and analytics.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/consolidation-data-center/consolidation-data-center-data-presentation.jpg)
 
 It's tempting to pop the champagne once the last server is cut over, but the reality is, you've just started a new race. The true measure of a **consolidation data center** project isn't the migration itself; it's how well the new environment performs months and years down the line. This post-migration phase is where you prove the concept, refine your operations, and start actually delivering on the business value you promised.
 

@@ -13,7 +13,7 @@ tags:
   - business-automation
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/959f2396-ffcd-4e68-9058-85dbe4f053a7/cost-of-robotic-process-automation-rpa-cost.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cost-of-robotic-process-automation/cost-of-robotic-process-automation-rpa-cost.jpg)
 
 So, how much does Robotic Process Automation actually cost? The honest answer is: it depends. You could be looking at a few thousand dollars for a simple, single-task bot, or well over a million for a company-wide automation overhaul.
 
@@ -51,7 +51,7 @@ Think of it like buying a car. The purchase price is just the start. You also ha
 
 The total cost of your RPA program is built on a few key factors: the size of your operation, the complexity of the tasks you're automating, and the technology that supports it all.
 
-![A diagram illustrating the RPA cost hierarchy, showing cost broken down by size, complexity, and infrastructure.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/2c390bf3-f765-4de3-a60a-c613443a233b/cost-of-robotic-process-automation-cost-hierarchy.jpg)
+![A diagram illustrating the RPA cost hierarchy, showing cost broken down by size, complexity, and infrastructure.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cost-of-robotic-process-automation/cost-of-robotic-process-automation-cost-hierarchy.jpg)
 
 As you can see, the license fee is just one piece of a much bigger financial puzzle. Let's break down the four main pillars of RPA cost.
 
@@ -106,7 +106,7 @@ Think of it like getting around town. You could buy a car, rent one by the day, 
 
 Let's break down the common ways vendors structure their pricing.
 
-![Visualizing three different RPA pricing models: per-bot, consumption-based, and all-inclusive subscription.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/25a788b3-32e0-4587-8d99-6d16f8843c31/cost-of-robotic-process-automation-pricing-models.jpg)
+![Visualizing three different RPA pricing models: per-bot, consumption-based, and all-inclusive subscription.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cost-of-robotic-process-automation/cost-of-robotic-process-automation-pricing-models.jpg)
 
 ### The Per-Bot Licensing Model
 
@@ -205,7 +205,7 @@ Looking only at the **cost of robotic process automation** is like buying a car 
 
 The true value of automation goes way beyond a smaller payroll. While labor savings are often the easiest benefit to spot, they're just one piece of a much larger puzzle. A proper Return on Investment (ROI) calculation looks at all the ways bots make your business stronger, from cranking up speed and accuracy to locking down security and compliance.
 
-![Diagram illustrating the ROI formula (Benefits - Costs) / Costs, with icons representing Speed, Compliance, Accuracy, and Productivity.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/cdd93c44-eae1-458c-9403-97f58904c5b1/cost-of-robotic-process-automation-roi-formula.jpg)
+![Diagram illustrating the ROI formula (Benefits - Costs) / Costs, with icons representing Speed, Compliance, Accuracy, and Productivity.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cost-of-robotic-process-automation/cost-of-robotic-process-automation-roi-formula.jpg)
 
 ### Beyond Labor Savings: The Full Spectrum of Benefits
 

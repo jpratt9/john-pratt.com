@@ -13,7 +13,7 @@ tags:
   - kubernetes-consulting
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/82f13304-c25a-45f3-a44c-4b364d2ff179/cloud-devops-consulting-devops-pipeline.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-devops-consulting/cloud-devops-consulting-devops-pipeline.jpg)
 
 Think of cloud DevOps consulting as bringing in a specialist to fine-tune the engine of your software delivery process. It's all about merging your software development (Dev) team with your IT operations (Ops) team, using cloud tools and automation to make everything run faster, smoother, and more reliably.
 
@@ -50,7 +50,7 @@ When you hire a cloud DevOps consultant, you're not just buying a list of techni
 
 Let's pull back the curtain on the four pillars of this work.
 
-![Diagram illustrating how Cloud DevOps Consulting drives innovation, ensures security, and facilitates agility.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/3391644b-e71d-4abc-95b4-46bb30a44112/cloud-devops-consulting-concept-map.jpg)
+![Diagram illustrating how Cloud DevOps Consulting drives innovation, ensures security, and facilitates agility.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-devops-consulting/cloud-devops-consulting-concept-map.jpg)
 
 As you can see, a smart DevOps strategy acts as the engine driving the speed, safety, and adaptability of your entire operation.
 
@@ -101,7 +101,7 @@ Knowing when to call in an expert usually starts with a nagging feeling that thi
 
 So, what are the classic signs that you've hit a wall? Maybe your software release days are exercises in high stress, marked by unpredictable delays and last-minute bugs that have everyone scrambling. These chaotic deployment cycles don't just burn out your best engineers; they stall getting new features to your customers and hand your competitors an advantage.
 
-![Two cartoon men labeled Dev and Ops running, passing a baton, symbolizing DevOps collaboration.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/4f3ebb8e-e19c-47c4-97ed-24042d78d9c5/cloud-devops-consulting-devops-collaboration.jpg)
+![Two cartoon men labeled Dev and Ops running, passing a baton, symbolizing DevOps collaboration.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-devops-consulting/cloud-devops-consulting-devops-collaboration.jpg)
 
 Another common pain point is an operations team trapped in a hamster wheel of maintenance and emergency fixes. If your team spends more time patching problems than building for the future, you're bleeding opportunities for innovation. That reactive posture is a massive drain on both productivity and morale.
 
@@ -177,7 +177,7 @@ So, you're thinking about bringing in a **cloud DevOps consulting** partner. It'
 
 The real goal is to translate faster deployments and more stable systems into a language the whole company understands: efficiency, revenue, and happier customers. A great DevOps strategy should create a clear, positive ripple effect across the entire organization. It all comes down to tracking the right things and telling the story of your return on investment.
 
-![Three cards showing DevOps metrics: Deployment Frequency, Lead Time, MTTR with up arrows, alongside an increasing ROI chart.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/0eddd906-5de5-4e56-aa1b-6c43c067bf6b/cloud-devops-consulting-devops-metrics.jpg)
+![Three cards showing DevOps metrics: Deployment Frequency, Lead Time, MTTR with up arrows, alongside an increasing ROI chart.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-devops-consulting/cloud-devops-consulting-devops-metrics.jpg)
 
 ### Connecting Technical KPIs to Business Outcomes
 

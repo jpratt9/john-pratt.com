@@ -13,13 +13,13 @@ tags:
   - sql-rewriting
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-ebb98c95-6124-4058-a2da-f92d81072300.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/database-query-optimization/featured-image-ebb98c95-6124-4058-a2da-f92d81072300.jpg)
 
 Improving how a database responds to requests, or *query optimization*, is all about making your SQL statements run faster while using fewer resources. It's the art and science of analyzing, indexing, and rewriting queries to keep your application snappy, scalable, and affordable. Without it, you're looking at slow performance and, ultimately, a poor user experience.
 
 ## Why Slow Queries Are Silently Killing Your Application
 
-![An abstract digital visualization of data flowing through a network, representing database query optimization.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/a7430770-4340-4dba-9c88-4d825e85e66e.jpg)
+![An abstract digital visualization of data flowing through a network, representing database query optimization.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/database-query-optimization/a7430770-4340-4dba-9c88-4d825e85e66e.jpg)
 
 Let's get straight to the point: a slow app is a dead app. In my experience, inefficient database queries are almost always the invisible culprit behind application lag, and they do real damage to user satisfaction and your bottom line.
 
@@ -106,7 +106,7 @@ A common rookie mistake, though, is to just slap an index on every column you ca
 
 This infographic gives a great visual of the entire optimization flow, from the initial query all the way to the final, tuned version.
 
-![Infographic about database query optimization](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/baa3e66d-929c-4a23-9517-37119508c7c7.jpg)
+![Infographic about database query optimization](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/database-query-optimization/baa3e66d-929c-4a23-9517-37119508c7c7.jpg)
 
 As you can see, analyzing the execution plan points you directly toward the best optimization strategies, like indexing, which ultimately leads to a much faster query.
 
@@ -137,7 +137,7 @@ This field is also getting smarter. We're now seeing AI-driven query optimizatio
 
 ## Rewriting SQL for Maximum Performance
 
-![A developer's hands typing on a laptop, with lines of SQL code visible on the screen, symbolizing query rewriting.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/cd71c4b4-0abd-451c-8ba5-81f03a0f2826.jpg)
+![A developer's hands typing on a laptop, with lines of SQL code visible on the screen, symbolizing query rewriting.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/database-query-optimization/cd71c4b4-0abd-451c-8ba5-81f03a0f2826.jpg)
 
 You can have the most perfectly designed index in the world, but it won't do much to save a poorly written query. Sometimes, the biggest performance gains don't come from tweaking infrastructure but from rolling up your sleeves and refining the SQL itself. It's amazing how a few thoughtful changes can turn a multi-second nightmare into a millisecond dream.
 

@@ -149,7 +149,7 @@ What establishes Zerto as one of the **best cloud migration tools** is its abili
 
 RiverMeadow offers a SaaS-based platform designed for agentless workload mobility across various public and private clouds. It supports live, as-is migrations, allowing businesses to move applications and their underlying operating systems without requiring changes to the source environment. The platform is API-driven, enabling extensive automation and integration into existing CI/CD pipelines and ITSM workflows.
 
-![RiverMeadow Workload Mobility Platform](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/screenshots/fe2dd4ab-6522-42ff-a621-6b1df50c421d.jpg)
+![RiverMeadow Workload Mobility Platform](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/best-cloud-migration-tools/fe2dd4ab-6522-42ff-a621-6b1df50c421d.jpg)
 
 What positions RiverMeadow among the **best cloud migration tools** is its flexibility and focus on enterprise needs, especially in regulated industries. It provides built-in migration planning and project management modules, transforming it from a simple tool into a comprehensive migration command center. The ability to deploy it as a dedicated instance behind a corporate firewall makes it suitable for organizations with stringent security and compliance requirements.
 

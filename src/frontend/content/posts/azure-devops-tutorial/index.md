@@ -13,7 +13,7 @@ tags:
   - azure-repos
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-e3befd4c-b0b1-47a4-a679-ba1028a662c1.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/azure-devops-tutorial/featured-image-e3befd4c-b0b1-47a4-a679-ba1028a662c1.jpg)
 
 Alright, let's get our hands dirty and start building. This guide is all about the practical side of [Azure DevOps](https://azure.microsoft.com/en-us/products/devops), walking you through setting up your first project from scratch. We'll skip the high-level theory and focus on the real-world decisions you'll make, so you can build a solid foundation and get comfortable with the interface right away.
 
@@ -31,7 +31,7 @@ The power behind this platform is, of course, Microsoft's massive cloud infrastr
 
 Here's what the project creation screen looks like - this is where you'll plug in the core details for your new workspace.
 
-![Screenshot of the Azure DevOps project creation screen, showing fields for Project name, Description, Visibility, Version control, and Work item process.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/44426e10-eaa1-4a43-b377-2e1372afbf1f.jpg)
+![Screenshot of the Azure DevOps project creation screen, showing fields for Project name, Description, Visibility, Version control, and Work item process.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/azure-devops-tutorial/44426e10-eaa1-4a43-b377-2e1372afbf1f.jpg)
 
 This screen brings together the most important choices you need to make upfront, from what you'll call your project to how you'll manage your code and track your work.
 
@@ -100,7 +100,7 @@ This push for rapid, reliable delivery is why the global DevOps market is explod
 
 The whole process kicks off with a simple, developer-centric workflow.
 
-![Infographic about azure devops tutorial](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/145373b5-fdd5-444b-a545-a50f4c9ba642.jpg)
+![Infographic about azure devops tutorial](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/azure-devops-tutorial/145373b5-fdd5-444b-a545-a50f4c9ba642.jpg)
 
 This three-step dance - write code, create a pull request, get it approved - is the trigger that sets our entire automated build and test cycle in motion.
 
@@ -110,7 +110,7 @@ In [Azure Pipelines](https://azure.microsoft.com/en-us/products/devops/pipelines
 
 The good news is you don't have to start from scratch. When you create a new pipeline, Azure DevOps gives you a handy set of templates to get you going.
 
-![Screenshot from https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/media/pipeline-editor-template-picker.png](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/145373b5-fdd5-444b-a545-a50f4c9ba642.jpg)
+![Screenshot from https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/media/pipeline-editor-template-picker.png](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/azure-devops-tutorial/145373b5-fdd5-444b-a545-a50f4c9ba642.jpg)
 
 Just pick a template that matches your project - like ".NET Core" in our case - and it will generate a starter `azure-pipelines.yml` file with all the standard steps for building and testing that type of application.
 
@@ -141,7 +141,7 @@ Another must-use feature is **environment variables**. Instead of hardcoding thi
 
 A slick, automated pipeline is great, but without a solid plan behind it, it's just automation for automation's sake. That's where [Azure Boards](https://azure.microsoft.com/en-us/products/devops/boards) comes into the picture. It's the nerve center for your entire project - the place you plan sprints, manage the product backlog, track every piece of work, and give the whole team a clear view of what's happening.
 
-![A Kanban board in Azure Boards showing columns like 'New', 'Active', 'Resolved', and 'Closed', with work item cards distributed across them.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/2a7b2603-69f7-460d-8cfe-e6c7f3e78752.jpg)
+![A Kanban board in Azure Boards showing columns like 'New', 'Active', 'Resolved', and 'Closed', with work item cards distributed across them.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/azure-devops-tutorial/2a7b2603-69f7-460d-8cfe-e6c7f3e78752.jpg)
 
 Let's walk through a real-world scenario. Say your team needs to build out a new user authentication feature. You'd start in Azure Boards by creating a **User Story** to define what the user needs. From there, you'd break that story down into smaller, bite-sized **Tasks** for the developers to tackle.
 

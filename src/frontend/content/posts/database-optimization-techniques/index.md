@@ -13,7 +13,7 @@ tags:
   - database-scalability
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-8500ec59-442e-47ba-a665-f6b098a6134f.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/database-optimization-techniques/featured-image-8500ec59-442e-47ba-a665-f6b098a6134f.jpg)
 
 In today's data-driven world, a slow database is a critical business bottleneck. Sluggish response times frustrate users, stall operations, and can directly impact your bottom line. But achieving high performance isn't just about throwing more hardware at the problem. True efficiency comes from intelligent design and strategic tuning, using proven **database optimization techniques** to unlock potential.
 
@@ -25,7 +25,7 @@ Each technique is broken down with clear explanations, real-world examples, and 
 
 Database indexing is a fundamental database optimization technique that dramatically accelerates data retrieval operations. It works by creating a separate data structure that holds a copy of a portion of a table's data, sorted for rapid searching. Think of it like the index in the back of a book; instead of reading every page to find a topic, you look it up in the index and go directly to the correct page. This process allows the database engine to find specific rows much faster than scanning the entire table, which is especially critical for large datasets.
 
-![Database Indexing](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/8aa8fd15-b16c-4c2a-8ecd-c5eb3e002658.jpg)
+![Database Indexing](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/database-optimization-techniques/8aa8fd15-b16c-4c2a-8ecd-c5eb3e002658.jpg)
 
 This method is crucial when applications frequently query large tables using `WHERE` clauses, `JOIN` operations, or `ORDER BY` clauses on specific columns. For example, an e-commerce site needs to quickly find products by `product_id` or users by `email`. Without an index on these columns, the database would have to perform a full table scan, a slow and resource-intensive operation that degrades user experience.
 
@@ -41,7 +41,7 @@ Proper indexing is a balance. While indexes speed up reads, they can slightly sl
 
 Query optimization is the process of improving SQL queries to ensure they run as efficiently as possible, minimizing execution time and resource consumption. The database engine's query planner analyzes a SQL statement and generates several possible execution plans to retrieve the requested data. It then selects the plan it estimates will be the fastest. Effective query optimization involves writing clear, efficient SQL and helping the planner make the best choices.
 
-![Query Optimization](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/edf1ba38-9961-46b4-b001-90202e5b8fe4.jpg)
+![Query Optimization](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/database-optimization-techniques/edf1ba38-9961-46b4-b001-90202e5b8fe4.jpg)
 
 This technique is vital because a poorly written query can bring an entire application to a crawl, even with proper indexing. For instance, a complex report generation task involving multiple `JOIN`s and aggregations could lock up database resources if not optimized. By analyzing and rewriting the query, developers can drastically reduce its impact, as seen in tools like Microsoft SQL Server's Query Store, which helps identify and fix performance regressions.
 
@@ -72,7 +72,7 @@ While normalization improves data integrity and reduces redundancy, it can somet
 
 Database partitioning is one of the more advanced database optimization techniques, involving the division of a very large table into smaller, more manageable pieces called partitions. Although the data is physically split, it is still treated as a single logical table by the database management system. This method significantly enhances performance and maintainability by allowing the database to work with smaller data segments, which is particularly effective for massive datasets, such as time-series or transactional data.
 
-![Database Partitioning](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/79711d49-cdf8-4fa2-b442-bd2fb20b46d6.jpg)
+![Database Partitioning](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/database-optimization-techniques/79711d49-cdf8-4fa2-b442-bd2fb20b46d6.jpg)
 
 The primary benefit is **partition pruning**, where the database optimizer can ignore partitions that don't contain relevant data for a specific query. For instance, if a table of sales data is partitioned by month, a query for sales in March will only scan the March partition, drastically reducing I/O and query time. Systems like PostgreSQL, MySQL, and Oracle all offer robust partitioning features, making this a crucial strategy for scaling databases effectively.
 
@@ -89,7 +89,7 @@ Partitioning is not a one-size-fits-all solution and requires careful planning b
 
 Database caching is a powerful performance optimization technique that stores frequently accessed data in a high-speed, in-memory layer. By keeping copies of data closer to the application, caching avoids the need to repeatedly query the primary database, which typically relies on slower disk storage. This strategy dramatically reduces latency, decreases database load, and improves application response times, functioning much like a browser cache that saves website data for faster subsequent visits.
 
-![Database Caching](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/19b63aa7-2a0b-49c4-9111-bb7846857f65.jpg)
+![Database Caching](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/database-optimization-techniques/19b63aa7-2a0b-49c4-9111-bb7846857f65.jpg)
 
 This method is essential for applications with high read-to-write ratios, where the same data is requested multiple times. For example, a social media platform might cache user profiles and timelines, while an e-commerce site would cache popular product details. Companies like Facebook (Memcached) and GitHub (Redis) rely heavily on caching to handle massive traffic volumes, serving data from memory to ensure a fast and responsive user experience.
 

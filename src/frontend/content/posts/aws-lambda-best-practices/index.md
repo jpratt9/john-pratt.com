@@ -13,7 +13,7 @@ tags:
   - devops-tips
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-9c91944c-f8da-4232-a456-108253c2b6e0.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/aws-lambda-best-practices/featured-image-9c91944c-f8da-4232-a456-108253c2b6e0.jpg)
 
 AWS Lambda has fundamentally changed how we build and deploy applications, offering incredible scalability and a pay-per-use cost model that is hard to beat. But moving from a functional serverless application to a truly optimized, secure, and performant one requires a strategic approach. It's not just about writing code that runs; it's about architecting for resilience, efficiency, and operational excellence in a cloud-native environment.
 
@@ -34,7 +34,7 @@ One of the most foundational AWS Lambda best practices is to adhere to the Singl
 
 For example, a single, large function handling an e-commerce order might be responsible for processing a payment, updating inventory, and sending a confirmation email. If the email service fails, the entire order process could fail. By decomposing this, you create distinct functions for each task. This isolates failures, simplifies debugging, and allows you to scale and update each component independently.
 
-![1. Function Decomposition and Single Responsibility](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/b28cea0c-6b22-452c-86e7-71f0ceddf689.jpg)
+![1. Function Decomposition and Single Responsibility](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/aws-lambda-best-practices/b28cea0c-6b22-452c-86e7-71f0ceddf689.jpg)
 
 ### Why It's a Best Practice
 
@@ -74,7 +74,7 @@ One of the most critical AWS Lambda best practices for balancing cost and perfor
 
 For example, a simple API handler performing a database lookup might only need 512 MB, whereas a data processing function performing parallel transformations could require 3008 MB to execute efficiently. An ML inference function might need even more, ranging from 3008 MB to 10,240 MB. Finding the sweet spot for your specific workload is key to creating a cost-effective and responsive serverless application.
 
-![Optimize Memory Allocation and Function Timeout](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/7008b37a-7d3a-4d53-ba35-a7b4173e3474.jpg)
+![Optimize Memory Allocation and Function Timeout](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/aws-lambda-best-practices/7008b37a-7d3a-4d53-ba35-a7b4173e3474.jpg)
 
 ### Why It's a Best Practice
 
@@ -114,7 +114,7 @@ A "cold start" in AWS Lambda occurs when a function is invoked for the first tim
 
 Effectively managing cold starts involves a combination of configuration, code optimization, and architectural choices. For an API endpoint serving a critical user feature, this could mean using Provisioned Concurrency to keep environments "warm" and ready for immediate execution. For a background job that processes data infrequently, the occasional cold start latency is often acceptable. The key is to apply the right strategy based on the function's specific performance requirements.
 
-![Implement Cold Start Optimization Strategies](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/a38266e1-8eb0-440b-88f7-7d050fe950f6.jpg)
+![Implement Cold Start Optimization Strategies](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/aws-lambda-best-practices/a38266e1-8eb0-440b-88f7-7d050fe950f6.jpg)
 
 ### Why It's a Best Practice
 
@@ -193,7 +193,7 @@ In a distributed, serverless environment, you cannot fix what you cannot see. Im
 
 For instance, an e-commerce platform can use distributed tracing with AWS X-Ray to follow a single customer order across multiple microservices, from the API Gateway request to the payment processing Lambda and finally to the shipping notification function. This allows developers to pinpoint exactly where latency is introduced or an error occurs in the entire workflow, rather than just seeing an isolated function failure.
 
-![Monitor, Trace, and Implement Observability](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/589c71ff-11b6-462c-ac64-8aa6cd1618f3.jpg)
+![Monitor, Trace, and Implement Observability](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/aws-lambda-best-practices/589c71ff-11b6-462c-ac64-8aa6cd1618f3.jpg)
 
 ### Why It's a Best Practice
 

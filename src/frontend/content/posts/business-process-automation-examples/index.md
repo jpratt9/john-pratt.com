@@ -13,7 +13,7 @@ tags:
   - BPA-examples
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-bd93b720-4d1a-4327-a4ee-e4c0bba2d739.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/business-process-automation-examples/featured-image-bd93b720-4d1a-4327-a4ee-e4c0bba2d739.jpg)
 
 Business process automation (BPA) has evolved from a niche technology to a core strategic imperative for modern enterprises. It's about more than just saving time; it's about fundamentally redesigning workflows to be more efficient, accurate, and scalable. This shift allows teams to move away from repetitive, low-value tasks and instead focus on strategic initiatives that drive growth and innovation. From finance and HR to marketing and sales, automation is the engine powering operational excellence across every department.
 
@@ -23,7 +23,7 @@ The true value of BPA lies in its practical application. Understanding how it wo
 
 Customer Relationship Management (CRM) automation uses software to manage and streamline interactions with current and potential customers. It systematizes repetitive tasks in sales, marketing, and customer service, allowing teams to focus on building relationships rather than on manual data entry and administrative work. This is one of the most foundational **business process automation examples** because it directly impacts revenue generation and customer retention.
 
-![Customer Relationship Management (CRM) Automation](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/e05a55e9-74cb-4005-9da9-1fee63386e6e.jpg)
+![Customer Relationship Management (CRM) Automation](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/business-process-automation-examples/e05a55e9-74cb-4005-9da9-1fee63386e6e.jpg)
 
 The system works by capturing customer data from various touchpoints like website forms, social media, and email. Based on predefined rules and triggers, it can automatically score leads, assign them to the right sales reps, send personalized follow-up emails, and move deals through the sales pipeline.
 
@@ -45,7 +45,7 @@ Invoice processing and accounts payable (AP) automation digitizes the entire lif
 
 The infographic below illustrates the streamlined, three-step workflow of an automated AP system.
 
-![Infographic showing the three-step process of automated invoice processing: receipt, data extraction, and approval/payment](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/infographic-56b3a892-2170-4251-aca5-d1c58abfc366.jpg)
+![Infographic showing the three-step process of automated invoice processing: receipt, data extraction, and approval/payment](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/business-process-automation-examples/infographic-56b3a892-2170-4251-aca5-d1c58abfc366.jpg)
 
 This automated flow drastically reduces the manual intervention needed, transforming AP from a cost center into a strategic business function.
 
@@ -65,7 +65,7 @@ Platforms like **SAP Ariba** and **Workday** have enabled global enterprises lik
 
 Employee onboarding automation uses technology to create a seamless and structured experience for new hires. It systematizes administrative tasks such as paperwork completion, IT provisioning, and training scheduling, freeing HR teams from repetitive manual work and ensuring a consistent welcome for every new team member. This is a critical one of the **business process automation examples** as it directly influences employee engagement, retention, and time-to-productivity.
 
-![Employee Onboarding Automation](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/8b03abd4-7f4f-44aa-b0ce-673cb563f16a.jpg)
+![Employee Onboarding Automation](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/business-process-automation-examples/8b03abd4-7f4f-44aa-b0ce-673cb563f16a.jpg)
 
 The process works by triggering a sequence of tasks once a candidate accepts an offer. An automated workflow can send out digital documents for e-signature, create user accounts in necessary systems, enroll the new hire in orientation sessions, and assign initial training modules, all before their first day.
 

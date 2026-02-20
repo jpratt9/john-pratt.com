@@ -13,7 +13,7 @@ tags:
   - cloud-services
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/d77d4a74-a74c-4e29-968d-a8efd0eb0c81/cloud-migration-consulting-cloud-migration.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-migration-consulting/cloud-migration-consulting-cloud-migration.jpg)
 
 So, what exactly is cloud migration consulting? Think of it as hiring a team of seasoned architects and engineers to help you move your company's digital operations - your data, applications, and infrastructure - from your own servers to a cloud platform.
 
@@ -21,7 +21,7 @@ These consultants are more than just tech support; they're strategic partners. T
 
 ## Why Smart Businesses Use Cloud Migration Consulting
 
-![Two engineers in hard hats reviewing a large blueprint, connected to cloud services via a laptop.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/55a1be16-86b1-4e31-95e9-7c974b9ef50f/cloud-migration-consulting-engineering-cloud.jpg)
+![Two engineers in hard hats reviewing a large blueprint, connected to cloud services via a laptop.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-migration-consulting/cloud-migration-consulting-engineering-cloud.jpg)
 
 Moving to the cloud isn't just a technical swap-out. It's a fundamental shift in how your business runs. Going it alone is like trying to build a custom house without an architect - you might have a general idea of what you want, but you lack the blueprints and engineering know-how to build a solid foundation.
 
@@ -113,7 +113,7 @@ In cloud migration, these choices are known as the **"7 Rs"**. They represent a 
 
 The entire consulting process is built around making these strategic decisions correctly. It's a structured journey from discovery to optimization, ensuring that the migration path you choose is the right one from day one.
 
-![A four-step process diagram showing Discovery, Planning, Execution, and Optimization with corresponding icons.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/a862816c-cd99-4c21-805b-637203233794/cloud-migration-consulting-process-flow.jpg)
+![A four-step process diagram showing Discovery, Planning, Execution, and Optimization with corresponding icons.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-migration-consulting/cloud-migration-consulting-process-flow.jpg)
 
 As you can see, choosing a strategy isn't a shot in the dark. It's a direct result of careful discovery and planning, making sure every move is deliberate and adds value.
 
@@ -157,7 +157,7 @@ A cloud migration consultant uses discovery tools to map out all your applicatio
 
 ## Managing Cloud Security and Controlling Costs
 
-![An illustration of cloud security, investment, and financial planning balanced on a scale.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/52165efa-c4f4-4a65-b4ec-12a90d973fd6/cloud-migration-consulting-cloud-balance.jpg)
+![An illustration of cloud security, investment, and financial planning balanced on a scale.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-migration-consulting/cloud-migration-consulting-cloud-balance.jpg)
 
 Even the most promising cloud projects can get derailed by two major hurdles: glaring security holes and budgets that spiral out of control. Moving to the cloud is so much more than a server swap; it's a complete shift in how you handle security and financial governance. This is where an experienced consultant becomes invaluable, helping you navigate these critical areas right from the start.
 

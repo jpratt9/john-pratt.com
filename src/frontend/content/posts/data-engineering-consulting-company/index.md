@@ -12,7 +12,7 @@ tags:
   - big-data-solutions
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/1f23d52d-e189-406d-bab6-1089b38249b3/data-engineering-consulting-company-data-infrastructure.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/data-engineering-consulting-company/data-engineering-consulting-company-data-infrastructure.jpg)
 
 At its core, a data engineering consulting company builds the digital plumbing for your business. They design and construct the systems that gather, clean, and organize all your data, making it ready for analysis. Think of them as the architects and builders of your information backbone, turning scattered, raw data into a reliable asset that powers everything from business intelligence dashboards to machine learning models.
 
@@ -71,7 +71,7 @@ The demand for these skills is exploding. The big data engineering services mark
 
 This flowchart gives you a simple way to think about what kind of data engineering help you need right now.
 
-![A flowchart guiding the hiring of a data engineer based on data cleanliness, recommending a data cleaner or analytics engineer.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/6bd9e3a8-9ee6-47d2-b25f-d3911b5e4306/data-engineering-consulting-company-hiring-guide.jpg)
+![A flowchart guiding the hiring of a data engineer based on data cleanliness, recommending a data cleaner or analytics engineer.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/data-engineering-consulting-company/data-engineering-consulting-company-hiring-guide.jpg)
 
 It really boils down to this: if your data is a tangled mess, you need an engineer who excels at building clean, reliable pipelines. If your data is already in good shape, you can shift your focus to finding someone with stronger analytics engineering skills.
 
@@ -122,7 +122,7 @@ So, you've found a few consulting firms with the right technical chops. That's a
 
 Get it right, and you'll have a smooth collaboration with clear goals and a predictable budget. Get it wrong, and you could be looking at scope creep, blown deadlines, and a whole lot of frustration.
 
-![Three cards illustrating project-based, dedicated team, and staff augmentation service models with pros and cons.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/e4a6630d-11e1-4744-a67c-21a37fe3b19e/data-engineering-consulting-company-service-models.jpg)
+![Three cards illustrating project-based, dedicated team, and staff augmentation service models with pros and cons.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/data-engineering-consulting-company/data-engineering-consulting-company-service-models.jpg)
 
 There's no single "best" model. The right choice depends entirely on what you're trying to accomplish. A quick, well-defined task needs a different structure than a multi-year platform buildout. Let's break down the most common options I see in the field.
 
@@ -224,7 +224,7 @@ You've signed the contract. That's a great milestone, but the real work starts n
 
 This phase is all about getting everyone aligned. You're moving from high-level strategy sessions to the nitty-gritty details of how your teams will actually work together day-to-day. A top-tier data engineering consulting company will show up with their own onboarding checklist, but you absolutely need one, too. The goal is simple: get them integrated quickly, securely, and with a crystal-clear understanding of what success looks like.
 
-![Digital dashboard illustrating data onboarding processes, quality checks, and performance indicators.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/a2007d83-66eb-4b1a-ba24-89263cb18208/data-engineering-consulting-company-data-dashboard.jpg)
+![Digital dashboard illustrating data onboarding processes, quality checks, and performance indicators.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/data-engineering-consulting-company/data-engineering-consulting-company-data-dashboard.jpg)
 
 ### Setting the Stage for Collaboration
 

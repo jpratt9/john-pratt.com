@@ -13,7 +13,7 @@ tags:
   - ci/cd-pipeline
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/57a9908a-eb98-47f7-a023-580e4eca3173/cloud-native-application-development-infrastructure-architecture.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-native-application-development/cloud-native-application-development-infrastructure-architecture.jpg)
 
 Think of a traditional application like a massive, old-school factory. Every part of the manufacturing process is interconnected on one giant assembly line. If a single machine breaks down, the whole factory grinds to a halt. It's a huge, tangled mess.
 
@@ -21,7 +21,7 @@ Cloud-native development completely dismantles that model. Instead of one giant 
 
 ## The Strategic Shift to Cloud Native Development
 
-![Digital transformation from monolithic factory infrastructure to distributed cloud native microservices architecture network](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/a0f22ec2-52a6-4202-a77f-90773ea88c6e/cloud-native-application-development-digital-transformation.jpg)
+![Digital transformation from monolithic factory infrastructure to distributed cloud native microservices architecture network](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-native-application-development/cloud-native-application-development-digital-transformation.jpg)
 
 Moving to **cloud-native application development** isn't just a simple tech upgrade. It's a total reimagining of how software gets designed, built, and run in the modern era. This shift is a direct response to the constant pressure for faster innovation and rock-solid performance. Businesses simply can't wait around for long development cycles or tolerate apps that crash during a traffic spike.
 
@@ -53,7 +53,7 @@ To really get what cloud native development is all about, we have to look past t
 
 Each of these principles directly tackles a major headache from traditional software development, turning slow, risky processes into fast, reliable workflows. Let's break down these pillars to see how they form the backbone of any solid cloud native strategy.
 
-![Two workers sorting and organizing packages on conveyor belt in modern warehouse facility](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/13b2de9c-6ee3-4222-83e9-57bd4ecb4a68/cloud-native-application-development-package-sorting.jpg)
+![Two workers sorting and organizing packages on conveyor belt in modern warehouse facility](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-native-application-development/cloud-native-application-development-package-sorting.jpg)
 
 To better understand the shift, let's compare the old way with the new. The following table lays out the fundamental differences in philosophy between traditional monolithic applications and the cloud native approach.
 
@@ -108,7 +108,7 @@ In a DevOps culture, these teams work together from day one. They share ownershi
 
 ## Diving into Key Cloud Native Architecture Patterns
 
-![Control tower communicating with vehicles, illustrating cloud infrastructure managing distributed applications and weather conditions](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/0060b170-24e5-4ad2-acd7-7f589cb92145/cloud-native-application-development-control-tower.jpg)
+![Control tower communicating with vehicles, illustrating cloud infrastructure managing distributed applications and weather conditions](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-native-application-development/cloud-native-application-development-control-tower.jpg)
 
 Once you've embraced the core principles of microservices and containers, the real fun begins. Now, we get to arrange these components into powerful, resilient systems using established architectural patterns. Think of these patterns as proven blueprints for building complex, distributed applications that can handle the unpredictability of the cloud. They solve the tough problems - like communication, data flow, and resource management - that naturally pop up when you're no longer dealing with a single, monolithic application.
 
@@ -241,7 +241,7 @@ Typically, this platform provides:
 
 This approach gives teams the autonomy they crave while keeping essential guardrails in place for security and operational stability. The diagram below shows how a modern security workflow fits perfectly into this model, pushing security considerations to the very beginning of the process.
 
-![Cloud native security workflow diagram showing shift left, container scan, and observability processes with icons](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/7f0475ca-39a3-4bbe-9e0c-52ee345cd0fe/cloud-native-application-development-security-workflow.jpg)
+![Cloud native security workflow diagram showing shift left, container scan, and observability processes with icons](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-native-application-development/cloud-native-application-development-security-workflow.jpg)
 
 As you can see, security is no longer an afterthought. It's integrated early on ("Shift Left"), checked again when software is packaged ("Container Scan"), and continuously monitored in a live environment ("Observability").
 

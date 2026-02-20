@@ -13,7 +13,7 @@ tags:
   - devops-strategy
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-392f8ba1-c5f6-4d98-a805-9b524dc0c66d.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/devops-automation-consulting/featured-image-392f8ba1-c5f6-4d98-a805-9b524dc0c66d.jpg)
 
 So, you've heard the term "DevOps automation consulting," but what does it actually involve? Think of it less as a service and more as a strategic partnership designed to overhaul your entire software development lifecycle.
 
@@ -21,7 +21,7 @@ It's about bringing in seasoned experts to help you transition from slow, manual
 
 ## What DevOps Automation Consulting Really Means
 
-![An abstract image representing the flow of DevOps automation, with gears and arrows showing a continuous loop.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/5b28670c-abe3-4b01-9dba-930f85189ec0.jpg)
+![An abstract image representing the flow of DevOps automation, with gears and arrows showing a continuous loop.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/devops-automation-consulting/5b28670c-abe3-4b01-9dba-930f85189ec0.jpg)
 
 A great consultant isn't just there to install a few new tools. They're an architect for your development process, fundamentally redesigning *how* your teams build, test, and release software. They've seen what works (and what doesn't) across dozens of companies and act as your guide through the maze of modern software delivery.
 
@@ -39,7 +39,7 @@ Ultimately, it's an investment in your company's future. It's about building the
 
 ## What Do DevOps Consultants Actually Do? The Core Services
 
-![A group of diverse professionals collaborating around a computer screen showing code and diagrams, representing DevOps consulting services.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/ae37e14c-17ae-47d6-a05f-72c450d7bc07.jpg)
+![A group of diverse professionals collaborating around a computer screen showing code and diagrams, representing DevOps consulting services.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/devops-automation-consulting/ae37e14c-17ae-47d6-a05f-72c450d7bc07.jpg)
 
 When you hire a DevOps automation consultant, you're moving past theory and into the real work of building a modern software delivery system. Their services are the practical, hands-on components that come together to create that efficient, automated engine you're after.
 
@@ -91,7 +91,7 @@ But speed without stability is just chaos. That's why another huge benefit is a 
 
 The infographic below shows how these technical wins create a ripple effect across your entire organization.
 
-![Infographic about devops automation consulting](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/8203bbc6-e100-4221-aee5-8953ccd03a16.jpg)
+![Infographic about devops automation consulting](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/devops-automation-consulting/8203bbc6-e100-4221-aee5-8953ccd03a16.jpg)
 
 As you can see, it's a chain reaction. Better speed and reliability naturally lead to a healthier culture and stronger business performance.
 
@@ -107,7 +107,7 @@ The numbers back this up. The DevOps market is expected to hit **$15.06 billion*
 
 ## What Does a Typical Consulting Project Look Like?
 
-![A visual roadmap showing the different phases of a consulting project, from discovery to support.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/99367fa4-dfb8-409c-9948-ea06d3ae2f58.jpg)
+![A visual roadmap showing the different phases of a consulting project, from discovery to support.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/devops-automation-consulting/99367fa4-dfb8-409c-9948-ea06d3ae2f58.jpg)
 
 If you're wondering what it's actually like to work with a **DevOps automation consultant**, it's far from a chaotic, "figure it out as we go" process. Good consulting follows a clear, logical path designed to get from where you are to where you need to be, with no surprises. It all starts with a thorough look under the hood.
 

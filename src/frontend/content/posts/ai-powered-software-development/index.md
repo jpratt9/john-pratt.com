@@ -13,7 +13,7 @@ tags:
   - generative-ai
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/0b443d94-7e61-44ee-be95-37daa2db4363/ai-powered-software-development-cloud-computing.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/ai-powered-software-development/ai-powered-software-development-cloud-computing.jpg)
 
 Welcome to the new era of software engineering, where AI is more than just another tool in the box - it's your co-pilot. This isn't some far-off concept; **ai powered software development** is fundamentally changing how we build, test, and ship applications right now. This guide cuts through the noise to give business leaders and engineers a practical roadmap.
 
@@ -59,7 +59,7 @@ This foundational capability is fueling a massive market boom. The broader artif
 
 The diagram below shows how an AI co-pilot acts as a central hub, boosting everything from delivery speed to the intelligence of the final applications.
 
-![A diagram illustrating AI Co-Pilot at the center, connecting to a robot, smarter rocket, and brain shield.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/63d547d8-f2d6-4bae-93d3-0d930013ee13/ai-powered-software-development-ai-copilot.jpg)
+![A diagram illustrating AI Co-Pilot at the center, connecting to a robot, smarter rocket, and brain shield.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/ai-powered-software-development/ai-powered-software-development-ai-copilot.jpg)
 
 This really gets to the core value: AI acts as a force multiplier, improving outcomes at every single stage of the development lifecycle.
 
@@ -86,7 +86,7 @@ Getting a powerful AI model out of the lab and into your daily operations takes 
 
 This is where a parallel discipline called **MLOps (Machine Learning Operations)** comes into play. Think of MLOps as the specialized sibling of DevOps. While DevOps automates the build, test, and release of traditional software, MLOps tackles the unique challenges of managing AI models - things like versioning massive datasets, tracking experiments, and keeping a close eye on model performance in the real world.
 
-![An illustration of an AI-powered software development pipeline with data flowing through connected stages to a central gear.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/e0c7e01b-aba9-44fa-ae73-adc0c87f693d/ai-powered-software-development-data-pipeline.jpg)
+![An illustration of an AI-powered software development pipeline with data flowing through connected stages to a central gear.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/ai-powered-software-development/ai-powered-software-development-data-pipeline.jpg)
 
 When you merge these two practices, you create a single, unified workflow. Both your standard code and your AI models get developed, deployed, and maintained with the same rigor and automation.
 
@@ -123,7 +123,7 @@ By weaving MLOps principles and cloud-native tools into your existing DevOps fra
 
 It's one thing to have an exciting AI-powered prototype that wows people in a demo. It's a completely different challenge to turn that prototype into a reliable, production-grade system your business can depend on. To be truly enterprise-ready, an AI application has to be secure, transparent, and built to last. This means we have to look past the core functionality and nail the non-functional requirements that prepare our AI for the real world.
 
-![Conceptual image of AI-powered software development, focusing on data security, analysis, and risk assessment.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/c0f33654-b4c0-428a-866a-cd3f59a25cdf/ai-powered-software-development-security-analysis.jpg)
+![Conceptual image of AI-powered software development, focusing on data security, analysis, and risk assessment.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/ai-powered-software-development/ai-powered-software-development-security-analysis.jpg)
 
 Here, we'll cover the essential pillars for building AI systems that aren't just intelligent, but are also secure, observable, and easy to maintain throughout their entire lifecycle.
 

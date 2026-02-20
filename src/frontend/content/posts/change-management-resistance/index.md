@@ -12,7 +12,7 @@ tags:
   - leadership-strategy
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-c3dfa16b-e3ac-445a-918d-25bf10161cb0.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/change-management-resistance/featured-image-c3dfa16b-e3ac-445a-918d-25bf10161cb0.jpg)
 
 Let's be honest, whenever a major change is announced at work, the first reaction isn't usually a standing ovation. It's often a mix of quiet grumbling, pointed questions, and sometimes, outright pushback. This is **change resistance**, and it's a completely normal, predictable part of any organizational shift.
 
@@ -20,7 +20,7 @@ Too many leaders see resistance as a sign of failure or a challenge to their aut
 
 ## Understanding Change Resistance in Your Team
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/f97bf04c-3d1c-44e8-9570-7d008d7b0230.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/change-management-resistance/f97bf04c-3d1c-44e8-9570-7d008d7b0230.jpg)
 
 Think about the last time you switched from one type of phone to another - say, Android to iPhone. For the first few weeks, everything feels wrong. Your fingers automatically go to where the back button *used* to be, and simple tasks take twice as long. You get frustrated. That initial friction isn't because the new phone is bad; it's because your muscle memory is fighting a new system.
 
@@ -81,7 +81,7 @@ These numbers tell a clear story. Resistance is rarely about the idea. It's almo
 
 ## The Hidden Costs of Unmanaged Resistance
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/e83f25ec-3227-43cf-8bc5-584ff877f223.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/change-management-resistance/e83f25ec-3227-43cf-8bc5-584ff877f223.jpg)
 
 When leaders run into **change management resistance**, the first thought is usually about the timeline. Is this pushback going to delay our launch? And while schedule slips are a real problem, they're just the tip of the iceberg. The real costs of letting resistance go unchecked run much deeper, quietly eating away at your organization's foundation.
 
@@ -125,7 +125,7 @@ Imagine you have an ice cube and want to make it a different shape. You can't ju
 
 This image highlights how different strategies, often used within these frameworks, impact the success of a change initiative.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/d896a103-fe34-4819-bb71-cd1763582f48.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/change-management-resistance/d896a103-fe34-4819-bb71-cd1763582f48.jpg)
 
 As you can see, while strong communication is the bedrock, things like hands-on training and visible leadership support are what really accelerate adoption and get people genuinely engaged.
 
@@ -162,7 +162,7 @@ Both Lewin and ADKAR offer structured ways to navigate the human side of change.
 
 ## Actionable Strategies to Build Buy-In and Trust
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/cc4abda0-16b5-47cc-a095-a668568958f5.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/change-management-resistance/cc4abda0-16b5-47cc-a095-a668568958f5.jpg)
 
 Alright, let's move from the high-level frameworks to the real, on-the-ground work of overcoming resistance. Gaining genuine buy-in isn't about issuing top-down directives. It's about creating a culture of psychological safety where people feel heard, valued, and respected through the entire process.
 

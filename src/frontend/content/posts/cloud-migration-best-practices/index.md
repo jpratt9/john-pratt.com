@@ -13,7 +13,7 @@ tags:
   - aws-migration
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-fe04b0ad-69f8-4685-a080-3407556dae98.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-migration-best-practices/featured-image-fe04b0ad-69f8-4685-a080-3407556dae98.jpg)
 
 Moving to the cloud is more than just a technical shift; it's a fundamental business transformation. With a significant majority of enterprises already leveraging cloud technology, a well-executed migration is no longer an option but a competitive necessity. However, a successful transition hinges on a solid strategy that avoids common pitfalls like spiraling costs, security vulnerabilities, and unexpected downtime. A poorly planned move can quickly negate the promised benefits of agility, scalability, and innovation, leaving your organization with more complexity than it started with.
 
@@ -93,7 +93,7 @@ A well-structured phased migration plan typically spans six to 18 months, depend
 
 Viewing security as an add-on after migration is a recipe for disaster. Instead, security and compliance must be woven into the fabric of your migration strategy from day one. This practice involves establishing robust controls before, during, and after you move workloads, ensuring your cloud environment is secure by design, not by chance. It addresses everything from data encryption and access management to regulatory adherence.
 
-![Implement Robust Security and Compliance Controls](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/232e2296-ccf3-4e48-ae3d-629cc5b04fae.jpg)
+![Implement Robust Security and Compliance Controls](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-migration-best-practices/232e2296-ccf3-4e48-ae3d-629cc5b04fae.jpg)
 
 This proactive approach is one of the most critical **cloud migration best practices** because the cloud's shared responsibility model shifts certain security duties to you. Neglecting this means leaving your data, applications, and reputation vulnerable to breaches and non-compliance penalties. A healthcare organization, for instance, must implement HIPAA controls on a service like AWS HealthLake from the outset, not after patient data is already in the cloud.
 
@@ -177,7 +177,7 @@ A well-trained team ensures not only a smooth migration but also effective day-t
 
 Moving to the cloud without visibility is like flying a plane without instruments. You lose the ability to understand performance, diagnose issues, and ensure security. Implementing robust monitoring, logging, and observability from day one gives you the necessary insight into your new environment, allowing you to track health and performance in real-time.
 
-![Implement Robust Monitoring, Logging, and Observability](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/fb410fe5-3a9d-4247-9303-f30f91898d6d.jpg)
+![Implement Robust Monitoring, Logging, and Observability](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-migration-best-practices/fb410fe5-3a9d-4247-9303-f30f91898d6d.jpg)
 
 This practice is critical because cloud environments are dynamic and distributed, making manual troubleshooting nearly impossible. A solid observability strategy, which combines metrics, logs, and traces, provides a comprehensive view of your system's state. Integrating this into your **cloud migration best practices** ensures you can proactively detect anomalies, resolve incidents faster, and optimize resource utilization, directly impacting both user experience and operational costs.
 

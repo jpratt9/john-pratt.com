@@ -13,7 +13,7 @@ tags:
   - ci/cd-interview
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/9bd41b07-f4e2-4385-9015-0f5a15bef6b7/devops-engineer-interview-questions-devops-concepts.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/devops-engineer-interview-questions/devops-engineer-interview-questions-devops-concepts.jpg)
 
 The landscape of DevOps is constantly shifting, and so are the interviews. Gone are the days of simple trivia about tools. Today, hiring managers are looking for engineers who can architect resilient, scalable systems, automate complex workflows, and demonstrate a deep, practical understanding of the entire software development lifecycle. This comprehensive guide moves beyond generic advice and dives into the ten critical categories of modern **DevOps engineer interview questions**.
 
@@ -45,7 +45,7 @@ Questions in this category assess a candidate's ability to define and manage inf
 
 These devops engineer interview questions focus on practical application, such as automating the provisioning of a multi-tier application or converting a manually-configured environment into a version-controlled codebase. The goal is to evaluate your proficiency in treating infrastructure with the same rigor as application software, including version control, testing, and automated deployment.
 
-![Diagram of cloud services interacting with a modular software system and a configuration gear icon.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/9844459a-bd49-456c-a927-e3c64bf091f7/devops-engineer-interview-questions-system-architecture.jpg)
+![Diagram of cloud services interacting with a modular software system and a configuration gear icon.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/devops-engineer-interview-questions/devops-engineer-interview-questions-system-architecture.jpg)
 
 ### Example Scenario: Modular Terraform Deployment
 
@@ -66,7 +66,7 @@ Questions in this category assess a candidate's expertise in building, managing,
 
 These devops engineer interview questions often focus on the ability to design a pipeline that not only automates builds and deployments but also integrates quality gates like testing and security scanning. The goal is to see how you would construct an end-to-end automation solution that reduces manual effort, minimizes human error, and accelerates the delivery of value to users.
 
-![A diagram illustrating the software development lifecycle: Build, Test, and Deploy, with gears, a rocket, and clouds.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/b7047ec7-f388-45ce-9a67-979106d665a4/devops-engineer-interview-questions-devops-pipeline.jpg)
+![A diagram illustrating the software development lifecycle: Build, Test, and Deploy, with gears, a rocket, and clouds.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/devops-engineer-interview-questions/devops-engineer-interview-questions-devops-pipeline.jpg)
 
 ### Example Scenario: Microservices Deployment Pipeline
 
@@ -88,7 +88,7 @@ Questions in this category test a candidate's proficiency with modern applicatio
 
 These devops engineer interview questions explore your ability to handle the entire container lifecycle. You might be asked to containerize a sample application, design a Kubernetes deployment strategy for a high-availability telecom solution, or explain how you would secure a container supply chain. The emphasis is on demonstrating control over the environment where applications actually run.
 
-![Kubernetes logo manages a stack of colorful containers, connected to several round grey nodes, representing distributed systems.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/c6e197a4-bd79-4191-8456-639a2860fc76/devops-engineer-interview-questions-kubernetes-orchestration.jpg)
+![Kubernetes logo manages a stack of colorful containers, connected to several round grey nodes, representing distributed systems.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/devops-engineer-interview-questions/devops-engineer-interview-questions-kubernetes-orchestration.jpg)
 
 ### Example Scenario: Kubernetes Deployment Strategy
 
@@ -111,7 +111,7 @@ This category of devops engineer interview questions probes a candidate's abilit
 
 These questions often revolve around establishing visibility in complex environments, such as monitoring Kubernetes clusters for an energy client or implementing centralized logging for financial transaction audits. The focus is on selecting the right tools and, more importantly, defining the right metrics to track system performance and business outcomes.
 
-![A computer monitor displays a line graph with a magnifying glass and a notification bell icon, symbolizing data analysis and alerts.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/6ddbb083-e225-4cb9-9316-65914dee6e29/devops-engineer-interview-questions-data-analysis.jpg)
+![A computer monitor displays a line graph with a magnifying glass and a notification bell icon, symbolizing data analysis and alerts.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/devops-engineer-interview-questions/devops-engineer-interview-questions-data-analysis.jpg)
 
 ### Example Scenario: Kubernetes Cluster Monitoring
 

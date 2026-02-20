@@ -13,7 +13,7 @@ tags:
   - iam-security
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-d0906d28-f506-4d79-b1f5-c0a340c8b1a6.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-security-fundamentals/featured-image-d0906d28-f506-4d79-b1f5-c0a340c8b1a6.jpg)
 
 Think of cloud security fundamentals as the essential ground rules for keeping your data, apps, and infrastructure safe when they live on the cloud. It all boils down to a few core ideas: understanding the security partnership between you and your cloud provider, meticulously controlling who gets access to what, and scrambling your sensitive data with encryption.
 
@@ -59,7 +59,7 @@ Where that line gets drawn depends entirely on which cloud service model you're 
 
 This image really helps visualize how those responsibilities stack up.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/fe188bdf-3bfe-4d69-bd7b-36c2b8c0b372.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-security-fundamentals/fe188bdf-3bfe-4d69-bd7b-36c2b8c0b372.jpg)
 
 As you can see, no matter how much the provider manages at the foundational level, the customer's duties are always the final, critical layer of defense.
 
@@ -99,7 +99,7 @@ Think of your cloud setup like a secure corporate building. You wouldn't hand ev
 
 Getting this right isn't just a good idea; it's essential. Modern cloud environments are so complex that a simple misconfiguration can open a massive security hole. It's no surprise that over **60%** of companies reported incidents involving public cloud exposure in 2024, often traced back to sloppy access controls. For more on this, the [2025 Exabeam security report](https://www.exabeam.com/explainers/cloud-security/61-cloud-security-statistics-you-must-know-in-2025/) offers some eye-opening stats that really drive home why a solid IAM strategy is non-negotiable.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/291480b2-49d3-4b96-b5b0-0b176889a843.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-security-fundamentals/291480b2-49d3-4b96-b5b0-0b176889a843.jpg)
 
 ### Adopting the Principle of Least Privilege
 
@@ -134,7 +134,7 @@ If Identity and Access Management (IAM) is all about who gets the keys to the ki
 
 Think of it as writing your sensitive information in a secret code. Only you and your most trusted allies have the decoder ring. In technical terms, **encryption** is simply the process of scrambling data so it can only be read by someone holding the correct key. This is a non-negotiable part of any cloud security strategy because it ensures that even if data falls into the wrong hands, it's completely useless.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/6bc4fdcd-1202-41e2-8741-53fde5624b1e.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-security-fundamentals/6bc4fdcd-1202-41e2-8741-53fde5624b1e.jpg)
 
 Despite how crucial it is, encryption is often one of the most neglected security practices. The numbers are pretty jarring. Recent research shows that **fewer than 10%** of companies encrypt 80% or more of their data in the cloud. That's a serious gamble, especially when you consider that **44%** of organizations reported a cloud security incident in the last year. These figures, highlighted in a [recent market analysis on cloud security](https://www.grandviewresearch.com/industry-analysis/cloud-security-market), point to a massive gap between what we know we *should* do and what's actually being done.
 
@@ -174,7 +174,7 @@ So, you've encrypted your data and have a solid handle on who can access what wi
 
 Think of it like building a medieval castle. You wouldn't just throw up a single wall and call it a day. You'd dig a moat, build massive stone walls, and station guards at every single gate. In the cloud, this layered defense is all about making it incredibly difficult for an attacker to move around, even if they somehow find a way in.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/f43a3886-bfca-4fea-935f-eaec6ddc7954.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-security-fundamentals/f43a3886-bfca-4fea-935f-eaec6ddc7954.jpg)
 
 ### Building Your Private Castle Grounds with VPCs
 

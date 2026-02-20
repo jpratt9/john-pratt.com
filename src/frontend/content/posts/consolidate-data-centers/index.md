@@ -13,7 +13,7 @@ tags:
   - hybrid-cloud
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-d332e306-c13b-4c82-8ab9-a8f7c87dbdb2.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/consolidate-data-centers/featured-image-d332e306-c13b-4c82-8ab9-a8f7c87dbdb2.jpg)
 
 Consolidating your data centers is all about merging multiple IT environments into fewer, more efficient physical locations. At its core, this means getting smarter with your resources by using virtualization and more powerful, modern hardware. The whole point is to slash operational costs, make your infrastructure easier to manage, and boost overall efficiency by getting rid of those underutilized servers and redundant systems that are just collecting dust.
 
@@ -31,7 +31,7 @@ Let's walk through a real-world scenario to make this concrete. Imagine a mid-si
 
 This retail company's problems are far from unique. A few major factors are pushing businesses everywhere to get serious about consolidation. First off, energy costs just keep climbing. Older, inefficient data centers are power hogs, and that expense goes straight to the bottom line.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/6eb18170-0efc-49c3-a475-a90801cd2986.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/consolidate-data-centers/6eb18170-0efc-49c3-a475-a90801cd2986.jpg)
 
 Another huge driver is the intense competition for power capacity in major data center markets. With the explosion of AI and cloud services, just finding enough electricity to run a facility has become a serious challenge. It's getting harder and harder to expand when power is so constrained.
 
@@ -86,7 +86,7 @@ Building out this blueprint isn't random; it follows a clear path from discovery
 
 This infographic lays out the core stages you'll go through when creating your data center consolidation plan.
 
-![Infographic about consolidate data centers](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/4f401517-5047-4c60-aff3-45aa5016ebe4.jpg)
+![Infographic about consolidate data centers](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/consolidate-data-centers/4f401517-5047-4c60-aff3-45aa5016ebe4.jpg)
 
 Starting with a detailed audit, moving to dependency mapping, and then planning the future state ensures you don't miss any critical connections along the way.
 
@@ -117,7 +117,7 @@ The retail company we talked about analyzed their workloads and landed on a hybr
 
 ## Executing the Migration Without Business Disruption
 
-![Servers in a modern data center with blue lighting](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/ec32818d-d9a8-44c1-9810-b2c0cfa2ff44.jpg)
+![Servers in a modern data center with blue lighting](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/consolidate-data-centers/ec32818d-d9a8-44c1-9810-b2c0cfa2ff44.jpg)
 
 This is the point where all your careful planning hits the ground. Executing a data center consolidation isn't about just flipping a switch; it's a meticulously choreographed operation. The whole point is to move incredibly complex systems without your users ever noticing a thing.
 
@@ -166,7 +166,7 @@ This disciplined approach ensures that when you finally cut over, you're not jus
 
 ## Managing the Human Side of Consolidation
 
-![Team members collaborating around a whiteboard in a modern office setting.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/0ab9d76b-a711-40ca-ac4f-e6e720b2726b.jpg)
+![Team members collaborating around a whiteboard in a modern office setting.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/consolidate-data-centers/0ab9d76b-a711-40ca-ac4f-e6e720b2726b.jpg)
 
 It's easy to get lost in the racks, routers, and VMs, but technology is only half the battle in a data center consolidation. The other half - the people - is often far more complicated. You can have the most elegant technical blueprint on paper, but if you don't manage the human element, it's almost guaranteed to stumble.
 

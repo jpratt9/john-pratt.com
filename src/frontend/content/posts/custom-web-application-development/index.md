@@ -13,7 +13,7 @@ tags:
   - agile-development
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-7b29fd14-65ee-4129-ade4-c607bc399312.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/custom-web-application-development/featured-image-7b29fd14-65ee-4129-ade4-c607bc399312.jpg)
 
 Ever felt like you're trying to fit a square peg into a round hole with off-the-shelf software? You're not alone. That feeling of forcing your unique business processes into a pre-built box is exactly why custom web application development exists.
 
@@ -21,7 +21,7 @@ It's the difference between buying a suit off the rack and having one tailor-mad
 
 ## What Is Custom Web Application Development, Really?
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/bdb21d22-0ee2-434e-a4be-ecd72473bd9f.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/custom-web-application-development/bdb21d22-0ee2-434e-a4be-ecd72473bd9f.jpg)
 
 Think about the everyday software you use, like [Microsoft Office](https://www.microsoft.com/en-us/microsoft-365) or [Google Workspace](https://workspace.google.com/). These are fantastic "off-the-shelf" products designed for millions of users with general needs. They're powerful, but they often make you adjust *your* workflow to fit *their* features.
 
@@ -123,7 +123,7 @@ This initial phase wraps up with a clear project plan, a well-defined scope, and
 
 This visual shows how those first few steps turn a great idea into a concrete plan.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/c03e6d5b-84cd-4f58-b3ed-31fe2ebf9226.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/custom-web-application-development/c03e6d5b-84cd-4f58-b3ed-31fe2ebf9226.jpg)
 
 As the infographic shows, this kind of systematic planning - from gathering requirements to building a roadmap - is the best defense against scope creep and ensures the project starts on solid ground.
 
@@ -158,7 +158,7 @@ Ongoing **maintenance and support** are vital for the long-term health and succe
 
 ## The Technology That Brings Your App to Life
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/1b5473b3-8e2e-4178-b810-4a567ed0b2a1.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/custom-web-application-development/1b5473b3-8e2e-4178-b810-4a567ed0b2a1.jpg)
 
 Every great web application runs on a specific set of technologies working together, what we call a "technology stack." Think of it like building a custom car. You wouldn't put a tiny four-cylinder engine in a vehicle designed to haul heavy loads, right? You'd pick the engine that fits the purpose.
 
@@ -239,7 +239,7 @@ A partner worth their salt will have clear, straightforward answers and service-
 
 ## How Custom Apps Are Remaking Industries
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/af54ba85-8d2d-4784-bd0c-a024d0e3f16c.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/custom-web-application-development/af54ba85-8d2d-4784-bd0c-a024d0e3f16c.jpg)
 
 The real value of **custom web application development** isn't just theoretical. When you see it in action, it clicks. These purpose-built solutions are doing more than just helping businesses - they're fundamentally reshaping how entire industries work by tackling problems that have long been a source of frustration.
 

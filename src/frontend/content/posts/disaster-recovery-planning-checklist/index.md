@@ -13,7 +13,7 @@ tags:
   - cyber-resilience
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-f6d4207c-cb14-4f39-a980-77d26beddd6a.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/disaster-recovery-planning-checklist/featured-image-f6d4207c-cb14-4f39-a980-77d26beddd6a.jpg)
 
 In today's interconnected business environment, the question isn't *if* a disruption will occur, but *when*. From sophisticated cyberattacks and critical hardware failures to natural disasters and simple human error, an unforeseen event can instantly halt operations, irrevocably damage your brand reputation, and lead to catastrophic financial loss. A purely reactive approach to crisis management is a gamble organizations can no longer afford to take. Proactive, meticulous preparation through a robust disaster recovery (DR) plan is the only reliable path to genuine business resilience.
 
@@ -74,7 +74,7 @@ For example, large organizations like Microsoft structure their DR teams with re
 
 With your critical systems identified, the next step in any disaster recovery planning checklist is to establish how you will protect and restore your data. A backup and recovery strategy is the technical backbone of your plan, outlining the specific processes, technologies, and policies needed to ensure data is copied, stored securely, and can be retrieved effectively after a disruption.
 
-![Create a Backup and Recovery Strategy](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/6604c554-5726-467d-bf05-084bed9633b1.jpg)
+![Create a Backup and Recovery Strategy](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/disaster-recovery-planning-checklist/6604c554-5726-467d-bf05-084bed9633b1.jpg)
 
 This strategy moves beyond simply "backing up files." It's a comprehensive approach that dictates backup frequency, storage locations, data retention periods, and the exact methods for restoration. A well-designed strategy ensures that the data you recover is current enough (meeting your RPO) and can be restored fast enough (meeting your RTO) to prevent significant business harm.
 
@@ -102,7 +102,7 @@ Once you have identified critical business functions through a BIA, the next log
 
 This documentation serves as the technical blueprint for your recovery efforts. Without a clear understanding of your IT environment and its intricate connections, you cannot execute an effective recovery. You wouldn't know which server to restore first, which database is tied to a critical application, or which network switch supports the entire sales department. This detailed inventory ensures that recovery is an orderly, sequential process, not a chaotic guessing game.
 
-![Document Critical Systems and Dependencies](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/d8355a1a-7e8c-4043-90c0-234f8dd83007.jpg)
+![Document Critical Systems and Dependencies](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/disaster-recovery-planning-checklist/d8355a1a-7e8c-4043-90c0-234f8dd83007.jpg)
 
 ### How Documentation Enables Efficient Recovery
 
@@ -128,7 +128,7 @@ A robust disaster recovery planning checklist must address the physical location
 
 An alternate site is more than just a backup location; it's the operational heart of your company during a crisis. The choice of site, from a fully equipped hot site to a flexible cloud-based solution, directly impacts how quickly you can restore critical functions and resume serving customers. This decision balances cost, speed, and capability, making it a cornerstone of your recovery strategy.
 
-![Identify and Secure Alternate Recovery Sites](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/0259c165-5f84-4912-a850-50558b15b8ac.jpg)
+![Identify and Secure Alternate Recovery Sites](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/disaster-recovery-planning-checklist/0259c165-5f84-4912-a850-50558b15b8ac.jpg)
 
 ### How Recovery Sites Enable Business Continuity
 

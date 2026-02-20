@@ -13,7 +13,7 @@ tags:
   - financial-process-automation
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/9b150b51-60fe-4edb-a1dd-5abd28eaedba/automation-in-financial-services-financial-automation.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/automation-in-financial-services/automation-in-financial-services-financial-automation.jpg)
 
 Automation in financial services isn't just a buzzword; it's about using technology to handle tasks that people used to do manually. This shift is creating massive gains in efficiency, accuracy, and compliance. It's a strategic move, covering everything from basic task automation all the way to complex, AI-powered decisions, which frees up your best people to focus on work that actually grows the business.
 
@@ -21,7 +21,7 @@ Automation in financial services isn't just a buzzword; it's about using technol
 
 Financial institutions are in a constant battle. They need to move faster, slash operational costs, and somehow keep up with an ever-growing list of regulations. For many, the old ways of working - endless spreadsheets, manual data entry, and paper-based approvals - are a serious liability. They're slow, riddled with human error, and a nightmare for compliance.
 
-![Side-by-side view contrasting traditional paper ledger and receipts with a modern digital financial dashboard.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/dff0622e-ae8a-4f58-be83-54264f734cb9/automation-in-financial-services-financial-systems.jpg)
+![Side-by-side view contrasting traditional paper ledger and receipts with a modern digital financial dashboard.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/automation-in-financial-services/automation-in-financial-services-financial-systems.jpg)
 
 Think of it like swapping out dusty, handwritten accounting ledgers for a real-time, interactive financial dashboard. That's the essence of what **automation in financial services** delivers. It takes those outdated, risky workflows and turns them into smart, efficient systems that give you a crystal-clear view of the entire organization.
 
@@ -43,7 +43,7 @@ At the end of the day, adopting automation isn't just an option anymore; it's es
 
 To really get a handle on automation in finance, you need to know the tools of the trade. This isn't about getting bogged down in tech jargon; it's about picking the right tool for the right job. Think of it like a specialized toolkit where each instrument has a very specific purpose in building a more efficient financial operation.
 
-![Illustrative icons showcasing key automation technologies: RPA, API, Workflow, Cloud, and AI/ML.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/ed1e72cb-9158-47cf-9072-bc7406beaceb/automation-in-financial-services-automation-technologies.jpg)
+![Illustrative icons showcasing key automation technologies: RPA, API, Workflow, Cloud, and AI/ML.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/automation-in-financial-services/automation-in-financial-services-automation-technologies.jpg)
 
 We can break down modern financial automation into five core pillars. Each one solves a different kind of problem, from mind-numbingly simple data entry to complex, intelligent decision-making. Getting these concepts down is the first step to building a strategy that actually works.
 
@@ -224,7 +224,7 @@ To truly get the most out of the cloud, leading firms are embracing **DevOps pra
 
 This process flow shows a simplified view of how automation can completely reshape a core financial workflow like loan processing.
 
-![Visual representation of a loan automation process with application, fraud check, and approval steps.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/8749648b-970d-4b9d-9052-b174da70ea6e/automation-in-financial-services-loan-automation.jpg)
+![Visual representation of a loan automation process with application, fraud check, and approval steps.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/automation-in-financial-services/automation-in-financial-services-loan-automation.jpg)
 
 This visual shows how separate steps - like application intake, fraud checks, and the final approval - can be stitched together into a single, seamless, automated sequence.
 

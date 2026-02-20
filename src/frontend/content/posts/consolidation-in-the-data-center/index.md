@@ -13,7 +13,7 @@ tags:
   - data-center-efficiency
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/2cc37978-32fd-421b-b3fc-500260ce84cc/consolidation-in-the-data-center-server-migration.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/consolidation-in-the-data-center/consolidation-in-the-data-center-server-migration.jpg)
 
 Data center consolidation is all about reducing your IT footprint - both physical and digital - to cut costs, simplify management, and seriously boost performance. In short, it means *shrinking the number of IT assets* you own and operate, moving from a sprawling, complex setup to a much more efficient, centralized model.
 
@@ -25,7 +25,7 @@ Imagine your company's IT infrastructure is like a massive, cluttered garage. Ov
 
 Instead of running hundreds of underutilized servers, you might end up with just a handful of powerful, virtualized machines that handle the exact same workload - but far more efficiently. This isn't just about tossing out old hardware. It's a strategic rethink of your entire IT operation, focused on trimming the fat across servers, storage, networking, and even physical locations.
 
-![Comparison of traditional server racks and modern cloud-based data center infrastructure with analytics](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/59f71561-19c2-4053-9f01-62a752cd4d51/consolidation-in-the-data-center-infrastructure-comparison.jpg)
+![Comparison of traditional server racks and modern cloud-based data center infrastructure with analytics](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/consolidation-in-the-data-center/consolidation-in-the-data-center-infrastructure-comparison.jpg)
 
 ### The Modern Imperative for Consolidation
 
@@ -98,7 +98,7 @@ Each path offers its own unique blend of benefits and trade-offs. The key is to 
 
 This flowchart gives you a high-level look at how those drivers can point you in the right direction.
 
-![Flowchart showing assess needs leading to cost-driven and simplify IT strategy branches with dollar and gear icons](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/f2733a71-9a2f-4e07-961f-9e380a396d8e/consolidation-in-the-data-center-assessment-flowchart.jpg)
+![Flowchart showing assess needs leading to cost-driven and simplify IT strategy branches with dollar and gear icons](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/consolidation-in-the-data-center/consolidation-in-the-data-center-assessment-flowchart.jpg)
 
 Whether it's about the bottom line or operational sanity, a clear path forward starts with a hard look at what you truly need.
 
@@ -155,7 +155,7 @@ A successful data center consolidation isn't something you can just wing. Think 
 
 This roadmap will guide you from the initial discovery all the way to post-migration optimization.
 
-![Four step workflow process showing research, documentation, achievement milestone, and automation integration icons](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/588144d8-aef7-45cb-bdbf-ca654c78ddd5/consolidation-in-the-data-center-workflow-process.jpg)
+![Four step workflow process showing research, documentation, achievement milestone, and automation integration icons](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/consolidation-in-the-data-center/consolidation-in-the-data-center-workflow-process.jpg)
 
 ### Phase 1: Discovery And Assessment
 

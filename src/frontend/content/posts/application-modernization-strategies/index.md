@@ -13,7 +13,7 @@ tags:
   - microservices-architecture
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/a73bd4f3-7db0-48dd-9480-c1bef88b0be0/application-modernization-strategies-tech-icons.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/application-modernization-strategies/application-modernization-strategies-tech-icons.jpg)
 
 In today's hyper-competitive market, legacy applications are more than just a technical challenge; they are a direct bottleneck to innovation, agility, and growth. While the need to modernize is clear, the path forward is often complex and filled with competing priorities. Simply moving an application to the cloud, often called "lift and shift," is rarely enough to achieve a true transformation. This approach often just moves the same problems to a new, more expensive environment without addressing core architectural flaws.
 
@@ -61,7 +61,7 @@ Imagine a financial services company with a diverse application portfolio. Using
 
 Containerization is a powerful approach in the **application modernization strategies** playbook, focused on packaging an application and its dependencies into a single, lightweight, and portable unit called a container. This method, championed by technologies like Docker and orchestrated by platforms like Kubernetes, allows applications to run consistently across any environment, from a developer's laptop to a production cloud server. It modernizes applications by improving deployment velocity, scalability, and resource efficiency, often without needing to rewrite the core application code.
 
-![Abstract illustration of a laptop processing floating application cubes next to a server rack.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/6a84dc3d-db43-4b54-858a-2eaf6e88de7a/application-modernization-strategies-application-migration.jpg)
+![Abstract illustration of a laptop processing floating application cubes next to a server rack.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/application-modernization-strategies/application-modernization-strategies-application-migration.jpg)
 
 This strategy effectively decouples the application from the underlying infrastructure. By encapsulating everything the software needs to run (libraries, system tools, code), containers eliminate the classic "it works on my machine" problem. Kubernetes then takes this a step further by automating the deployment, scaling, and management of these containerized applications, enabling organizations like Spotify and Netflix to manage thousands of services with high availability and resilience.
 
@@ -84,7 +84,7 @@ Adopting an API-first architecture with microservices is one of the most transfo
 
 Unlike a monolith where everything is tightly coupled, microservices promote agility, resilience, and scalability. Teams can develop, deploy, and scale their services independently, leading to faster innovation cycles and a more fault-tolerant system. If one service fails, it doesn't bring down the entire application.
 
-![A diagram with a central checklist document icon connected to eight conceptual outline icons representing various strategies.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/f7119598-ce12-4b5b-b0fc-e0143a67a357/application-modernization-strategies-conceptual-network.jpg)
+![A diagram with a central checklist document icon connected to eight conceptual outline icons representing various strategies.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/application-modernization-strategies/application-modernization-strategies-conceptual-network.jpg)
 
 ### How It Works in Practice
 
@@ -158,7 +158,7 @@ While other **application modernization strategies** focus on changing applicati
 
 A fundamental aspect of achieving this speed and quality is through robust [DevOps automation](https://www.saasbrella.co/blog/what-is-devops-automation-a-practical-guide-to-faster-software-delivery/), ensuring a streamlined and efficient delivery pipeline. This cultural and technological shift transforms application delivery from a slow, high-risk event into a routine, low-risk activity, enabling businesses to respond rapidly to market demands.
 
-![A continuous infinity loop illustrating the application modernization lifecycle with various process icons.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/6797bb1b-e1a2-42f8-8cc8-1eb8efce9fe5/application-modernization-strategies-devops-lifecycle.jpg)
+![A continuous infinity loop illustrating the application modernization lifecycle with various process icons.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/application-modernization-strategies/application-modernization-strategies-devops-lifecycle.jpg)
 
 ### How It Works in Practice
 

@@ -13,7 +13,7 @@ tags:
   - tech-stack
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-2b190e95-6d0a-4151-9443-0f004241fe5e.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/custom-software-vs-off-the-shelf/featured-image-2b190e95-6d0a-4151-9443-0f004241fe5e.jpg)
 
 At its core, the difference is simple: **custom software is built from scratch just for you**, while *off-the-shelf software is a one-size-fits-all product* you buy and use immediately. The real question is whether you need a perfectly tailored solution for your unique processes or a more general tool that can get you up and running quickly.
 
@@ -21,7 +21,7 @@ At its core, the difference is simple: **custom software is built from scratch j
 
 Picking the right software isn't just a technical choice; it's a strategic decision that will ripple through your daily operations and shape your long-term growth. To get it right, you have to grasp the fundamentally different philosophies behind custom-built and pre-packaged solutions. Think of it like buying a suit: do you go for a bespoke, tailor-made garment or one straight off the rack?
 
-![A developer working on custom software on a laptop, with an off-the-shelf software box on the side for comparison.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/72fee12b-84bf-45f4-a85d-2af3bc3c7cfc.jpg)
+![A developer working on custom software on a laptop, with an off-the-shelf software box on the side for comparison.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/custom-software-vs-off-the-shelf/72fee12b-84bf-45f4-a85d-2af3bc3c7cfc.jpg)
 
 ### What Is Off-The-Shelf Software?
 
@@ -58,7 +58,7 @@ Ultimately, this table highlights the central dilemma: the upfront investment of
 
 ## Looking Beyond the Sticker Price: Total Cost of Ownership
 
-![A person using a calculator with charts and graphs in the background, representing financial analysis.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/a29d1e22-5e8e-46b2-b9e9-e836853942b4.jpg)
+![A person using a calculator with charts and graphs in the background, representing financial analysis.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/custom-software-vs-off-the-shelf/a29d1e22-5e8e-46b2-b9e9-e836853942b4.jpg)
 
 When you're weighing custom vs. off-the-shelf software, the initial price tag is almost always a red herring. To make a smart financial decision, you have to look past that number and calculate the **Total Cost of Ownership (TCO)**. This gives you the real story of what the software will cost you over its entire lifespan, from day one until it's retired.
 
@@ -149,7 +149,7 @@ These examples highlight a key differentiator in the custom software vs off the 
 
 ## Comparing Implementation and Integration
 
-![Two puzzle pieces, one perfectly fitting and one slightly off, symbolizing the difference between custom and off-the-shelf integration.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/dcff2df6-050d-4b52-aeed-511ad993cafa.jpg)
+![Two puzzle pieces, one perfectly fitting and one slightly off, symbolizing the difference between custom and off-the-shelf integration.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/custom-software-vs-off-the-shelf/dcff2df6-050d-4b52-aeed-511ad993cafa.jpg)
 
 Beyond the initial price tag, the next major hurdle is getting the software up and running within your business. This is where the **custom software vs off the shelf** argument gets really interesting. Off-the-shelf software's biggest claim to fame is its speed. You can often get it deployed in days, sometimes even hours. Just sign up, tweak a few settings, and you're good to go.
 
@@ -252,7 +252,7 @@ Here are a few clear signals that it's time for a custom build:
 
 This infographic does a great job of showing the fundamental difference in security control you get with each option.
 
-![Infographic about custom software vs off the shelf](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/55f71b0b-4f73-4ec6-8ebc-829b6b47bd98.jpg)
+![Infographic about custom software vs off the shelf](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/custom-software-vs-off-the-shelf/55f71b0b-4f73-4ec6-8ebc-829b6b47bd98.jpg)
 
 With a vendor-managed tool, you get convenience. But with a custom build, you get total control, which is non-negotiable when you have specific compliance or security needs.
 

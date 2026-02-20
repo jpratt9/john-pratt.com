@@ -13,7 +13,7 @@ tags:
   - it-consulting
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/39b00625-08b0-47e9-a62f-e161c70c5256/custom-software-development-company-software-integration.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/custom-software-development-company/custom-software-development-company-software-integration.jpg)
 
 Are you trying to run your business with a dashboard that feels like it was designed for someone else? It's a common frustration. So many companies find themselves stuck with generic, off-the-shelf software that dictates how they should work, forcing them to twist their processes to fit the tool's rigid structure.
 
@@ -51,7 +51,7 @@ The whole process kicks off with discovery and strategy. Your development partne
 
 This journey transforms an initial business headache into a powerful strategic asset through a structured, collaborative effort.
 
-![A three-step custom software journey: from initial frustration, through partnership, to a final solution.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/7a3bcbda-657f-4e82-99ba-22286a7e93c3/custom-software-development-company-software-journey.jpg)
+![A three-step custom software journey: from initial frustration, through partnership, to a final solution.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/custom-software-development-company/custom-software-development-company-software-journey.jpg)
 
 This brings us to a fundamental choice every business faces: build something unique or buy something ready-made?
 
@@ -97,7 +97,7 @@ A top-tier custom software development company does much more than just write co
 
 Think of it like a high-performance auto shop. Each service is a specialized team - engineers, mechanics, data analysts - all working together to build a powerful engine for your business. The final product isn't just functional; it's secure, fast, and ready for whatever comes next.
 
-![Infographic illustrating Cloud & DevOps, Software Engineering, Python/Java, Automation, and Data Engineering concepts.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/62b6df6f-a8c5-4ae8-8b10-c4d1307e0b87/custom-software-development-company-software-concepts.jpg)
+![Infographic illustrating Cloud & DevOps, Software Engineering, Python/Java, Automation, and Data Engineering concepts.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/custom-software-development-company/custom-software-development-company-software-concepts.jpg)
 
 ### Cloud and DevOps: The Automated Assembly Line
 
@@ -182,7 +182,7 @@ To really get the most long-term ROI, it's critical to work with a partner that 
 
 ## How to Choose the Right Development Partner
 
-![Illustration of two businessmen reviewing a large digital checklist, one using a magnifying glass.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/a344f8ec-9a77-48d4-bcb2-700696648851/custom-software-development-company-task-review.jpg)
+![Illustration of two businessmen reviewing a large digital checklist, one using a magnifying glass.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/custom-software-development-company/custom-software-development-company-task-review.jpg)
 
 Picking the team that will build your custom software is easily the biggest decision you'll make. Get it right, and they'll feel like a true extension of your own company, turning your vision into a real, high-performing asset. But the wrong choice can quickly spiral into blown budgets, missed deadlines, and a final product that just doesn't hit the mark.
 

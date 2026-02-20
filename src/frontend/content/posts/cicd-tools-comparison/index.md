@@ -13,7 +13,7 @@ tags:
   - automation-tools
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-11b06a14-6201-4bf8-9913-22dedc1caf40.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cicd-tools-comparison/featured-image-11b06a14-6201-4bf8-9913-22dedc1caf40.jpg)
 
 Digging into a **CI/CD tools comparison** brings one simple fact to light: the best tool is always the one that fits your team's existing tech stack and specific goals.
 
@@ -53,7 +53,7 @@ Before we jump into the nitty-gritty details, it helps to have a high-level view
 
 ## Meet the Core CI/CD Contenders
 
-![A grid of logos for Jenkins, GitLab, CircleCI, and Azure DevOps](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/79a45235-8bae-4505-a5ac-78d6cc8b5453.jpg)
+![A grid of logos for Jenkins, GitLab, CircleCI, and Azure DevOps](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cicd-tools-comparison/79a45235-8bae-4505-a5ac-78d6cc8b5453.jpg)
 
 Before we can really dive into a side-by-side **CI/CD tools comparison**, it helps to understand the philosophy behind each major player. Every tool was born from a specific need, and that origin story shapes its strengths, its weaknesses, and where it truly shines. This section will introduce the four contenders at the heart of our analysis.
 
@@ -121,7 +121,7 @@ Jenkins has its roots in the self-hosted world. This gives you total control ove
 
 This infographic provides a snapshot comparison of Jenkins, GitLab CI, and CircleCI across key community and performance metrics.
 
-![Infographic about cicd tools comparison](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/e3bb04ac-ef43-4e82-819e-e1f9304214b0.jpg)
+![Infographic about cicd tools comparison](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cicd-tools-comparison/e3bb04ac-ef43-4e82-819e-e1f9304214b0.jpg)
 
 The data really shows Jenkins' maturity with its massive number of plugins. At the same time, you can see how newer tools like CircleCI are laser-focused on performance, optimizing things like build time.
 
@@ -166,7 +166,7 @@ In the end, the "best" tool is the one that fits your team's skills, your curren
 
 ## Evaluating Security and Compliance Frameworks
 
-![A digital illustration of a padlock over a cloud server, representing cloud security.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/7d4f1707-9e89-48dc-ac1f-be538c64a358.jpg)
+![A digital illustration of a padlock over a cloud server, representing cloud security.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cicd-tools-comparison/7d4f1707-9e89-48dc-ac1f-be538c64a358.jpg)
 
 In any serious software shop, a secure pipeline isn't a nice-to-have; it's a non-negotiable. A meaningful **cicd tools comparison** has to look past build speeds and get into the weeds of how each platform handles security and compliance. We're talking about everything from built-in vulnerability scanning to granular access controls and, of course, secret management.
 
@@ -243,7 +243,7 @@ This is exactly where [**GitLab CI/CD**](https://about.gitlab.com/) excels. If y
 
 ## The Long-Term Value of Your CI/CD Investment
 
-![A rocket launching from a laptop screen, symbolizing rapid deployment and innovation.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/51f5294e-47ab-4fda-a264-05865e499b33.jpg)
+![A rocket launching from a laptop screen, symbolizing rapid deployment and innovation.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cicd-tools-comparison/51f5294e-47ab-4fda-a264-05865e499b33.jpg)
 
 So far, we've dug into the nitty-gritty of what makes each of these CI/CD platforms tick. But picking a tool like [Jenkins](https://www.jenkins.io/), [GitLab CI/CD](https://about.gitlab.com/stages-devops-lifecycle/continuous-integration/), [CircleCI](https://circleci.com/), or [Azure DevOps](https://azure.microsoft.com/en-us/products/devops) is more than just an operational choice - it's a serious investment in how your business competes. The right tool becomes the engine that drives real-world business results.
 

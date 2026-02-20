@@ -13,7 +13,7 @@ tags:
   - cloud-infrastructure
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-7728edfe-ac62-4a8c-96ec-2c4f78c9e9b7.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/choosing-a-cloud-provider/featured-image-7728edfe-ac62-4a8c-96ec-2c4f78c9e9b7.jpg)
 
 Picking the right cloud partner isn't about finding the one "best" provider - that doesn't exist. It's about finding the *best fit* for your company, your goals, and your budget.
 
@@ -86,7 +86,7 @@ Once you've settled on a service model, you have to decide *where* your cloud wi
 
 This decision tree gives a great visual of how different business needs can lead you to a specific cloud setup.
 
-![Infographic about choosing a cloud provider](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/41818d0a-c194-4e61-a4fe-433edeba3caf.jpg)
+![Infographic about choosing a cloud provider](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/choosing-a-cloud-provider/41818d0a-c194-4e61-a4fe-433edeba3caf.jpg)
 
 As you can see, there's no single "best" answer. The right path is always dictated by your specific needs for things like scalability, data security, and regulatory compliance.
 
@@ -138,7 +138,7 @@ While AWS might have more individual services, Azure's real strength is its cohe
 
 ## How to Analyze Cloud Costs and TCO
 
-![Chart showing a breakdown of cloud costs and TCO analysis](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/1adb4f56-32bb-4c27-a465-b82645699cea.jpg)
+![Chart showing a breakdown of cloud costs and TCO analysis](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/choosing-a-cloud-provider/1adb4f56-32bb-4c27-a465-b82645699cea.jpg)
 
 When you start shopping for a cloud provider, the sticker price for a virtual machine or a gigabyte of storage is just the tip of the iceberg. It's an entry point, not the final bill. The real cost is buried in the details - the pricing models, the data transfer fees, and the support plans you'll inevitably need.
 
@@ -181,7 +181,7 @@ Plug in your expected workloads, storage needs, and data transfer patterns. Thes
 
 ## Evaluating Security, Compliance, and Governance
 
-![Padlock icon over a cloud graphic symbolizing cloud security and compliance](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/a9a8e0d6-4d19-4b9d-b79d-66a894bc2eaa.jpg)
+![Padlock icon over a cloud graphic symbolizing cloud security and compliance](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/choosing-a-cloud-provider/a9a8e0d6-4d19-4b9d-b79d-66a894bc2eaa.jpg)
 
 While cost and performance are huge factors in your decision, security is the one area where you can't afford to cut corners. A single data breach can torpedo customer trust, not to mention the eye-watering fines that often follow. This isn't just about having firewalls; it's about a deep, verifiable commitment to governance and compliance that aligns with your specific industry.
 

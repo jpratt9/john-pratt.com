@@ -13,13 +13,13 @@ tags:
   - rpa-consulting
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-5b856d39-774e-402f-b0c1-8e0429e64675.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/automation-consulting-services/featured-image-5b856d39-774e-402f-b0c1-8e0429e64675.jpg)
 
 At its core, automation consulting is all about bringing in an expert to help your business work smarter, not harder. They pinpoint those tedious, repetitive tasks that drain your team's energy and then design and implement automated solutions to handle them. Think of them as a specialist who creates a custom blueprint to make your entire operation more efficient, accurate, and ready to grow, using tools like Robotic Process Automation (RPA) and AI.
 
 ## What Exactly Are Automation Consulting Services
 
-![An automation consultant working on a workflow diagram with a client, symbolizing strategic planning.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/5c73b48d-3adf-46c7-a170-9973a721e254.jpg)
+![An automation consultant working on a workflow diagram with a client, symbolizing strategic planning.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/automation-consulting-services/5c73b48d-3adf-46c7-a170-9973a721e254.jpg)
 
 So many businesses get bogged down by the same old problems. Manual data entry, clunky invoice approvals, endless report generation - these are the operational bottlenecks that eat up time and open the door to human error. Everyone knows automation is the answer, but figuring out where to even begin can be paralyzing. That's exactly the problem automation consultants are here to solve.
 
@@ -42,7 +42,7 @@ Ultimately, these services are about fundamentally changing how work gets done i
 
 ## The Core Services Automation Consultants Provide
 
-![A team of consultants collaborating around a whiteboard, illustrating the diverse services offered in automation.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/f666acbc-27f8-41b7-a1a1-1f9cabd46fe9.jpg)
+![A team of consultants collaborating around a whiteboard, illustrating the diverse services offered in automation.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/automation-consulting-services/f666acbc-27f8-41b7-a1a1-1f9cabd46fe9.jpg)
 
 When you bring in an automation consultant, you're not just buying a piece of software. You're investing in a structured, hands-on service that's all about delivering real business results. The work unfolds in distinct phases, with each step building on the last to make sure your automation efforts are successful and, more importantly, sustainable.
 
@@ -205,7 +205,7 @@ Get specific with your questions. If you're in manufacturing, you need a consult
 
 This graphic shows how a typical consulting project unfolds, from the initial discovery calls all the way to a full-scale rollout.
 
-![Infographic about automation consulting services](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/641733ea-98de-46a5-8c11-9698cc4466fa.jpg)
+![Infographic about automation consulting services](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/automation-consulting-services/641733ea-98de-46a5-8c11-9698cc4466fa.jpg)
 
 Each phase is designed to build on the last, ensuring everything is done thoughtfully and strategically to meet your goals.
 
@@ -229,7 +229,7 @@ Here are a few critical questions to ask any potential partner:
 
 ## What's Next? Future Trends Shaping Automation Consulting
 
-![A futuristic interface showing interconnected data points and AI brains, symbolizing future automation trends.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/4309dcd9-6445-454d-ae96-5f5ea9cf944e.jpg)
+![A futuristic interface showing interconnected data points and AI brains, symbolizing future automation trends.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/automation-consulting-services/4309dcd9-6445-454d-ae96-5f5ea9cf944e.jpg)
 
 The world of automation never stands still, and the consulting services that support it are changing just as fast. To stay competitive, you have to look beyond what's possible today and anticipate the next wave of technology that will redefine how businesses operate.
 

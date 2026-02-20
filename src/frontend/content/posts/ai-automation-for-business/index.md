@@ -13,13 +13,13 @@ tags:
   - ai-growth-strategy
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-678d00df-a5aa-45ba-8590-d380ff51e9a0.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/ai-automation-for-business/featured-image-678d00df-a5aa-45ba-8590-d380ff51e9a0.jpg)
 
 Imagine hiring a digital workforce that doesn't just follow a to-do list, but actually learns, adapts, and makes smart decisions around the clock. That's the real power behind **AI automation for business**. We're talking about something way beyond simple email autoresponders; this is about using artificial intelligence to tackle complex, dynamic jobs that have always needed a human touch.
 
 ## What Is AI Automation for Business
 
-![A conceptual image showing gears and lightbulbs, symbolizing the intelligent automation of business processes.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/c6e3ab79-87f5-4522-9492-434630083ce5.jpg)
+![A conceptual image showing gears and lightbulbs, symbolizing the intelligent automation of business processes.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/ai-automation-for-business/c6e3ab79-87f5-4522-9492-434630083ce5.jpg)
 
 At its core, AI automation is the next logical leap in business efficiency. While older, traditional automation is fantastic at following a rigid, pre-defined script, AI brings intelligence into the mix. It can actually analyze data, understand the context behind it, and make decisions on its own.
 
@@ -46,7 +46,7 @@ This democratization of technology levels the playing field. Small and mid-sized
 
 ## The True Benefits of AI Business Automation
 
-![An abstract image showing interconnected nodes and data streams, representing the benefits of AI in business efficiency and decision-making.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/0dbfde26-88ab-443f-bd66-7ce999543f6d.jpg)
+![An abstract image showing interconnected nodes and data streams, representing the benefits of AI in business efficiency and decision-making.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/ai-automation-for-business/0dbfde26-88ab-443f-bd66-7ce999543f6d.jpg)
 
 While the concept of intelligent systems is exciting, the real story behind **AI automation for business** isn't about sci-fi - it's about real, measurable results. These benefits go way beyond just cutting costs. They fundamentally change how a company works, makes decisions, and connects with its customers.
 
@@ -90,7 +90,7 @@ It's one thing to talk about AI automation in theory, but seeing it in action is
 
 This infographic gives you a great visual of how a central AI brain can connect and supercharge core business functions like Marketing, Customer Service, and Operations.
 
-![Infographic about ai automation for business](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/c7ae3f18-b242-4cf0-abf4-c04e9dc32bdc.jpg)
+![Infographic about ai automation for business](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/ai-automation-for-business/c7ae3f18-b242-4cf0-abf4-c04e9dc32bdc.jpg)
 
 The big idea here is that AI automation isn't just another siloed tool. It's a unifying intelligence that brings smarter decision-making to every corner of your business. Let's break down what that looks like with some practical, real-world examples.
 

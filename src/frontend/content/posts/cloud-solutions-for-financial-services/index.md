@@ -13,7 +13,7 @@ tags:
   - cloud-compliance
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-60c164b9-9e1f-465f-9fa5-a7f957d6808b.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-solutions-for-financial-services/featured-image-60c164b9-9e1f-465f-9fa5-a7f957d6808b.jpg)
 
 Cloud solutions are fundamentally changing the game for financial services. It's a complete shift away from the old way of doing things - relying on rigid, on-premise infrastructure - to embracing flexible, scalable, and secure digital environments. This means financial institutions can finally ditch expensive physical servers for on-demand computing power, which in turn fuels faster innovation and much deeper insights from their data.
 
@@ -25,7 +25,7 @@ The financial industry is in the middle of a massive transformation, leaving beh
 
 Think of it this way: traditional on-premise servers are like a single, physical bank vault. It's certainly secure, but it's also rigid and incredibly difficult to expand when you need more space quickly.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/443c7fd2-655a-4727-94c3-ee29974ef38e.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-solutions-for-financial-services/443c7fd2-655a-4727-94c3-ee29974ef38e.jpg)
 
 Cloud solutions, on the other hand, are more like a global network of interconnected, highly secure vaults that can grow or shrink instantly based on your needs. This migration is being pushed by core business demands that the old systems just can't handle anymore.
 
@@ -56,7 +56,7 @@ When financial institutions talk about moving to the cloud, they're not just tal
 
 Instead of pouring massive amounts of capital into physical hardware that's practically obsolete the moment you install it, you can move to a flexible, consumption-based model. It's a strategic pivot that makes operations more efficient and frees up critical resources for growth. Let's dig into the four pillars that make the cloud such a big deal for the financial world.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/7e59072e-8236-4b08-9be9-27e1dbdc1f1a.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-solutions-for-financial-services/7e59072e-8236-4b08-9be9-27e1dbdc1f1a.jpg)
 
 ### Dramatically Reduce Operational Costs
 
@@ -106,7 +106,7 @@ The cloud generally comes in three flavors, or service models. Each one offers a
 
 For a clearer picture, this image shows just how much cloud security improves upon old-school, on-premise setups.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/28b614b4-0b7b-43c1-bdc1-5e7c1aceb050.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-solutions-for-financial-services/28b614b4-0b7b-43c1-bdc1-5e7c1aceb050.jpg)
 
 As you can see, cloud platforms shift security from periodic, manual checks to continuous, real-time monitoring - a massive step up.
 
@@ -138,7 +138,7 @@ For any financial institution, security and compliance are more than just line i
 
 Think about it. The major cloud providers invest billions of dollars every year in security measures - from physical guards at data centers to advanced digital threat intelligence - that most individual firms simply can't afford to match. The real key isn't *if* the cloud is secure, but knowing how to properly use the powerful security tools it puts at your fingertips.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/c6a2aa9c-c17e-4844-9e02-c5e1e886ee14.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-solutions-for-financial-services/c6a2aa9c-c17e-4844-9e02-c5e1e886ee14.jpg)
 
 ### Understanding the Shared Responsibility Model
 

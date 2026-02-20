@@ -13,7 +13,7 @@ tags:
   - microservices
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-4dfd5043-b36b-48ba-875c-f23f61aeb39a.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-based-application-development/featured-image-4dfd5043-b36b-48ba-875c-f23f61aeb39a.jpg)
 
 Think about setting up a new business. You could go the old-school route: buy land, pour a foundation, build an office from the ground up, and manage your own power and water. Or, you could lease a space in a high-tech office building where all of that is handled for you.
 
@@ -25,7 +25,7 @@ Moving to the cloud is much more than a simple tech upgrade. It's a strategic mo
 
 This flips the script from heavy capital expenditure (CapEx) to a more flexible operational expenditure (OpEx). It frees up cash, slashes financial risk, and lets even a small startup go toe-to-toe with industry giants.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/dad51d47-c27c-4343-8ba7-affe84175d06.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-based-application-development/dad51d47-c27c-4343-8ba7-affe84175d06.jpg)
 
 Ultimately, this model lets your team focus on what actually matters: building great products for your customers. When you hand off the headache of infrastructure management to cloud providers like [Amazon Web Services (AWS)](https://aws.amazon.com/), [Microsoft Azure](https://azure.microsoft.com/en-us/), or [Google Cloud](https://cloud.google.com/), your developers can pour their energy into creating new features, polishing the user experience, and just plain innovating faster.
 
@@ -48,7 +48,7 @@ To really get the most out of building applications for the cloud, you first hav
 
 This strategic shift is what's behind the explosive growth we're seeing. The global cloud computing market is on a trajectory to more than triple, projected to climb from **USD 500 billion** in 2023 to an incredible **USD 1.6 trillion** by 2030. This isn't just hype; it's driven by real-world advantages like potential cost savings of up to **30%** over traditional IT. A quick look at cloud migration statistics shows just how widespread this move has become.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/085e3c47-d06c-4132-b359-77501ddad474.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-based-application-development/085e3c47-d06c-4132-b359-77501ddad474.jpg)
 
 ### Microservices: The LEGO Approach to Software
 
@@ -94,7 +94,7 @@ When you start building applications for the cloud, you'll quickly discover that
 
 This decision isn't trivial; it directly shapes your team's day-to-day responsibilities, how fast you can build and ship features, and your overall flexibility. Each model represents a trade-off. What are you willing to manage yourself, and what do you want to hand off to the cloud provider? Getting this right is the first step toward building an efficient and cost-effective application.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/32d3d40d-6592-483d-88bf-4315adfc1c26.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-based-application-development/32d3d40d-6592-483d-88bf-4315adfc1c26.jpg)
 
 ### IaaS: The Do-It-Yourself Approach
 
@@ -137,7 +137,7 @@ Getting a cloud application off the ground isn't a single "launch day" event; it
 
 This roadmap breaks the entire process down into clear, manageable phases. Each stage logically builds on the one before it, guiding your team from a back-of-the-napkin idea to a fully functioning application ready for real users. Following these steps helps you sidestep common traps like budget overruns, security holes, and performance issues that can kill a project.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/2810d183-70b2-4826-9ddd-e635a466941d.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-based-application-development/2810d183-70b2-4826-9ddd-e635a466941d.jpg)
 
 ### Phase 1: Strategic Planning and Design
 

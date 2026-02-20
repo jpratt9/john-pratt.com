@@ -13,7 +13,7 @@ tags:
   - business-automation
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/7238dba4-a6e3-4994-bc37-27a14ce500de/custom-software-development-services-software-development.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/custom-software-development-services/custom-software-development-services-software-development.jpg)
 
 Ever tried to make a generic, off-the-shelf piece of software fit your unique business process? It often feels like you're trying to jam a square peg into a round hole. You're stuck with clunky workarounds, paying for a mountain of features you'll never touch, and wondering why things aren't running more smoothly.
 
@@ -25,7 +25,7 @@ Most businesses start with off-the-shelf software. It makes sense at first - it'
 
 The fundamental problem is that these tools are rigid by design. They're built for the "average" company, which means their features and workflows are generic. The unique processes that actually give you a competitive edge have to be twisted and contorted to fit the software's mold, not the other way around.
 
-![A worried businessman surrounded by sticky notes, an 'unused features' tag, and a block in a hole.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/d1c169c0-c1e7-4133-b2a7-511e2f9bdcca/custom-software-development-services-unused-features.jpg)
+![A worried businessman surrounded by sticky notes, an 'unused features' tag, and a block in a hole.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/custom-software-development-services/custom-software-development-services-unused-features.jpg)
 
 ### The Hidden Costs Of Generic Tools
 
@@ -100,7 +100,7 @@ The system architecture is the technical backbone. This is where crucial decisio
 
 At the same time, UI/UX designers get to work creating wireframes and mockups that map out the entire user journey. Their job is to craft an interface that's intuitive, efficient, and maybe even a little enjoyable to use. This user-first approach ensures the final product isn't just powerful under the hood but is something your team will actually want to use.
 
-![Diagram illustrating the custom software ROI process through scalability and security leading to return on investment.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/656ca4bd-8036-4e13-86ad-fd3bd3fa390b/custom-software-development-services-roi-process.jpg)
+![Diagram illustrating the custom software ROI process through scalability and security leading to return on investment.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/custom-software-development-services/custom-software-development-services-roi-process.jpg)
 
 As you can see, a smart architecture allows the software to grow with you, while strong security protects that investment. Both are critical for driving real ROI.
 
@@ -132,7 +132,7 @@ Think of it like building a high-performance car. You need the right chassis (cl
 
 Let's look under the hood at the key technologies that work together to bring a custom application to life.
 
-![A layered diagram illustrating the architecture of custom software development, from cloud to database.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/1280d868-5550-49ca-a399-7d3567a9b917/custom-software-development-services-software-architecture.jpg)
+![A layered diagram illustrating the architecture of custom software development, from cloud to database.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/custom-software-development-services/custom-software-development-services-software-architecture.jpg)
 
 This diagram shows how modern software architecture is layered. At the base, you have Infrastructure as Code (IaC), a core DevOps practice where the entire environment is defined and managed through code. This is a game-changer because it makes your infrastructure automated, consistent, and repeatable - eliminating the manual errors that can bring systems down.
 

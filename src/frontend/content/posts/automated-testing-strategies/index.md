@@ -13,7 +13,7 @@ tags:
   - quality-assurance
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/347d5273-b087-4628-bdde-477c74c710bb/automated-testing-strategies-data-structure.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/automated-testing-strategies/automated-testing-strategies-data-structure.jpg)
 
 An automated testing strategy is your game plan for quality. It's a deliberate approach that outlines *what* to test, *how* to test it automatically, and *when* those tests should run throughout the development process. Think of it as the **blueprint for quality assurance**.
 
@@ -65,7 +65,7 @@ Think of it like building a house. You wouldn't just throw up all the walls and 
 
 This is what a high-level strategic process looks like - it's about making conscious decisions about scope, timing, and tools before you ever write a single test.
 
-![A flowchart detailing a strategic planning process: Strategy, an unspecified step, Scope, Timing, and Tools.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/3d9c8bd4-cc59-4105-91fb-107616743faf/automated-testing-strategies-process-flow.jpg)
+![A flowchart detailing a strategic planning process: Strategy, an unspecified step, Scope, Timing, and Tools.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/automated-testing-strategies/automated-testing-strategies-process-flow.jpg)
 
 This kind of structured thinking is exactly what the Testing Pyramid embodies. It gives you a framework for making those smart, deliberate choices.
 
@@ -107,7 +107,7 @@ The Test Pyramid gives us a fantastic blueprint for a balanced test suite, but m
 
 Think of it like this: your pyramid tests are the foundational inspection of a new building. But now you need specialists to check the plumbing, electrical systems, and structural integrity under stress. Each of these modern test patterns serves a very specific purpose, creating a layered defense that catches bugs that would otherwise slip right into production. This ensures your application isn't just working, but is also fast, reliable, and secure.
 
-![An illustration of five interconnected modules: API, Contract, and two Security components, arranged in a cross.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/e42cecf5-9265-4798-8dae-7cabc5c8348a/automated-testing-strategies-system-components.jpg)
+![An illustration of five interconnected modules: API, Contract, and two Security components, arranged in a cross.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/automated-testing-strategies/automated-testing-strategies-system-components.jpg)
 
 ### Verifying Service Communication with API Testing
 
@@ -198,7 +198,7 @@ You can have the most brilliant automated tests in the world, but they're useles
 
 Think about it. Your perfectly crafted script can't do its job if the server is down or the data it needs to verify is missing. The result is always the same: a failed test, a confused developer, and a colossal waste of time. Getting your environments and data right is the difference between a reliable automation suite and a constant source of flaky tests that erode everyone's trust.
 
-![Diagram showing 'Env' (cloud) transforming through 'Cofor' to clean and secure 'Data'.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/6baf87c3-f3e4-45ae-ad92-487564d1e9c2/automated-testing-strategies-data-flow.jpg)
+![Diagram showing 'Env' (cloud) transforming through 'Cofor' to clean and secure 'Data'.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/automated-testing-strategies/automated-testing-strategies-data-flow.jpg)
 
 ### Modernizing Test Environment Management
 

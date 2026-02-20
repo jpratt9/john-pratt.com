@@ -12,7 +12,7 @@ tags:
   - data-strategy
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-0b053e0c-3b39-434d-bca7-dec0a18de5e4.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/data-modernization-services/featured-image-0b053e0c-3b39-434d-bca7-dec0a18de5e4.jpg)
 
 Let's be honest, many businesses are running on data infrastructure that's the digital equivalent of an old, overloaded power strip. It technically works, but it's slow, risky, and can't handle the demands of today's power-hungry applications like AI and real-time analytics. This is where **data modernization services** come in.
 
@@ -20,7 +20,7 @@ Think of these services as a complete electrical rewiring for your company's inf
 
 ## What Are Data Modernization Services Really?
 
-![A modern data center with glowing servers and network cables, representing an upgraded data infrastructure.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/658fff0d-6670-4312-9853-e9032b34009b.jpg)
+![A modern data center with glowing servers and network cables, representing an upgraded data infrastructure.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/data-modernization-services/658fff0d-6670-4312-9853-e9032b34009b.jpg)
 
 Imagine trying to stream 4K video, run a smart home, and charge an electric car using the wiring from a 1970s house. You'd be dealing with tripped breakers and a system that just can't keep up. That's precisely the handicap many businesses face today with their legacy data systems. They simply weren't built for the sheer volume and speed of modern data.
 
@@ -68,7 +68,7 @@ This sets the stage for a deeper understanding - modernization isn't just a tech
 
 ## The Building Blocks of Data Modernization
 
-![Four interconnected blocks representing the core components of data modernization.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/ae04b02e-5ba7-4499-a248-d9b843df9b1d.jpg)
+![Four interconnected blocks representing the core components of data modernization.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/data-modernization-services/ae04b02e-5ba7-4499-a248-d9b843df9b1d.jpg)
 
 A genuine data modernization effort isn't a single, magic-bullet solution. It's more like building a high-performance car from the ground up. You can't just drop in a powerful new engine and call it a day; you also need a modern chassis, efficient fuel lines, and advanced safety systems to make it all work together.
 
@@ -128,7 +128,7 @@ Markets don't wait. When things change, businesses that can't pivot get left beh
 
 This infographic breaks down how modern data leads directly to better business outcomes.
 
-![An infographic illustrating how data modernization leads to instant insights, scalable agility, and cost savings.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/858f2539-a830-47dd-89ab-12964ad87384.jpg)
+![An infographic illustrating how data modernization leads to instant insights, scalable agility, and cost savings.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/data-modernization-services/858f2539-a830-47dd-89ab-12964ad87384.jpg)
 
 As the visual shows, better data access is the first step toward becoming more flexible and financially efficient. Modern cloud platforms offer **elastic scalability**, which is just a fancy way of saying you can ramp resources up or down whenever you need to. This agility means you can handle seasonal spikes without paying for servers you don't need year-round, test a new product idea without a massive upfront cost, and change course based on what's actually happening in the world.
 
@@ -199,7 +199,7 @@ This massive growth shows just how central governance has become to successful *
 
 ## 7. Choosing The Right Data Modernization Partner
 
-![Two professionals shaking hands across a desk with data visualizations on a screen behind them, symbolizing a successful partnership.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/71c818cc-10e2-41dc-b0e1-5e8862b78584.jpg)
+![Two professionals shaking hands across a desk with data visualizations on a screen behind them, symbolizing a successful partnership.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/data-modernization-services/71c818cc-10e2-41dc-b0e1-5e8862b78584.jpg)
 
 Let's be blunt: a data modernization project is not a DIY weekend job. The sheer complexity of moving off legacy systems, building out a modern cloud architecture, and making sure all your data stays intact requires specialized skills. Picking the right partner is probably the most critical decision you'll make, one that will directly shape your project's success and your ultimate ROI.
 

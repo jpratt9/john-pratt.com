@@ -13,13 +13,13 @@ tags:
   - Docker-Compose
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/79352ca1-0fba-4a97-8547-f7eec19d66c9/docker-container-tutorial-for-beginners-docker-tutorial.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/docker-container-tutorial-for-beginners/docker-container-tutorial-for-beginners-docker-tutorial.jpg)
 
 This guide is your launchpad into Docker, one of the most critical tools in a modern developer's toolkit. We're going to cut through the jargon and get straight to the practical, hands-on commands that let you package and run your applications consistently, *anywhere*.
 
 ## Why Docker Is Your New Best Friend in Development
 
-![Image showing the transition from a messy, 'it works on my machine' setup to a clean, containerized development environment.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/c3f2f69d-6c41-48ca-a37c-1b441d5dfdd0/docker-container-tutorial-for-beginners-docker-container.jpg)
+![Image showing the transition from a messy, 'it works on my machine' setup to a clean, containerized development environment.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/docker-container-tutorial-for-beginners/docker-container-tutorial-for-beginners-docker-container.jpg)
 
 Every developer knows the pain of the "but it works on my machine" dilemma. You pour days into building a great Node.js or Python app, only to watch it crash and burn when a colleague tries to run it. The culprit? Almost always a mismatch in operating systems, library versions, or some obscure environment setting.
 
@@ -154,7 +154,7 @@ Let's get our hands dirty and build our first custom Docker image from the groun
 
 This whole process follows a fundamental Docker pattern: you pull a base image, build your own layer on top of it, and then run and manage the final result as a container.
 
-![A black and white diagram showing the Docker workflow steps: Pull, Run, and Manage, with corresponding icons.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/5375ee90-2868-4ca4-a4df-0fdeba6f937b/docker-container-tutorial-for-beginners-docker-workflow.jpg)
+![A black and white diagram showing the Docker workflow steps: Pull, Run, and Manage, with corresponding icons.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/docker-container-tutorial-for-beginners/docker-container-tutorial-for-beginners-docker-workflow.jpg)
 
 Once you get this workflow down, you've grasped the core of Docker development.
 
@@ -292,7 +292,7 @@ As you start building real applications, you'll quickly realize that juggling in
 
 This is precisely where **Docker Compose** comes in. It's a game-changer for managing multi-container applications. Instead of running a bunch of separate commands, you define your entire application stack in a single, easy-to-read configuration file.
 
-![A diagram illustrating 'docker-compose up' command starting web, db, and cache services.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/787a1771-e1c6-4e99-b27c-2b1e8ff3a44c/docker-container-tutorial-for-beginners-docker-compose.jpg)
+![A diagram illustrating 'docker-compose up' command starting web, db, and cache services.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/docker-container-tutorial-for-beginners/docker-container-tutorial-for-beginners-docker-compose.jpg)
 
 ### The `docker-compose.yml` Blueprint
 

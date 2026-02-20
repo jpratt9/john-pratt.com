@@ -13,13 +13,13 @@ tags:
   - cost-optimization
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-1a820e26-d4ec-432c-a5db-19859729bc24.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/consolidate-data-center/featured-image-1a820e26-d4ec-432c-a5db-19859729bc24.jpg)
 
 So, what does it actually mean to consolidate a data center? It's the process of shrinking your physical IT footprint. You're either combining several data center sites into a smaller number of more efficient ones or moving workloads over to modern infrastructure, like the cloud. The end game is always the same: *slash operational costs* and **boost overall performance**.
 
 ## Why Consolidate Your Data Center Now
 
-![A modern, consolidated data center with organized server racks.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/56c2022b-91c4-498b-a764-62b6f9eacb8f.jpg)
+![A modern, consolidated data center with organized server racks.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/consolidate-data-center/56c2022b-91c4-498b-a764-62b6f9eacb8f.jpg)
 
 The drive to consolidate isn't just a niche IT project anymore - it's a core business strategy. So many companies are wrestling with "server sprawl," where they're stuck maintaining armies of underused servers that just bleed money on power, cooling, and management time. This kind of technical debt is a boat anchor, slowing down innovation and bloating the budget.
 
@@ -86,7 +86,7 @@ Now that your blueprint is signed off, it's time to move from theory to practice
 
 Data center consolidation isn't just about freeing up racks; it's driven by surging demand for AI workloads and rising capital costs. Industry forecasts project a **16%** compound annual increase in global data center power needs from 2023 to 2028, peaking at roughly **130 GW**. To support that growth, companies are slated to invest about **$1.8 trillion** between 2024 and 2030. That scale makes every watt - and every square foot - count. Discover more insights about this monumental shift in data center growth.
 
-![Infographic about consolidate data center](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/c4923937-11d2-4838-82e0-ad679c6124aa.jpg)
+![Infographic about consolidate data center](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/consolidate-data-center/c4923937-11d2-4838-82e0-ad679c6124aa.jpg)
 
 This flowchart underlines how thorough discovery, precise analysis, and smart design set the stage for a smooth, low-risk migration.
 
@@ -130,7 +130,7 @@ If analytics are part of your roadmap, migrating to a cloud-native warehouse lik
 
 ## How to Ensure a Seamless and Secure Cutover
 
-![A network engineer managing cables in a secure data center.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/cca4d468-1578-4787-997b-818d2296e5d1.jpg)
+![A network engineer managing cables in a secure data center.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/consolidate-data-center/cca4d468-1578-4787-997b-818d2296e5d1.jpg)
 
 The moment of truth in any data center consolidation is the cutover. The real measure of success is when your users don't even notice it happened. This final, critical phase is where all the planning, building, and testing come together. A successful transition boils down to meticulous prep work across your network, security posture, and testing protocols to sidestep any performance hits, data breaches, or costly downtime.
 

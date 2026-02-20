@@ -13,13 +13,13 @@ tags:
   - monitoring-tools
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/b3085480-1c1c-4e79-b885-1036f5881cf3/devops-tools-comparison-infrastructure-illustration.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/devops-tools-comparison/devops-tools-comparison-infrastructure-illustration.jpg)
 
 Picking the right DevOps tools isn't just a technical task - it's a strategic move that directly shapes your team's speed, reliability, and overall efficiency. The core choice you'll face in any **devops tools comparison** boils down to a classic dilemma: do you go for specialized, best-in-class tools, or do you opt for an integrated, all-in-one platform? The answer really depends on what you value more: deep, granular control or a simple, unified workflow.
 
 ## Navigating the Modern DevOps Landscape
 
-![Compass rose illustration with cardinal directions north, south, east, west and red navigation needle](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/e52df844-e498-4eb0-90f2-19661e69a760/devops-tools-comparison-compass-navigation.jpg)
+![Compass rose illustration with cardinal directions north, south, east, west and red navigation needle](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/devops-tools-comparison/devops-tools-comparison-compass-navigation.jpg)
 
 Let's be clear: the "best" DevOps toolchain is entirely dependent on your context. What works brilliantly for a five-person startup will almost certainly grind a 500-person enterprise to a halt. This guide cuts through the marketing noise and gets into a more nuanced analysis of the tools that matter across the most critical categories.
 
@@ -93,7 +93,7 @@ The choice between them really hinges on a core philosophy. Are you looking for 
 
 This decision often comes down to balancing four key criteria for any tool you're evaluating.
 
-![Four criteria for evaluating DevOps tools: integration, scalability, support, and cost with visual icons](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/8afa6ee4-4f80-48bb-9c64-61d5a32a64a9/devops-tools-comparison-evaluation-criteria.jpg)
+![Four criteria for evaluating DevOps tools: integration, scalability, support, and cost with visual icons](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/devops-tools-comparison/devops-tools-comparison-evaluation-criteria.jpg)
 
 As you can see, the "best" choice is completely situational. It depends entirely on whether you need to plug into a sprawling, diverse tech stack or scale up your builds with costs that don't spiral out of control.
 
@@ -145,7 +145,7 @@ Ultimately, the right tool aligns with your team's existing workflow, technical 
 
 Infrastructure as Code (IaC) and containerization are really the two bedrock principles for building and shipping modern software. When we compare tools in this space, it's not about finding one ultimate winner. It's about understanding how different tools solve different parts of the puzzle - often working together. Let's break down the core philosophies behind the major players so you can build a stable, automated foundation for your apps.
 
-![DevOps tools comparison showing Terraform, Docker, Kubernetes, and declarative configuration management systems illustrated](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/c4a85042-d647-4e3e-a3cb-2312b443adb9/devops-tools-comparison-infrastructure-tools.jpg)
+![DevOps tools comparison showing Terraform, Docker, Kubernetes, and declarative configuration management systems illustrated](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/devops-tools-comparison/devops-tools-comparison-infrastructure-tools.jpg)
 
 We're going to focus on two classic matchups: Terraform versus Ansible for managing infrastructure, and Docker versus Kubernetes for packaging and running applications. Getting their distinct roles straight is the first step to designing a DevOps workflow that actually works.
 

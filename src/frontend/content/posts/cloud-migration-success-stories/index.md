@@ -13,7 +13,7 @@ tags:
   - it-strategy
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-dc72895e-346d-4e60-b610-cb8aa6a0e4cf.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-migration-success-stories/featured-image-dc72895e-346d-4e60-b610-cb8aa6a0e4cf.jpg)
 
 Moving to the cloud is more than an IT upgrade; it's a strategic business transformation. What separates a smooth transition from a costly misstep? The answer lies in learning from those who have successfully navigated this complex journey. Too often, discussions about cloud migration remain theoretical, but the most valuable lessons come from real-world execution.
 
@@ -38,7 +38,7 @@ Another key component was their proactive approach to failure. Netflix famously 
 
 The timeline below visualizes key milestones in Netflix's multi-year migration to AWS.
 
-![Infographic showing key data about Netflix - Complete Migration to AWS](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/infographic-358f0561-5516-4f86-a3e2-c591c8a778b1.jpg)
+![Infographic showing key data about Netflix - Complete Migration to AWS](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-migration-success-stories/infographic-358f0561-5516-4f86-a3e2-c591c8a778b1.jpg)
 
 The infographic illustrates the deliberate, phased approach, highlighting the rollout of their core microservices architecture midway through the process, which was crucial for completing the migration.
 
@@ -56,7 +56,7 @@ Capital One's decision to go "all-in" on the public cloud represents a landmark 
 
 By 2020, the company had successfully shut down its last data center, a monumental achievement that proved even the most security-sensitive workloads could thrive in the cloud. This strategic shift enabled Capital One to build and deploy new customer-facing applications, such as its real-time mobile banking app, at a pace previously unimaginable. The migration empowered them to utilize advanced AI/ML services for real-time fraud detection and develop sophisticated customer data analytics platforms, fundamentally changing how they operate.
 
-![Capital One - Banking Industry Cloud Transformation](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/43c59326-9c56-420e-a5c0-ed7d63e87536.jpg)
+![Capital One - Banking Industry Cloud Transformation](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-migration-success-stories/43c59326-9c56-420e-a5c0-ed7d63e87536.jpg)
 
 ### Strategic Breakdown
 
@@ -102,7 +102,7 @@ This quote underscores the aggressive, top-down commitment that was essential fo
 
 The Coca-Cola Company's move to a hybrid-cloud environment, leveraging both Microsoft Azure and AWS, stands as a prime example of a global enterprise using the cloud to unify disparate operations. This initiative wasn't just an infrastructure lift-and-shift; it was a strategic overhaul of their digital marketing, sales platforms, and critical SAP workloads. The primary driver was the need to create a consistent, modern, and engaging customer experience across more than 200 countries.
 
-![Coca-Cola - Global Digital Marketing and Sales Platform Migration](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/942c2ad5-5918-4ff8-a4e2-b15added2c0f.jpg)
+![Coca-Cola - Global Digital Marketing and Sales Platform Migration](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-migration-success-stories/942c2ad5-5918-4ff8-a4e2-b15added2c0f.jpg)
 
 This migration enabled Coca-Cola to move from fragmented, localized digital efforts to a cohesive global strategy. By centralizing its digital assets on the cloud, the company could rapidly deploy personalized mobile app experiences, analyze social media sentiment in real-time to optimize campaigns, and integrate e-commerce platforms seamlessly. This transformation is a powerful case study in how large corporations can achieve both operational efficiency and marketing agility, making it one of the most compelling **cloud migration success stories**.
 

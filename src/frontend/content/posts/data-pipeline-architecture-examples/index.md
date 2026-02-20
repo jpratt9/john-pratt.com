@@ -13,7 +13,7 @@ tags:
   - data-mesh
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-cc58c67c-e25e-4093-981b-1b1a4d1e3e8b.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/data-pipeline-architecture-examples/featured-image-cc58c67c-e25e-4093-981b-1b1a4d1e3e8b.jpg)
 
 Choosing the right data pipeline architecture is a critical engineering decision, directly impacting scalability, cost, and time-to-insight. A poorly chosen model creates bottlenecks, inflates cloud bills, and leaves valuable data inaccessible. A well-designed architecture, however, becomes a strategic asset that empowers real-time analytics, machine learning, and data-driven business decisions.
 
@@ -38,7 +38,7 @@ Finally, the serving layer indexes both the batch and real-time views. When a qu
 
 The following infographic illustrates the flow of data through the three distinct layers of the Lambda Architecture.
 
-![Infographic showing key data about Lambda Architecture](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/infographic-46aa2f47-c5a2-4b17-a2b5-26a64d3e10fc.jpg)
+![Infographic showing key data about Lambda Architecture](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/data-pipeline-architecture-examples/infographic-46aa2f47-c5a2-4b17-a2b5-26a64d3e10fc.jpg)
 
 This process flow highlights how the architecture separates historical and real-time data processing before unifying them at the query stage.
 
@@ -62,7 +62,7 @@ This architecture's foundation is a durable, append-only log, where historical d
 
 The following infographic illustrates the streamlined, single-path flow of data in the Kappa Architecture.
 
-![Kappa Architecture](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/c3a70183-f069-4ae8-a192-09611ed081fb.jpg)
+![Kappa Architecture](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/data-pipeline-architecture-examples/c3a70183-f069-4ae8-a192-09611ed081fb.jpg)
 
 This diagram shows how all data, regardless of its age, is processed through a single stream processing engine.
 
@@ -188,7 +188,7 @@ Medallion Architecture is a modern data design pattern that organizes data withi
 
 The following infographic illustrates the flow of data through the three distinct layers of the Medallion Architecture.
 
-![Medallion Architecture (Bronze/Silver/Gold)](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/d64ce397-f51a-48e9-8cc8-1bc564632157.jpg)
+![Medallion Architecture (Bronze/Silver/Gold)](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/data-pipeline-architecture-examples/d64ce397-f51a-48e9-8cc8-1bc564632157.jpg)
 
 ### How It Works: The Three Layers
 
