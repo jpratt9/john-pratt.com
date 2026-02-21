@@ -12,6 +12,7 @@ import anthropic
 import urllib.parse
 from google import genai
 from google.genai import types as genai_types
+from image_utils import unique_filename
 
 SMALL_WORDS = {'a', 'an', 'the', 'and', 'but', 'or', 'nor', 'for', 'yet', 'so',
                'to', 'of', 'in', 'on', 'at', 'by', 'with', 'as', 'is', 'if'}
@@ -123,7 +124,7 @@ def fix_image(image_bytes, mime_type, filename):
     return None, None
 
 def _process_single_image(url, slug):
-    filename = url.split('/')[-1]
+    filename = unique_filename(url)
     try:
         raw, mime = download_image(url)
         fixed, _ = fix_image(raw, mime, filename)

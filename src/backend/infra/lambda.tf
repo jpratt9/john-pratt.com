@@ -41,7 +41,8 @@ resource "aws_iam_role_policy_attachment" "lambda_basic" {
 ############################
 data "archive_file" "handler_zip" {
   type        = "zip"
-  source_file = "${path.module}/../service/lambda_function.py"
+  source_dir  = "${path.module}/../service"
+  excludes    = ["cf-worker", "__pycache__"]
   output_path = "${path.module}/dist/lambda.zip"
 }
 

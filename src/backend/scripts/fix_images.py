@@ -26,6 +26,9 @@ import time
 from google import genai
 from google.genai import types as genai_types
 
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'service'))
+from image_utils import unique_filename
+
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 POSTS_DIR = os.path.join(ROOT, "src", "frontend", "content", "posts")
 TFVARS = os.path.join(ROOT, "src", "backend", "infra", "secrets.auto.tfvars")
@@ -130,7 +133,7 @@ def fix_image(client, fix_prompt, image_bytes, mime_type, filename):
 
 
 def process_single_image(client, fix_prompt, url, slug, post_dir):
-    filename = url.split('/')[-1]
+    filename = unique_filename(url)
     out_path = os.path.join(post_dir, filename)
     if os.path.exists(out_path) and os.path.getsize(out_path) > 0:
         print(f"    [cached] {filename}: already on disk, skipping download+fix", flush=True)

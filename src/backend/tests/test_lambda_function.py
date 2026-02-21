@@ -988,6 +988,65 @@ class TestFixImage:
 
 
 # ============================================================================
+# unique_filename tests
+# ============================================================================
+
+class TestUniqueFilename:
+    """Test the SHA256-based unique filename generator."""
+
+    def setup_method(self):
+        service_dir = os.path.join(os.path.dirname(__file__), "..", "service")
+        if service_dir not in sys.path:
+            sys.path.insert(0, service_dir)
+
+    def test_appends_hash_suffix(self):
+        from image_utils import unique_filename
+        result = unique_filename("https://cdn.outrank.so/abc/test.jpg")
+        assert result == "test-b058c6f4.jpg"
+
+    def test_different_urls_same_filename_produce_different_results(self):
+        from image_utils import unique_filename
+        a = unique_filename("https://cdn.outrank.so/uuid1/pricing.jpg")
+        b = unique_filename("https://cdnimg.co/uuid2/pricing.jpg")
+        assert a != b
+        assert a.startswith("pricing-")
+        assert b.startswith("pricing-")
+
+    def test_same_url_produces_same_result(self):
+        from image_utils import unique_filename
+        url = "https://cdn.outrank.so/abc/test.jpg"
+        assert unique_filename(url) == unique_filename(url)
+
+    def test_no_extension(self):
+        from image_utils import unique_filename
+        result = unique_filename("https://cdn.outrank.so/abc/README")
+        assert result.startswith("README-")
+        assert "." not in result
+
+    def test_multiple_dots_in_filename(self):
+        from image_utils import unique_filename
+        result = unique_filename("https://cdn.outrank.so/abc/my.photo.name.jpg")
+        assert result.endswith(".jpg")
+        assert result.startswith("my.photo.name-")
+
+    def test_hash_is_8_chars(self):
+        from image_utils import unique_filename
+        result = unique_filename("https://cdn.outrank.so/abc/test.jpg")
+        # Format: base-XXXXXXXX.ext
+        base_no_ext = result.rsplit(".", 1)[0]  # "test-b058c6f4"
+        hash_part = base_no_ext.split("-")[-1]
+        assert len(hash_part) == 8
+        assert all(c in "0123456789abcdef" for c in hash_part)
+
+    def test_hidden_dotfile(self):
+        from image_utils import unique_filename
+        result = unique_filename("https://cdn.outrank.so/abc/.gitignore")
+        # rfind('.') returns 0 which is not > 0, so treated as no extension
+        assert result.startswith(".gitignore-")
+        assert result.count(".") == 1  # only the original dot
+
+
+# ============================================================================
 # process_images tests
 # ============================================================================
 
@@ -1020,10 +1079,10 @@ class TestProcessImages:
         md = "![img](https://cdn.outrank.so/abc/test.jpg)"
         result_md, files = process_images(md, "", "my-slug")
 
-        assert f"{self.RAW_BASE}/my-slug/test.jpg" in result_md
+        assert f"{self.RAW_BASE}/my-slug/test-b058c6f4.jpg" in result_md
         assert "cdn.outrank.so" not in result_md
-        assert "test.jpg" in files
-        assert files["test.jpg"] == b"fixed"
+        assert "test-b058c6f4.jpg" in files
+        assert files["test-b058c6f4.jpg"] == b"fixed"
 
     @patch("lambda_function.fix_image", return_value=(b"fixed", "image/jpeg"))
     @patch("lambda_function.download_image", return_value=(b"raw", "image/jpeg"))
@@ -1033,8 +1092,8 @@ class TestProcessImages:
         md = f"![Header]({header})\n\nSome text."
         result_md, files = process_images(md, header, "my-slug")
 
-        assert f"{self.RAW_BASE}/my-slug/header.jpg" in result_md
-        assert "header.jpg" in files
+        assert f"{self.RAW_BASE}/my-slug/header-4f40b1bb.jpg" in result_md
+        assert "header-4f40b1bb.jpg" in files
 
     @patch("lambda_function.fix_image", return_value=(b"fixed", "image/jpeg"))
     @patch("lambda_function.download_image", return_value=(b"raw", "image/jpeg"))
@@ -1047,10 +1106,10 @@ class TestProcessImages:
         result_md, files = process_images(md, "", "my-slug")
 
         assert len(files) == 2
-        assert "one.jpg" in files
-        assert "two.jpg" in files
-        assert f"{self.RAW_BASE}/my-slug/one.jpg" in result_md
-        assert f"{self.RAW_BASE}/my-slug/two.jpg" in result_md
+        assert "one-1e55a31f.jpg" in files
+        assert "two-ee60c507.jpg" in files
+        assert f"{self.RAW_BASE}/my-slug/one-1e55a31f.jpg" in result_md
+        assert f"{self.RAW_BASE}/my-slug/two-ee60c507.jpg" in result_md
 
     @patch("lambda_function.fix_image", return_value=(b"fixed", "image/jpeg"))
     @patch("lambda_function.download_image", return_value=(b"raw", "image/jpeg"))
@@ -1102,8 +1161,8 @@ class TestProcessImages:
         md = "![img](https://cdn.outrank.so/fa6f/uuid123/what-is-rest-api.jpg)"
         result_md, files = process_images(md, "", "my-slug")
 
-        assert "what-is-rest-api.jpg" in files
-        assert f"{self.RAW_BASE}/my-slug/what-is-rest-api.jpg" in result_md
+        assert "what-is-rest-api-2b5afc43.jpg" in files
+        assert f"{self.RAW_BASE}/my-slug/what-is-rest-api-2b5afc43.jpg" in result_md
 
     def test_returns_empty_when_no_images(self):
         from lambda_function import process_images
@@ -1122,6 +1181,23 @@ class TestProcessImages:
 
         assert len(files) == 0
         mock_dl.assert_not_called()
+
+    @patch("lambda_function.fix_image", return_value=(b"fixed", "image/jpeg"))
+    @patch("lambda_function.download_image", return_value=(b"raw", "image/jpeg"))
+    def test_same_filename_different_urls_no_collision(self, mock_dl, mock_fix):
+        """Two CDN URLs with same base filename produce distinct entries."""
+        from lambda_function import process_images
+        md = (
+            "![a](https://cdn.outrank.so/uuid1/pricing.jpg)\n"
+            "![b](https://cdnimg.co/uuid2/pricing.jpg)"
+        )
+        result_md, files = process_images(md, "", "my-slug")
+
+        assert len(files) == 2
+        assert "pricing-65ebb97a.jpg" in files
+        assert "pricing-3a3b22e9.jpg" in files
+        assert f"{self.RAW_BASE}/my-slug/pricing-65ebb97a.jpg" in result_md
+        assert f"{self.RAW_BASE}/my-slug/pricing-3a3b22e9.jpg" in result_md
 
 
 # ============================================================================
