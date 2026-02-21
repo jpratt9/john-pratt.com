@@ -286,7 +286,7 @@ Unlike generic CNAPPs, RHACS is built specifically for Kubernetes, allowing it t
 
 As the de-facto open-source standard for runtime threat detection, Falco has earned its place among the best container security tools. It operates by tapping into the Linux kernel using syscalls or eBPF to monitor system, container, and application behavior in real-time. This allows it to detect anomalous activity, such as a shell running in a container or unexpected network connections, based on a flexible and powerful rules engine.
 
-![Falco (CNCF‑graduated runtime security)](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/best-container-security-tools/best-container-security-tools-falco-architecture-add91d9b.jpg)
+![Falco (CNCF‑graduated runtime security)](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/screenshots/1996e167-7b82-4957-85bd-fc43ce495da0/best-container-security-tools-falco-architecture.jpg)
 
 Unlike comprehensive platforms, Falco is a specialized engine designed to be integrated into a broader security stack. Its strength lies in its CNCF-graduated status, ensuring wide community support, extensive documentation, and a vibrant ecosystem of plugins and integrations. For organizations comfortable with a DIY approach or looking for a foundational runtime security layer to build upon, Falco offers an unparalleled, no-cost entry point into detecting container threats.
 
