@@ -13,7 +13,7 @@ tags:
   - microservices
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-b026d8bb-db84-4297-8f6a-287c27b6ca42.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-serverless-architecture/featured-image-b026d8bb-db84-4297-8f6a-287c27b6ca42.jpg)
 
 Let's get one thing straight right from the start: **serverless doesn't actually mean "no servers."** That's probably the biggest misconception out there. The servers are still very much there; the revolutionary part is that you, the developer, don't have to think about them anymore.
 
@@ -83,7 +83,7 @@ When one of these events happens, the cloud provider's platform sees it and imme
 
 Let's walk through a tangible example: a user uploading a new photo to a social media app. The process is a clean, direct line from a user's action to an automated outcome, all without you having to manage a single server.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/a67c9fa9-5006-434e-8c01-03b9a727dd0f.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-serverless-architecture/a67c9fa9-5006-434e-8c01-03b9a727dd0f.jpg)
 
 Here's a step-by-step breakdown of what's happening behind the scenes:
 
@@ -102,7 +102,7 @@ So, why are so many companies making the switch to serverless? It's not just abo
 
 The momentum is hard to ignore. The serverless market is exploding, with forecasts predicting it will hit **$17.88 billion in 2025** and swell to a massive **$41.14 billion by 2029**. This isn't just hype; it's a direct result of businesses realizing they can automate their infrastructure and deliver new features faster than ever. You can dig into the numbers and analysis in this [deep dive on serverless adoption trends](https://www.thebusinessresearchcompany.com/market-insights/serverless-architecture-market-overview-2025).
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/93014269-cfa6-45b6-8aab-7407c6cf7ad0.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-serverless-architecture/93014269-cfa6-45b6-8aab-7407c6cf7ad0.jpg)
 
 ### Dramatically Lower Your Infrastructure Costs
 
@@ -145,7 +145,7 @@ For all its advantages, serverless isn't a silver bullet. Jumping into this arch
 
 Like any powerful tool, understanding its limitations is just as important as knowing its strengths. A clear-eyed view of serverless means acknowledging where it can get tricky.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/0f57990c-10e2-4b8b-bfcb-cdd2e137e7e3.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-serverless-architecture/0f57990c-10e2-4b8b-bfcb-cdd2e137e7e3.jpg)
 
 ### The Vendor Lock-In Dilemma
 

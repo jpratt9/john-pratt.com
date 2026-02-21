@@ -13,13 +13,13 @@ tags:
   - sql-vs-nosql
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/3e360495-d58d-4420-8984-28f0113cefbd/how-to-design-database-schema-database-architecture.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-design-database-schema/how-to-design-database-schema-database-architecture.jpg)
 
 Designing a database schema is all about defining the structure for your data - what it looks like, what types of information you'll store, and how different pieces of data relate to each other. The whole process starts with a high-level **conceptual model** that captures the business needs, then gets refined into a **logical model** with specific entities and relationships, and finally becomes a **physical model** built for a specific database technology like [PostgreSQL](https://www.postgresql.org/) or [Snowflake](https://www.snowflake.com/en/).
 
 ## Why a Solid Database Schema Is Your Application's Foundation
 
-![An isometric illustration showing database servers, a 'Database Schema' blueprint, and symbols for security and development.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/d94f999b-b214-4af2-9679-8bb61f298595/how-to-design-database-schema-schema-blueprint.jpg)
+![An isometric illustration showing database servers, a 'Database Schema' blueprint, and symbols for security and development.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-design-database-schema/how-to-design-database-schema-schema-blueprint.jpg)
 
 Long before anyone writes a single line of application code, the most crucial architectural decisions are happening at the database level. A well-designed schema is the unsung hero of any scalable application, acting as the blueprint that dictates how information flows and connects. Honestly, it's a non-negotiable first step.
 
@@ -122,7 +122,7 @@ This is where **denormalization** saves the day. It's the intentional practice o
 
 This process is part of a larger data modeling flow that moves from high-level business ideas to a concrete database structure.
 
-![Flowchart illustrating the three stages of the data modeling process: conceptual, logical, and physical.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/67138fef-6e9a-427c-ae92-3a49105e8457/how-to-design-database-schema-data-modeling.jpg)
+![Flowchart illustrating the three stages of the data modeling process: conceptual, logical, and physical.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-design-database-schema/how-to-design-database-schema-data-modeling.jpg)
 
 As the diagram shows, the process moves from conceptual to logical to physical models, adding more detail at each step to ensure the final schema truly meets the initial business requirements.
 
@@ -189,7 +189,7 @@ This separation of concerns is critical. It keeps your operational system snappy
 
 ## Designing for Speed With Indexing and Partitioning
 
-![A magnifying glass inspects database components: an index and three partitions, with three items checked.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/fc26cbd3-8233-4cdc-8653-67170be8b654/how-to-design-database-schema-index-partition.jpg)
+![A magnifying glass inspects database components: an index and three partitions, with three items checked.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-design-database-schema/how-to-design-database-schema-index-partition.jpg)
 
 A perfectly designed schema is a beautiful thing, but it's not worth much if your application grinds to a halt under real-world load. As your data grows, performance issues almost always boil down to one thing: how quickly your database can find the information it needs.
 

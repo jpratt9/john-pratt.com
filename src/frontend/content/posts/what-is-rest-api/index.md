@@ -13,7 +13,7 @@ tags:
   - http-methods
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/cb7e35b9-3994-40be-a540-b8211e664d89/what-is-rest-api-rest-api.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-rest-api/what-is-rest-api-rest-api.jpg)
 
 A REST API is a bit like a universal adapter for the digital world. The full name, **Representational State Transfer**, sounds academic, but the idea is simple: it's a set of rules that lets completely different software applications talk to each other over the internet using a common, predictable language.
 
@@ -57,7 +57,7 @@ Getting a handle on these rules is the key to understanding what makes a REST AP
 
 This diagram shows that fundamental back-and-forth between a client, the API, and a server.
 
-![Diagram explaining REST API fundamentals, detailing the interaction flow between client, API, and server.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/065acdad-1179-4a38-ac52-45d8666366ab/what-is-rest-api-api-fundamentals.jpg)
+![Diagram explaining REST API fundamentals, detailing the interaction flow between client, API, and server.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-rest-api/what-is-rest-api-api-fundamentals.jpg)
 
 You can see a clear separation of concerns in the graphic, which is a direct result of the very first rule of REST: the client-server model.
 
@@ -112,7 +112,7 @@ So, we've talked about the architectural rules of REST, which are like the bluep
 
 Think of HTTP as the universal language that lets clients and servers have a clear, predictable conversation. It gives us a standard set of "verbs" for actions and a feedback system of "status codes" for results. This is where the abstract theory of REST becomes a practical reality, enabling software to actually ask for, create, and delete information across a network.
 
-![An illustration of HTTP methods GET, POST, PUT, DELETE, with associated icons and humorous descriptions.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/33117438-77d8-4d03-a73e-dd6251fd77f0/what-is-rest-api-http-methods.jpg)
+![An illustration of HTTP methods GET, POST, PUT, DELETE, with associated icons and humorous descriptions.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-rest-api/what-is-rest-api-http-methods.jpg)
 
 This simple yet powerful partnership between REST principles and HTTP mechanics is what makes APIs so effective and easy to work with.
 
@@ -167,7 +167,7 @@ Knowing the rules of REST is one thing, but actually building an API that develo
 
 The real goal here is to create a developer experience that's as frictionless as possible. When an API is logical and well-documented, developers can plug into it faster, with fewer bugs and a lot less head-scratching. That attention to detail is what separates an API that just *works* from one that's a genuine pleasure to build with.
 
-![Diagram illustrating a mobile phone interacting with a server via a secured API endpoint with OpenAPI documentation.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/2559de35-3bf2-4a36-9841-840686d20961/what-is-rest-api-api-flow.jpg)
+![Diagram illustrating a mobile phone interacting with a server via a secured API endpoint with OpenAPI documentation.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-rest-api/what-is-rest-api-api-flow.jpg)
 
 This whole process starts with the most visible part of your API: its endpoints.
 

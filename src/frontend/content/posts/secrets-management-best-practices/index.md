@@ -13,7 +13,7 @@ tags:
   - ci/cd-security
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/86da1ff7-d57f-4eb3-8a10-f8eabc68179d/secrets-management-best-practices-vault-security.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/secrets-management-best-practices/secrets-management-best-practices-vault-security.jpg)
 
 Secrets management is all about keeping your digital keys - API keys, passwords, tokens, you name it - safe from prying eyes. The whole point is to stop them from accidentally popping up in your code, logs, or config files. It sounds simple, but getting it wrong is one of the quickest ways to a painful and expensive data breach.
 
@@ -23,7 +23,7 @@ This isn't just an IT chore; it's a core business function that protects your mo
 
 Picture this: a developer pushes some code to a public GitHub repo. Buried deep in that commit history is a hardcoded API key. It's not some far-fetched, hypothetical scenario; this happens every single day, and it's a ticking time bomb. Without solid secrets management, that one tiny mistake can hand an attacker the keys to your entire kingdom.
 
-![A laptop screen displaying an 'Exposed API key' warning next to a shattered piggy bank, symbolizing financial loss.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/17f7238a-2f69-4523-953e-0b3af81c18f5/secrets-management-best-practices-api-key-exposure.jpg)
+![A laptop screen displaying an 'Exposed API key' warning next to a shattered piggy bank, symbolizing financial loss.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/secrets-management-best-practices/secrets-management-best-practices-api-key-exposure.jpg)
 
 This isn't just about a developer having a bad day. It's a systemic problem born from the "move fast and break things" culture of modern software development, where getting things done quickly often overshadows doing them securely. When secrets get hardcoded, stuffed into environment files, or casually shared over Slack, they're left wide open for the taking.
 
@@ -49,7 +49,7 @@ This guide isn't just about technical definitions. We're going to dig into the p
 
 Any solid secrets management strategy is built on a few core ideas. These aren't just helpful tips; they're the hard-and-fast rules that draw the line between a tough, resilient system and one that's a sitting duck for attackers. Once you get these concepts down, you start building security in from the ground up, not just bolting it on later.
 
-![Icons illustrating five essential data security practices: At Rest, In Transit, Least Privilege, Rotation, and Auditing.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/adf6006b-cceb-4736-8c73-a7bd27a65449/secrets-management-best-practices-security-concepts.jpg)
+![Icons illustrating five essential data security practices: At Rest, In Transit, Least Privilege, Rotation, and Auditing.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/secrets-management-best-practices/secrets-management-best-practices-security-concepts.jpg)
 
 Think of these principles as the constitution for your security program. They should guide every single decision, from picking a tool to designing a new deployment pipeline. Let's unpack what they really mean in practice.
 
@@ -151,7 +151,7 @@ This process, known as **dynamic secret injection**, means credentials are never
 
 This diagram shows how secrets should flow from a secure vault directly to an application at runtime, bypassing risky manual steps.
 
-![Diagram illustrating a secure secret delivery process flow from a vault of encrypted secrets to an app for decrypted use via a secure channel.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/3dbbc8e6-8618-4c92-be4f-2658af73f4f3/secrets-management-best-practices-secret-delivery.jpg)
+![Diagram illustrating a secure secret delivery process flow from a vault of encrypted secrets to an app for decrypted use via a secure channel.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/secrets-management-best-practices/secrets-management-best-practices-secret-delivery.jpg)
 
 The key takeaway from this visual is that secrets need a secure, automated channel. This eliminates the dangerous manual handoffs and static configurations that cause so many breaches.
 

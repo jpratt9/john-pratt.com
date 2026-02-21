@@ -13,7 +13,7 @@ tags:
   - business-efficiency
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-33b88fe6-404c-42f2-bb97-a196ecd68b72.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/operational-efficiency-metrics/featured-image-33b88fe6-404c-42f2-bb97-a196ecd68b72.jpg)
 
 Operational efficiency metrics are your company's pulse. They give you a real, numbers-based look at how well you're turning inputs - things like labor, time, and money - into tangible outputs, like revenue. These aren't just abstract figures on a spreadsheet; they're the indicators telling you how much bang you're getting for your buck.
 
@@ -37,7 +37,7 @@ A huge part of this is automation. More and more, a company's efficiency hinges 
 
 ## The Financial Metrics That Reveal True Performance
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/44e9e097-b4ad-4343-ba6a-f2da783aa69d.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/operational-efficiency-metrics/44e9e097-b4ad-4343-ba6a-f2da783aa69d.jpg)
 
 While every corner of your business creates data, your financial health is the ultimate scoreboard. It's where your operational efforts either pay off or fall flat. The right financial metrics connect the dots between the day-to-day grind and the bottom line, telling you not just *if* you're winning, but *how*.
 
@@ -78,7 +78,7 @@ These aren't just numbers to fill a spreadsheet. They're direct signals of how e
 
 The chart below shows the different ways you can gather the data needed to calculate these crucial metrics, from simple manual tracking to fully automated systems.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/1047f683-3fec-4185-8956-efb98d9cd312.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/operational-efficiency-metrics/1047f683-3fec-4185-8956-efb98d9cd312.jpg)
 
 As you can see, the path often moves from periodic, manual data entry toward automated, real-time collection. This evolution is key, as technology can dramatically improve the accuracy and speed of the insights you get.
 
@@ -117,7 +117,7 @@ Let's say you have a bottling machine scheduled for an 8-hour shift. If it stops
 
 ## Getting a Grip on Your Process and Production Efficiency
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/d4dd7ea5-5e44-4071-a9c3-75f5447c9b61.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/operational-efficiency-metrics/d4dd7ea5-5e44-4071-a9c3-75f5447c9b61.jpg)
 
 Think of smooth, predictable processes as the engine driving your business forward. When your core workflows are running well, everything from customer happiness to your bottom line gets a boost. This is where you need a good dashboard - and process and production metrics are the gauges that tell you exactly what's going on under the hood.
 
@@ -151,7 +151,7 @@ In software development, this could be the percentage of new code that gets depl
 
 ## Putting Your Efficiency Metrics into Action
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/8997fe51-9c39-40b3-afa9-d09d72cd1413.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/operational-efficiency-metrics/8997fe51-9c39-40b3-afa9-d09d72cd1413.jpg)
 
 Knowing your numbers is one thing, but the real magic happens when you turn those insights into tangible improvements. A dashboard full of **operational efficiency metrics** is just a scorecard. It doesn't actually change the game. The actions you take based on that data are what drive real results.
 

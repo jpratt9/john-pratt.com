@@ -13,7 +13,7 @@ tags:
   - javascript-projects
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/085201a2-159d-42c9-a9ed-31ecb8a368fa/react-js-tutorial-for-beginners-react-hooks.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/react-js-tutorial-for-beginners/react-js-tutorial-for-beginners-react-hooks.jpg)
 
 If you're looking to build modern, interactive web applications, you've come to the right place. This guide is your roadmap to learning React, taking you from the initial setup all the way to deploying a real project you can be proud of. We'll focus on the practical, hands-on skills that actually matter.
 
@@ -35,7 +35,7 @@ This efficiency isn't just a cool technical trick; it has massive real-world imp
 
 What does that mean for you? Learning React opens up a ton of doors and makes you a highly sought-after candidate in the job market. The demand is real, and it's not slowing down. Want a deeper dive? You can [learn more about these development trends](https://www.youtube.com/watch?v=tqjJrXd27m4) and see for yourself.
 
-![Flowchart explaining reasons to learn React, illustrating building UI, dynamic apps, and high demand.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/1b48820d-5946-4300-a2d8-b4f09c357fc8/react-js-tutorial-for-beginners-react-benefits.jpg)
+![Flowchart explaining reasons to learn React, illustrating building UI, dynamic apps, and high demand.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/react-js-tutorial-for-beginners/react-js-tutorial-for-beginners-react-benefits.jpg)
 
 As you can see, mastering React is a direct path to building powerful applications and landing a great job. This tutorial is built to give you that exact edge.
 
@@ -83,7 +83,7 @@ That last command, `npm run dev`, boots up Vite's development server. Your termi
 
 A great setup is more than just what happens in the terminal. For writing React code, the undisputed king of code editors is **[Visual Studio Code (VS Code)](https://code.visualstudio.com/)**. It's free, powerful, and has a massive library of extensions that can make your life as a developer so much easier.
 
-![A conceptual diagram of a Virtual DOM displaying colorful 'components' within a web browser, with a person watching.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/15e1180a-4df6-403b-9a43-d16400a8addc/react-js-tutorial-for-beginners-virtual-dom.jpg)
+![A conceptual diagram of a Virtual DOM displaying colorful 'components' within a web browser, with a person watching.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/react-js-tutorial-for-beginners/react-js-tutorial-for-beginners-virtual-dom.jpg)
 
 To really get the most out of VS Code and make your development process feel like a breeze, I highly recommend installing a few key things:
 
@@ -144,7 +144,7 @@ Save your file, and you should see the "Hello from our first component!" message
 
 ## Managing State and Side Effects with React Hooks
 
-![Illustration showing a React App component rendering into UI elements on a laptop screen with JSX code.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/0168f327-caa2-45b2-996a-9fa59c24d960/react-js-tutorial-for-beginners-jsx-rendering.jpg)
+![Illustration showing a React App component rendering into UI elements on a laptop screen with JSX code.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/react-js-tutorial-for-beginners/react-js-tutorial-for-beginners-jsx-rendering.jpg)
 
 Up to this point, our components have been pretty static. They're great at displaying information, but they can't react to user input or change over time. To build truly interactive apps, components need a way to remember things. In the world of React, we call this "memory" **state**.
 
@@ -273,7 +273,7 @@ For now, let's focus on wiring up the ability to add a new task to our list.
 
 ## Sharing Your First React App With the World
 
-![A smartphone displays a 'To-Do' list app with one completed task and an input field.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/9bcbc732-f432-4f32-a10f-01eeb9a24a67/react-js-tutorial-for-beginners-to-do-app.jpg)
+![A smartphone displays a 'To-Do' list app with one completed task and an input field.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/react-js-tutorial-for-beginners/react-js-tutorial-for-beginners-to-do-app.jpg)
 
 You've built a working app that runs perfectly on your computer. That's a huge milestone! Now for the most exciting part: putting it on the web for everyone to see.
 

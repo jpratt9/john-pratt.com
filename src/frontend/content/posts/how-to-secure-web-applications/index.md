@@ -13,7 +13,7 @@ tags:
   - how-to-secure-web-applications
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-ce27ddec-5df8-4263-a23a-1fbbfde3b7e8.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-secure-web-applications/featured-image-ce27ddec-5df8-4263-a23a-1fbbfde3b7e8.jpg)
 
 Before you write a single line of code, the real first step in securing a web application is to change how you think. You need to start thinking like an attacker - proactively hunting for weaknesses before they become full-blown vulnerabilities. This initial phase, called **threat modeling**, is your security blueprint.
 
@@ -42,7 +42,7 @@ While free-form brainstorming is great, structured frameworks can make this whol
 
 This process is a continuous cycle of identifying threats, putting controls in place, and then monitoring for new risks that pop up.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/6f876e03-9a80-46fe-9e51-bb22592e3548.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-secure-web-applications/6f876e03-9a80-46fe-9e51-bb22592e3548.jpg)
 
 The image above really drives home the point that application security isn't a one-and-done task. It's an ongoing process that demands constant attention.
 
@@ -65,7 +65,7 @@ For instance, if you identify a **tampering** threat in your checkout process, a
 
 ## 2. Lock the Doors with Ironclad Authentication and Authorization
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/dff65637-b38a-4d37-8352-2360d64fde63.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-secure-web-applications/dff65637-b38a-4d37-8352-2360d64fde63.jpg)
 
 Once you've mapped out your application's potential threats, it's time to build your defenses. Think of this as setting up the gates and guards. We're talking about **authentication** (who are you?) and **authorization** (what are you allowed to do?).
 
@@ -106,7 +106,7 @@ This approach is fundamental to securing APIs. By issuing "scoped" tokens, you c
 ## Defending Against Injection with Smart Input Handling
 Every single input field in your web application is a potential doorway for an attacker. That search bar, the comment form, even a simple contact form - they don't see them as places for data. They see them as opportunities to get into your backend systems. Smart input handling is all about slamming those doors shut and locking them tight, stopping devastatingly common attacks like SQL Injection and Cross-Site Scripting (XSS) before they even start.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/89fe6754-8761-4ee7-bd82-c1fa503fa012.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-secure-web-applications/89fe6754-8761-4ee7-bd82-c1fa503fa012.jpg)
 
 This isn't about applying a single fix. It's a multi-layered defense. To really lock things down, you have to understand the specific roles of validation, sanitization, and encoding. They are not interchangeable, and mixing them up can leave you just as vulnerable as doing nothing at all.
 
@@ -144,7 +144,7 @@ This simple but powerful technique should be handled automatically by your templ
 
 Let's be blunt: if you're handling user data, you have to assume someone is actively trying to steal it. Protecting that data isn't just a "best practice" - it's your core responsibility. The goal is to make any stolen data completely useless to an attacker, and that's where **encryption** and a rock-solid **secure configuration** become your best friends.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/50f2d45a-c5a8-487e-9dd5-ebd0110bf07b.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-secure-web-applications/50f2d45a-c5a8-487e-9dd5-ebd0110bf07b.jpg)
 
 Think of it as a one-two punch. Encryption scrambles the data itself, while a secure setup locks all the digital doors and windows attackers love to pry open.
 

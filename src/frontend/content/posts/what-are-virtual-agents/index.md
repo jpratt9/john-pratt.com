@@ -13,7 +13,7 @@ tags:
   - business-automation
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-d1c33682-82c3-481a-92a5-2185933c47e7.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-are-virtual-agents/featured-image-d1c33682-82c3-481a-92a5-2185933c47e7.jpg)
 
 Let's get one thing straight: a virtual agent is not just a fancy chatbot. Think of it less like a talking FAQ and more like a fully-trained digital team member, capable of handling complex tasks from start to finish.
 
@@ -21,7 +21,7 @@ These are sophisticated AI programs built to do more than just chat. They unders
 
 ## What Are Virtual Agents Exactly?
 
-![An abstract image showing a robotic hand interacting with a digital interface, representing a virtual agent at work.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/0938d308-6f80-45ee-8b99-ea18446e5f58.jpg)
+![An abstract image showing a robotic hand interacting with a digital interface, representing a virtual agent at work.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-are-virtual-agents/0938d308-6f80-45ee-8b99-ea18446e5f58.jpg)
 
 Here's a good way to think about it. A basic chatbot is like a customer service rep with a script, able to answer common questions. A virtual agent, on the other hand, is the senior specialist who can pull up your account, diagnose the real problem, and actually fix it - all on their own. They don't just provide information; they perform actions.
 
@@ -83,7 +83,7 @@ To really get what makes modern virtual agents tick, we need to pop the hood and
 
 This hierarchy shows how virtual agents are the most advanced evolution, building upon the capabilities of simpler assistants and chatbots.
 
-![Infographic about what are virtual agents](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/dd26a2d9-89af-4b31-bcc9-f7a548d76e4b.jpg)
+![Infographic about what are virtual agents](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-are-virtual-agents/dd26a2d9-89af-4b31-bcc9-f7a548d76e4b.jpg)
 
 As you can see, the virtual agent sits at the top. This isn't just about better conversation; it's about a superior ability to reason, plan, and actually execute tasks within your business systems.
 
@@ -117,7 +117,7 @@ It's one thing to talk about virtual agents in theory, but where do they really 
 
 Think of them less as generalists and more as digital specialists. A well-built virtual agent is tailored to understand the specific language, workflows, and system integrations of a particular field. This is where their true power lies.
 
-![A collage of images showing virtual agents being used in different industries: finance, energy, telecom, and aerospace.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/d60e3299-a2ab-4fb5-82a8-f91f28620df2.jpg)
+![A collage of images showing virtual agents being used in different industries: finance, energy, telecom, and aerospace.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-are-virtual-agents/d60e3299-a2ab-4fb5-82a8-f91f28620df2.jpg)
 
 ### Driving Precision in Technical Fields
 

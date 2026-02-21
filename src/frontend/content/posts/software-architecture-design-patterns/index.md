@@ -13,7 +13,7 @@ tags:
   - architectural-patterns
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-7c2e628c-1357-4b6d-96ef-dbe451ef5314.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/software-architecture-design-patterns/featured-image-7c2e628c-1357-4b6d-96ef-dbe451ef5314.jpg)
 
 Think of software architecture patterns as proven recipes for building software. They're not just abstract ideas; they're battle-tested solutions to the kinds of problems engineers face every single day. Following a good pattern helps ensure your system will be **scalable**, **maintainable**, and **resilient**, without you having to reinvent the wheel on every project.
 
@@ -42,7 +42,7 @@ This guide is all about that big picture. We're going to dive into the architect
 
 ## 1. The Monolithic Pattern: All in One
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/86dae880-9738-4866-bb60-3a71784333f5.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/software-architecture-design-patterns/86dae880-9738-4866-bb60-3a71784333f5.jpg)
 
 Before distributed systems became the talk of the town, the monolithic pattern was simply how you built software. It was the default, the standard, the tried-and-true approach. Imagine a single, self-contained building that houses everything your business does. The user interface, the business logic, the database connections - it's all bundled together in one massive codebase.
 
@@ -84,7 +84,7 @@ One artisan focuses on leather goods, another on hand-thrown pottery, and a thir
 
 Each microservice is essentially a small, self-contained application built around a single business capability - like user authentication, payment processing, or product inventory. These services are developed, deployed, and scaled entirely on their own. They talk to each other over a well-defined network, usually with lightweight APIs, to form a larger, cohesive application.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/5e34427f-5965-4a45-832a-ba4424c75c07.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/software-architecture-design-patterns/5e34427f-5965-4a45-832a-ba4424c75c07.jpg)
 
 ### The Power of Independent Teams
 
@@ -130,7 +130,7 @@ Companies like Netflix and Amazon are the poster children for microservices, usi
 
 ## Understanding Service-Oriented Architecture
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/6a9856d3-aaf6-4445-9d5d-b2681ea15640.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/software-architecture-design-patterns/6a9856d3-aaf6-4445-9d5d-b2681ea15640.jpg)
 
 Long before microservices took the tech world by storm, there was Service-Oriented Architecture (SOA). It's easy to think of it as just an older version of microservices, but that's not quite right. SOA was designed to solve a different kind of problem with its own unique philosophy, and it laid much of the groundwork for modern distributed systems.
 

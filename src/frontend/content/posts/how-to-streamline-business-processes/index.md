@@ -13,7 +13,7 @@ tags:
   - RPA
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-368924f4-ffcd-4301-9027-1801d467b8c1.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-streamline-business-processes/featured-image-368924f4-ffcd-4301-9027-1801d467b8c1.jpg)
 
 Streamlining your business processes isn't a one-and-done project. It's an ongoing cycle of spotting what's holding you back, rethinking how work gets done, and smartly applying technology to make everything run smoother. It's about methodically cutting out the waste to save time and prevent costly mistakes.
 
@@ -29,7 +29,7 @@ The journey to a more efficient operation always starts with a simple loop: find
 
 This infographic breaks down these foundational steps.
 
-![Infographic about how to streamline business processes](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/98bcd511-0f66-4082-9faf-17e388c7dd7f.jpg)
+![Infographic about how to streamline business processes](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-streamline-business-processes/98bcd511-0f66-4082-9faf-17e388c7dd7f.jpg)
 
 The image drives home a critical point: this is a structured journey, not a series of random fixes. You have to diagnose the problem before you can prescribe the right solution.
 
@@ -59,7 +59,7 @@ You can't fix what you can't see. Before you even think about optimizing your bu
 
 Visual workflow mapping is your diagnostic tool. It's the first, most critical step to finding the real sources of friction in your operations. I'm talking about the bottlenecks, the duplicated efforts, and the mind-numbing manual tasks that quietly suck the life and resources out of your team.
 
-![A team collaborating on a workflow map on a whiteboard](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/a301cfba-4ba1-4b13-94c0-d8a3293fc3d3.jpg)
+![A team collaborating on a workflow map on a whiteboard](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-streamline-business-processes/a301cfba-4ba1-4b13-94c0-d8a3293fc3d3.jpg)
 
 This isn't some theoretical exercise. It's about turning those vague complaints of "this takes too long" into specific, fixable problems. When you see a process laid out visually, the weak points become glaringly obvious.
 
@@ -94,7 +94,7 @@ You've done the hard work of mapping your workflows. Now you have a crystal-clea
 
 Think of it as handing off the boring, repetitive, rule-based tasks to technology. This frees up your team's brainpower for the kind of creative, strategic work that actually moves the needle.
 
-![Automated robotic arms working on a digital interface, symbolizing business process automation](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/c9c00898-4588-4c25-ae31-8996a1f201be.jpg)
+![Automated robotic arms working on a digital interface, symbolizing business process automation](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-streamline-business-processes/c9c00898-4588-4c25-ae31-8996a1f201be.jpg)
 
 The key here is not to boil the ocean. You're not trying to automate everything at once. Instead, you'll target specific, high-impact areas where technology can deliver an immediate, noticeable win. We're looking for tasks that are high-volume, prone to human error, and follow a predictable script. These are your prime candidates for automation.
 
@@ -148,7 +148,7 @@ When you're looking to make a real, immediate impact on your business processes,
 
 Think of these bots as a digital workforce. They show up 24/7, never need a coffee break, and don't make typos. They work right on the user interface - clicking, typing, and moving data just like a person would. This makes them incredibly useful for connecting older, legacy systems that don't have modern APIs.
 
-![An image illustrating a digital robot interacting with computer interfaces, representing Robotic Process Automation.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/f1f96358-cc92-4ea0-a5fc-b74209a91527.jpg)
+![An image illustrating a digital robot interacting with computer interfaces, representing Robotic Process Automation.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-streamline-business-processes/f1f96358-cc92-4ea0-a5fc-b74209a91527.jpg)
 
 There's a reason this technology is taking off. The return on investment can be incredibly quick. A recent global survey found that **53% of businesses** are already using RPA, and that number is expected to hit **72%** in the next two years. The market is projected to grow at a massive **43.9% CAGR** from 2025 to 2030, with most companies reporting an ROI between **30% and 200%** within the first year. You can dig into more of these [RPA adoption statistics on flobotics.io](https://flobotics.io/blog/rpa-statistics/).
 

@@ -13,7 +13,7 @@ tags:
   - devops-practices
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/82bcec5b-4a09-472c-9469-9d2b51364f76/how-to-reduce-technical-debt-system-optimization.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-reduce-technical-debt/how-to-reduce-technical-debt-system-optimization.jpg)
 
 To get a handle on technical debt, you have to stop treating it like a niche engineering problem and start seeing it for what it is: a business problem. The whole game is about figuring out its true cost, measuring how much it's dragging down your team's speed, and then making smart, strategic moves to fix it. This isn't a quest for perfect code - it's about making deliberate, data-backed choices that let you innovate faster instead of just spinning your wheels.
 
@@ -50,7 +50,7 @@ This isn't just about scanning your code, either. Real-world technical debt is s
 
 As you can see below, unchecked debt creates a vicious cycle that grinds everything to a halt, hitting everything from product quality to the well-being of your team.
 
-![Flowchart illustrating the process of technical debt cost: rushed features lead to bugs, causing low team morale.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/adf88550-1c74-4d5c-b407-b0090894366e/how-to-reduce-technical-debt-process-flow.jpg)
+![Flowchart illustrating the process of technical debt cost: rushed features lead to bugs, causing low team morale.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-reduce-technical-debt/how-to-reduce-technical-debt-process-flow.jpg)
 
 This downward spiral is classic: rushed work introduces bugs, which leads to firefighting, which in turn tanks team morale and productivity. Sound familiar?
 
@@ -120,7 +120,7 @@ The secret to actually making a dent in your tech debt isn't about working harde
 
 You have to get comfortable with the idea that you can't fix it all. And frankly, you shouldn't. Some debt is perfectly acceptable to live with for a while, or even forever. The goal isn't a flawless, pristine system. It's a healthy, resilient one that lets your team build and ship what the business needs, fast. This means making deliberate choices: what gets fixed now, what gets scheduled for later, and what gets consciously ignored.
 
-![An effort-impact matrix illustrating project prioritization. The 'Quick Wins' quadrant, featuring a shopping cart icon, is highlighted.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/fbb4d2ab-aa43-4306-a3f6-e11c0025222d/how-to-reduce-technical-debt-quick-wins.jpg)
+![An effort-impact matrix illustrating project prioritization. The 'Quick Wins' quadrant, featuring a shopping cart icon, is highlighted.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-reduce-technical-debt/how-to-reduce-technical-debt-quick-wins.jpg)
 
 ### Use an Effort vs. Impact Matrix
 
@@ -221,7 +221,7 @@ Fixing the tech debt you already have is one thing - it's a reactive, often pain
 
 This isn't about pumping the brakes on development. It's about working smarter so you can maintain velocity over the long haul. Let's be honest, the pressure to ship quickly will never go away. So, you need to build systems and rituals that shield your long-term health from short-term demands.
 
-![A diverse team discusses tasks around a Kanban board, smiling and collaborating on project work.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/368a8e6c-ec45-4be3-9a99-d25e6c3cff76/how-to-reduce-technical-debt-kanban-board.jpg)
+![A diverse team discusses tasks around a Kanban board, smiling and collaborating on project work.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-reduce-technical-debt/how-to-reduce-technical-debt-kanban-board.jpg)
 
 ### Formalize Your Improvement Time
 

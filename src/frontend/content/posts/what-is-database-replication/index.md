@@ -13,7 +13,7 @@ tags:
   - data-architecture
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/940be892-5a1a-4457-a675-d983ff3f05eb/what-is-database-replication-database-replication.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-database-replication/what-is-database-replication-database-replication.jpg)
 
 Database replication is all about creating and maintaining multiple, identical copies of a database across different servers or locations. It's not just a simple backup; think of it more like a *live, synchronized photocopy* of your data. When a change happens in the original database, that same change is almost instantly mirrored in all the copies.
 
@@ -82,7 +82,7 @@ This table breaks down the core differences at a glance.
 
 Ultimately, the choice between synchronous and asynchronous isn't about which is "better," but which trade-offs you're willing to make for your specific application.
 
-![Diagram showing database replication goals: high availability, scalability, and disaster recovery.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/f02c6f3e-a66d-4659-9967-f604d6b586c2/what-is-database-replication-replication-goals.jpg)
+![Diagram showing database replication goals: high availability, scalability, and disaster recovery.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-database-replication/what-is-database-replication-replication-goals.jpg)
 
 As the diagram shows, these methods are tools to achieve bigger business goals - keeping your service online, making it faster, and protecting it from disaster.
 
@@ -112,7 +112,7 @@ Getting these architectures right has a huge financial upside. The market for da
 
 Theory is one thing, but seeing how database replication solves real-world problems is where it all clicks. This isn't just some abstract concept for engineers to debate; it's a core strategy that powers the smooth, reliable experiences we've all come to expect from modern applications. Let's dive into a few examples to see how it works on the ground.
 
-![Illustrates database replication concepts: handling holiday sale traffic, geo-distribution across cities, and failover to a backup replica.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/e7608549-f01d-45ea-b539-32d8ba7bea68/what-is-database-replication-database-replication.jpg)
+![Illustrates database replication concepts: handling holiday sale traffic, geo-distribution across cities, and failover to a backup replica.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-database-replication/what-is-database-replication-database-replication.jpg)
 
 Picture a huge e-commerce site on Black Friday. Millions of shoppers are hitting the site at once - browsing, searching, and comparing products. These are all "read" operations, and that sheer volume can easily crush a single database, causing the website to crawl or even crash right when it matters most.
 
@@ -187,7 +187,7 @@ Database replication is a game-changer, but it's definitely not a "set it and fo
 
 Probably the most common gremlin you'll face is **replication lag**. This is the tiny (or sometimes not-so-tiny) delay between a write succeeding on your primary database and that change actually showing up on a replica. A lag of even a few hundred milliseconds can lead to bizarre user experiences, like someone updating their profile picture only to see the old one reappear when they refresh the page.
 
-![Diagram illustrating database replication challenges: lag between primary and replica, conflict resolution, and security with a shield.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/67eddb4d-ebf0-4d87-bffd-92c43de59c05/what-is-database-replication-replication-challenges.jpg)
+![Diagram illustrating database replication challenges: lag between primary and replica, conflict resolution, and security with a shield.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-database-replication/what-is-database-replication-replication-challenges.jpg)
 
 This delay is an intentional trade-off in asynchronous replication, which values performance over immediate consistency. Usually, it's barely noticeable. But if you have high network latency, a primary database getting hammered with writes, or an underpowered replica, that lag can balloon and start causing real problems.
 

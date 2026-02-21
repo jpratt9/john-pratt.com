@@ -13,7 +13,7 @@ tags:
   - sql-indexing
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-aa4f200c-dd08-41cf-9176-395306d64e4e.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-optimize-sql-queries/featured-image-aa4f200c-dd08-41cf-9176-395306d64e4e.jpg)
 
 Optimizing an SQL query is a blend of art and science. It's about looking at your code, analyzing how the database *actually* runs it, and then making smart changes - whether that's adding an index, rewriting the query itself, or a bit of both. The ultimate goal is to lighten the database's load, helping it find and process data more efficiently. Get this right, and you'll see a direct impact on your application's speed and a drop in resource usage.
 
@@ -66,7 +66,7 @@ Learning to read this plan is probably the single most important skill you can d
 
 This diagram breaks down the core activities in SQL optimization. Notice how everything starts with analysis, which is exactly where the execution plan comes in.
 
-![Infographic about how to optimize sql queries](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/6b3a0181-287c-4a5d-ae8c-2d70e887e5b4.jpg)
+![Infographic about how to optimize sql queries](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-optimize-sql-queries/6b3a0181-287c-4a5d-ae8c-2d70e887e5b4.jpg)
 
 As you can see, analyzing the plan is the foundation. You have to do this first, before you start adding indexes or rewriting code.
 
@@ -96,7 +96,7 @@ At the end of the day, decoding the execution plan is the non-negotiable first s
 
 ## Mastering Indexes for Peak Performance
 
-![A developer looking at a database schema on a screen, representing strategic indexing.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/f422bf8e-d227-4ff2-9f69-50c6239b0671.jpg)
+![A developer looking at a database schema on a screen, representing strategic indexing.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-optimize-sql-queries/f422bf8e-d227-4ff2-9f69-50c6239b0671.jpg)
 
 Think of a database index like the index in a textbook. Instead of flipping through the entire book page-by-page (a full table scan), you just go to the index, find your topic, and jump straight to the right page number. In the database world, this simple concept is your single most powerful tool for speeding up how quickly you can retrieve data.
 
@@ -137,7 +137,7 @@ Building an effective indexing strategy is never a "set it and forget it" task. 
 
 ## Rewriting Queries for Maximum Efficiency
 
-![A before-and-after diagram showing a complex, tangled SQL query being simplified into a clean, linear flow.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/38e64e4e-f7cc-4da4-a69b-1abf28adcc53.jpg)
+![A before-and-after diagram showing a complex, tangled SQL query being simplified into a clean, linear flow.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-optimize-sql-queries/38e64e4e-f7cc-4da4-a69b-1abf28adcc53.jpg)
 
 Sometimes, no amount of indexing can rescue a poorly written query. While a smart indexing strategy is your first line of defense, the way you actually write your SQL code is what guides the query optimizer toward the fastest path. A simple rewrite can often unlock massive performance gains by helping the database work smarter, not harder.
 

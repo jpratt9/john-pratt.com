@@ -13,7 +13,7 @@ tags:
   - vehicle-maintenance-software
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-3fee3f9c-c7c8-4a30-8ff2-8ee61e3af83a.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/fleet-management-system-features/featured-image-3fee3f9c-c7c8-4a30-8ff2-8ee61e3af83a.jpg)
 
 Choosing the right fleet management software can feel overwhelming. With countless platforms promising to cut costs, boost efficiency, and streamline operations, how do you identify the tools that actually deliver? The difference between a system that creates more work and one that unlocks new levels of productivity lies in its core functionalities. A platform lacking robust analytics or real-time tracking is little more than a digital logbook, falling short of providing the actionable intelligence needed to compete effectively.
 
@@ -25,7 +25,7 @@ We won't just tell you *what* to look for; we will show you where to find it. Fo
 
 Samsara positions itself as a comprehensive, all-in-one platform for modern fleet operations, merging hardware and software to create a unified data stream. This integration is its core strength, allowing businesses to move beyond basic GPS tracking and embrace a more proactive, data-driven management style. The platform is designed for businesses seeking a single source of truth for vehicles, equipment, and workers.
 
-![Samsara](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/screenshots/c94a65b7-05e2-4849-b4c5-aedffd11d2a8.jpg)
+![Samsara](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/fleet-management-system-features/c94a65b7-05e2-4849-b4c5-aedffd11d2a8.jpg)
 
 The user experience on the Samsara dashboard is clean and intuitive, translating complex data into actionable visuals like maps, charts, and real-time alerts. This focus on usability extends to its highly-rated mobile apps, which are designed for drivers and technicians to streamline tasks like inspections, logging hours, and managing work orders directly from the field.
 
@@ -56,7 +56,7 @@ Samsara operates on a quote-based pricing model, which means you need to contact
 
 Geotab presents itself as an open and scalable telematics platform, renowned for its ability to deliver rich, high-quality data. Its core offering, MyGeotab, is delivered through a network of authorized resellers, allowing businesses to receive localized support and expertise. The platform is engineered for scalability, catering to fleets of all sizes with a focus on deep analytics, compliance, and extensibility.
 
-![Geotab](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/screenshots/6e1cb2a0-32ee-4d86-8510-4a7dc7dc57c2.jpg)
+![Geotab](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/fleet-management-system-features/6e1cb2a0-32ee-4d86-8510-4a7dc7dc57c2.jpg)
 
 The user interface within MyGeotab is data-centric, providing customizable dashboards and advanced reporting tools that empower managers to drill down into specific metrics. While it can appear complex initially due to the sheer volume of data, it offers unparalleled control for those who want to fine-tune their operations. Its mobile apps, Geotab Drive for drivers and MyAdmin for fleet managers, extend this functionality to users on the go.
 
@@ -87,7 +87,7 @@ Geotab's products and services are sold exclusively through a global network of 
 
 Verizon Connect leverages its vast telecommunications infrastructure to offer Reveal, a robust fleet management platform known for its carrier-grade connectivity and comprehensive feature set. It caters to a wide spectrum of businesses, from small-to-medium-sized companies to large enterprises and government agencies. The platform is designed to provide near real-time visibility into vehicle locations, driver behavior, and overall operational efficiency, making it a powerful tool for optimizing daily fleet activities.
 
-![Verizon Connect (Reveal)](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/screenshots/356d6fda-1803-43fc-93f4-99de6da38708.jpg)
+![Verizon Connect (Reveal)](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/fleet-management-system-features/356d6fda-1803-43fc-93f4-99de6da38708.jpg)
 
 The user experience within the Reveal dashboard is centered on a live map, providing an immediate, high-level overview of the entire fleet. From there, managers can drill down into detailed reports, vehicle histories, and safety events. A key strength is its extensive mobile app suite, which empowers drivers and managers with specialized tools like the Spotlight app for on-the-go management, an ELD Logbook app for compliance, and a dedicated Navigation app for commercial vehicles.
 
@@ -119,7 +119,7 @@ Verizon Connect uses a quote-based pricing model. Prospective customers must con
 
 Motive has evolved from its KeepTruckin roots into a comprehensive, integrated operations platform for modern fleets. It focuses on combining telematics, AI-powered safety, and financial management tools into a single, unified system. The platform is particularly well-regarded in the trucking, delivery, and field service industries for its strong emphasis on driver safety and automated coaching workflows.
 
-![Motive (formerly KeepTruckin)](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/screenshots/c01ac589-0520-4bb0-8316-babf8554ca88.jpg)
+![Motive (formerly KeepTruckin)](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/fleet-management-system-features/c01ac589-0520-4bb0-8316-babf8554ca88.jpg)
 
 The Motive user interface is built to be accessible, translating complex data into clear dashboards, scorecards, and real-time alerts. This approach helps managers quickly identify safety risks, monitor asset utilization, and control operational costs. Its driver-facing mobile app is frequently updated, ensuring a modern and user-friendly experience for tasks like logging hours, completing inspections, and receiving coaching feedback.
 
@@ -150,7 +150,7 @@ Motive utilizes a custom quote-based pricing model. Prospective customers need t
 
 Fleetio carves out a distinct niche by focusing intensely on fleet maintenance and total cost of ownership, positioning itself as a central hub for asset management. Rather than trying to be an all-in-one telematics provider, Fleetio excels as a pure-play software solution designed to organize, track, and optimize every aspect of vehicle and equipment maintenance, from acquisition to disposal. This makes it an ideal choice for fleets that already have a GPS provider or prioritize deep maintenance insights over bundled hardware.
 
-![Fleetio](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/screenshots/6baa551a-4dd5-4d21-a3d7-a3691742f27e.jpg)
+![Fleetio](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/fleet-management-system-features/6baa551a-4dd5-4d21-a3d7-a3691742f27e.jpg)
 
 The platform's interface is built for clarity and ease of use, making complex data like service histories, parts inventory, and expense reports accessible to managers, technicians, and administrators. Its mobile-first approach, highlighted by the Fleetio Go app, empowers drivers to conduct inspections, report issues, and scan VINs directly from the field, ensuring that crucial data is captured at the source without delay.
 
@@ -181,7 +181,7 @@ Fleetio offers a refreshingly transparent SaaS pricing model with multiple tiers
 
 GPS Insight offers a robust fleet and field service management platform tailored primarily for the US market, focusing on providing actionable intelligence from GPS tracking and video telematics data. The platform is designed to be approachable for small to mid-sized businesses (SMBs) while offering the depth needed for larger operations. It combines hardware like GPS trackers and AI cameras with intuitive software to help businesses improve safety, efficiency, and compliance.
 
-![GPS Insight](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/screenshots/c976f7f5-9d45-43b9-92e7-1b26de3aa766.jpg)
+![GPS Insight](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/fleet-management-system-features/c976f7f5-9d45-43b9-92e7-1b26de3aa766.jpg)
 
 The user experience centers on a clean dashboard that provides quick access to vehicle locations, alerts, and over 60 pre-built reports. This focus on accessibility extends to its dedicated mobile apps for managers and drivers, which facilitate on-the-go tasks like job assignments, messaging, and vehicle inspections. The platform aims to connect the office with the field in a seamless, real-time loop.
 

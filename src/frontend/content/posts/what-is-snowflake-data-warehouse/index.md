@@ -13,7 +13,7 @@ tags:
   - data-engineering
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/5dd5b2f3-a69f-4fe6-8851-9f2d1eb8545d/what-is-snowflake-data-warehouse-cloud-network.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-snowflake-data-warehouse/what-is-snowflake-data-warehouse-cloud-network.jpg)
 
 Snowflake is a cloud-native data platform, not just a traditional data warehouse. It provides a flexible, scalable solution for data storage, processing, and analytics delivered as a **Software-as-a-Service (SaaS)** offering.
 
@@ -53,7 +53,7 @@ To really get what makes [Snowflake](https://www.snowflake.com/en/) different, y
 
 Its design is based on a multi-cluster, shared data architecture. It might sound complex, but it's really just three distinct layers that are completely independent of one another. Think of it less like a rigid database and more like a highly efficient logistics operation.
 
-![Data warehouse hierarchy diagram showing a Mainframe DB branching to Old Way (on-premise) and Snowflake (cloud).](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/d3a9c387-a7a0-4223-b5f4-35548f6b0bca/what-is-snowflake-data-warehouse-snowflake-comparison.jpg)
+![Data warehouse hierarchy diagram showing a Mainframe DB branching to Old Way (on-premise) and Snowflake (cloud).](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-snowflake-data-warehouse/what-is-snowflake-data-warehouse-snowflake-comparison.jpg)
 
 ### The Foundation: The Storage Layer
 
@@ -94,7 +94,7 @@ This architecture is a game-changer for companies trying to manage different wor
 
 Snowflake's architecture is brilliant, but it's the day-to-day features that really make a difference for data teams on the ground. These aren't just theoretical bells and whistles; they are practical tools that solve real, painful problems, speeding up development and tightening up data governance. Let's dig into a few of the most impactful ones.
 
-![Three icons illustrating data warehouse features: Time Travel, Zero-Copy Cloning, and Semi-structured Data.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/069b9b83-b2f9-4f11-8b3b-da7416802945/what-is-snowflake-data-warehouse-data-features.jpg)
+![Three icons illustrating data warehouse features: Time Travel, Zero-Copy Cloning, and Semi-structured Data.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-snowflake-data-warehouse/what-is-snowflake-data-warehouse-data-features.jpg)
 
 ### Time Travel: Your Ultimate Data Undo Button
 
@@ -162,7 +162,7 @@ To really get what [Snowflake](https://www.snowflake.com/) is, you have to under
 
 Think of it like your electricity bill. You only pay for what you actually use, and the costs are broken down into two simple, separate categories: **storage** and **compute**. This separation is the key to its efficiency.
 
-![A cartoon cloud with a credit gauge, coins, and a counter showing zero credits, above T-shirt size buttons and auto suspend.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/d32a68f5-55d0-463e-94d8-6458d47b3704/what-is-snowflake-data-warehouse-cloud-credits.jpg)
+![A cartoon cloud with a credit gauge, coins, and a counter showing zero credits, above T-shirt size buttons and auto suspend.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-snowflake-data-warehouse/what-is-snowflake-data-warehouse-cloud-credits.jpg)
 
 ### The Two Pillars of Snowflake Pricing
 

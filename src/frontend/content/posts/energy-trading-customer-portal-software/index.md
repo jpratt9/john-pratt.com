@@ -13,13 +13,13 @@ tags:
   - utility-portals
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-2ccd8ca7-c4ac-40f5-a058-c5c4c5124881.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/energy-trading-customer-portal-software/featured-image-2ccd8ca7-c4ac-40f5-a058-c5c4c5124881.jpg)
 
 At its core, an energy trading customer portal is a secure, centralized digital space where your clients can get a clear view of their trade data, manage their contracts, and check on settlements. This isn't just a minor upgrade; it's a complete move away from the clunky, manual world of emails and spreadsheets. It gives clients **24/7 self-service access** and makes your own operations run a whole lot smoother. In a market as unpredictable as energy, a good portal becomes a critical tool for building transparency and trust.
 
 ## The Digital Shift in Energy Trading Relationships
 
-![A professional analyzing energy trading data on a modern computer interface](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/2d73132d-08b0-47db-a059-c3af96291874.jpg)
+![A professional analyzing energy trading data on a modern computer interface](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/energy-trading-customer-portal-software/2d73132d-08b0-47db-a059-c3af96291874.jpg)
 
 Think back to how things used to be done - and in many places, still are. A complex energy trade managed through a messy tangle of phone calls, never-ending email chains, and a dozen different spreadsheets. It's slow, it's a minefield of potential human error, and it completely lacks the transparency clients now expect.
 
@@ -92,7 +92,7 @@ A great dashboard immediately answers the questions bouncing around a client's h
 
 This infographic breaks down how a portal serves as a central hub, creating shared value that benefits both the energy company and its clients.
 
-![Infographic about energy trading customer portal software](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/b8bcb7e4-6c86-40a1-8642-ab340709150d.jpg)
+![Infographic about energy trading customer portal software](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/energy-trading-customer-portal-software/b8bcb7e4-6c86-40a1-8642-ab340709150d.jpg)
 
 As you can see, the portal isn't just a tool for one side. It's a bridge that streamlines internal operations for your company while empowering the client with direct access and control over their own business.
 
@@ -164,7 +164,7 @@ At the end of the day, building a powerful **energy trading customer portal soft
 
 ## Fortifying Your Portal Against Threats and Risks
 
-![Cybersecurity lock icon overlaid on a digital network representing data protection in energy trading.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/12707667-0121-432e-8b15-cfe9f4d8fc73.jpg)
+![Cybersecurity lock icon overlaid on a digital network representing data protection in energy trading.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/energy-trading-customer-portal-software/12707667-0121-432e-8b15-cfe9f4d8fc73.jpg)
 
 In energy trading, where a single transaction can be worth millions, data isn't just data - it's a high-value asset. This means the security of your **energy trading customer portal software** isn't just a feature; it's the absolute bedrock of client trust. A breach doesn't just leak information; it shatters reputations and can lead to staggering financial and regulatory penalties.
 

@@ -13,7 +13,7 @@ tags:
   - Cloud-Scalability
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-bf6773ea-d9d0-473c-ab69-20ab20e3a5c8.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/infrastructure-as-code-benefits/featured-image-bf6773ea-d9d0-473c-ab69-20ab20e3a5c8.jpg)
 
 Infrastructure as code (IaC) is no longer a niche practice; it's a foundational component of modern cloud and DevOps strategies. By managing and provisioning infrastructure through machine-readable definition files rather than manual processes, teams unlock unprecedented levels of efficiency, consistency, and control. This approach treats your servers, networks, and databases just like application code, enabling you to apply software development best practices directly to your operational environment. The core principle is simple yet powerful: automate everything to eliminate manual configuration and reduce human error.
 
@@ -25,7 +25,7 @@ One of the most transformative **infrastructure as code benefits** is the abilit
 
 This creates an immutable history of your infrastructure's evolution. You can see exactly who made a change, what they changed, why they changed it, and when it happened. This level of traceability is nearly impossible to achieve with manual "click-ops" management in a cloud console, where changes can be frequent and undocumented.
 
-![Version Control and Change Tracking](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/18e77067-b56c-4915-96ca-3a4b5333b876.jpg)
+![Version Control and Change Tracking](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/infrastructure-as-code-benefits/18e77067-b56c-4915-96ca-3a4b5333b876.jpg)
 
 ### Why It's a Game-Changer
 
@@ -48,7 +48,7 @@ A critical **infrastructure as code benefit** is the power to eliminate configur
 
 This codified approach guarantees that every server, database, or network rule is deployed exactly as intended, every single time. It stops the slow accumulation of manual, undocumented tweaks that lead to fragile, inconsistent systems often called "snowflake servers."
 
-![Consistency and Standardization](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/b322e5b8-5f30-422f-aa83-db5b9f11dad9.jpg)
+![Consistency and Standardization](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/infrastructure-as-code-benefits/b322e5b8-5f30-422f-aa83-db5b9f11dad9.jpg)
 
 ### Why It's a Game-Changer
 
@@ -71,7 +71,7 @@ Another one of the most compelling **infrastructure as code benefits** is the ab
 
 This shift from manual configuration to automated deployment means your infrastructure can elasticaly expand to handle traffic spikes or contract to save costs during quiet periods. This agility is critical for modern applications that experience fluctuating user loads, ensuring both high availability and cost-efficiency without human intervention.
 
-![Rapid Scalability and Provisioning](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/d4bbe65f-c386-443d-a972-04262630acee.jpg)
+![Rapid Scalability and Provisioning](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/infrastructure-as-code-benefits/d4bbe65f-c386-443d-a972-04262630acee.jpg)
 
 ### Why It's a Game-Changer
 
@@ -96,7 +96,7 @@ Beyond operational efficiency, another of the most compelling **infrastructure a
 
 By codifying your infrastructure, you can automate cost-saving policies directly into your provisioning workflows. This declarative approach ensures that every resource is accounted for and aligned with budget constraints, transforming cost management from a reactive cleanup task into a proactive, automated discipline.
 
-![Cost Optimization and Resource Management](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/fa0b406c-5f7b-42c1-9668-d2092a346135.jpg)
+![Cost Optimization and Resource Management](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/infrastructure-as-code-benefits/fa0b406c-5f7b-42c1-9668-d2092a346135.jpg)
 
 ### Why It's a Game-Changer
 

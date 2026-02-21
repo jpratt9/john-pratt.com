@@ -13,7 +13,7 @@ tags:
   - owasp
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/9075df82-9705-4339-b8e2-07ec3d1c5bd3/how-to-prevent-sql-injection-attacks-security-defense.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-prevent-sql-injection-attacks/how-to-prevent-sql-injection-attacks-security-defense.jpg)
 
 The best defense against **SQL injection attacks** is simple in concept but requires discipline in practice: treat all user input as hostile and keep it completely separate from your database commands. This means relying on core strategies like *parameterized queries* (or prepared statements), rigorous *input validation*, and locking down database accounts with the *principle of least privilege*.
 
@@ -23,7 +23,7 @@ These aren't just buzzwords; they are the bedrock of a robust, layered defense a
 
 SQL injection has been around for decades, yet it remains a potent and surprisingly common threat to web applications. It all starts when an attacker finds a way to slip malicious SQL code into an input field - like a search bar or login form - and tricks your application into running it against your database. What looks like a simple login attempt can become a full-blown backdoor.
 
-![Diagram showing SQL injection vulnerability path from login interface through database with snake illustration](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/68816905-cf5f-452e-beae-5b4b677df1d5/how-to-prevent-sql-injection-attacks-vulnerability-diagram.jpg)
+![Diagram showing SQL injection vulnerability path from login interface through database with snake illustration](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-prevent-sql-injection-attacks/how-to-prevent-sql-injection-attacks-vulnerability-diagram.jpg)
 
 Once they're in, attackers can sidestep authentication, swipe sensitive data, alter records, or even wipe out your entire database. Imagine an e-commerce site losing its entire customer list and order history because of a single vulnerable search box. It's a stark reminder that knowing [how to secure web applications](https://www.john-pratt.com/how-to-secure-web-applications/) isn't optional for modern developers.
 
@@ -53,7 +53,7 @@ The most effective way to stop an SQL injection attack is to build your defenses
 
 The cornerstone of this entire approach is using **parameterized queries**, often called prepared statements. This technique completely changes the conversation between your app and the database, shutting down the primary vector for SQL injection.
 
-![Comparison showing vulnerable concatenated SQL string versus secure parameterized query with lock icon](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/13728710-df8d-41d1-8252-a396bca4ea2a/how-to-prevent-sql-injection-attacks-vulnerable-secure-comparison.jpg)
+![Comparison showing vulnerable concatenated SQL string versus secure parameterized query with lock icon](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-prevent-sql-injection-attacks/how-to-prevent-sql-injection-attacks-vulnerable-secure-comparison.jpg)
 
 ### The Danger of Building Queries by Hand
 
@@ -134,7 +134,7 @@ A word of caution, though. Most ORMs provide an "escape hatch" to execute raw SQ
 
 Parameterized queries are your number one weapon against SQL injection, no question. But a truly secure application can't rely on just one trick. Think of it like home security: you don't just lock the front door. You have window locks, a security camera, and maybe a very loud dog. In software, this means layering your defenses with input validation, output encoding, and a smart approach to database features like stored procedures.
 
-![Three blue shield icons representing database security measures and SQL injection attack prevention strategies](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/097f8189-4c3b-47ea-baf1-9cce03af83f3/how-to-prevent-sql-injection-attacks-security-shields.jpg)
+![Three blue shield icons representing database security measures and SQL injection attack prevention strategies](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-prevent-sql-injection-attacks/how-to-prevent-sql-injection-attacks-security-shields.jpg)
 
 This defense-in-depth strategy is crucial. It ensures that if one layer fails - maybe a developer makes a mistake or a library has a bug - other controls are still in place to stop an attack cold. It's how you build applications that can actually survive in the wild.
 
@@ -249,7 +249,7 @@ Picture this: a developer pushes new code to the repository. The CI pipeline ins
 
 Once the code passes and is deployed to a staging environment, the pipeline can then trigger a DAST scan to probe the live, running version. This creates a tight feedback loop, shrinking the time it takes to find and fix vulnerabilities from weeks down to mere minutes. You can explore a variety of other [secure software development best practices](https://www.john-pratt.com/secure-software-development-best-practices/) to make this process even more robust.
 
-![Database hardening workflow diagram showing three security steps: permissions, configuration, and firewall protection](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/5321b553-03ae-40e8-9834-4718d629a9a0/how-to-prevent-sql-injection-attacks-database-hardening.jpg)
+![Database hardening workflow diagram showing three security steps: permissions, configuration, and firewall protection](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-prevent-sql-injection-attacks/how-to-prevent-sql-injection-attacks-database-hardening.jpg)
 
 This workflow illustrates the essential layers of database defense, from managing who gets in (permissions) to filtering out threats before they ever reach the server (firewalls).
 

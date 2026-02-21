@@ -13,7 +13,7 @@ tags:
   - spring-boot-jpa
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/4d911db1-98c0-48fb-85de-7b20d593968a/java-spring-boot-tutorial-development-stack.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/java-spring-boot-tutorial/java-spring-boot-tutorial-development-stack.jpg)
 
 Alright, let's get our hands dirty. In this guide, we're going to build a full-fledged Spring Boot application from the ground up, all the way from creating the initial project to getting it live in the cloud.
 
@@ -29,7 +29,7 @@ What does that mean for you? You can get a production-ready application up and r
 
 Getting started is a simple, three-part process: set up your environment, initialize the project, and start coding.
 
-![A three-step diagram illustrating the Spring Boot setup process: Environment, Initialize, and Code.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/9d44c1c3-d978-4187-9719-1623cfee5dd5/java-spring-boot-tutorial-setup-process.jpg)
+![A three-step diagram illustrating the Spring Boot setup process: Environment, Initialize, and Code.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/java-spring-boot-tutorial/java-spring-boot-tutorial-setup-process.jpg)
 
 This streamlined flow is exactly why developers love the framework - it gets you from zero to coding as fast as possible.
 
@@ -63,7 +63,7 @@ Before we start writing a single line of code, we need to make sure our local ma
 
 ## Building Your Application's Core Logic
 
-![A laptop screen displaying Spring Initializr, alongside a Java project structure and JDK symbol.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/e65bb4d4-5658-4330-ba11-34f7c741f538/java-spring-boot-tutorial-spring-boot.jpg)
+![A laptop screen displaying Spring Initializr, alongside a Java project structure and JDK symbol.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/java-spring-boot-tutorial/java-spring-boot-tutorial-spring-boot.jpg)
 
 Alright, with our project scaffolding in place, it's time to get our hands dirty and build the actual engine of the application. This is where we'll create the layers that handle business logic and incoming user requests - the real heart of any web app.
 
@@ -170,7 +170,7 @@ Using constructor injection makes our code more robust because a `TaskController
 
 ## Connecting to a Database with Spring Data JPA
 
-![Diagram illustrating a typical layered application architecture: REST input to Controller, then Service, then Repository.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/a4d9ab5c-d095-4723-94a7-351edf1f1c5c/java-spring-boot-tutorial-layered-architecture.jpg)
+![Diagram illustrating a typical layered application architecture: REST input to Controller, then Service, then Repository.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/java-spring-boot-tutorial/java-spring-boot-tutorial-layered-architecture.jpg)
 
 So far, our application's logic is sound, but its memory is short-lived. Any data we create vanishes the moment we shut down the server. To build something real, we need persistence, and that's where **Spring Data JPA** shines. It's a fantastic abstraction layer that lets us talk to a relational database without drowning in boilerplate SQL code.
 
@@ -402,7 +402,7 @@ Ultimately, integrating Docker and a CI/CD pipeline into your workflow isn't jus
 
 ## Common Questions About Spring Boot Development
 
-![A diagram illustrating a software deployment pipeline: Build, Test, Deploy, Database, and Registry.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/7c3fcda5-d58a-48e1-b547-2978d6f61b73/java-spring-boot-tutorial-deployment-pipeline.jpg)
+![A diagram illustrating a software deployment pipeline: Build, Test, Deploy, Database, and Registry.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/java-spring-boot-tutorial/java-spring-boot-tutorial-deployment-pipeline.jpg)
 
 As you get your hands dirty with this Spring Boot tutorial and start building real applications, you're going to hit a few common bumps in the road. It happens to everyone. This section is my personal FAQ - a quick reference for the questions I see pop up time and again from developers diving into the framework.
 

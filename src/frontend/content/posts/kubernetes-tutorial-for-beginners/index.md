@@ -13,7 +13,7 @@ tags:
   - devops-guide
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/9b98ac69-2fc9-4d92-86c6-faac30ecbe0c/kubernetes-tutorial-for-beginners-kubernetes-launch.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/kubernetes-tutorial-for-beginners/kubernetes-tutorial-for-beginners-kubernetes-launch.jpg)
 
 If you've heard developers talking about running applications “in the cloud,” there's a good chance they're using Kubernetes. This guide is designed to pull back the curtain on the platform that has quietly become the engine for most modern software. We'll get hands-on and show you why it's the definitive tool for managing and scaling applications reliably.
 
@@ -55,7 +55,7 @@ Picking the right tool can feel like a big decision, but it's simpler than you t
 
 If you're still wondering if Kubernetes is the right next step after getting comfortable with containers, this decision tree can help.
 
-![A flowchart titled 'Is Kukermetes For Me?' guiding developers on learning Docker or Kubernetes based on container management needs.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/d0466d4c-2ada-4764-8b75-e4f0975d3f51/kubernetes-tutorial-for-beginners-flowchart.jpg)
+![A flowchart titled 'Is Kukermetes For Me?' guiding developers on learning Docker or Kubernetes based on container management needs.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/kubernetes-tutorial-for-beginners/kubernetes-tutorial-for-beginners-flowchart.jpg)
 
 The path is pretty clear: if you need to manage containers at scale, Kubernetes is where you're headed. Otherwise, make sure you've mastered Docker first.
 
@@ -97,7 +97,7 @@ This command will pull down everything it needs and get your local Kubernetes pl
 
 Alright, now that you've got a local cluster fired up, it's time to get your hands dirty with the fundamental components that make Kubernetes tick. Forget the high-level theory for a moment; we're diving into the essential building blocks you'll use every single day to build and manage applications.
 
-![Flowchart illustrating Kubernetes Pods, Service with Load Balancer, and Deployment with Rolling Update.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/418d4a5e-9861-433a-bba4-7e3d27aa7c1d/kubernetes-tutorial-for-beginners-kubernetes-concepts.jpg)
+![Flowchart illustrating Kubernetes Pods, Service with Load Balancer, and Deployment with Rolling Update.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/kubernetes-tutorial-for-beginners/kubernetes-tutorial-for-beginners-kubernetes-concepts.jpg)
 
 The three concepts you absolutely need to nail down from the start are **Pods**, **Services**, and **Deployments**. Think of them as the basic grammar of Kubernetes. Once you understand how they work together, you can start telling your cluster what to do.
 
@@ -156,7 +156,7 @@ Okay, let's put theory into practice. Reading about Pods, Deployments, and Servi
 
 First, we'll write a Deployment manifest from scratch. Think of this YAML file as the blueprint that tells Kubernetes what container image to run and how many copies of it you need. Then, we'll expose it to the world (or at least, to our local machine) with a Service.
 
-![Diagram illustrating Kubernetes deployment with YAML, kubectl apply, scaling, and rolling updates.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/fbf55550-3670-44b0-83c7-91d5a967ab52/kubernetes-tutorial-for-beginners-kubernetes-deployment.jpg)
+![Diagram illustrating Kubernetes deployment with YAML, kubectl apply, scaling, and rolling updates.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/kubernetes-tutorial-for-beginners/kubernetes-tutorial-for-beginners-kubernetes-deployment.jpg)
 
 ### Crafting Your First Deployment Manifest
 

@@ -13,7 +13,7 @@ tags:
   - release-management
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/269b4d5c-2173-489f-889f-d0d2f60376ab/software-deployment-strategies-system-architecture.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/software-deployment-strategies/software-deployment-strategies-system-architecture.jpg)
 
 At its core, a software deployment strategy is the game plan your team uses to push new code live. The best approach walks a fine line between shipping fast and keeping the lights on, making sure users get those shiny new updates without the system crashing. Nailing this choice is fundamental to modern software development.
 
@@ -21,7 +21,7 @@ At its core, a software deployment strategy is the game plan your team uses to p
 
 Deciding how you deploy software is one of the biggest calls an engineering team can make. This isn't just about picking some tools from a toolbox; it's a strategic decision that hits the bottom line. Your deployment method determines your team's velocity, how you handle a production fire, and ultimately, the experience you give your users.
 
-![Minimalist illustration of a seesaw balancing a launching rocket on one side and a computer server on the other.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/9b7badbd-ad8e-47c4-aae4-2ab99fe86481/software-deployment-strategies-rocket-server.jpg)
+![Minimalist illustration of a seesaw balancing a launching rocket on one side and a computer server on the other.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/software-deployment-strategies/software-deployment-strategies-rocket-server.jpg)
 
 This guide gets straight to the point, looking at deployment as a critical part of the business. It all boils down to a classic tension: how do you deliver value faster without blowing things up?
 
@@ -124,7 +124,7 @@ As you weigh these options, remember that your choice is deeply connected to you
 
 This decision tree offers a basic framework for that initial choice, often boiling down to how much control and security your organization needs.
 
-![Decision tree for software deployment, choosing on-premises for security and control or cloud otherwise.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/14fff00b-70b3-4c7c-b7e6-caad7513d4c2/software-deployment-strategies-deployment-choices.jpg)
+![Decision tree for software deployment, choosing on-premises for security and control or cloud otherwise.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/software-deployment-strategies/software-deployment-strategies-deployment-choices.jpg)
 
 As the graphic shows, organizations in heavily regulated fields often lean toward the direct oversight that on-premises hardware provides. Most others, however, opt for the flexibility and scalability of the cloud.
 
@@ -149,7 +149,7 @@ Modern software deployment strategies aren't just abstract concepts; they are br
 
 Without the elastic, programmable nature of the cloud, these methods would be prohibitively expensive and incredibly complex to manage. Cloud providers like **[AWS](https://aws.amazon.com/)**, **[Azure](https://azure.microsoft.com/)**, and **[Google Cloud](https://cloud.google.com/)** provide the raw ingredients. We're talking elastic compute resources that let you spin up an entire duplicate environment in minutes and sophisticated traffic management tools to precisely route user requests. This foundation is what allows teams to execute controlled, incremental rollouts with real confidence.
 
-![Diagram showing a cloud infrastructure connected to Kubernetes, deploying software to a browser.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/5aada152-ece9-4823-98f2-22694a332baa/software-deployment-strategies-kubernetes-deployment.jpg)
+![Diagram showing a cloud infrastructure connected to Kubernetes, deploying software to a browser.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/software-deployment-strategies/software-deployment-strategies-kubernetes-deployment.jpg)
 
 This move to the cloud is completely reshaping the software market. In fact, cloud deployment strategies are on track to capture **59.55%** of all software development tool revenue, growing at an explosive rate of **32.7%** through 2030. You can dig into more of the data on this trend and its [impact on global markets](https://www.mordorintelligence.com/industry-reports/software-development-tools-market).
 

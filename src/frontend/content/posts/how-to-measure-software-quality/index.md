@@ -13,7 +13,7 @@ tags:
   - ci/cd-pipeline
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-3fccc2cc-3dc1-4cf6-bb04-0af6283f4328.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-measure-software-quality/featured-image-3fccc2cc-3dc1-4cf6-bb04-0af6283f4328.jpg)
 
 Figuring out how to measure software quality really boils down to one simple question: What does "good" look like for *your* product and *your* users? It's all about connecting high-level business goals to tangible, technical outcomes by tracking attributes like **reliability**, **performance**, and **security**. This way, you can be sure your engineering efforts are actually making a difference where it counts.
 
@@ -40,7 +40,7 @@ Don't bite off more than you can chew. Pick the top two or three attributes that
 
 This infographic breaks down the simple, three-step flow from big-picture goals to the specific metrics you'll track.
 
-![Infographic about how to measure software quality](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/daeca1ed-329f-48e3-bdda-ca9fb1ae8aa8.jpg)
+![Infographic about how to measure software quality](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-measure-software-quality/daeca1ed-329f-48e3-bdda-ca9fb1ae8aa8.jpg)
 
 As you can see, strategic goals point to the quality attributes you should focus on, which then dictate the exact metrics you need to monitor.
 
@@ -76,7 +76,7 @@ The push for data-driven quality isn't just a trend; it's a massive market force
 
 You need to define [analytics metrics](https://feedbackview.io/docs/analytics/metrics) that genuinely reflect the quality attributes you care about. Let's dig into some practical examples for each of the core areas.
 
-![A dashboard showing various software quality metrics and charts](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/99e1caaa-4051-46fa-aae4-f2786fe44193.jpg)
+![A dashboard showing various software quality metrics and charts](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-measure-software-quality/99e1caaa-4051-46fa-aae4-f2786fe44193.jpg)
 
 ### Reliability Metrics
 
@@ -163,7 +163,7 @@ Collecting quality data is a great start, but the real magic happens when you us
 
 Instead of just looking at dashboards after something has already gone wrong, you're building quality checks directly into the development workflow. The whole point is to catch problems early and automatically, stopping a flawed build dead in its tracks long before it ever sees the light of day.
 
-![Diagram showing a CI/CD pipeline with automated quality gates](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/5d6019e4-4d46-4f28-b7ac-a6caabf324a7.jpg)
+![Diagram showing a CI/CD pipeline with automated quality gates](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-measure-software-quality/5d6019e4-4d46-4f28-b7ac-a6caabf324a7.jpg)
 
 ### Configuring Your First Line of Defense
 
@@ -203,7 +203,7 @@ You've got the data flowing. Now for the hard part - and the most valuable. Coll
 
 Without a solid process for analysis and action, even the most impressive data pipeline is little more than an expensive logging tool. The goal is to make quality data a shared language that helps your team make smarter, more confident decisions with every commit.
 
-![A dashboard from Grafana showing various performance and system health metrics](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/47bebc50-3a88-4c63-b0b7-00f7637c2a2e.jpg)
+![A dashboard from Grafana showing various performance and system health metrics](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-measure-software-quality/47bebc50-3a88-4c63-b0b7-00f7637c2a2e.jpg)
 
 A dashboard like this one from [Grafana](https://grafana.com/) is crucial. It brings together data from different sources to create a single, shared view of what's really going on with your system.
 

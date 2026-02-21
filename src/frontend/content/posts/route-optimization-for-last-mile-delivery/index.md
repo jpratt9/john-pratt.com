@@ -13,7 +13,7 @@ tags:
   - fleet-routing
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/68803c67-1a81-4b56-8c6c-f5b97287cb2a/route-optimization-for-last-mile-delivery-delivery-map.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/route-optimization-for-last-mile-delivery/route-optimization-for-last-mile-delivery-delivery-map.jpg)
 
 Route optimization is all about finding the smartest, most efficient paths for your drivers to get packages to customers' doors. It's less about just getting from A to B and more about turning a complex logistical headache into a real competitive advantage. When done right, it cuts fuel costs, gets more out of every driver's shift, and most importantly, keeps customers happy by delivering on time.
 
@@ -64,7 +64,7 @@ At the core of last-mile route optimization isn't some black-box magic; it's a f
 
 The last mile isn't just a logistics problem - it's the epicenter of major business challenges. It directly ties into rising operational costs, nagging inefficiencies, and, most importantly, the customer's final impression of your brand.
 
-![A concept map illustrating last mile delivery's impact on costs, inefficiency, and customer experience.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/cde7e353-7413-49bf-8571-9cc88d01fa79/route-optimization-for-last-mile-delivery-concept-map.jpg)
+![A concept map illustrating last mile delivery's impact on costs, inefficiency, and customer experience.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/route-optimization-for-last-mile-delivery/route-optimization-for-last-mile-delivery-concept-map.jpg)
 
 As you can see, solving for the last mile creates a ripple effect that strengthens the entire business, from the bottom line to customer loyalty.
 
@@ -101,7 +101,7 @@ These intelligent systems get sharper with every delivery. This is why properly 
 
 ## Gathering Your Essential Routing Ingredients
 
-![An illustration of various baking ingredients, jars, a whisk, and a tray of dough balls.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/7378d915-93bd-4a32-a8c7-097fd8876322/route-optimization-for-last-mile-delivery-baking-supplies.jpg)
+![An illustration of various baking ingredients, jars, a whisk, and a tray of dough balls.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/route-optimization-for-last-mile-delivery/route-optimization-for-last-mile-delivery-baking-supplies.jpg)
 
 A sophisticated routing algorithm is a bit like a master chef. It's capable of incredible things, but at the end of the day, it's completely at the mercy of the ingredients you give it. Without the right data and a clear recipe, even the most powerful system will serve up a messy, inefficient plan.
 
@@ -216,7 +216,7 @@ One of the biggest unsung benefits here is safety and compliance. A solid route 
 
 ## Future-Proofing Your Delivery Operations
 
-![An illustration of a delivery truck connected to a map with multiple location pins, symbolizing route optimization.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/098c96df-6242-4620-9025-be174b539a02/route-optimization-for-last-mile-delivery-route-planning.jpg)
+![An illustration of a delivery truck connected to a map with multiple location pins, symbolizing route optimization.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/route-optimization-for-last-mile-delivery/route-optimization-for-last-mile-delivery-route-planning.jpg)
 
 As customer demands get tougher and environmental pressures mount, route optimization is becoming more than just a tool for shaving off a few minutes or miles. It's evolving into the bedrock technology for a sustainable, future-ready logistics operation. The smartest companies I see aren't just reacting to today's fuel prices; they're strategically preparing for what's coming next. It's all about building a delivery network that's more resilient, adaptable, and responsible.
 

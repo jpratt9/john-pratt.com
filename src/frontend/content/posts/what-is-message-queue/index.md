@@ -13,7 +13,7 @@ tags:
   - system-design
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/afebf9c4-0758-459f-a0b7-2100199a7d47/what-is-message-queue-message-balancing.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-message-queue/what-is-message-queue-message-balancing.jpg)
 
 At its most basic, **what is a message queue**? Think of it as a digital middleman, a post office for your software. It allows different parts of an application to talk to each other without having to be directly connected, temporarily holding messages until the receiving service is ready to grab them. This creates a reliable, asynchronous communication channel.
 
@@ -65,7 +65,7 @@ After the producer sends the message, it doesn't go straight to its final destin
 
 This buffer is critical. It guarantees that even if the system that processes the messages is overloaded or temporarily offline, no work is lost. It just waits patiently in line. This is the essence of asynchronous communication.
 
-![Diagram illustrating a restaurant analogy for a message queue, showing sender, queue, and receiver.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/7f4de61a-63ad-45bb-a105-d5173bb951f9/what-is-message-queue-restaurant-analogy.jpg)
+![Diagram illustrating a restaurant analogy for a message queue, showing sender, queue, and receiver.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-message-queue/what-is-message-queue-restaurant-analogy.jpg)
 
 As you can see, the sender (producer) and receiver (consumer) don't talk to each other directly. The queue sits in the middle, decoupling them, which is exactly what you want for building resilient, scalable systems.
 
@@ -102,7 +102,7 @@ Delivery guarantees are just what they sound like: a promise from the message qu
 * **At-Least-Once Delivery:** Here, the system guarantees the message *will* be delivered. The queue holds onto the message until the consumer successfully processes it and sends back an "ack." If that acknowledgment never comes - maybe the consumer went offline - the queue simply resends the message. This is highly reliable, but it can create duplicates if the consumer processed the first message but failed before sending the ack.
 * **Exactly-Once Delivery:** This is the holy grail of messaging reliability. It ensures a message is delivered and processed one single time - no losses, no duplicates. As you might guess, pulling this off is complex. It often requires tight coordination between the message broker and the consumer to meticulously track the state of every single message.
 
-![A cartoon diagram illustrating message processing reliability, showing 'At Least Once' becoming 'Exactly Tonce' with a shield.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/8888b873-8502-4bb7-9310-726a30ad9c7f/what-is-message-queue-message-reliability.jpg)
+![A cartoon diagram illustrating message processing reliability, showing 'At Least Once' becoming 'Exactly Tonce' with a shield.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-message-queue/what-is-message-queue-message-reliability.jpg)
 
 Choosing the right guarantee is a big deal. For a non-critical task like generating a user avatar thumbnail, at-most-once is probably fine. But for processing a financial transaction? Anything less than exactly-once is a recipe for disaster.
 
@@ -130,7 +130,7 @@ It's one thing to understand the components of a message queue, but it's another
 
 This is where architectural patterns come in. Message queues aren't just a generic tool; they are the foundation for building specific, powerful communication flows. Let's dig into the two most common patterns you'll encounter: the **Work Queue** and **Publish/Subscribe**.
 
-![Diagram illustrating the difference between a work queue and a publish-subscribe messaging pattern.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/621b018b-214e-460f-a66b-82aad99425cd/what-is-message-queue-messaging-patterns.jpg)
+![Diagram illustrating the difference between a work queue and a publish-subscribe messaging pattern.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-message-queue/what-is-message-queue-messaging-patterns.jpg)
 
 ### The Work Queue: Your Go-To for Heavy Lifting
 

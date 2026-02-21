@@ -13,7 +13,7 @@ tags:
   - build-automation
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/774d1520-a9f2-4992-a8f9-7c48104abece/what-is-continuous-integration-ci-pipeline.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-continuous-integration/what-is-continuous-integration-ci-pipeline.jpg)
 
 So, what is **Continuous Integration (CI)** all about? At its core, it's a software development practice where developers make a habit of merging their code changes into a central, shared repository multiple times a day.
 
@@ -21,7 +21,7 @@ Every time someone merges their code, an automated process kicks in to build the
 
 ### Breaking Down Continuous Integration
 
-![Four cartoon chefs collaborate, adding colorful 'code' blocks to a cooking pot, symbolizing continuous integration.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/ee095b11-b8a0-4178-a02d-2f2cad9b3bad/what-is-continuous-integration-continuous-integration.jpg)
+![Four cartoon chefs collaborate, adding colorful 'code' blocks to a cooking pot, symbolizing continuous integration.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-continuous-integration/what-is-continuous-integration-continuous-integration.jpg)
 
 Think of it like a group of chefs cooking a complex soup together. Instead of each chef preparing their ingredients in total isolation for days and then dumping them all into the pot at the last minute - a recipe for disaster - they add each ingredient one by one and taste the soup as they go. This is exactly the mindset behind **Continuous Integration**. It's a discipline built on making small, frequent, and automated code integrations.
 
@@ -82,7 +82,7 @@ When you boil it down, a CI pipeline is really a continuous loop of **four** key
 
 This whole process didn't just appear overnight. We've come a long way from the chaos of "Merge Hell" to the clean, automated CI workflows we rely on today.
 
-![A flow chart illustrating the evolution of Continuous Integration (CI) through three stages: Merge Hell, Early Tools, and Modern CI.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/fe4477c3-fd54-413f-8d61-a66a56964581/what-is-continuous-integration-ci-evolution.jpg)
+![A flow chart illustrating the evolution of Continuous Integration (CI) through three stages: Merge Hell, Early Tools, and Modern CI.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-continuous-integration/what-is-continuous-integration-ci-evolution.jpg)
 
 As you can see, the industry evolved from painful, manual integrations to the automated, cloud-based systems that are now the standard for high-performing teams.
 
@@ -180,7 +180,7 @@ The impact here is huge. For companies like **Pratt Solutions**, building secure
 
 ## Proven Best Practices for a Successful CI Setup
 
-![A whiteboard illustrating principles of continuous integration with icons and text like small commits, fast feedback, single repo, and visible.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/c04f6b14-7731-4c61-b572-7f3f3db46ce7/what-is-continuous-integration-ci-principles.jpg)
+![A whiteboard illustrating principles of continuous integration with icons and text like small commits, fast feedback, single repo, and visible.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-continuous-integration/what-is-continuous-integration-ci-principles.jpg)
 
 Just dropping a CI tool into your workflow won't magically make things better. To really get the benefits, you have to embrace the mindset behind it. It's about building development habits that lead to faster, more reliable software.
 

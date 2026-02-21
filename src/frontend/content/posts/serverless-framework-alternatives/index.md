@@ -13,7 +13,7 @@ tags:
   - cloud-development
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/6bac4156-cfae-433c-bad5-9c91d4570a12/serverless-framework-alternatives-cloud-architecture.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/serverless-framework-alternatives/serverless-framework-alternatives-cloud-architecture.jpg)
 
 The Serverless Framework has long been a go-to for deploying cloud applications, but the landscape is evolving. As teams seek better developer experiences, multi-cloud support, and deeper integration with their preferred languages, a new generation of powerful **serverless framework alternatives** has emerged. This shift is part of a larger trend where businesses are looking to maximize the [benefits of cloud computing](https://www.f1group.com/benefits-of-cloud-computing-for-business/) by adopting tools that offer greater flexibility and operational efficiency.
 
@@ -25,7 +25,7 @@ We'll help you navigate the choices, from first-party AWS tools like SAM and CDK
 
 As a direct competitor and one of the most popular **serverless framework alternatives**, the AWS Serverless Application Model (SAM) is an open-source framework developed and maintained by AWS itself. It provides a streamlined way to define serverless applications using a concise YAML or JSON syntax, which is an abstraction layer built on top of AWS CloudFormation. This first-party origin is its key differentiator, ensuring day-one support for new AWS services and features.
 
-![AWS Serverless Application Model (AWS SAM)](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/screenshots/4fe87ef3-ba14-4950-9750-8ff5042bd964/serverless-framework-alternatives-aws-sam.jpg)
+![AWS Serverless Application Model (AWS SAM)](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/serverless-framework-alternatives/serverless-framework-alternatives-aws-sam.jpg)
 
 The framework is centered around the SAM Command Line Interface (CLI), a powerful tool that enables local building, testing, and debugging of Lambda functions in a Docker container that simulates the live AWS environment. This local development loop, enhanced by features like `sam sync`, significantly accelerates development cycles before deploying to the cloud. Teams already invested in the AWS ecosystem or those prioritizing deep integration with CloudFormation will find SAM a natural fit.
 
@@ -44,7 +44,7 @@ The framework is centered around the SAM Command Line Interface (CLI), a powerfu
 
 For teams that prefer imperative programming over declarative templates, the AWS Cloud Development Kit (CDK) is a powerful **serverless framework alternative**. This open-source framework from AWS allows you to define your cloud infrastructure using familiar programming languages like TypeScript, Python, Java, and C#. The CDK code is then synthesized into standard AWS CloudFormation templates for reliable and repeatable deployments. This code-first approach enables developers to leverage the full power of their chosen language, including logic, loops, and object-oriented principles, to create reusable infrastructure components.
 
-![AWS Cloud Development Kit (AWS CDK)](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/screenshots/d071fa54-c04f-42e6-922d-2fcbfc03f182/serverless-framework-alternatives-cloud-development.jpg)
+![AWS Cloud Development Kit (AWS CDK)](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/serverless-framework-alternatives/serverless-framework-alternatives-cloud-development.jpg)
 
 The core strength of the CDK lies in its high-level constructs, which provide sensible defaults and best practices for AWS resources, significantly reducing the amount of boilerplate code required. Instead of defining every single property for a VPC or a Lambda function, developers can use these well-architected patterns to provision complex infrastructure with just a few lines of code. This abstraction accelerates development and allows teams to build their own libraries of custom, company-specific infrastructure patterns, promoting consistency and reusability across projects.
 
@@ -63,7 +63,7 @@ The core strength of the CDK lies in its high-level constructs, which provide se
 
 Pulumi stands out among **serverless framework alternatives** by shifting from YAML or JSON configurations to a true code-first approach. It's an open-source, multi-cloud Infrastructure as Code (IaC) platform that allows developers to define and deploy serverless applications on AWS, Azure, and GCP using familiar programming languages like TypeScript, Python, Go, and C#. This empowers teams to leverage existing language features like loops, functions, and classes to create reusable and dynamic infrastructure.
 
-![Pulumi](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/screenshots/da7144a3-83b1-4e28-b205-79e1ad8d32e8/serverless-framework-alternatives-infrastructure-platform.jpg)
+![Pulumi](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/serverless-framework-alternatives/serverless-framework-alternatives-infrastructure-platform.jpg)
 
 The platform consists of an open-source CLI for local development and deployment, alongside an optional managed service called Pulumi Cloud. Pulumi Cloud handles state management, secrets encryption, and provides collaboration features and policy-as-code enforcement. This flexibility allows teams to start with a self-managed backend (like an S3 bucket) and graduate to the managed service as their needs for governance and team collaboration grow, making it a highly adaptable choice.
 
@@ -120,7 +120,7 @@ The framework's standout feature is its `sst dev` command, which establishes a l
 
 As another strong contender among **serverless framework alternatives**, Architect offers a refreshingly minimalist approach to building applications on AWS. This open-source framework, governed by the OpenJS Foundation, uses a simple manifest file (`app.arc`) to define infrastructure. Its core philosophy is convention over configuration, which drastically simplifies the setup for common resources like HTTP APIs, queues, events, and scheduled tasks.
 
-![Architect (arc.codes)](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/screenshots/3ed5710b-1259-4a8c-801c-abd35644bfb0/serverless-framework-alternatives-cloud-platform.jpg)
+![Architect (arc.codes)](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/serverless-framework-alternatives/serverless-framework-alternatives-cloud-platform.jpg)
 
 Architect compiles your concise manifest into a verbose and secure AWS SAM/CloudFormation template, applying least-privilege IAM policies by default. This combination of a simple developer-facing interface and a robust, secure output makes it highly approachable yet powerful. The local development sandbox provides a fast, production-like environment for offline testing, which streamlines the development workflow significantly for developers who prioritize speed and simplicity.
 
@@ -139,7 +139,7 @@ Architect compiles your concise manifest into a verbose and secure AWS SAM/Cloud
 
 For JavaScript developers seeking a minimal-ceremony path to AWS, Claudia.js stands out as a lightweight **serverless framework alternative**. It is a deployment utility designed specifically for Node.js projects, automating the tedious packaging and configuration steps required to get your code running on AWS Lambda and API Gateway. Its core philosophy is to remove boilerplate, allowing developers to deploy simple APIs and microservices with a single command.
 
-![Claudia.js](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/screenshots/74fc7e61-4455-4307-8b5d-264cf5b52f2d/serverless-framework-alternatives-serverless-homepage.jpg)
+![Claudia.js](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/serverless-framework-alternatives/serverless-framework-alternatives-serverless-homepage.jpg)
 
 The framework excels at abstracting away AWS complexities, letting teams leverage their existing Node.js skills and npm packages seamlessly. It handles everything from creating IAM roles to setting up API Gateway routes and managing Lambda versions, all from the command line. This focused approach makes it an excellent tool for rapid prototyping or for teams who want to build serverless functions without delving deep into infrastructure-as-code.
 
@@ -158,7 +158,7 @@ The framework excels at abstracting away AWS complexities, letting teams leverag
 
 For Python developers, AWS Chalice is a purpose-built **serverless framework alternative** designed for rapid application development and deployment on AWS. This official, open-source microframework from AWS provides a decorator-based syntax that feels familiar and intuitive to anyone experienced with Python web frameworks like Flask or Bottle. Its primary goal is to abstract away the boilerplate of configuring Lambda functions and API Gateway, allowing developers to focus purely on application logic.
 
-![AWS Chalice](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/screenshots/770faf21-a65c-4b25-86fb-ab7c30582109/serverless-framework-alternatives-chalice-framework.jpg)
+![AWS Chalice](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/serverless-framework-alternatives/serverless-framework-alternatives-chalice-framework.jpg)
 
 The Chalice command-line interface (CLI) is central to its developer experience, handling everything from project scaffolding to packaging dependencies and deploying the application. A key differentiator is its deployment flexibility; while it has its own deployment mechanism for simple use cases, it can also generate artifacts compatible with AWS SAM/CloudFormation or even Terraform. This allows teams to start quickly with Chalice and later integrate their serverless components into a more comprehensive infrastructure as code (IaC) strategy.
 
@@ -177,7 +177,7 @@ The Chalice command-line interface (CLI) is central to its developer experience,
 
 For Python developers, Zappa stands out as a unique **serverless framework alternative** designed specifically for deploying existing WSGI and ASGI applications to AWS. This community-driven tool essentially acts as a bridge, allowing popular frameworks like Flask and Django to run on AWS Lambda and API Gateway with minimal code changes. Its primary strength is providing a straightforward "lift and shift" path for legacy Python web apps into a serverless architecture.
 
-![Zappa (Python)](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/screenshots/8cf1f99f-bfb5-41c4-80ea-c7750fad400d/serverless-framework-alternatives-github-project.jpg)
+![Zappa (Python)](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/serverless-framework-alternatives/serverless-framework-alternatives-github-project.jpg)
 
 The framework streamlines the entire deployment process into simple CLI commands like `zappa init` and `zappa deploy`. This rich command-line interface also handles operational tasks such as log tailing, status checks, and rolling back deployments. It cleverly packages the application, its dependencies, and a handler function that translates API Gateway events into the WSGI/ASGI format that Python web frameworks expect, abstracting away significant complexity.
 
@@ -196,7 +196,7 @@ The framework streamlines the entire deployment process into simple CLI commands
 
 For PHP developers looking to embrace serverless, **Bref** offers a highly specialized and powerful solution. It's not a direct framework replacement but an open-source project providing PHP runtimes for AWS Lambda, enabling teams to deploy familiar applications built with frameworks like Laravel and Symfony directly onto a serverless infrastructure. This focus on a single language and cloud provider allows Bref to offer unparalleled, in-depth support for the nuances of running PHP efficiently on Lambda.
 
-![Bref (PHP on AWS Lambda)](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/screenshots/74f3b718-b357-4b0f-a4e9-497af2396a42/serverless-framework-alternatives-php-serverless.jpg)
+![Bref (PHP on AWS Lambda)](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/serverless-framework-alternatives/serverless-framework-alternatives-php-serverless.jpg)
 
 Bref is designed for integration, not isolation. Instead of reinventing the wheel, it plugs directly into existing, popular deployment tools. It's most commonly used with the Serverless Framework but also provides first-class support for AWS SAM, Terraform, and the AWS CDK. This flexibility allows teams to adopt serverless PHP without overhauling their existing Infrastructure as Code (IaC) practices, making it a pragmatic choice for modernizing legacy applications or building new, scalable APIs.
 
@@ -215,7 +215,7 @@ Bref is designed for integration, not isolation. Instead of reinventing the whee
 
 For teams wanting the serverless developer experience on their own infrastructure, OpenFaaS stands out as a powerful **serverless framework alternative**. It is a Kubernetes-native framework designed to build, deploy, and manage serverless functions on any public or private cloud. By leveraging existing container orchestration, it offers a portable and vendor-agnostic solution for running functions, making it ideal for on-premises, hybrid, or multi-cloud strategies where data sovereignty and operational control are paramount.
 
-![OpenFaaS](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/screenshots/17c4c48b-fd8e-4205-912d-dd0c62bd7e0e/serverless-framework-alternatives-website-homepage.jpg)
+![OpenFaaS](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/serverless-framework-alternatives/serverless-framework-alternatives-website-homepage.jpg)
 
 The platform provides a rich developer experience with a CLI, a user-friendly Gateway UI, and a template system that supports multiple programming languages. Functions can scale to zero to conserve resources and autoscale based on metrics like requests per second or CPU usage. This self-hosted approach gives organizations full control over their FaaS platform, which is a critical requirement for air-gapped or highly regulated environments that cannot use public cloud services.
 
@@ -234,7 +234,7 @@ The platform provides a rich developer experience with a CLI, a user-friendly Ga
 
 Netlify Functions provides a deeply integrated, managed serverless function experience for teams building web applications on its platform. Rather than being a standalone infrastructure-as-code tool, it's one of the best **serverless framework alternatives** for developers who want a unified, Git-based workflow that combines their frontend code, serverless backend logic, and global CDN deployment into a single, automated process. This all-in-one approach dramatically simplifies operations and accelerates time-to-market.
 
-![Netlify Functions](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/screenshots/bc7c4ec9-9e77-49ae-8c60-e4986a458cd0/serverless-framework-alternatives-serverless-functions.jpg)
+![Netlify Functions](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/serverless-framework-alternatives/serverless-framework-alternatives-serverless-functions.jpg)
 
 The core value proposition is its developer experience. By placing function code in a specific directory within a project's repository, Netlify automatically discovers, builds, and deploys it alongside the frontend assets. This Git-centric workflow includes powerful features like deploy previews for every pull request, allowing teams to test both UI changes and backend function updates in a temporary, shareable environment before merging to production. The platform also offers background functions for longer-running jobs and edge functions for logic that needs to run closer to the user.
 

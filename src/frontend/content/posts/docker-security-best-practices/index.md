@@ -13,7 +13,7 @@ tags:
   - kubernetes-security
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-31aaf7ae-e729-427b-93d8-489bd937aa29.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/docker-security-best-practices/featured-image-31aaf7ae-e729-427b-93d8-489bd937aa29.jpg)
 
 In the world of modern cloud infrastructure, Docker has become the bedrock for application deployment, offering unparalleled speed and scalability. However, this convenience often comes with a hidden cost: a complex and evolving attack surface. Many organizations adopt Docker without fully understanding the security implications, leaving them vulnerable to everything from supply chain attacks to container breakouts. The default settings are designed for ease of use, not robust security, creating a false sense of protection. This guide cuts through the noise and provides a definitive list of the most impactful **Docker security best practices** for hardening your containerized environments.
 
@@ -34,7 +34,7 @@ One of the most foundational **docker security best practices** is building your
 
 Official images are curated and maintained by upstream developers or trusted organizations. They undergo security scans and are regularly updated with patches for known vulnerabilities. This significantly reduces your initial attack surface compared to using images from unknown or unverified sources, which could be outdated, insecure, or even malicious.
 
-![Use Official and Verified Base Images](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/f4770964-9bf9-4a86-8785-99c10c6203ab.jpg)
+![Use Official and Verified Base Images](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/docker-security-best-practices/f4770964-9bf9-4a86-8785-99c10c6203ab.jpg)
 
 ### Why Official Images Matter
 
@@ -56,7 +56,7 @@ One of the most critical **docker security best practices** is to enforce the pr
 
 Running containers with a dedicated, unprivileged user drastically limits the potential damage from a security breach. An attacker who gains control of a non-root process is restricted to the permissions of that user, preventing them from installing malicious packages, modifying system files, or escalating their privileges within the container.
 
-![Run Containers as Non-Root Users](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/f9cdb4ee-c69a-48dd-8e1e-fa10118c8f26.jpg)
+![Run Containers as Non-Root Users](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/docker-security-best-practices/f9cdb4ee-c69a-48dd-8e1e-fa10118c8f26.jpg)
 
 ### Why Non-Root Users Matter
 
@@ -84,7 +84,7 @@ Waiting to discover a vulnerability in a running container is like finding a str
 
 To help visualize the core components of this strategy, the summary box below highlights the key stages, policies, and tools involved in a robust vulnerability management program.
 
-![Infographic showing key data about Implement Image Scanning and Vulnerability Management](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/infographic-ba5f9250-ceec-4f36-9bfa-986453b58fbc.jpg)
+![Infographic showing key data about Implement Image Scanning and Vulnerability Management](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/docker-security-best-practices/infographic-ba5f9250-ceec-4f36-9bfa-986453b58fbc.jpg)
 
 This quick reference underscores that effective scanning is not a one-time event but a continuous process integrated across the container lifecycle, governed by clear security policies.
 
@@ -146,7 +146,7 @@ A critical aspect of **docker security best practices** is the strict separation
 
 Proper secret management involves injecting this sensitive information into the container only at runtime. This ensures that the image itself remains inert and free of credentials. Orchestration platforms and dedicated tools provide secure mechanisms to manage and deliver secrets to the containers that need them, precisely when they need them, without ever storing them in version control or the image build history.
 
-![Keep Secrets Out of Images and Use Secret Management](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/73e953bb-5cb7-4a54-8c31-df453eafe621.jpg)
+![Keep Secrets Out of Images and Use Secret Management](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/docker-security-best-practices/73e953bb-5cb7-4a54-8c31-df453eafe621.jpg)
 
 ### Why Secret Management Matters
 

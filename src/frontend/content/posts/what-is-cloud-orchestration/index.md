@@ -13,7 +13,7 @@ tags:
   - iac
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-28d9ba76-300d-4b7b-bfcd-188a5c2cb1c5.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-cloud-orchestration/featured-image-28d9ba76-300d-4b7b-bfcd-188a5c2cb1c5.jpg)
 
 At its core, **cloud orchestration is the art of automating the coordination and management of all the moving parts in your cloud environment.** It's about taking individual, automated tasks and weaving them together into a single, cohesive workflow.
 
@@ -21,7 +21,7 @@ Think of it like a symphony conductor who doesn't play a single instrument but e
 
 ## Understanding Cloud Orchestration in Simple Terms
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/555b9a14-da8c-4077-906d-6c7fa4c5b9d2.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-cloud-orchestration/555b9a14-da8c-4077-906d-6c7fa4c5b9d2.jpg)
 
 Let's say you're building a new web application. You don't just need a single server. You need a whole ecosystem: web servers to greet visitors, application servers to run your code, databases to hold critical information, and firewalls to keep it all secure.
 
@@ -52,7 +52,7 @@ By managing these four areas, orchestration tools provide the control and consis
 
 ## Distinguishing Orchestration From Automation
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/b8f410c5-855a-4071-b15e-cd2d8a509b19.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-cloud-orchestration/b8f410c5-855a-4071-b15e-cd2d8a509b19.jpg)
 
 To really get a grip on cloud orchestration, we first need to draw a clear line between it and its close cousin, **automation**. People often throw these terms around as if they mean the same thing, but they actually describe two different layers of control. Getting them mixed up means you'll miss the real power and purpose of each.
 
@@ -115,7 +115,7 @@ The engine reads this, understands the dependencies, and intelligently executes 
 
 This image shows a simplified three-step flow of how these components interact.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/735e8b21-01eb-48bb-a68d-ff1f77e3cca2.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-cloud-orchestration/735e8b21-01eb-48bb-a68d-ff1f77e3cca2.jpg)
 
 As you can see, the process flows from a clear definition to automated execution and then to ongoing management, creating a continuous lifecycle for your infrastructure.
 
@@ -134,7 +134,7 @@ By automating this entire sequence, cloud orchestration gives you a reliable, re
 
 ## What Are the Real-World Benefits of Cloud Orchestration?
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/8ac43564-50c5-4bf9-97cf-0b71488d8fb6.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-cloud-orchestration/8ac43564-50c5-4bf9-97cf-0b71488d8fb6.jpg)
 
 It's one thing to understand the mechanics of cloud orchestration, but the real question is: what can it actually do for your business? The value here goes way beyond just keeping your tech stack tidy. We're talking about tangible improvements in how fast you operate, how much you spend, and how secure you are.
 

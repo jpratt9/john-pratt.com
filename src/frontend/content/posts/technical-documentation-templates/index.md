@@ -13,7 +13,7 @@ tags:
   - knowledge-base-software
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-204d86a7-3ab4-4ec7-8256-9276e081c7ff.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/technical-documentation-templates/featured-image-204d86a7-3ab4-4ec7-8256-9276e081c7ff.jpg)
 
 Great technical documentation doesn't just happen; it's engineered. Starting with a solid foundation is the difference between a clear, maintainable knowledge base and a collection of outdated, confusing articles. The right **technical documentation templates** provide that essential structure, ensuring consistency, accelerating onboarding, and empowering developers to build with confidence.
 
@@ -37,7 +37,7 @@ While a free plan exists for small teams, the true value for documentation manag
 
 GitBook excels at helping teams quickly publish polished, modern-looking documentation sites. It strikes a unique balance between a user-friendly, WYSIWYG editor and a developer-centric, Git-based workflow. This approach allows technical and non-technical team members to collaborate seamlessly on documentation, bridging the gap between content creation and code repository management. The platform is particularly strong for public-facing developer hubs and product documentation.
 
-![GitBook](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/screenshots/e89e1b33-58db-4321-8e58-183fd3c2cf48.jpg)
+![GitBook](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/technical-documentation-templates/e89e1b33-58db-4321-8e58-183fd3c2cf48.jpg)
 
 Its core offering includes one-click **technical documentation templates** for common use cases like "Product docs" and "API docs," which provide a solid foundation with pre-built navigation and page structures. Features like GitHub/GitLab synchronization, version control, and custom domains are built-in, streamlining the docs-as-code process. The editor's support for both Markdown and rich text components makes it incredibly versatile for crafting detailed guides.
 
@@ -51,7 +51,7 @@ While GitBook offers a free plan for open-source projects and small teams, featu
 
 ReadMe focuses specifically on creating comprehensive and interactive developer hubs, particularly for APIs. Rather than providing simple downloadable files, it offers a full-fledged platform to build, host, and manage your API documentation from end to end. Its primary strength lies in its ability to automatically generate interactive API reference sections from an OpenAPI Specification, allowing developers to make real API calls directly from the documentation.
 
-![ReadMe](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/screenshots/5b7b6985-cfef-4949-85d8-e59a2239c684.jpg)
+![ReadMe](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/technical-documentation-templates/5b7b6985-cfef-4949-85d8-e59a2239c684.jpg)
 
 The platform includes built-in **technical documentation templates** for guides, tutorials, and changelogs, which can be customized using Markdown Extended (MDX) for dynamic content. A standout feature is the integrated analytics dashboard, which provides insights into how developers are using your API and documentation. While this creates a powerful, all-in-one solution, it comes with recurring SaaS costs and can lead to vendor lock-in compared to static site generators.
 
@@ -65,7 +65,7 @@ The Free plan is suitable for personal projects, but serious business use requir
 
 MadCap Flare is a professional-grade help authoring tool (HAT) designed for serious technical writers who need to produce sophisticated, multi-channel documentation from a single source. Unlike simpler wiki tools, Flare is a desktop application that excels at creating structured, enterprise-level help systems, user guides, and knowledge bases. It's built around the concept of topic-based authoring and content reuse, making it incredibly efficient for large, complex projects.
 
-![MadCap Flare](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/screenshots/c0ffbb99-5378-40bf-b396-e574926b8dbc.jpg)
+![MadCap Flare](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/technical-documentation-templates/c0ffbb99-5378-40bf-b396-e574926b8dbc.jpg)
 
 The platform provides a wide array of downloadable project templates and pre-installed scaffolds. These aren't just single-page layouts; they are complete project structures with pre-configured outputs for responsive web (HTML5), print (PDF), and other formats. These **technical documentation templates** give you a massive head start on building everything from online help centers to comprehensive printed manuals, complete with skins, navigation, and structured content.
 
@@ -79,7 +79,7 @@ While its power is undeniable, Flare comes with a significant learning curve and
 
 ClickHelp is a modern, all-in-one SaaS platform designed for creating and publishing online documentation portals. While its core offering is a powerful hosted solution, it stands out by also providing a free, downloadable pack of responsive HTML templates. This dual approach makes it an excellent resource for teams who want ready-to-use layouts they can host themselves, as well as those looking for a comprehensive, managed documentation environment. The free pack includes multiple designs, giving you a professional starting point for your project.
 
-![ClickHelp](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/screenshots/8b111907-fae5-431e-9b84-79d75fb5c644.jpg)
+![ClickHelp](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/technical-documentation-templates/8b111907-fae5-431e-9b84-79d75fb5c644.jpg)
 
 Within its paid platform, ClickHelp offers a suite of robust features tailored for technical writing teams, including collaborative workflows, granular permissions, a translation module, and an optional AI assistant. Its structured, topic-based authoring environment is ideal for managing complex **technical documentation templates** and content reuse. While the free templates offer a great entry point, the full power of ClickHelp is realized in its paid tiers (starting at $175/month for 3 authors), which provide essential team features like SSO, REST API access, and integrations with platforms like Zendesk and Zapier.
 
@@ -91,7 +91,7 @@ Within its paid platform, ClickHelp offers a suite of robust features tailored f
 
 Document360 is a dedicated knowledge base platform built specifically for creating, managing, and publishing professional-grade product documentation. Rather than just providing individual files, it offers a sophisticated authoring environment designed to streamline the entire documentation lifecycle. Its core strength lies in its structured approach, enabling teams to enforce consistency and brand identity across all technical content.
 
-![Document360](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/screenshots/1b3f5ced-095d-4da3-b7b8-5b901be8c6f5.jpg)
+![Document360](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/technical-documentation-templates/1b3f5ced-095d-4da3-b7b8-5b901be8c6f5.jpg)
 
 The platform empowers technical writers with a robust set of tools, including pre-built article templates for different content types and reusable content blocks (snippets) that ensure information like API keys or standard warnings are consistent everywhere. The PDF template designer is a key feature, allowing for the creation of beautifully branded, offline versions of your documentation. Advanced features like localization, version control, and powerful analytics provide insights into how users engage with the content, making it a comprehensive solution for scaling documentation efforts.
 
@@ -105,7 +105,7 @@ While its power and enterprise-grade features (like SOC 2 compliance) are a majo
 
 Docusaurus is an open-source static site generator built by Meta, specifically optimized for creating and maintaining documentation websites. Rather than offering individual files, it provides a comprehensive "classic" starter template that bootstraps an entire documentation portal with a single command. This approach is perfect for teams who want to treat their documentation as code, keeping it version-controlled in the same repository as their project.
 
-![Docusaurus](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/screenshots/18db604e-b8d9-4326-9ce7-3568d4cd1706.jpg)
+![Docusaurus](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/technical-documentation-templates/18db604e-b8d9-4326-9ce7-3568d4cd1706.jpg)
 
 The platform shines by enabling developers to write documentation in Markdown/MDX, which feels natural and efficient. Key features like documentation versioning, full-text search (powered by Algolia), theming, and dark mode are available out of the box. Its powerful plugin ecosystem allows for high extensibility, making it a robust solution for building sophisticated **technical documentation templates** tailored to specific project needs.
 
@@ -131,7 +131,7 @@ Its strength lies in automation and extensibility. Documentation is written in p
 
 For teams that need to produce traditional, file-based documentation quickly, Template.net provides a massive catalog of downloadable and editable documents. Rather than offering a sophisticated documentation platform, its value lies in providing a rapid starting point for deliverables destined for formats like Microsoft Word, Google Docs, or PDF. This makes it exceptionally useful when documentation needs to be shared with non-technical stakeholders who are more comfortable with standard office software.
 
-![Template.net](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/screenshots/d138678c-eefa-4adf-bf17-1302acb563dd.jpg)
+![Template.net](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/technical-documentation-templates/d138678c-eefa-4adf-bf17-1302acb563dd.jpg)
 
 The platform offers a wide variety of **technical documentation templates**, including technical manuals, specifications, and project proposals. Users can download these files directly or use the site's online editor, which includes AI-powered text tools to help populate the content. This approach bypasses the learning curve of a dedicated documentation system, allowing for the immediate creation of a polished document.
 

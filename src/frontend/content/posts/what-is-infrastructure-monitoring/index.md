@@ -13,13 +13,13 @@ tags:
   - cloud-monitoring
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-037175b7-5f77-4b82-a620-d7212668ebef.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-infrastructure-monitoring/featured-image-037175b7-5f77-4b82-a620-d7212668ebef.jpg)
 
 At its core, infrastructure monitoring is all about collecting, analyzing, and acting on data from your entire IT environment to keep everything healthy, performing well, and consistently available. Think of it as the central nervous system for your technology stack. It provides **real-time visibility** into your servers, networks, and applications, empowering you to fix issues *before* they ever affect your users.
 
 ## What Is Infrastructure Monitoring Really About
 
-![A network operations center with multiple screens showing data visualizations and server status.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/b4bb1b1e-467f-4e49-9783-8192caca1643.jpg)
+![A network operations center with multiple screens showing data visualizations and server status.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-infrastructure-monitoring/b4bb1b1e-467f-4e49-9783-8192caca1643.jpg)
 
 Imagine trying to manage a city without knowing if the power grid is stable, the water is flowing, or the traffic lights are working. It would be pure chaos. That's exactly what running a modern business without infrastructure monitoring feels like. Your company's technology - from physical servers in a data center to cloud services and the apps your customers depend on - is that city. Infrastructure monitoring is the command center that watches over it all.
 
@@ -58,7 +58,7 @@ Each of these components gives you a unique window into the health and performan
 
 The infographic below breaks down the four fundamental pillars that make up a complete infrastructure monitoring strategy.
 
-![Infographic about what is infrastructure monitoring](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/10efdd33-eeb2-466d-a7a5-d0cb3bbf1a50.jpg)
+![Infographic about what is infrastructure monitoring](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-infrastructure-monitoring/10efdd33-eeb2-466d-a7a5-d0cb3bbf1a50.jpg)
 
 This visual shows how each layer - from the network foundation right up to the user-facing application - builds on the one before it to create a stable, resilient system. Let's dig into what each of these building blocks actually does.
 
@@ -125,7 +125,7 @@ By providing this critical context, infrastructure monitoring helps organization
 
 ## What Are the Real Business Benefits?
 
-![A person interacting with a holographic interface showing business growth charts and analytics.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/a64342bc-2445-44b8-ae86-39520fdae4e1.jpg)
+![A person interacting with a holographic interface showing business growth charts and analytics.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-infrastructure-monitoring/a64342bc-2445-44b8-ae86-39520fdae4e1.jpg)
 
 It's easy to get lost in the technical weeds of alerts and dashboards, but what does good infrastructure monitoring *really* do for your business? The true payoff comes when you translate that raw data into tangible outcomes that protect revenue, keep customers happy, and clear the path for growth. It's about turning a core IT function into a genuine business asset.
 

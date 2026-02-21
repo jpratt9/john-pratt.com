@@ -13,7 +13,7 @@ tags:
   - Infrastructure-as-Code
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/3641eea0-9f81-4c30-a578-c5783d232396/image.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-gitops/image.jpg)
 
 ## Understanding GitOps At A Glance
 
@@ -31,7 +31,7 @@ Key Highlights:
 
 ### High Level Diagram
 
-![GitOps Blueprint](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/78f25b2e-fb22-4f16-b410-352b8dfb3c76/image.jpg)
+![GitOps Blueprint](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-gitops/image.jpg)
 
 ### GitOps Quick Summary
 
@@ -67,7 +67,7 @@ Follow our guide to see how these patterns fit into your cloud and DevOps consul
 
 ## Understanding Core GitOps Concepts
 
-![GitOps Garden](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/4cc04c99-9a76-4d49-820f-77d81b8dbaae/image.jpg)
+![GitOps Garden](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-gitops/image.jpg)
 
 When Kubernetes first took off, engineers compared their clusters to an overgrown garden. They kept every YAML manifest in Git and trimmed away unwanted changes as they sprouted in production.
 
@@ -190,7 +190,7 @@ Mia, a backend engineer, pushes a fresh Kubernetes manifest to Git and watches m
 
 To illustrate how GitOps differs from IaC and traditional CI/CD, take a look at this side-by-side view. It's laid out left to right so you can follow each approach at a glance.
 
-![Infographic about what is gitops](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/6d73ff3a-f4e8-4bcf-91ea-875ac84b2efc/image.jpg)
+![Infographic about what is gitops](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-gitops/image.jpg)
 
 From left to right:
 - **GitOps** kicks off with a branch icon, marking where code changes land. 

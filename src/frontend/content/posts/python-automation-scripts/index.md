@@ -13,13 +13,13 @@ tags:
   - automation-examples
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-caf5cbca-6923-41e1-b42d-90d91b51af42.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/python-automation-scripts/featured-image-caf5cbca-6923-41e1-b42d-90d91b51af42.jpg)
 
 Python automation scripts are your personal assistants, coded to handle repetitive tasks so you don't have to. They're the workhorses that can take a tedious, manual process - from organizing files to pulling complex data - and turn it into a hands-off operation, freeing you up for more important work.
 
 ## Why Python Is Your Secret Weapon for Automation
 
-![A person working on a laptop with Python code for automation displayed on the screen, illustrating the concept of building powerful scripts.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/de4be8e4-8dd4-4e73-b7df-93b98c144153.jpg)
+![A person working on a laptop with Python code for automation displayed on the screen, illustrating the concept of building powerful scripts.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/python-automation-scripts/de4be8e4-8dd4-4e73-b7df-93b98c144153.jpg)
 
 Before we jump into the code, it's worth taking a moment to appreciate why Python has become the go-to language for automation. It's not just because of its famously gentle learning curve. The real magic is the massive ecosystem of powerful, ready-to-use tools that solve real-world problems.
 
@@ -60,7 +60,7 @@ Knowing which library to reach for is half the battle. Once you get familiar wit
 
 ## Setting Up Your Automation Command Center
 
-![A clean, organized desk with a powerful computer, representing a well-structured Python environment for building automation scripts.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/45b69ca1-929d-4436-a046-b0889f4b289e.jpg)
+![A clean, organized desk with a powerful computer, representing a well-structured Python environment for building automation scripts.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/python-automation-scripts/45b69ca1-929d-4436-a046-b0889f4b289e.jpg)
 
 Before you can build slick **python automation scripts**, you need a solid foundation. A messy, disorganized setup is just asking for dependency conflicts and frustrating bugs that can kill your momentum before you even write a single line of code.
 
@@ -190,7 +190,7 @@ Our goal here is to build **python automation scripts** that aren't just functio
 
 This infographic breaks down the typical flow for building different kinds of automation scripts, whether you're just managing local files or reaching out to web services.
 
-![Infographic about python automation scripts](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/2e2be7bd-8cc9-4032-89c3-d5bd68ff9af4.jpg)
+![Infographic about python automation scripts](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/python-automation-scripts/2e2be7bd-8cc9-4032-89c3-d5bd68ff9af4.jpg)
 
 Each of these stages highlights where Python really shines, showing how versatile it is for both quick-and-dirty tasks and more complex, multi-step processes.
 

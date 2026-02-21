@@ -13,7 +13,7 @@ tags:
   - tech-recruiting
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/b9bd0883-b244-417f-8dbb-2b362b676eae/how-to-hire-software-developer-recruitment.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-hire-software-developer/how-to-hire-software-developer-recruitment.jpg)
 
 Before you even think about posting a job ad, the most important work has already begun. You need to lay a solid foundation by figuring out exactly who you need, what you can afford, and how long you can wait. Nailing this groundwork is the difference between a smooth hiring process and a costly, frustrating mess.
 
@@ -36,7 +36,7 @@ The answers will naturally lead you to the right seniority level. A junior devel
 
 This flow chart breaks down these initial, critical steps into a clear sequence.
 
-![Flowchart of Foundation Hiring Process: Define Role, Set Budget, and Create Timeline steps.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/1ef1c0f0-a870-404b-8b0a-3d0d46776e33/how-to-hire-software-developer-hiring-process.jpg)
+![Flowchart of Foundation Hiring Process: Define Role, Set Budget, and Create Timeline steps.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-hire-software-developer/how-to-hire-software-developer-hiring-process.jpg)
 
 As you can see, defining the role, budget, and timeline aren't just suggestions; they're the essential first moves in any successful hiring game plan.
 
@@ -90,7 +90,7 @@ The best developers want to know what their life will actually be like. They're 
 
 Here's a snapshot of what goes into a typical developer role - a mix of designing, programming, and testing. These are the elements you should be weaving into the narrative of your job post.
 
-![A job description on a tablet shows impact, challenges, and culture, with two men and a sketched hand.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/13ae37b0-a039-42ce-87e7-1d7168d65ad3/how-to-hire-software-developer-hiring-process.jpg)
+![A job description on a tablet shows impact, challenges, and culture, with two men and a sketched hand.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-hire-software-developer/how-to-hire-software-developer-hiring-process.jpg)
 
 When you're outlining the responsibilities, get specific about the challenges. What are the hard problems they'll get to sink their teeth into?
 
@@ -173,7 +173,7 @@ Ultimately, the best choice depends on what you're trying to measure. Don't be a
 
 The goal here is simple: simulate the job as closely as possible.
 
-![Two men working on a laptop, with a checklist and a magnifying glass showing a clock, symbolizing task completion and time management.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/60be69f7-e284-4ab4-a08a-7b2ff91766cf/how-to-hire-software-developer-task-completion.jpg)
+![Two men working on a laptop, with a checklist and a magnifying glass showing a clock, symbolizing task completion and time management.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-hire-software-developer/how-to-hire-software-developer-task-completion.jpg)
 
 If you're hiring a frontend developer, give them a buggy UI component to fix. For a DevOps role, have them write a script to automate a common infrastructure task.
 

@@ -13,13 +13,13 @@ tags:
   - IT-automation
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/7a01dd2d-2c38-47fb-87d0-f1d8c1ac2cf4/what-is-configuration-management-tool-cloud-orchestration.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-configuration-management-tool/what-is-configuration-management-tool-cloud-orchestration.jpg)
 
 Think of a configuration management tool as the conductor for your entire digital orchestra - all your servers, applications, and databases. It's a system built to **standardize, automate, and lock in the state of your IT infrastructure**, making sure every single component is set up exactly the same way, every time. This gets you out of the messy business of manual tweaks and lays the groundwork for modern practices like DevOps.
 
 ## What Is the Purpose of a Configuration Management Tool
 
-![A conductor directs code above servers and databases, symbolizing configuration management.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/3fc97c81-f6d7-40c0-b0a5-c57c399538a9/what-is-configuration-management-tool-configuration-management.jpg)
+![A conductor directs code above servers and databases, symbolizing configuration management.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-configuration-management-tool/what-is-configuration-management-tool-configuration-management.jpg)
 
 Picture this: you have **100** servers that need to be identical. An engineer patches one server, while someone else adjusts a security setting on another. Before you know it, you're dealing with **configuration drift**, where no two systems are alike. This chaos is a classic recipe for system failures and security holes.
 
@@ -41,7 +41,7 @@ This approach is also a cornerstone of other modern methodologies. For example, 
 
 To really get what a configuration management tool does, you have to look under the hood. The way these tools think and operate is what makes them so powerful, and understanding these core ideas is the key to picking the right one for your team.
 
-![Diagram contrasting declarative (GPS) and imperative (checklist) configuration approaches, with agent (server) and agentless (cloud) models.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/8d06c31e-1db9-47e8-a12b-64061e7326a1/what-is-configuration-management-tool-declarative-imperative.jpg)
+![Diagram contrasting declarative (GPS) and imperative (checklist) configuration approaches, with agent (server) and agentless (cloud) models.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-configuration-management-tool/what-is-configuration-management-tool-declarative-imperative.jpg)
 
 ### Declarative vs. Imperative: The GPS vs. The Checklist
 
@@ -100,7 +100,7 @@ This is non-negotiable in complex hybrid cloud setups. It's no surprise that the
 
 ## Comparing the Most Popular Management Tools
 
-![Four configuration management tools: Ansible, Puppet, Chef, and SaltStack, with their key characteristics.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/d6c25066-8155-4f4c-820b-f3cf75405693/what-is-configuration-management-tool-devops-tools.jpg)
+![Four configuration management tools: Ansible, Puppet, Chef, and SaltStack, with their key characteristics.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-configuration-management-tool/what-is-configuration-management-tool-devops-tools.jpg)
 
 When you dive into the world of configuration management, you'll quickly run into the "big four": Ansible, Puppet, Chef, and SaltStack. They all tackle the same core challenge - automating your infrastructure - but they do it in surprisingly different ways. Each has its own philosophy and design, which means one might be a perfect fit for your team while another could feel like trying to fit a square peg in a round hole.
 
@@ -187,7 +187,7 @@ Your infrastructure's size and complexity play a huge role, too. A startup with 
 
 This decision tree helps frame the thought process, mapping common goals to the tools best suited for the job.
 
-![A decision tree flowchart for tool use cases, guiding through deployment, security, and automation.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/4a61eb13-40c6-46fe-8c5c-9fc5198fe5b1/what-is-configuration-management-tool-decision-tree.jpg)
+![A decision tree flowchart for tool use cases, guiding through deployment, security, and automation.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-configuration-management-tool/what-is-configuration-management-tool-decision-tree.jpg)
 
 Whether you're focused on deploying applications, locking down security, or automating your entire pipeline, this kind of thinking points you toward the right solution. The best tool feels like a natural extension of how your team already works, not something forced upon them.
 

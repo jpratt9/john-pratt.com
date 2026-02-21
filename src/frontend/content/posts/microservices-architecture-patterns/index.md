@@ -13,7 +13,7 @@ tags:
   - software-engineering
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-80b86e3e-8062-45c4-a3bb-91dd39423d4f.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/microservices-architecture-patterns/featured-image-80b86e3e-8062-45c4-a3bb-91dd39423d4f.jpg)
 
 Transitioning to a microservices architecture is more than just dismantling a monolith; it demands a strategic approach guided by a new set of design principles. Without a solid understanding of established **microservices architecture patterns**, distributed systems can easily become brittle, hard to manage, and prone to cascading failures. These patterns are not abstract theories; they are battle-tested solutions to the recurring challenges inherent in distributed computing, such as service communication, data consistency, and system resilience. They provide the essential blueprints for building applications that are not only scalable and independently deployable but also robust and maintainable over the long term.
 
@@ -27,7 +27,7 @@ The API Gateway is one of the most fundamental microservices architecture patter
 
 It functions as a reverse proxy, managing cross-cutting concerns that would otherwise need to be duplicated across every microservice. These include essential tasks like authentication, authorization, SSL termination, and rate limiting. The gateway can also perform request and response transformation, adapting payloads for different clients (e.g., mobile vs. web) without altering the backend services.
 
-![API Gateway Pattern](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/5154a7fa-5a53-4f4b-9f9f-d9b66019320b.jpg)
+![API Gateway Pattern](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/microservices-architecture-patterns/5154a7fa-5a53-4f4b-9f9f-d9b66019320b.jpg)
 
 ### Why Use This Pattern?
 
@@ -71,7 +71,7 @@ The Circuit Breaker is a critical resilience pattern in microservices architectu
 
 This provides the struggling service with a grace period to recover, as it's no longer being hammered with requests it can't handle. After a timeout period, the circuit moves to a "half-open" state, allowing a limited number of test requests through. If these succeed, the circuit "closes" and normal operation resumes; if they fail, it opens again, restarting the recovery timer. This pattern is fundamental for building fault-tolerant and self-healing systems.
 
-![Circuit Breaker Pattern](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/a67b5f30-9df6-4e02-b6b0-dde412d8152a.jpg)
+![Circuit Breaker Pattern](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/microservices-architecture-patterns/a67b5f30-9df6-4e02-b6b0-dde412d8152a.jpg)
 
 ### Why Use This Pattern?
 
@@ -138,7 +138,7 @@ If any step in the sequence fails, the saga executes a series of compensating tr
 
 The following diagram illustrates the basic flow of a saga, showing how a local transaction triggers subsequent actions and how failures are handled through compensating transactions.
 
-![Infographic showing key data about Saga Pattern](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/infographic-caec8906-eb17-4ce5-9e3f-2645060389fd.jpg)
+![Infographic showing key data about Saga Pattern](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/microservices-architecture-patterns/infographic-caec8906-eb17-4ce5-9e3f-2645060389fd.jpg)
 
 This process flow highlights the pattern's core strength: a controlled, reversible sequence that maintains consistency even when individual steps fail.
 
@@ -226,7 +226,7 @@ The Sidecar is a powerful deployment pattern where auxiliary components run alon
 
 It provides a clean separation of concerns by offloading tasks like logging, monitoring, configuration management, and network communication to a dedicated component. This decouples the application logic from the operational infrastructure, enabling developers to focus on business value while platform teams manage the sidecar's functionality independently. This is a cornerstone of many modern microservices architecture patterns, particularly in containerized environments.
 
-![Sidecar Pattern](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/e700cbe4-6bcc-401b-9a95-b665d56bc286.jpg)
+![Sidecar Pattern](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/microservices-architecture-patterns/e700cbe4-6bcc-401b-9a95-b665d56bc286.jpg)
 
 ### Why Use This Pattern?
 

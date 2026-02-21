@@ -13,13 +13,13 @@ tags:
   - data-architecture
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-16820f39-2489-4acf-aa62-3f56404fbc6c.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-build-data-pipeline/featured-image-16820f39-2489-4acf-aa62-3f56404fbc6c.jpg)
 
 Before you can learn **how to build a data pipeline**, you need to grasp what it actually *is*. Think of it as an automated plumbing system for your data. It takes raw, messy data from all your different sources, cleans it up, transforms it into a standard format, and then delivers it to a destination where it can finally be analyzed. This whole process is what turns a flood of scattered information into real business intelligence.
 
 ## Why Your Business Needs a Modern Data Pipeline
 
-![An abstract illustration of interconnected data points flowing through a digital system, representing a data pipeline.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/273672b6-76d4-4a9c-8b63-5d67aeac561f.jpg)
+![An abstract illustration of interconnected data points flowing through a digital system, representing a data pipeline.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-build-data-pipeline/273672b6-76d4-4a9c-8b63-5d67aeac561f.jpg)
 
 Let's get straight to the point. A data pipeline isn't just a technical background task; it's the engine that drives smart business decisions. Without one, all that valuable information from your CRM, marketing platforms, and sales databases stays locked away in separate silos. A properly built pipeline smashes those silos down.
 
@@ -55,7 +55,7 @@ This table gives you a high-level map of the journey your data will take. As we 
 
 ## Designing Your Pipeline Architecture for Scale
 
-![A visual representation of data pipeline architecture, showing data sources flowing into processing stages and then into a data warehouse for analytics.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/0b18b80c-4ba6-4f16-b99d-66b66aca8ca8.jpg)
+![A visual representation of data pipeline architecture, showing data sources flowing into processing stages and then into a data warehouse for analytics.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-build-data-pipeline/0b18b80c-4ba6-4f16-b99d-66b66aca8ca8.jpg)
 
 Before you write a single line of code, let's talk about the most critical part of building a data pipeline: the architecture. I've seen too many projects jump straight into implementation, and it almost never ends well. Building a pipeline without a solid blueprint is like trying to build a house without a foundation - it's just waiting to crumble under the first sign of pressure.
 
@@ -157,7 +157,7 @@ The real magic of a tool like Airbyte is that it completely handles the messy pa
 
 This diagram shows the exact flow we're putting into practice. It's the standard for the modern data stack.
 
-![Infographic about how to build data pipeline](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/1e8b510b-5e17-4a86-b146-79e7f8327f4e.jpg)
+![Infographic about how to build data pipeline](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-build-data-pipeline/1e8b510b-5e17-4a86-b146-79e7f8327f4e.jpg)
 
 As you can see, raw data flows from left to right - from source to warehouse, through transformation, and finally gets automated by an orchestrator.
 
@@ -249,7 +249,7 @@ The most important part is that last line: `trigger_airbyte_sync >> run_dbt_mode
 
 ## Keeping Your Pipeline Healthy: Monitoring and Maintenance
 
-![A dashboard interface showing graphs and metrics for monitoring data pipeline health and performance.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/3bdb1837-0bd7-42aa-957f-61f73c3e92d5.jpg)
+![A dashboard interface showing graphs and metrics for monitoring data pipeline health and performance.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-build-data-pipeline/3bdb1837-0bd7-42aa-957f-61f73c3e92d5.jpg)
 
 Getting your data pipeline up and running is a huge win, but don't pop the champagne just yet. The real work is just beginning. Honestly, a pipeline that fails loudly is a gift; it's the one that runs silently with broken data that causes the real nightmares.
 

@@ -13,7 +13,7 @@ tags:
   - IaaS-PaaS-SaaS
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/648d4bf4-c7dd-4ea1-8cbc-fe19bb6afd20/what-are-cloud-based-solutions-cloud-solutions.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-are-cloud-based-solutions/what-are-cloud-based-solutions-cloud-solutions.jpg)
 
 Cloud-based solutions are computing services - think software, storage, databases, and servers - delivered over the internet. Instead of buying and managing your own physical hardware, you're essentially accessing resources from a provider.
 
@@ -54,7 +54,7 @@ Getting these "flavors" right is the first step in building a solid cloud strate
 
 This diagram breaks down the core idea: cloud solutions are all about accessing resources over the internet when you need them and only paying for what you use.
 
-![A concept map illustrating cloud solutions with features like pay-as-you-go and on-demand access.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/839dff3d-f307-47a8-a4a1-f1b73845c593/what-are-cloud-based-solutions-cloud-solutions.jpg)
+![A concept map illustrating cloud solutions with features like pay-as-you-go and on-demand access.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-are-cloud-based-solutions/what-are-cloud-based-solutions-cloud-solutions.jpg)
 
 It's a fundamental shift in thinking. Instead of buying and owning your own hardware, you're essentially plugging into a utility, just like you do with electricity.
 
@@ -122,7 +122,7 @@ This also makes it easier to work globally. When your data and applications are 
 
 ## How Cloud Technology Is Reshaping Industries
 
-![Diagram showing a cloud connecting various industries: finance, energy, telecom, fleet management, and aerospace.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/9efd0274-0be8-4122-9f93-102595747555/what-are-cloud-based-solutions-cloud-solutions.jpg)
+![Diagram showing a cloud connecting various industries: finance, energy, telecom, fleet management, and aerospace.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-are-cloud-based-solutions/what-are-cloud-based-solutions-cloud-solutions.jpg)
 
 The true impact of the cloud isn't just a technical detail - it's a game-changer that solves real, high-stakes problems across every industry imaginable. This is where abstract ideas like "scalability" and "on-demand computing" stop being buzzwords and start delivering tangible results that separate market leaders from the rest.
 
@@ -167,7 +167,7 @@ This does more than just cut fuel costs and delivery times. It improves driver s
 
 When you move to the cloud, two big questions immediately come to the surface: "Is it secure?" and "How much will it cost?" The power and flexibility of the cloud are undeniable, but tapping into them effectively means getting a firm handle on both your data's security and your budget. The good news? With the right mindset and practices, you can manage both without a problem.
 
-![A balance scale shows a security shield on one side and growing money with an upward arrow on the other, illustrating shared responsibility.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/8283a138-0470-4194-b48d-84bc9e5b8599/what-are-cloud-based-solutions-shared-responsibility.jpg)
+![A balance scale shows a security shield on one side and growing money with an upward arrow on the other, illustrating shared responsibility.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-are-cloud-based-solutions/what-are-cloud-based-solutions-shared-responsibility.jpg)
 
 The starting point for this is a concept called the **Shared Responsibility Model**. It's not just jargon; it's a fundamental agreement that clearly defines which security tasks your cloud provider handles and which ones fall squarely on your shoulders.
 

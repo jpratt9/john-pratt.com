@@ -13,7 +13,7 @@ tags:
   - devops
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-edd1fc13-57e6-4dd7-af48-e6e010d8a92d.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-blue-green-deployment/featured-image-edd1fc13-57e6-4dd7-af48-e6e010d8a92d.jpg)
 
 Ever wonder how major tech companies release updates so smoothly, you barely even notice? Often, the secret lies in a clever strategy called **blue-green deployment**. It's a way to release new software that dramatically cuts down on risk and virtually eliminates downtime.
 
@@ -23,7 +23,7 @@ At any given time, only one of them - let's say Blue - is live and handling all 
 
 ### What is Blue-Green Deployment?
 
-![Developer team reviewing a deployment strategy on a screen, illustrating the concept of blue-green deployment](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/8d812e5f-37df-4bf6-bf82-07e9de4c3f3f.jpg)
+![Developer team reviewing a deployment strategy on a screen, illustrating the concept of blue-green deployment](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-blue-green-deployment/8d812e5f-37df-4bf6-bf82-07e9de4c3f3f.jpg)
 
 Think about the old way of deploying software. It often felt like trying to fix a car engine while speeding down the highway - a risky, stressful process that usually required taking the whole system offline. Blue-green deployment gives us a much safer, calmer alternative.
 
@@ -91,7 +91,7 @@ This completely changes the dynamic of a "go-live" moment. Think about a major e
 
 The infographic below shows just how simple this traffic switch is.
 
-![Infographic about what is blue green deployment](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/439c3efb-3b1a-439b-83ab-0b53d2c1db38.jpg)
+![Infographic about what is blue green deployment](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-blue-green-deployment/439c3efb-3b1a-439b-83ab-0b53d2c1db38.jpg)
 
 That quick redirection is the key to a seamless, invisible transition for your users.
 
@@ -151,7 +151,7 @@ This table makes it clear where each method shines. The instant rollback and zer
 Ultimately, **[what is blue green deployment](https://semaphoreci.com/blog/blue-green-deployment)** best for? It's the go-to for teams who value stability and the peace of mind that comes with a near-instant recovery plan. When an update is critical and must go smoothly, the cost is often a small price to pay for that level of confidence.
 
 ## What to Watch Out For: Challenges and Considerations
-![A person looking at a complex flowchart on a glass wall, considering the challenges of a deployment.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/f2286141-5723-4bbd-b030-5392e6dbd946.jpg)
+![A person looking at a complex flowchart on a glass wall, considering the challenges of a deployment.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-blue-green-deployment/f2286141-5723-4bbd-b030-5392e6dbd946.jpg)
 While blue-green deployment offers a much safer path to releasing new code, it's not a silver bullet. No strategy is perfect, and this one introduces its own set of hurdles that you need to weigh carefully before jumping in. A realistic view is the key to making it work.
 
 The most immediate challenge is the **increased infrastructure cost**. To pull off that seamless switch, you have to run two identical, production-scale environments at the same time, at least during the deployment window. This literally doubles your resource footprint - servers, databases, and other services - which can be a serious financial commitment.

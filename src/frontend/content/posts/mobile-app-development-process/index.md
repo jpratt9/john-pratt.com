@@ -13,7 +13,7 @@ tags:
   - app-development-steps
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-810d9d6c-547b-4e58-aeb1-3e45f77cacad.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/mobile-app-development-process/featured-image-810d9d6c-547b-4e58-aeb1-3e45f77cacad.jpg)
 
 The journey of creating a mobile app isn't just a technical one; it's a structured process that turns a great idea into a tangible, market-ready product. It moves through distinct stages - from **strategy** and **design** to **development**, **testing**, and finally, **deployment**. Following this path ensures every decision made, from the first sketch to the final launch, is deliberate and tied directly to your business goals.
 
@@ -42,7 +42,7 @@ When you analyze competing apps, don't just list their features. Read their user
 
 This is where you move from a creative spark to a concrete plan of action, as this flow shows.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/211c6c6a-1b1b-4856-85c5-5db39c949348.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/mobile-app-development-process/211c6c6a-1b1b-4856-85c5-5db39c949348.jpg)
 
 As the visual suggests, a solid foundation comes from structured thinking. You're building a logical bridge from a raw idea to a well-defined set of requirements.
 
@@ -78,7 +78,7 @@ Once your strategy is locked in, the spotlight shifts from the "why" to the "how
 
 Let's be clear: a beautiful app that's a nightmare to navigate is dead on arrival. The same goes for a functional app that looks like it was designed a decade ago; it just won't inspire trust. The real goal is to create an experience so seamless and intuitive that your users don't even have to think about it. It just *works*.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/0d1ccd3a-5e35-4134-ac03-3cb10bbb6d95.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/mobile-app-development-process/0d1ccd3a-5e35-4134-ac03-3cb10bbb6d95.jpg)
 
 Think of this stage as creating the complete architectural and visual blueprint for your app before a single line of code gets written.
 
@@ -122,7 +122,7 @@ This is where the rubber really meets the road. All the strategy sessions, wiref
 
 This isn't just one giant coding task. It's actually a coordinated effort across three core components: the front-end, the back-end, and the APIs that act as the messengers between them. I often tell clients to think of it like a restaurant. The front-end is the dining room - what the customer sees and interacts with. The back-end is the kitchen - where all the complex work gets done. And the APIs? They're the waitstaff, constantly running orders and information back and forth.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/47c46337-d17e-4351-bfd3-25e54241fd51.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/mobile-app-development-process/47c46337-d17e-4351-bfd3-25e54241fd51.jpg)
 
 ### Choosing Your Technology Stack
 
@@ -218,7 +218,7 @@ You've built it. The code is clean, the design is sharp, and you're ready to get
 
 The first hurdle is getting through the gates of the major app stores. Both the [Apple App Store](https://www.apple.com/app-store/) and [Google Play Store](https://play.google.com/store/games) have their own rulebooks. They're the gatekeepers, and you have to play by their rules. This means understanding their specific guidelines and review processes inside and out to avoid a frustrating rejection.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/321edee3-9736-4c28-82cd-9323b246662b.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/mobile-app-development-process/321edee3-9736-4c28-82cd-9323b246662b.jpg)
 
 ### Setting the Stage for a Strong App Store Debut
 

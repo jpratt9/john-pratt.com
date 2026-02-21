@@ -13,7 +13,7 @@ tags:
   - digital-transformation
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-441eeb53-1db0-4d58-a53d-82b492c96dba.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/software-engineering-consultants/featured-image-441eeb53-1db0-4d58-a53d-82b492c96dba.jpg)
 
 So, what exactly is a software engineering consultant? Think of them as a strategic technology partner, someone who draws up the blueprints for your company's entire digital world. They do more than just write code; their real job is to tackle complex business problems with high-level technical strategies, making sure your systems are built to scale and run smoothly.
 
@@ -61,7 +61,7 @@ Picture an e-commerce business wrestling with a generic inventory system. It's s
 
 This is all about creating a solution that delivers tangible, day-to-day value for a client's operations.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/351f70f3-c911-4626-b809-184f1160f161.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/software-engineering-consultants/351f70f3-c911-4626-b809-184f1160f161.jpg)
 
 The image above captures that collaborative handover perfectly - the consultant provides the technical engine that drives the client's business forward.
 
@@ -113,7 +113,7 @@ This table shows how a consultant's technical skills are directly applied to pro
 
 Hiring a **software engineering consultant** is about more than just getting extra coding help. It's a strategic play. You're bringing in a specialist to deliver real business results by injecting focused expertise, a fresh viewpoint, and raw speed into your projects.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/132c88a3-624a-427e-bcb1-a88397b38245.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/software-engineering-consultants/132c88a3-624a-427e-bcb1-a88397b38245.jpg)
 
 Think of it less like hiring temp staff and more like gaining a high-impact advisor. They're there to solve the tricky problems your internal team might be too swamped - or too close - to tackle effectively. Let's break down the real advantages.
 
@@ -149,7 +149,7 @@ More importantly, a good consultant de-risks your project. Their experience with
 
 ## How to Choose the Right Consultant for Your Project
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/d1f3d2a2-81fb-41c8-828c-3d7feb53e994.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/software-engineering-consultants/d1f3d2a2-81fb-41c8-828c-3d7feb53e994.jpg)
 
 Picking the right **software engineering consultant** is a make-or-break decision for your project. A great partner can fast-track your goals and deliver real business value, but the wrong one can burn through your budget, derail your timeline, and leave you with a mess.
 

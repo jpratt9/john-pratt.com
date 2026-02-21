@@ -13,7 +13,7 @@ tags:
   - postgres-guide
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/d5c60738-efd5-49b2-9738-81a8a9c8fdbe/postgresql-tutorial-for-beginners-database-setup.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/postgresql-tutorial-for-beginners/postgresql-tutorial-for-beginners-database-setup.jpg)
 
 Welcome to your first real-world **PostgreSQL tutorial**. If you're looking to learn one of the most powerful and trusted open-source databases out there, you've come to the right place. This isn't just about theory; we're diving into the hands-on skills that power everything from scrappy startups to massive global companies.
 
@@ -21,7 +21,7 @@ Getting comfortable with PostgreSQL is a fantastic move for any developer or dat
 
 ## Why PostgreSQL Is Your Next Best Skill
 
-![PostgreSQL logo with an elephant mascot standing on books labeled SQL, Data, and Scale.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/17c9ec9a-2d2f-4257-8539-1a0132231d42/postgresql-tutorial-for-beginners-postgresql-mascot.jpg)
+![PostgreSQL logo with an elephant mascot standing on books labeled SQL, Data, and Scale.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/postgresql-tutorial-for-beginners/postgresql-tutorial-for-beginners-postgresql-mascot.jpg)
 
 You'll often hear people call it just "Postgres." At its heart, it's an object-relational database celebrated for being incredibly reliable and packed with features. Unlike some simpler databases, Postgres was designed from the ground up to be extensible and stick to SQL standards, which means it handles complex queries and huge amounts of data without breaking a sweat.
 
@@ -154,7 +154,7 @@ Once you feel comfortable with these fundamentals, the best way to solidify your
 
 ## Thinking Like a Database Designer
 
-![A diagram illustrating a basic relational database schema with users, posts, and comments tables.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/40988f7f-9e3a-49dc-a56e-cb12ed80871b/postgresql-tutorial-for-beginners-database-schema.jpg)
+![A diagram illustrating a basic relational database schema with users, posts, and comments tables.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/postgresql-tutorial-for-beginners/postgresql-tutorial-for-beginners-database-schema.jpg)
 
 Knowing how to write SQL commands is great, but it's only one piece of the puzzle. A truly powerful and maintainable application is built on a smart, efficient database design. This is where we stop focusing on individual commands and start thinking about the architectural 'why' behind a solid database.
 

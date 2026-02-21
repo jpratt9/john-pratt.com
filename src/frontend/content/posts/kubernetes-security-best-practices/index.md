@@ -13,7 +13,7 @@ tags:
   - devsecops
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/d5bf9fbd-7efe-414c-82fe-4a72728db37b/kubernetes-security-best-practices-architecture-diagram.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/kubernetes-security-best-practices/kubernetes-security-best-practices-architecture-diagram.jpg)
 
 Kubernetes has become the de facto standard for container orchestration, but its power and flexibility come with a steep learning curve and significant security risks. Generic advice often falls short, leaving clusters vulnerable to common misconfigurations, supply chain attacks, and sophisticated runtime threats. This guide moves beyond surface-level tips to provide a comprehensive roundup of actionable **Kubernetes security best practices**, complete with practical implementation steps, code snippets, and real-world examples to help you build a resilient environment.
 
@@ -25,7 +25,7 @@ While these practices are specific to Kubernetes, they are built upon foundation
 
 Role-Based Access Control (RBAC) is a cornerstone of Kubernetes security best practices, providing a standardized way to manage permissions within your cluster. Instead of assigning permissions directly to individual users or processes, RBAC groups permissions into roles, which are then assigned to subjects like users, groups, or service accounts. This method ensures that entities only have access to the resources absolutely necessary for their functions, adhering to the principle of least privilege.
 
-![Flowchart diagram showing user authentication and security workflow with connected profile icons and security shields](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/455b2f3a-f6ac-4be6-b52b-155ede882607/kubernetes-security-best-practices-authentication-workflow.jpg)
+![Flowchart diagram showing user authentication and security workflow with connected profile icons and security shields](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/kubernetes-security-best-practices/kubernetes-security-best-practices-authentication-workflow.jpg)
 
 This granular control is critical for preventing unauthorized access and limiting the potential impact of a compromised account. For example, a developer might only have permission to create and update Deployments within a specific namespace, while an automated CI/CD pipeline, via its service account, has permissions to deploy container images. To effectively manage who can do what within your Kubernetes cluster, you need a clear organizational access control policy. Utilize a resource like this to help define your [Access Control Policy](https://responsehub.ai/free-policy-generator/access-control-policy).
 
@@ -44,7 +44,7 @@ Follow these actionable steps to harden your cluster's access controls:
 
 By default, all pods within a Kubernetes cluster can communicate with each other, creating a flat network where a single compromised pod can potentially access every other workload. Implementing Network Policies is a fundamental Kubernetes security best practice that addresses this vulnerability. These policies act as a virtual firewall for your pods, allowing you to define explicit rules for how groups of pods can communicate with each other and with other network endpoints.
 
-![Diagram showing Kubernetes ingress and egress traffic flow through cloud security gateway with lock icon](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/307d953a-e4aa-4d73-9235-43caacfe72f0/kubernetes-security-best-practices-ingress-egress.jpg)
+![Diagram showing Kubernetes ingress and egress traffic flow through cloud security gateway with lock icon](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/kubernetes-security-best-practices/kubernetes-security-best-practices-ingress-egress.jpg)
 
 This approach enables microsegmentation, drastically reducing the attack surface by ensuring pods only accept traffic from legitimate sources. If an attacker compromises a pod, their ability to move laterally across the network is severely restricted, containing the breach to a small, isolated segment. Companies like Pinterest and Datadog leverage network policies to secure their vast, multi-tenant Kubernetes environments, demonstrating their effectiveness at scale.
 
@@ -82,7 +82,7 @@ Follow these actionable steps to implement PSS effectively in your cluster:
 
 Container images form the fundamental building blocks of your Kubernetes applications, making their integrity a critical security checkpoint. Implementing automated image scanning analyzes these images for known vulnerabilities (CVEs), malware, and misconfigurations *before* they are ever deployed. This proactive approach is a core tenet of Kubernetes security best practices, effectively shifting security left and preventing supply chain attacks by ensuring only vetted, secure images can run in your production environment.
 
-![DevOps engineer organizing security documents and policies into organized server infrastructure system](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/fe3b22e0-4d15-4c06-8843-83a610a46d80/kubernetes-security-best-practices-policy-organization.jpg)
+![DevOps engineer organizing security documents and policies into organized server infrastructure system](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/kubernetes-security-best-practices/kubernetes-security-best-practices-policy-organization.jpg)
 
 Combined with a secure private registry, this practice creates a powerful gatekeeping mechanism. For instance, tech giants like Netflix and Spotify integrate image scanning directly into their CI/CD pipelines, automatically failing builds that contain high-severity vulnerabilities. This ensures that security isn't an afterthought but an automated, non-negotiable step in the development lifecycle. A robust strategy here mirrors many core concepts found in comprehensive [Docker security best practices](https://www.john-pratt.com/docker-security-best-practices/).
 

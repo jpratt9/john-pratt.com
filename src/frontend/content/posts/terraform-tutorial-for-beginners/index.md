@@ -13,12 +13,12 @@ tags:
   - AWS-Terraform
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-4c74dfbe-0863-44ff-927b-9516547c31be.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/terraform-tutorial-for-beginners/featured-image-4c74dfbe-0863-44ff-927b-9516547c31be.jpg)
 
 This **Terraform tutorial for beginners** is all about showing you how to manage cloud infrastructure using code. We're going to take what used to be a complex, manual setup process and turn it into simple, repeatable text files. You'll learn the core workflow - write, plan, and apply - and by the end, you'll be building real resources in the cloud, even if you're starting from scratch.
 
 ## Why Terraform Is a Game Changer for Cloud Infrastructure
-![Woman coding at a desk with a large monitor displaying lines of code](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/60109cc5-deb7-4c1b-aa66-d472b7898b1e.jpg)
+![Woman coding at a desk with a large monitor displaying lines of code](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/terraform-tutorial-for-beginners/60109cc5-deb7-4c1b-aa66-d472b7898b1e.jpg)
 Before we jump into writing code, it's worth taking a moment to understand *why* a tool like [Terraform](https://www.terraform.io/) even exists. Not long ago, setting up servers, databases, or networks meant hours of clicking through a cloud provider's web console. This old way of doing things is not only slow but also a recipe for human error, and good luck trying to replicate that setup perfectly every single time.
 
 This is where Infrastructure as Code (IaC) comes in and completely changes the game. IaC lets you treat your infrastructure - your servers, networks, and storage - exactly like you treat your application code. You define everything in simple, human-readable configuration files that can be versioned, shared, and reused.
@@ -76,7 +76,7 @@ The official **HashiCorp Terraform extension** for VS Code is a must-have. It ad
 
 Here's a quick look at the official extension on the VS Code Marketplace.
 
-![Screenshot from https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/d4c936ff-66f4-4239-a7cb-21ae122e6f34.jpg)
+![Screenshot from https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/terraform-tutorial-for-beginners/d4c936ff-66f4-4239-a7cb-21ae122e6f34.jpg)
 
 Grabbing this free extension will seriously boost your productivity and help you sidestep simple syntax errors, which is a massive win when you're just getting your feet wet.
 
@@ -151,7 +151,7 @@ The entire process boils down to a core, three-step workflow that you'll run ove
 
 The infographic below gives you a bird's-eye view of how your configuration file tells providers what to build.
 
-![Infographic about terraform tutorial for beginners](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/b2d37529-e3cc-47e2-9ad3-a3943960f368.jpg)
+![Infographic about terraform tutorial for beginners](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/terraform-tutorial-for-beginners/b2d37529-e3cc-47e2-9ad3-a3943960f368.jpg)
 
 Essentially, your code is the blueprint. The provider is the construction crew. Let's walk through each command and bring our S3 bucket to life.
 

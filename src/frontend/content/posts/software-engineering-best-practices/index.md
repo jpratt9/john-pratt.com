@@ -13,7 +13,7 @@ tags:
   - secure-coding
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-63010eee-d5d0-4c96-9eb2-1f12b7280af6.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/software-engineering-best-practices/featured-image-63010eee-d5d0-4c96-9eb2-1f12b7280af6.jpg)
 
 In a competitive tech environment, the distinction between a market leader and a laggard is often defined by the quality of its software. While new tools and frameworks capture headlines, the foundation of exceptional product development remains constant: a disciplined commitment to proven principles. This guide moves beyond trends to focus on the essential **software engineering best practices** that enable teams to build scalable, secure, and reliable systems efficiently. The difference between average and elite engineering teams isn't about using the flashiest new technology; it's about mastering the fundamentals with consistency and precision.
 
@@ -31,7 +31,7 @@ The TDD workflow follows a simple, yet powerful, three-step process. This discip
 
 This infographic illustrates the core Red-Green-Refactor workflow that defines the Test-Driven Development process.
 
-![Infographic showing the TDD Red-Green-Refactor cycle in three steps: write a failing test, write minimal code to pass, and refactor while tests pass.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/infographic-ef6530a4-4404-442e-9318-f6befaf0f3d0.jpg)
+![Infographic showing the TDD Red-Green-Refactor cycle in three steps: write a failing test, write minimal code to pass, and refactor while tests pass.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/software-engineering-best-practices/infographic-ef6530a4-4404-442e-9318-f6befaf0f3d0.jpg)
 
 This visualization highlights how the process is an iterative loop, where refactoring is a safe and integral step, not a risky afterthought, because the passing tests validate system behavior continuously.
 
@@ -51,7 +51,7 @@ This decentralized model is essential for maintaining code integrity and develop
 
 This diagram illustrates how Git's distributed model allows each developer to have a full local copy of the repository, enabling independent work and robust collaboration through remote synchronization.
 
-![An infographic explaining the distributed nature of Git, showing a central remote repository and multiple local repositories on developer machines.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/729ff62a-010a-4786-b81b-807b0dd610c8.jpg)
+![An infographic explaining the distributed nature of Git, showing a central remote repository and multiple local repositories on developer machines.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/software-engineering-best-practices/729ff62a-010a-4786-b81b-807b0dd610c8.jpg)
 
 The visualization highlights how developers can commit changes locally and then push them to a central server, facilitating organized, conflict-free integration of code from the entire team.
 
@@ -90,7 +90,7 @@ Continuous Integration/Continuous Deployment (CI/CD) is a cornerstone of modern 
 
 This automated pipeline approach minimizes manual errors and provides constant feedback to development teams. Companies like Amazon, which deploys code every 11.7 seconds on average, leverage CI/CD to innovate at an unprecedented scale, proving its effectiveness in high-stakes, fast-paced environments. Adopting this practice is crucial for teams looking to increase development velocity and system reliability.
 
-![A diagram illustrating the CI/CD pipeline, showing the stages from code commit to build, test, and deployment into production.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/8362adba-5aa7-4ae8-b06f-bbbd1bc3c951.jpg)
+![A diagram illustrating the CI/CD pipeline, showing the stages from code commit to build, test, and deployment into production.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/software-engineering-best-practices/8362adba-5aa7-4ae8-b06f-bbbd1bc3c951.jpg)
 
 ### Core CI/CD Pipeline Stages
 

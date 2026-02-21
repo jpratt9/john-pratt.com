@@ -13,7 +13,7 @@ tags:
   - hashicorp-terraform
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-7d8c0413-2da1-486a-881c-7e27cce0708a.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/terraform-modules-best-practices/featured-image-7d8c0413-2da1-486a-881c-7e27cce0708a.jpg)
 
 In today's cloud-native landscape, managing infrastructure as code (IaC) is a fundamental requirement for agility and scale. Terraform has emerged as the industry-standard tool for this, but its real power is unlocked through well-designed, reusable modules. Without a coherent strategy, Terraform configurations can devolve into a complex web of duplicated code, inconsistent standards, and fragile dependencies. This leads directly to brittle infrastructure, slow deployment cycles, and an increased risk of production errors. Effective module design isn't just a "nice-to-have"; it's a critical component of a mature IaC practice.
 
@@ -27,7 +27,7 @@ The Single Responsibility Principle (SRP) is a foundational concept in software 
 
 A module adhering to SRP is easier to understand at a glance, simpler to test in isolation, and significantly less risky to update. When a module only does one thing, changes are localized, reducing the blast radius of potential errors. This focus also promotes reusability; a dedicated VPC module can be used across dozens of projects, whereas a module deploying a VPC *and* a specific application is far less versatile.
 
-![Single Responsibility Principle](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/bce5a044-932d-4bed-b065-0f93d47d4f97.jpg)
+![Single Responsibility Principle](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/terraform-modules-best-practices/bce5a044-932d-4bed-b065-0f93d47d4f97.jpg)
 
 ### Why It's a Best Practice
 
@@ -54,7 +54,7 @@ Just as with application code, infrastructure code requires a clear and predicta
 
 Using SemVer gives module maintainers a clear language to signal their intentions. A `PATCH` release (e.g., 1.0.0 to 1.0.1) signals a safe, backward-compatible bug fix. A `MINOR` release (e.g., 1.0.1 to 1.1.0) introduces new, backward-compatible features. Crucially, a `MAJOR` release (e.g., 1.1.0 to 2.0.0) indicates a breaking change that will require consumers to modify their code. This simple yet powerful convention builds trust and stability into your infrastructure ecosystem.
 
-![Semantic Versioning for Module Releases](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/0fd74924-6501-4df5-b613-b4ad6381d581.jpg)
+![Semantic Versioning for Module Releases](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/terraform-modules-best-practices/0fd74924-6501-4df5-b613-b4ad6381d581.jpg)
 
 ### Why It's a Best Practice
 
@@ -81,7 +81,7 @@ Comprehensive input validation is a critical practice for building robust and se
 
 A module with strong validation acts as a self-defending contract, clearly communicating its requirements and rejecting improper use. Instead of failing unpredictably during a plan or apply, it provides immediate, helpful feedback to the user. This improves the developer experience and enforces organizational standards, such as allowing only specific EC2 instance types or ensuring all network CIDR blocks fall within approved private IP ranges.
 
-![Comprehensive Input Validation](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/2c79fbf2-a235-40e6-9850-3ae65c92255b.jpg)
+![Comprehensive Input Validation](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/terraform-modules-best-practices/2c79fbf2-a235-40e6-9850-3ae65c92255b.jpg)
 
 ### Why It's a Best Practice
 
@@ -119,7 +119,7 @@ A standardized module structure is a convention-based approach to organizing fil
 
 Adopting a standard layout eliminates cognitive overhead for developers. When every module follows the same pattern, anyone can quickly locate variable definitions, resource configurations, or output values without having to decipher a custom organizational scheme. This consistency accelerates onboarding, simplifies code reviews, and fosters a collaborative environment where infrastructure code is universally understood. It turns your collection of modules into a reliable, internal infrastructure library.
 
-![Standardized Module Structure](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/27cfdf38-f054-43b0-bb37-742951e03873.jpg)
+![Standardized Module Structure](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/terraform-modules-best-practices/27cfdf38-f054-43b0-bb37-742951e03873.jpg)
 
 ### Why It's a Best Practice
 

@@ -13,13 +13,13 @@ tags:
   - data-management
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/eac35b5b-bc5d-4f5e-ba07-5a2cbb0b2d92/what-is-data-cloud-data-cloud.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-data-cloud/what-is-data-cloud-data-cloud.jpg)
 
 Think of all your company's data for a moment. You have sales numbers in one system, customer feedback in another, marketing campaign results over here, and inventory data somewhere else entirely. It's like having valuable information scattered across dozens of separate islands. To get the full picture, your teams are constantly building boats, sailing between these islands, and trying to piece everything together. It's slow, inefficient, and often leads to mistakes.
 
 A **Data Cloud** changes all of that. It doesn't just build a few boats; it constructs a permanent network of bridges connecting every single island, forming one unified continent of data.
 
-![A diagram showing a central Data Cloud connected via bridges to six islands representing diverse data sources and insights.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/23e61d17-448a-4611-b2db-a19eb4daf976/what-is-data-cloud-data-cloud.jpg)
+![A diagram showing a central Data Cloud connected via bridges to six islands representing diverse data sources and insights.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-data-cloud/what-is-data-cloud-data-cloud.jpg)
 
 This isn't just a fancy term for a place to dump information. It's a living, breathing ecosystem where all your data can be accessed, processed, and securely shared from a single, central hub. It provides that elusive *single source of truth* that businesses have been chasing for years.
 
@@ -99,7 +99,7 @@ A data cloud completely breaks that rigid connection. It lets you store a virtua
 
 This architectural shift is a clear evolution from rigid data warehouses to flexible, cloud-native platforms.
 
-![A data evolution hierarchy chart illustrating the progression from data warehouse to data lake to data cloud.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/17248e50-ae7b-4583-b313-895397db1b3f/what-is-data-cloud-data-evolution.jpg)
+![A data evolution hierarchy chart illustrating the progression from data warehouse to data lake to data cloud.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-data-cloud/what-is-data-cloud-data-evolution.jpg)
 
 This visual journey shows how each generation improved upon the last, leading to a model built for the scale and complexity of today's data.
 
@@ -177,7 +177,7 @@ Theory is great, but what really matters is how this stuff works in the real wor
 
 So, let's look at some of the most impactful ways companies are actually using data clouds to solve real problems and open up new opportunities.
 
-![An illustration showing a central data cloud connected to customer profile, supply chain, and fraud detection systems.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/c2a7e1b9-22e2-4581-b0d4-0bf484d1acd8/what-is-data-cloud-data-cloud-architecture.jpg)
+![An illustration showing a central data cloud connected to customer profile, supply chain, and fraud detection systems.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-data-cloud/what-is-data-cloud-data-cloud-architecture.jpg)
 
 ### Creating a True 360-Degree Customer View
 

@@ -13,13 +13,13 @@ tags:
   - Docker-for-AI
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-ac796627-e376-435c-8fb2-d2e5dfa8458f.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/machine-learning-model-deployment/featured-image-ac796627-e376-435c-8fb2-d2e5dfa8458f.jpg)
 
 Deploying a machine learning model is the moment of truth. It's the process of taking your carefully trained algorithm and plugging it into a live production system where it can start making real-time predictions on new data. This is where a data science project stops being a cool experiment and starts becoming a genuine business asset, but it's often the hardest part of the entire lifecycle.
 
 ## Bridging The Gap From Notebook To Production
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/7b10ea47-7a6d-40e9-bc05-b52cc595fe2f.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/machine-learning-model-deployment/7b10ea47-7a6d-40e9-bc05-b52cc595fe2f.jpg)
 
 Getting a model from the clean, controlled world of a Jupyter notebook into the chaotic, unpredictable reality of a production environment is where so many projects fall apart. A model can perform perfectly on a static dataset, only to break down completely when it encounters messy, real-world data and infrastructure quirks. This journey is often called the "last mile" of machine learning, but frankly, it feels more like a marathon through a minefield.
 
@@ -117,7 +117,7 @@ This little bit of code fires up a server, loads your saved model, and exposes a
 
 ## Containerizing Your ML Application with Docker
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/f4e8bd56-952d-4f09-a63d-d7a390315e0e.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/machine-learning-model-deployment/f4e8bd56-952d-4f09-a63d-d7a390315e0e.jpg)
 
 So, you've got your model trained and an API wrapped around it. Great. But how do you make sure it runs the exact same way on your colleague's laptop, in a test environment, and ultimately, in production? This is where containerization steps in, and for most of us, that means using [Docker](https://www.docker.com/).
 
@@ -201,7 +201,7 @@ This workflow really breaks down into two main parts:
 
 The infographic below shows the kind of high-level thinking that goes into setting up a deployment pipeline, starting with defining your requirements and picking the right platform.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/5686e619-139c-4ea4-a86d-eb2b6b155036.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/machine-learning-model-deployment/5686e619-139c-4ea4-a86d-eb2b6b155036.jpg)
 
 As you can see, your infrastructure decisions have a direct impact on how you'll design your CI/CD pipeline.
 
@@ -265,7 +265,7 @@ Ultimately, the choice depends on balancing simplicity against control. Starting
 
 ## Monitoring and Scaling Your Deployed Model
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/72e8a904-e6e3-48e3-99fa-70a344615315.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/machine-learning-model-deployment/72e8a904-e6e3-48e3-99fa-70a344615315.jpg)
 
 Getting your model into production feels like crossing the finish line, but it's really just the start of the race. The real work begins now. You have to make sure your model doesn't just *run* but actually performs well and delivers value over time. This is where vigilant monitoring and smart scaling come into play - they're what keep your application reliable and efficient.
 

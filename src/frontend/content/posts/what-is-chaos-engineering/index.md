@@ -13,7 +13,7 @@ tags:
   - failure-testing
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-62a2a777-4c99-4029-846c-a4ffe9a76177.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-chaos-engineering/featured-image-62a2a777-4c99-4029-846c-a4ffe9a76177.jpg)
 
 It's a scary thought, isn't it? The idea of purposely breaking parts of your own system. But that's exactly what **chaos engineering** is all about: **deliberately injecting controlled failures into a system** to find weaknesses before they turn into real-world outages.
 
@@ -74,7 +74,7 @@ Without a crystal-clear definition of "good," you're just guessing. You have no 
 
 This infographic lays out the fundamental flow of a chaos engineering experiment, starting with understanding the system and moving through to injecting a fault to find a weakness.
 
-![Infographic about what is chaos engineering](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/f1764121-8e46-402a-9f78-4eaec2507866.jpg)
+![Infographic about what is chaos engineering](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-chaos-engineering/f1764121-8e46-402a-9f78-4eaec2507866.jpg)
 
 As you can see, uncovering vulnerabilities is a direct result of careful, planned experiments, not just random chance.
 
@@ -157,7 +157,7 @@ Think of it this way: a small team just starting out might grab a simple, open-s
 
 For instance, here's a look at the dashboard for [Gremlin](https://www.gremlin.com/), one of the most popular commercial platforms.
 
-![Screenshot from https://gremlin.com/](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/38be3d40-ca58-4b03-8016-063b6d0bd01a.jpg)
+![Screenshot from https://gremlin.com/](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-chaos-engineering/38be3d40-ca58-4b03-8016-063b6d0bd01a.jpg)
 
 As you can see, a clear user interface like this lets teams design and launch experiments without needing to be command-line wizards. It makes the whole process more accessible.
 
@@ -215,7 +215,7 @@ Consider limiting your first experiments to:
 * Internal-only traffic or a small segment of test users.
 * Just one availability zone or even a single server instance.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/b2041e19-5b59-4c79-b2da-d1f91ee1a016.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-chaos-engineering/b2041e19-5b59-4c79-b2da-d1f91ee1a016.jpg)
 
 Keeping the blast radius tiny means any unexpected negative outcome is completely contained. It won't touch the broader user experience, which is exactly how you build trust in the process.
 

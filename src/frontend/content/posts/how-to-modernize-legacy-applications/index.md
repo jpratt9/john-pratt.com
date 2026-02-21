@@ -13,13 +13,13 @@ tags:
   - devops-strategy
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/16e73d72-fdf1-4bd4-9074-926eb29218a9/how-to-modernize-legacy-applications-legacy-modernization.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-modernize-legacy-applications/how-to-modernize-legacy-applications-legacy-modernization.jpg)
 
 Overhauling aging software isn't just a "nice-to-have" anymore. It's a critical move to slash costs, tighten security, and actually start innovating again. The path to modernizing your legacy applications starts with a clear-eyed **assessment of what you have**, followed by **choosing the right modernization strategy** - like rehosting or refactoring - and then **executing the migration** with modern, cloud-native patterns. This isn't just a tech project; it's how you turn a technical liability into a genuine competitive edge.
 
 ## Why Bother With Legacy System Modernization?
 
-![Diagram showing a legacy server migrating through assess, plan, and migrate stages to a modern cloud environment.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/c1211bd3-ddc4-46e9-a3f9-8a59defffe81/how-to-modernize-legacy-applications-cloud-migration.jpg)
+![Diagram showing a legacy server migrating through assess, plan, and migrate stages to a modern cloud environment.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-modernize-legacy-applications/how-to-modernize-legacy-applications-cloud-migration.jpg)
 
 Holding onto outdated applications is like trying to drive a race with a flat tire. These old systems become a massive drag on your business - they're a nightmare to maintain, riddled with security holes, and block you from using new technologies that could actually fuel growth. True modernization goes way beyond just a code update; it's about fundamentally realigning your tech stack with your business goals.
 
@@ -57,7 +57,7 @@ Jumping into a modernization project without first mapping out your existing sys
 
 This process means taking a hard, honest look at both the technical and business sides of your applications. You need to understand not just what the code does, but how much value it delivers, what it costs to keep the lights on, and where the biggest risks are hiding.
 
-![An illustration of 'Assessment Heat-Maps' showing various software project metrics like dependencies, tech debt, and security.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/3b8a1632-fd7a-442d-b141-fe254c93da66/how-to-modernize-legacy-applications-assessment-heatmaps.jpg)
+![An illustration of 'Assessment Heat-Maps' showing various software project metrics like dependencies, tech debt, and security.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-modernize-legacy-applications/how-to-modernize-legacy-applications-assessment-heatmaps.jpg)
 
 ### Uncovering the Technical Realities
 
@@ -162,7 +162,7 @@ Of course, managing a few containers is easy. Managing hundreds is a nightmare w
 
 This flowchart maps out the strategic journey, showing how teams often progress from a simple lift-and-shift to a more intensive refactor or a full-blown replacement.
 
-![Flowchart illustrating a modernization strategy with three sequential steps: Rehost, Refactor, and Replace.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/bf2937de-80d7-4c09-a03e-c7d3dfd100a6/how-to-modernize-legacy-applications-modernization-strategy.jpg)
+![Flowchart illustrating a modernization strategy with three sequential steps: Rehost, Refactor, and Replace.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-modernize-legacy-applications/how-to-modernize-legacy-applications-modernization-strategy.jpg)
 
 It's a great reminder that modernization isn't a single event but a spectrum of options, each with its own trade-offs in effort and value.
 

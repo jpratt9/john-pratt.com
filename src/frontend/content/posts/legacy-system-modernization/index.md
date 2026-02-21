@@ -163,7 +163,7 @@ Ultimately, there's no single "best" strategy. The right choice depends entirely
 
 ## Navigating Common Modernization Roadblocks
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/eb0169c2-d256-4b17-b9cd-f3072abde89d.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/legacy-system-modernization/eb0169c2-d256-4b17-b9cd-f3072abde89d.jpg)
 
 Kicking off a legacy modernization project can feel like trying to change the engine on a plane while it's in mid-flight. The promise of a smoother, faster journey is there, but the risks are very real. A lot can go wrong.
 

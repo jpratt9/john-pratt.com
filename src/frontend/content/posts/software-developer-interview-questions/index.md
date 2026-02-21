@@ -13,7 +13,7 @@ tags:
   - technical-interview
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/ae97ad0c-492c-41b5-a495-904ef6f9b2bb/software-developer-interview-questions-developer-tools.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/software-developer-interview-questions/software-developer-interview-questions-developer-tools.jpg)
 
 The landscape of software engineering interviews has fundamentally shifted. Gone are the days when success hinged solely on solving algorithm puzzles on a whiteboard. Today, leading companies and specialized firms like Pratt Solutions seek well-rounded engineers who can architect scalable cloud systems, build automated CI/CD pipelines, and design robust data solutions. This requires a different kind of preparation-one that goes beyond rote memorization and focuses on practical application and architectural thinking.
 
@@ -50,7 +50,7 @@ To excel in this area, developers should focus on practical application. Buildin
 
 Questions about DevOps and CI/CD pipelines are essential in modern software developer interview questions, targeting a developer's ability to automate and streamline the software delivery lifecycle. These topics assess expertise in bridging the gap between development and operations, focusing on efficiency, speed, and reliability. Interviewers use these scenarios to determine if a candidate can build and maintain the infrastructure that enables rapid and safe code deployment.
 
-![Illustration of a software development pipeline showing code commit, automated testing, and deployment to Kubernetes.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/637f5cd2-7f4b-41fd-9c35-6f969c8626e1/software-developer-interview-questions-devops-pipeline.jpg)
+![Illustration of a software development pipeline showing code commit, automated testing, and deployment to Kubernetes.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/software-developer-interview-questions/software-developer-interview-questions-devops-pipeline.jpg)
 
 At Pratt Solutions, our automation and DevOps consulting relies on building frictionless workflows for clients. We look for developers who understand how to leverage tools like Docker, Kubernetes, and GitHub Actions to create robust, self-service pipelines. The goal is to see if a candidate can architect a system that reduces manual effort, minimizes deployment risk, and accelerates time-to-market.
 
@@ -79,7 +79,7 @@ To prepare, developers should get hands-on experience building end-to-end pipeli
 
 Questions about software design patterns and system architecture test a developer's ability to create solutions that are not just functional but also maintainable, scalable, and resilient. Interviewers ask about patterns like Singleton, Factory, and Observer to evaluate a candidate's understanding of established solutions to common software problems. These concepts are fundamental for building the kind of robust, enterprise-grade systems that can evolve over time.
 
-![Diagram showing a three-tier architecture: UI, Service, and Data layers, with design patterns like Factory, Singleton, and Observer.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/6a2e4749-5ed7-4a39-8356-5c607a0f6fe9/software-developer-interview-questions-design-patterns.jpg)
+![Diagram showing a three-tier architecture: UI, Service, and Data layers, with design patterns like Factory, Singleton, and Observer.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/software-developer-interview-questions/software-developer-interview-questions-design-patterns.jpg)
 
 At Pratt Solutions, we deliver complex solutions for clients in demanding sectors like finance and aerospace, where system integrity is non-negotiable. We value developers who can apply architectural patterns such as Microservices or Event-Driven Architecture to solve complex business challenges. This knowledge demonstrates a maturity that goes beyond just writing code to architecting lasting, high-quality software.
 
@@ -258,7 +258,7 @@ As AI continues to revolutionize industries, questions about machine learning, A
 
 At Pratt Solutions, we leverage AI to build smarter automation and data analytics solutions for our clients. We value developers who can design, build, and deploy applications that harness the power of machine learning, whether it's for predictive maintenance, intelligent chatbots, or sophisticated recommendation engines. This skill set is critical for creating next-generation software that delivers tangible business value.
 
-![Illustration of a neural network model feeding data to a smartphone accessing a database.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/ec19b591-1b1d-4358-8770-b8e66539e6e3/software-developer-interview-questions-data-processing.jpg)
+![Illustration of a neural network model feeding data to a smartphone accessing a database.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/software-developer-interview-questions/software-developer-interview-questions-data-processing.jpg)
 
 ### Example Interview Questions
 

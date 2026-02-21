@@ -13,13 +13,13 @@ tags:
   - supply-chain-tech
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-6a6dd098-13b0-48c4-a299-c17bd24509e1.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/route-optimization-for-last-mile-delivery-2/featured-image-6a6dd098-13b0-48c4-a299-c17bd24509e1.jpg)
 
 Route optimization for last-mile delivery is all about figuring out the smartest possible paths to get packages from a distribution center to a customer's doorstep. This isn't just about using a standard GPS. It's a sophisticated process that juggles dozens of real-world variables to craft routes that save time, money, and headaches in the most challenging part of the supply chain.
 
 ## Winning the Final Mile of Delivery
 
-![A delivery driver organizing packages in the back of a van, symbolizing the final stage of delivery](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/1031a768-64db-4e09-a876-63fcc08944c7.jpg)
+![A delivery driver organizing packages in the back of a van, symbolizing the final stage of delivery](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/route-optimization-for-last-mile-delivery-2/1031a768-64db-4e09-a876-63fcc08944c7.jpg)
 
 Think of the supply chain like a high-stakes relay race. The first few legs can be flawless, but if the final runner stumbles, the whole race is lost. That's a perfect analogy for last-mile delivery. It's the most critical - and by far the most difficult - part of getting a product to a customer. With e-commerce setting the bar incredibly high, a single late package can sour a customer's entire experience.
 
@@ -119,7 +119,7 @@ Now, instead of one salesperson, you're managing an entire fleet. This forces th
 
 This is where route optimization software truly shines, processing all these moving parts to build plans that work in the real world.
 
-![Infographic about route optimization for last-mile delivery](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/dbec7019-8470-4721-8c62-d367323122c5.jpg)
+![Infographic about route optimization for last-mile delivery](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/route-optimization-for-last-mile-delivery-2/dbec7019-8470-4721-8c62-d367323122c5.jpg)
 
 As the infographic shows, it's about balancing all these competing factors to create either a fixed daily plan or one that can adapt on the fly - a task that's simply impossible to do well manually.
 
@@ -228,7 +228,7 @@ Provide hands-on training that focuses on what they'll actually use every day: t
 
 ## The Future of Last-Mile Logistics
 
-![A futuristic scene showing drones and autonomous delivery robots navigating a city street to deliver packages.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/00fc764b-5925-4036-b676-b2827add0f91.jpg)
+![A futuristic scene showing drones and autonomous delivery robots navigating a city street to deliver packages.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/route-optimization-for-last-mile-delivery-2/00fc764b-5925-4036-b676-b2827add0f91.jpg)
 
 The world of last-mile delivery is on the verge of a serious shake-up, powered by tech that promises a faster, greener, and far more efficient future. The familiar sight of a delivery van pulling up to the curb might soon share the road with a whole fleet of autonomous helpers. This isn't science fiction; it's the next wave of logistics, and it's already starting to change how packages get to our front doors.
 

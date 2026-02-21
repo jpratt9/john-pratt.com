@@ -13,7 +13,7 @@ tags:
   - it-project-skills
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-a1b65d00-ae10-47f6-a3a5-cc311a874709.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/technical-project-manager-skills/featured-image-a1b65d00-ae10-47f6-a3a5-cc311a874709.jpg)
 
 In the fast-paced world of technology, the role of a technical project manager has evolved far beyond simple task tracking and timeline management. They are the essential bridge connecting intricate engineering goals with concrete business objectives, acting as both a strategic leader and a technical translator. Success in this demanding position requires a unique fusion of deep technical knowledge and sophisticated management acumen. Possessing the right **technical project manager skills** is what separates a competent manager from an indispensable leader who consistently delivers complex projects on time and within budget.
 
@@ -40,7 +40,7 @@ Agile methodologies directly address the volatility of tech projects. By breakin
 
 A strong grasp of technical architecture is a critical skill for any technical project manager. This involves understanding complex systems, software architecture patterns, and infrastructure components. It's not about being able to code the solution, but rather about comprehending the system's design and its implications. This knowledge enables a technical PM to identify risks, assess feasibility, and act as a credible translator between engineering teams and non-technical business stakeholders, ensuring decisions are technically sound and strategically aligned.
 
-![Technical Architecture Understanding](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/5dac71ad-8bb5-46ca-94ad-a541d9ca0633.jpg)
+![Technical Architecture Understanding](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/technical-project-manager-skills/5dac71ad-8bb5-46ca-94ad-a541d9ca0633.jpg)
 
 This understanding allows the technical PM to facilitate more productive discussions and make informed trade-off decisions. For example, when a project involves migrating from a monolithic application to a microservices architecture, the PM needs to understand the benefits, like improved scalability and independent deployment, as well as the challenges, such as increased operational complexity. This insight is essential for planning, resource allocation, and managing stakeholder expectations.
 
@@ -59,7 +59,7 @@ Technical architecture understanding directly impacts project success by prevent
 
 Effective risk management and mitigation is one of the most critical technical project manager skills, involving the systematic process of identifying, analyzing, and responding to project risks. This proactive approach prevents potential issues from derailing timelines, budgets, and quality standards. A technical PM uses this skill to create risk registers, develop contingency plans, and foster a culture of foresight, ensuring the team is prepared for challenges rather than just reacting to them. This is essential for navigating the inherent uncertainties of technology projects.
 
-![Risk Management and Mitigation](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/ff4ae4c5-4936-4577-873a-48045857c679.jpg)
+![Risk Management and Mitigation](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/technical-project-manager-skills/ff4ae4c5-4936-4577-873a-48045857c679.jpg)
 
 The process begins with identifying potential risks, which can range from technical debt and cybersecurity threats to resource shortages and scope creep. Once identified, risks are analyzed for their potential impact and likelihood. A proficient technical PM then develops tailored mitigation strategies, such as creating a backup plan for a critical system dependency or allocating extra time for a complex integration. This structured approach, championed by organizations like the Project Management Institute (PMI), transforms uncertainty into manageable variables.
 
@@ -78,7 +78,7 @@ Proactive risk management directly correlates with project success. By anticipat
 
 DevOps and CI/CD (Continuous Integration/Continuous Deployment) pipeline management is one of the most critical technical project manager skills for modern software delivery. This skill set involves bridging the gap between development (Dev) and operations (Ops) teams to create a streamlined, automated workflow. A technical PM who understands DevOps principles can guide teams in building, testing, and releasing software faster and more reliably, turning the software delivery lifecycle into a competitive advantage.
 
-![DevOps and CI/CD Pipeline Management](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/cd7bd738-04ba-4e51-ac7b-83bf898d8b6c.jpg)
+![DevOps and CI/CD Pipeline Management](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/technical-project-manager-skills/cd7bd738-04ba-4e51-ac7b-83bf898d8b6c.jpg)
 
 The core of this skill is managing the CI/CD pipeline, an automated process that takes code from a developer's machine to production. This includes overseeing everything from version control and automated builds to testing and deployment strategies. A proficient technical PM ensures this pipeline is efficient, secure, and resilient, minimizing manual intervention and reducing the risk of human error.
 

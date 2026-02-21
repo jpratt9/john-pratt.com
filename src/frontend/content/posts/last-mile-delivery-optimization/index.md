@@ -13,13 +13,13 @@ tags:
   - supply-chain-tech
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/8674ebee-421d-475c-8b17-ce0e8b824e89/last-mile-delivery-optimization-route-optimization.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/last-mile-delivery-optimization/last-mile-delivery-optimization-route-optimization.jpg)
 
 Last-mile delivery optimization is all about making the final leg of the journey - from the warehouse to your customer's front door - as efficient and quick as possible. It's a strategic blend of technology and smart data analysis, using tools like **smarter routing**, **real-time tracking**, and **predictive analytics** to cut costs, speed up deliveries, and keep customers happy.
 
 ## Why Last Mile Delivery Optimization Is Your New Competitive Edge
 
-![An illustration of fast package delivery with a van, location pin, stopwatch, and a smiling man receiving boxes.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/22710804-b837-4e44-95c9-c4e56fe74fff/last-mile-delivery-optimization-fast-delivery.jpg)
+![An illustration of fast package delivery with a van, location pin, stopwatch, and a smiling man receiving boxes.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/last-mile-delivery-optimization/last-mile-delivery-optimization-fast-delivery.jpg)
 
 That final stretch of a product's journey is notoriously the most complex and expensive part of the supply chain. In fact, it can eat up over **53% of total shipping costs**. This isn't just a number on a spreadsheet; it's the most critical customer touchpoint you have, and it heavily influences how people see your brand. A single late package or a missed delivery window can be all it takes to lose a customer forever.
 
@@ -93,7 +93,7 @@ Relying on the same pre-planned, static routes day after day is a quiet killer o
 
 The answer is **dynamic routing**, a system that breathes and adapts in real time. Instead of locking in a plan at 6 AM and just hoping for the best, dynamic routing engines are constantly crunching live data to find the absolute best path for every driver, at any given moment.
 
-![An illustration of a delivery truck on a map with a glowing route and a real-time update icon.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/9c7958e9-cb0e-4cc0-884d-c4310e7f924a/last-mile-delivery-optimization-delivery-tracking.jpg)
+![An illustration of a delivery truck on a map with a glowing route and a real-time update icon.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/last-mile-delivery-optimization/last-mile-delivery-optimization-delivery-tracking.jpg)
 
 ### How Dynamic Routing Works in the Real World
 
@@ -138,7 +138,7 @@ Smart routing is the undeniable core of last-mile efficiency. The sector is proj
 
 What if you could solve delivery problems before they even happen? That's the real promise of predictive analytics. It's about getting out of the constant "firefighting" mode and shifting to a more strategic, proactive approach where you can see delays and disruptions coming. This is where AI and machine learning (ML) are changing the game, turning all that historical data you've collected into a crystal ball for what's ahead.
 
-![Conceptual diagram showing a data network analyzing delivery volume peaks to predict at-risk deliveries.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/9492f37a-a73b-4dc2-ac54-f64a91446d84/last-mile-delivery-optimization-delivery-risk.jpg)
+![Conceptual diagram showing a data network analyzing delivery volume peaks to predict at-risk deliveries.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/last-mile-delivery-optimization/last-mile-delivery-optimization-delivery-risk.jpg)
 
 This isn't some far-off future tech; it's happening now. We saw a **39% jump** in AI and ML adoption in 2023 alone as fleets scrambled to handle the chaos of same-day demand. It's absolutely essential in a market that's projected to blow past **$340.56 billion by 2032**, especially when you consider that nearly **75% of customer complaints** trace back to delivery problems. AI's ability to spot patterns, predict ETAs on the fly, and reroute drivers dynamically is how modern operations tackle these challenges head-on.
 
@@ -244,7 +244,7 @@ This is where you bring in AI and machine learning models for things like predic
 
 This diagram gives a great high-level view of how data moves through a modern tech stack, from IoT sensors in the field, through the cloud, and back out to your physical network.
 
-![Diagram illustrating a tech stack process flow from data collection through logic processing to network output.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/fba3ff91-68c2-4d49-8873-5b987b02a1ef/last-mile-delivery-optimization-tech-stack-flow.jpg)
+![Diagram illustrating a tech stack process flow from data collection through logic processing to network output.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/last-mile-delivery-optimization/last-mile-delivery-optimization-tech-stack-flow.jpg)
 
 It really drives home the point that everything starts with clean, real-time data from your vehicles and drivers. That data is the fuel for all the logic and decision-making happening in the cloud.
 

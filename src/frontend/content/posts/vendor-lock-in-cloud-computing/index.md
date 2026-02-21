@@ -13,7 +13,7 @@ tags:
   - iaac
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/3afb14e9-7498-4816-842d-7c2d0e1a6d09/vendor-lock-in-cloud-computing-cloud-lock-in.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/vendor-lock-in-cloud-computing/vendor-lock-in-cloud-computing-cloud-lock-in.jpg)
 
 Ever earned a ton of loyalty points with an airline, only to see their ticket prices and fees mysteriously spike right when you need to book a flight? That's **vendor lock-in in cloud computing** in a nutshell. It's that sinking feeling you get when you realize moving away from your current cloud provider is so costly or technically complicated that you're essentially stuck.
 
@@ -21,7 +21,7 @@ It's a serious business risk, often hiding in plain sight.
 
 ## The Hidden Costs of Cloud Loyalty
 
-![Illustration of vendor lock-in: cloud provider jar trapping data, causing worry for users.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/e42cb7e2-d4c4-4370-b0c8-07a5048d6830/vendor-lock-in-cloud-computing-vendor-lock-in.jpg)
+![Illustration of vendor lock-in: cloud provider jar trapping data, causing worry for users.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/vendor-lock-in-cloud-computing/vendor-lock-in-cloud-computing-vendor-lock-in.jpg)
 
 Most businesses move to the cloud to get away from the headaches of managing physical servers. But if you're not careful, you can end up swapping one set of problems for another. Vendor lock-in creeps in slowly, usually as a consequence of adopting the easy-to-use, powerful, and proprietary services offered by providers like AWS, Azure, or Google Cloud.
 
@@ -48,7 +48,7 @@ Let's get started by looking at exactly how these dependencies put down roots in
 
 ## How Vendor Lock In Creeps Into Your Architecture
 
-![Servers entangled by 'proprietary service' and 'managed platform' ribbons, depicting vendor lock-in with a warning sign.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/c34134d3-4d88-4f24-a9ec-a42866e1f921/vendor-lock-in-cloud-computing-vendor-lock-in.jpg)
+![Servers entangled by 'proprietary service' and 'managed platform' ribbons, depicting vendor lock-in with a warning sign.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/vendor-lock-in-cloud-computing/vendor-lock-in-cloud-computing-vendor-lock-in.jpg)
 
 Vendor lock-in rarely shows up as a single, dramatic decision. It's much more subtle than that. It's the slow creep of convenient choices - a series of small dependencies that quietly grow into a massive architectural trap.
 
@@ -164,7 +164,7 @@ As you frame these decisions, having a solid grasp of the major players is cruci
 
 This decision tree gives a simplified view of the risk assessment, contrasting the flexibility and control you gain by avoiding lock-in with the potential for price hikes and stifled innovation if you accept it.
 
-![Flowchart illustrating vendor lock-in risks, contrasting flexibility and control with price hikes and stifled innovation.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/4101b48f-aedd-4fc5-a19d-803d48bae1bf/vendor-lock-in-cloud-computing-risk-assessment.jpg)
+![Flowchart illustrating vendor lock-in risks, contrasting flexibility and control with price hikes and stifled innovation.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/vendor-lock-in-cloud-computing/vendor-lock-in-cloud-computing-risk-assessment.jpg)
 
 The image drives home a clear trade-off: embracing lock-in exposes you to the vendor's agenda, while maintaining independence keeps you in the driver's seat.
 
@@ -191,7 +191,7 @@ For more on the early stages of this journey, our guide on [how to choose a clou
 
 ## Proven Strategies for Cloud Independence
 
-![Diagram illustrating portability through Infrastructure as Code, Containers, and Open Source across various cloud environments.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/67cd5145-f0d7-4e75-ae50-19d8db2b6ba8/vendor-lock-in-cloud-computing-cloud-portability.jpg)
+![Diagram illustrating portability through Infrastructure as Code, Containers, and Open Source across various cloud environments.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/vendor-lock-in-cloud-computing/vendor-lock-in-cloud-computing-cloud-portability.jpg)
 
 Knowing the risks of **vendor lock-in in cloud computing** is one thing; building an architecture designed for freedom is another. True cloud independence isn't something that happens by accident. It's the direct result of intentional design choices that put flexibility, portability, and control first, right from day one.
 

@@ -13,7 +13,7 @@ tags:
   - application-development
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/42792c85-25c8-4538-901c-2aa310665e07/microservices-vs-monolithic-architecture-architecture-comparison.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/microservices-vs-monolithic-architecture/microservices-vs-monolithic-architecture-architecture-comparison.jpg)
 
 The core difference between microservices and monolithic architecture boils down to a simple trade-off: a monolith is a **single, unified application**, whereas microservices break that same application into a collection of *small, independent services*. Ultimately, your choice hinges on whether you value initial simplicity or long-term flexibility.
 
@@ -23,7 +23,7 @@ Before we get into a deep-dive comparison, it's important to really understand w
 
 This image perfectly illustrates the structural divide - a monolith as a single, cohesive unit versus a distributed network of microservices.
 
-![Diagram comparing monolithic architecture as a building and microservices as an interconnected network of spheres.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/c3c35084-1442-4fae-8d60-6bf6a82d59ea/microservices-vs-monolithic-architecture-comparison.jpg)
+![Diagram comparing monolithic architecture as a building and microservices as an interconnected network of spheres.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/microservices-vs-monolithic-architecture/microservices-vs-monolithic-architecture-comparison.jpg)
 
 You can see how a monolith centralizes every function, while microservices break them apart into focused, manageable components.
 
@@ -57,7 +57,7 @@ Understanding these foundational differences is crucial for appreciating the pra
 
 ## A Detailed Comparison of Core Architectural Attributes
 
-![Illustration comparing monolithic architecture (single block with broken key) with microservices (interconnected smaller blocks).](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/34b029a4-e44d-4f31-a582-9116e181ddc8/microservices-vs-monolithic-architecture-system-architecture.jpg)
+![Illustration comparing monolithic architecture (single block with broken key) with microservices (interconnected smaller blocks).](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/microservices-vs-monolithic-architecture/microservices-vs-monolithic-architecture-system-architecture.jpg)
 
 To really get to the heart of the **microservices vs monolithic architecture** debate, you have to look beyond the textbook definitions. This choice ripples through your entire software lifecycle, affecting everything from how fast your teams can ship code to how your system holds up under a traffic spike. It's a game of fundamental trade-offs, where a win in one area often means a compromise in another.
 
@@ -145,7 +145,7 @@ Ultimately, picking a monolith isn't about ignoring modern software practices. I
 
 ## Navigating the Transition from Monolith to Microservices
 
-![Conceptual illustration showing system transformation from a single box to interconnected, growing microservices with vines.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/cb0fe288-fbdf-4588-935d-e9a72e822c61/microservices-vs-monolithic-architecture-microservices-growth.jpg)
+![Conceptual illustration showing system transformation from a single box to interconnected, growing microservices with vines.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/microservices-vs-monolithic-architecture/microservices-vs-monolithic-architecture-microservices-growth.jpg)
 
 Sooner or later, a growing organization will hit the limits of its monolithic application. When that happens, the move to microservices stops being a question of "if" and becomes a matter of "how." This isn't just a simple refactor; it's a major modernization effort that demands careful planning. The last thing you want is to disrupt the business while you're re-architecting the system.
 
@@ -201,7 +201,7 @@ The lessons from both sides of the microservices vs. monolith debate are invalua
 
 ## Analyzing Cost and Security Implications
 
-![A balance scale showing a large gray block and gold coins versus smaller blocks with security, compliance, and financial icons.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/23f4839e-2ca4-4fe7-9097-5d8919a0cdd6/microservices-vs-monolithic-architecture-balance-scale.jpg)
+![A balance scale showing a large gray block and gold coins versus smaller blocks with security, compliance, and financial icons.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/microservices-vs-monolithic-architecture/microservices-vs-monolithic-architecture-balance-scale.jpg)
 
 Every architectural decision you make has a ripple effect on your budget and security. When weighing **microservices vs monolithic architecture**, you have to look past the initial build-out. The real story is told through the total cost of ownership (TCO) and the distinct security puzzles each model presents, especially in a cloud environment.
 

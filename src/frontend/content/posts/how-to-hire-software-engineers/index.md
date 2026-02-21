@@ -13,7 +13,7 @@ tags:
   - consulting-firm-hiring
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/0127d300-64ab-4570-915a-4c12a9a1e502/how-to-hire-software-engineers-hiring-process.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-hire-software-engineers/how-to-hire-software-engineers-hiring-process.jpg)
 
 Before you even think about writing a job post, your most powerful tool is a crystal-clear definition of the role you're hiring for. It's about moving past generic titles like 'Software Engineer' to build a detailed profile that not only attracts the right specialists but also sets them up to make an impact from day one.
 
@@ -23,7 +23,7 @@ The market for engineering talent is incredibly competitive. You're not just hir
 
 From my experience, a vague role definition is the single biggest reason hiring efforts fail. It clogs your pipeline with unqualified applicants, leads to a chaotic interview process, and, worst of all, results in a new hire who isn't actually equipped for the job. The best approach? Treat the role definition like a project plan.
 
-![Illustration of a Senior DevOps Engineer job description, including skills like cloud, CI/CD, AI/ML, a target goal, and an open book.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/c2c608fd-ce99-4aa4-bbc9-e2d2d6461b03/how-to-hire-software-engineers-devops-engineer.jpg)
+![Illustration of a Senior DevOps Engineer job description, including skills like cloud, CI/CD, AI/ML, a target goal, and an open book.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-hire-software-engineers/how-to-hire-software-engineers-devops-engineer.jpg)
 
 ### Beyond the Generic Job Title
 
@@ -117,7 +117,7 @@ A poorly designed interview process is more than an inconvenience - it's a liabi
 
 This whole journey, from building your firm's reputation to actually getting engineers to apply, is one connected process.
 
-![Diagram illustrating the three-step engineer acquisition process: Brand, Source, and Attract with icons.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/405c0801-27fb-4b83-9c7c-7ee67f8553b6/how-to-hire-software-engineers-hiring-process.jpg)
+![Diagram illustrating the three-step engineer acquisition process: Brand, Source, and Attract with icons.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-hire-software-engineers/how-to-hire-software-engineers-hiring-process.jpg)
 
 You can see how it all flows together. First, you build a strong **brand** that signals technical excellence. Then, you proactively **source** talent from the communities where they're already contributing. Finally, you create a compelling message to **attract** them to your open roles.
 
@@ -221,7 +221,7 @@ You've navigated the entire interview gauntlet, and your top candidate is waitin
 
 The market for great engineers is as competitive as ever. You're not just competing with other firms; you're up against the giants. Big Tech is back in hiring mode, with companies like Meta and Google expanding their engineering teams by **19%** and **16%**, respectively, since early 2022. Top candidates have options, and they expect a process that's as professional and compelling as the work itself. For more on the current landscape, you can [read the full research on the software engineer job market](https://landing.underdog.io/blog/software-engineer-job-market-2025).
 
-![An onboarding roadmap for new hires, showing Offer Letter (30 days), Mentor (60 days), and Project (90 days).](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/f66a271c-6348-4ab1-bb3d-e7c25628baaa/how-to-hire-software-engineers-onboarding-roadmap.jpg)
+![An onboarding roadmap for new hires, showing Offer Letter (30 days), Mentor (60 days), and Project (90 days).](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-hire-software-engineers/how-to-hire-software-engineers-onboarding-roadmap.jpg)
 
 ### Crafting an Offer They Can't Refuse
 

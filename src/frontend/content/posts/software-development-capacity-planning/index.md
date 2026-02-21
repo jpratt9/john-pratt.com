@@ -13,11 +13,11 @@ tags:
   - team-capacity
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/4efb0292-02ae-4223-af34-e1dddf93f115/software-development-capacity-planning-problem-solving.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/software-development-capacity-planning/software-development-capacity-planning-problem-solving.jpg)
 
 Software development capacity planning is really just the process of making sure you have the right people, with the right skills, ready to go when you need them. It's about looking ahead at the project pipeline and matching that work to your team's actual ability to get it done. The goal is to move from a constant state of reactive fire-fighting to a more predictable, proactive rhythm of delivery.
 
-![A data flow diagram showing a document entering a cloud with AI processing, people walking, and a compass.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/96730ea7-a73b-4218-b8ad-276d4d2717b7/software-development-capacity-planning-cloud-ai.jpg)
+![A data flow diagram showing a document entering a cloud with AI processing, people walking, and a compass.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/software-development-capacity-planning/software-development-capacity-planning-cloud-ai.jpg)
 
 ## Why Old Planning Methods Fail Modern Teams
 
@@ -111,7 +111,7 @@ Here's a quick rundown of how it works:
 
 The final output is a probability distribution that shows you the likelihood of finishing by certain dates.
 
-![Flowchart illustrating a metric analysis decision tree, guiding from clarity to refinement or action.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/1ffad40e-ab9a-4680-b162-464f0cbb58e3/software-development-capacity-planning-decision-tree.jpg)
+![Flowchart illustrating a metric analysis decision tree, guiding from clarity to refinement or action.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/software-development-capacity-planning/software-development-capacity-planning-decision-tree.jpg)
 
 This kind of visualization underscores a critical point: before you can trust your forecast, you have to trust your data. Sound metrics are the foundation of everything that follows.
 
@@ -177,7 +177,7 @@ By planning for this ramp-up period, you avoid overwhelming the new hire and pre
 
 ## Using Tools and Dashboards for Real-Time Visibility
 
-![Software development workflow visualization showing data pipelines, dashboards, sources, and issue tracking.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/2d6830e9-2a8a-4d98-b55a-3cf4f7876e91/software-development-capacity-planning-workflow-diagram.jpg)
+![Software development workflow visualization showing data pipelines, dashboards, sources, and issue tracking.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/software-development-capacity-planning/software-development-capacity-planning-workflow-diagram.jpg)
 
 If you're still relying on spreadsheets for capacity planning, you're fighting a losing battle. They're a snapshot in time, instantly outdated, and riddled with human error. Modern engineering teams know this, which is why they've moved to specialized tools and custom dashboards that pull in data automatically and give a live look at team capacity.
 

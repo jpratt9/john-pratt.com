@@ -13,7 +13,7 @@ tags:
   - productivity-tips
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/63b55748-a91b-4393-841c-0dc76c256be7/how-to-automate-repetitive-tasks-automation.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-automate-repetitive-tasks/how-to-automate-repetitive-tasks-automation.jpg)
 
 That nagging feeling you get when you're doing the same data entry task for the tenth time this week? It's more than just annoying - it's a quiet killer of productivity and a massive drain on your business. Figuring out **how to automate repetitive tasks** isn't some far-off, complex theory. It's a straightforward approach you can use right now: find the routine work, figure out which tasks give you the biggest bang for your buck, and then pick the right tool for the job.
 
@@ -23,7 +23,7 @@ Every minute an employee spends on a manual, repeatable task is a minute they *a
 
 Imagine a project manager spending two hours every single Friday pulling status updates from five different platforms just to build one spreadsheet. That's ten hours a month. Over a year, that's **120 hours** wasted on administrative busywork that a simple automated workflow could do in seconds.
 
-![An illustration of a woman working on a laptop, surrounded by paperwork, a clock, and a piggy bank.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/4e87cfb4-4ecb-4d13-87f3-0163c9e2fcb4/how-to-automate-repetitive-tasks-task-management.jpg)
+![An illustration of a woman working on a laptop, surrounded by paperwork, a clock, and a piggy bank.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-automate-repetitive-tasks/how-to-automate-repetitive-tasks-task-management.jpg)
 
 This isn't a rare problem. A recent study found that a shocking **51% of employees** sink at least two hours a day into these kinds of tasks. That lost time adds up, slowing down projects, bloating operational costs, and opening the door for human error. If you're looking for a good starting point, exploring different [strategies for task automation](https://fluidwave.com/blog/how-to-automate-tasks) can provide a solid foundation.
 
@@ -107,7 +107,7 @@ You wouldn't use a sledgehammer to crack a nut, and you shouldn't bring a simple
 
 This decision flowchart is a great way to visualize the process. It helps you think through the key questions - how often does this happen? Is it rules-based? What's the impact? - to steer you toward the right kind of solution.
 
-![A flowchart guiding task automation decisions based on frequency, rules, and impact, leading to manual, delegated, script, or RPA solutions.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/a093e954-4942-456b-ae9a-493f2b2adcf4/how-to-automate-repetitive-tasks-automation-decision.jpg)
+![A flowchart guiding task automation decisions based on frequency, rules, and impact, leading to manual, delegated, script, or RPA solutions.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-automate-repetitive-tasks/how-to-automate-repetitive-tasks-automation-decision.jpg)
 
 The takeaway here is simple: the best tool is often the simplest one that gets the job done reliably, whether that's a quick script or a more involved platform.
 
@@ -231,7 +231,7 @@ By linking your individual automations into a managed workflow, you create a sys
 
 ## Managing Security and Governance for Your Automations
 
-![An illustration of a large safe protecting documents with a padlock and security shield, symbolizing data protection.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/93e9b9af-eeb8-4cd4-9daa-eef8dc650846/how-to-automate-repetitive-tasks-data-security.jpg)
+![An illustration of a large safe protecting documents with a padlock and security shield, symbolizing data protection.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-automate-repetitive-tasks/how-to-automate-repetitive-tasks-data-security.jpg)
 
 As you start building more ambitious automations, you're adding new, powerful components to your business operations. But with that power comes a huge responsibility. It's all too common to see security and governance treated as an afterthought, a mistake that can quickly turn a time-saving tool into a serious business risk.
 

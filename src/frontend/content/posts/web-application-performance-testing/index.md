@@ -13,7 +13,7 @@ tags:
   - software-testing
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-5163189c-2a97-4f9d-96b4-f3484d47660b.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/web-application-performance-testing/featured-image-5163189c-2a97-4f9d-96b4-f3484d47660b.jpg)
 
 Think of web application performance testing as the process of seeing how your app holds up under pressure. It's not about finding functional bugs, like a broken button. Instead, it's about making sure your application is **fast, reliable, and can handle a flood of real-world users** without grinding to a halt.
 
@@ -29,7 +29,7 @@ Slow performance is more than just an inconvenience - it's a direct hit to your 
 
 This infographic breaks down how performance testing directly supports the core pillars of your business.
 
-![Infographic about web application performance testing](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/6842d0a8-4670-4282-98b4-d4ce9bd0f360.jpg)
+![Infographic about web application performance testing](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/web-application-performance-testing/6842d0a8-4670-4282-98b4-d4ce9bd0f360.jpg)
 
 As you can see, this single technical discipline is directly tied to protecting your brand, preventing revenue loss, and building a loyal customer base.
 
@@ -45,7 +45,7 @@ This focus on what the user actually experiences turns testing from a simple che
 
 ## Decoding the Core Types of Performance Testing
 
-![Engineers reviewing web application performance charts on a screen.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/d8242619-dac4-43fb-91d1-92e041bf7de9.jpg)
+![Engineers reviewing web application performance charts on a screen.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/web-application-performance-testing/d8242619-dac4-43fb-91d1-92e041bf7de9.jpg)
 
 Performance testing isn't just one thing. It's a whole family of tests, each designed to ask a very different question about how your application behaves under pressure. Think of it like a structural engineer testing a new bridge. They wouldn't just run a single test; they'd simulate rush hour traffic, extreme weather, and maybe even a traffic jam to see how the structure holds up.
 
@@ -135,7 +135,7 @@ Ultimately, by focusing on this blend of server health and user experience, you 
 
 ## Choosing Your Performance Testing Toolkit
 
-![A screenshot of the Apache JMeter user interface showing a test plan and configuration options.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/ab89c9d3-dc22-40d3-9622-2ff0d61fe68a.jpg)
+![A screenshot of the Apache JMeter user interface showing a test plan and configuration options.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/web-application-performance-testing/ab89c9d3-dc22-40d3-9622-2ff0d61fe68a.jpg)
 
 Picking the right performance testing tool can feel like choosing a vehicle for a cross-country road trip. Do you need a rugged, customizable truck that you can modify for any terrain, or a sleek, modern car with built-in navigation and comfort features? The best choice really depends on your team, your destination, and your budget.
 
@@ -177,7 +177,7 @@ Ultimately, the best tool is the one that empowers your team to test early, test
 
 ## Building a Winning Performance Testing Strategy
 
-![A team of developers strategically planning on a whiteboard with charts and graphs.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/64401438-d38f-4261-88bf-93dddf8815c3.jpg)
+![A team of developers strategically planning on a whiteboard with charts and graphs.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/web-application-performance-testing/64401438-d38f-4261-88bf-93dddf8815c3.jpg)
 
 Great performance testing isn't about just running powerful tools; it's about having a smart strategy. Think of it as a methodical process where you ask the right questions, figure out what success actually looks like, and then turn a mountain of raw data into real, actionable improvements.
 

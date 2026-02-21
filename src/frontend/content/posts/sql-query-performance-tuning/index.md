@@ -13,7 +13,7 @@ tags:
   - query-execution-plan
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-4a6fcb89-ad08-4688-bf3e-37a6be805ab9.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/sql-query-performance-tuning/featured-image-4a6fcb89-ad08-4688-bf3e-37a6be805ab9.jpg)
 
 When a query starts to crawl, it's easy to blame the server or just label it as "bad code." But that's a surface-level diagnosis. Slow queries are more than just a minor annoyance; they can bring an entire application to its knees and send user frustration through the roof.
 
@@ -21,7 +21,7 @@ Before you even think about rewriting code or throwing more hardware at the prob
 
 ## Why Your SQL Queries Are So Slow
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/8a78d79f-d117-4ee9-b65b-40959e30f53e.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/sql-query-performance-tuning/8a78d79f-d117-4ee9-b65b-40959e30f53e.jpg)
 
 When an application's performance tanks, all fingers tend to point at the database. While server capacity and network speed certainly have a part to play, the problem can usually be traced back to the SQL queries themselves. This is actually good news - it means the power to fix it is in your hands, not just the infrastructure team's.
 
@@ -78,7 +78,7 @@ What you *want* to see is an **Index Seek**. This is the gold standard. It tells
 
 This visual shows exactly how an Index Seek works, navigating the index structure to pinpoint the data.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/48efe2fb-dbee-4f07-8aa2-1f1293689d93.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/sql-query-performance-tuning/48efe2fb-dbee-4f07-8aa2-1f1293689d93.jpg)
 
 As you can see, it's a direct, targeted path - no wasted effort scanning data you don't need.
 
@@ -94,7 +94,7 @@ You don't need to memorize every single operator to be effective. It's about rec
 
 ## 2. Mastering Indexes for Faster Queries
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/bca8cd72-46d9-4acd-bd16-27b043bd359d.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/sql-query-performance-tuning/bca8cd72-46d9-4acd-bd16-27b043bd359d.jpg)
 
 If there's one thing you can do to radically improve query speed, it's proper indexing. It's the most impactful tool in the **SQL query performance tuning** playbook. While an execution plan is great for diagnostics - telling you *what's* wrong - indexes are usually *how* you fix it.
 

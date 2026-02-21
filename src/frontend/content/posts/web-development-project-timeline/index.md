@@ -13,7 +13,7 @@ tags:
   - project-scope
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-3209ec9c-8ab7-48d5-bdc7-14d2ed611bca.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/web-development-project-timeline/featured-image-3209ec9c-8ab7-48d5-bdc7-14d2ed611bca.jpg)
 
 How long does it take to build a website? That's the million-dollar question, isn't it? The honest answer is: it depends. A simple, clean brochure-style website might take just **1-4 weeks**, while a sprawling, custom web application could easily stretch beyond **6 months**.
 
@@ -37,7 +37,7 @@ For the big stuff - think custom portals, SaaS platforms, or enterprise-level ap
 
 This image gives a great high-level view of the core phases for a standard small business website, providing a solid baseline.
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/36cde574-8360-4d92-9436-09fc2e2a2eab.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/web-development-project-timeline/36cde574-8360-4d92-9436-09fc2e2a2eab.jpg)
 
 As you can see, the actual coding and development phase takes the biggest slice of the pie. This is exactly why a rock-solid plan is so crucial *before* a single line of code gets written.
 
@@ -58,7 +58,7 @@ This table provides a general guide, but remember that every project is differen
 
 ## Building a Rock-Solid Discovery and Planning Phase
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/584e1ad1-4ba8-4670-9fa3-98267dce7028.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/web-development-project-timeline/584e1ad1-4ba8-4670-9fa3-98267dce7028.jpg)
 
 Let's be honest, this is where projects either succeed or slowly begin to fail. A great discovery and planning phase isn't about ticking boxes on a checklist; it's about getting to the absolute core of *why* the project even exists. I've seen it time and time again: rushing this stage is the single biggest cause of scope creep, blown deadlines, and painful, expensive fixes down the road.
 
@@ -88,7 +88,7 @@ For that MVP startup I mentioned, the scope might state, "User registration via 
 
 ## Weaving Design and Content Together
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/907edf63-723e-4e22-b339-7bb70896788f.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/web-development-project-timeline/907edf63-723e-4e22-b339-7bb70896788f.jpg)
 
 Here's a truth every seasoned project manager knows: brilliant design and sharp content are the heart and soul of a great website. But far too often, they're treated like a relay race instead of a dance. This disconnect is almost always the biggest bottleneck in a **web development project timeline**.
 
@@ -115,7 +115,7 @@ The pressure for faster turnarounds isn't going away. By 2025, launching a profe
 
 ## Executing the Core Development Sprints
 
-![Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/9f112f6c-f561-42dd-8116-6d53d70fcb67.jpg)
+![Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/web-development-project-timeline/9f112f6c-f561-42dd-8116-6d53d70fcb67.jpg)
 
 This is the engine room of your **web development project timeline**. All the planning, research, and design work culminates here, where code finally turns concepts into a tangible product. We've moved past the era of developers disappearing for months on end. Today, development is all about a nimble, iterative approach using **sprints**.
 

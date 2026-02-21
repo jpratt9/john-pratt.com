@@ -13,7 +13,7 @@ tags:
   - cloud-infrastructure-audit
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/5bc291f3-237e-4337-9bd9-f1f672b7ea75/technical-due-diligence-checklist-evaluation-points.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/technical-due-diligence-checklist/technical-due-diligence-checklist-evaluation-points.jpg)
 
 In any high-stakes acquisition, merger, or investment, the financials tell only half the story. The other half lies buried in source code, cloud configurations, and development processes. A superficial glance at the technology stack is no longer sufficient; a deep, methodical technical evaluation is the difference between a strategic masterstroke and a costly misstep. Overlooking critical tech-related issues can lead to unforeseen integration costs, security breaches, scalability roadblocks, and a significant devaluation of your investment.
 
@@ -27,7 +27,7 @@ At the core of any software-centric business is its codebase and system architec
 
 This process examines whether the code adheres to established best practices, such as the SOLID principles popularized by Robert C. Martin ("Uncle Bob"). For a diverse tech stack, this could involve reviewing Python, Java, Node.js, React, and GoLang implementations to ensure each component contributes to a cohesive, scalable, and manageable system.
 
-![Diagram illustrating a clean code architecture with Python, Node.js, React, Java, and their dependencies.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/e3e3321e-0489-4ed0-b2e4-8d07f2865be9/technical-due-diligence-checklist-architecture-diagram.jpg)
+![Diagram illustrating a clean code architecture with Python, Node.js, React, Java, and their dependencies.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/technical-due-diligence-checklist/technical-due-diligence-checklist-architecture-diagram.jpg)
 
 ### Why It's a Critical Due Diligence Step
 
@@ -105,7 +105,7 @@ In an interconnected digital ecosystem, APIs (Application Programming Interfaces
 
 This process involves scrutinizing everything from endpoint naming conventions to complex integration patterns with external AI/ML services like OpenAI or Claude. For a modern tech stack, this means assessing how a front-end React application efficiently consumes data via a GraphQL schema or how a backend service securely authenticates with partners using OAuth 2.0.
 
-![Diagram illustrating an API design flow where a server connects to an API Gateway via REST, which then interfaces with GraphQL services.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/dd7e4e44-04f1-49f7-afad-571253f70711/technical-due-diligence-checklist-api-design.jpg)
+![Diagram illustrating an API design flow where a server connects to an API Gateway via REST, which then interfaces with GraphQL services.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/technical-due-diligence-checklist/technical-due-diligence-checklist-api-design.jpg)
 
 ### Why It's a Critical Due Diligence Step
 
@@ -126,7 +126,7 @@ A visually appealing application with robust features is useless if it crumbles 
 
 The process involves benchmarking key metrics such as server response times (p95/p99 latency), throughput capacity, memory usage, and CPU utilization to identify performance bottlenecks. For companies in high-traffic sectors like finance or telecom, this step is non-negotiable, as performance directly impacts revenue and customer trust. A successful evaluation might involve using tools like **Apache JMeter** to simulate thousands of concurrent users or **New Relic** to monitor production performance.
 
-![A gauge indicates high latency (p95/p99) on servers, affecting users and performance.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/85ebfe79-58d8-42a6-b6aa-5a14b514edfc/technical-due-diligence-checklist-system-latency.jpg)
+![A gauge indicates high latency (p95/p99) on servers, affecting users and performance.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/technical-due-diligence-checklist/technical-due-diligence-checklist-system-latency.jpg)
 
 ### Why It's a Critical Due Diligence Step
 

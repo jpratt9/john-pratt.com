@@ -13,7 +13,7 @@ tags:
   - Multi-Cloud
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/024a73ee-e57b-49b7-8a79-914b03ebd3bf/what-is-terraform-used-for-infrastructure.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-terraform-used-for/what-is-terraform-used-for-infrastructure.jpg)
 
 Let's get right to it. Terraform is a tool for building, changing, and versioning your infrastructure safely and efficiently. Instead of manually clicking through a cloud provider's console, you **write simple, human-readable code to define your resources**. Terraform then takes that code and builds your environment for you - identically, every single time.
 
@@ -63,7 +63,7 @@ When you change that code, Terraform doesn't just blindly start over. It first c
 
 This diagram shows that simple, powerful flow from code to managed infrastructure.
 
-![Diagram showing Terraform defining infrastructure from code, then provisioning and managing the infrastructure.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/368ed947-58cb-4f9a-a56a-29510756d912/what-is-terraform-used-for-terraform-iac.jpg)
+![Diagram showing Terraform defining infrastructure from code, then provisioning and managing the infrastructure.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-terraform-used-for/what-is-terraform-used-for-terraform-iac.jpg)
 
 It's a great visual of how your declarative code gets translated by Terraform into actual cloud resources, which is the whole point of Infrastructure as Code.
 
@@ -96,7 +96,7 @@ This is where its power to automate, standardize, and scale infrastructure manag
 
 The image below paints a perfect picture of Terraform's role. It's the central conductor, using a single script to orchestrate a whole symphony of different cloud services and on-prem hardware.
 
-![Terraform orchestrating diverse cloud resources, depicted as a central platform linked to multiple icons.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/0d17acfe-2ac6-4b64-bd0e-c82e94264c3d/what-is-terraform-used-for-terraform-infrastructure.jpg)
+![Terraform orchestrating diverse cloud resources, depicted as a central platform linked to multiple icons.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-terraform-used-for/what-is-terraform-used-for-terraform-infrastructure.jpg)
 
 That's the core of its value proposition: one place, one language, to manage an incredibly complex and sprawling digital environment.
 
@@ -144,7 +144,7 @@ Theory is great, but the real "aha!" moment comes when you see how a tool solves
 
 Each of these sectors faces its own unique pressures, but they all lean on Terraform to build systems that are faster, more secure, and far more reliable.
 
-![Diagram showing Terraform connecting to Financial Services, Telecommunications, Aerospace, and Fleet Management.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/77513d17-0e55-46a6-8c3a-4a33ddb07235/what-is-terraform-used-for-terraform-uses.jpg)
+![Diagram showing Terraform connecting to Financial Services, Telecommunications, Aerospace, and Fleet Management.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-terraform-used-for/what-is-terraform-used-for-terraform-uses.jpg)
 
 This ability to apply a single, consistent workflow to manage such different and complex environments is exactly what makes Terraform so powerful.
 

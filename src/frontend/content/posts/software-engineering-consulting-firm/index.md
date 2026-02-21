@@ -13,7 +13,7 @@ tags:
   - data-engineering
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/ceec1d97-fc95-40b0-8dbf-2169ec64480f/software-engineering-consulting-firm-cloud-presentation.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/software-engineering-consulting-firm/software-engineering-consulting-firm-cloud-presentation.jpg)
 
 A software engineering consulting firm brings in high-level, specialized expertise to solve complex technical problems your in-house team can't tackle alone. Think of them less as temporary coders and more as strategic technical architects for your most critical projects, offering **on-demand access to elite talent** without the long-term overhead.
 
@@ -31,7 +31,7 @@ They're brought in to build something new, fix something deeply broken, or intro
 
 This decision framework can help you figure out which kind of partner you actually need.
 
-![Flowchart illustrating a tech partner decision framework, guiding choices for strategic needs and outsourcing.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/ad8e509d-788c-4bfd-afc7-7ee2161c47c9/software-engineering-consulting-firm-tech-partnership.jpg)
+![Flowchart illustrating a tech partner decision framework, guiding choices for strategic needs and outsourcing.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/software-engineering-consulting-firm/software-engineering-consulting-firm-tech-partnership.jpg)
 
 As the visual shows, the choice really comes down to whether your primary goal is strategic, tactical, or operational.
 
@@ -58,7 +58,7 @@ This focus on empowerment is key. A quality engagement should transfer knowledge
 
 ## A Look at the Core Engineering Services
 
-![Four pillars representing technology domains: Software Engineering, Cloud & DevOps, Data Engineering, and Automation.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/964297a0-f20d-427e-a7e1-543135ef001b/software-engineering-consulting-firm-tech-pillars.jpg)
+![Four pillars representing technology domains: Software Engineering, Cloud & DevOps, Data Engineering, and Automation.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/software-engineering-consulting-firm/software-engineering-consulting-firm-tech-pillars.jpg)
 
 A great software engineering consulting firm doesn't just sell you hours of coding; they deliver targeted solutions to real-world business headaches. Their work usually falls into four main areas, each tackling a critical piece of the modern technology puzzle.
 
@@ -142,7 +142,7 @@ In the end, a good **software engineering consulting firm** will be open about a
 
 ## How to Evaluate and Select the Right Firm
 
-![Hands holding a clipboard with a checklist of consulting firm evaluation criteria, mostly checked.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/04094e6b-f673-4c2e-8941-471194ebb455/software-engineering-consulting-firm-evaluation-checklist.jpg)
+![Hands holding a clipboard with a checklist of consulting firm evaluation criteria, mostly checked.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/software-engineering-consulting-firm/software-engineering-consulting-firm-evaluation-checklist.jpg)
 
 Hiring a software engineering consulting firm is a high-stakes decision. This isn't just about outsourcing a task; it's about bringing in a partner who can genuinely accelerate your business. The right one acts as a force multiplier. The wrong one can set you back with costly delays and strategic dead ends.
 
@@ -189,7 +189,7 @@ It's one thing to talk about technical architecture and project plans, but the r
 
 Let's look at a couple of real-world scenarios that show how an expert consultant can step in and solve critical business problems. These stories bring to life the kind of return on investment you get from the right engineering partner.
 
-![An illustration comparing monolithic architecture (high cost, single server) with microservices (lower cost, scalable, multiple servers).](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/6c875b30-7781-4423-a30d-0745660411ab/software-engineering-consulting-firm-monolith-microservices.jpg)
+![An illustration comparing monolithic architecture (high cost, single server) with microservices (lower cost, scalable, multiple servers).](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/software-engineering-consulting-firm/software-engineering-consulting-firm-monolith-microservices.jpg)
 
 ### Case Highlight: From Monolith to Microservices
 

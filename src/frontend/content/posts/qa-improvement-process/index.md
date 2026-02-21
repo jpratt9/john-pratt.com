@@ -13,7 +13,7 @@ tags:
   - software-testing
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/02652f89-a3c9-48cb-8de2-8776863b92a5/qa-improvement-process-software-qa.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/qa-improvement-process/qa-improvement-process-software-qa.jpg)
 
 A solid **QA improvement process** isn't just about finding more bugs. It's a fundamental shift in how you approach quality, weaving it into the fabric of your development cycle. The goal is to move from a reactive "bug hunt" to a proactive mindset focused on *preventing defects* from the get-go.
 
@@ -65,7 +65,7 @@ For instance, a process map might reveal that a single bug report bounces betwee
 
 The whole point is to move from a vague "I think this is how it works" to a concrete, shared understanding of your starting line.
 
-![Diagram illustrating the QA Groundwork Process with three sequential steps: Assess, Map, and Goal-Set.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/35c929dc-7a52-4c03-9fc4-d68ab2975773/qa-improvement-process-process-steps.jpg)
+![Diagram illustrating the QA Groundwork Process with three sequential steps: Assess, Map, and Goal-Set.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/qa-improvement-process/qa-improvement-process-process-steps.jpg)
 
 As you can see, a solid audit is non-negotiable. You can't set meaningful goals without first knowing exactly where you stand and what the terrain looks like.
 
@@ -107,7 +107,7 @@ Alright, you've done the hard work of auditing your QA process and you know exac
 
 The whole point is to get your talented engineers off the hamster wheel of repetitive, mind-numbing tasks. Let the machines handle that stuff. This frees up your team to focus on what people are uniquely good at - critical thinking, creative problem-solving, and deep exploratory testing. This is the cornerstone of any modern **qa improvement process**.
 
-![AI-driven QA process flowchart showing API, performance, and security tests creating test data.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/4717523c-fa78-41a8-8b21-b0d31bdfd89f/qa-improvement-process-ai-testing.jpg)
+![AI-driven QA process flowchart showing API, performance, and security tests creating test data.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/qa-improvement-process/qa-improvement-process-ai-testing.jpg)
 
 ### Prioritizing Automation for Maximum ROI
 
@@ -197,7 +197,7 @@ This evolution requires a deliberate effort to upskill your team. You have to in
 
 So, how do you actually know if all this effort to improve your QA process is paying off? Without solid metrics, you're just guessing. To show real business value, you have to look past vanity numbers like "number of tests run" and zero in on KPIs that tell the real story of quality and efficiency.
 
-![Dashboard showing Quality Metrics KPIs: Defect Escape Rate, MTTR, Change Failure Rate, and process flow.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/68d80dd7-e466-4e53-8602-9a0861564ed0/qa-improvement-process-quality-metrics.jpg)
+![Dashboard showing Quality Metrics KPIs: Defect Escape Rate, MTTR, Change Failure Rate, and process flow.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/qa-improvement-process/qa-improvement-process-quality-metrics.jpg)
 
 This isn't about creating reports that get filed away and forgotten. The data you gather is what fuels powerful feedback loops and helps build a culture where quality is everyone's job, not just the QA team's.
 

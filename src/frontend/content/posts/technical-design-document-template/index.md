@@ -13,7 +13,7 @@ tags:
   - DevOps
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/7ada55fa-5eab-4e5d-8f35-855cde1bbd34/technical-design-document-template-design-document.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/technical-design-document-template/technical-design-document-template-design-document.jpg)
 
 A technical design document template is essentially a pre-built framework that guides engineers through the process of mapping out a system's architecture, requirements, and how it will all be put together. Think of it as a standardized checklist to ensure everyone on the technical team is on the same page before any development work kicks off. This guide provides a *battle-tested, downloadable template* that we've refined for today's engineering environments.
 
@@ -25,7 +25,7 @@ Using a consistent **technical design document template** creates a single, reli
 
 This diagram shows you the basic structure of our template, breaking it down into its three core pillars.
 
-![A diagram illustrating the TDD (Test-Driven Development) structure, outlining its template's components: architecture, requirements, and risk.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/34fc6ea3-1ea2-4cd1-a2a5-a91629b54ca2/technical-design-document-template-tdd-structure.jpg)
+![A diagram illustrating the TDD (Test-Driven Development) structure, outlining its template's components: architecture, requirements, and risk.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/technical-design-document-template/technical-design-document-template-tdd-structure.jpg)
 
 As you can see, the structure helps organize a ton of complex information. It starts with the big picture - the high-level architecture - and then lets you drill down into the nitty-gritty of specific requirements and how you'll handle risks. It's a systematic way to make sure nothing important gets missed.
 
@@ -107,7 +107,7 @@ The whole point is to show, not just tell. Walking through these examples, you'l
 
 Here's a look at how a technical design document might be laid out in a tool like Miro, with clear sections for the architecture diagram and the nitty-gritty details.
 
-![Two pages of an open technical design document showing its key sections and architecture diagram.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/6ab503be-94ed-4aa9-a47e-9f5596257c5b/technical-design-document-template-document-structure.jpg)
+![Two pages of an open technical design document showing its key sections and architecture diagram.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/technical-design-document-template/technical-design-document-template-document-structure.jpg)
 
 This kind of visual approach really helps. It combines diagrams and text to give stakeholders the complete picture, making it much easier for everyone to understand what's being proposed.
 
@@ -146,7 +146,7 @@ A **technical design document** without clear visuals is just a wall of text. Di
 
 Let's be clear: diagrams aren't just there to break up the text. They offer a high-level perspective that words alone struggle to convey. Think about it - studies show that people retain information far better when it's presented visually. For a technical document, that translates directly into fewer misunderstandings and a smoother path from design to deployment.
 
-![Visual comparison of Cloud/DevOps architecture with CI/CD pipelines and Data Engineering ETL workflows.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/4e5cebc6-5698-442b-9566-256a7814be9b/technical-design-document-template-engineering-workflows.jpg)
+![Visual comparison of Cloud/DevOps architecture with CI/CD pipelines and Data Engineering ETL workflows.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/technical-design-document-template/technical-design-document-template-engineering-workflows.jpg)
 
 ### Essential Diagram Types for Your TDD
 
@@ -184,7 +184,7 @@ If you skip over these non-functional requirements, you're opening the door to s
 
 By putting these elements in writing, you create a single source of truth that shows you've done your due diligence. This is absolutely critical for any project that touches sensitive data or operates in regulated industries like finance and healthcare. A well-documented plan ensures your system is not just functional - it's defensible.
 
-![Illustrates common technical diagrams, including Context, DFD, and Sequence, created with tools like Mermaid and Miro.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/f8eb97ec-03d6-4182-865f-5892d06aa1e5/technical-design-document-template-diagrams.jpg)
+![Illustrates common technical diagrams, including Context, DFD, and Sequence, created with tools like Mermaid and Miro.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/technical-design-document-template/technical-design-document-template-diagrams.jpg)
 
 ### 5.1 Defining Security and Compliance Guardrails
 

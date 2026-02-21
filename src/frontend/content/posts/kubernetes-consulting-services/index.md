@@ -13,7 +13,7 @@ tags:
   - cluster-management
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/23349b8a-c216-4326-87a3-e9b93c3bd685/kubernetes-consulting-services-kubernetes-management.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/kubernetes-consulting-services/kubernetes-consulting-services-kubernetes-management.jpg)
 
 Kubernetes consulting services are all about bringing in specialized expertise to help you design, build, and manage high-performance applications in the cloud. Think of it like hiring a team of race engineers for a Formula 1 car - they ensure every single component is perfectly tuned for reliability, speed, and efficiency.
 
@@ -21,7 +21,7 @@ Their job is to prevent those costly, unexpected failures on race day. For any b
 
 ## Why Your Business Needs a Kubernetes Strategy Partner
 
-![Professionals manage a cloud-based engine, symbolizing optimized performance, scalability, and resilience for IT systems.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/19463ddd-cc9d-4663-8071-230b5d99e26a/kubernetes-consulting-services-cloud-operations.jpg)
+![Professionals manage a cloud-based engine, symbolizing optimized performance, scalability, and resilience for IT systems.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/kubernetes-consulting-services/kubernetes-consulting-services-cloud-operations.jpg)
 
 Adopting Kubernetes isn't just a simple technology upgrade. It's a fundamental shift in how you build and run your software. While the platform offers incredible power, its complexity can easily lead to misconfigurations, security holes, and budgets that spiral out of control. This is exactly where a strategic partner becomes so valuable.
 
@@ -57,7 +57,7 @@ At the end of the day, a consulting partner helps you move faster and with far m
 
 ## What Do Kubernetes Consultants Actually Do?
 
-![Illustrates key technical consulting services: cluster design, CI/CD, security, cost optimization, and automation, presented as best practices in a manual.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/ed6fe7a6-d6c5-48a9-b757-db2ba4b55c07/kubernetes-consulting-services-technical-services.jpg)
+![Illustrates key technical consulting services: cluster design, CI/CD, security, cost optimization, and automation, presented as best practices in a manual.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/kubernetes-consulting-services/kubernetes-consulting-services-technical-services.jpg)
 
 When you bring in a Kubernetes consultant, you're not just getting a temporary developer. You're getting a seasoned guide for every step of your cloud-native journey. These **kubernetes consulting services** aren't about quick fixes; they're about building a rock-solid, efficient, and secure platform that actually helps your business grow.
 
@@ -204,7 +204,7 @@ Now it's time to bring the plan to life. The consultants roll up their sleeves a
 
 Whether it's setting up CI/CD pipelines with a tool like [GitLab](https://about.gitlab.com/), hardening cluster security, or migrating the first batch of applications, the focus is all on executing the roadmap with precision.
 
-![Diagram illustrating the Kubernetes partner vetting process with steps: Expertise, Case Studies, and Security.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/e908ba9e-4f4f-4291-a335-ef981ed5171d/kubernetes-consulting-services-vetting-process.jpg)
+![Diagram illustrating the Kubernetes partner vetting process with steps: Expertise, Case Studies, and Security.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/kubernetes-consulting-services/kubernetes-consulting-services-vetting-process.jpg)
 
 This process highlights why choosing the right partner is so critical for this phase. A successful implementation depends on a team whose expertise, track record, and security focus have been thoroughly checked out.
 

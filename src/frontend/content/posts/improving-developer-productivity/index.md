@@ -12,7 +12,7 @@ tags:
   - team-productivity
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-bff2e267-8859-457e-baad-bfd08a73a684.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/improving-developer-productivity/featured-image-bff2e267-8859-457e-baad-bfd08a73a684.jpg)
 
 When we talk about improving developer productivity, we need to ditch the old-school obsession with individual output. Metrics like "lines of code" are a relic. The real goal is to build a low-friction environment where engineers can tackle tough problems without needless roadblocks.
 
@@ -63,7 +63,7 @@ Making these adjustments turns reviews into a rapid, constructive feedback loop 
 
 This infographic really drives home the relationship between different facets of modern productivity.
 
-![Infographic about improving developer productivity](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/7e6a986d-125a-4d68-b4de-a4c47f871559.jpg)
+![Infographic about improving developer productivity](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/improving-developer-productivity/7e6a986d-125a-4d68-b4de-a4c47f871559.jpg)
 
 As you can see, things like quality, well-being, and speed aren't competing priorities - they're all interconnected.
 
@@ -104,7 +104,7 @@ This kind of structured approach creates consistency and makes it glaringly obvi
 
 ## Weaving AI Tools Into Your Development Workflow
 
-![AI development tools being used on a laptop](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/26eb209e-8bd4-47fb-86a0-4585f07341f6.jpg)
+![AI development tools being used on a laptop](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/improving-developer-productivity/26eb209e-8bd4-47fb-86a0-4585f07341f6.jpg)
 
 It seems like every day there's a new AI tool promising to supercharge developer productivity. But once you get past the slick marketing, the reality on the ground is a bit more complicated. These tools can be incredible time-savers, but they're not a silver bullet. The real trick is knowing *how* and *when* to use them.
 
@@ -169,7 +169,7 @@ In the same vein, a powerful debugger is your best friend when things go wrong. 
 
 ## Building a Culture of High-Impact Collaboration
 
-![A diverse team of software developers collaborating around a table with laptops and whiteboards.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/3389089f-12e3-4ee8-af3b-d781082072f0.jpg)
+![A diverse team of software developers collaborating around a table with laptops and whiteboards.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/improving-developer-productivity/3389089f-12e3-4ee8-af3b-d781082072f0.jpg)
 
 You can have a team of rockstar developers, but if they don't work well together, you'll never hit your stride. Real, lasting productivity isn't about individual heroics; it's a team sport. It grows out of a culture where communication is open, ownership is shared, and people feel safe to be human.
 

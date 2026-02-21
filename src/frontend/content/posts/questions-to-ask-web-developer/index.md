@@ -13,7 +13,7 @@ tags:
   - web-development
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/9a70f32b-a6b2-4da8-b954-3e010ca87b8f/questions-to-ask-web-developer-software-development.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/questions-to-ask-web-developer/questions-to-ask-web-developer-software-development.jpg)
 
 Hiring a web developer in today's complex technology landscape requires more than just reviewing a resume or a GitHub profile. To build scalable, secure, and high-performance applications, you need to dig deeper into a candidate's practical experience with modern cloud infrastructure, automation, and data engineering principles. The right **questions to ask a web developer** don't just reveal technical proficiency; they uncover their problem-solving approach, adaptability, and strategic alignment with your long-term business goals.
 
@@ -25,7 +25,7 @@ Each question is structured to give you a complete toolkit for your interview pr
 
 One of the most crucial questions to ask a web developer today goes beyond their coding ability and into their operational expertise. Asking a candidate to detail their experience with cloud platforms and DevOps practices directly assesses their ability to build, deploy, and maintain modern, scalable applications. This isn't just about knowing cloud service names; it's about understanding how to leverage the cloud to create efficient, automated, and resilient systems.
 
-![Cloud-based CI/CD pipeline deploying applications to servers, illustrating automated software delivery.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/0f166198-0d0a-4f4a-96f8-0afe3c43e118/questions-to-ask-web-developer-ci-cd-pipeline.jpg)
+![Cloud-based CI/CD pipeline deploying applications to servers, illustrating automated software delivery.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/questions-to-ask-web-developer/questions-to-ask-web-developer-ci-cd-pipeline.jpg)
 
 In an era where infrastructure is code, a developer's value multiplies when they can manage the entire application lifecycle. This question helps you evaluate their hands-on skills in areas critical to business success, such as cost optimization, security, and rapid feature deployment.
 
@@ -52,7 +52,7 @@ A strong answer will move beyond buzzwords and provide concrete examples. Look f
 
 This question probes a developer's ability to create the dynamic, interactive user interfaces that modern web applications demand. Proficiency in frameworks like React, Vue.js, or Angular is fundamental for building responsive, performant, and maintainable frontends. It's about more than just knowing syntax; it's about understanding component-based architecture, state management, and the ecosystem of tools that support these powerful technologies.
 
-![Illustration of responsive web design across desktop and mobile with a page speed gauge.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/3ee84144-e4e2-4fd3-b3c8-91c6b44e4ecc/questions-to-ask-web-developer-page-speed.jpg)
+![Illustration of responsive web design across desktop and mobile with a page speed gauge.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/questions-to-ask-web-developer/questions-to-ask-web-developer-page-speed.jpg)
 
 In a world where user experience is a key differentiator, a developer's frontend skills directly influence engagement, conversion, and customer satisfaction. This question helps you gauge their capacity to translate complex requirements into elegant, functional user interfaces that perform well across all devices.
 
@@ -79,7 +79,7 @@ A strong candidate will provide specific examples of applications they've built 
 
 A web application is only as good as the data layer that supports it. This question digs into a developer's understanding of how to structure, manage, and query data efficiently. It evaluates their grasp of foundational concepts like database normalization, indexing, and performance tuning, which are critical for building applications that are both scalable and maintainable.
 
-![A diagram illustrating database components like Oerm, Query Dress, Dtease, Schema, and SQL, with a magnifying glass focused on an index, suggesting optimization.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/0a7fe7ba-9151-45cb-bd33-b6b17205d4ba/questions-to-ask-web-developer-database-indexing.jpg)
+![A diagram illustrating database components like Oerm, Query Dress, Dtease, Schema, and SQL, with a magnifying glass focused on an index, suggesting optimization.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/questions-to-ask-web-developer/questions-to-ask-web-developer-database-indexing.jpg)
 
 The ability to design a logical schema and write optimized queries prevents future bottlenecks, ensures data integrity, and directly impacts application speed. It's the difference between an application that performs smoothly under load and one that grinds to a halt as user numbers grow.
 
@@ -208,7 +208,7 @@ A strong candidate will describe a multi-layered testing strategy, not just a si
 
 This question digs into a developer's modern application packaging and deployment skills. Asking about their experience with containerization (like Docker) and orchestration (like Kubernetes) is a direct way to gauge their ability to build portable, scalable, and resilient microservices architectures. It moves beyond traditional server management to a more dynamic, automated, and cloud-native approach.
 
-![Illustration of shipping containers, a clock, and network nodes, depicting logistics and data management.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/b5d6187a-fd93-4878-a54b-68f62e31ef7c/questions-to-ask-web-developer-logistics.jpg)
+![Illustration of shipping containers, a clock, and network nodes, depicting logistics and data management.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/questions-to-ask-web-developer/questions-to-ask-web-developer-logistics.jpg)
 
 Containerization ensures that an application works uniformly across different environments, from a developer's laptop to a production cloud server. Kubernetes takes this a step further by automating the deployment, scaling, and management of these containerized applications. This skill set is fundamental for companies that rely on microservices and cloud infrastructure.
 

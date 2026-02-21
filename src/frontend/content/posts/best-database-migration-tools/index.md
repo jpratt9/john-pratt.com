@@ -75,7 +75,7 @@ A key advantage is the seamless user experience within familiar environments. Th
 
 Oracle GoldenGate is an enterprise-grade solution renowned for its real-time, low-latency data replication capabilities, making it a top choice for zero-downtime migrations. It provides a robust framework for moving data between Oracle and a wide range of heterogeneous databases, both on-premises and in the cloud. As a mature product with deep roots in the Oracle ecosystem, it has evolved into a comprehensive platform that includes OCI GoldenGate, a fully managed service within Oracle Cloud Infrastructure.
 
-![Oracle GoldenGate (including OCI GoldenGate)](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/screenshots/87931c4e-3ed0-4abc-91ac-a8c79730a3db/best-database-migration-tools-goldengate.jpg)
+![Oracle GoldenGate (including OCI GoldenGate)](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/best-database-migration-tools/best-database-migration-tools-goldengate.jpg)
 
 The platform's core strength lies in its log-based Change Data Capture (CDC) mechanism, which ensures high performance and minimal impact on source systems. This technology enables complex, bidirectional replication scenarios that are critical for phased migrations, high availability, and disaster recovery setups. With its broad array of connectors to targets like Kafka and Snowflake, GoldenGate extends its utility beyond simple migration, positioning itself as a central component in modern data integration architectures. Its proven scalability makes it one of the best database migration tools for large enterprises with mission-critical systems.
 
@@ -107,7 +107,7 @@ The platform is widely adopted in large organizations due to its user-friendly, 
 
 Quest SharePlex is a specialized, near-zero-downtime replication and migration tool primarily focused on Oracle and PostgreSQL environments. It stands out for its enterprise-grade capabilities in handling complex, high-availability scenarios. The platform's strength lies in minimizing risk and disruption during critical operations like database migrations, version upgrades, and implementing disaster recovery (DR) solutions. Its ability to support active-active configurations with built-in conflict resolution makes it a powerful choice for organizations that cannot afford any downtime.
 
-![Quest SharePlex](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/screenshots/a29faaf6-5a89-4d61-8c72-312d774dd23f/best-database-migration-tools-database-replication.jpg)
+![Quest SharePlex](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/best-database-migration-tools/best-database-migration-tools-database-replication.jpg)
 
 Unlike many cloud-native tools, SharePlex extends its replication capabilities to a variety of targets beyond traditional databases, including Kafka and Snowflake. This versatility allows it to serve as a bridge for feeding real-time data into modern analytics platforms or offloading reporting workloads from production systems. With features like data compare and synchronization, SharePlex ensures data integrity throughout the replication process. Its reputation for robust support and successful customer deployments makes it one of the best database migration tools for mission-critical Oracle and PostgreSQL workloads where reliability is paramount.
 

@@ -13,13 +13,13 @@ tags:
   - cloud-analytics
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/d37d2396-c785-4fc1-8099-b20dbb231d6a/what-is-a-data-cloud-cloud-architecture.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-a-data-cloud/what-is-a-data-cloud-cloud-architecture.jpg)
 
 A data cloud isn't just another place to store your data - it's a complete, unified platform that brings every bit of your business information into one secure and accessible spot. It's best to think of it less like a digital filing cabinet and more like a *central hub for your entire data ecosystem*. It doesn't just hold data; it lets different teams get their hands on it, analyze it, and even share it securely with partners, all without the old-school hassle of slow and risky file transfers.
 
 ## So, What Exactly Is a Data Cloud?
 
-![Diagram illustrating a secure data cloud, integrating storage, analytics, and user interactions.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/19c6241c-5e83-4719-a969-6558ac402c8d/what-is-a-data-cloud-data-cloud.jpg)
+![Diagram illustrating a secure data cloud, integrating storage, analytics, and user interactions.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-a-data-cloud/what-is-a-data-cloud-data-cloud.jpg)
 
 Let's cut through the buzzwords. At its heart, a data cloud solves a huge problem that almost every business struggles with: their data is scattered everywhere. It's locked away in different departmental silos, comes in all sorts of formats, and is a nightmare to pull together for any real analysis. Traditional data warehouses just can't keep up anymore; they buckle under the sheer volume and variety of data that modern AI and analytics demand.
 
@@ -125,7 +125,7 @@ So, where does the **data cloud** fit into all this?
 
 A data cloud takes the core idea of the lakehouse - unifying all your data types and workloads - and elevates it with a global, interconnected services layer. It's not just a filtration plant next to a reservoir; it's an entire worldwide logistics network built on top of it.
 
-![A diagram illustrating data cloud architecture with three layers: Services, Compute, and Storage, connected by downward arrows.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/b02c0cb4-52f7-4be0-b5aa-e8fb5b2f5107/what-is-a-data-cloud-cloud-architecture.jpg)
+![A diagram illustrating data cloud architecture with three layers: Services, Compute, and Storage, connected by downward arrows.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-a-data-cloud/what-is-a-data-cloud-cloud-architecture.jpg)
 
 The diagram above shows how the three distinct layers - services, compute, and storage - are decoupled. This is the secret sauce. It allows each layer to scale independently, delivering optimized performance and cost-efficiency for any kind of workload you throw at it.
 
@@ -150,7 +150,7 @@ As you can see, each platform represents an evolution in how we think about stor
 
 ## Unlocking Real-World Business Value
 
-![Diagram showing a data cloud connecting and serving various industries like finance, energy, telecom, and fleet management.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/31f2cb86-7771-4fde-9c18-0d27aaf99204/what-is-a-data-cloud-data-cloud.jpg)
+![Diagram showing a data cloud connecting and serving various industries like finance, energy, telecom, and fleet management.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-a-data-cloud/what-is-a-data-cloud-data-cloud.jpg)
 
 The technical specs are important, but what really matters is what a data cloud can *do* for your business. Its true value lies in delivering real results and giving you an edge over the competition. By creating a single, reliable source of truth, it finally puts an end to conflicting spreadsheet reports and gives your teams direct, governed access to the information they need to make better decisions.
 

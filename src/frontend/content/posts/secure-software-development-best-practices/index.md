@@ -13,7 +13,7 @@ tags:
   - software-security
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-bb7b6042-0e23-4f34-b0ad-d7e3a9f1f21d.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/secure-software-development-best-practices/featured-image-bb7b6042-0e23-4f34-b0ad-d7e3a9f1f21d.jpg)
 
 In an era of relentless cyber threats, building software is no longer just about features and functionality; it's about resilience. A single vulnerability can compromise sensitive data, erode hard-won customer trust, and lead to significant financial and reputational damage. This reality makes adopting a proactive, security-first mindset a non-negotiable part of the development lifecycle. Integrating **secure software development best practices** isn't a final-stage compliance check, it's the fundamental blueprint for creating applications that can withstand sophisticated, modern attacks.
 
@@ -25,7 +25,7 @@ This guide provides a comprehensive overview of the most critical practices that
 
 Establishing and enforcing secure coding standards is the foundational layer of any robust secure software development best practices program. These guidelines are a formalized set of rules and best practices that dictate how developers should write code to proactively prevent common security vulnerabilities. Instead of leaving security decisions to individual interpretation, these standards create a unified, defensible, and repeatable approach to building secure applications from the first line of code.
 
-![Secure Coding Standards and Guidelines](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/89053681-b7ac-4a57-b786-dabb1d043dc4.jpg)
+![Secure Coding Standards and Guidelines](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/secure-software-development-best-practices/89053681-b7ac-4a57-b786-dabb1d043dc4.jpg)
 
 This practice is crucial because it embeds security directly into the development workflow rather than treating it as an afterthought. By defining clear rules for tasks like input validation, error handling, authentication, and data protection, organizations significantly reduce the likelihood of introducing flaws such as SQL injection, Cross-Site Scripting (XSS), or insecure direct object references. Consistent standards also simplify code reviews and security audits, as everyone is working from the same playbook.
 
@@ -50,7 +50,7 @@ Effective implementation involves more than just publishing a document. It requi
 
 Threat modeling is a structured, systematic process for identifying potential security threats and vulnerabilities early in the software development lifecycle, specifically during the design phase. It involves analyzing the application's architecture, data flows, and trust boundaries to anticipate how an attacker might compromise the system. By proactively identifying these risks, teams can design and implement appropriate mitigations before a single line of insecure code is written.
 
-![Threat Modeling and Risk Assessment](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/9b2a015f-c0a8-4a0d-ab3e-c8e14e7face1.jpg)
+![Threat Modeling and Risk Assessment](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/secure-software-development-best-practices/9b2a015f-c0a8-4a0d-ab3e-c8e14e7face1.jpg)
 
 This practice is fundamental to secure software development best practices because it moves security from a reactive, post-breach activity to a proactive, "secure-by-design" discipline. Instead of hunting for bugs later, you are designing a system that is inherently more resilient to attack. This approach, famously championed by Microsoft, is used by major financial and healthcare institutions to secure critical systems by mapping out attack vectors and prioritizing defenses based on real-world risk.
 
@@ -76,7 +76,7 @@ Integrating threat modeling requires a collaborative effort that brings develope
 
 Static Application Security Testing (SAST) is an automated security testing method that analyzes source code, bytecode, or binary code to identify potential vulnerabilities before the program is ever run. Often described as a "white-box" testing approach, SAST tools scan the application from the inside out, examining its structure to find security flaws like SQL injection, buffer overflows, and insecure cryptographic usage. This proactive scanning happens early in the software development lifecycle, making it a cornerstone of modern secure software development best practices.
 
-![Static Application Security Testing (SAST)](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/ab2f7f49-8db7-49d2-8b5e-6b42f52d6d8f.jpg)
+![Static Application Security Testing (SAST)](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/secure-software-development-best-practices/ab2f7f49-8db7-49d2-8b5e-6b42f52d6d8f.jpg)
 
 The power of SAST lies in its ability to detect issues directly within the codebase, providing developers with precise file and line-number information for identified flaws. This immediate, actionable feedback allows vulnerabilities to be fixed during the coding phase, which is significantly more efficient and less costly than finding them in production. For example, major financial institutions like JPMorgan Chase use tools like Veracode SAST to secure their complex financial applications from the ground up.
 
@@ -101,7 +101,7 @@ Effective SAST implementation involves more than just running a scanner; it requ
 
 Dynamic Application Security Testing (DAST) is a black-box security testing approach that analyzes a running application for vulnerabilities by simulating external attacks. Unlike static analysis that reviews source code, DAST tools interact with the application through its web front-end or APIs, attempting to exploit flaws just as an attacker would. This method provides an essential, outside-in perspective on your application's security posture.
 
-![Dynamic Application Security Testing (DAST)](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/988452d0-a913-427c-8927-00f503317feb.jpg)
+![Dynamic Application Security Testing (DAST)](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/secure-software-development-best-practices/988452d0-a913-427c-8927-00f503317feb.jpg)
 
 This practice is crucial because it identifies runtime and environment-specific issues that are impossible to find by just looking at code. DAST excels at detecting vulnerabilities like authentication bypass, session management flaws, Cross-Site Scripting (XSS), and SQL injection by probing the live application. For example, Netflix uses tools like OWASP ZAP for continuous security testing, and e-commerce platforms deploy Burp Suite Enterprise to secure their running applications.
 

@@ -13,7 +13,7 @@ tags:
   - cloud-infrastructure
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-dd9f4af9-c701-4864-bfcd-3185a7ef1c5b.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-choose-cloud-provider/featured-image-dd9f4af9-c701-4864-bfcd-3185a7ef1c5b.jpg)
 
 Choosing the right cloud provider really boils down to three things: clearly **defining your business needs**, stacking up the major platforms like [AWS](https://aws.amazon.com/), [Azure](https://azure.microsoft.com/), and [Google Cloud](https://cloud.google.com/) against those needs, and then doing a hard **analysis of the total cost of ownership**. This isn't just a technical purchase; it's a strategic partnership that will dictate how you scale, secure your operations, and innovate for years.
 
@@ -31,7 +31,7 @@ Market share and growth trends can definitely sway a decision. In the second qua
 
 This chart gives you a quick visual of just how dominant the big three are.
 
-![A bar chart showing the worldwide market share of leading cloud infrastructure service providers, with AWS, Azure, and Google Cloud at the top.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/85f1ef73-1823-4a43-99cc-35dda4c1bb48.jpg)
+![A bar chart showing the worldwide market share of leading cloud infrastructure service providers, with AWS, Azure, and Google Cloud at the top.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-choose-cloud-provider/85f1ef73-1823-4a43-99cc-35dda4c1bb48.jpg)
 
 The data makes it obvious: AWS has a commanding lead, but Azure and GCP are serious contenders, each bringing unique strengths to the table that appeal to different kinds of businesses.
 
@@ -125,7 +125,7 @@ Each provider has its sweet spot. AWS is king of IaaS, Azure shines in Platform-
 
 This decision tree infographic can help you visualize how your own requirements might lead you to one provider over another.
 
-![Infographic about how to choose cloud provider](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/7139f6b7-29fd-4326-8d69-c3cd4d2c7b07.jpg)
+![Infographic about how to choose cloud provider](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-choose-cloud-provider/7139f6b7-29fd-4326-8d69-c3cd4d2c7b07.jpg)
 
 As the graphic shows, thinking about your workload, performance needs, and compliance requirements first can quickly point you in the right direction.
 
@@ -145,7 +145,7 @@ This table is just a starting point, of course. The real differences often emerg
 
 ## Analyzing Security, Compliance, and Governance
 
-![A digital illustration of a shield icon with a lock, representing cloud security and compliance.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/1e2e2057-a090-46bf-8a6b-c0e35ff97bdf.jpg)
+![A digital illustration of a shield icon with a lock, representing cloud security and compliance.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-choose-cloud-provider/1e2e2057-a090-46bf-8a6b-c0e35ff97bdf.jpg)
 
 When it comes to the cloud, security isn't just one party's job. It's a partnership, often called the **shared responsibility model**. The cloud provider handles the security *of* the cloud - the physical data centers, servers, and core network. Your responsibility is security *in* the cloud, meaning everything you build and store there, like your applications and customer data.
 
@@ -185,7 +185,7 @@ Don't forget to think about **data residency**. Regulations like Europe's GDPR h
 
 ## Understanding Cloud Pricing and Total Cost of Ownership
 
-![An image of a calculator and coins on a laptop keyboard, representing cloud cost calculation.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/adfe619c-f7d6-414c-a1db-0814ee5977c0.jpg)
+![An image of a calculator and coins on a laptop keyboard, representing cloud cost calculation.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-choose-cloud-provider/adfe619c-f7d6-414c-a1db-0814ee5977c0.jpg)
 
 Let's be honest: cloud pricing can be a minefield. It's the number one reason I see companies get slammed with completely unexpected bills. To make a smart choice, you have to look way beyond the advertised price per server and get a handle on the **Total Cost of Ownership (TCO)**. This means adding up every single dollar you'll spend, not just the obvious ones.
 

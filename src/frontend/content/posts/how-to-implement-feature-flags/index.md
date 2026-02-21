@@ -13,7 +13,7 @@ tags:
   - software-delivery
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/ea472ee1-565b-4e63-b57d-7b44087aa3ee/how-to-implement-feature-flags-workflow.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-implement-feature-flags/how-to-implement-feature-flags-workflow.jpg)
 
 At its core, implementing a feature flag is about wrapping new functionality in a bit of conditional logic. This logic is controlled by an external configuration, which lets you decide who sees what and when. The real magic here is that it **decouples code deployment from feature release**. You can ship new code to production, keep it dormant, and then turn it on for specific users whenever you're ready - all without another deployment.
 
@@ -25,7 +25,7 @@ Before we jump into the "how," it's worth taking a moment to understand *why* fe
 
 The key is separating the act of pushing code to production (deployment) from making a feature live for users (release).
 
-![Hand-drawn diagram showing a cloud and an arrow pointing to a feature flag for releases.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/c260ea7d-7679-4044-914b-2bac097f2f48/how-to-implement-feature-flags-feature-flag.jpg)
+![Hand-drawn diagram showing a cloud and an arrow pointing to a feature flag for releases.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-implement-feature-flags/how-to-implement-feature-flags-feature-flag.jpg)
 
 Think about it: you can merge incomplete or experimental code to your main branch multiple times a day. As long as it's wrapped in a feature flag, that code remains dormant and completely invisible to your users. This simple concept eliminates the headache of long-lived feature branches, which are notoriously painful to merge, paving the way for a true CI/CD workflow.
 
@@ -110,7 +110,7 @@ The magic happens through a Software Development Kit (SDK) from your chosen prov
 
 Think of the SDK as a local proxy for your feature flag service. It handles the network chatter and rule crunching behind the scenes, so your application code stays clean and performant.
 
-![A minimalist illustration of a developer's desk with a computer displaying code, connected to cloud services.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/1c833c14-3bc9-4468-aa25-540265950210/how-to-implement-feature-flags-programming-setup.jpg)
+![A minimalist illustration of a developer's desk with a computer displaying code, connected to cloud services.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-implement-feature-flags/how-to-implement-feature-flags-programming-setup.jpg)
 
 The first thing you'll do is initialize this SDK client, usually just once when your application fires up. This is a crucial handshake where your app uses an SDK key to securely connect to the service and pull down the initial set of flag configurations.
 
@@ -293,7 +293,7 @@ This simple change is a complete game-changer. Suddenly, you can build dashboard
 
 This workflow shows how feature flags fit into a continuous feedback loop of coding, automating, and monitoring.
 
-![A development workflow diagram illustrating the steps: Code, Automate, and Monitor, with corresponding icons.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/80757e81-2c98-4714-b222-5478210e40e9/how-to-implement-feature-flags-workflow.jpg)
+![A development workflow diagram illustrating the steps: Code, Automate, and Monitor, with corresponding icons.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-implement-feature-flags/how-to-implement-feature-flags-workflow.jpg)
 
 As you can see, monitoring isn't just the last step - it's what feeds back into your next set of decisions, driving smarter code and automation.
 

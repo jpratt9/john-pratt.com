@@ -13,7 +13,7 @@ tags:
   - microsegmentation
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/0296bee1-6de2-4d65-b03d-fb3a4fadaa04/how-to-implement-zero-trust-security-zero-trust.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-implement-zero-trust-security/how-to-implement-zero-trust-security-zero-trust.jpg)
 
 Making the switch to Zero Trust isn't just a technical change; it's a strategic one. It starts with identifying your most critical assets, figuring out how data gets to them, and then building smart policies around a simple rule: *never trust, always verify*. This whole process shifts your security focus from a rigid perimeter to a dynamic, data-centric model. Honestly, in today's world, it's a must-do, not just another buzzword.
 
@@ -71,7 +71,7 @@ Once you have this list, you can start to prioritize. Not all assets are created
 
 This initial process - identifying your assets, mapping how they're used, and then building your strategy - is the foundational loop for everything that follows in Zero Trust.
 
-![A flowchart illustrates three key steps for implementing Zero Trust security: Identify, Map, and Build.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/ee036aa9-582d-4da9-b3ed-582f127ee798/how-to-implement-zero-trust-security-process-diagram.jpg)
+![A flowchart illustrates three key steps for implementing Zero Trust security: Identify, Map, and Build.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-implement-zero-trust-security/how-to-implement-zero-trust-security-process-diagram.jpg)
 
 This simple flow is a constant reminder that you can't build effective policies or architecture until you've defined your protect surface and truly understand your data flows.
 
@@ -104,7 +104,7 @@ With your strategy locked in, it's time to get your hands dirty and build the ac
 
 This isn't just a niche trend; it's rapidly becoming the standard. By **2025**, a staggering **43% of organizations** have already adopted Zero Trust, and another **46%** are actively rolling it out. The market reflects this shift, valued at around **$38.37 billion USD in 2025** and projected to climb to **$86.57 billion USD by 2030**. This growth is fueled by the foundational technologies that make Zero Trust possible - Single Sign-On (SSO), Multi-Factor Authentication (MFA), and deep security monitoring.
 
-![Diagram illustrating a multi-factor security verification process involving identity, device posture, and microsegmentation.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/93cea669-e0ca-466b-87f7-15bf7a7de222/how-to-implement-zero-trust-security-security-verification.jpg)
+![Diagram illustrating a multi-factor security verification process involving identity, device posture, and microsegmentation.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-implement-zero-trust-security/how-to-implement-zero-trust-security-security-verification.jpg)
 
 ### Fortifying Identity as the New Perimeter
 
@@ -236,7 +236,7 @@ Here's a hard truth: implementing Zero Trust isn't a one-and-done project. It's 
 
 The goal is to pull in signals from every single piece of your architecture. We're talking way beyond just firewall logs. You need a rich, continuous stream of data from your identity provider, endpoint agents, network gear, and application workloads. This is the only way to get the ground-truth visibility needed to validate that "never trust, always verify" is actually happening.
 
-![A laptop displays an upward trend line graph with a magnifying glass zooming in on a data point, representing business analysis and growth.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/0f429a6f-8623-45f9-bc1b-bf7e2db05ef0/how-to-implement-zero-trust-security-data-analysis.jpg)
+![A laptop displays an upward trend line graph with a magnifying glass zooming in on a data point, representing business analysis and growth.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-implement-zero-trust-security/how-to-implement-zero-trust-security-data-analysis.jpg)
 
 ### Defining What to Measure
 

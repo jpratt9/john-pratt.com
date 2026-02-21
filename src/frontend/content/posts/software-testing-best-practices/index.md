@@ -13,7 +13,7 @@ tags:
   - devops
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-747ba18d-6fe1-46a4-9aff-94f51e36b4e7.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/software-testing-best-practices/featured-image-747ba18d-6fe1-46a4-9aff-94f51e36b4e7.jpg)
 
 In a competitive development environment, the line between a successful software launch and a costly failure is often drawn by the quality of its testing process. Simply running a series of checks before release is an outdated and risky model. True quality engineering is about integrating validation and verification into every stage of the software development lifecycle, creating a culture where quality is a shared responsibility, not just a final gate. This approach prevents defects, accelerates delivery, and ultimately builds more resilient, user-centric products.
 
@@ -37,7 +37,7 @@ The methodology follows a simple yet powerful cycle:
 2. **Green:** Write the absolute minimum amount of production code required to make that specific test pass (turning it "Green"). This step discourages over-engineering.
 3. **Refactor:** With the safety of a passing test, clean up and improve the production code and, if necessary, the test code itself, ensuring all tests continue to pass.
 
-![Test-Driven Development (TDD)](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/3d8647d0-a295-443b-bb01-206d67c6db5c.jpg)
+![Test-Driven Development (TDD)](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/software-testing-best-practices/3d8647d0-a295-443b-bb01-206d67c6db5c.jpg)
 
 ### Why TDD is a Foundational Practice
 
@@ -59,7 +59,7 @@ Continuous Integration (CI) is the practice of frequently merging all developers
 
 The core idea, popularized by thought leaders like Martin Fowler and Jez Humble, is to create a tight feedback loop. Instead of discovering integration issues or regressions days or weeks later, teams receive immediate feedback on the quality and stability of their code changes. This proactive approach prevents small issues from compounding into major problems, ensuring the codebase is always in a deployable state.
 
-![Continuous Integration and Continuous Testing](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/28f38d32-0782-48b1-90b7-468c862d9108.jpg)
+![Continuous Integration and Continuous Testing](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/software-testing-best-practices/28f38d32-0782-48b1-90b7-468c862d9108.jpg)
 
 ### Why CI/CT is a Foundational Practice
 
@@ -86,7 +86,7 @@ The methodology is grounded in a continuous cycle of risk management:
 
 The following diagram illustrates how these risks are typically categorized into priority levels, guiding the entire testing strategy.
 
-![A hierarchy diagram visualizing the priority levels in Risk-Based Testing](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/infographic-a4a4f73e-3e93-44fc-bc43-91d55d437c94.jpg)
+![A hierarchy diagram visualizing the priority levels in Risk-Based Testing](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/software-testing-best-practices/infographic-a4a4f73e-3e93-44fc-bc43-91d55d437c94.jpg)
 
 This hierarchical approach ensures that features combining both high impact and high probability of failure, such as a new payment gateway in an e-commerce app, receive immediate and exhaustive testing.
 
@@ -113,7 +113,7 @@ The pyramid structure visually represents the ideal test distribution:
 2. **Integration/Service Tests (Middle):** A smaller layer of tests that check how different components or microservices interact. These are more complex than unit tests but are essential for verifying contracts between services.
 3. **End-to-End (E2E) Tests (Top):** The smallest number of tests, which simulate complete user journeys through the application's UI. They are powerful but are the slowest and most expensive to maintain.
 
-![Test Automation Pyramid](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/54f8fc8f-6047-4f1a-84c0-4e44d46129ad.jpg)
+![Test Automation Pyramid](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/software-testing-best-practices/54f8fc8f-6047-4f1a-84c0-4e44d46129ad.jpg)
 
 ### Why the Pyramid is a Foundational Practice
 

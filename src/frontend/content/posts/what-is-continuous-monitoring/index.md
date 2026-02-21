@@ -13,7 +13,7 @@ tags:
   - risk-management
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/a16a86f1-633e-4296-976c-972b22f0e975/what-is-continuous-monitoring-cloud-monitoring.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-continuous-monitoring/what-is-continuous-monitoring-cloud-monitoring.jpg)
 
 Continuous monitoring is an automated process that gives you a live, moment-to-moment view of your system's security, health, and compliance.Continuous monitoring is an automated process that gives you a live, moment-to-moment view of your system's security, health, and compliance. Instead of waiting for quarterly audits or annual check-ups, it keeps a constant eye on your entire IT environment. This "always-on" awareness lets you spot threats, performance bottlenecks, and compliance issues the second they happen.
 
@@ -21,7 +21,7 @@ Continuous monitoring is an automated process that gives you a live, moment-to-m
 
 So, what does that actually mean in practice? Let's ditch the jargon and think about it like this.
 
-![Visual comparing traditional periodic car check-ups with advanced continuous digital vehicle monitoring dashboard.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/cdaaf13d-1d91-4d4f-ac52-c8e05e6e93bd/what-is-continuous-monitoring-vehicle-monitoring.jpg)
+![Visual comparing traditional periodic car check-ups with advanced continuous digital vehicle monitoring dashboard.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-continuous-monitoring/what-is-continuous-monitoring-vehicle-monitoring.jpg)
 
 Imagine your company's technology is a high-performance car. The old way of doing things - periodic checks - is like taking your car to the mechanic once a year. By the time they spot a problem, it might have been causing damage for months, leading to a massive, expensive repair.
 
@@ -150,7 +150,7 @@ The final piece of the puzzle is **visualization and alerting**, which acts as t
 
 **Visualization** tools, like Grafana dashboards, turn endless streams of numbers into intuitive graphs, charts, and heatmaps. This makes it incredibly easy for engineers to spot trends and identify connections at a glance.
 
-![A business driver flow diagram showing three steps: Secure (data protection), Comply (regulations), and Optimize (efficiency).](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/3210dc93-cac5-4791-a39d-ad3b63e2b036/what-is-continuous-monitoring-business-flow.jpg)
+![A business driver flow diagram showing three steps: Secure (data protection), Comply (regulations), and Optimize (efficiency).](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-continuous-monitoring/what-is-continuous-monitoring-business-flow.jpg)
 
 **Alerting** is the proactive part. When the analysis engine detects a problem - like an API error rate suddenly spiking or a server running out of memory - it triggers an automated alert. These notifications are routed to the right people through tools like Slack or PagerDuty, kicking off a rapid response. It's the system's reflex, ensuring critical problems get immediate attention, just like you'd instinctively pull your hand away from a hot stove.
 
@@ -208,7 +208,7 @@ By providing this deep visibility, continuous monitoring ensures that the insigh
 
 A great continuous monitoring strategy isn't about hoarding the most data; it's about collecting the *right* data and turning it into something you can actually act on. If your team is drowning in a sea of irrelevant alerts, you might as well be flying blind. The real goal is to build a system that automatically brings high-impact issues to the surface, freeing your team to focus on what really matters.
 
-![A team and an AI robot collaborate on a large screen displaying automated data prioritization and analysis.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/3d8ad7bb-6f25-4e87-86c7-c62d8575ef15/what-is-continuous-monitoring-data-prioritization.jpg)
+![A team and an AI robot collaborate on a large screen displaying automated data prioritization and analysis.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-continuous-monitoring/what-is-continuous-monitoring-data-prioritization.jpg)
 
 This whole process starts with tying every single metric you track back to a specific business outcome. Don't just monitor server CPU. Instead, ask, "How does high CPU usage impact our customer login times?" This context-driven mindset is your best defense against **alert fatigue** - that all-too-common state where teams just start ignoring the constant noise. It ensures every notification represents a genuine risk to the business.
 

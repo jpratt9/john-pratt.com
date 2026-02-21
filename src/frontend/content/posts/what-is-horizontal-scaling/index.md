@@ -12,7 +12,7 @@ tags:
   - scalability
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-6b1ab91a-2b1a-4807-82c6-2a421f5373ea.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-horizontal-scaling/featured-image-6b1ab91a-2b1a-4807-82c6-2a421f5373ea.jpg)
 
 When your application starts getting popular, you'll eventually hit a wall. Performance slows down, users get frustrated, and the system groans under the pressure. The big question is: how do you handle that new demand? One of the most effective ways is with **horizontal scaling**.
 
@@ -22,7 +22,7 @@ Simply put, **horizontal scaling** - often called **"scaling out"** - means addi
 
 Think about a popular coffee shop. As more customers start showing up, the single barista gets overwhelmed. The owner could replace them with a super-fast, multitasking robot barista (that's vertical scaling). Or, they could just hire more baristas and open a second or third counter. That's the essence of horizontal scaling. You're not making any single part stronger; you're just adding more parts to share the load.
 
-![Infographic about what is horizontal scaling](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/be25f575-f6c0-4071-be85-22fcfbedc8c9.jpg)
+![Infographic about what is horizontal scaling](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-horizontal-scaling/be25f575-f6c0-4071-be85-22fcfbedc8c9.jpg)
 
 This approach is all about distribution. Instead of funneling all your website traffic or application requests to a single, beefy server, you use a load balancer to intelligently route them across a whole fleet of servers. This prevents any one machine from becoming a bottleneck and crashing the whole system.
 
@@ -56,7 +56,7 @@ Ultimately, this approach is the backbone of most modern, large-scale web applic
 
 When your application starts getting more traffic than it can handle, you're faced with a big decision: do you scale up or scale out? This is the core of the **horizontal vs. vertical scaling** debate, and the path you choose has a major impact on everything from your budget to your system's reliability.
 
-![Diagram comparing horizontal scaling with adding more servers versus vertical scaling with making one server more powerful.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/0209b382-e535-4a3b-b0ec-fb72dc3d274e.jpg)
+![Diagram comparing horizontal scaling with adding more servers versus vertical scaling with making one server more powerful.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-horizontal-scaling/0209b382-e535-4a3b-b0ec-fb72dc3d274e.jpg)
 
 Think of vertical scaling, often called **"scaling up,"** like upgrading your car. You keep the same car but give it a bigger engine, better tires, and a supercharger. In tech terms, you're beefing up a single server with more RAM, a faster CPU, or a better storage drive. It's a straightforward approach, but eventually, you'll hit a wall. There's only so much you can cram into one machine, and top-of-the-line hardware gets incredibly expensive, fast.
 
@@ -125,7 +125,7 @@ It's one thing to talk about horizontal scaling in theory, but seeing it in acti
 
 These companies pushed past the limits of what any single, super-powered server could ever hope to achieve. They had to.
 
-![Several data center server racks lined up in a row.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/b9ea2899-60dc-4248-ab82-5d57e4b7ff97.jpg)
+![Several data center server racks lined up in a row.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-horizontal-scaling/b9ea2899-60dc-4248-ab82-5d57e4b7ff97.jpg)
 
 Whether you're scrolling a social feed or buying something online, the core strategy is the same: spread the workload across a massive fleet of standard, off-the-shelf machines. This design not only prevents a single hardware failure from taking down the whole service but also allows them to expand capacity almost endlessly.
 

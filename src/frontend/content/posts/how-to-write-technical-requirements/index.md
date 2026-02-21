@@ -13,7 +13,7 @@ tags:
   - agile-development
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/4a52ce0c-e51d-4a95-972d-9673af3ad7e8/how-to-write-technical-requirements-requirements-review.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-write-technical-requirements/how-to-write-technical-requirements-requirements-review.jpg)
 
 Learning how to write technical requirements is the crucial link between a great idea and a successful product. It's all about nailing down project goals, talking to the right people, detailing what the system must do (and how well it must do it), and defining crystal-clear, testable criteria that guide the entire development process.
 
@@ -31,7 +31,7 @@ Getting good at this isn't about creating more paperwork; it's about mastering s
 
 This process ensures everyone understands not just *what* they're building, but *why* they're building it and exactly what "done" looks like. The flow is pretty straightforward, moving from the big picture to the fine details.
 
-![Diagram showing the sequential steps of defining goals, identifying stakeholders, understanding needs, and setting criteria.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/c0623253-468a-4517-8cac-cacf5c5ad2d1/how-to-write-technical-requirements-process-flow.jpg)
+![Diagram showing the sequential steps of defining goals, identifying stakeholders, understanding needs, and setting criteria.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-write-technical-requirements/how-to-write-technical-requirements-process-flow.jpg)
 
 This logical flow - from high-level goals down to specific acceptance criteria - is the foundation for any solid technical project.
 
@@ -69,7 +69,7 @@ The best technical requirements aren't just written; they're discovered. Before 
 
 Jumping straight into writing is a classic mistake. It's like a developer trying to fix a bug without reading the error log. You'll build something, sure, but it almost certainly won't be the *right* thing. This prep work is your best defense against painful rework and fundamental misunderstandings down the line.
 
-![A diverse team of professionals in a meeting, brainstorming ideas and problem-solving with laptops and a clipboard.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/ca785f54-92f5-490e-8bdc-4228a76bf5bd/how-to-write-technical-requirements-brainstorming-meeting.jpg)
+![A diverse team of professionals in a meeting, brainstorming ideas and problem-solving with laptops and a clipboard.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-write-technical-requirements/how-to-write-technical-requirements-brainstorming-meeting.jpg)
 
 ### Uncovering the Real Project Goals
 
@@ -113,7 +113,7 @@ Alright, you've done the hard work of interviewing stakeholders and have a pile 
 
 Every single software or cloud project boils down to these two types of requirements: functional and non-functional. Getting this right is absolutely critical. It's the difference between building a car that simply moves (functional) and building one that's also fast, safe, and doesn't guzzle gas (non-functional). One without the other is a recipe for a failed project.
 
-![Illustration comparing functional requirements (what a system does) with non-functional requirements (how it performs, security).](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/e17f8c87-8a86-43c6-84ff-f35a472d58e9/how-to-write-technical-requirements-software-requirements.jpg)
+![Illustration comparing functional requirements (what a system does) with non-functional requirements (how it performs, security).](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-write-technical-requirements/how-to-write-technical-requirements-software-requirements.jpg)
 
 ### H3: Nailing Down the Functional Requirements
 
@@ -171,7 +171,7 @@ You've defined your functional and non-functional requirements, which is a huge 
 
 This is all about adding layers of detail that serve as a concrete contract between the business and engineering teams. You're defining, in no uncertain terms, what "done" actually looks like.
 
-![Hand-drawn illustration of a task management interface with a checklist, completed item, and process diagram.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/838445c6-1006-4389-a8c0-e21ee00765b4/how-to-write-technical-requirements-workflow-diagram.jpg)
+![Hand-drawn illustration of a task management interface with a checklist, completed item, and process diagram.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-write-technical-requirements/how-to-write-technical-requirements-workflow-diagram.jpg)
 
 ### Crafting Testable Acceptance Criteria
 

@@ -13,13 +13,13 @@ tags:
   - agile-development
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-04c9aa34-21f8-4b08-b86a-13541744c0da.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-manage-technical-debt/featured-image-04c9aa34-21f8-4b08-b86a-13541744c0da.jpg)
 
 Tackling technical debt is so much more than just tidying up messy code. It's really about making a strategic choice to identify, prioritize, and fix those suboptimal technical decisions that are holding you back. This is all about striking a balance between shipping features quickly today and maintaining a healthy, scalable codebase for the long haul.
 
 ## What Technical Debt Actually Costs You
 
-![A developer looking stressed while reviewing complex code on a computer screen, representing the burden of technical debt.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/806c0726-2ca0-42eb-ba2f-4f60364a3e34.jpg)
+![A developer looking stressed while reviewing complex code on a computer screen, representing the burden of technical debt.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-manage-technical-debt/806c0726-2ca0-42eb-ba2f-4f60364a3e34.jpg)
 
 We often describe technical debt as the future cost of taking an easy shortcut now instead of using a better approach that would take longer. I like to think of it as a hidden tax on every single feature you build and every bug you squash. It starts small, with seemingly harmless workarounds, but it compounds quickly until it becomes a serious business liability.
 
@@ -65,7 +65,7 @@ Tools like [SonarCloud](https://sonarcloud.io/), [CodeClimate](https://codeclima
 
 Here's an example of what that kind of high-level overview looks like in SonarCloud. It gives you an instant visual summary of your code's health.
 
-![Screenshot from https://sonarcloud.io/](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/2197d090-220e-4da8-a643-b813d8ceb53d.jpg)
+![Screenshot from https://sonarcloud.io/](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-manage-technical-debt/2197d090-220e-4da8-a643-b813d8ceb53d.jpg)
 
 The dashboard immediately highlights critical metrics for bugs, security vulnerabilities, and code smells, so your team knows where the biggest fires are burning.
 
@@ -108,7 +108,7 @@ So, you have a list of technical debt. It's tempting to roll up your sleeves and
 
 The real art of managing technical debt lies in **ruthless prioritization**. Your goal isn't to chase some mythical "zero debt" state or satisfy a purely academic standard of code perfection. It's about paying down the debt that actively hurts your business, blocks future growth, or just makes your team's life miserable. This means shifting the conversation from a purely technical one to a strategic one.
 
-![A quadrant diagram on a whiteboard showing how to prioritize technical debt by impact versus effort.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/8bd7573d-0856-4959-90f4-a5546f1b0af2.jpg)
+![A quadrant diagram on a whiteboard showing how to prioritize technical debt by impact versus effort.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-manage-technical-debt/8bd7573d-0856-4959-90f4-a5546f1b0af2.jpg)
 
 ### The Technical Debt Quadrant
 
@@ -144,7 +144,7 @@ See the difference? This simple change in framing transforms technical debt from
 
 ## Proven Strategies for Reducing Technical Debt
 
-![A team of developers collaborating around a whiteboard, sketching out a plan for refactoring code.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/e9dba783-ac93-40a8-8fca-742a967273da.jpg)
+![A team of developers collaborating around a whiteboard, sketching out a plan for refactoring code.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-manage-technical-debt/e9dba783-ac93-40a8-8fca-742a967273da.jpg)
 
 Alright, you've identified and prioritized your technical debt. Now for the hard part: actually doing something about it. The goal is to weave debt reduction into the very fabric of your development cycle, not treat it like a massive, one-off project that brings everything else to a grinding halt.
 

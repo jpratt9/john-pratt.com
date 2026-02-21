@@ -13,7 +13,7 @@ tags:
   - financial-data-security
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/93233dca-491c-488b-aea2-65d1fdb4a290/sarbanes-oxley-cyber-security-cloud-security.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/sarbanes-oxley-cyber-security/sarbanes-oxley-cyber-security-cloud-security.jpg)
 
 You can't talk about Sarbanes-Oxley (SOX) compliance today without putting cybersecurity front and center. The simple truth is that you can't guarantee the integrity of your financial reports if the IT systems holding that data aren't secure. A major data breach isn't just an IT headache; it's a direct path to a SOX compliance failure by putting the accuracy of your financial statements at risk.
 
@@ -82,7 +82,7 @@ Imagine an auditor questioning the integrity of your Q3 revenue numbers in the E
 
 The flowchart below visualizes just how quickly a gap in these cybersecurity controls can spiral from a technical problem into a full-blown compliance failure.
 
-![A flowchart illustrating how a cyber attack can lead to a data breach and ultimately a SOX failure.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/ce1c01ce-de9a-4bc7-ab9f-8838143e761b/sarbanes-oxley-cyber-security-sox-compliance.jpg)
+![A flowchart illustrating how a cyber attack can lead to a data breach and ultimately a SOX failure.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/sarbanes-oxley-cyber-security/sarbanes-oxley-cyber-security-sox-compliance.jpg)
 
 This shows the critical domino effect: a single cyber attack compromises data, which can directly lead to a SOX failure if your internal controls aren't strong enough to stop or detect it.
 
@@ -96,7 +96,7 @@ To get your framework audit-ready, get organized. Control matrices, often built 
 
 ## Implementing Your Core Technical SOX Controls
 
-![Four icons representing data security, including an access key, secure document, cloud search, and a protection shield.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/7ad25383-c2b6-475c-9e3d-1e636e4bcbd8/sarbanes-oxley-cyber-security-security-icons.jpg)
+![Four icons representing data security, including an access key, secure document, cloud search, and a protection shield.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/sarbanes-oxley-cyber-security/sarbanes-oxley-cyber-security-security-icons.jpg)
 
 Alright, with your framework mapped out, it's time to get your hands dirty. This is where your **Sarbanes Oxley cyber security** strategy moves from paper to practice through tangible, technical controls.
 
@@ -199,7 +199,7 @@ By embedding SOX requirements directly into your cloud service configurations, y
 
 Let's be honest: the annual SOX audit can feel like a fire drill. For weeks, teams drop everything to manually pull screenshots, export mountains of logs, and hunt down approvals just to prove their controls are working. It's a reactive, exhausting process that's not just inefficient - it creates a ton of risk and anxiety. For modern **Sarbanes Oxley cyber security** compliance, we need a much smarter way forward, one that shifts from manual evidence hunting to continuous, automated collection.
 
-![Illustration of document workflow including processing, mailing, review, and final approval for compliance.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/50672531-f5db-4c27-94b9-732b05528b1a/sarbanes-oxley-cyber-security-compliance-process.jpg)
+![Illustration of document workflow including processing, mailing, review, and final approval for compliance.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/sarbanes-oxley-cyber-security/sarbanes-oxley-cyber-security-compliance-process.jpg)
 
 Breaking free from this painful cycle means you can finally transform the audit from a dreaded, disruptive event into a routine check-in. The controls are always on, and the evidence is always ready. Governance, Risk, and Compliance (GRC) platforms and security automation tools are what make this possible. They hook directly into your IT environment to collect, organize, and present proof that your controls are operating as designed, every single day.
 
