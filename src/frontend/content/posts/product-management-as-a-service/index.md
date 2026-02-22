@@ -13,7 +13,7 @@ tags:
   - agile-development
 ---
 
-![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/product-management-as-a-service/product-management-as-a-service-ai-workflow.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/product-management-as-a-service/product-management-as-a-service-ai-workflow-e35efccb.jpg)
 
 Ever felt like you needed a top-tier product leader to guide a project, but couldn't justify a full-time, six-figure hire? That's the exact problem **Product Management as a Service (PMaaS)** was created to solve. It's a model that gives you access to expert product managers, strategists, and analysts on a flexible, as-needed basis.
 
@@ -21,7 +21,7 @@ Think of it as bringing in a strategic specialist to connect your technical team
 
 ## What Is Product Management as a Service
 
-![Cartoon man in a 'PMaaS' box, holding a process map and a clock, symbolizing efficient service.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/product-management-as-a-service/product-management-as-a-service-delivery-concept.jpg)
+![Cartoon man in a 'PMaaS' box, holding a process map and a clock, symbolizing efficient service.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/product-management-as-a-service/product-management-as-a-service-delivery-concept-99e345ec.jpg)
 
 At its simplest, PMaaS is like renting a specialized product brain. Instead of going through the lengthy and expensive process of hiring a senior product manager, you get immediate access to someone who can provide strategic guidance, build a clear roadmap, and oversee execution from day one.
 
@@ -145,7 +145,7 @@ This is where high-level business goals get translated into a tangible, prioriti
 
 The decision to bring in this kind of expertise is often driven by a few key needs, which this flow illustrates perfectly.
 
-![Diagram illustrating the PMAAS decision process flow with three steps: Niche Expertise, Unbiased View, and Innovation.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/product-management-as-a-service/product-management-as-a-service-decision-flow.jpg)
+![Diagram illustrating the PMAAS decision process flow with three steps: Niche Expertise, Unbiased View, and Innovation.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/product-management-as-a-service/product-management-as-a-service-decision-flow-dfacf081.jpg)
 
 As you can see, PMaaS is about injecting specialized knowledge, an objective viewpoint, and a catalyst for innovation directly into your workflow.
 
@@ -163,7 +163,7 @@ By aligning product goals with engineering metrics, the PMaaS expert helps you s
 
 ## Measuring the True ROI of PMaaS
 
-![Bar chart illustrating increasing ROI with revenue, user adoption, and speed as key factors.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/product-management-as-a-service/product-management-as-a-service-roi-factors.jpg)
+![Bar chart illustrating increasing ROI with revenue, user adoption, and speed as key factors.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/product-management-as-a-service/product-management-as-a-service-roi-factors-c9bfaf26.jpg)
 
 While having a solid strategy and smoother workflows feels good, any real business investment has to prove its worth in the numbers. So, what does a successful **product management as a service** engagement actually look like on your balance sheet? The return on investment for PMaaS goes far beyond just feeling more organized - it shows up in tangible, measurable outcomes that directly boost your bottom line.
 
