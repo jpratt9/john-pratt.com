@@ -267,23 +267,35 @@ class TestCommitMessageAction:
         action = "fix" if is_update else "add"
         assert action == "add"
 
-    def test_existing_file_same_date_returns_fix(self):
-        """File exists with same date -> fix."""
+    def test_existing_file_same_date_and_title_returns_fix(self):
+        """File exists with same date and title -> fix."""
         date = "2025-02-12"
-        content = f"---\ntitle: Test\ndate: '{date}'\n---\nContent here"
-        encoded = base64.b64encode(content.encode()).decode()
+        clean_title = '"Test Title"'
+        content = f"---\ntitle: {clean_title}\ndate: '{date}'\n---\nContent here"
+        existing_content = content
         file_exists = True
-        is_update = file_exists and date in base64.b64decode(encoded).decode()
+        is_update = file_exists and date in existing_content and clean_title in existing_content
         action = "fix" if is_update else "add"
         assert action == "fix"
+
+    def test_existing_file_same_date_different_title_returns_add(self):
+        """File exists with same date but different title -> add (new article)."""
+        date = "2025-02-12"
+        clean_title = '"New Article Title"'
+        existing_content = f"---\ntitle: \"Old Article Title\"\ndate: '{date}'\n---\nOld content"
+        file_exists = True
+        is_update = file_exists and date in existing_content and clean_title in existing_content
+        action = "fix" if is_update else "add"
+        assert action == "add"
 
     def test_existing_file_different_date_returns_add(self):
         """File exists but different date (slug collision) -> add."""
         date = "2025-02-12"
-        old_content = "---\ntitle: Test\ndate: '2025-01-01'\n---\nOld content"
-        encoded = base64.b64encode(old_content.encode()).decode()
+        clean_title = '"Test Title"'
+        old_content = "---\ntitle: \"Test Title\"\ndate: '2025-01-01'\n---\nOld content"
+        existing_content = old_content
         file_exists = True
-        is_update = file_exists and date in base64.b64decode(encoded).decode()
+        is_update = file_exists and date in existing_content and clean_title in existing_content
         action = "fix" if is_update else "add"
         assert action == "add"
 
@@ -332,9 +344,9 @@ class TestSlugCollisionHandling:
             "body": json.dumps(payload)
         }
 
-    def _mock_get_file_exists(self, existing_date="2025-12-27"):
-        """Return a mock response for an existing file with the given date."""
-        content = f"---\ntitle: Old\ndate: '{existing_date}'\n---\nOld content"
+    def _mock_get_file_exists(self, existing_date="2025-12-27", existing_title='"Old"'):
+        """Return a mock response for an existing file with the given date and title."""
+        content = f"---\ntitle: {existing_title}\ndate: '{existing_date}'\n---\nOld content"
         encoded = base64.b64encode(content.encode()).decode()
         resp = Mock()
         resp.status_code = 200
@@ -360,12 +372,22 @@ class TestSlugCollisionHandling:
         resp.raise_for_status = Mock()
         return resp
 
+    def _mock_commits_response(self, commit_messages=None):
+        resp = Mock()
+        resp.status_code = 200
+        resp.json.return_value = [{"commit": {"message": m}} for m in (commit_messages or [])]
+        return resp
+
     @patch("lambda_function.github_commit")
     @patch("lambda_function.ask_claude", side_effect=lambda prompt, **kw: "mocked title")
     @patch("lambda_function.requests")
     def test_new_slug_no_collision(self, mock_requests, mock_claude, mock_commit):
         """New slug (404) -> commit to original slug."""
-        mock_requests.get.return_value = self._mock_get_file_not_found()
+        def side_effect_get(url, **kwargs):
+            if "commits" in url:
+                return self._mock_commits_response()
+            return self._mock_get_file_not_found()
+        mock_requests.get.side_effect = side_effect_get
 
         from lambda_function import lambda_handler
         result = lambda_handler(self._make_event(), None)
@@ -379,8 +401,8 @@ class TestSlugCollisionHandling:
     @patch("lambda_function.ask_claude", side_effect=lambda prompt, **kw: "mocked title")
     @patch("lambda_function.requests")
     def test_same_date_is_update(self, mock_requests, mock_claude, mock_commit):
-        """Same slug + same date -> 'fix' message."""
-        mock_requests.get.return_value = self._mock_get_file_exists("2025-08-21")
+        """Same slug + same date + same title -> 'fix' message."""
+        mock_requests.get.return_value = self._mock_get_file_exists("2025-08-21", '"mocked title"')
 
         from lambda_function import lambda_handler
         result = lambda_handler(self._make_event(), None)
@@ -398,7 +420,34 @@ class TestSlugCollisionHandling:
         def side_effect_get(url, **kwargs):
             if url.endswith("/test-slug/index.md"):
                 return self._mock_get_file_exists("2025-12-27")
+            if "commits" in url:
+                return self._mock_commits_response()
             return self._mock_dir_listing(["test-slug", "other-post"])
+
+        mock_requests.get.side_effect = side_effect_get
+
+        from lambda_function import lambda_handler
+        result = lambda_handler(self._make_event(), None)
+
+        assert result["statusCode"] == 200
+        files, message, _ = mock_commit.call_args[0]
+        assert "test-slug-2/index.md" in files[0]["path"]
+        assert "add" in message
+
+    @patch("lambda_function.github_commit")
+    @patch("lambda_function.ask_claude", side_effect=lambda prompt, **kw: "mocked title")
+    @patch("lambda_function.requests")
+    def test_same_date_different_title_is_collision(self, mock_requests, mock_claude, mock_commit):
+        """Same slug + same date + different title -> collision, not update."""
+        def side_effect_get(url, **kwargs):
+            if url.endswith("/test-slug/index.md"):
+                return self._mock_get_file_exists("2025-08-21", '"Old Different Title"')
+            if "commits" in url:
+                resp = Mock()
+                resp.status_code = 200
+                resp.json.return_value = []
+                return resp
+            return self._mock_dir_listing(["test-slug"])
 
         mock_requests.get.side_effect = side_effect_get
 
@@ -418,6 +467,8 @@ class TestSlugCollisionHandling:
         def side_effect_get(url, **kwargs):
             if url.endswith("/test-slug/index.md"):
                 return self._mock_get_file_exists("2025-12-27")
+            if "commits" in url:
+                return self._mock_commits_response()
             return self._mock_dir_listing(["test-slug", "test-slug-2", "test-slug-3"])
 
         mock_requests.get.side_effect = side_effect_get
@@ -436,6 +487,8 @@ class TestSlugCollisionHandling:
         def side_effect_get(url, **kwargs):
             if url.endswith("/test-slug/index.md"):
                 return self._mock_get_file_exists("2025-12-27")
+            if "commits" in url:
+                return self._mock_commits_response()
             return self._mock_dir_listing(["test-slug", "test-slug-2", "test-slug-5"])
 
         mock_requests.get.side_effect = side_effect_get
@@ -454,6 +507,8 @@ class TestSlugCollisionHandling:
         def side_effect_get(url, **kwargs):
             if url.endswith("/test-slug/index.md"):
                 return self._mock_get_file_exists("2025-12-27")
+            if "commits" in url:
+                return self._mock_commits_response()
             return self._mock_dir_listing(["test-slug"])
 
         mock_requests.get.side_effect = side_effect_get
@@ -463,6 +518,137 @@ class TestSlugCollisionHandling:
 
         files = mock_commit.call_args[0][0]
         assert "slug: '/test-slug-2'" in files[0]["content"]
+
+
+# ============================================================================
+# Ordinal commit message tests
+# ============================================================================
+
+class TestOrdinalCommitMessage:
+    """Test that 2nd+ add commits on the same day get ordinal prefixes."""
+
+    @pytest.fixture(autouse=True)
+    def setup_mocks(self):
+        env_vars = {
+            "anthropic_api_key": "test-key",
+            "bedrock_title_prompt": "{{TITLE}}",
+            "bedrock_description_prompt": "{{DESCRIPTION}}",
+            "outrank_access_token": "valid-token",
+            "github_token": "gh-token",
+            "article_blacklist_strings": ""
+        }
+        with patch.dict(os.environ, env_vars, clear=False):
+            if "lambda_function" in sys.modules:
+                del sys.modules["lambda_function"]
+            service_dir = os.path.join(os.path.dirname(__file__), "..", "service")
+            if service_dir not in sys.path:
+                sys.path.insert(0, service_dir)
+            yield
+
+    def _make_event(self, slug="test-slug", created_at="2025-08-21T10:00:00Z"):
+        payload = {
+            "data": {
+                "articles": [{
+                    "title": "test article",
+                    "created_at": created_at,
+                    "slug": slug,
+                    "tags": ["python"],
+                    "meta_description": "A test",
+                    "image_url": "https://example.com/img.jpg",
+                    "content_markdown": "Content here."
+                }]
+            }
+        }
+        return {
+            "headers": {"Authorization": "Bearer valid-token"},
+            "body": json.dumps(payload)
+        }
+
+    def _mock_file_not_found(self):
+        resp = Mock()
+        resp.status_code = 404
+        resp.json.return_value = {}
+        return resp
+
+    def _mock_commits_response(self, commit_messages):
+        resp = Mock()
+        resp.status_code = 200
+        resp.json.return_value = [{"commit": {"message": m}} for m in commit_messages]
+        return resp
+
+    @patch("lambda_function.github_commit")
+    @patch("lambda_function.ask_claude", side_effect=lambda prompt, **kw: "mocked title")
+    @patch("lambda_function.requests")
+    def test_first_add_no_ordinal(self, mock_requests, mock_claude, mock_commit):
+        """First add of the day -> no ordinal prefix."""
+        def side_effect_get(url, **kwargs):
+            if "commits" in url:
+                return self._mock_commits_response(["fix blog post for 2025-08-20"])
+            return self._mock_file_not_found()
+        mock_requests.get.side_effect = side_effect_get
+
+        from lambda_function import lambda_handler
+        result = lambda_handler(self._make_event(), None)
+
+        _, message, _ = mock_commit.call_args[0]
+        assert message == "add blog post for 2025-08-21"
+
+    @patch("lambda_function.github_commit")
+    @patch("lambda_function.ask_claude", side_effect=lambda prompt, **kw: "mocked title")
+    @patch("lambda_function.requests")
+    def test_second_add_gets_2nd(self, mock_requests, mock_claude, mock_commit):
+        """Second add of the day -> '2nd' prefix."""
+        def side_effect_get(url, **kwargs):
+            if "commits" in url:
+                return self._mock_commits_response(["add blog post for 2025-08-21"])
+            return self._mock_file_not_found()
+        mock_requests.get.side_effect = side_effect_get
+
+        from lambda_function import lambda_handler
+        result = lambda_handler(self._make_event(), None)
+
+        _, message, _ = mock_commit.call_args[0]
+        assert message == "add 2nd blog post for 2025-08-21"
+
+    @patch("lambda_function.github_commit")
+    @patch("lambda_function.ask_claude", side_effect=lambda prompt, **kw: "mocked title")
+    @patch("lambda_function.requests")
+    def test_third_add_gets_3rd(self, mock_requests, mock_claude, mock_commit):
+        """Third add of the day -> '3rd' prefix."""
+        def side_effect_get(url, **kwargs):
+            if "commits" in url:
+                return self._mock_commits_response([
+                    "add blog post for 2025-08-21",
+                    "add 2nd blog post for 2025-08-21",
+                ])
+            return self._mock_file_not_found()
+        mock_requests.get.side_effect = side_effect_get
+
+        from lambda_function import lambda_handler
+        result = lambda_handler(self._make_event(), None)
+
+        _, message, _ = mock_commit.call_args[0]
+        assert message == "add 3rd blog post for 2025-08-21"
+
+    @patch("lambda_function.github_commit")
+    @patch("lambda_function.ask_claude", side_effect=lambda prompt, **kw: "mocked title")
+    @patch("lambda_function.requests")
+    def test_fix_never_gets_ordinal(self, mock_requests, mock_claude, mock_commit):
+        """Fix commits don't get ordinal prefixes regardless of prior adds."""
+        existing_content = "---\ntitle: \"mocked title\"\ndate: '2025-08-21'\n---\nOld content"
+        encoded = base64.b64encode(existing_content.encode()).decode()
+        file_resp = Mock()
+        file_resp.status_code = 200
+        file_resp.json.return_value = {"content": encoded, "sha": "abc123"}
+
+        mock_requests.get.return_value = file_resp
+
+        from lambda_function import lambda_handler
+        result = lambda_handler(self._make_event(), None)
+
+        _, message, _ = mock_commit.call_args[0]
+        assert message == "fix blog post for 2025-08-21"
+        assert "2nd" not in message
 
 
 # ============================================================================
@@ -684,6 +870,239 @@ class TestAskClaudeRetry:
 
         assert mock_client.messages.create.call_count == 1
         mock_sleep.assert_not_called()
+
+
+# ============================================================================
+# ask_claude thinking tests
+# ============================================================================
+
+class TestAskClaudeThinking:
+    """Test that ask_claude passes thinking params correctly."""
+
+    @pytest.fixture(autouse=True)
+    def setup(self):
+        env_vars = {
+            "anthropic_api_key": "test-key",
+            "bedrock_title_prompt": "{{TITLE}}",
+            "bedrock_description_prompt": "{{DESCRIPTION}}",
+        }
+        with patch.dict(os.environ, env_vars, clear=False):
+            if "lambda_function" in sys.modules:
+                del sys.modules["lambda_function"]
+            service_dir = os.path.join(os.path.dirname(__file__), "..", "service")
+            if service_dir not in sys.path:
+                sys.path.insert(0, service_dir)
+            yield
+
+    @patch("lambda_function.client")
+    def test_thinking_params_passed(self, mock_client):
+        """thinking_budget > 0 adds thinking dict and adjusts max_tokens."""
+        mock_response = Mock()
+        mock_response.content = [Mock(type="thinking", thinking="..."), Mock(type="text", text="result")]
+        mock_client.messages.create.return_value = mock_response
+
+        from lambda_function import ask_claude
+        ask_claude("test", thinking_budget=5000)
+
+        call_kwargs = mock_client.messages.create.call_args[1]
+        assert call_kwargs["thinking"] == {"type": "enabled", "budget_tokens": 5000}
+        assert call_kwargs["max_tokens"] >= 5256
+
+    @patch("lambda_function.client")
+    def test_thinking_extracts_text_block(self, mock_client):
+        """When thinking is enabled, only the text block is returned."""
+        mock_response = Mock()
+        mock_response.content = [Mock(type="thinking", text="thought process"), Mock(type="text", text="the answer")]
+        mock_client.messages.create.return_value = mock_response
+
+        from lambda_function import ask_claude
+        result = ask_claude("test", thinking_budget=5000)
+
+        assert result == "the answer"
+
+    @patch("lambda_function.client")
+    def test_no_thinking_backwards_compatible(self, mock_client):
+        """thinking_budget=0 doesn't add thinking params."""
+        mock_response = Mock()
+        mock_response.content = [Mock(type="text", text="result")]
+        mock_client.messages.create.return_value = mock_response
+
+        from lambda_function import ask_claude
+        ask_claude("test prompt")
+
+        call_kwargs = mock_client.messages.create.call_args[1]
+        assert "thinking" not in call_kwargs
+        assert call_kwargs["max_tokens"] == 256
+
+
+# ============================================================================
+# fix_code_fences tests
+# ============================================================================
+
+class TestFixCodeFences:
+    """Test the code fence fixing function."""
+
+    @pytest.fixture(autouse=True)
+    def setup(self):
+        env_vars = {
+            "anthropic_api_key": "test-key",
+            "bedrock_title_prompt": "{{TITLE}}",
+            "bedrock_description_prompt": "{{DESCRIPTION}}",
+            "code_fence_prompt": "Find unfenced code blocks",
+        }
+        with patch.dict(os.environ, env_vars, clear=False):
+            if "lambda_function" in sys.modules:
+                del sys.modules["lambda_function"]
+            service_dir = os.path.join(os.path.dirname(__file__), "..", "service")
+            if service_dir not in sys.path:
+                sys.path.insert(0, service_dir)
+            yield
+
+    def _write_temp(self, tmp_path, content):
+        f = tmp_path / "index.md"
+        f.write_text(content)
+        return str(f)
+
+    def _mock_beta(self, response_text, lang="python"):
+        """Set up mock for client.beta.files and client.beta.messages."""
+        mock_client = patch("lambda_function.client").start()
+        mock_client.beta.files.upload.return_value = Mock(id="file_test123")
+        mock_response = Mock()
+        mock_response.content = [Mock(type="text", text=response_text)]
+        mock_client.beta.messages.create.return_value = mock_response
+        patch("lambda_function.ask_claude", return_value=lang).start()
+        return mock_client
+
+    def test_single_unfenced_block(self, tmp_path):
+        self._mock_beta('["3-5"]')
+        content = "line1\nline2\nimport os\nimport sys\nprint('hi')\nline6"
+        path = self._write_temp(tmp_path, content)
+
+        from lambda_function import fix_code_fences
+        fix_code_fences(path)
+
+        result = open(path).read()
+        lines = result.split('\n')
+        assert lines[2] == '```python'
+        assert lines[3] == 'import os'
+        assert lines[5] == "print('hi')"
+        assert lines[6] == '```'
+
+    def test_multiple_unfenced_blocks(self, tmp_path):
+        self._mock_beta('["2-3", "6-7"]')
+        content = "header\ncode1\ncode2\ntext\ntext2\ncode3\ncode4\nfooter"
+        path = self._write_temp(tmp_path, content)
+
+        from lambda_function import fix_code_fences
+        fix_code_fences(path)
+
+        result = open(path).read()
+        lines = result.split('\n')
+        # First block (lines 2-3) gets fences at positions 1 and 4
+        assert lines[1] == '```python'
+        assert lines[2] == 'code1'
+        assert lines[3] == 'code2'
+        assert lines[4] == '```'
+        # Second block (lines 6-7, now shifted by 2) gets fences
+        assert lines[7] == '```python'
+        assert lines[8] == 'code3'
+        assert lines[9] == 'code4'
+        assert lines[10] == '```'
+
+    def test_no_unfenced_blocks(self, tmp_path):
+        self._mock_beta('[]')
+        content = "line1\nline2\nline3"
+        path = self._write_temp(tmp_path, content)
+
+        from lambda_function import fix_code_fences
+        fix_code_fences(path)
+
+        assert open(path).read() == content
+
+    def test_invalid_json_response(self, tmp_path):
+        self._mock_beta('not valid json')
+        content = "line1\nline2\nline3"
+        path = self._write_temp(tmp_path, content)
+
+        from lambda_function import fix_code_fences
+        fix_code_fences(path)
+
+        assert open(path).read() == content
+
+    def test_preserves_blank_lines(self, tmp_path):
+        self._mock_beta('["3-4"]')
+        content = "text above\n\nimport os\nimport sys\n\ntext below"
+        path = self._write_temp(tmp_path, content)
+
+        from lambda_function import fix_code_fences
+        fix_code_fences(path)
+
+        result = open(path).read()
+        lines = result.split('\n')
+        assert lines[1] == ''  # blank line preserved above
+        assert lines[2] == '```python'
+        assert lines[3] == 'import os'
+        assert lines[4] == 'import sys'
+        assert lines[5] == '```'
+        assert lines[6] == ''  # blank line preserved below
+
+    def test_adjacent_blocks(self, tmp_path):
+        self._mock_beta('["3-4", "6-7"]')
+        content = "header\ntext\ncode1a\ncode1b\ntext2\ncode2a\ncode2b\nfooter"
+        path = self._write_temp(tmp_path, content)
+
+        from lambda_function import fix_code_fences
+        fix_code_fences(path)
+
+        result = open(path).read()
+        lines = result.split('\n')
+        # Block 1 at original lines 3-4
+        assert lines[2] == '```python'
+        assert lines[3] == 'code1a'
+        assert lines[4] == 'code1b'
+        assert lines[5] == '```'
+        # Block 2 at original lines 6-7 (shifted +2 by first block's fences)
+        assert lines[7] == '```python'
+        assert lines[8] == 'code2a'
+        assert lines[9] == 'code2b'
+        assert lines[10] == '```'
+
+    def test_language_detection_failure_uses_bare_fence(self, tmp_path):
+        mock_client = self._mock_beta('["2-3"]')
+        patch("lambda_function.ask_claude", side_effect=Exception("API error")).start()
+        content = "header\nimport os\nimport sys\nfooter"
+        path = self._write_temp(tmp_path, content)
+
+        from lambda_function import fix_code_fences
+        fix_code_fences(path)
+
+        result = open(path).read()
+        lines = result.split('\n')
+        assert lines[1] == '```'
+        assert lines[4] == '```'
+
+    def test_uploads_and_cleans_up_file(self, tmp_path):
+        mock_client = self._mock_beta('[]')
+        content = "line1\nline2"
+        path = self._write_temp(tmp_path, content)
+
+        from lambda_function import fix_code_fences
+        fix_code_fences(path)
+
+        mock_client.beta.files.upload.assert_called_once()
+        mock_client.beta.files.delete.assert_called_once_with("file_test123")
+
+    def test_cleans_up_file_on_api_error(self, tmp_path):
+        mock_client = self._mock_beta('[]')
+        mock_client.beta.messages.create.side_effect = Exception("API error")
+        content = "line1\nline2"
+        path = self._write_temp(tmp_path, content)
+
+        from lambda_function import fix_code_fences
+        fix_code_fences(path)
+
+        mock_client.beta.files.delete.assert_called_once_with("file_test123")
+        assert open(path).read() == content
 
 
 # ============================================================================

@@ -75,6 +75,16 @@ variable "claude_title_prompt" {
   sensitive = true
 }
 
+variable "code_fence_prompt" {
+  type      = string
+  sensitive = true
+}
+
+variable "language_detect_prompt" {
+  type      = string
+  sensitive = true
+}
+
 variable "image_cdn_pattern" {
   type      = string
   sensitive = true

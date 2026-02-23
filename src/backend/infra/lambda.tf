@@ -75,6 +75,8 @@ resource "aws_lambda_function" "webhook" {
       cloudflare_worker_url        = var.cloudflare_worker_url
       cloudflare_worker_auth_token = random_password.worker_auth_token.result
       image_cdn_pattern            = var.image_cdn_pattern
+      code_fence_prompt            = var.code_fence_prompt
+      language_detect_prompt       = var.language_detect_prompt
     }
   }
 
@@ -117,4 +119,19 @@ resource "aws_lambda_layer_version" "new_requests" {
 resource "aws_lambda_function_url" "webhook" {
   function_name      = aws_lambda_function.webhook.function_name
   authorization_type = "NONE"
+}
+
+resource "aws_lambda_permission" "function_url_public" {
+  statement_id           = "FunctionURLAllowPublicAccess"
+  action                 = "lambda:InvokeFunctionUrl"
+  function_name          = aws_lambda_function.webhook.function_name
+  principal              = "*"
+  function_url_auth_type = "NONE"
+}
+
+resource "aws_lambda_permission" "function_url_invoke" {
+  statement_id  = "FunctionURLAllowInvoke"
+  action        = "lambda:InvokeFunction"
+  function_name = aws_lambda_function.webhook.function_name
+  principal     = "*"
 }

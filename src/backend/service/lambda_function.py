@@ -24,6 +24,8 @@ OUTRANK_CDN_PATTERN = os.environ.get("image_cdn_pattern", "")
 client = anthropic.Anthropic(api_key=os.environ["anthropic_api_key"])
 title_prompt = os.environ["bedrock_title_prompt"]
 desc_prompt = os.environ["bedrock_description_prompt"]
+code_fence_prompt = os.environ.get("code_fence_prompt", "")
+language_detect_prompt = os.environ.get("language_detect_prompt", "")
 
 _genai_api_key = os.environ.get("google_genai_api_key", "")
 genai_client = genai.Client(api_key=_genai_api_key) if _genai_api_key else None
@@ -42,15 +44,22 @@ def titlecase(text):
             result.append(word.capitalize())
     return ' '.join(result)
 
-def ask_claude(prompt: str, max_tokens: int = 256) -> str:
+def _extract_text(response):
+    for block in response.content:
+        if block.type == "text":
+            return block.text
+    return response.content[0].text
+
+def ask_claude(prompt, max_tokens: int = 256, thinking_budget: int = 0) -> str:
+    kwargs = {"max_tokens": max_tokens, "messages": [{"role": "user", "content": prompt}]}
+    if thinking_budget > 0:
+        kwargs["thinking"] = {"type": "enabled", "budget_tokens": thinking_budget}
+        kwargs["max_tokens"] = max(max_tokens, thinking_budget + 256)
+
     # Try primary model once
     try:
-        response = client.messages.create(
-            model=PRIMARY_MODEL,
-            max_tokens=max_tokens,
-            messages=[{"role": "user", "content": prompt}]
-        )
-        return response.content[0].text
+        response = client.messages.create(model=PRIMARY_MODEL, **kwargs)
+        return _extract_text(response)
     except anthropic.APIStatusError as e:
         if e.status_code != 529:
             raise
@@ -60,12 +69,8 @@ def ask_claude(prompt: str, max_tokens: int = 256) -> str:
     delays = [10, 20]
     for attempt in range(3):
         try:
-            response = client.messages.create(
-                model=FALLBACK_MODEL,
-                max_tokens=max_tokens,
-                messages=[{"role": "user", "content": prompt}]
-            )
-            return response.content[0].text
+            response = client.messages.create(model=FALLBACK_MODEL, **kwargs)
+            return _extract_text(response)
         except anthropic.APIStatusError as e:
             if e.status_code != 529:
                 raise
@@ -75,6 +80,72 @@ def ask_claude(prompt: str, max_tokens: int = 256) -> str:
             else:
                 print(f"{FALLBACK_MODEL} overloaded after 3 attempts, giving up")
                 raise
+
+def fix_code_fences(file_path):
+    if not code_fence_prompt:
+        return
+    with open(file_path, "r") as f:
+        content = f.read()
+    file_id = None
+    try:
+        uploaded = client.beta.files.upload(
+            file=("post.md", content.encode(), "text/plain"),
+        )
+        file_id = uploaded.id
+        print(f"[fix_code_fences] Uploaded file: {file_id}")
+        msgs = [{"role": "user", "content": [
+            {"type": "text", "text": code_fence_prompt},
+            {"type": "document", "source": {"type": "file", "file_id": file_id}}
+        ]}]
+        delays = [10, 20]
+        response = None
+        for attempt in range(3):
+            try:
+                response = client.beta.messages.create(
+                    model=PRIMARY_MODEL,
+                    max_tokens=10256,
+                    betas=["files-api-2025-04-14"],
+                    thinking={"type": "enabled", "budget_tokens": 10000},
+                    messages=msgs,
+                )
+                break
+            except anthropic.APIStatusError as e:
+                if e.status_code != 529 or attempt == 2:
+                    raise
+                print(f"[fix_code_fences] {PRIMARY_MODEL} overloaded (attempt {attempt + 1}/3), retrying in {delays[attempt]}s...")
+                time.sleep(delays[attempt])
+        text = _extract_text(response)
+        print(f"[fix_code_fences] Raw response: {text.strip()}")
+        ranges = json.loads(text.strip())
+    except (json.JSONDecodeError, Exception) as e:
+        print(f"[fix_code_fences] Failed to detect code fences: {e}")
+        return
+    finally:
+        if file_id:
+            try:
+                client.beta.files.delete(file_id)
+            except Exception:
+                pass
+    if not ranges:
+        print("[fix_code_fences] No unfenced code blocks found")
+        return
+    lines = content.split('\n')
+    for range_str in sorted(ranges, key=lambda r: int(r.split('-')[0]), reverse=True):
+        start, end = map(int, range_str.split('-'))
+        start_idx = start - 1
+        end_idx = end - 1
+        code_snippet = '\n'.join(lines[start_idx:end_idx + 1])
+        try:
+            lang = ask_claude(language_detect_prompt.replace("{{CODE}}", code_snippet)).strip().lower()
+            print(f"[fix_code_fences] Detected language for lines {range_str}: {lang}")
+        except Exception as e:
+            print(f"[fix_code_fences] Language detection failed for lines {range_str}: {e}")
+            lang = ""
+        lines.insert(end_idx + 1, '```')
+        lines.insert(start_idx, f'```{lang}')
+    with open(file_path, "w") as f:
+        f.write('\n'.join(lines))
+    print(f"[fix_code_fences] Fixed {len(ranges)} unfenced code block(s)")
 
 def download_image(image_url):
     worker_url = os.environ.get("cloudflare_worker_url", "")
@@ -244,7 +315,8 @@ def lambda_handler(event, context):
     resp = requests.get(f"{api_repo_article_folder_path}/index.md", headers=github_headers)
     file_exists = resp.status_code == 200
     existing_sha = resp.json().get("sha") if file_exists else None
-    is_update = file_exists and date in base64.b64decode(resp.json().get("content", "")).decode()
+    existing_content = base64.b64decode(resp.json().get("content", "")).decode() if file_exists else ""
+    is_update = file_exists and date in existing_content and clean_title in existing_content
 
     if file_exists and not is_update:
         # slug collision with different date - find next available suffix
@@ -264,7 +336,24 @@ def lambda_handler(event, context):
         print(f"Slug collision detected, using: {slug}")
 
     action = "fix" if is_update else "add"
-    github_payload["message"] = f"{action} blog post for {date}"
+
+    ordinal_prefix = ""
+    if action == "add":
+        log_resp = requests.get(
+            "https://api.github.com/repos/jpratt9/john-pratt.com/commits",
+            headers=github_headers,
+            params={"sha": "master", "per_page": 20}
+        )
+        if log_resp.status_code == 200:
+            add_count = sum(
+                1 for c in log_resp.json()
+                if c["commit"]["message"].startswith("add ") and f"blog post for {date}" in c["commit"]["message"]
+            )
+            if add_count >= 1:
+                ORDINALS = {2: "2nd", 3: "3rd"}
+                ordinal_prefix = ORDINALS.get(add_count + 1, f"{add_count + 1}th") + " "
+
+    github_payload["message"] = f"{action} {ordinal_prefix}blog post for {date}"
 
     # generate our article from source
     os.makedirs(f"/tmp/{slug}", exist_ok=True)
@@ -283,6 +372,8 @@ tags:
         file.write("\n---\n\n")
         file.write(full_body)
         file.write(f"\n")
+
+    fix_code_fences(f"/tmp/{slug}/index.md")
 
     # post article + images to github in one commit
     with open(f"/tmp/{slug}/index.md", "rb") as f:
