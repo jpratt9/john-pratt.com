@@ -13,7 +13,7 @@ tags:
   - automation-testing
 ---
 
-![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/browser-automation-with-python/browser-automation-with-python-python-programming.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/browser-automation-with-python/browser-automation-with-python-python-programming-16dfaa36.jpg)
 
 You might think that making a web browser do your bidding with code is some kind of dark art, but **browser automation with Python** makes it surprisingly straightforward. At its core, it's just about writing simple scripts to pilot a browser - navigating pages, filling out forms, clicking buttons, and grabbing data, all without you lifting a finger. It's like having a digital assistant to take over your most boring web chores.
 
@@ -47,7 +47,7 @@ Picking the right library for **browser automation with Python** goes beyond tic
 
 Three popular options stand out: the time-tested giant **Selenium**, Microsoft's up-and-comer **Playwright**, and the Chromium-focused **pyppeteer**.
 
-![Flowchart: Is Python right for your automation? Decision based on needing custom scripts.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/browser-automation-with-python/browser-automation-with-python-automation-flowchart.jpg)
+![Flowchart: Is Python right for your automation? Decision based on needing custom scripts.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/browser-automation-with-python/browser-automation-with-python-automation-flowchart-b2a378c0.jpg)
 
 This decision tree drives home a simple truth: if your project requires unique logic or deep system integration, Python's scripting flexibility outshines no-code or low-code platforms every time.
 
@@ -170,7 +170,7 @@ If you're looking for more ideas, you can find a bunch of other practical [Pytho
 
 ## Automating Common Web Interactions with Code
 
-![Illustration depicting web browser automation, showing a hand clicking 'Add to cart' and corresponding Python code actions.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/browser-automation-with-python/browser-automation-with-python-web-automation.jpg)
+![Illustration depicting web browser automation, showing a hand clicking 'Add to cart' and corresponding Python code actions.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/browser-automation-with-python/browser-automation-with-python-web-automation-c4af95bd.jpg)
 
 Alright, with your environment all set up, it's time to get into the fun stuff - the practical, real-world tasks that make **browser automation with python** so powerful. We're going beyond just opening pages and taking screenshots. We'll be tackling the interactive elements that are the bread and butter of modern websites, like login forms, dropdown menus, and content that appears out of thin air.
 
@@ -242,7 +242,7 @@ Of course, once you extract data, you need to do something with it. For a practi
 
 ## Building Robust and Undetectable Automation Scripts
 
-![An illustrated robot on a laptop with a shield, surrounded by icons representing data, cookies, and user connection.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/browser-automation-with-python/browser-automation-with-python-data-security.jpg)
+![An illustrated robot on a laptop with a shield, surrounded by icons representing data, cookies, and user connection.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/browser-automation-with-python/browser-automation-with-python-data-security-bcebe2e3.jpg)
 
 Moving your automation scripts from your local machine to a live production environment is a completely different ball game. It's not enough for the script to just *work* anymore. Now, it has to work reliably, efficiently, and most importantly, without getting flagged, especially when you start scaling up.
 
