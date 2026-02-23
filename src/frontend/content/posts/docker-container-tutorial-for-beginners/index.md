@@ -4,6 +4,7 @@ date: '2026-01-27'
 description: "Dive into our hands-on Docker container tutorial for beginners. Learn to install Docker, manage containers and images, and use Docker Compose."
 draft: false
 slug: '/docker-container-tutorial-for-beginners'
+images_fixed: true
 tags:
 
   - docker-container-tutorial-for-beginners
@@ -11,16 +12,16 @@ tags:
   - Containerization-Basics
   - Intro-to-DevOps
   - Docker-Compose
-images_fixed: true
+code_fences_fixed: ["62-62", "68-68", "92-92", "102-102", "118-118", "124-124", "168-168", "172-180", "190-209", "227-227", "235-235", "257-257", "304-326"]
 ---
 
-![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/docker-container-tutorial-for-beginners/docker-container-tutorial-for-beginners-docker-tutorial.jpg)
+![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/79352ca1-0fba-4a97-8547-f7eec19d66c9/docker-container-tutorial-for-beginners-docker-tutorial.jpg)
 
 This guide is your launchpad into Docker, one of the most critical tools in a modern developer's toolkit. We're going to cut through the jargon and get straight to the practical, hands-on commands that let you package and run your applications consistently, *anywhere*.
 
 ## Why Docker Is Your New Best Friend in Development
 
-![Image showing the transition from a messy, 'it works on my machine' setup to a clean, containerized development environment.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/docker-container-tutorial-for-beginners/docker-container-tutorial-for-beginners-docker-container.jpg)
+![Image showing the transition from a messy, 'it works on my machine' setup to a clean, containerized development environment.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/c3f2f69d-6c41-48ca-a37c-1b441d5dfdd0/docker-container-tutorial-for-beginners-docker-container.jpg)
 
 Every developer knows the pain of the "but it works on my machine" dilemma. You pour days into building a great Node.js or Python app, only to watch it crash and burn when a colleague tries to run it. The culprit? Almost always a mismatch in operating systems, library versions, or some obscure environment setting.
 
@@ -59,13 +60,17 @@ No matter your OS, the end goal is to get Docker running smoothly. One of the mo
 
 Once the installation wizard finishes its thing, pop open your favorite terminal or command prompt. We'll run a couple of quick commands to make sure everything is wired up correctly. First, let's check the version.
 
+```shell
 docker --version
+```
 
 You should get a response like `Docker version 20.10.17, build 100c701`. The specific version numbers aren't critical, but seeing this message confirms the command-line interface is installed and ready to go.
 
 Next up is the classic "hello world" test for the container world.
 
+```docker cli (shell command)
 docker run hello-world
+```
 
 This simple command packs a lot of power. It tells the Docker engine to find an image called `hello-world` on the public registry, download it to your machine if it's not already there, and then spin it up as a new container. You'll see a message explaining exactly what happened, confirming that your setup can pull images and run containers. Success!
 
@@ -89,7 +94,9 @@ First things first, you can't run anything without its blueprint - the image. Th
 
 Pop open your terminal and type this:
 
+```dockerfile
 docker pull nginx:latest
+```
 
 You'll see a bunch of lines fly by as Docker downloads different "layers." This is one of Docker's coolest tricks. If you ever pull another image that uses some of the same base layers (like a specific version of Linux), Docker is smart enough not to download them again. It saves a ton of disk space and time.
 
@@ -99,7 +106,9 @@ Now that we have the Nginx blueprint, we can bring it to life as a running conta
 
 Let's get our Nginx server running with a couple of key flags:
 
+```docker cli (shell command)
 docker run --name my-first-webserver -d -p 8080:80 nginx
+```
 
 I know that looks a bit intimidating at first, but it breaks down pretty simply:
 
@@ -115,13 +124,17 @@ With that command executed, open up your web browser and go to `http://localhost
 
 So, your Nginx container is humming away in the background. But how do you check on it? For that, we have `docker ps`. Think of it as your mission control for viewing all active containers.
 
+```shell
 docker ps
+```
 
 This gives you a tidy little table with the container ID, the image it came from, its current status, and the port mapping you set up. It's the first command I run when I need a quick overview of what's happening.
 
 And when you're ready to shut it down? Just use the `docker stop` command with the name you gave it.
 
+```shell
 docker stop my-first-webserver
+```
 
 This sends a graceful shutdown signal to the process inside the container. Run `docker ps` again, and you'll see it's gone.
 
@@ -155,7 +168,7 @@ Let's get our hands dirty and build our first custom Docker image from the groun
 
 This whole process follows a fundamental Docker pattern: you pull a base image, build your own layer on top of it, and then run and manage the final result as a container.
 
-![A black and white diagram showing the Docker workflow steps: Pull, Run, and Manage, with corresponding icons.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/docker-container-tutorial-for-beginners/docker-container-tutorial-for-beginners-docker-workflow.jpg)
+![A black and white diagram showing the Docker workflow steps: Pull, Run, and Manage, with corresponding icons.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/5375ee90-2868-4ca4-a4df-0fdeba6f937b/docker-container-tutorial-for-beginners-docker-workflow.jpg)
 
 Once you get this workflow down, you've grasped the core of Docker development.
 
@@ -165,10 +178,13 @@ First things first, we need some code to containerize. Go ahead and create a new
 
 The first is `requirements.txt`. This file tells Python which packages our app needs - in this case, just one.
 
+```pip requirements file
 Flask==2.2.2
+```
 
 Next up is `app.py`. This is our tiny web server that will greet us from inside the container.
 
+```python
 from flask import Flask
 app = Flask(__name__)
 
@@ -178,6 +194,7 @@ def hello_world():
 
 if __name__ == '__main__':
  app.run(debug=True, host='0.0.0.0')
+```
 
 Pay close attention to that `host='0.0.0.0'`. This is a crucial detail. It tells Flask to listen for connections from *any* network interface within the container, not just from localhost. Without this, we wouldn't be able to connect to it from our machine.
 
@@ -187,6 +204,7 @@ Now for the heart of our image: the **Dockerfile**. Think of it as a recipe. It'
 
 Create this file in the same project folder and add the following:
 
+```dockerfile
 # Use an official lightweight Python image as a parent image
 FROM python:3.9-slim
 
@@ -207,6 +225,7 @@ EXPOSE 5000
 
 # Run app.py when the container launches
 CMD ["python", "app.py"]
+```
 
 Let's walk through what this recipe actually does. Each line is an instruction that creates a new "layer" in our image.
 
@@ -224,7 +243,9 @@ Let's walk through what this recipe actually does. Each line is an instruction t
 
 Alright, with our code and `Dockerfile` ready to go, it's time to build. Open a terminal, navigate to your project folder, and run this command:
 
+```dockerfile
 docker build -t my-flask-app:1.0 .
+```
 
 The `-t` flag is for **tagging** - it gives our image a memorable name and version (`my-flask-app:1.0`). The `.` at the end simply tells Docker to use the `Dockerfile` in the current directory as its build instructions.
 
@@ -232,7 +253,9 @@ You'll see Docker execute each line from your `Dockerfile`, creating layers as i
 
 Now for the payoff. Let's run it:
 
+```docker
 docker run -p 5000:5000 my-flask-app:1.0
+```
 
 This command fires up a container from our new image. The `-p 5000:5000` part is important - it maps port **5000** on your machine to port **5000** inside the container.
 
@@ -254,7 +277,9 @@ Let's try this with a classic use case: a [PostgreSQL](https://www.postgresql.or
 
 Here's the command to launch a PostgreSQL container with a persistent volume:
 
+```docker cli (shell command)
 docker run --name my-postgres-db -e POSTGRES_PASSWORD=mysecretpassword -v pgdata:/var/lib/postgresql/data -d postgres
+```
 
 Let's quickly break down what's happening here:
 
@@ -293,7 +318,7 @@ As you start building real applications, you'll quickly realize that juggling in
 
 This is precisely where **Docker Compose** comes in. It's a game-changer for managing multi-container applications. Instead of running a bunch of separate commands, you define your entire application stack in a single, easy-to-read configuration file.
 
-![A diagram illustrating 'docker-compose up' command starting web, db, and cache services.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/docker-container-tutorial-for-beginners/docker-container-tutorial-for-beginners-docker-compose.jpg)
+![A diagram illustrating 'docker-compose up' command starting web, db, and cache services.](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/787a1771-e1c6-4e99-b27c-2b1e8ff3a44c/docker-container-tutorial-for-beginners-docker-compose.jpg)
 
 ### The `docker-compose.yml` Blueprint
 
@@ -301,6 +326,7 @@ At the core of Docker Compose is a simple YAML file: `docker-compose.yml`. This 
 
 Let's see this in action by taking our Python web app and PostgreSQL database and defining them with Docker Compose.
 
+```yaml
 version: '3.8'
 
 services:
@@ -324,6 +350,7 @@ services:
 
 volumes:
  pgdata:
+```
 
 Look how much cleaner that is! The `services` section defines our `webapp` and `db` containers, and the `volumes` section at the bottom creates the `pgdata` volume to make sure our database information sticks around.
 
