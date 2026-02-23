@@ -650,6 +650,42 @@ class TestOrdinalCommitMessage:
         assert message == "fix blog post for 2025-08-21"
         assert "2nd" not in message
 
+    @patch("lambda_function.github_commit")
+    @patch("lambda_function.process_images")
+    @patch("lambda_function.ask_claude", side_effect=lambda prompt, **kw: "mocked title")
+    @patch("lambda_function.requests")
+    def test_images_fixed_skips_process_images(self, mock_requests, mock_claude, mock_process, mock_commit):
+        """When images_fixed: true is in existing content, process_images is skipped."""
+        existing_content = "---\ntitle: \"mocked title\"\ndate: '2025-08-21'\nimages_fixed: true\n---\nOld content"
+        encoded = base64.b64encode(existing_content.encode()).decode()
+        file_resp = Mock()
+        file_resp.status_code = 200
+        file_resp.json.return_value = {"content": encoded, "sha": "abc123"}
+        mock_requests.get.return_value = file_resp
+
+        from lambda_function import lambda_handler
+        lambda_handler(self._make_event(), None)
+
+        mock_process.assert_not_called()
+
+    @patch("lambda_function.github_commit")
+    @patch("lambda_function.process_images", return_value=("body", {}))
+    @patch("lambda_function.ask_claude", side_effect=lambda prompt, **kw: "mocked title")
+    @patch("lambda_function.requests")
+    def test_no_images_fixed_runs_process_images(self, mock_requests, mock_claude, mock_process, mock_commit):
+        """When images_fixed is absent, process_images runs normally."""
+        existing_content = "---\ntitle: \"mocked title\"\ndate: '2025-08-21'\n---\nOld content"
+        encoded = base64.b64encode(existing_content.encode()).decode()
+        file_resp = Mock()
+        file_resp.status_code = 200
+        file_resp.json.return_value = {"content": encoded, "sha": "abc123"}
+        mock_requests.get.return_value = file_resp
+
+        from lambda_function import lambda_handler
+        lambda_handler(self._make_event(), None)
+
+        mock_process.assert_called_once()
+
 
 # ============================================================================
 # Titlecase function tests

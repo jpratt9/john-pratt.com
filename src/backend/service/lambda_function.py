@@ -300,7 +300,6 @@ def lambda_handler(event, context):
     article_text = re.sub(r' {2,}', ' ', article_text)
 
     full_body = f"![Article Header Image]({header_image})\n\n{article_text}"
-    full_body, image_files = process_images(full_body, header_image, slug)
 
     github_token = os.environ["github_token"]
     github_headers = {
@@ -317,6 +316,12 @@ def lambda_handler(event, context):
     existing_sha = resp.json().get("sha") if file_exists else None
     existing_content = base64.b64decode(resp.json().get("content", "")).decode() if file_exists else ""
     is_update = file_exists and date in existing_content and clean_title in existing_content
+    images_fixed = "images_fixed: true" in existing_content
+    if images_fixed:
+        print("[process_images] Skipping (images_fixed flag set)")
+        image_files = {}
+    else:
+        full_body, image_files = process_images(full_body, header_image, slug)
 
     if file_exists and not is_update:
         # slug collision with different date - find next available suffix
@@ -364,6 +369,7 @@ date: '{date}'
 description: {clean_desc}
 draft: false
 slug: '/{slug}'
+images_fixed: true
 tags:
 """
         )
