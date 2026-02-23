@@ -140,6 +140,7 @@ And you're done. Seriously. Your environment is now fully kitted out for browser
 
 Now for the fun part. With the setup handled, let's write a little code. Create a new file, call it `first_script.py`, and paste this in. This script will launch a browser, visit a website, snap a picture, and grab some text.
 
+```
 from playwright.sync_api import sync_playwright
 
 def run_automation():
@@ -163,6 +164,7 @@ def run_automation():
 
 if __name__ == "__main__":
  run_automation()
+```
 
 To run it, just type `python first_script.py` in your terminal. You should see the quote printed out, and a new `example_screenshot.png` file will pop up in your project folder. This simple pattern - launch, navigate, interact, close - is the core building block for pretty much any browser automation task you can think of.
 
@@ -184,6 +186,7 @@ Let's walk through a classic example: logging into a demo e-commerce site. The s
 
 Here's how that translates into a few lines of Python:
 
+```
 # Assuming 'page' is an active Playwright page object
 page.goto("https://www.saucedemo.com/")
 
@@ -197,6 +200,7 @@ page.locator("[data-test='login-button']").click()
 # Wait for navigation to the next page to confirm login
 page.wait_for_url("**/inventory.html")
 print("Login successful!")
+```
 
 This snippet is both easy to read and incredibly sturdy. By targeting specific locators like `data-test` attributes, your script is far less likely to break when the website's CSS or layout changes. Plus, adding `wait_for_url` gives you a concrete confirmation that the login actually worked, which is critical for building dependable automations.
 
@@ -206,12 +210,14 @@ You see dropdowns everywhere, especially on e-commerce sites and data-heavy dash
 
 Imagine you've landed on a product page and want to sort the items by price, from highest to lowest.
 
+```
 # Assuming you are on the inventory page after logging in
 product_sort_container = page.locator("[data-test='product_sort_container']")
 
 # Select the 'Price (high to low)' option by its value
 product_sort_container.select_option("hilo")
 print("Products sorted from high to low price.")
+```
 
 Playwright's `select_option` method makes this a breeze. You can select an option using its underlying `value` attribute (like "hilo"), its visible text, or even its position in the list. This flexibility is a lifesaver when you're dealing with the many different ways developers implement select menus.
 
@@ -225,6 +231,7 @@ This is where Playwright really shines, thanks to its auto-waiting capabilities.
 
 Let's say you want to add an item to a shopping cart and then confirm that the little cart icon updates with the correct number.
 
+```
 # Click the 'Add to cart' button for the first item
 page.locator(".btn_inventory").first.click()
 
@@ -235,6 +242,7 @@ badge_count = shopping_cart_badge.inner_text()
 # Assert that the cart now contains one item
 assert badge_count == "1"
 print(f"Cart badge updated to: {badge_count}")
+```
 
 Notice how we didn't have to add any special pauses. Playwright's built-in intelligence handles the timing, ensuring the script only checks the badge *after* the page has updated. To get better at pulling out this kind of data, check out our comprehensive [Python web scraping tutorial](https://www.john-pratt.com/python-web-scraping-tutorial/) which dives into more advanced techniques.
 
