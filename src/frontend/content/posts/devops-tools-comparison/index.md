@@ -11,6 +11,7 @@ tags:
   - infrastructure-as-code
   - devops-platforms
   - monitoring-tools
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/devops-tools-comparison/devops-tools-comparison-infrastructure-illustration.jpg)

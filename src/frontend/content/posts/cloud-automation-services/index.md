@@ -11,6 +11,7 @@ tags:
   - infrastructure-as-code
   - cloud-management
   - ci/cd-pipeline
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-automation-services/cloud-automation-services-cloud-capabilities.jpg)

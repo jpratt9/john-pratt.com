@@ -11,6 +11,7 @@ tags:
   - it-infrastructure
   - cloud-migration
   - hybrid-cloud
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/consolidation-data-center/consolidation-data-center-it-infrastructure.jpg)

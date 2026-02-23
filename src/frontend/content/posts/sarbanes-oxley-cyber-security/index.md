@@ -11,6 +11,7 @@ tags:
   - itgc-sox
   - cybersecurity-controls
   - financial-data-security
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/sarbanes-oxley-cyber-security/sarbanes-oxley-cyber-security-cloud-security.jpg)

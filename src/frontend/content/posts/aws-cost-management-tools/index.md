@@ -11,6 +11,7 @@ tags:
   - finops-tools
   - aws-billing
   - cloud-financial-management
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/aws-cost-management-tools/aws-cost-management-tools-cloud-optimization-212c2fde.jpg)

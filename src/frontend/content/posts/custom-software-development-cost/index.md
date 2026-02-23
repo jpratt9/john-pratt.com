@@ -11,6 +11,7 @@ tags:
   - app-development-cost
   - developer-rates
   - software-pricing
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/custom-software-development-cost/featured-image-4b6a9f71-9c6b-457f-b2f6-4349ca12dab6.jpg)

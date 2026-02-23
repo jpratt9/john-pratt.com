@@ -10,6 +10,7 @@ tags:
   - legacy-modernization
   - cloud-data-migration
   - data-strategy
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/data-modernization-services/featured-image-0b053e0c-3b39-434d-bca7-dec0a18de5e4.jpg)

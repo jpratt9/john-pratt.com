@@ -8,6 +8,7 @@ tags:
   - solution-architecture
   - AWS
   - on-prem
+images_fixed: true
 ---
 
 ![infra](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/vlan-setup/infra.png)

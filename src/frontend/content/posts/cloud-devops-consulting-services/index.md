@@ -11,6 +11,7 @@ tags:
   - ci/cd-pipeline
   - infrastructure-as-code
   - kubernetes-consulting
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-devops-consulting-services/cloud-devops-consulting-services-cloud-devops.jpg)

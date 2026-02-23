@@ -11,6 +11,7 @@ tags:
   - automation-strategy
   - process-optimization
   - rpa-consulting
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/automation-consulting-services/featured-image-5b856d39-774e-402f-b0c1-8e0429e64675.jpg)

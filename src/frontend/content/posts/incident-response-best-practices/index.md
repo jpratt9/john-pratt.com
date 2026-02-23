@@ -11,6 +11,7 @@ tags:
   - incident-response-plan
   - threat-detection
   - digital-forensics
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/incident-response-best-practices/featured-image-d4556665-3142-47d3-94d7-3bd022af087f.jpg)

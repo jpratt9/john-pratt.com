@@ -11,6 +11,7 @@ tags:
   - ci/cd-pipeline
   - infrastructure-as-code
   - cloud-strategy
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/azure-devops-consulting-services/azure-devops-consulting-services-cloud-architecture.jpg)

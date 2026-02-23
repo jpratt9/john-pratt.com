@@ -11,6 +11,7 @@ tags:
   - Containerization-Basics
   - Intro-to-DevOps
   - Docker-Compose
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/docker-container-tutorial-for-beginners/docker-container-tutorial-for-beginners-docker-tutorial.jpg)

@@ -11,6 +11,7 @@ tags:
   - code-quality
   - software-development
   - agile-development
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-manage-technical-debt/featured-image-04c9aa34-21f8-4b08-b86a-13541744c0da.jpg)

@@ -11,6 +11,7 @@ tags:
   - hire-developers
   - cloud-consulting
   - devops-services
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/custom-software-development-companies/custom-software-development-companies-tech-collaboration.jpg)

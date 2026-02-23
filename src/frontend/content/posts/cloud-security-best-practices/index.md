@@ -11,6 +11,7 @@ tags:
   - cloud-infrastructure
   - aws-security
   - azure-security
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-security-best-practices/featured-image-943416a1-0d85-448c-87bb-5ad67cb64b0f.jpg)

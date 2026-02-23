@@ -11,6 +11,7 @@ tags:
   - DevOps
   - Continuous-Delivery
   - Infrastructure-as-Code
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-gitops/image.jpg)

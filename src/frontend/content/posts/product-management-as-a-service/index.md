@@ -11,6 +11,7 @@ tags:
   - fractional-product-management
   - product-strategy
   - agile-development
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/product-management-as-a-service/product-management-as-a-service-ai-workflow-e35efccb.jpg)

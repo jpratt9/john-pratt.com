@@ -11,6 +11,7 @@ tags:
   - it-budget-savings
   - devops-automation
   - infrastructure-costs
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/it-cost-reduction-strategies/featured-image-d508013f-8ebd-49fe-8dc2-2bffd8a14486.jpg)

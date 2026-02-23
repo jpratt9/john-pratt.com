@@ -11,6 +11,7 @@ tags:
   - it-infrastructure
   - hybrid-cloud-strategy
   - cost-optimization
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/consolidate-data-center/featured-image-1a820e26-d4ec-432c-a5db-19859729bc24.jpg)

@@ -11,6 +11,7 @@ tags:
   - devops-hiring
   - tech-talent-acquisition
   - consulting-firm-hiring
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-hire-software-engineers/how-to-hire-software-engineers-hiring-process.jpg)

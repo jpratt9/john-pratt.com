@@ -11,6 +11,7 @@ tags:
   - data-pipeline-automation
   - scalable-data-architecture
   - DevOps-for-data
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/data-engineering-best-practices/featured-image-e800842b-272c-4999-bed2-e887661db3af.jpg)

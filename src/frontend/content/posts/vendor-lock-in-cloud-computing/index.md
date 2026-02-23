@@ -11,6 +11,7 @@ tags:
   - multi-cloud
   - kubernetes
   - iaac
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/vendor-lock-in-cloud-computing/vendor-lock-in-cloud-computing-cloud-lock-in.jpg)

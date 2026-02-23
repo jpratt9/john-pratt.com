@@ -11,6 +11,7 @@ tags:
   - system-design
   - asynchronous-systems
   - eda
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-event-driven-architecture/featured-image-1491ee4f-dd00-4f63-a211-60d48921c25b.jpg)

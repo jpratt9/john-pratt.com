@@ -11,6 +11,7 @@ tags:
   - system-design
   - devops
   - application-development
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/microservices-vs-monolithic-architecture/microservices-vs-monolithic-architecture-architecture-comparison.jpg)

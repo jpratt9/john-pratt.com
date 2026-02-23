@@ -11,6 +11,7 @@ tags:
   - devops
   - cloud-security
   - risk-management
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-continuous-monitoring/what-is-continuous-monitoring-cloud-monitoring.jpg)

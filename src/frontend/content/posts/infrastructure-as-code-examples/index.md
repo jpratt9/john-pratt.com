@@ -11,6 +11,7 @@ tags:
   - DevOps-automation
   - Terraform-examples
   - CloudFormation-templates
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/infrastructure-as-code-examples/featured-image-be2560dd-1f85-415c-b05f-74da86d6b336.jpg)

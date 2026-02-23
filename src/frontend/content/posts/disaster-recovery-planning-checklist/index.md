@@ -11,6 +11,7 @@ tags:
   - IT-disaster-recovery
   - risk-management
   - cyber-resilience
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/disaster-recovery-planning-checklist/featured-image-f6d4207c-cb14-4f39-a980-77d26beddd6a.jpg)

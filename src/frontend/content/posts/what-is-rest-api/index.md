@@ -11,6 +11,7 @@ tags:
   - api-principles
   - web-services
   - http-methods
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-rest-api/what-is-rest-api-rest-api.jpg)

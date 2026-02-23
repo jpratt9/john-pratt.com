@@ -11,6 +11,7 @@ tags:
   - system-resilience
   - reliability-engineering
   - failure-testing
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-chaos-engineering/featured-image-62a2a777-4c99-4029-846c-a4ffe9a76177.jpg)

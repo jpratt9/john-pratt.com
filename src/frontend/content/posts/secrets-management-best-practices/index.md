@@ -11,6 +11,7 @@ tags:
   - cloud-security
   - application-security
   - ci/cd-security
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/secrets-management-best-practices/secrets-management-best-practices-vault-security.jpg)

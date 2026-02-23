@@ -11,6 +11,7 @@ tags:
   - cloud-migration
   - database-tools
   - data-replication
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/best-database-migration-tools/best-database-migration-tools-database-ecosystem.jpg)

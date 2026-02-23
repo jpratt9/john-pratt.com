@@ -11,6 +11,7 @@ tags:
   - vciso-services
   - it-security
   - cloud-security
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cyber-security-outsourcing/cyber-security-outsourcing-secure-connection-06012261.jpg)

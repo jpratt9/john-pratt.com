@@ -11,6 +11,7 @@ tags:
   - task-automation
   - scripting-guide
   - automation-examples
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/python-automation-scripts/featured-image-caf5cbca-6923-41e1-b42d-90d91b51af42.jpg)

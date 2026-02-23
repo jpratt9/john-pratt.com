@@ -11,6 +11,7 @@ tags:
   - website-timeline
   - agile-development
   - project-scope
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/web-development-project-timeline/featured-image-3209ec9c-8ab7-48d5-bdc7-14d2ed611bca.jpg)

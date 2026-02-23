@@ -11,6 +11,7 @@ tags:
   - M&A-checklist
   - software-evaluation
   - cloud-infrastructure-audit
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/technical-due-diligence-checklist/technical-due-diligence-checklist-evaluation-points.jpg)

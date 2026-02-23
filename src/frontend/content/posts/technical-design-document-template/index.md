@@ -11,6 +11,7 @@ tags:
   - engineering-documentation
   - solution-architecture
   - DevOps
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/technical-design-document-template/technical-design-document-template-design-document.jpg)

@@ -11,6 +11,7 @@ tags:
   - api-development
   - api-security
   - software-engineering
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/api-design-best-practices/featured-image-2743f61b-8407-4db8-a14f-61ef9c51d3b8.jpg)

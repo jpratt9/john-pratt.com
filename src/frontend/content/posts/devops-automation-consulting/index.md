@@ -11,6 +11,7 @@ tags:
   - infrastructure-as-code
   - cloud-automation
   - devops-strategy
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/devops-automation-consulting/featured-image-392f8ba1-c5f6-4d98-a805-9b524dc0c66d.jpg)

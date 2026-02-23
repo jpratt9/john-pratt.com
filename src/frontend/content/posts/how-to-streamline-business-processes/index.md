@@ -11,6 +11,7 @@ tags:
   - operational-efficiency
   - process-improvement
   - RPA
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-streamline-business-processes/featured-image-368924f4-ffcd-4301-9027-1801d467b8c1.jpg)

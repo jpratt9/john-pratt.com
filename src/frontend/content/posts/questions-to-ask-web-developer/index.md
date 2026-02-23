@@ -11,6 +11,7 @@ tags:
   - technical-interview
   - developer-questions
   - web-development
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/questions-to-ask-web-developer/questions-to-ask-web-developer-software-development.jpg)

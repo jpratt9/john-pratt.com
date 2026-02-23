@@ -8,6 +8,7 @@ tags:
   - algorithms
   - databases
   - data
+images_fixed: true
 ---
 
 You **WILL** break production Unless you know these 5 backend dev tips:

@@ -11,6 +11,7 @@ tags:
   - system-design
   - devops-questions
   - technical-interview
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/software-developer-interview-questions/software-developer-interview-questions-developer-tools.jpg)

@@ -11,6 +11,7 @@ tags:
   - cloud-architecture
   - aws-lambda
   - devops-trends
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/benefits-of-serverless-architecture/featured-image-4b4d4a9d-5e85-49b2-a4cb-827cbf45e774.jpg)

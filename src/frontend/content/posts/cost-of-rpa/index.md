@@ -11,6 +11,7 @@ tags:
   - automation-costs
   - rpa-implementation
   - rpa-roi
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cost-of-rpa/featured-image-b418fe52-cbdb-49d1-966d-257ba75a8015.jpg)

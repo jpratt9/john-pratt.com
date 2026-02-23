@@ -11,6 +11,7 @@ tags:
   - DevOps
   - software-development
   - build-automation
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-continuous-integration/what-is-continuous-integration-ci-pipeline.jpg)

@@ -11,6 +11,7 @@ tags:
   - cloud-migration
   - aws-vs-azure
   - cloud-infrastructure
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/choosing-a-cloud-provider/featured-image-7728edfe-ac62-4a8c-96ec-2c4f78c9e9b7.jpg)

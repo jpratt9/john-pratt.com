@@ -11,6 +11,7 @@ tags:
   - deployment-strategies
   - CI/CD
   - devops
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-blue-green-deployment/featured-image-edd1fc13-57e6-4dd7-af48-e6e010d8a92d.jpg)

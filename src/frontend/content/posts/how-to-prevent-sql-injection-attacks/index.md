@@ -11,6 +11,7 @@ tags:
   - secure-coding
   - web-security
   - owasp
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-prevent-sql-injection-attacks/how-to-prevent-sql-injection-attacks-security-defense.jpg)

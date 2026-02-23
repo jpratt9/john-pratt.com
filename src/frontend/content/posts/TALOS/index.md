@@ -9,6 +9,7 @@ tags:
   - AWS
   - AI
   - large-language-models
+images_fixed: true
 ---
 
 ![TALOS](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/TALOS/talos.png)

@@ -11,6 +11,7 @@ tags:
   - risk-management
   - data-security
   - project-management
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/data-migration-risks/featured-image-044c914e-cf9e-4323-9c5c-14bdd92537b2.jpg)

@@ -11,6 +11,7 @@ tags:
   - ci/cd-automation
   - cloud-consulting
   - devsecops-strategy
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/devops-consulting-firm/devops-consulting-firm-devops-growth.jpg)

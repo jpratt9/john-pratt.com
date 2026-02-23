@@ -11,6 +11,7 @@ tags:
   - API-documentation
   - developer-docs
   - knowledge-base-software
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/technical-documentation-templates/featured-image-204d86a7-3ab4-4ec7-8256-9276e081c7ff.jpg)

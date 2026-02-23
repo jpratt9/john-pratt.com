@@ -11,6 +11,7 @@ tags:
   - DevOps-automation
   - software-deployment
   - automated-release
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-continuous-deployment/featured-image-a0dadc9e-3bff-4d38-b2bf-a2bd833dddd8.jpg)

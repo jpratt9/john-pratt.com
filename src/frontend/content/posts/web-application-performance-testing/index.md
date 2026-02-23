@@ -11,6 +11,7 @@ tags:
   - stress-testing
   - performance-metrics
   - software-testing
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/web-application-performance-testing/featured-image-5163189c-2a97-4f9d-96b4-f3484d47660b.jpg)

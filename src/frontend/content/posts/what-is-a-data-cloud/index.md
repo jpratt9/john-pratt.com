@@ -11,6 +11,7 @@ tags:
   - snowflake-vs-databricks
   - data-cloud-architecture
   - cloud-analytics
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-a-data-cloud/what-is-a-data-cloud-cloud-architecture.jpg)

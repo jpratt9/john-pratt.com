@@ -86,6 +86,9 @@ def fix_code_fences(file_path):
         return
     with open(file_path, "r") as f:
         content = f.read()
+    if "code_fences_fixed:" in content:
+        print("[fix_code_fences] Skipping (code_fences_fixed flag set)")
+        return
     file_id = None
     try:
         uploaded = client.beta.files.upload(
@@ -126,26 +129,30 @@ def fix_code_fences(file_path):
                 client.beta.files.delete(file_id)
             except Exception:
                 pass
-    if not ranges:
-        print("[fix_code_fences] No unfenced code blocks found")
-        return
     lines = content.split('\n')
-    for range_str in sorted(ranges, key=lambda r: int(r.split('-')[0]), reverse=True):
-        start, end = map(int, range_str.split('-'))
-        start_idx = start - 1
-        end_idx = end - 1
-        code_snippet = '\n'.join(lines[start_idx:end_idx + 1])
-        try:
-            lang = ask_claude(language_detect_prompt.replace("{{CODE}}", code_snippet)).strip().lower()
-            print(f"[fix_code_fences] Detected language for lines {range_str}: {lang}")
-        except Exception as e:
-            print(f"[fix_code_fences] Language detection failed for lines {range_str}: {e}")
-            lang = ""
-        lines.insert(end_idx + 1, '```')
-        lines.insert(start_idx, f'```{lang}')
+    if ranges:
+        for range_str in sorted(ranges, key=lambda r: int(r.split('-')[0]), reverse=True):
+            start, end = map(int, range_str.split('-'))
+            start_idx = start - 1
+            end_idx = end - 1
+            code_snippet = '\n'.join(lines[start_idx:end_idx + 1])
+            try:
+                lang = ask_claude(language_detect_prompt.replace("{{CODE}}", code_snippet)).strip().lower()
+                print(f"[fix_code_fences] Detected language for lines {range_str}: {lang}")
+            except Exception as e:
+                print(f"[fix_code_fences] Language detection failed for lines {range_str}: {e}")
+                lang = ""
+            lines.insert(end_idx + 1, '```')
+            lines.insert(start_idx, f'```{lang}')
+        print(f"[fix_code_fences] Fixed {len(ranges)} unfenced code block(s)")
+    else:
+        print("[fix_code_fences] No unfenced code blocks found")
+    for i, line in enumerate(lines):
+        if line.strip() == '---' and i > 0:
+            lines.insert(i, f'code_fences_fixed: {json.dumps(ranges)}')
+            break
     with open(file_path, "w") as f:
         f.write('\n'.join(lines))
-    print(f"[fix_code_fences] Fixed {len(ranges)} unfenced code block(s)")
 
 def download_image(image_url):
     worker_url = os.environ.get("cloudflare_worker_url", "")
@@ -322,6 +329,7 @@ def lambda_handler(event, context):
         image_files = {}
     else:
         full_body, image_files = process_images(full_body, header_image, slug)
+        images_fixed = not bool(re.findall(OUTRANK_CDN_PATTERN, full_body))
 
     if file_exists and not is_update:
         # slug collision with different date - find next available suffix
@@ -369,7 +377,7 @@ date: '{date}'
 description: {clean_desc}
 draft: false
 slug: '/{slug}'
-images_fixed: true
+images_fixed: {str(images_fixed).lower()}
 tags:
 """
         )

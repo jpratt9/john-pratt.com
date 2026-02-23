@@ -11,6 +11,7 @@ tags:
   - cluster-management
   - devops-tools
   - kubernetes-platforms
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/best-kubernetes-management-tools/best-kubernetes-management-tools-kubernetes-system.jpg)

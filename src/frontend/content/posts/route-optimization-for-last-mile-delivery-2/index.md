@@ -11,6 +11,7 @@ tags:
   - delivery-logistics
   - fleet-management
   - supply-chain-tech
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/route-optimization-for-last-mile-delivery-2/featured-image-6a6dd098-13b0-48c4-a299-c17bd24509e1.jpg)

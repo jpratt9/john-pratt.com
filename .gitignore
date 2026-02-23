@@ -4,6 +4,7 @@ node_modules
 yarn-error.log
 package-lock.json
 **/__pycache__
+**/.pytest_cache
 
 # Build directory
 /public

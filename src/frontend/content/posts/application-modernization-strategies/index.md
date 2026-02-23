@@ -11,6 +11,7 @@ tags:
   - cloud-migration
   - devops-practices
   - microservices-architecture
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/application-modernization-strategies/application-modernization-strategies-tech-icons.jpg)

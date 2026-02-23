@@ -11,6 +11,7 @@ tags:
   - cybersecurity-basics
   - shared-responsibility
   - iam-security
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-security-fundamentals/featured-image-d0906d28-f506-4d79-b1f5-c0a340c8b1a6.jpg)

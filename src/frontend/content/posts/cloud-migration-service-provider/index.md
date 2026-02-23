@@ -11,6 +11,7 @@ tags:
   - cloud-migration-strategy
   - aws-migration-services
   - it-consulting
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-migration-service-provider/cloud-migration-service-provider-cloud-migration.jpg)

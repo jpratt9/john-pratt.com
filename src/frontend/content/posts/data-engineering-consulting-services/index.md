@@ -11,6 +11,7 @@ tags:
   - cloud-data-solutions
   - data-pipeline-development
   - data-architecture
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/data-engineering-consulting-services/data-engineering-consulting-services-engineer.jpg)

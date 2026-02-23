@@ -11,6 +11,7 @@ tags:
   - infrastructure-as-code
   - DevOps-automation
   - cloud-management
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-automation-solutions/featured-image-8be6feb7-f9fe-4880-ae8f-fcd88390942b.jpg)

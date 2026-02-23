@@ -11,6 +11,7 @@ tags:
   - react-hooks-tutorial
   - vite-setup
   - javascript-projects
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/react-js-tutorial-for-beginners/react-js-tutorial-for-beginners-react-hooks.jpg)

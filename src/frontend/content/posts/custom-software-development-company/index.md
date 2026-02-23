@@ -11,6 +11,7 @@ tags:
   - devops-services
   - cloud-solutions
   - it-consulting
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/custom-software-development-company/custom-software-development-company-software-integration.jpg)

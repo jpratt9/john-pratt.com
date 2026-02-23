@@ -11,6 +11,7 @@ tags:
   - cloud-migration
   - data-migration-strategy
   - IT-consulting
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/database-migration-best-practices/featured-image-0635c8e6-519c-45cb-b804-2c56a134804f.jpg)

@@ -11,6 +11,7 @@ tags:
   - conversational-AI
   - intelligent-agents
   - business-automation
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-are-virtual-agents/featured-image-d1c33682-82c3-481a-92a5-2185933c47e7.jpg)

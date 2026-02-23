@@ -11,6 +11,7 @@ tags:
   - custom-software
   - business-applications
   - agile-development
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/custom-web-application-development/featured-image-7b29fd14-65ee-4129-ade4-c607bc399312.jpg)

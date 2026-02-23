@@ -11,6 +11,7 @@ tags:
   - kubernetes-questions
   - terraform-interview
   - ci/cd-interview
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/devops-engineer-interview-questions/devops-engineer-interview-questions-devops-concepts.jpg)

@@ -11,6 +11,7 @@ tags:
   - cloud-strategy
   - devops-consulting
   - aws-migration
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-migration-best-practices/featured-image-fe04b0ad-69f8-4685-a080-3407556dae98.jpg)

@@ -11,6 +11,7 @@ tags:
   - DevOps-best-practices
   - application-deployment
   - release-management
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/software-deployment-strategies/software-deployment-strategies-system-architecture.jpg)

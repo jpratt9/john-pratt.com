@@ -8,6 +8,7 @@ tags:
   - data-structures
   - databases
   - python
+images_fixed: true
 ---
 
 ![Bloom Filter](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/bloom-filters/bloom-filter.png)

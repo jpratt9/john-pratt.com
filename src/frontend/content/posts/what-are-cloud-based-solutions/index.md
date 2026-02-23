@@ -11,6 +11,7 @@ tags:
   - cloud-services
   - cloud-infrastructure
   - IaaS-PaaS-SaaS
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-are-cloud-based-solutions/what-are-cloud-based-solutions-cloud-solutions.jpg)

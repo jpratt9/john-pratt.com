@@ -11,6 +11,7 @@ tags:
   - sql-basics
   - database-fundamentals
   - postgres-guide
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/postgresql-tutorial-for-beginners/postgresql-tutorial-for-beginners-database-setup.jpg)

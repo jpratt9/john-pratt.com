@@ -11,6 +11,7 @@ tags:
   - aws-migration
   - azure-migrate
   - cloud-tools
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/best-cloud-migration-tools/featured-image-241700cc-59cb-41e0-8b9c-6d3a9fd4ee53.jpg)

@@ -11,6 +11,7 @@ tags:
   - distributed-systems
   - cloud-architecture
   - software-engineering
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/microservices-architecture-patterns/featured-image-80b86e3e-8062-45c4-a3bb-91dd39423d4f.jpg)

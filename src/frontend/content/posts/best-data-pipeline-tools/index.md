@@ -11,6 +11,7 @@ tags:
   - ETL-tools
   - data-integration
   - cloud-data-pipelines
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/best-data-pipeline-tools/featured-image-9700effa-a39f-404b-ba14-4e4bbc33be9d.jpg)

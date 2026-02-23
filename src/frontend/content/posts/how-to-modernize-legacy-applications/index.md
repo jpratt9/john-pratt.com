@@ -11,6 +11,7 @@ tags:
   - cloud-migration
   - application-refactoring
   - devops-strategy
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-modernize-legacy-applications/how-to-modernize-legacy-applications-legacy-modernization.jpg)

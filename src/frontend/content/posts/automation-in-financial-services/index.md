@@ -11,6 +11,7 @@ tags:
   - rpa-in-finance
   - ai-financial-services
   - financial-process-automation
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/automation-in-financial-services/automation-in-financial-services-financial-automation.jpg)

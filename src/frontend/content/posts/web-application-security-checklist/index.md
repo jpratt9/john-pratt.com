@@ -11,6 +11,7 @@ tags:
   - application-security
   - OWASP-Top-10
   - web-security
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/web-application-security-checklist/featured-image-f040cf59-f8d9-407b-93f5-3ee4273804e8.jpg)

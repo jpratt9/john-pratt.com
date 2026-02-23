@@ -11,6 +11,7 @@ tags:
   - microservices-patterns
   - fault-tolerance
   - scalability
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/distributed-systems-design-patterns/featured-image-464181d2-63c6-4e2c-9f27-679a774ec026.jpg)

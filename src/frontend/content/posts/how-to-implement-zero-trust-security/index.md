@@ -11,6 +11,7 @@ tags:
   - network-security
   - IAM
   - microsegmentation
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-implement-zero-trust-security/how-to-implement-zero-trust-security-zero-trust.jpg)

@@ -11,6 +11,7 @@ tags:
   - server-virtualization
   - cloud-migration
   - data-center-efficiency
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/consolidation-in-the-data-center/consolidation-in-the-data-center-server-migration.jpg)

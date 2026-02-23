@@ -11,6 +11,7 @@ tags:
   - data-modeling
   - schema-best-practices
   - sql-vs-nosql
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-design-database-schema/how-to-design-database-schema-database-architecture.jpg)

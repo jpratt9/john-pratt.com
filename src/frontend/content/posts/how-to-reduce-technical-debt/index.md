@@ -11,6 +11,7 @@ tags:
   - code-quality
   - software-refactoring
   - devops-practices
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-reduce-technical-debt/how-to-reduce-technical-debt-system-optimization.jpg)

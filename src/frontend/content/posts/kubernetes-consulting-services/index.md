@@ -11,6 +11,7 @@ tags:
   - cloud-native-strategy
   - devops-consulting
   - cluster-management
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/kubernetes-consulting-services/kubernetes-consulting-services-kubernetes-management.jpg)

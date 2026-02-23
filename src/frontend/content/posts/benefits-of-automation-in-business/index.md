@@ -11,6 +11,7 @@ tags:
   - process-efficiency
   - automation-strategy
   - cost-reduction
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/benefits-of-automation-in-business/featured-image-14d8e4df-eb30-4b0a-abd5-efd30f0df0b6.jpg)

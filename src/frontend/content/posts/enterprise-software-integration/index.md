@@ -11,6 +11,7 @@ tags:
   - iPaaS-solutions
   - API-integration
   - ESB-architecture
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/enterprise-software-integration/featured-image-7a989510-02bb-4a5c-91cc-b733f8a70a11.jpg)

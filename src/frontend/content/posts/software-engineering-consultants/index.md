@@ -11,6 +11,7 @@ tags:
   - tech-solutions
   - software-development
   - digital-transformation
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/software-engineering-consultants/featured-image-441eeb53-1db0-4d58-a53d-82b492c96dba.jpg)

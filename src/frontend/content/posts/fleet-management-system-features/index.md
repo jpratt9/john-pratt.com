@@ -11,6 +11,7 @@ tags:
   - gps-fleet-tracking
   - fleet-safety
   - vehicle-maintenance-software
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/fleet-management-system-features/featured-image-3fee3f9c-c7c8-4a30-8ff2-8ee61e3af83a.jpg)

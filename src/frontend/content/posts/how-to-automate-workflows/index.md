@@ -11,6 +11,7 @@ tags:
   - workflow-automation
   - devops-automation
   - process-automation
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-automate-workflows/how-to-automate-workflows-workflow-automation.jpg)

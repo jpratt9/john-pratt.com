@@ -11,6 +11,7 @@ tags:
   - cloud-computing
   - AWS-Lambda
   - microservices
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-serverless-architecture/featured-image-b026d8bb-db84-4297-8f6a-287c27b6ca42.jpg)

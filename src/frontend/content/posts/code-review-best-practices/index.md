@@ -11,6 +11,7 @@ tags:
   - devops
   - agile-development
   - code-quality
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/code-review-best-practices/featured-image-a065a56b-79c8-4f6d-9fe9-9a385b8edf05.jpg)

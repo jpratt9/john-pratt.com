@@ -11,6 +11,7 @@ tags:
   - ETL-process
   - cloud-data-pipeline
   - data-architecture
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-build-data-pipeline/featured-image-16820f39-2489-4acf-aa62-3f56404fbc6c.jpg)

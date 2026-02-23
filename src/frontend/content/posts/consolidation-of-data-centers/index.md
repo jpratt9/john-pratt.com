@@ -11,6 +11,7 @@ tags:
   - cloud-architecture
   - IT-infrastructure
   - DevOps
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/consolidation-of-data-centers/consolidation-of-data-centers-server-consolidation.jpg)

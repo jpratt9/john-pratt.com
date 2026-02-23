@@ -8,6 +8,7 @@ tags:
   - algorithms
   - databases
   - data
+images_fixed: true
 ---
 
 ![hash](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/hyperloglogs/hash.webp)

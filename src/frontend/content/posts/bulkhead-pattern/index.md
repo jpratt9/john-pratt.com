@@ -7,6 +7,7 @@ tags:
   - software-dev
   - resiliency-patterns
   - error-handling
+images_fixed: true
 ---
 
 ![Bulkhead Pattern](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/bulkhead-pattern/bulkhead.png)

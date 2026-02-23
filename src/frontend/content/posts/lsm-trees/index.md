@@ -7,6 +7,7 @@ tags:
   - computer-science
   - data-structures
   - databases
+images_fixed: true
 ---
 
 ![LSM tree](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/lsm-trees/lsm-tree.png)

@@ -11,6 +11,7 @@ tags:
   - spring-boot-docker
   - spring-boot-testing
   - spring-boot-jpa
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/java-spring-boot-tutorial/java-spring-boot-tutorial-development-stack-8e7136f5.jpg)

@@ -11,6 +11,7 @@ tags:
   - scrum-practices
   - software-development
   - devops
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/agile-development-best-practices/featured-image-70954144-1af5-4e80-b69b-a64eb8f0ff49.jpg)

@@ -11,6 +11,7 @@ tags:
   - devsecops
   - docker-hardening
   - kubernetes-security
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/docker-security-best-practices/featured-image-31aaf7ae-e729-427b-93d8-489bd937aa29.jpg)

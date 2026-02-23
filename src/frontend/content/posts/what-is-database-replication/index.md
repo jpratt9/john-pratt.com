@@ -11,6 +11,7 @@ tags:
   - disaster-recovery
   - database-scaling
   - data-architecture
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-database-replication/what-is-database-replication-database-replication.jpg)

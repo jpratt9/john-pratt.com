@@ -11,6 +11,7 @@ tags:
   - web-development
   - django-vs-flask
   - python-api-framework
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/best-python-frameworks-for-web-development/featured-image-4494772c-624e-4771-bd01-7eb1b864bd61.jpg)

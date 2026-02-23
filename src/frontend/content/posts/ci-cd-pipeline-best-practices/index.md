@@ -11,6 +11,7 @@ tags:
   - tips
   - strategies
   - list
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/ci-cd-pipeline-best-practices/featured-image-050be1af-c10a-4f60-b16f-880da28290df.jpg)

@@ -11,6 +11,7 @@ tags:
   - kpi-tracking
   - process-improvement
   - business-efficiency
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/operational-efficiency-metrics/featured-image-33b88fe6-404c-42f2-bb97-a196ecd68b72.jpg)

@@ -11,6 +11,7 @@ tags:
   - kubernetes-security
   - devsecops-tools
   - cnapp
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/best-container-security-tools/best-container-security-tools-container-security-7df92c8d.jpg)

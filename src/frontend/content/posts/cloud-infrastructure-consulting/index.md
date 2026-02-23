@@ -11,6 +11,7 @@ tags:
   - devops-consulting
   - cloud-migration-services
   - aws-consulting
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-infrastructure-consulting/cloud-infrastructure-consulting-cloud-journey.jpg)

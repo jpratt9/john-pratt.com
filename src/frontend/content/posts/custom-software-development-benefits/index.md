@@ -11,6 +11,7 @@ tags:
   - business-software
   - custom-solutions
   - technology-ROI
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/custom-software-development-benefits/featured-image-70ea8ddc-372c-41cd-8ce9-11d220c22d9d.jpg)

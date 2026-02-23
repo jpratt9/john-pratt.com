@@ -11,6 +11,7 @@ tags:
   - web-application-testing
   - DevOps-tools
   - CI/CD-integration
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/best-load-testing-tools-for-web-applications/best-load-testing-tools-for-web-applications-performance-monitoring-a7d78130.jpg)

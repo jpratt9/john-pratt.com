@@ -686,6 +686,48 @@ class TestOrdinalCommitMessage:
 
         mock_process.assert_called_once()
 
+    @patch("lambda_function.github_commit")
+    @patch("lambda_function.process_images", return_value=("![img](https://cdn.outrank.so/abc/img.jpg)", {}))
+    @patch("lambda_function.ask_claude", side_effect=lambda prompt, **kw: "mocked title")
+    @patch("lambda_function.requests")
+    @patch("lambda_function.OUTRANK_CDN_PATTERN", r"https?://cdn\.outrank\.so/[^\s]+")
+    def test_images_fixed_false_when_cdn_urls_remain(self, mock_requests, mock_claude, mock_process, mock_commit):
+        """When process_images fails to replace CDN URLs, images_fixed is false."""
+        file_resp = Mock()
+        file_resp.status_code = 404
+        file_resp.json.return_value = {}
+        commits_resp = Mock()
+        commits_resp.status_code = 200
+        commits_resp.json.return_value = []
+        mock_requests.get.side_effect = [file_resp, commits_resp]
+
+        from lambda_function import lambda_handler
+        lambda_handler(self._make_event(), None)
+
+        content = mock_commit.call_args[0][0][0]["content"]
+        assert "images_fixed: false" in content
+
+    @patch("lambda_function.github_commit")
+    @patch("lambda_function.process_images", return_value=("Clean body no cdn urls", {}))
+    @patch("lambda_function.ask_claude", side_effect=lambda prompt, **kw: "mocked title")
+    @patch("lambda_function.requests")
+    @patch("lambda_function.OUTRANK_CDN_PATTERN", r"https?://cdn\.outrank\.so/[^\s]+")
+    def test_images_fixed_true_when_no_cdn_urls_remain(self, mock_requests, mock_claude, mock_process, mock_commit):
+        """When process_images replaces all CDN URLs, images_fixed is true."""
+        file_resp = Mock()
+        file_resp.status_code = 404
+        file_resp.json.return_value = {}
+        commits_resp = Mock()
+        commits_resp.status_code = 200
+        commits_resp.json.return_value = []
+        mock_requests.get.side_effect = [file_resp, commits_resp]
+
+        from lambda_function import lambda_handler
+        lambda_handler(self._make_event(), None)
+
+        content = mock_commit.call_args[0][0][0]["content"]
+        assert "images_fixed: true" in content
+
 
 # ============================================================================
 # Titlecase function tests
@@ -1139,6 +1181,62 @@ class TestFixCodeFences:
 
         mock_client.beta.files.delete.assert_called_once_with("file_test123")
         assert open(path).read() == content
+
+    def test_skips_when_code_fences_fixed_flag_set(self, tmp_path):
+        mock_client = self._mock_beta('[]')
+        content = "---\ntitle: \"Test\"\ncode_fences_fixed: []\n---\nSome content"
+        path = self._write_temp(tmp_path, content)
+
+        from lambda_function import fix_code_fences
+        fix_code_fences(path)
+
+        mock_client.beta.files.upload.assert_not_called()
+        assert open(path).read() == content
+
+    def test_skips_when_code_fences_fixed_has_ranges(self, tmp_path):
+        mock_client = self._mock_beta('[]')
+        content = '---\ntitle: "Test"\ncode_fences_fixed: ["3-5"]\n---\nSome content'
+        path = self._write_temp(tmp_path, content)
+
+        from lambda_function import fix_code_fences
+        fix_code_fences(path)
+
+        mock_client.beta.files.upload.assert_not_called()
+        assert open(path).read() == content
+
+    def test_writes_empty_list_when_no_unfenced_blocks(self, tmp_path):
+        self._mock_beta('[]')
+        content = "---\ntitle: \"Test\"\n---\nSome content"
+        path = self._write_temp(tmp_path, content)
+
+        from lambda_function import fix_code_fences
+        fix_code_fences(path)
+
+        result = open(path).read()
+        assert "code_fences_fixed: []" in result
+
+    def test_writes_ranges_after_fixing_blocks(self, tmp_path):
+        self._mock_beta('["4-5"]')
+        content = "---\ntitle: \"Test\"\n---\nimport os\nimport sys\ntext"
+        path = self._write_temp(tmp_path, content)
+
+        from lambda_function import fix_code_fences
+        fix_code_fences(path)
+
+        result = open(path).read()
+        assert "```python" in result
+        assert 'code_fences_fixed: ["4-5"]' in result
+
+    def test_no_flag_on_api_error(self, tmp_path):
+        mock_client = self._mock_beta('[]')
+        mock_client.beta.messages.create.side_effect = Exception("API error")
+        content = "---\ntitle: \"Test\"\n---\nSome content"
+        path = self._write_temp(tmp_path, content)
+
+        from lambda_function import fix_code_fences
+        fix_code_fences(path)
+
+        assert "code_fences_fixed" not in open(path).read()
 
 
 # ============================================================================

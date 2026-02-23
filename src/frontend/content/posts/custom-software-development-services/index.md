@@ -11,6 +11,7 @@ tags:
   - cloud-native-solutions
   - devops-services
   - business-automation
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/custom-software-development-services/custom-software-development-services-software-development.jpg)

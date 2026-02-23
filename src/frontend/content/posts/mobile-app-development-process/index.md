@@ -11,6 +11,7 @@ tags:
   - how-to-build-an-app
   - app-creation-guide
   - app-development-steps
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/mobile-app-development-process/featured-image-810d9d6c-547b-4e58-aeb1-3e45f77cacad.jpg)

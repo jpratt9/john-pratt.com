@@ -11,6 +11,7 @@ tags:
   - kubernetes-basics
   - container-orchestration
   - devops-guide
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/kubernetes-tutorial-for-beginners/kubernetes-tutorial-for-beginners-kubernetes-launch.jpg)

@@ -109,6 +109,8 @@ export interface BlogPostFrontmatter {
   tags: string[];
   draft?: boolean;
   description?: string;
+  images_fixed?: boolean;
+  code_fences_fixed?: string[];
 }
 
 // GraphQL node types

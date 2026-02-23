@@ -11,6 +11,7 @@ tags:
   - query-performance
   - observability-tools
   - database-management
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/database-performance-monitoring-tools/featured-image-a2edae04-5eb0-44d7-9181-9836eeebc13a.jpg)

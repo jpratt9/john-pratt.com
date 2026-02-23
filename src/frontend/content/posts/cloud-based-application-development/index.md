@@ -11,6 +11,7 @@ tags:
   - cloud-services
   - SaaS-development
   - microservices
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-based-application-development/featured-image-4dfd5043-b36b-48ba-875c-f23f61aeb39a.jpg)

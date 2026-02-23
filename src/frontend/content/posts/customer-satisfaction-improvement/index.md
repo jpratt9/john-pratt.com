@@ -11,6 +11,7 @@ tags:
   - cx-strategy
   - customer-loyalty
   - service-automation
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/customer-satisfaction-improvement/featured-image-616f6827-7dd2-4368-9d05-59f19248e4c4.jpg)

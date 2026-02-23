@@ -11,6 +11,7 @@ tags:
   - distributed-systems
   - microservice-architecture
   - system-design
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-message-queue/what-is-message-queue-message-balancing.jpg)

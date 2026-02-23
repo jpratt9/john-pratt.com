@@ -11,6 +11,7 @@ tags:
   - technical-hiring
   - hire-software-engineer
   - tech-recruiting
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-hire-software-developer/how-to-hire-software-developer-recruitment.jpg)

@@ -11,6 +11,7 @@ tags:
   - workflow-management
   - business-process-automation
   - iPaaS-solutions
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/best-workflow-automation-software/best-workflow-automation-software-workflow-automation-3065a446.jpg)

@@ -11,6 +11,7 @@ tags:
   - agile-development
   - ci/cd
   - secure-coding
+images_fixed: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/software-engineering-best-practices/featured-image-63010eee-d5d0-4c96-9eb2-1f12b7280af6.jpg)
