@@ -140,7 +140,7 @@ And you're done. Seriously. Your environment is now fully kitted out for browser
 
 Now for the fun part. With the setup handled, let's write a little code. Create a new file, call it `first_script.py`, and paste this in. This script will launch a browser, visit a website, snap a picture, and grab some text.
 
-```
+```python
 from playwright.sync_api import sync_playwright
 
 def run_automation():
@@ -186,7 +186,7 @@ Let's walk through a classic example: logging into a demo e-commerce site. The s
 
 Here's how that translates into a few lines of Python:
 
-```
+```python
 # Assuming 'page' is an active Playwright page object
 page.goto("https://www.saucedemo.com/")
 
@@ -210,7 +210,7 @@ You see dropdowns everywhere, especially on e-commerce sites and data-heavy dash
 
 Imagine you've landed on a product page and want to sort the items by price, from highest to lowest.
 
-```
+```python
 # Assuming you are on the inventory page after logging in
 product_sort_container = page.locator("[data-test='product_sort_container']")
 
@@ -231,7 +231,7 @@ This is where Playwright really shines, thanks to its auto-waiting capabilities.
 
 Let's say you want to add an item to a shopping cart and then confirm that the little cart icon updates with the correct number.
 
-```
+```python
 # Click the 'Add to cart' button for the first item
 page.locator(".btn_inventory").first.click()
 
