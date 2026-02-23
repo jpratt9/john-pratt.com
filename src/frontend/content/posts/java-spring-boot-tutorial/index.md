@@ -13,7 +13,7 @@ tags:
   - spring-boot-jpa
 ---
 
-![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/java-spring-boot-tutorial/java-spring-boot-tutorial-development-stack.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/java-spring-boot-tutorial/java-spring-boot-tutorial-development-stack-8e7136f5.jpg)
 
 Alright, let's get our hands dirty. In this guide, we're going to build a full-fledged Spring Boot application from the ground up, all the way from creating the initial project to getting it live in the cloud.
 
@@ -29,7 +29,7 @@ What does that mean for you? You can get a production-ready application up and r
 
 Getting started is a simple, three-part process: set up your environment, initialize the project, and start coding.
 
-![A three-step diagram illustrating the Spring Boot setup process: Environment, Initialize, and Code.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/java-spring-boot-tutorial/java-spring-boot-tutorial-setup-process.jpg)
+![A three-step diagram illustrating the Spring Boot setup process: Environment, Initialize, and Code.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/java-spring-boot-tutorial/java-spring-boot-tutorial-setup-process-9673cb59.jpg)
 
 This streamlined flow is exactly why developers love the framework - it gets you from zero to coding as fast as possible.
 
@@ -63,7 +63,7 @@ Before we start writing a single line of code, we need to make sure our local ma
 
 ## Building Your Application's Core Logic
 
-![A laptop screen displaying Spring Initializr, alongside a Java project structure and JDK symbol.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/java-spring-boot-tutorial/java-spring-boot-tutorial-spring-boot.jpg)
+![A laptop screen displaying Spring Initializr, alongside a Java project structure and JDK symbol.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/java-spring-boot-tutorial/java-spring-boot-tutorial-spring-boot-77c0092c.jpg)
 
 Alright, with our project scaffolding in place, it's time to get our hands dirty and build the actual engine of the application. This is where we'll create the layers that handle business logic and incoming user requests - the real heart of any web app.
 
@@ -79,6 +79,7 @@ To keep our API organized, we'll use `@RequestMapping("/api/tasks")` on the clas
 
 Now, for the endpoint that actually gets the tasks. We'll define a method and annotate it with `@GetMapping`. This tells Spring, "Hey, when a `GET` request comes in for `/api/tasks`, run this method."
 
+```java
 package com.example.taskmanager.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
@@ -96,6 +97,7 @@ public class TaskController {
  return "Fetching all tasks...";
  }
 }
+```
 
 This simple, clean structure is foundational to any good **Java Spring Boot tutorial** and gives us a clear map of our API endpoints.
 
@@ -109,6 +111,7 @@ To create our service, we'll make a new class and annotate it with `@Service`. T
 
 Let's create a `TaskService` to handle our task logic.
 
+```java
 package com.example.taskmanager.service;
 
 import org.springframework.stereotype.Service;
@@ -122,6 +125,7 @@ public class TaskService {
  return "Task 1, Task 2, Task 3";
  }
 }
+```
 
 By keeping the core logic here, we can test it in isolation from the web layer. We can write unit tests to confirm our business rules work perfectly without ever having to spin up a server or simulate an HTTP request.
 
@@ -138,6 +142,7 @@ Let's update the `TaskController` to make it aware of the `TaskService`. The mod
 1. Add a `private final` field for the `TaskService`.
 2. Create a constructor that takes the `TaskService` as an argument.
 
+```java
 package com.example.taskmanager.controller;
 
 import com.example.taskmanager.service.TaskService;
@@ -165,12 +170,13 @@ public class TaskController {
  return taskService.fetchAllTasks();
  }
 }
+```
 
 Using constructor injection makes our code more robust because a `TaskController` instance can't even be created without a `TaskService`. Spring automatically finds the `TaskService` bean we defined earlier and passes it into the constructor when it builds the controller. This elegant wiring is what makes the framework so powerful - it gets rid of boilerplate code and promotes a clean, loosely-coupled architecture.
 
 ## Connecting to a Database with Spring Data JPA
 
-![Diagram illustrating a typical layered application architecture: REST input to Controller, then Service, then Repository.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/java-spring-boot-tutorial/java-spring-boot-tutorial-layered-architecture.jpg)
+![Diagram illustrating a typical layered application architecture: REST input to Controller, then Service, then Repository.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/java-spring-boot-tutorial/java-spring-boot-tutorial-layered-architecture-6325e3bc.jpg)
 
 So far, our application's logic is sound, but its memory is short-lived. Any data we create vanishes the moment we shut down the server. To build something real, we need persistence, and that's where **Spring Data JPA** shines. It's a fantastic abstraction layer that lets us talk to a relational database without drowning in boilerplate SQL code.
 
@@ -184,12 +190,14 @@ Spring Boot's auto-configuration is smart enough to create a `DataSource` for us
 
 Here's what a typical setup looks like:
 
+```java properties
 spring.datasource.url=jdbc:postgresql://localhost:5432/taskdb
 spring.datasource.username=your_postgres_user
 spring.datasource.password=your_secret_password
 
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
+```
 
 Let's quickly unpack these settings:
 * **`spring.datasource.url`**: This is the JDBC connection string pointing to your database. Here, it's a local PostgreSQL server on port **5432** connecting to a database named `taskdb`.
@@ -203,6 +211,7 @@ With the connection details sorted, we can define how our Java objects map to da
 
 Let's turn our `Task` model into an entity.
 
+```java
 package com.example.taskmanager.model;
 
 import jakarta.persistence.Entity;
@@ -222,6 +231,7 @@ public class Task {
 
  // Getters and setters are necessary, but omitted here for brevity
 }
+```
 The `@Entity` annotation is the key; it flags this class as something JPA needs to manage, mapping it to a table (by default, named `task`). The `@Id` marks the `id` field as the primary key, and `@GeneratedValue` tells the database to handle generating its value for us.
 
 > This is where you see the true benefit of Spring Data JPA. It lets you operate at a higher level of abstraction. You focus on your Java `Task` object, and Spring handles all the tedious SQL translation for you, making development significantly faster.
@@ -232,6 +242,7 @@ This is my favorite part - where we get to interact with the database without wr
 
 Creating a repository for our `Task` entity couldn't be easier. We just need a new interface that extends `JpaRepository`.
 
+```java
 package com.example.taskmanager.repository;
 
 import com.example.taskmanager.model.Task;
@@ -242,6 +253,7 @@ import org.springframework.stereotype.Repository;
 public interface TaskRepository extends JpaRepository<Task, Long> {
  // We can add custom query methods here later!
 }
+```
 
 And that's literally it. By extending `JpaRepository<Task, Long>`, our `TaskRepository` interface inherits a treasure trove of methods like `save()`, `findById()`, `findAll()`, and `deleteById()`. We can now inject this repository directly into our `TaskService` and start persisting, retrieving, and managing our tasks. This powerful, convention-over-configuration approach is a cornerstone of any modern **java spring boot tutorial**.
 
@@ -259,6 +271,7 @@ This is where [**Mockito**](https://site.mockito.org/) shines. It's a powerful m
 
 Let's imagine a test for the `findAllTasks` method in our `TaskService`. We don't need a live database; we just need to confirm that the service properly calls the repository's `findAll()` method and passes along the result.
 
+```java
 @ExtendWith(MockitoExtension.class)
 class TaskServiceTest {
 
@@ -285,6 +298,7 @@ class TaskServiceTest {
  assertThat(actualTasks.get(0).getTitle()).isEqualTo("First Task");
  }
 }
+```
 Here, `@Mock` creates the fake repository, while `@InjectMocks` creates a `TaskService` instance and injects that mock into it. The `when(...).thenReturn(...)` line is the key - it programs our mock to return a specific list of tasks when its `findAll()` method is called. This keeps our service logic completely isolated for a pure unit test.
 
 ### Simulating HTTP Requests for Controller Tests
@@ -295,6 +309,7 @@ Unit tests are fantastic for business logic, but they won't tell you if your API
 
 Let's write a test for our `TaskController`'s `GET /api/tasks` endpoint:
 
+```java
 @SpringBootTest
 @AutoConfigureMockMvc
 class TaskControllerTest {
@@ -319,6 +334,7 @@ class TaskControllerTest {
  .andExpect(jsonPath("$[0].title", is("Controller Test Task")));
  }
 }
+```
 Did you notice `@MockBean`? It's different from `@Mock`. This annotation finds the real `TaskService` bean within the application context and replaces it with a Mockito mock. This gives us the best of both worlds: we can test the entire web layer, from request routing to JSON serialization, while still controlling the service's behavior.
 
 > A well-structured test suite acts as living documentation for your code. When a new developer joins the team, they can look at the tests to understand exactly how each component is expected to behave.
@@ -354,6 +370,7 @@ Why go to all this trouble? The payoff is huge:
 
 Here's what a practical, two-stage `Dockerfile` looks like for our app:
 
+```dockerfile
 # Stage 1: The "builder" stage, where we compile the code
 FROM maven:3.8.5-openjdk-17 AS build
 COPY src /home/app/src
@@ -364,6 +381,7 @@ RUN mvn -f /home/app/pom.xml clean package
 FROM openjdk:17-jre-slim
 COPY --from=build /home/app/target/*.jar app.jar
 ENTRYPOINT ["java","-jar","/app.jar"]
+```
 
 This separation of build-time and run-time environments is a bedrock principle of modern container practices. If you want to dive deeper into locking down your containers, our guide on [Docker security best practices](https://www.john-pratt.com/docker-security-best-practices/) is a great next step.
 
@@ -402,7 +420,7 @@ Ultimately, integrating Docker and a CI/CD pipeline into your workflow isn't jus
 
 ## Common Questions About Spring Boot Development
 
-![A diagram illustrating a software deployment pipeline: Build, Test, Deploy, Database, and Registry.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/java-spring-boot-tutorial/java-spring-boot-tutorial-deployment-pipeline.jpg)
+![A diagram illustrating a software deployment pipeline: Build, Test, Deploy, Database, and Registry.](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/java-spring-boot-tutorial/java-spring-boot-tutorial-deployment-pipeline-b0fd10ed.jpg)
 
 As you get your hands dirty with this Spring Boot tutorial and start building real applications, you're going to hit a few common bumps in the road. It happens to everyone. This section is my personal FAQ - a quick reference for the questions I see pop up time and again from developers diving into the framework.
 
