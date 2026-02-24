@@ -380,6 +380,7 @@ def lambda_handler(event, context):
         print(f"Slug collision detected, using: {slug}")
 
     action = "fix" if is_update else "add"
+    tag = "[chore]" if is_update else "[feat]"
 
     ordinal_prefix = ""
     if action == "add":
@@ -391,13 +392,13 @@ def lambda_handler(event, context):
         if log_resp.status_code == 200:
             add_count = sum(
                 1 for c in log_resp.json()
-                if c["commit"]["message"].startswith("add ") and f"blog post for {date}" in c["commit"]["message"]
+                if "add " in c["commit"]["message"] and f"blog post for {date}" in c["commit"]["message"]
             )
             if add_count >= 1:
                 ORDINALS = {2: "2nd", 3: "3rd"}
                 ordinal_prefix = ORDINALS.get(add_count + 1, f"{add_count + 1}th") + " "
 
-    github_payload["message"] = f"{action} {ordinal_prefix}blog post for {date}"
+    github_payload["message"] = f"{tag} {action} {ordinal_prefix}blog post for {date}"
 
     # generate our article from source
     os.makedirs(f"/tmp/{slug}", exist_ok=True)

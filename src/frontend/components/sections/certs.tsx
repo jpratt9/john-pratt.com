@@ -43,8 +43,8 @@ const StyledCertsSection = styled.section`
     }
 
     &.expired {
-      background-color: var(--red-tint);
-      color: var(--red);
+      background-color: rgba(136, 146, 176, 0.1);
+      color: var(--slate);
     }
   }
 
