@@ -334,8 +334,9 @@ def lambda_handler(event, context):
         m = re.search(r'^title:\s*(.+)$', existing_content, re.MULTILINE)
         clean_title = m.group(1).strip() if m else '"' + raw_title + '"'
         print(f"Title already optimized, keeping: {clean_title}")
-    print(f"Title before: \"{raw_title}\"")
-    print(f"Title after : \"{clean_title}\"")
+    if not title_optimized:
+        print(f"Title before: \"{raw_title}\"")
+        print(f"Title after : \"{clean_title}\"")
     raw_description  = article_json.get("meta_description", "")
     if not description_optimized:
         try:
@@ -348,8 +349,9 @@ def lambda_handler(event, context):
         m = re.search(r'^description:\s*(.+)$', existing_content, re.MULTILINE)
         clean_desc = m.group(1).strip() if m else '"' + raw_description + '"'
         print(f"Description already optimized, keeping: {clean_desc}")
-    print(f"Desc before: \"{raw_description}\"")
-    print(f"Desc after : \"{clean_desc}\"")
+    if not description_optimized:
+        print(f"Desc before: \"{raw_description}\"")
+        print(f"Desc after : \"{clean_desc}\"")
     is_update = file_exists and date in existing_content and clean_title in existing_content
     if images_fixed:
         print("[process_images] Skipping (images_fixed flag set)")
