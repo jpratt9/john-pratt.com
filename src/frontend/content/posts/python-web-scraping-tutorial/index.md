@@ -4,6 +4,9 @@ date: '2025-10-29'
 description: "Our Python web scraping tutorial covers everything from Requests and BeautifulSoup to handling dynamic sites with Selenium. Learn practical skills."
 draft: false
 slug: '/python-web-scraping-tutorial'
+images_fixed: true
+title_optimized: true
+description_optimized: true
 tags:
 
   - python-web-scraping-tutorial
@@ -11,12 +14,9 @@ tags:
   - selenium-python
   - data-scraping
   - python-requests
-images_fixed: true
-title_optimized: true
-description_optimized: true
 ---
 
-![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/python-web-scraping-tutorial/featured-image-8ed9d45a-7670-4273-a125-0085f9f5c8e3.jpg)
+![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-8ed9d45a-7670-4273-a125-0085f9f5c8e3.jpg)
 
 If you're looking to pull data from websites, you've come to the right place. This guide will walk you through everything you need to know about web scraping with Python, from setting up your environment to exporting your first dataset.
 
@@ -62,7 +62,7 @@ First things first, you need [Python](https://www.python.org/) on your machine. 
 
 The download page is pretty straightforward and will have installers for whatever operating system you're on.
 
-![Screenshot from https://www.python.org/downloads/](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/python-web-scraping-tutorial/34e89e27-30e3-4b12-8676-2165dee1f5a5.jpg)
+![Screenshot from https://www.python.org/downloads/](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/34e89e27-30e3-4b12-8676-2165dee1f5a5.jpg)
 
 Here's a pro tip for Windows users: during the installation, you'll see a checkbox that says **"Add Python to PATH"**. Make sure you tick that box. It's a small detail that makes a huge difference, allowing you to run Python commands from your terminal without a fuss.
 
@@ -128,7 +128,7 @@ That raw HTML string isn't very useful on its own. Trying to find specific data 
 
 It's an incredibly popular and well-maintained library, which is exactly what you want for a tool you'll rely on constantly.
 
-![Screenshot from https://pypi.org/project/beautifulsoup4/](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/python-web-scraping-tutorial/7f216433-5e9a-4d68-94b7-37577c11556c.jpg)
+![Screenshot from https://pypi.org/project/beautifulsoup4/](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/7f216433-5e9a-4d68-94b7-37577c11556c.jpg)
 
 This screenshot from its PyPI page shows its long history, giving you confidence that it's a stable and reliable choice for any parsing project you tackle.
 
@@ -194,7 +194,7 @@ Suddenly, your script can:
 
 Basically, you get to scrape the final, fully-rendered page that a user sees, packed with all its dynamic content. The official Selenium website frames it as a premier tool for browser automation, which is precisely what we need.
 
-![Screenshot from https://www.selenium.dev/](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/python-web-scraping-tutorial/8b2b8e8b-bc0b-4ee9-8132-2d630519a139.jpg)
+![Screenshot from https://www.selenium.dev/](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/8b2b8e8b-bc0b-4ee9-8132-2d630519a139.jpg)
 
 Selenium's reputation comes from its widespread use in professional web application testing, which is a testament to its power and reliability for complex automation tasks.
 
