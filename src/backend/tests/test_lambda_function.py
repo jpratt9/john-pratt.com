@@ -591,7 +591,7 @@ class TestOrdinalCommitMessage:
         result = lambda_handler(self._make_event(), None)
 
         _, message, _ = mock_commit.call_args[0]
-        assert message == "[feat] add blog post for 2025-08-21"
+        assert message == "[feat] [bot] add blog post for 2025-08-21"
 
     @patch("lambda_function.github_commit")
     @patch("lambda_function.ask_claude", side_effect=lambda prompt, **kw: "mocked title")
@@ -600,7 +600,7 @@ class TestOrdinalCommitMessage:
         """Second add of the day -> '2nd' prefix."""
         def side_effect_get(url, **kwargs):
             if "commits" in url:
-                return self._mock_commits_response(["[feat] add blog post for 2025-08-21"])
+                return self._mock_commits_response(["[feat] [bot] add blog post for 2025-08-21"])
             return self._mock_file_not_found()
         mock_requests.get.side_effect = side_effect_get
 
@@ -608,7 +608,7 @@ class TestOrdinalCommitMessage:
         result = lambda_handler(self._make_event(), None)
 
         _, message, _ = mock_commit.call_args[0]
-        assert message == "[feat] add 2nd blog post for 2025-08-21"
+        assert message == "[feat] [bot] add 2nd blog post for 2025-08-21"
 
     @patch("lambda_function.github_commit")
     @patch("lambda_function.ask_claude", side_effect=lambda prompt, **kw: "mocked title")
@@ -618,8 +618,8 @@ class TestOrdinalCommitMessage:
         def side_effect_get(url, **kwargs):
             if "commits" in url:
                 return self._mock_commits_response([
-                    "[feat] add blog post for 2025-08-21",
-                    "[feat] add 2nd blog post for 2025-08-21",
+                    "[feat] [bot] add blog post for 2025-08-21",
+                    "[feat] [bot] add 2nd blog post for 2025-08-21",
                 ])
             return self._mock_file_not_found()
         mock_requests.get.side_effect = side_effect_get
@@ -628,7 +628,7 @@ class TestOrdinalCommitMessage:
         result = lambda_handler(self._make_event(), None)
 
         _, message, _ = mock_commit.call_args[0]
-        assert message == "[feat] add 3rd blog post for 2025-08-21"
+        assert message == "[feat] [bot] add 3rd blog post for 2025-08-21"
 
     @patch("lambda_function.github_commit")
     @patch("lambda_function.ask_claude", side_effect=lambda prompt, **kw: "mocked title")
@@ -647,7 +647,7 @@ class TestOrdinalCommitMessage:
         result = lambda_handler(self._make_event(), None)
 
         _, message, _ = mock_commit.call_args[0]
-        assert message == "[chore] fix blog post for 2025-08-21"
+        assert message == "[chore] [bot] fix blog post for 2025-08-21"
         assert "2nd" not in message
 
     @patch("lambda_function.github_commit")

@@ -408,7 +408,7 @@ def lambda_handler(event, context):
                 ORDINALS = {2: "2nd", 3: "3rd"}
                 ordinal_prefix = ORDINALS.get(add_count + 1, f"{add_count + 1}th") + " "
 
-    github_payload["message"] = f"{tag} {action} {ordinal_prefix}blog post for {date}"
+    github_payload["message"] = f"{tag} [bot] {action} {ordinal_prefix}blog post for {date}"
 
     # generate our article from source
     os.makedirs(f"/tmp/{slug}", exist_ok=True)
