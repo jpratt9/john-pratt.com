@@ -117,6 +117,7 @@ def fix_code_fences(file_path):
                     raise
                 print(f"[fix_code_fences] {PRIMARY_MODEL} overloaded (attempt {attempt + 1}/3), retrying in {delays[attempt]}s...")
                 time.sleep(delays[attempt])
+        print(f"[fix_code_fences] Full response: {response}")
         text = _extract_text(response)
         print(f"[fix_code_fences] Raw response: {text.strip()}")
         ranges = json.loads(text.strip())
