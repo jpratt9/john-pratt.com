@@ -55,7 +55,7 @@ resource "aws_lambda_function" "webhook" {
   runtime          = var.python_runtime
   handler          = "lambda_function.lambda_handler"
   filename         = data.archive_file.handler_zip.output_path
-  source_code_hash = data.archive_file.handler_zip.output_base64sha256
+  source_code_hash = sha256(join("", [for f in sort(fileset("${path.module}/../service", "**/*.py")) : filesha256("${path.module}/../service/${f}")]))
   timeout          = 900  # 15 minutes max
   memory_size      = 256
 
