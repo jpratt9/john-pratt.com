@@ -14,9 +14,10 @@ tags:
   - selenium-python
   - data-scraping
   - python-requests
+code_fences_fixed: ["114-122", "137-146", "167-174", "220-226", "229-245", "258-274", "295-306", "321-331", "344-355", "381-389", "393-396"]
 ---
 
-![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/featured-image-8ed9d45a-7670-4273-a125-0085f9f5c8e3.jpg)
+![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/python-web-scraping-tutorial/featured-image-8ed9d45a-7670-4273-a125-0085f9f5c8e3-96c84f55.jpg)
 
 If you're looking to pull data from websites, you've come to the right place. This guide will walk you through everything you need to know about web scraping with Python, from setting up your environment to exporting your first dataset.
 
@@ -62,7 +63,7 @@ First things first, you need [Python](https://www.python.org/) on your machine. 
 
 The download page is pretty straightforward and will have installers for whatever operating system you're on.
 
-![Screenshot from https://www.python.org/downloads/](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/34e89e27-30e3-4b12-8676-2165dee1f5a5.jpg)
+![Screenshot from https://www.python.org/downloads/](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/python-web-scraping-tutorial/34e89e27-30e3-4b12-8676-2165dee1f5a5-f3adbbb6.jpg)
 
 Here's a pro tip for Windows users: during the installation, you'll see a checkbox that says **"Add Python to PATH"**. Make sure you tick that box. It's a small detail that makes a huge difference, allowing you to run Python commands from your terminal without a fuss.
 
@@ -111,6 +112,7 @@ Before you can parse anything, you have to get the content. The [Requests](https
 
 Let's try it out on a practice site built specifically for this kind of work.
 
+```python
 import requests
 
 url = 'https://books.toscrape.com/'
@@ -120,6 +122,7 @@ response = requests.get(url)
 html_content = response.text
 
 print(html_content)
+```
 Run that code, and you'll see the page's entire HTML source code dumped into your console. It looks like a mess, but this is the exact blueprint your web browser uses to render the page you see. Now we have something to work with.
 
 ### Turning HTML into a Searchable Object
@@ -128,12 +131,13 @@ That raw HTML string isn't very useful on its own. Trying to find specific data 
 
 It's an incredibly popular and well-maintained library, which is exactly what you want for a tool you'll rely on constantly.
 
-![Screenshot from https://pypi.org/project/beautifulsoup4/](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/7f216433-5e9a-4d68-94b7-37577c11556c.jpg)
+![Screenshot from https://pypi.org/project/beautifulsoup4/](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/python-web-scraping-tutorial/7f216433-5e9a-4d68-94b7-37577c11556c-3175a643.jpg)
 
 This screenshot from its PyPI page shows its long history, giving you confidence that it's a stable and reliable choice for any parsing project you tackle.
 
 Let's parse the content we just fetched.
 
+```python
 from bs4 import BeautifulSoup
 
 # ... (assuming you have the 'html_content' from the previous step) ...
@@ -144,6 +148,7 @@ soup = BeautifulSoup(html_content, 'html.parser')
 # Now 'soup' is a structured object we can query
 print(soup.title)
 # Output: <title>All products | Books to Scrape - A sandbox</title>
+```
 Just like that, we've gone from a chaotic string to a neatly organized tree of HTML tags. Now the real work can begin: finding and extracting the exact data we need.
 
 > **Expert Tip:** This two-step dance is fundamental. `requests.get()` fetches the raw HTML, and `BeautifulSoup()` parses it into a usable structure. For static sites, you'll almost always use them together.
@@ -164,6 +169,7 @@ Once you've identified a reliable selector, you can use BeautifulSoup's `.select
 
 Let's grab all the book titles from the page. After inspecting, we can see that each title is an `<a>` tag inside an `<h3>` tag, which is inside that `.product_pod` element. A perfect CSS selector for this would be `.product_pod h3 a`.
 
+```python
 # The .select() method returns a list of all matching elements
 book_elements = soup.select('.product_pod h3 a')
 
@@ -172,6 +178,7 @@ for element in book_elements:
  # The title text is actually in the 'title' attribute of the <a> tag
  title = element.get('title') 
  print(title)
+```
 Boom! The script will print a clean list of every book title on the page. You just performed your first targeted data extraction. This simple pattern - inspect the page, find a unique selector, and use `.select()` to grab the data - is the absolute foundation of scraping static websites.
 
 ## Handling JavaScript with Selenium
@@ -194,7 +201,7 @@ Suddenly, your script can:
 
 Basically, you get to scrape the final, fully-rendered page that a user sees, packed with all its dynamic content. The official Selenium website frames it as a premier tool for browser automation, which is precisely what we need.
 
-![Screenshot from https://www.selenium.dev/](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/8b2b8e8b-bc0b-4ee9-8132-2d630519a139.jpg)
+![Screenshot from https://www.selenium.dev/](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/python-web-scraping-tutorial/8b2b8e8b-bc0b-4ee9-8132-2d630519a139-b720b2de.jpg)
 
 Selenium's reputation comes from its widespread use in professional web application testing, which is a testament to its power and reliability for complex automation tasks.
 
@@ -217,6 +224,7 @@ For anything involving user interaction or dynamic content, Selenium is your go-
 Let's walk through a real-world scenario: scraping an e-commerce site with an "infinite scroll" feature. A `requests`-based scraper would only ever see the first dozen products. With Selenium, the entire game changes.
 
 First, you'll need to initialize a WebDriver, which is the bridge between your script and the browser. Thankfully, modern versions of Selenium often handle the driver setup for you, making it much easier than it used to be.
+```python
 
 from selenium import webdriver
 
@@ -224,8 +232,10 @@ from selenium import webdriver
 driver = webdriver.Chrome()
 
 # Tell the browser to navigate to your target page
+```
 driver.get('https://example-e-commerce-site.com/products')
 Once the page loads, that `driver` object is your command center. To handle infinite scroll, you can write a loop that repeatedly scrolls down, pauses for content to load, and checks if you've hit the bottom.
+```python
 
 import time
 
@@ -243,6 +253,7 @@ while True:
  new_height = driver.execute_script("return document.body.scrollHeight")
  if new_height == last_height:
  break # If the height hasn't changed, we're at the bottom
+```
  last_height = new_height
 After this code runs, the browser will have scrolled to the very bottom, triggering all the necessary JavaScript to load every single product on the page.
 
@@ -255,6 +266,7 @@ Okay, so Selenium has done the heavy lifting - navigating, clicking, and scrolli
 While Selenium has its own methods for finding elements, I often prefer to pass the final page source back to a tool that's purpose-built for parsing: BeautifulSoup.
 
 You can easily grab the fully-rendered HTML from the Selenium driver and feed it directly into a `BeautifulSoup` object.
+```python
 
 from bs4 import BeautifulSoup
 
@@ -272,6 +284,7 @@ for title in product_titles:
  print(title.get_text())
 
 # Don't forget to close the browser session when you're done
+```
 driver.quit()
 This hybrid approach truly gives you the best of both worlds. You use Selenium for what it excels at - browser automation and handling JavaScript - and then switch to BeautifulSoup for its elegant and efficient HTML parsing. It's a powerful combination for tackling just about any modern website.
 
@@ -292,6 +305,7 @@ By default, the Python [Requests](https://requests.readthedocs.io/en/latest/) li
 The fix is surprisingly simple: make your script look like a regular browser.
 
 You can easily find your own browser's User-Agent string by searching Google for "what is my user agent" and copying the result. Then, you just need to pass it along with your request.
+```python
 
 import requests
 
@@ -304,6 +318,7 @@ url = 'https://books.toscrape.com/'
 response = requests.get(url, headers=headers)
 
 # This should now return a 200 OK status
+```
 print(response.status_code)
 This one small change is often the most critical step to avoid being instantly blocked.
 
@@ -318,6 +333,7 @@ Python's built-in `time` module makes this incredibly easy with `time.sleep()`.
 > A good rule of thumb is to pause for **1 to 5 seconds** between each request. This simple act of rate-limiting is not only polite but also drastically reduces the chances of being flagged as a bot.
 
 Here's what that looks like in practice. If you wanted to scrape the first five pages of a product catalog, you'd just add a short pause inside your loop.
+```python
 
 import time
 
@@ -329,6 +345,7 @@ for page_number in range(1, 6):
  print(f"Scraped page {page_number}")
 
  # Politely wait for 3 seconds before hitting the next page
+```
  time.sleep(3)
 This simple loop now behaves much more like a human, patiently browsing from one page to the next.
 
@@ -341,6 +358,7 @@ This is where a `try...except` block becomes your best friend. It's a fundamenta
 The demand for this kind of robust data extraction is exploding. In fact, the web scraping market is on track to hit **$1.03 billion by 2025** and is expected to double by 2030. You can [read more on these web crawling industry benchmarks](https://thunderbit.com/blog/web-crawling-stats-and-industry-benchmarks) to see just how valuable these skills have become.
 
 A common use case is to wrap your request logic to catch network issues or bad server responses (like a 404 "Not Found" error).
+```python
 
 # Assume 'urls_to_scrape' is a list of URLs we need to visit
 for url in urls_to_scrape:
@@ -353,6 +371,7 @@ for url in urls_to_scrape:
 
  # If anything went wrong with the request, this block will run
  except requests.exceptions.RequestException as e:
+```
  print(f"Could not scrape {url}: {e}")
 
 Now, if a single URL fails, your script simply logs a message and moves on to the next one. This small addition is what separates a fragile script from a reliable tool that can run for hours without supervision.
@@ -378,6 +397,7 @@ Once your data is neatly organized in that list, you need to decide how to save 
 Let's walk through a real example. Imagine you've scraped a list of books and stored them in a list called `book_data`.
 
 To save this data as a CSV file, we can use Python's built-in `csv` module. It's surprisingly simple.
+```python
 
 import csv
 
@@ -387,13 +407,16 @@ keys = book_data[0].keys()
 with open('books.csv', 'w', newline='', encoding='utf-8') as output_file:
  dict_writer = csv.DictWriter(output_file, keys)
  dict_writer.writeheader()
+```
  dict_writer.writerows(book_data)
 
 Saving to JSON is even more direct using the `json` module. It's pretty much a one-liner inside the `with` statement.
+```python
 
 import json
 
 with open('books.json', 'w', encoding='utf-8') as output_file:
+```
  json.dump(book_data, output_file, ensure_ascii=False, indent=4)
 
 And just like that, running either of these snippets will create a perfectly formatted file right in your project folder, ready for analysis or your next big project.
