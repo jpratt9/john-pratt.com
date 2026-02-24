@@ -135,6 +135,10 @@ def fix_code_fences(file_path):
             start, end = map(int, range_str.split('-'))
             start_idx = start - 1
             end_idx = end - 1
+            if start == end:
+                lines[start_idx] = f'`{lines[start_idx].strip()}`'
+                print(f"[fix_code_fences] Inline-wrapped line {start}")
+                continue
             code_snippet = '\n'.join(lines[start_idx:end_idx + 1])
             try:
                 lang = ask_claude(language_detect_prompt.replace("{{CODE}}", code_snippet)).strip().lower()

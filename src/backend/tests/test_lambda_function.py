@@ -1227,6 +1227,37 @@ class TestFixCodeFences:
         assert "```python" in result
         assert 'code_fences_fixed: ["4-5"]' in result
 
+    def test_single_line_range_uses_inline_backticks(self, tmp_path):
+        self._mock_beta('["3-3"]')
+        content = "some text\n\ndocker run hello-world\n\nmore text"
+        path = self._write_temp(tmp_path, content)
+
+        from lambda_function import fix_code_fences
+        fix_code_fences(path)
+
+        result = open(path).read()
+        lines = result.split('\n')
+        assert lines[2] == '`docker run hello-world`'
+        assert '```' not in result
+
+    def test_mixed_single_and_multi_line_ranges(self, tmp_path):
+        self._mock_beta('["2-2", "4-5"]')
+        content = "header\nnpm install\ntext\nimport os\nimport sys\nfooter"
+        path = self._write_temp(tmp_path, content)
+
+        from lambda_function import fix_code_fences
+        fix_code_fences(path)
+
+        result = open(path).read()
+        lines = result.split('\n')
+        # Single line gets inline backticks (no insertion, no shift)
+        assert lines[1] == '`npm install`'
+        # Multi-line block gets fences (only +2 from its own fence lines)
+        assert lines[3] == '```python'
+        assert lines[4] == 'import os'
+        assert lines[5] == 'import sys'
+        assert lines[6] == '```'
+
     def test_no_flag_on_api_error(self, tmp_path):
         mock_client = self._mock_beta('[]')
         mock_client.beta.messages.create.side_effect = Exception("API error")
