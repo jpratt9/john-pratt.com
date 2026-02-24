@@ -119,8 +119,10 @@ def fix_code_fences(file_path):
                 time.sleep(delays[attempt])
         print(f"[fix_code_fences] Full response: {response}")
         text = _extract_text(response)
-        print(f"[fix_code_fences] Raw response: {text.strip()}")
-        ranges = json.loads(text.strip())
+        text = re.sub(r'^[^[\]]+', '', text.strip())
+        text = re.sub(r'[^[\]]+$', '', text)
+        print(f"[fix_code_fences] Raw response: {text}")
+        ranges = json.loads(text)
     except (json.JSONDecodeError, Exception) as e:
         print(f"[fix_code_fences] Failed to detect code fences: {e}")
         return

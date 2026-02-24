@@ -60,7 +60,7 @@ resource "aws_lambda_function" "webhook" {
   memory_size      = 256
 
   # Safety: cap concurrency so floods can't scale costlessly
-  reserved_concurrent_executions = 5
+  reserved_concurrent_executions = 50
 
   environment {
     variables = {
