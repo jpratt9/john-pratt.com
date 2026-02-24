@@ -591,7 +591,7 @@ class TestOrdinalCommitMessage:
         result = lambda_handler(self._make_event(), None)
 
         _, message, _ = mock_commit.call_args[0]
-        assert message == "add blog post for 2025-08-21"
+        assert message == "[feat] add blog post for 2025-08-21"
 
     @patch("lambda_function.github_commit")
     @patch("lambda_function.ask_claude", side_effect=lambda prompt, **kw: "mocked title")
@@ -600,7 +600,7 @@ class TestOrdinalCommitMessage:
         """Second add of the day -> '2nd' prefix."""
         def side_effect_get(url, **kwargs):
             if "commits" in url:
-                return self._mock_commits_response(["add blog post for 2025-08-21"])
+                return self._mock_commits_response(["[feat] add blog post for 2025-08-21"])
             return self._mock_file_not_found()
         mock_requests.get.side_effect = side_effect_get
 
@@ -608,7 +608,7 @@ class TestOrdinalCommitMessage:
         result = lambda_handler(self._make_event(), None)
 
         _, message, _ = mock_commit.call_args[0]
-        assert message == "add 2nd blog post for 2025-08-21"
+        assert message == "[feat] add 2nd blog post for 2025-08-21"
 
     @patch("lambda_function.github_commit")
     @patch("lambda_function.ask_claude", side_effect=lambda prompt, **kw: "mocked title")
@@ -618,8 +618,8 @@ class TestOrdinalCommitMessage:
         def side_effect_get(url, **kwargs):
             if "commits" in url:
                 return self._mock_commits_response([
-                    "add blog post for 2025-08-21",
-                    "add 2nd blog post for 2025-08-21",
+                    "[feat] add blog post for 2025-08-21",
+                    "[feat] add 2nd blog post for 2025-08-21",
                 ])
             return self._mock_file_not_found()
         mock_requests.get.side_effect = side_effect_get
@@ -628,7 +628,7 @@ class TestOrdinalCommitMessage:
         result = lambda_handler(self._make_event(), None)
 
         _, message, _ = mock_commit.call_args[0]
-        assert message == "add 3rd blog post for 2025-08-21"
+        assert message == "[feat] add 3rd blog post for 2025-08-21"
 
     @patch("lambda_function.github_commit")
     @patch("lambda_function.ask_claude", side_effect=lambda prompt, **kw: "mocked title")
@@ -647,7 +647,7 @@ class TestOrdinalCommitMessage:
         result = lambda_handler(self._make_event(), None)
 
         _, message, _ = mock_commit.call_args[0]
-        assert message == "fix blog post for 2025-08-21"
+        assert message == "[chore] fix blog post for 2025-08-21"
         assert "2nd" not in message
 
     @patch("lambda_function.github_commit")
@@ -1866,20 +1866,31 @@ class TestGithubCommit:
                 sys.path.insert(0, service_dir)
             yield
 
+    def _ok_resp(self, json_data, status_code=200):
+        resp = Mock()
+        resp.ok = True
+        resp.status_code = status_code
+        resp.json.return_value = json_data
+        resp.raise_for_status = Mock()
+        return resp
+
+    def _err_resp(self, status_code=422, body="validation failed"):
+        resp = Mock()
+        resp.ok = False
+        resp.status_code = status_code
+        resp.text = body
+        resp.raise_for_status.side_effect = Exception(f"{status_code}: {body}")
+        resp.json.return_value = {"message": body}
+        return resp
+
     def _mock_api(self, mock_requests):
         """Set up mock responses for the Git Data API flow."""
-        ref_resp = Mock()
-        ref_resp.json.return_value = {"object": {"sha": "base-sha-123"}}
-        commit_resp = Mock()
-        commit_resp.json.return_value = {"tree": {"sha": "tree-sha-456"}}
-        blob_resp = Mock()
-        blob_resp.json.return_value = {"sha": "blob-sha-789"}
-        tree_resp = Mock()
-        tree_resp.json.return_value = {"sha": "new-tree-sha"}
-        new_commit_resp = Mock()
-        new_commit_resp.json.return_value = {"sha": "new-commit-sha"}
-        patch_resp = Mock()
-        patch_resp.raise_for_status = Mock()
+        ref_resp = self._ok_resp({"object": {"sha": "base-sha-123"}})
+        commit_resp = self._ok_resp({"tree": {"sha": "tree-sha-456"}})
+        blob_resp = self._ok_resp({"sha": "blob-sha-789"}, 201)
+        tree_resp = self._ok_resp({"sha": "new-tree-sha"}, 201)
+        new_commit_resp = self._ok_resp({"sha": "new-commit-sha"}, 201)
+        patch_resp = self._ok_resp({"object": {"sha": "new-commit-sha"}})
 
         mock_requests.get.side_effect = [ref_resp, commit_resp]
         mock_requests.post.side_effect = [tree_resp, new_commit_resp]  # default for text-only
@@ -1904,11 +1915,8 @@ class TestGithubCommit:
     @patch("lambda_function.requests")
     def test_creates_blob_for_base64_files(self, mock_requests):
         blob_resp = self._mock_api(mock_requests)
-        # Override post to handle blob + tree + commit
-        tree_resp = Mock()
-        tree_resp.json.return_value = {"sha": "new-tree-sha"}
-        commit_resp = Mock()
-        commit_resp.json.return_value = {"sha": "new-commit-sha"}
+        tree_resp = self._ok_resp({"sha": "new-tree-sha"}, 201)
+        commit_resp = self._ok_resp({"sha": "new-commit-sha"}, 201)
         mock_requests.post.side_effect = [blob_resp, tree_resp, commit_resp]
 
         from lambda_function import github_commit
@@ -1988,14 +1996,64 @@ class TestGithubCommit:
         assert mock_requests.patch.call_args[1]["headers"] == headers
 
     @patch("lambda_function.requests")
+    def test_raises_on_get_ref_failure(self, mock_requests):
+        """API error on initial ref fetch raises and logs."""
+        mock_requests.get.return_value = self._err_resp(401, "Bad credentials")
+
+        from lambda_function import github_commit
+        with pytest.raises(Exception, match="401"):
+            github_commit([{"path": "p/index.md", "content": "text"}], "msg", {"Authorization": "Bearer bad"})
+
+    @patch("lambda_function.requests")
+    def test_raises_on_tree_create_failure(self, mock_requests):
+        """API error on tree creation raises."""
+        self._mock_api(mock_requests)
+        mock_requests.post.side_effect = [self._err_resp(422, "tree invalid")]
+
+        from lambda_function import github_commit
+        with pytest.raises(Exception, match="422"):
+            github_commit([{"path": "p/index.md", "content": "text"}], "msg", {"Authorization": "Bearer tok"})
+
+    @patch("lambda_function.requests")
+    def test_raises_on_commit_create_failure(self, mock_requests):
+        """API error on commit creation raises."""
+        self._mock_api(mock_requests)
+        tree_resp = self._ok_resp({"sha": "new-tree"}, 201)
+        mock_requests.post.side_effect = [tree_resp, self._err_resp(422, "commit invalid")]
+
+        from lambda_function import github_commit
+        with pytest.raises(Exception, match="422"):
+            github_commit([{"path": "p/index.md", "content": "text"}], "msg", {"Authorization": "Bearer tok"})
+
+    @patch("lambda_function.requests")
+    def test_raises_on_ref_update_failure(self, mock_requests):
+        """API error on ref update raises."""
+        self._mock_api(mock_requests)
+        mock_requests.patch.return_value = self._err_resp(409, "conflict")
+
+        from lambda_function import github_commit
+        with pytest.raises(Exception, match="409"):
+            github_commit([{"path": "p/index.md", "content": "text"}], "msg", {"Authorization": "Bearer tok"})
+
+    @patch("lambda_function.requests")
+    def test_raises_on_blob_create_failure(self, mock_requests):
+        """API error on blob creation for base64 file raises."""
+        self._mock_api(mock_requests)
+        mock_requests.post.side_effect = [self._err_resp(422, "blob too large")]
+
+        from lambda_function import github_commit
+        with pytest.raises(Exception, match="422"):
+            github_commit(
+                [{"path": "p/img.jpg", "content": "data", "encoding": "base64"}],
+                "msg", {"Authorization": "Bearer tok"}
+            )
+
+    @patch("lambda_function.requests")
     def test_multiple_base64_files_create_multiple_blobs(self, mock_requests):
         blob_resp = self._mock_api(mock_requests)
-        blob_resp2 = Mock()
-        blob_resp2.json.return_value = {"sha": "blob-sha-2"}
-        tree_resp = Mock()
-        tree_resp.json.return_value = {"sha": "new-tree"}
-        commit_resp = Mock()
-        commit_resp.json.return_value = {"sha": "new-commit"}
+        blob_resp2 = self._ok_resp({"sha": "blob-sha-2"}, 201)
+        tree_resp = self._ok_resp({"sha": "new-tree"}, 201)
+        commit_resp = self._ok_resp({"sha": "new-commit"}, 201)
         mock_requests.post.side_effect = [blob_resp, blob_resp2, tree_resp, commit_resp]
 
         from lambda_function import github_commit

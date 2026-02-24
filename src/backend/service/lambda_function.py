@@ -241,28 +241,36 @@ def process_images(markdown, header_image_url, slug):
 
     return markdown, image_files
 
+def _gh(method, url, github_headers, **kwargs):
+    resp = getattr(requests, method)(url, headers=github_headers, **kwargs)
+    print(f"[github] {method.upper()} {url.split('repos/')[-1]} -> {resp.status_code}")
+    if not resp.ok:
+        print(f"[github] ERROR: {resp.text}")
+    resp.raise_for_status()
+    return resp.json()
+
 def github_commit(files, message, github_headers):
     repo = "https://api.github.com/repos/jpratt9/john-pratt.com"
     committer = {"name": "John Pratt", "email": "john@john-pratt.com"}
 
-    base_sha = requests.get(f"{repo}/git/refs/heads/master", headers=github_headers).json()["object"]["sha"]
-    base_tree = requests.get(f"{repo}/git/commits/{base_sha}", headers=github_headers).json()["tree"]["sha"]
+    base_sha = _gh("get", f"{repo}/git/refs/heads/master", github_headers)["object"]["sha"]
+    base_tree = _gh("get", f"{repo}/git/commits/{base_sha}", github_headers)["tree"]["sha"]
 
     tree_items = []
     for f in files:
         if f.get("encoding") == "base64":
-            sha = requests.post(f"{repo}/git/blobs", headers=github_headers,
-                json={"content": f["content"], "encoding": "base64"}).json()["sha"]
+            sha = _gh("post", f"{repo}/git/blobs", github_headers,
+                json={"content": f["content"], "encoding": "base64"})["sha"]
             tree_items.append({"path": f["path"], "mode": "100644", "type": "blob", "sha": sha})
         else:
             tree_items.append({"path": f["path"], "mode": "100644", "type": "blob", "content": f["content"]})
 
-    tree_sha = requests.post(f"{repo}/git/trees", headers=github_headers,
-        json={"base_tree": base_tree, "tree": tree_items}).json()["sha"]
-    commit_sha = requests.post(f"{repo}/git/commits", headers=github_headers,
-        json={"message": message, "tree": tree_sha, "parents": [base_sha], "committer": committer}).json()["sha"]
-    requests.patch(f"{repo}/git/refs/heads/master", headers=github_headers,
-        json={"sha": commit_sha}).raise_for_status()
+    tree_sha = _gh("post", f"{repo}/git/trees", github_headers,
+        json={"base_tree": base_tree, "tree": tree_items})["sha"]
+    commit_sha = _gh("post", f"{repo}/git/commits", github_headers,
+        json={"message": message, "tree": tree_sha, "parents": [base_sha], "committer": committer})["sha"]
+    _gh("patch", f"{repo}/git/refs/heads/master", github_headers,
+        json={"sha": commit_sha})
 
 def lambda_handler(event, context):
     github_payload = {
