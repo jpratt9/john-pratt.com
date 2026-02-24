@@ -12,6 +12,8 @@ tags:
   - big-data
   - data-engineering
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-snowflake-data-warehouse/what-is-snowflake-data-warehouse-cloud-network.jpg)

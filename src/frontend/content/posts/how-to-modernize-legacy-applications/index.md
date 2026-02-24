@@ -12,6 +12,8 @@ tags:
   - application-refactoring
   - devops-strategy
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-modernize-legacy-applications/how-to-modernize-legacy-applications-legacy-modernization.jpg)

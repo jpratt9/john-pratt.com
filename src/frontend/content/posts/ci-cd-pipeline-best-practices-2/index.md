@@ -12,6 +12,8 @@ tags:
   - infrastructure-as-code
   - cloud-native-ci-cd
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/ci-cd-pipeline-best-practices-2/ci-cd-pipeline-best-practices-delivery.jpg)

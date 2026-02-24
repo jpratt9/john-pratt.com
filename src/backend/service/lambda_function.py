@@ -289,18 +289,10 @@ def lambda_handler(event, context):
 
     article_json = body.get("data").get("articles")[0]
 
-    raw_title = titlecase(article_json.get("title"))
-    clean_title = '"' + ask_claude(title_prompt.replace("{{TITLE}}", raw_title)).strip().strip("\"'`""''") + '"'
-    print(f"Title before: \"{raw_title}\"")
-    print(f"Title after : \"{clean_title}\"")
 
     date = datetime.datetime.fromisoformat(article_json.get("created_at")).date().isoformat()
     slug = article_json.get("slug")
     tags = article_json.get("tags")
-    raw_description  = article_json.get("meta_description", "")
-    clean_desc = '"' + ask_claude(desc_prompt.replace("{{DESCRIPTION}}", raw_description)).strip().strip("\"'`""''") + '"'
-    print(f"Desc before: \"{raw_description}\"")
-    print(f"Desc after : \"{clean_desc}\"")
 
     header_image = article_json.get("image_url")
     article_text = article_json.get("content_markdown").replace(os.environ["article_blacklist_strings"], "").replace('’', '\'')
@@ -326,11 +318,45 @@ def lambda_handler(event, context):
     file_exists = resp.status_code == 200
     existing_sha = resp.json().get("sha") if file_exists else None
     existing_content = base64.b64decode(resp.json().get("content", "")).decode() if file_exists else ""
-    is_update = file_exists and date in existing_content and clean_title in existing_content
     images_fixed = "images_fixed: true" in existing_content
+    title_optimized = "title_optimized: true" in existing_content
+    description_optimized = "description_optimized: true" in existing_content
+    raw_title = titlecase(article_json.get("title"))
+    if not title_optimized:
+        try:
+            clean_title = '"' + ask_claude(title_prompt.replace("{{TITLE}}", raw_title)).strip().strip("\"'`""''") + '"'
+            title_optimized = True
+        except Exception as e:
+            print(f"Title optimization failed: {e}")
+            clean_title = '"' + raw_title + '"'
+    else:
+        m = re.search(r'^title:\s*(.+)$', existing_content, re.MULTILINE)
+        clean_title = m.group(1).strip() if m else '"' + raw_title + '"'
+        print(f"Title already optimized, keeping: {clean_title}")
+    print(f"Title before: \"{raw_title}\"")
+    print(f"Title after : \"{clean_title}\"")
+    raw_description  = article_json.get("meta_description", "")
+    if not description_optimized:
+        try:
+            clean_desc = '"' + ask_claude(desc_prompt.replace("{{DESCRIPTION}}", raw_description)).strip().strip("\"'`""''") + '"'
+            description_optimized = True
+        except Exception as e:
+            print(f"Description optimization failed: {e}")
+            clean_desc = '"' + raw_description + '"'
+    else:
+        m = re.search(r'^description:\s*(.+)$', existing_content, re.MULTILINE)
+        clean_desc = m.group(1).strip() if m else '"' + raw_description + '"'
+        print(f"Description already optimized, keeping: {clean_desc}")
+    print(f"Desc before: \"{raw_description}\"")
+    print(f"Desc after : \"{clean_desc}\"")
+    is_update = file_exists and date in existing_content and clean_title in existing_content
     if images_fixed:
         print("[process_images] Skipping (images_fixed flag set)")
         image_files = {}
+        for url in set(re.findall(OUTRANK_CDN_PATTERN, full_body)):
+            filename = unique_filename(url)
+            raw_url = f"https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/{slug}/{filename}"
+            full_body = full_body.replace(url, raw_url)
     else:
         full_body, image_files = process_images(full_body, header_image, slug)
         images_fixed = not bool(re.findall(OUTRANK_CDN_PATTERN, full_body))
@@ -382,6 +408,8 @@ description: {clean_desc}
 draft: false
 slug: '/{slug}'
 images_fixed: {str(images_fixed).lower()}
+title_optimized: {str(title_optimized).lower()}
+description_optimized: {str(description_optimized).lower()}
 tags:
 """
         )

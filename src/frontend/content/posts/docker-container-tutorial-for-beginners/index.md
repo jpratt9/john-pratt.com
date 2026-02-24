@@ -13,6 +13,8 @@ tags:
   - Intro-to-DevOps
   - Docker-Compose
 code_fences_fixed: ["62-62", "68-68", "92-92", "102-102", "118-118", "124-124", "168-168", "172-180", "190-209", "227-227", "235-235", "257-257", "304-326"]
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/79352ca1-0fba-4a97-8547-f7eec19d66c9/docker-container-tutorial-for-beginners-docker-tutorial.jpg)

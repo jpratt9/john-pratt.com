@@ -9,6 +9,8 @@ tags:
   - databases
   - python
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Bloom Filter](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/bloom-filters/bloom-filter.png)

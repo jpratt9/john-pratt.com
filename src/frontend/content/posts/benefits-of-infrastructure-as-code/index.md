@@ -11,6 +11,8 @@ tags:
   - DevOps
   - Cloud-Automation
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/benefits-of-infrastructure-as-code/featured-image-e43731ad-aa76-488e-98fc-1b604c0b5578.jpg)

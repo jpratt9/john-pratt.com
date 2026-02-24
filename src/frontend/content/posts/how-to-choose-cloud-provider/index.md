@@ -12,6 +12,8 @@ tags:
   - cloud-migration
   - cloud-infrastructure
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-choose-cloud-provider/featured-image-dd9f4af9-c701-4864-bfcd-3185a7ef1c5b.jpg)

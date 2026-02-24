@@ -12,6 +12,8 @@ tags:
   - multi-cloud
   - iac
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-cloud-orchestration/featured-image-28d9ba76-300d-4b7b-bfcd-188a5c2cb1c5.jpg)

@@ -12,6 +12,8 @@ tags:
   - cloud-data-pipeline
   - data-architecture
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-build-data-pipeline/featured-image-16820f39-2489-4acf-aa62-3f56404fbc6c.jpg)

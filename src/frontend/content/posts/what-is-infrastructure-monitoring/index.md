@@ -12,6 +12,8 @@ tags:
   - observability
   - cloud-monitoring
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-infrastructure-monitoring/featured-image-037175b7-5f77-4b82-a620-d7212668ebef.jpg)

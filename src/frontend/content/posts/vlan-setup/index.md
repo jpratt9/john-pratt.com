@@ -9,6 +9,8 @@ tags:
   - AWS
   - on-prem
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![infra](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/vlan-setup/infra.png)

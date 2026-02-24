@@ -12,6 +12,8 @@ tags:
   - devops-management
   - it-project-skills
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/technical-project-manager-skills/featured-image-a1b65d00-ae10-47f6-a3a5-cc311a874709.jpg)

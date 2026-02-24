@@ -8,6 +8,8 @@ tags:
   - resiliency-patterns
   - error-handling
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Bulkhead Pattern](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/bulkhead-pattern/bulkhead.png)

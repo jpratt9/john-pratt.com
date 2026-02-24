@@ -12,6 +12,8 @@ tags:
   - rpa-implementation-costs
   - business-automation
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cost-of-robotic-process-automation/cost-of-robotic-process-automation-rpa-cost.jpg)

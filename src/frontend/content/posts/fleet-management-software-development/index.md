@@ -12,6 +12,8 @@ tags:
   - fleet-tech
   - software-development
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/fleet-management-software-development/featured-image-811cdec4-0081-4978-b05e-0620869181ed.jpg)

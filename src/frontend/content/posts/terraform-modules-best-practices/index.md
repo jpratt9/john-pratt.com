@@ -12,6 +12,8 @@ tags:
   - devops-automation
   - hashicorp-terraform
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/terraform-modules-best-practices/featured-image-7d8c0413-2da1-486a-881c-7e27cce0708a.jpg)

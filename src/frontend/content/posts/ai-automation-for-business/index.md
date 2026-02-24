@@ -12,6 +12,8 @@ tags:
   - process-automation
   - ai-growth-strategy
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/ai-automation-for-business/featured-image-678d00df-a5aa-45ba-8590-d380ff51e9a0.jpg)

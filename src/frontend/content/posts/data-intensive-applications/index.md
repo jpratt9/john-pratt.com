@@ -9,6 +9,8 @@ tags:
   - software-dev
   - sde
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 Every serious engineer needs to read [Designing Data Intensive Applications](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321).

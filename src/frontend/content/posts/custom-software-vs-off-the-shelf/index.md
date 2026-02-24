@@ -12,6 +12,8 @@ tags:
   - saas-solutions
   - tech-stack
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/custom-software-vs-off-the-shelf/featured-image-2b190e95-6d0a-4151-9443-0f004241fe5e.jpg)

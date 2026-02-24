@@ -12,6 +12,8 @@ tags:
   - ITSM-best-practices
   - vendor-management
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/service-level-agreement-compliance/featured-image-fd50694b-e728-48e6-ac4a-dca95f8143d8.jpg)

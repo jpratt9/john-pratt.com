@@ -11,6 +11,8 @@ tags:
   - system-architecture
   - scalability
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-horizontal-scaling/featured-image-6b1ab91a-2b1a-4807-82c6-2a421f5373ea.jpg)

@@ -12,6 +12,8 @@ tags:
   - software-engineering
   - architectural-patterns
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/software-architecture-design-patterns/featured-image-7c2e628c-1357-4b6d-96ef-dbe451ef5314.jpg)

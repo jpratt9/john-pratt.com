@@ -7,6 +7,8 @@ tags:
   - data-structures
   - algorithms
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![inverted index](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/inverted-index/inverted_index.png)

@@ -12,6 +12,8 @@ tags:
   - elt-vs-etl
   - data-mesh
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/data-pipeline-architecture-examples/featured-image-cc58c67c-e25e-4093-981b-1b1a4d1e3e8b.jpg)

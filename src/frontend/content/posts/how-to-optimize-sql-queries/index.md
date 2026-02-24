@@ -12,6 +12,8 @@ tags:
   - query-execution-plan
   - sql-indexing
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-optimize-sql-queries/featured-image-aa4f200c-dd08-41cf-9176-395306d64e4e.jpg)

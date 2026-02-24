@@ -13,6 +13,8 @@ tags:
   - vite-setup
   - javascript-projects
 code_fences_fixed: ["65-65", "113-117", "127-127", "131-140", "160-175", "194-207", "252-265"]
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://cdn.outrank.so/fa6f58f4-0556-42c4-aa95-73bd51bc70b8/085201a2-159d-42c9-a9ed-31ecb8a368fa/react-js-tutorial-for-beginners-react-hooks.jpg)

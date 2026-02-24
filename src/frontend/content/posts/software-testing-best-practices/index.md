@@ -12,6 +12,8 @@ tags:
   - agile-testing
   - devops
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/software-testing-best-practices/featured-image-747ba18d-6fe1-46a4-9aff-94f51e36b4e7.jpg)

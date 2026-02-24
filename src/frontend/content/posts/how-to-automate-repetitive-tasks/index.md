@@ -12,6 +12,8 @@ tags:
   - process-automation
   - productivity-tips
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-automate-repetitive-tasks/how-to-automate-repetitive-tasks-automation.jpg)

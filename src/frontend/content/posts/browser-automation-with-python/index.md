@@ -12,6 +12,8 @@ tags:
   - web-scraping
   - automation-testing
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/browser-automation-with-python/browser-automation-with-python-python-programming-16dfaa36.jpg)

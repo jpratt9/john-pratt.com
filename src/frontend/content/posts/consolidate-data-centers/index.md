@@ -12,6 +12,8 @@ tags:
   - data-migration
   - hybrid-cloud
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/consolidate-data-centers/featured-image-d332e306-c13b-4c82-8ab9-a8f7c87dbdb2.jpg)

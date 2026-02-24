@@ -11,6 +11,8 @@ tags:
   - business-technology
   - digital-transformation
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/custom-software-development-consulting/featured-image-ba3bb913-5bf8-4d78-9423-688e817ef7a8.jpg)

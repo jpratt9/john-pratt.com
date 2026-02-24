@@ -12,6 +12,8 @@ tags:
   - cloud-migration
   - data-center-efficiency
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/consolidation-in-the-data-center/consolidation-in-the-data-center-server-migration.jpg)

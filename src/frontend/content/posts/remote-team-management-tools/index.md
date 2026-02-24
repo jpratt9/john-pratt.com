@@ -11,6 +11,8 @@ tags:
   - project-management
   - remote-work
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/remote-team-management-tools/featured-image-e2fd7c85-4ef6-4c40-b2f2-dbd1e9154728.jpg)

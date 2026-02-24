@@ -8,6 +8,8 @@ tags:
   - software-dev
   - resiliency
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Circuit Breaker](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/circuit breakers/circuit_breaker.png)

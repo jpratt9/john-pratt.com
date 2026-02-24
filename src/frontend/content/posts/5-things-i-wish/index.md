@@ -8,6 +8,8 @@ tags:
   - software-dev
   - sde
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 1) Ship broken code, but hide it behind a feature flag. It's how you move fast *without* breaking things.

@@ -12,6 +12,8 @@ tags:
   - Cloud-Infrastructure
   - AWS-Terraform
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/terraform-tutorial-for-beginners/featured-image-4c74dfbe-0863-44ff-927b-9516547c31be.jpg)

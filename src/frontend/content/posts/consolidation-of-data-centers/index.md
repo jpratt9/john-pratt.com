@@ -12,6 +12,8 @@ tags:
   - IT-infrastructure
   - DevOps
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/consolidation-of-data-centers/consolidation-of-data-centers-server-consolidation.jpg)

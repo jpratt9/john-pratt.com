@@ -12,6 +12,8 @@ tags:
   - CI/CD-for-machine-learning
   - Docker-for-AI
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/machine-learning-model-deployment/featured-image-ac796627-e376-435c-8fb2-d2e5dfa8458f.jpg)

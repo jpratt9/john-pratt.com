@@ -12,6 +12,8 @@ tags:
   - mlops
   - generative-ai
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/ai-powered-software-development/ai-powered-software-development-cloud-computing.jpg)

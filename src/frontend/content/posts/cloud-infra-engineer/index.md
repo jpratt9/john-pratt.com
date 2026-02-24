@@ -12,6 +12,8 @@ tags:
   - devops
   - iaac
   - kubernetes
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-infra-engineer/cloud-infra-engineer-cloud-infrastructure-8fedf41d.jpg)

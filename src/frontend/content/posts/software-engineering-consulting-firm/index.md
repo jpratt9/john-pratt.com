@@ -12,6 +12,8 @@ tags:
   - cloud-engineering
   - data-engineering
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/software-engineering-consulting-firm/software-engineering-consulting-firm-cloud-presentation.jpg)

@@ -12,6 +12,8 @@ tags:
   - gcp-migration
   - it-strategy
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-migration-success-stories/featured-image-dc72895e-346d-4e60-b610-cb8aa6a0e4cf.jpg)

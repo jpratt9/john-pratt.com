@@ -12,6 +12,8 @@ tags:
   - DevSecOps
   - how-to-secure-web-applications
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-secure-web-applications/featured-image-ce27ddec-5df8-4263-a23a-1fbbfde3b7e8.jpg)

@@ -10,6 +10,8 @@ tags:
   - AI
   - large-language-models
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![TALOS](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/TALOS/talos.png)

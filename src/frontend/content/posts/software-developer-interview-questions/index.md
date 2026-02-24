@@ -12,6 +12,8 @@ tags:
   - devops-questions
   - technical-interview
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/software-developer-interview-questions/software-developer-interview-questions-developer-tools.jpg)

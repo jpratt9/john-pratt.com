@@ -728,6 +728,67 @@ class TestOrdinalCommitMessage:
         content = mock_commit.call_args[0][0][0]["content"]
         assert "images_fixed: true" in content
 
+    @patch("lambda_function.github_commit")
+    @patch("lambda_function.ask_claude", side_effect=lambda prompt, **kw: "mocked title")
+    @patch("lambda_function.requests")
+    def test_title_optimized_skips_ask_claude_for_title(self, mock_requests, mock_claude, mock_commit):
+        """When title_optimized: true is in existing content, ask_claude is not called for title."""
+        existing_content = '---\ntitle: "Existing Great Title"\ndate: \'2025-08-21\'\ntitle_optimized: true\n---\nOld content'
+        encoded = base64.b64encode(existing_content.encode()).decode()
+        file_resp = Mock()
+        file_resp.status_code = 200
+        file_resp.json.return_value = {"content": encoded, "sha": "abc123"}
+        mock_requests.get.return_value = file_resp
+
+        from lambda_function import lambda_handler
+        lambda_handler(self._make_event(), None)
+
+        content = mock_commit.call_args[0][0][0]["content"]
+        assert '"Existing Great Title"' in content
+        # ask_claude should only be called for description, not title
+        assert mock_claude.call_count == 1
+
+    @patch("lambda_function.github_commit")
+    @patch("lambda_function.ask_claude", side_effect=lambda prompt, **kw: "mocked desc")
+    @patch("lambda_function.requests")
+    def test_desc_optimized_skips_ask_claude_for_desc(self, mock_requests, mock_claude, mock_commit):
+        """When description_optimized: true is in existing content, ask_claude is not called for description."""
+        existing_content = '---\ntitle: "mocked desc"\ndate: \'2025-08-21\'\ndescription: "Existing Great Desc"\ndescription_optimized: true\n---\nOld content'
+        encoded = base64.b64encode(existing_content.encode()).decode()
+        file_resp = Mock()
+        file_resp.status_code = 200
+        file_resp.json.return_value = {"content": encoded, "sha": "abc123"}
+        mock_requests.get.return_value = file_resp
+
+        from lambda_function import lambda_handler
+        lambda_handler(self._make_event(), None)
+
+        content = mock_commit.call_args[0][0][0]["content"]
+        assert '"Existing Great Desc"' in content
+        # ask_claude should only be called for title, not description
+        assert mock_claude.call_count == 1
+
+    @patch("lambda_function.github_commit")
+    @patch("lambda_function.process_images", return_value=("body", {}))
+    @patch("lambda_function.ask_claude", side_effect=Exception("API down"))
+    @patch("lambda_function.requests")
+    def test_title_optimized_false_when_ask_claude_fails(self, mock_requests, mock_claude, mock_process, mock_commit):
+        """When ask_claude fails for title, title_optimized is false in frontmatter."""
+        file_resp = Mock()
+        file_resp.status_code = 404
+        file_resp.json.return_value = {}
+        commits_resp = Mock()
+        commits_resp.status_code = 200
+        commits_resp.json.return_value = []
+        mock_requests.get.side_effect = [file_resp, commits_resp, commits_resp]
+
+        from lambda_function import lambda_handler
+        lambda_handler(self._make_event(), None)
+
+        content = mock_commit.call_args[0][0][0]["content"]
+        assert "title_optimized: false" in content
+        assert "description_optimized: false" in content
+
 
 # ============================================================================
 # Titlecase function tests

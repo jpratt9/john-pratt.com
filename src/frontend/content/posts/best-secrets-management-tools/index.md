@@ -12,6 +12,8 @@ tags:
   - hashicorp-vault
   - aws-secrets-manager
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/best-secrets-management-tools/best-secrets-management-tools-secrets-management-0e244d1d.jpg)

@@ -12,6 +12,8 @@ tags:
   - energy-tech
   - utility-portals
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/energy-trading-customer-portal-software/featured-image-2ccd8ca7-c4ac-40f5-a058-c5c4c5124881.jpg)

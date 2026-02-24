@@ -9,6 +9,8 @@ tags:
   - databases
   - data
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![hash](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/hyperloglogs/hash.webp)

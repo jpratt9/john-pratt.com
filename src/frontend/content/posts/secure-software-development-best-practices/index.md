@@ -12,6 +12,8 @@ tags:
   - secure-coding
   - software-security
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/secure-software-development-best-practices/featured-image-bb7b6042-0e23-4f34-b0ad-d7e3a9f1f21d.jpg)

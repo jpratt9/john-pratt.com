@@ -12,6 +12,8 @@ tags:
   - improve-query-speed
   - query-execution-plan
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/sql-query-performance-tuning/featured-image-4a6fcb89-ad08-4688-bf3e-37a6be805ab9.jpg)

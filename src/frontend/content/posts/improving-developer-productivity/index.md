@@ -11,6 +11,8 @@ tags:
   - engineering-management
   - team-productivity
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/improving-developer-productivity/featured-image-bff2e267-8859-457e-baad-bfd08a73a684.jpg)

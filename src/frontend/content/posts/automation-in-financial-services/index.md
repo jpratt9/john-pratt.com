@@ -12,6 +12,8 @@ tags:
   - ai-financial-services
   - financial-process-automation
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/automation-in-financial-services/automation-in-financial-services-financial-automation.jpg)

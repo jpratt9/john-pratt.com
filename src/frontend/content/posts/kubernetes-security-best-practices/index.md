@@ -12,6 +12,8 @@ tags:
   - cluster-hardening
   - devsecops
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/kubernetes-security-best-practices/kubernetes-security-best-practices-architecture-diagram.jpg)

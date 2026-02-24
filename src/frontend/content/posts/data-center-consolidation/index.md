@@ -12,6 +12,8 @@ tags:
   - cost-optimization
   - colocation-services
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/data-center-consolidation/data-center-consolidation-server-migration.jpg)

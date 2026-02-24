@@ -12,6 +12,8 @@ tags:
   - devops-guide
   - azure-repos
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/azure-devops-tutorial/featured-image-e3befd4c-b0b1-47a4-a679-ba1028a662c1.jpg)

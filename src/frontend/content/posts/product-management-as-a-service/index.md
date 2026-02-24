@@ -12,6 +12,8 @@ tags:
   - product-strategy
   - agile-development
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/product-management-as-a-service/product-management-as-a-service-ai-workflow-e35efccb.jpg)

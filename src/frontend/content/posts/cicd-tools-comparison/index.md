@@ -12,6 +12,8 @@ tags:
   - jenkins-vs-gitlab
   - automation-tools
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cicd-tools-comparison/featured-image-11b06a14-6201-4bf8-9913-22dedc1caf40.jpg)

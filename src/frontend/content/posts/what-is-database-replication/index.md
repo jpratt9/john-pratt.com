@@ -12,6 +12,8 @@ tags:
   - database-scaling
   - data-architecture
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-database-replication/what-is-database-replication-database-replication.jpg)

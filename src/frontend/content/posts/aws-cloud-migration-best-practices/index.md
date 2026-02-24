@@ -12,6 +12,8 @@ tags:
   - aws-devops
   - cloud-security
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/aws-cloud-migration-best-practices/featured-image-33fad381-ecd2-4143-81dc-e8f75f65fa67.jpg)

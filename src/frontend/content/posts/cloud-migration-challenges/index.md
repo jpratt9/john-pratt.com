@@ -12,6 +12,8 @@ tags:
   - aws-migration
   - cloud-security
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-migration-challenges/featured-image-1cc2d6a9-40e3-4e98-990f-9f42c3b55dc3.jpg)

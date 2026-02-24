@@ -12,6 +12,8 @@ tags:
   - observability-platforms
   - APM-tools
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/monitoring-and-observability-tools/monitoring-and-observability-tools-data-visualization-3492ea94.jpg)

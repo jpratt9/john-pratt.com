@@ -12,6 +12,8 @@ tags:
   - secure-coding
   - devsecops
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/application-security-best-practices/featured-image-be597cd3-18d8-47a7-a625-2cb0565f126f.jpg)

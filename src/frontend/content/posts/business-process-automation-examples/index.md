@@ -12,6 +12,8 @@ tags:
   - process-optimization
   - BPA-examples
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/business-process-automation-examples/featured-image-bd93b720-4d1a-4327-a4ee-e4c0bba2d739.jpg)

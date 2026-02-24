@@ -12,6 +12,8 @@ tags:
   - process-improvement
   - business-efficiency
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/operational-efficiency-metrics/featured-image-33b88fe6-404c-42f2-bb97-a196ecd68b72.jpg)

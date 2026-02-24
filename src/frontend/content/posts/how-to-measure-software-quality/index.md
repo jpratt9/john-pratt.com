@@ -12,6 +12,8 @@ tags:
   - devops-metrics
   - ci/cd-pipeline
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/how-to-measure-software-quality/featured-image-3fccc2cc-3dc1-4cf6-bb04-0af6283f4328.jpg)

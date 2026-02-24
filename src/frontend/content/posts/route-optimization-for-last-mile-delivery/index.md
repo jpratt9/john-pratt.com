@@ -12,6 +12,8 @@ tags:
   - supply-chain-optimization
   - fleet-routing
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/route-optimization-for-last-mile-delivery/route-optimization-for-last-mile-delivery-delivery-map.jpg)

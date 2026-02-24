@@ -12,6 +12,8 @@ tags:
   - secure-apis
   - devsecops
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/best-practices-for-api-security/featured-image-ad9418f1-6d1a-46ef-b4d0-1af00f990f2c.jpg)

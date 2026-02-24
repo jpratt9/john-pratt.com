@@ -12,6 +12,8 @@ tags:
   - Cloud-Automation
   - Cloud-Scalability
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/infrastructure-as-code-benefits/featured-image-bf6773ea-d9d0-473c-ab69-20ab20e3a5c8.jpg)

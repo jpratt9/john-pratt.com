@@ -12,6 +12,8 @@ tags:
   - cloud-performance
   - multi-cloud-strategy
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-infrastructure-optimization/featured-image-c4e66ccd-f195-40a6-a9f7-f7f90ea48cbf.jpg)

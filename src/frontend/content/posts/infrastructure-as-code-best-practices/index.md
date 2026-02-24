@@ -12,6 +12,8 @@ tags:
   - Terraform-best-practices
   - cloud-infrastructure
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/infrastructure-as-code-best-practices/featured-image-f2f0f463-4ae9-4005-ac7f-0457170a827e.jpg)

@@ -11,6 +11,8 @@ tags:
   - cloud-data-services
   - big-data-solutions
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/data-engineering-consulting-company/data-engineering-consulting-company-data-infrastructure.jpg)

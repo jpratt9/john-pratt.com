@@ -12,6 +12,8 @@ tags:
   - application-deployment
   - release-management
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/software-deployment-strategies/software-deployment-strategies-system-architecture.jpg)

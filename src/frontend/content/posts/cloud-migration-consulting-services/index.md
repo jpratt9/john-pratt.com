@@ -11,6 +11,8 @@ tags:
   - cloud-consulting
   - it-transformation
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-migration-consulting-services/featured-image-d6e15caf-16f2-473f-a98d-ba18f32d8080.jpg)

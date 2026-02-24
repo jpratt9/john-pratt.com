@@ -12,6 +12,8 @@ tags:
   - cloud-consulting
   - CI/CD-services
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/devops-consulting-company/devops-consulting-company-business-meeting.jpg)

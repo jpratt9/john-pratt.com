@@ -12,6 +12,8 @@ tags:
   - query-optimization
   - database-scalability
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/database-optimization-techniques/featured-image-8500ec59-442e-47ba-a665-f6b098a6134f.jpg)

@@ -12,6 +12,8 @@ tags:
   - data-scraping
   - python-requests
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/python-web-scraping-tutorial/featured-image-8ed9d45a-7670-4273-a125-0085f9f5c8e3.jpg)

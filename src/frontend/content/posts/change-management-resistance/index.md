@@ -11,6 +11,8 @@ tags:
   - employee-engagement
   - leadership-strategy
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/change-management-resistance/featured-image-c3dfa16b-e3ac-445a-918d-25bf10161cb0.jpg)

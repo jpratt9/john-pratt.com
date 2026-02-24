@@ -12,6 +12,8 @@ tags:
   - aws-cost-reduction
   - azure-cost-management
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-cost-optimization-strategies/featured-image-6df29457-d91a-4fd3-b8fb-e55c73dfcaea.jpg)

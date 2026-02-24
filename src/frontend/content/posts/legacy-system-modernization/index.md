@@ -12,6 +12,8 @@ tags:
   - application-modernization
   - technical-debt
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/legacy-system-modernization/featured-image-c79bf1a0-3cc9-42df-8c0b-d5745d42f68d.jpg)

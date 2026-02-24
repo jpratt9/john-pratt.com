@@ -12,6 +12,8 @@ tags:
   - DevOps
   - Multi-Cloud
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/what-is-terraform-used-for/what-is-terraform-used-for-infrastructure.jpg)

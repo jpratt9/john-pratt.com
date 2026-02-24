@@ -12,6 +12,8 @@ tags:
   - cloud-migration-services
   - aws-consulting
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-infrastructure-consulting/cloud-infrastructure-consulting-cloud-journey.jpg)

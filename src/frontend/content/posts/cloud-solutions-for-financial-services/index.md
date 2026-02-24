@@ -12,6 +12,8 @@ tags:
   - banking-technology
   - cloud-compliance
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/cloud-solutions-for-financial-services/featured-image-60c164b9-9e1f-465f-9fa5-a7f957d6808b.jpg)

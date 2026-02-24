@@ -9,6 +9,8 @@ tags:
   - databases
   - data
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 You **WILL** break production Unless you know these 5 backend dev tips:

@@ -8,6 +8,8 @@ tags:
   - data-structures
   - databases
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![LSM tree](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/lsm-trees/lsm-tree.png)

@@ -12,6 +12,8 @@ tags:
   - database-indexing
   - sql-rewriting
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/database-query-optimization/featured-image-ebb98c95-6124-4058-a2da-f92d81072300.jpg)

@@ -12,6 +12,8 @@ tags:
   - cloud-consulting
   - devops-services
 images_fixed: true
+title_optimized: true
+description_optimized: true
 ---
 
 ![Article Header Image](https://raw.githubusercontent.com/jpratt9/john-pratt.com/master/src/frontend/content/posts/custom-software-development-companies/custom-software-development-companies-tech-collaboration.jpg)
