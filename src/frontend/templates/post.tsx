@@ -46,8 +46,15 @@ const StyledPostHeader = styled.header`
     font-family: var(--font-mono);
   }
 `;
+const StyledDisclosure = styled.div`
+  color: var(--slate);
+  font-size: var(--fz-xxs);
+  font-family: var(--font-mono);
+  font-style: italic;
+  line-height: 1.5;
+`;
 const StyledPostContent = styled.div`
-  margin-bottom: 100px;
+  margin-bottom: 25px;
   overflow-x: hidden;
   overflow-y: hidden;
   h1, h2, h3, h4, h5, h6 { margin: 2em 0 1em; }
@@ -101,6 +108,10 @@ const PostTemplate: React.FC<PageProps<PostTemplateData, PostTemplateContext>> =
         </StyledPostHeader>
 
         <StyledPostContent dangerouslySetInnerHTML={{ __html: html }} />
+        <StyledDisclosure>
+          Readers like you help support Pratt Solutions. When you make a purchase using links
+          on our site, we may earn an affiliate commission.
+        </StyledDisclosure>
       </StyledPostContainer>
     </Layout>
   );
