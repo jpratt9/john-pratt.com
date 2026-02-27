@@ -94,7 +94,7 @@ export default TagTemplate;
 
 export const Head: HeadFC<TagTemplateData, TagTemplateContext> = ({ location, pageContext }) => {
   const displayTag = pageContext?.tag;
-  return <SEO title={`Tagged: #${displayTag}`} pathname={location?.pathname} />;
+  return <SEO title={`Tagged: #${displayTag}`} pathname={location?.pathname} noIndex />;
 };
 
 // No variables - fetch posts once, filter in JS

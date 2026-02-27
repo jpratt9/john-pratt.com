@@ -6,6 +6,7 @@ interface HeadProps {
   description?: string | null;
   image?: string | null;
   pathname?: string;
+  noIndex?: boolean;
 }
 
 interface SiteMetadata {
@@ -21,7 +22,7 @@ interface HeadQueryData {
   };
 }
 
-const Head: React.FC<HeadProps> = ({ title, description, image, pathname = '' }) => {
+const Head: React.FC<HeadProps> = ({ title, description, image, pathname = '', noIndex }) => {
   const { site } = useStaticQuery<HeadQueryData>(graphql`
     query {
       site {
@@ -54,6 +55,7 @@ const Head: React.FC<HeadProps> = ({ title, description, image, pathname = '' })
 
       <title>{fullTitle}</title>
 
+      {noIndex && <meta name="robots" content="noindex" />}
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
 

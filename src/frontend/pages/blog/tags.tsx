@@ -65,7 +65,7 @@ const TagsPage: React.FC<PageProps<TagsPageData>> = ({ data, location }) => {
 export default TagsPage;
 
 export const Head: HeadFC = ({ location }) => {
-  return <SEO title="Tags" pathname={location?.pathname} />;
+  return <SEO title="Tags" pathname={location?.pathname} noIndex />;
 };
 
 export const pageQuery = graphql`
