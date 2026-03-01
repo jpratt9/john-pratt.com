@@ -4,7 +4,7 @@ import { GatsbyImage, getImage, IGatsbyImageData } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 import { media } from '@styles';
 import { Icon } from '@components/icons';
-import { useScrollReveal, useScrollRevealMultiple } from '@hooks';
+import { useScrollReveal } from '@hooks';
 import { FeaturedProjectFrontmatter, GraphQLEdge } from '../../../types';
 
 interface FeaturedQueryData {
@@ -367,10 +367,7 @@ const Featured: React.FC = () => {
     .filter(({ node }) => node)
     .sort((a, b) => parseInt(a.node.frontmatter.date ?? '0', 10) - parseInt(b.node.frontmatter.date ?? '0', 10));
   const revealTitle = useRef<HTMLHeadingElement>(null);
-  const revealProjects = useRef<(HTMLLIElement | null)[]>([]);
-
   useScrollReveal(revealTitle);
-  useScrollRevealMultiple(revealProjects);
 
   return (
     <section id="projects">
@@ -386,12 +383,7 @@ const Featured: React.FC = () => {
             const image = getImage(cover) as IGatsbyImageData;
 
             return (
-              <StyledProject
-                key={i}
-                ref={el => {
-                  revealProjects.current[i] = el;
-                }}
-              >
+              <StyledProject key={i}>
                 <div className="project-content">
                   <div>
                     <h3

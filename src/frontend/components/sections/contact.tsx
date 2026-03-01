@@ -1,10 +1,8 @@
 import React, { useRef } from 'react';
+import { Link } from 'gatsby';
 import styled from 'styled-components';
 import { media } from '@styles';
-import config from '@config';
 import { useScrollReveal } from '@hooks';
-
-const { email } = config;
 
 const StyledContactSection = styled.section`
   max-width: 600px;
@@ -58,9 +56,9 @@ const Contact: React.FC = () => {
         I'll get back to you as soon as possible.
       </p>
 
-      <a className="email-link" href={`mailto:${email}`}>
+      <Link className="email-link" to="/contact">
         Contact me
-      </a>
+      </Link>
     </StyledContactSection>
   );
 };

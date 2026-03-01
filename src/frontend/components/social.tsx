@@ -1,8 +1,10 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import styled from 'styled-components';
 import config from '@config';
 import { Side } from '@components';
 import { Icon, IconName } from '@components/icons';
+import { IconEnvelope } from '@components/icons';
 
 const { socialMedia } = config;
 
@@ -51,6 +53,11 @@ const Social: React.FC<SocialProps> = ({ isHome }) => (
             </a>
           </li>
         ))}
+      <li>
+        <Link to="/contact" aria-label="Contact">
+          <IconEnvelope />
+        </Link>
+      </li>
     </StyledSocialList>
   </Side>
 );

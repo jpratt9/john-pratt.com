@@ -19,7 +19,8 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children, location }) => {
   const isHome = location.pathname === '/';
-  const [isLoading, setIsLoading] = useState(isHome);
+  const hasLoaded = typeof window !== 'undefined' && sessionStorage.getItem('hasLoaded');
+  const [isLoading, setIsLoading] = useState(isHome && !hasLoaded);
 
   // Sets target="_blank" rel="noopener noreferrer" on external links
   const handleExternalLinks = () => {
@@ -65,7 +66,7 @@ const Layout: React.FC<LayoutProps> = ({ children, location }) => {
             // Gatsby 5 supports Suspense/SSR with React 18.
             // Fallback can be null or a tiny skeleton; choose null to keep parity with your current UX.
             <Suspense fallback={null}>
-              <Loader finishLoading={() => setIsLoading(false)} />
+              <Loader finishLoading={() => { sessionStorage.setItem('hasLoaded', '1'); setIsLoading(false); }} />
             </Suspense>
           ) : (
             <StyledContent>

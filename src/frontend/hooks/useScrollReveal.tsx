@@ -46,7 +46,7 @@ export const useScrollRevealMultiple = (
 
       refs.current.forEach((ref, i) => {
         if (ref) {
-          const cfg = configFn ? configFn(i) : srConfig(i * 100);
+          const cfg = configFn ? configFn(i) : srConfig();
           sr.reveal(ref, cfg);
         }
       });
