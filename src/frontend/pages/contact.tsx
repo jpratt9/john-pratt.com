@@ -5,7 +5,7 @@ import { Layout } from '@components';
 import SEO from '@components/head';
 import { PageProps } from '../../types';
 
-const CONTACT_API_URL = process.env.GATSBY_CONTACT_API_URL || '';
+const CONTACT_API_URL = process.env.GATSBY_CONTACT_API_URL ?? '';
 
 const StyledMainContainer = styled.main`
   ${({ theme }) => theme.mixins.flexCenter};
