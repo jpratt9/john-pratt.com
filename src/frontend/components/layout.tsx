@@ -63,8 +63,6 @@ const Layout: React.FC<LayoutProps> = ({ children, location }) => {
           </a>
 
           {isLoading && isHome ? (
-            // Gatsby 5 supports Suspense/SSR with React 18.
-            // Fallback can be null or a tiny skeleton; choose null to keep parity with your current UX.
             <Suspense fallback={null}>
               <Loader finishLoading={() => { sessionStorage.setItem('hasLoaded', '1'); setIsLoading(false); }} />
             </Suspense>

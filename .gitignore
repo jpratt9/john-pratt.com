@@ -41,6 +41,9 @@ override.tf.json
 # secrets
 secrets.tfvars
 
+# local env
+.env*
+
 # python
 **/dist
 

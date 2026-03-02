@@ -27,16 +27,18 @@ resource "cloudflare_pages_project" "john_pratt" {
   deployment_configs = {
     production = {
       environment_variables = {
-        ANALYZE_BUNDLE = "false"
-        NODE_VERSION   = local.node_version
-        NPM_FLAGS      = "--force --legacy-peer-deps"
+        ANALYZE_BUNDLE         = "false"
+        NODE_VERSION           = local.node_version
+        NPM_FLAGS              = "--force --legacy-peer-deps"
+        GATSBY_CONTACT_API_URL = aws_lambda_function_url.contact.function_url
       }
     }
     preview = {
       environment_variables = {
-        ANALYZE_BUNDLE = "false"
-        NODE_VERSION   = local.node_version
-        NPM_FLAGS      = "--force --legacy-peer-deps"
+        ANALYZE_BUNDLE         = "false"
+        NODE_VERSION           = local.node_version
+        NPM_FLAGS              = "--force --legacy-peer-deps"
+        GATSBY_CONTACT_API_URL = aws_lambda_function_url.contact.function_url
       }
     }
   }

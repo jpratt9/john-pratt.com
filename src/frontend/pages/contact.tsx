@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { HeadFC } from 'gatsby';
 import styled from 'styled-components';
 import { Layout } from '@components';
 import SEO from '@components/head';
 import { PageProps } from '../../types';
+
+const CONTACT_API_URL = process.env.GATSBY_CONTACT_API_URL || '';
 
 const StyledMainContainer = styled.main`
   ${({ theme }) => theme.mixins.flexCenter};
@@ -65,6 +67,15 @@ const StyledForm = styled.form`
   gap: 20px;
   text-align: left;
 
+  .hp-field {
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+  }
+
   .name-row {
     display: flex;
     gap: 20px;
@@ -83,7 +94,7 @@ const StyledForm = styled.form`
     gap: 8px;
   }
 
-  input,
+  input:not([type='checkbox']),
   textarea {
     background-color: var(--light-navy);
     border: 1px solid var(--lightest-navy);
@@ -114,73 +125,213 @@ const StyledForm = styled.form`
     min-height: 150px;
   }
 
+  .opt-in {
+    p {
+      color: var(--slate);
+      font-size: var(--fz-sm);
+      line-height: 1.5;
+      margin: 0 0 10px;
+    }
+
+    .checkbox {
+      flex-direction: row;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      color: var(--slate);
+
+      input[type='checkbox'] {
+        appearance: none;
+        width: 16px;
+        height: 16px;
+        min-width: 16px;
+        background-color: var(--light-navy);
+        border: 1px solid var(--lightest-navy);
+        border-radius: 2px;
+        cursor: pointer;
+        position: relative;
+
+        &:checked {
+          background-color: var(--green);
+          border-color: var(--green);
+
+          &::after {
+            content: '✓';
+            position: absolute;
+            top: -1px;
+            left: 2px;
+            color: var(--navy);
+            font-size: 12px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+
+  .error-message {
+    color: #ff6464;
+    font-size: var(--fz-sm);
+    text-align: center;
+  }
+
   button {
     ${({ theme }) => theme.mixins.bigButton};
     align-self: center;
     margin-top: 10px;
     cursor: pointer;
     background: none;
+
+    &:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
   }
 `;
 
-const ContactPage: React.FC<PageProps> = ({ location }) => (
-  <Layout location={location}>
-    <StyledMainContainer>
-      <StyledContactPage>
-        <span className="overline">Get In Touch</span>
-        <h1 className="title">Contact Me</h1>
-        <p className="description">
-          Have a project in mind or want to discuss an opportunity? Fill out the form below and I'll
-          get back to you as soon as possible.
-        </p>
+type FormStatus = 'idle' | 'submitting' | 'success' | 'error';
 
-        <StyledForm>
-          <div className="name-row">
+const ContactPage: React.FC<PageProps> = ({ location }) => {
+  const [status, setStatus] = useState<FormStatus>('idle');
+  const [errorMessage, setErrorMessage] = useState('');
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setStatus('submitting');
+    setErrorMessage('');
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    const data: Record<string, string | boolean> = {};
+    formData.forEach((value, key) => {
+      data[key] = key === 'optIn' ? true : value.toString();
+    });
+    if (!data.optIn) data.optIn = false;
+
+    try {
+      const res = await fetch(CONTACT_API_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+
+      if (!res.ok) {
+        const body = await res.json().catch(() => ({}));
+        throw new Error(body.error || 'Something went wrong');
+      }
+
+      setStatus('success');
+      form.reset();
+    } catch (err) {
+      setStatus('error');
+      setErrorMessage(err instanceof Error ? err.message : 'Something went wrong');
+    }
+  };
+
+  if (status === 'success') {
+    return (
+      <Layout location={location}>
+        <StyledMainContainer>
+          <StyledContactPage>
+            <span className="overline">Thank You</span>
+            <h1 className="title">Message Sent</h1>
+            <p className="description">I'll get back to you as soon as possible.</p>
+            <StyledForm as="div">
+              <button type="button" onClick={() => setStatus('idle')}>
+                Send Another Message
+              </button>
+            </StyledForm>
+          </StyledContactPage>
+        </StyledMainContainer>
+      </Layout>
+    );
+  }
+
+  return (
+    <Layout location={location}>
+      <StyledMainContainer>
+        <StyledContactPage>
+          <span className="overline">Get In Touch</span>
+          <h1 className="title">Contact Me</h1>
+          <p className="description">
+            Have a project in mind or want to discuss an opportunity? Fill out the form below and
+            I'll get back to you as soon as possible.
+          </p>
+
+          <StyledForm onSubmit={handleSubmit}>
+            <div className="hp-field">
+              <label>
+                Website
+                <input type="text" name="website" tabIndex={-1} autoComplete="off" />
+              </label>
+            </div>
+
+            <div className="name-row">
+              <label>
+                First Name*
+                <input type="text" name="firstName" placeholder="First name" required />
+              </label>
+              <label>
+                Last Name*
+                <input type="text" name="lastName" placeholder="Last name" required />
+              </label>
+            </div>
+
             <label>
-              First Name
-              <input type="text" name="firstName" placeholder="First name" required />
+              Email*
+              <input type="email" name="email" placeholder="your@email.com" required />
             </label>
+
             <label>
-              Last Name
-              <input type="text" name="lastName" placeholder="Last name" required />
+              Phone
+              <input type="tel" name="phone" placeholder="(555) 555-5555" />
             </label>
+
+            <label>
+              Company
+              <input type="text" name="company" placeholder="Your company" />
+            </label>
+
+            <label>
+              Message*
+              <textarea name="message" required />
+            </label>
+
+            <div className="opt-in">
+              <p>
+                I want to receive emails from Pratt Solutions about products, services, events,
+                &amp; thought leadership.
+              </p>
+              <label className="checkbox">
+                <input type="checkbox" name="optIn" />
+                Yes
+              </label>
+            </div>
+
+            {status === 'error' && (
+              <p className="error-message">
+                {errorMessage || 'Something went wrong. Please try again.'}
+              </p>
+            )}
+
+            <button type="submit" disabled={status === 'submitting'}>
+              {status === 'submitting' ? 'Sending...' : 'Submit'}
+            </button>
+          </StyledForm>
+
+          <div className="skip-the-line">
+            <hr />
+            Need to skip the line?{' '}
+            <a href="https://calendly.com/johnpratt439/intro" target="_blank" rel="noreferrer">
+              Book a call directly
+            </a>{' '}
+            and let's talk.
           </div>
-
-          <label>
-            Email
-            <input type="email" name="email" placeholder="your@email.com" required />
-          </label>
-
-          <label>
-            Phone
-            <input type="tel" name="phone" placeholder="(555) 555-5555" />
-          </label>
-
-          <label>
-            Company
-            <input type="text" name="company" placeholder="Your company" />
-          </label>
-
-          <label>
-            Message
-            <textarea name="message" required />
-          </label>
-
-          <button type="submit">Submit</button>
-        </StyledForm>
-
-        <div className="skip-the-line">
-          <hr />
-          Need to skip the line?{' '}
-          <a href="https://calendly.com/johnpratt439/intro" target="_blank" rel="noreferrer">
-            Book a call directly
-          </a>{' '}
-          and let's talk.
-        </div>
-      </StyledContactPage>
-    </StyledMainContainer>
-  </Layout>
-);
+        </StyledContactPage>
+      </StyledMainContainer>
+    </Layout>
+  );
+};
 
 export default ContactPage;
 

@@ -17,3 +17,8 @@ output "outrank_access_token_value" {
 #   value       = aws_secretsmanager_secret.outrank_access_token.arn
 # }
 
+output "contact_function_url" {
+  description = "Public HTTPS URL for the contact form handler"
+  value       = aws_lambda_function_url.contact.function_url
+}
+

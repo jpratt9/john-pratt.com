@@ -52,23 +52,23 @@ const Loader: React.FC<LoaderProps> = ({ finishLoading }) => {
 
     // 1) draw the logo paths (v4 "draw" replaces setDashoffset)
     loader.add(svg.createDrawable('#logo path'), {
-      delay: 300,
-      duration: 1500,
+      delay: 210,
+      duration: 1050,
       ease: 'inOutQuart',
       draw: '0 1',
     });
 
     // 2) fade in the "B"
     loader.add('#logo #B', {
-      duration: 700,
+      duration: 490,
       ease: 'inOutQuart',
       opacity: 1,
     });
 
     // 3) fade + scale out logo
     loader.add('#logo', {
-      delay: 500,
-      duration: 300,
+      delay: 350,
+      duration: 210,
       ease: 'inOutQuart',
       opacity: 0,
       scale: 0.1,
@@ -76,7 +76,7 @@ const Loader: React.FC<LoaderProps> = ({ finishLoading }) => {
 
     // 4) hide the loader container
     loader.add('.loader', {
-      duration: 200,
+      duration: 140,
       ease: 'inOutQuart',
       opacity: 0,
       zIndex: -1,
