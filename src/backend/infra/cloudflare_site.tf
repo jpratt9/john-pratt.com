@@ -20,25 +20,49 @@ resource "cloudflare_pages_project" "john_pratt" {
 
   build_config = {
     build_caching   = true
-    build_command   = "npm run build"
+    build_command   = "rm -rf .cache && npm run build"
     destination_dir = "public"
   }
 
   deployment_configs = {
     production = {
-      environment_variables = {
-        ANALYZE_BUNDLE         = "false"
-        NODE_VERSION           = local.node_version
-        NPM_FLAGS              = "--force --legacy-peer-deps"
-        GATSBY_CONTACT_API_URL = aws_lambda_function_url.contact.function_url
+      env_vars = {
+        ANALYZE_BUNDLE = {
+          type  = "plain_text"
+          value = "false"
+        }
+        NODE_VERSION = {
+          type  = "plain_text"
+          value = local.node_version
+        }
+        NPM_FLAGS = {
+          type  = "plain_text"
+          value = "--force --legacy-peer-deps"
+        }
+        GATSBY_CONTACT_API_URL = {
+          type  = "plain_text"
+          value = aws_lambda_function_url.contact.function_url
+        }
       }
     }
     preview = {
-      environment_variables = {
-        ANALYZE_BUNDLE         = "false"
-        NODE_VERSION           = local.node_version
-        NPM_FLAGS              = "--force --legacy-peer-deps"
-        GATSBY_CONTACT_API_URL = aws_lambda_function_url.contact.function_url
+      env_vars = {
+        ANALYZE_BUNDLE = {
+          type  = "plain_text"
+          value = "false"
+        }
+        NODE_VERSION = {
+          type  = "plain_text"
+          value = local.node_version
+        }
+        NPM_FLAGS = {
+          type  = "plain_text"
+          value = "--force --legacy-peer-deps"
+        }
+        GATSBY_CONTACT_API_URL = {
+          type  = "plain_text"
+          value = aws_lambda_function_url.contact.function_url
+        }
       }
     }
   }
