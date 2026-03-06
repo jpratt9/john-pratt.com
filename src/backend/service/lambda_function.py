@@ -1,3 +1,4 @@
+import io
 import json
 import datetime
 from datetime import date
@@ -12,6 +13,7 @@ import anthropic
 import urllib.parse
 from google import genai
 from google.genai import types as genai_types
+from PIL import Image
 from image_utils import unique_filename
 
 SMALL_WORDS = {'a', 'an', 'the', 'and', 'but', 'or', 'nor', 'for', 'yet', 'so',
@@ -180,9 +182,24 @@ def fix_image(image_bytes, mime_type, filename):
     if not genai_client:
         return None, None
     prompt = os.environ.get("image_fix_prompt", "").replace("{{FILENAME}}", filename)
-    image_part = genai_types.Part.from_bytes(data=image_bytes, mime_type=mime_type)
-    config = genai_types.GenerateContentConfig(response_modalities=["TEXT", "IMAGE"])
-    model = "gemini-3-pro-image-preview"
+    # Resize input to max 512px wide to cut input token costs
+    img = Image.open(io.BytesIO(image_bytes))
+    if img.width > 512:
+        ratio = 512 / img.width
+        new_h = int(img.height * ratio)
+        img = img.resize((512, new_h), Image.LANCZOS)
+        buf = io.BytesIO()
+        img.save(buf, format="JPEG", quality=85)
+        resized_bytes = buf.getvalue()
+        print(f"[fix_image] Resized {filename}: {img.width}x{img.height} ({len(resized_bytes) / 1024:.0f} KB)")
+        image_part = genai_types.Part.from_bytes(data=resized_bytes, mime_type="image/jpeg")
+    else:
+        image_part = genai_types.Part.from_bytes(data=image_bytes, mime_type=mime_type)
+    config = genai_types.GenerateContentConfig(
+        response_modalities=["TEXT", "IMAGE"],
+        image_config=genai_types.ImageConfig(image_size="512px"),
+    )
+    model = "gemini-3.1-pro-image-preview"
     delays = [5, 10]
     for attempt in range(3):
         try:

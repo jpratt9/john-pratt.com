@@ -1,3 +1,4 @@
+import io
 import pytest
 from unittest.mock import patch, MagicMock, Mock
 import json
@@ -5,6 +6,7 @@ import base64
 import re
 import os
 import sys
+from PIL import Image
 
 # Mock boto3 and anthropic before they're imported
 sys.modules["boto3"] = MagicMock()
@@ -1486,14 +1488,10 @@ class TestFixImage:
 
     @patch("lambda_function.genai_client")
     def test_returns_image_data_from_response(self, mock_client):
-        image_part = Mock()
-        image_part.inline_data = Mock(data=b"fixed-image", mime_type="image/png")
-        mock_response = Mock()
-        mock_response.candidates = [Mock(content=Mock(parts=[image_part]))]
-        mock_client.models.generate_content.return_value = mock_response
+        mock_client.models.generate_content.return_value = _make_success_response()
 
         from lambda_function import fix_image
-        data, mime = fix_image(b"raw-image", "image/jpeg", "test.jpg")
+        data, mime = fix_image(_make_test_image(400, 300), "image/jpeg", "test.jpg")
 
         assert data == b"fixed-image"
         assert mime == "image/png"
@@ -1507,21 +1505,17 @@ class TestFixImage:
         mock_client.models.generate_content.return_value = mock_response
 
         from lambda_function import fix_image
-        data, mime = fix_image(b"raw-image", "image/jpeg", "test.jpg")
+        data, mime = fix_image(_make_test_image(400, 300), "image/jpeg", "test.jpg")
 
         assert data is None
         assert mime is None
 
     @patch("lambda_function.genai_client")
     def test_substitutes_filename_in_prompt(self, mock_client):
-        image_part = Mock()
-        image_part.inline_data = Mock(data=b"img", mime_type="image/jpeg")
-        mock_response = Mock()
-        mock_response.candidates = [Mock(content=Mock(parts=[image_part]))]
-        mock_client.models.generate_content.return_value = mock_response
+        mock_client.models.generate_content.return_value = _make_success_response()
 
         from lambda_function import fix_image
-        fix_image(b"raw", "image/jpeg", "my-photo.jpg")
+        fix_image(_make_test_image(400, 300), "image/jpeg", "my-photo.jpg")
 
         call_args = mock_client.models.generate_content.call_args
         prompt_text = call_args[1]["contents"][1]
@@ -1530,16 +1524,12 @@ class TestFixImage:
 
     @patch("lambda_function.genai_client")
     def test_passes_correct_model(self, mock_client):
-        image_part = Mock()
-        image_part.inline_data = Mock(data=b"img", mime_type="image/jpeg")
-        mock_response = Mock()
-        mock_response.candidates = [Mock(content=Mock(parts=[image_part]))]
-        mock_client.models.generate_content.return_value = mock_response
+        mock_client.models.generate_content.return_value = _make_success_response()
 
         from lambda_function import fix_image
-        fix_image(b"raw", "image/jpeg", "test.jpg")
+        fix_image(_make_test_image(400, 300), "image/jpeg", "test.jpg")
 
-        assert mock_client.models.generate_content.call_args[1]["model"] == "gemini-3-pro-image-preview"
+        assert mock_client.models.generate_content.call_args[1]["model"] == "gemini-3.1-pro-image-preview"
 
     @patch("lambda_function.time.sleep")
     @patch("lambda_function.genai_client")
@@ -1550,7 +1540,7 @@ class TestFixImage:
         mock_client.models.generate_content.side_effect = [err_503] * 3
 
         from lambda_function import fix_image
-        data, mime = fix_image(b"raw", "image/jpeg", "test.jpg")
+        data, mime = fix_image(_make_test_image(400, 300), "image/jpeg", "test.jpg")
 
         assert data is None
         assert mime is None
@@ -1560,22 +1550,17 @@ class TestFixImage:
     @patch("lambda_function.time.sleep")
     @patch("lambda_function.genai_client")
     def test_retries_on_5xx_then_succeeds(self, mock_client, mock_sleep):
-        image_part = Mock()
-        image_part.inline_data = Mock(data=b"fixed", mime_type="image/png")
-        mock_response = Mock()
-        mock_response.candidates = [Mock(content=Mock(parts=[image_part]))]
-
         err_500 = Exception("server error")
         err_500.code = 500
 
         mock_client.models.generate_content.side_effect = [
-            err_500, mock_response,  # fail once, succeed on retry
+            err_500, _make_success_response(),
         ]
 
         from lambda_function import fix_image
-        data, mime = fix_image(b"raw", "image/jpeg", "test.jpg")
+        data, mime = fix_image(_make_test_image(400, 300), "image/jpeg", "test.jpg")
 
-        assert data == b"fixed"
+        assert data == b"fixed-image"
         assert mock_sleep.call_count == 1
         assert mock_sleep.call_args[0][0] == 5
 
@@ -1588,7 +1573,7 @@ class TestFixImage:
         mock_client.models.generate_content.side_effect = [err_429] * 3
 
         from lambda_function import fix_image
-        data, mime = fix_image(b"raw", "image/jpeg", "test.jpg")
+        data, mime = fix_image(_make_test_image(400, 300), "image/jpeg", "test.jpg")
 
         assert data is None
         assert mime is None
@@ -1603,7 +1588,7 @@ class TestFixImage:
 
         from lambda_function import fix_image
         with pytest.raises(Exception, match="bad request"):
-            fix_image(b"raw", "image/jpeg", "test.jpg")
+            fix_image(_make_test_image(400, 300), "image/jpeg", "test.jpg")
 
         assert mock_client.models.generate_content.call_count == 1
 
@@ -1626,10 +1611,327 @@ class TestFixImage:
         mock_client.models.generate_content.return_value = mock_response
 
         from lambda_function import fix_image
-        data, mime = fix_image(b"raw", "image/jpeg", "test.jpg")
+        data, mime = fix_image(_make_test_image(400, 300), "image/jpeg", "test.jpg")
 
         assert data == b"the-image"
         assert mime == "image/png"
+
+
+# ============================================================================
+# fix_image: input resize tests
+# ============================================================================
+
+def _make_test_image(width, height, fmt="JPEG"):
+    """Create a real image in memory."""
+    img = Image.new("RGB", (width, height), color=(100, 150, 200))
+    buf = io.BytesIO()
+    img.save(buf, format=fmt)
+    return buf.getvalue()
+
+
+def _make_success_response():
+    image_part = Mock()
+    image_part.inline_data = Mock(data=b"fixed-image", mime_type="image/png")
+    mock_response = Mock()
+    mock_response.candidates = [Mock(content=Mock(parts=[image_part]))]
+    return mock_response
+
+
+class TestFixImageResize:
+
+    @pytest.fixture(autouse=True)
+    def setup(self):
+        env_vars = {
+            "anthropic_api_key": "test-key",
+            "bedrock_title_prompt": "{{TITLE}}",
+            "bedrock_description_prompt": "{{DESCRIPTION}}",
+            "image_fix_prompt": "Fix this image {{FILENAME}} please",
+        }
+        with patch.dict(os.environ, env_vars, clear=False):
+            if "lambda_function" in sys.modules:
+                del sys.modules["lambda_function"]
+            service_dir = os.path.join(os.path.dirname(__file__), "..", "service")
+            if service_dir not in sys.path:
+                sys.path.insert(0, service_dir)
+            yield
+
+    @patch("lambda_function.Image")
+    @patch("lambda_function.genai_client")
+    def test_wide_image_gets_resized(self, mock_client, mock_pil):
+        mock_client.models.generate_content.return_value = _make_success_response()
+        mock_img = MagicMock()
+        mock_img.width = 1376
+        mock_pil.open.return_value = mock_img
+        mock_buf = io.BytesIO(b"resized-jpeg")
+        mock_img.save = lambda buf, **kw: buf.write(b"resized-jpeg")
+
+        from lambda_function import fix_image
+        fix_image(b"doesnt-matter", "image/jpeg", "wide.jpg")
+
+        mock_img.resize.assert_called_once()
+        args = mock_img.resize.call_args[0]
+        assert args[0][0] == 512  # width
+        assert args[0][1] == int(mock_img.height * (512 / 1376))
+
+    @patch("lambda_function.Image")
+    @patch("lambda_function.genai_client")
+    def test_small_image_not_resized(self, mock_client, mock_pil):
+        mock_client.models.generate_content.return_value = _make_success_response()
+        mock_img = MagicMock()
+        mock_img.width = 400
+        mock_pil.open.return_value = mock_img
+
+        from lambda_function import fix_image
+        fix_image(b"small-img", "image/png", "small.png")
+
+        mock_img.resize.assert_not_called()
+
+    @patch("lambda_function.Image")
+    @patch("lambda_function.genai_client")
+    def test_exactly_512_wide_not_resized(self, mock_client, mock_pil):
+        mock_client.models.generate_content.return_value = _make_success_response()
+        mock_img = MagicMock()
+        mock_img.width = 512
+        mock_pil.open.return_value = mock_img
+
+        from lambda_function import fix_image
+        fix_image(b"exact-img", "image/jpeg", "exact.jpg")
+
+        mock_img.resize.assert_not_called()
+
+    @patch("lambda_function.Image")
+    @patch("lambda_function.genai_client")
+    def test_513_wide_gets_resized(self, mock_client, mock_pil):
+        mock_client.models.generate_content.return_value = _make_success_response()
+        mock_img = MagicMock()
+        mock_img.width = 513
+        mock_img.height = 300
+        mock_img.resize.return_value = mock_img
+        mock_img.save = lambda buf, **kw: buf.write(b"resized")
+        mock_pil.open.return_value = mock_img
+
+        from lambda_function import fix_image
+        fix_image(b"just-over", "image/jpeg", "just-over.jpg")
+
+        mock_img.resize.assert_called_once()
+        assert mock_img.resize.call_args[0][0][0] == 512
+
+    @patch("lambda_function.Image")
+    @patch("lambda_function.genai_client")
+    def test_resize_preserves_aspect_ratio(self, mock_client, mock_pil):
+        mock_client.models.generate_content.return_value = _make_success_response()
+        mock_img = MagicMock()
+        mock_img.width = 1024
+        mock_img.height = 512
+        mock_img.resize.return_value = mock_img
+        mock_img.save = lambda buf, **kw: buf.write(b"resized")
+        mock_pil.open.return_value = mock_img
+
+        from lambda_function import fix_image
+        fix_image(b"ratio-img", "image/jpeg", "ratio.jpg")
+
+        new_w, new_h = mock_img.resize.call_args[0][0]
+        assert new_w == 512
+        assert new_h == 256  # 512 * (512/1024)
+
+    @patch("lambda_function.Image")
+    @patch("lambda_function.genai_client")
+    def test_tall_narrow_image_resize_ratio(self, mock_client, mock_pil):
+        mock_client.models.generate_content.return_value = _make_success_response()
+        mock_img = MagicMock()
+        mock_img.width = 1000
+        mock_img.height = 2000
+        mock_img.resize.return_value = mock_img
+        mock_img.save = lambda buf, **kw: buf.write(b"resized")
+        mock_pil.open.return_value = mock_img
+
+        from lambda_function import fix_image
+        fix_image(b"tall-img", "image/jpeg", "tall.jpg")
+
+        new_w, new_h = mock_img.resize.call_args[0][0]
+        assert new_w == 512
+        assert new_h == 1024  # 2000 * (512/1000)
+
+    @patch("lambda_function.genai_types.Part.from_bytes")
+    @patch("lambda_function.Image")
+    @patch("lambda_function.genai_client")
+    def test_resized_mime_type_is_jpeg(self, mock_client, mock_pil, mock_from_bytes):
+        """Even if input is PNG, resized output is sent as JPEG."""
+        mock_client.models.generate_content.return_value = _make_success_response()
+        mock_img = MagicMock()
+        mock_img.width = 2000
+        mock_img.resize.return_value = mock_img
+        mock_img.save = lambda buf, **kw: buf.write(b"resized")
+        mock_pil.open.return_value = mock_img
+
+        from lambda_function import fix_image
+        fix_image(b"big-png", "image/png", "big.png")
+
+        assert mock_from_bytes.call_args[1]["mime_type"] == "image/jpeg"
+
+    @patch("lambda_function.genai_types.Part.from_bytes")
+    @patch("lambda_function.Image")
+    @patch("lambda_function.genai_client")
+    def test_small_image_keeps_original_mime_type(self, mock_client, mock_pil, mock_from_bytes):
+        mock_client.models.generate_content.return_value = _make_success_response()
+        mock_img = MagicMock()
+        mock_img.width = 400
+        mock_pil.open.return_value = mock_img
+
+        from lambda_function import fix_image
+        fix_image(b"small-png", "image/png", "small.png")
+
+        assert mock_from_bytes.call_args[1]["mime_type"] == "image/png"
+        assert mock_from_bytes.call_args[1]["data"] == b"small-png"
+
+    @patch("lambda_function.Image")
+    @patch("lambda_function.genai_client")
+    def test_uses_lanczos_resampling(self, mock_client, mock_pil):
+        mock_client.models.generate_content.return_value = _make_success_response()
+        mock_img = MagicMock()
+        mock_img.width = 1000
+        mock_img.height = 500
+        mock_img.resize.return_value = mock_img
+        mock_img.save = lambda buf, **kw: buf.write(b"resized")
+        mock_pil.open.return_value = mock_img
+        mock_pil.LANCZOS = Image.LANCZOS
+
+        from lambda_function import fix_image
+        fix_image(b"img", "image/jpeg", "test.jpg")
+
+        assert mock_img.resize.call_args[0][1] == Image.LANCZOS
+
+
+# ============================================================================
+# fix_image: integration resize tests (real PIL)
+# ============================================================================
+
+class TestFixImageResizeIntegration:
+    """Tests with real PIL images to verify actual resize output."""
+
+    @pytest.fixture(autouse=True)
+    def setup(self):
+        env_vars = {
+            "anthropic_api_key": "test-key",
+            "bedrock_title_prompt": "{{TITLE}}",
+            "bedrock_description_prompt": "{{DESCRIPTION}}",
+            "image_fix_prompt": "Fix this image {{FILENAME}} please",
+        }
+        with patch.dict(os.environ, env_vars, clear=False):
+            if "lambda_function" in sys.modules:
+                del sys.modules["lambda_function"]
+            service_dir = os.path.join(os.path.dirname(__file__), "..", "service")
+            if service_dir not in sys.path:
+                sys.path.insert(0, service_dir)
+            yield
+
+    @patch("lambda_function.genai_types.Part.from_bytes")
+    @patch("lambda_function.genai_client")
+    def test_real_1376x768_resizes_to_512_wide(self, mock_client, mock_from_bytes):
+        mock_client.models.generate_content.return_value = _make_success_response()
+        image_bytes = _make_test_image(1376, 768)
+
+        from lambda_function import fix_image
+        fix_image(image_bytes, "image/jpeg", "real.jpg")
+
+        sent_data = mock_from_bytes.call_args[1]["data"]
+        sent_img = Image.open(io.BytesIO(sent_data))
+        assert sent_img.width == 512
+        assert sent_img.height == int(768 * (512 / 1376))
+
+    @patch("lambda_function.genai_types.Part.from_bytes")
+    @patch("lambda_function.genai_client")
+    def test_real_400x300_not_resized(self, mock_client, mock_from_bytes):
+        mock_client.models.generate_content.return_value = _make_success_response()
+        image_bytes = _make_test_image(400, 300)
+
+        from lambda_function import fix_image
+        fix_image(image_bytes, "image/jpeg", "small.jpg")
+
+        sent_data = mock_from_bytes.call_args[1]["data"]
+        assert sent_data == image_bytes
+
+    @patch("lambda_function.genai_types.Part.from_bytes")
+    @patch("lambda_function.genai_client")
+    def test_real_resized_output_is_smaller(self, mock_client, mock_from_bytes):
+        mock_client.models.generate_content.return_value = _make_success_response()
+        image_bytes = _make_test_image(1376, 768)
+
+        from lambda_function import fix_image
+        fix_image(image_bytes, "image/jpeg", "big.jpg")
+
+        sent_data = mock_from_bytes.call_args[1]["data"]
+        assert len(sent_data) < len(image_bytes)
+
+    @patch("lambda_function.genai_types.Part.from_bytes")
+    @patch("lambda_function.genai_client")
+    def test_real_png_input_becomes_jpeg_after_resize(self, mock_client, mock_from_bytes):
+        mock_client.models.generate_content.return_value = _make_success_response()
+        image_bytes = _make_test_image(2000, 1000, fmt="PNG")
+
+        from lambda_function import fix_image
+        fix_image(image_bytes, "image/png", "big.png")
+
+        sent_data = mock_from_bytes.call_args[1]["data"]
+        sent_img = Image.open(io.BytesIO(sent_data))
+        assert sent_img.format == "JPEG"
+
+
+# ============================================================================
+# fix_image: output config tests
+# ============================================================================
+
+class TestFixImageOutputConfig:
+
+    @pytest.fixture(autouse=True)
+    def setup(self):
+        env_vars = {
+            "anthropic_api_key": "test-key",
+            "bedrock_title_prompt": "{{TITLE}}",
+            "bedrock_description_prompt": "{{DESCRIPTION}}",
+            "image_fix_prompt": "Fix this image {{FILENAME}} please",
+        }
+        with patch.dict(os.environ, env_vars, clear=False):
+            if "lambda_function" in sys.modules:
+                del sys.modules["lambda_function"]
+            service_dir = os.path.join(os.path.dirname(__file__), "..", "service")
+            if service_dir not in sys.path:
+                sys.path.insert(0, service_dir)
+            yield
+
+    @patch("lambda_function.genai_types.ImageConfig")
+    @patch("lambda_function.genai_types.GenerateContentConfig")
+    @patch("lambda_function.genai_client")
+    def test_config_sets_512px_output_size(self, mock_client, mock_config, mock_image_config):
+        mock_client.models.generate_content.return_value = _make_success_response()
+        image_bytes = _make_test_image(400, 300)
+
+        from lambda_function import fix_image
+        fix_image(image_bytes, "image/jpeg", "test.jpg")
+
+        mock_image_config.assert_called_with(image_size="512px")
+
+    @patch("lambda_function.genai_types.GenerateContentConfig")
+    @patch("lambda_function.genai_client")
+    def test_config_has_image_response_modality(self, mock_client, mock_config):
+        mock_client.models.generate_content.return_value = _make_success_response()
+        image_bytes = _make_test_image(400, 300)
+
+        from lambda_function import fix_image
+        fix_image(image_bytes, "image/jpeg", "test.jpg")
+
+        call_kwargs = mock_config.call_args[1]
+        assert call_kwargs["response_modalities"] == ["TEXT", "IMAGE"]
+
+    @patch("lambda_function.genai_client")
+    def test_uses_gemini_3_1_model(self, mock_client):
+        mock_client.models.generate_content.return_value = _make_success_response()
+        image_bytes = _make_test_image(400, 300)
+
+        from lambda_function import fix_image
+        fix_image(image_bytes, "image/jpeg", "test.jpg")
+
+        assert mock_client.models.generate_content.call_args[1]["model"] == "gemini-3.1-pro-image-preview"
 
 
 # ============================================================================
