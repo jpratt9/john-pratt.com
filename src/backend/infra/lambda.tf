@@ -98,7 +98,7 @@ resource "null_resource" "build_new_requests_layer" {
 
   provisioner "local-exec" {
     command = <<EOT
-rm -rf dist/python && mkdir -p dist/python && pip install --platform manylinux2014_x86_64 --python-version 3.12 --only-binary=:all: requests anthropic google-genai -t dist/python && touch dist/python/google/__init__.py && cd dist && zip -r new_requests_layer.zip python
+rm -rf dist/python && mkdir -p dist/python && pip install --platform manylinux2014_x86_64 --python-version 3.12 --only-binary=:all: requests anthropic google-genai Pillow -t dist/python && touch dist/python/google/__init__.py && cd dist && zip -r new_requests_layer.zip python
     EOT
   }
 }
@@ -107,6 +107,7 @@ rm -rf dist/python && mkdir -p dist/python && pip install --platform manylinux20
 resource "aws_lambda_layer_version" "new_requests" {
   layer_name          = "new_requests"
   filename            = "${path.module}/dist/new_requests_layer.zip"
+  source_code_hash    = filebase64sha256("${path.module}/dist/new_requests_layer.zip")
   compatible_runtimes = [var.python_runtime]
 
   depends_on = [null_resource.build_new_requests_layer]

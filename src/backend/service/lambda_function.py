@@ -199,7 +199,7 @@ def fix_image(image_bytes, mime_type, filename):
         response_modalities=["TEXT", "IMAGE"],
         image_config=genai_types.ImageConfig(image_size="512px"),
     )
-    model = "gemini-3.1-pro-image-preview"
+    model = "gemini-3.1-flash-image-preview"
     delays = [5, 10]
     for attempt in range(3):
         try:

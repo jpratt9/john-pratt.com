@@ -1529,7 +1529,7 @@ class TestFixImage:
         from lambda_function import fix_image
         fix_image(_make_test_image(400, 300), "image/jpeg", "test.jpg")
 
-        assert mock_client.models.generate_content.call_args[1]["model"] == "gemini-3.1-pro-image-preview"
+        assert mock_client.models.generate_content.call_args[1]["model"] == "gemini-3.1-flash-image-preview"
 
     @patch("lambda_function.time.sleep")
     @patch("lambda_function.genai_client")
@@ -1931,7 +1931,7 @@ class TestFixImageOutputConfig:
         from lambda_function import fix_image
         fix_image(image_bytes, "image/jpeg", "test.jpg")
 
-        assert mock_client.models.generate_content.call_args[1]["model"] == "gemini-3.1-pro-image-preview"
+        assert mock_client.models.generate_content.call_args[1]["model"] == "gemini-3.1-flash-image-preview"
 
 
 # ============================================================================
