@@ -303,7 +303,7 @@ def _update_profile_readme(title, slug, date_str, github_headers):
 
     d = datetime.datetime.strptime(date_str, "%Y-%m-%d")
     formatted_date = f"{d.strftime('%b')} {d.day}"
-    display_title = title[:57] + "..." if len(title) > 60 else title
+    display_title = title[:47] + "..." if len(title) > 50 else title
     new_post = {"title": display_title, "slug": slug, "date": formatted_date}
 
     marker = "## 📰 Recent Blog Posts"

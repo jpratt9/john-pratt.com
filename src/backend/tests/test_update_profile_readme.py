@@ -147,5 +147,5 @@ class TestUpdateProfileReadme:
         updated = base64.b64decode(put_call[1]["json"]["content"]).decode()
 
         posts = _extract_posts(updated)
-        assert len(posts[0][1]) <= 60
+        assert len(posts[0][1]) <= 50
         assert posts[0][1].endswith("...")
