@@ -291,6 +291,45 @@ def github_commit(files, message, github_headers):
     _gh("patch", f"{repo}/git/refs/heads/master", github_headers,
         json={"sha": commit_sha})
 
+def _update_profile_readme(title, slug, date_str, github_headers):
+    """Add the new blog post to the jpratt9/jpratt9 profile README, keeping only 6 most recent."""
+    profile_repo = "https://api.github.com/repos/jpratt9/jpratt9"
+    resp = requests.get(f"{profile_repo}/contents/README.md", headers=github_headers)
+    resp.raise_for_status()
+    readme_data = resp.json()
+    readme = base64.b64decode(readme_data["content"]).decode()
+
+    d = datetime.datetime.strptime(date_str, "%Y-%m-%d")
+    formatted_date = d.strftime("%b %-d, '%y")
+    new_entry = f"- [{title}](https://www.john-pratt.com/{slug}) - {formatted_date}"
+
+    marker = "## 📰 Recent Blog Posts"
+    if marker not in readme:
+        print("[profile-readme] Marker not found in README, skipping")
+        return
+
+    before, after = readme.split(marker, 1)
+    lines = after.strip().split("\n")
+    posts = [l for l in lines if l.startswith("- [")]
+    posts.insert(0, new_entry)
+    posts = posts[:6]
+
+    updated = before + marker + "\n" + "\n".join(posts) + "\n"
+
+    resp = requests.put(
+        f"{profile_repo}/contents/README.md",
+        headers=github_headers,
+        json={
+            "message": f"[chore] [bot] update blog posts with: {title[:50]}",
+            "content": base64.b64encode(updated.encode()).decode(),
+            "sha": readme_data["sha"],
+            "committer": {"name": "John Pratt", "email": "john@john-pratt.com"},
+        },
+    )
+    resp.raise_for_status()
+    print(f"[profile-readme] Updated with: {title}")
+
+
 def lambda_handler(event, context):
     github_payload = {
         "committer": {"name": "John Pratt", "email": "john@john-pratt.com"},
@@ -460,5 +499,11 @@ tags:
     for name, img_bytes in image_files.items():
         files.append({"path": f"{post_path}/{name}", "content": base64.b64encode(img_bytes).decode(), "encoding": "base64"})
     github_commit(files, github_payload["message"], github_headers)
+
+    # Update GitHub profile README with latest blog posts
+    try:
+        _update_profile_readme(clean_title.strip('"'), slug, date, github_headers)
+    except Exception as e:
+        print(f"[profile-readme] Failed to update: {e}")
 
     return {"statusCode": 200, "body": json.dumps({"message": "ok"})}
