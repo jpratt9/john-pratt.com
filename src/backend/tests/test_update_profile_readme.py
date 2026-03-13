@@ -2,6 +2,7 @@ import pytest
 from unittest.mock import patch, MagicMock
 import json
 import base64
+import re
 import sys
 import os
 
@@ -24,12 +25,7 @@ SAMPLE_README = """# About Me
 Some intro text.
 
 ## 📰 Recent Blog Posts
-- [Post One](https://www.john-pratt.com/post-one) - Mar 1, '26
-- [Post Two](https://www.john-pratt.com/post-two) - Feb 28, '26
-- [Post Three](https://www.john-pratt.com/post-three) - Feb 27, '26
-- [Post Four](https://www.john-pratt.com/post-four) - Feb 26, '26
-- [Post Five](https://www.john-pratt.com/post-five) - Feb 25, '26
-- [Post Six](https://www.john-pratt.com/post-six) - Feb 24, '26
+<table><tr><td><a href="https://www.john-pratt.com/post-one">Post One</a> - Mar 1</td><td><a href="https://www.john-pratt.com/post-two">Post Two</a> - Feb 28</td></tr><tr><td><a href="https://www.john-pratt.com/post-three">Post Three</a> - Feb 27</td><td><a href="https://www.john-pratt.com/post-four">Post Four</a> - Feb 26</td></tr><tr><td><a href="https://www.john-pratt.com/post-five">Post Five</a> - Feb 25</td><td><a href="https://www.john-pratt.com/post-six">Post Six</a> - Feb 24</td></tr></table>
 """
 
 GITHUB_HEADERS = {"Authorization": "Bearer fake", "Accept": "application/vnd.github+json"}
@@ -43,6 +39,14 @@ def _mock_get_response(readme_content):
         "sha": "abc123",
     }
     return resp
+
+
+def _extract_posts(html):
+    """Extract (slug, title, date) tuples from the HTML table."""
+    return re.findall(
+        r'<a href="https://www\.john-pratt\.com/([^"]+)">([^<]+)</a>\s*-\s*([^<]+)',
+        html,
+    )
 
 
 class TestUpdateProfileReadme:
@@ -59,9 +63,10 @@ class TestUpdateProfileReadme:
         body = put_call[1]["json"]
         updated = base64.b64decode(body["content"]).decode()
 
-        assert "- [New Post](https://www.john-pratt.com/new-post) - Mar 12, '26" in updated
-        lines = [l for l in updated.split("\n") if l.startswith("- [")]
-        assert lines[0].startswith("- [New Post]")
+        posts = _extract_posts(updated)
+        assert posts[0][0] == "new-post"
+        assert posts[0][1] == "New Post"
+        assert "Mar 12" in posts[0][2]
 
     @patch("lambda_function.requests")
     def test_keeps_only_six_posts(self, mock_requests):
@@ -75,9 +80,9 @@ class TestUpdateProfileReadme:
         body = put_call[1]["json"]
         updated = base64.b64decode(body["content"]).decode()
 
-        posts = [l for l in updated.split("\n") if l.startswith("- [")]
+        posts = _extract_posts(updated)
         assert len(posts) == 6
-        assert "Post Six" not in updated
+        assert all("Post Six" not in p[1] for p in posts)
 
     @patch("lambda_function.requests")
     def test_commit_message_contains_title(self, mock_requests):
@@ -112,4 +117,35 @@ class TestUpdateProfileReadme:
 
         put_call = mock_requests.put.call_args
         updated = base64.b64decode(put_call[1]["json"]["content"]).decode()
-        assert "Jun 6, '25" in updated
+        assert "Jun 6" in updated
+
+    @patch("lambda_function.requests")
+    def test_html_table_structure(self, mock_requests):
+        from lambda_function import _update_profile_readme
+        mock_requests.get.return_value = _mock_get_response(SAMPLE_README)
+        mock_requests.put.return_value = MagicMock(raise_for_status=MagicMock())
+
+        _update_profile_readme("New Post", "new-post", "2026-03-12", GITHUB_HEADERS)
+
+        put_call = mock_requests.put.call_args
+        updated = base64.b64decode(put_call[1]["json"]["content"]).decode()
+
+        assert "<table>" in updated
+        assert updated.count("<tr>") == 3
+        assert updated.count("<td>") == 6
+
+    @patch("lambda_function.requests")
+    def test_truncates_long_titles(self, mock_requests):
+        from lambda_function import _update_profile_readme
+        mock_requests.get.return_value = _mock_get_response(SAMPLE_README)
+        mock_requests.put.return_value = MagicMock(raise_for_status=MagicMock())
+
+        long_title = "Discover DevOps Automation Services to Accelerate Delivery and Reliability"
+        _update_profile_readme(long_title, "devops", "2026-03-12", GITHUB_HEADERS)
+
+        put_call = mock_requests.put.call_args
+        updated = base64.b64decode(put_call[1]["json"]["content"]).decode()
+
+        posts = _extract_posts(updated)
+        assert len(posts[0][1]) <= 60
+        assert posts[0][1].endswith("...")

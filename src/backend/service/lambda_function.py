@@ -299,9 +299,12 @@ def _update_profile_readme(title, slug, date_str, github_headers):
     readme_data = resp.json()
     readme = base64.b64decode(readme_data["content"]).decode()
 
+    import re
+
     d = datetime.datetime.strptime(date_str, "%Y-%m-%d")
-    formatted_date = d.strftime("%b %-d, '%y")
-    new_entry = f"- [{title}](https://www.john-pratt.com/{slug}) - {formatted_date}"
+    formatted_date = f"{d.strftime('%b')} {d.day}"
+    display_title = title[:57] + "..." if len(title) > 60 else title
+    new_post = {"title": display_title, "slug": slug, "date": formatted_date}
 
     marker = "## 📰 Recent Blog Posts"
     if marker not in readme:
@@ -309,12 +312,30 @@ def _update_profile_readme(title, slug, date_str, github_headers):
         return
 
     before, after = readme.split(marker, 1)
-    lines = after.strip().split("\n")
-    posts = [l for l in lines if l.startswith("- [")]
-    posts.insert(0, new_entry)
+
+    # Parse existing posts from HTML table cells
+    posts = []
+    for m in re.finditer(r'<a href="https://www\.john-pratt\.com/([^"]+)">([^<]+)</a>\s*-\s*([^<]+)', after):
+        posts.append({"slug": m.group(1), "title": m.group(2), "date": m.group(3).strip()})
+
+    posts.insert(0, new_post)
     posts = posts[:6]
 
-    updated = before + marker + "\n" + "\n".join(posts) + "\n"
+    # Build HTML table with 2 columns, 3 rows
+    rows = []
+    for i in range(0, 6, 2):
+        left = posts[i] if i < len(posts) else None
+        right = posts[i + 1] if i + 1 < len(posts) else None
+        cells = []
+        for p in (left, right):
+            if p:
+                cells.append(f'<td><a href="https://www.john-pratt.com/{p["slug"]}">{p["title"]}</a> - {p["date"]}</td>')
+            else:
+                cells.append("<td></td>")
+        rows.append(f'<tr>{"".join(cells)}</tr>')
+    table = f'<table>{"".join(rows)}</table>'
+
+    updated = before + marker + "\n" + table + "\n"
 
     resp = requests.put(
         f"{profile_repo}/contents/README.md",
