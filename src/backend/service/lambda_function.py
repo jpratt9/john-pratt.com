@@ -294,10 +294,17 @@ def github_commit(files, message, github_headers):
 def _update_profile_readme(title, slug, date_str, github_headers):
     """Add the new blog post to the jpratt9/jpratt9 profile README, keeping only 6 most recent."""
     profile_repo = "https://api.github.com/repos/jpratt9/jpratt9"
+    print(f"[profile-readme] Starting update — title={title!r}, slug={slug!r}, date_str={date_str!r}")
+
     resp = requests.get(f"{profile_repo}/contents/README.md", headers=github_headers)
+    print(f"[profile-readme] GET README response: {resp.status_code}")
+    if not resp.ok:
+        print(f"[profile-readme] GET README failed: {resp.text}")
     resp.raise_for_status()
     readme_data = resp.json()
     readme = base64.b64decode(readme_data["content"]).decode()
+    print(f"[profile-readme] README fetched — sha={readme_data['sha']}, length={len(readme)} chars")
+    print(f"[profile-readme] README content:\n{readme}")
 
     import re
 
@@ -305,21 +312,28 @@ def _update_profile_readme(title, slug, date_str, github_headers):
     formatted_date = f"{d.strftime('%b')} {d.day}"
     display_title = title[:47] + "..." if len(title) > 50 else title
     new_post = {"title": display_title, "slug": slug, "date": formatted_date}
+    print(f"[profile-readme] New post entry: {new_post}")
 
     marker = "## 📰 Recent Blog Posts"
     if marker not in readme:
-        print("[profile-readme] Marker not found in README, skipping")
+        print(f"[profile-readme] ERROR: Marker {marker!r} not found in README, skipping")
+        print(f"[profile-readme] README lines containing '##': {[l for l in readme.splitlines() if '##' in l]}")
         return
 
     before, after = readme.split(marker, 1)
+    print(f"[profile-readme] Split on marker — before={len(before)} chars, after={len(after)} chars")
+    print(f"[profile-readme] Content after marker:\n{after}")
 
     # Parse existing posts from HTML table cells
     posts = []
-    for m in re.finditer(r'<a href="https://www\.john-pratt\.com/([^"]+)">([^<]+)</a>\s*-\s*([^<]+)', after):
+    pattern = r'<a href="https://www\.john-pratt\.com/([^"]+)">([^<]+)</a>\s*-\s*([^<]+)'
+    for m in re.finditer(pattern, after):
         posts.append({"slug": m.group(1), "title": m.group(2), "date": m.group(3).strip()})
+    print(f"[profile-readme] Parsed {len(posts)} existing posts: {posts}")
 
     posts.insert(0, new_post)
     posts = posts[:6]
+    print(f"[profile-readme] Final post list ({len(posts)} posts): {posts}")
 
     # Build HTML table with 2 columns, 3 rows
     rows = []
@@ -334,21 +348,29 @@ def _update_profile_readme(title, slug, date_str, github_headers):
                 cells.append("<td></td>")
         rows.append(f'<tr>{"".join(cells)}</tr>')
     table = f'<table>{"".join(rows)}</table>'
+    print(f"[profile-readme] Built table:\n{table}")
 
     updated = before + marker + "\n" + table + "\n"
+    print(f"[profile-readme] Final README ({len(updated)} chars):\n{updated}")
+
+    put_payload = {
+        "message": f"[chore] [bot] update blog posts with: {title[:50]}",
+        "content": base64.b64encode(updated.encode()).decode(),
+        "sha": readme_data["sha"],
+        "committer": {"name": "John Pratt", "email": "john@john-pratt.com"},
+    }
+    print(f"[profile-readme] PUT payload — message={put_payload['message']!r}, sha={put_payload['sha']}, content_length={len(put_payload['content'])}")
 
     resp = requests.put(
         f"{profile_repo}/contents/README.md",
         headers=github_headers,
-        json={
-            "message": f"[chore] [bot] update blog posts with: {title[:50]}",
-            "content": base64.b64encode(updated.encode()).decode(),
-            "sha": readme_data["sha"],
-            "committer": {"name": "John Pratt", "email": "john@john-pratt.com"},
-        },
+        json=put_payload,
     )
+    print(f"[profile-readme] PUT response: {resp.status_code}")
+    if not resp.ok:
+        print(f"[profile-readme] PUT failed: {resp.text}")
     resp.raise_for_status()
-    print(f"[profile-readme] Updated with: {title}")
+    print(f"[profile-readme] Successfully updated with: {title}")
 
 
 def lambda_handler(event, context):
