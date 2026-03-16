@@ -291,11 +291,68 @@ def github_commit(files, message, github_headers):
     _gh("patch", f"{repo}/git/refs/heads/master", github_headers,
         json={"sha": commit_sha})
 
-def _update_profile_readme(title, slug, date_str, github_headers):
-    """Add the new blog post to the jpratt9/jpratt9 profile README, keeping only 6 most recent."""
-    profile_repo = "https://api.github.com/repos/jpratt9/jpratt9"
-    print(f"[profile-readme] Starting update — title={title!r}, slug={slug!r}, date_str={date_str!r}")
+def _get_recent_posts(github_headers, count=6):
+    """Fetch the most recent blog posts by scanning index.md frontmatter in the repo."""
+    blog_repo = "https://api.github.com/repos/jpratt9/john-pratt.com"
+    posts_path = "src/frontend/content/posts"
 
+    # Get recursive tree — one API call for all files
+    ref = requests.get(f"{blog_repo}/git/refs/heads/master", headers=github_headers)
+    ref.raise_for_status()
+    tree_sha = requests.get(f"{blog_repo}/git/commits/{ref.json()['object']['sha']}", headers=github_headers).json()["tree"]["sha"]
+    tree = requests.get(f"{blog_repo}/git/trees/{tree_sha}?recursive=1", headers=github_headers)
+    tree.raise_for_status()
+
+    # Collect all index.md blob SHAs
+    index_files = []
+    for item in tree.json()["tree"]:
+        if item["path"].startswith(f"{posts_path}/") and item["path"].endswith("/index.md") and item["type"] == "blob":
+            slug = item["path"].split("/")[-2]
+            index_files.append({"slug": slug, "sha": item["sha"]})
+    print(f"[profile-readme] Found {len(index_files)} post index.md files")
+
+    # Fetch blobs in parallel to parse date/title from frontmatter
+    def _parse_blob(item):
+        resp = requests.get(f"{blog_repo}/git/blobs/{item['sha']}", headers=github_headers)
+        if not resp.ok:
+            return None
+        content = base64.b64decode(resp.json()["content"]).decode()
+        date_m = re.search(r"^date:\s*'?\"?(\d{4}-\d{2}-\d{2})", content, re.MULTILINE)
+        title_m = re.search(r'^title:\s*"?([^"\n]+)"?', content, re.MULTILINE)
+        if not date_m or not title_m:
+            return None
+        return {"slug": item["slug"], "date_str": date_m.group(1), "title": title_m.group(1).strip('"')}
+
+    # Fetch all blobs concurrently
+    with ThreadPoolExecutor(max_workers=20) as executor:
+        results = list(executor.map(_parse_blob, index_files))
+
+    posts = sorted([r for r in results if r], key=lambda p: p["date_str"], reverse=True)[:count]
+    print(f"[profile-readme] Top {count} posts by date: {posts}")
+    return posts
+
+
+def _update_profile_readme(title, slug, date_str, github_headers):
+    """Update jpratt9/jpratt9 profile README with the 6 most recent blog posts from the repo."""
+    profile_repo = "https://api.github.com/repos/jpratt9/jpratt9"
+    print(f"[profile-readme] Starting update — title={title}, slug={slug}, date_str={date_str}")
+
+    # Get the 6 most recent posts from the actual repo (source of truth)
+    posts = _get_recent_posts(github_headers)
+    if not posts:
+        print("[profile-readme] No posts found, skipping")
+        return
+
+    # Format for display
+    formatted = []
+    for p in posts:
+        d = datetime.datetime.strptime(p["date_str"], "%Y-%m-%d")
+        display_date = f"{d.strftime('%b')} {d.day}"
+        display_title = p["title"][:47] + "..." if len(p["title"]) > 50 else p["title"]
+        formatted.append({"title": display_title, "slug": p["slug"], "date": display_date})
+    print(f"[profile-readme] Formatted posts: {formatted}")
+
+    # Fetch current README
     resp = requests.get(f"{profile_repo}/contents/README.md", headers=github_headers)
     print(f"[profile-readme] GET README response: {resp.status_code}")
     if not resp.ok:
@@ -303,43 +360,19 @@ def _update_profile_readme(title, slug, date_str, github_headers):
     resp.raise_for_status()
     readme_data = resp.json()
     readme = base64.b64decode(readme_data["content"]).decode()
-    print(f"[profile-readme] README fetched — sha={readme_data['sha']}, length={len(readme)} chars")
-    print(f"[profile-readme] README content:\n{readme}")
-
-    import re
-
-    d = datetime.datetime.strptime(date_str, "%Y-%m-%d")
-    formatted_date = f"{d.strftime('%b')} {d.day}"
-    display_title = title[:47] + "..." if len(title) > 50 else title
-    new_post = {"title": display_title, "slug": slug, "date": formatted_date}
-    print(f"[profile-readme] New post entry: {new_post}")
 
     marker = "## 📰 Recent Blog Posts"
     if marker not in readme:
-        print(f"[profile-readme] ERROR: Marker {marker!r} not found in README, skipping")
-        print(f"[profile-readme] README lines containing '##': {[l for l in readme.splitlines() if '##' in l]}")
+        print(f"[profile-readme] ERROR: Marker not found in README, skipping")
         return
 
-    before, after = readme.split(marker, 1)
-    print(f"[profile-readme] Split on marker — before={len(before)} chars, after={len(after)} chars")
-    print(f"[profile-readme] Content after marker:\n{after}")
-
-    # Parse existing posts from HTML table cells
-    posts = []
-    pattern = r'<a href="https://www\.john-pratt\.com/([^"]+)">([^<]+)</a>\s*-\s*([^<]+)'
-    for m in re.finditer(pattern, after):
-        posts.append({"slug": m.group(1), "title": m.group(2), "date": m.group(3).strip()})
-    print(f"[profile-readme] Parsed {len(posts)} existing posts: {posts}")
-
-    posts.insert(0, new_post)
-    posts = posts[:6]
-    print(f"[profile-readme] Final post list ({len(posts)} posts): {posts}")
+    before, _ = readme.split(marker, 1)
 
     # Build HTML table with 2 columns, 3 rows
     rows = []
     for i in range(0, 6, 2):
-        left = posts[i] if i < len(posts) else None
-        right = posts[i + 1] if i + 1 < len(posts) else None
+        left = formatted[i] if i < len(formatted) else None
+        right = formatted[i + 1] if i + 1 < len(formatted) else None
         cells = []
         for p in (left, right):
             if p:
