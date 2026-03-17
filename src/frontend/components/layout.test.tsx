@@ -220,7 +220,7 @@ describe('Layout', () => {
       );
 
       await act(async () => {
-        await new Promise(r => setTimeout(r, 100));
+        await new Promise(r => setTimeout(r, 10));
       });
 
       expect(mockElement.scrollIntoView).toHaveBeenCalledWith({

@@ -40,23 +40,13 @@ const Layout: React.FC<LayoutProps> = ({ children, location }) => {
 
     if (location.hash) {
       const id = location.hash.substring(1);
-      const maxWait = 1500;
-      const interval = 50;
-      let waited = 0;
-
-      const poll = setInterval(() => {
+      setTimeout(() => {
         const el = document.getElementById(id);
-        waited += interval;
         if (el) {
-          clearInterval(poll);
           el.scrollIntoView({ behavior: 'smooth', block: 'start' });
           el.focus();
-        } else if (waited >= maxWait) {
-          clearInterval(poll);
         }
-      }, interval);
-
-      return () => clearInterval(poll);
+      }, 0);
     }
 
     handleExternalLinks();
