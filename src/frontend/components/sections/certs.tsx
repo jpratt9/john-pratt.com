@@ -145,7 +145,7 @@ const Certs: React.FC = () => {
   };
 
   const hasManyItems = (company: string): boolean => {
-    return !!(groupedCerts[company] && groupedCerts[company].length > 9);
+    return !!(groupedCerts[company] && groupedCerts[company].length > 1);
   };
 
   const tabs = Object.keys(groupedCerts).map(company => ({
