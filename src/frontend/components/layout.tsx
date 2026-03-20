@@ -42,15 +42,14 @@ const Layout: React.FC<LayoutProps> = ({ children, location }) => {
 
     if (location.hash) {
       const id = location.hash.substring(1);
-      const poll = () => {
+      const interval = setInterval(() => {
         const el = document.getElementById(id);
         if (el) {
-          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        } else {
-          setTimeout(poll, 100);
+          clearInterval(interval);
+          window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY, behavior: 'instant' });
         }
-      };
-      setTimeout(poll, 50);
+      }, 200);
+      setTimeout(() => clearInterval(interval), 10000);
     }
   }, [isLoading]);
 

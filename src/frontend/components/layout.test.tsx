@@ -212,6 +212,8 @@ describe('Layout', () => {
       mockElement.id = 'jobs';
       document.body.appendChild(mockElement);
 
+      const scrollToSpy = vi.spyOn(window, 'scrollTo').mockImplementation(() => {});
+
       render(
         <Layout location={mockLocation('/', '#jobs')}>
           <div>Home</div>
@@ -219,14 +221,12 @@ describe('Layout', () => {
       );
 
       await act(async () => {
-        await new Promise(r => setTimeout(r, 100));
+        await new Promise(r => setTimeout(r, 250));
       });
 
-      expect(mockElement.scrollIntoView).toHaveBeenCalledWith({
-        behavior: 'smooth',
-        block: 'start',
-      });
+      expect(scrollToSpy).toHaveBeenCalled();
 
+      scrollToSpy.mockRestore();
       document.body.removeChild(mockElement);
     });
   });

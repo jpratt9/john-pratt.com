@@ -34,21 +34,21 @@ describe('gatsby-browser', () => {
       mockElement.id = 'about';
       document.body.appendChild(mockElement);
 
+      const scrollToSpy = vi.spyOn(window, 'scrollTo').mockImplementation(() => {});
+
       onRouteUpdate({ location: { hash: '#about' } });
 
-      vi.advanceTimersByTime(100);
+      vi.advanceTimersByTime(200);
 
-      expect(mockElement.scrollIntoView).toHaveBeenCalledWith({
-        behavior: 'smooth',
-        block: 'start',
-      });
+      expect(scrollToSpy).toHaveBeenCalled();
 
+      scrollToSpy.mockRestore();
       document.body.removeChild(mockElement);
     });
 
     it('does not throw when hash element does not exist', () => {
       onRouteUpdate({ location: { hash: '#nonexistent' } });
-      expect(() => vi.advanceTimersByTime(100)).not.toThrow();
+      expect(() => vi.advanceTimersByTime(200)).not.toThrow();
     });
 
     it('does nothing when there is no hash', () => {
