@@ -4,15 +4,22 @@
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
 
-exports.shouldUpdateScroll = ({ routerProps: { location } }) => {
+exports.onRouteUpdate = ({ location }) => {
   if (location.hash) {
-    // Let the browser handle hash scrolling natively
-    window.setTimeout(() => {
+    const scrollToHash = () => {
       const el = document.querySelector(location.hash);
       if (el) {
         el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      } else {
+        requestAnimationFrame(scrollToHash);
       }
-    }, 800);
+    };
+    setTimeout(scrollToHash, 100);
+  }
+};
+
+exports.shouldUpdateScroll = ({ routerProps: { location } }) => {
+  if (location.hash) {
     return false;
   }
   return true;

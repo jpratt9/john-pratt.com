@@ -38,19 +38,8 @@ const Layout: React.FC<LayoutProps> = ({ children, location }) => {
   useEffect(() => {
     if (isLoading) return;
 
-    if (location.hash) {
-      const id = location.hash.substring(1);
-      setTimeout(() => {
-        const el = document.getElementById(id);
-        if (el) {
-          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          el.focus();
-        }
-      }, 0);
-    }
-
     handleExternalLinks();
-  }, [isLoading, location.hash]);
+  }, [isLoading]);
 
   return (
     <>

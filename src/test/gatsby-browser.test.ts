@@ -1,9 +1,9 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 
 // eslint-disable-next-line @typescript-eslint/no-require-imports
-const { shouldUpdateScroll } = require('../../gatsby-browser');
+const { onRouteUpdate, shouldUpdateScroll } = require('../../gatsby-browser');
 
-describe('shouldUpdateScroll', () => {
+describe('gatsby-browser', () => {
   beforeEach(() => {
     vi.useFakeTimers();
   });
@@ -12,41 +12,47 @@ describe('shouldUpdateScroll', () => {
     vi.useRealTimers();
   });
 
-  it('returns true when there is no hash', () => {
-    const result = shouldUpdateScroll({
-      routerProps: { location: { hash: '' } },
+  describe('shouldUpdateScroll', () => {
+    it('returns true when there is no hash', () => {
+      const result = shouldUpdateScroll({
+        routerProps: { location: { hash: '' } },
+      });
+      expect(result).toBe(true);
     });
-    expect(result).toBe(true);
+
+    it('returns false when hash is present', () => {
+      const result = shouldUpdateScroll({
+        routerProps: { location: { hash: '#about' } },
+      });
+      expect(result).toBe(false);
+    });
   });
 
-  it('returns false and scrolls to element when hash is present', () => {
-    const mockElement = document.createElement('div');
-    mockElement.id = 'about';
-    document.body.appendChild(mockElement);
+  describe('onRouteUpdate', () => {
+    it('scrolls to element when hash is present and element exists', () => {
+      const mockElement = document.createElement('div');
+      mockElement.id = 'about';
+      document.body.appendChild(mockElement);
 
-    const result = shouldUpdateScroll({
-      routerProps: { location: { hash: '#about' } },
+      onRouteUpdate({ location: { hash: '#about' } });
+
+      vi.advanceTimersByTime(100);
+
+      expect(mockElement.scrollIntoView).toHaveBeenCalledWith({
+        behavior: 'smooth',
+        block: 'start',
+      });
+
+      document.body.removeChild(mockElement);
     });
 
-    expect(result).toBe(false);
-
-    vi.advanceTimersByTime(800);
-
-    expect(mockElement.scrollIntoView).toHaveBeenCalledWith({
-      behavior: 'smooth',
-      block: 'start',
+    it('does not throw when hash element does not exist', () => {
+      onRouteUpdate({ location: { hash: '#nonexistent' } });
+      expect(() => vi.advanceTimersByTime(100)).not.toThrow();
     });
 
-    document.body.removeChild(mockElement);
-  });
-
-  it('does not throw when hash element does not exist', () => {
-    const result = shouldUpdateScroll({
-      routerProps: { location: { hash: '#nonexistent' } },
+    it('does nothing when there is no hash', () => {
+      expect(() => onRouteUpdate({ location: { hash: '' } })).not.toThrow();
     });
-
-    expect(result).toBe(false);
-
-    expect(() => vi.advanceTimersByTime(800)).not.toThrow();
   });
 });

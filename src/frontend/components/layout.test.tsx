@@ -205,7 +205,7 @@ describe('Layout', () => {
   });
 
   describe('hash navigation', () => {
-    it('scrolls to element matching location hash', async () => {
+    it('does not scroll to hash (handled by gatsby-browser.js)', async () => {
       sessionStorage.setItem('hasLoaded', '1');
 
       const mockElement = document.createElement('div');
@@ -223,11 +223,7 @@ describe('Layout', () => {
         await new Promise(r => setTimeout(r, 10));
       });
 
-      expect(mockElement.scrollIntoView).toHaveBeenCalledWith({
-        behavior: 'smooth',
-        block: 'start',
-      });
-      expect(mockElement.focus).toHaveBeenCalled();
+      expect(mockElement.scrollIntoView).not.toHaveBeenCalled();
 
       document.body.removeChild(mockElement);
     });
