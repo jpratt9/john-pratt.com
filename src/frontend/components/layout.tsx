@@ -36,17 +36,26 @@ const Layout: React.FC<LayoutProps> = ({ children, location }) => {
   };
 
   useEffect(() => {
+    console.log('[SCROLL DEBUG layout] useEffect fired, isLoading:', isLoading, 'hash:', location.hash);
     if (isLoading) return;
 
     handleExternalLinks();
 
     if (location.hash) {
       const id = location.hash.substring(1);
+      let tick = 0;
       const interval = setInterval(() => {
+        tick++;
         const el = document.getElementById(id);
+        console.log(`[SCROLL DEBUG layout] poll tick ${tick}, element #${id}:`, el ? 'FOUND' : 'NOT FOUND');
         if (el) {
           clearInterval(interval);
-          window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY, behavior: 'instant' });
+          const top = el.getBoundingClientRect().top + window.scrollY;
+          console.log(`[SCROLL DEBUG layout] scrolling to ${top}`);
+          window.scrollTo({ top, behavior: 'instant' });
+          setTimeout(() => {
+            console.log(`[SCROLL DEBUG layout] after scroll, window.scrollY =`, window.scrollY);
+          }, 100);
         }
       }, 200);
       setTimeout(() => clearInterval(interval), 10000);
