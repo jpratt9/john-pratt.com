@@ -39,6 +39,19 @@ const Layout: React.FC<LayoutProps> = ({ children, location }) => {
     if (isLoading) return;
 
     handleExternalLinks();
+
+    if (location.hash) {
+      const id = location.hash.substring(1);
+      const poll = () => {
+        const el = document.getElementById(id);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } else {
+          setTimeout(poll, 100);
+        }
+      };
+      setTimeout(poll, 50);
+    }
   }, [isLoading]);
 
   return (
