@@ -16,6 +16,7 @@ describe('gatsby-browser', () => {
     it('returns true when there is no hash', () => {
       const result = shouldUpdateScroll({
         routerProps: { location: { hash: '' } },
+        getSavedScrollPosition: () => [0, 0],
       });
       expect(result).toBe(true);
     });
@@ -23,6 +24,7 @@ describe('gatsby-browser', () => {
     it('returns false when hash is present', () => {
       const result = shouldUpdateScroll({
         routerProps: { location: { hash: '#about' } },
+        getSavedScrollPosition: () => [0, 0],
       });
       expect(result).toBe(false);
     });
