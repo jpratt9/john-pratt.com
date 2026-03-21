@@ -33,64 +33,30 @@ const mockLocation = (pathname: string, hash = '') => ({
 describe('Layout', () => {
   beforeEach(() => {
     vi.clearAllMocks();
-    sessionStorage.clear();
     document.body.classList.remove('hidden');
     mockFinishLoading = null;
   });
 
-  describe('loader / sessionStorage behavior', () => {
-    it('shows loader on first visit to homepage', async () => {
+  describe('loader behavior', () => {
+    it('shows loader on homepage', () => {
       render(
         <Layout location={mockLocation('/')}>
           <div data-testid="content">Home</div>
         </Layout>,
       );
 
-      // Loader is lazy-loaded via Suspense, wait for it
-      const loader = await screen.findByTestId('loader');
-      expect(loader).toBeTruthy();
+      expect(screen.getByTestId('loader')).toBeTruthy();
       expect(screen.queryByTestId('content')).toBeNull();
     });
 
-    it('sets sessionStorage hasLoaded after loader finishes', async () => {
-      expect(sessionStorage.getItem('hasLoaded')).toBeNull();
-
+    it('renders content after loader finishes', async () => {
       render(
         <Layout location={mockLocation('/')}>
           <div data-testid="content">Home</div>
         </Layout>,
       );
 
-      await screen.findByTestId('loader');
-
-      await act(async () => {
-        mockFinishLoading?.();
-      });
-
-      expect(sessionStorage.getItem('hasLoaded')).toBe('1');
-    });
-
-    it('skips loader on homepage when hasLoaded is set', () => {
-      sessionStorage.setItem('hasLoaded', '1');
-
-      render(
-        <Layout location={mockLocation('/')}>
-          <div data-testid="content">Home</div>
-        </Layout>,
-      );
-
-      expect(screen.queryByTestId('loader')).toBeNull();
-      expect(screen.getByTestId('content')).toBeTruthy();
-    });
-
-    it('renders content immediately after loader finishes', async () => {
-      render(
-        <Layout location={mockLocation('/')}>
-          <div data-testid="content">Home</div>
-        </Layout>,
-      );
-
-      await screen.findByTestId('loader');
+      expect(screen.getByTestId('loader')).toBeTruthy();
       expect(screen.queryByTestId('content')).toBeNull();
 
       await act(async () => {
@@ -122,69 +88,19 @@ describe('Layout', () => {
       expect(screen.queryByTestId('loader')).toBeNull();
       expect(screen.getByTestId('content')).toBeTruthy();
     });
-
-    it('skips loader when navigating from /blog to / after initial load', async () => {
-      // Simulate first visit completing
-      sessionStorage.setItem('hasLoaded', '1');
-
-      // Navigate to homepage
-      render(
-        <Layout location={mockLocation('/')}>
-          <div data-testid="content">Home</div>
-        </Layout>,
-      );
-
-      expect(screen.queryByTestId('loader')).toBeNull();
-      expect(screen.getByTestId('content')).toBeTruthy();
-    });
-
-    it('skips loader when navigating to /#jobs after initial load', () => {
-      sessionStorage.setItem('hasLoaded', '1');
-
-      render(
-        <Layout location={mockLocation('/', '#jobs')}>
-          <div data-testid="content">Home</div>
-        </Layout>,
-      );
-
-      expect(screen.queryByTestId('loader')).toBeNull();
-      expect(screen.getByTestId('content')).toBeTruthy();
-    });
-
-    it('skips loader when navigating to /#projects after initial load', () => {
-      sessionStorage.setItem('hasLoaded', '1');
-
-      render(
-        <Layout location={mockLocation('/', '#projects')}>
-          <div data-testid="content">Home</div>
-        </Layout>,
-      );
-
-      expect(screen.queryByTestId('loader')).toBeNull();
-      expect(screen.getByTestId('content')).toBeTruthy();
-    });
-
-    it('shows loader on fresh session even if previously visited', async () => {
-      // No sessionStorage set = fresh session
-      render(
-        <Layout location={mockLocation('/')}>
-          <div data-testid="content">Home</div>
-        </Layout>,
-      );
-
-      expect(await screen.findByTestId('loader')).toBeTruthy();
-    });
   });
 
   describe('isHome detection', () => {
     it('passes isHome=true to nav/social/email on homepage', async () => {
-      sessionStorage.setItem('hasLoaded', '1');
-
       render(
         <Layout location={mockLocation('/')}>
           <div>Home</div>
         </Layout>,
       );
+
+      await act(async () => {
+        mockFinishLoading?.();
+      });
 
       expect(screen.getByTestId('nav').getAttribute('data-is-home')).toBe('true');
       expect(screen.getByTestId('social').getAttribute('data-is-home')).toBe('true');
@@ -206,14 +122,10 @@ describe('Layout', () => {
 
   describe('hash navigation', () => {
     it('scrolls to element matching location hash after loading', async () => {
-      sessionStorage.setItem('hasLoaded', '1');
-      window.location.hash = '#jobs';
-
       const mockElement = document.createElement('div');
       mockElement.id = 'jobs';
+      mockElement.focus = vi.fn();
       document.body.appendChild(mockElement);
-
-      const scrollToSpy = vi.spyOn(window, 'scrollTo').mockImplementation(() => {});
 
       render(
         <Layout location={mockLocation('/', '#jobs')}>
@@ -221,22 +133,24 @@ describe('Layout', () => {
         </Layout>,
       );
 
+      // Finish loader
       await act(async () => {
-        await new Promise(r => setTimeout(r, 250));
+        mockFinishLoading?.();
       });
 
-      expect(scrollToSpy).toHaveBeenCalled();
+      await act(async () => {
+        await new Promise(r => setTimeout(r, 10));
+      });
 
-      scrollToSpy.mockRestore();
+      expect(mockElement.scrollIntoView).toHaveBeenCalled();
+      expect(mockElement.focus).toHaveBeenCalled();
+
       document.body.removeChild(mockElement);
-      window.location.hash = '';
     });
   });
 
   describe('external links', () => {
     it('sets target and rel on external links', async () => {
-      sessionStorage.setItem('hasLoaded', '1');
-
       render(
         <Layout location={mockLocation('/blog')}>
           <a href="https://external.com" data-testid="ext-link">External</a>
@@ -253,8 +167,6 @@ describe('Layout', () => {
     });
 
     it('does not modify internal links', async () => {
-      sessionStorage.setItem('hasLoaded', '1');
-
       render(
         <Layout location={mockLocation('/blog')}>
           <a href="/contact" data-testid="int-link">Contact</a>

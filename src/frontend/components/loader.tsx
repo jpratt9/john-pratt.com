@@ -52,23 +52,23 @@ const Loader: React.FC<LoaderProps> = ({ finishLoading }) => {
 
     // 1) draw the logo paths (v4 "draw" replaces setDashoffset)
     loader.add(svg.createDrawable('#logo path'), {
-      delay: 210,
-      duration: 1050,
+      delay: 300,
+      duration: 1500,
       ease: 'inOutQuart',
       draw: '0 1',
     });
 
     // 2) fade in the "B"
     loader.add('#logo #B', {
-      duration: 490,
+      duration: 700,
       ease: 'inOutQuart',
       opacity: 1,
     });
 
     // 3) fade + scale out logo
     loader.add('#logo', {
-      delay: 350,
-      duration: 210,
+      delay: 500,
+      duration: 300,
       ease: 'inOutQuart',
       opacity: 0,
       scale: 0.1,
@@ -76,7 +76,7 @@ const Loader: React.FC<LoaderProps> = ({ finishLoading }) => {
 
     // 4) hide the loader container
     loader.add('.loader', {
-      duration: 140,
+      duration: 200,
       ease: 'inOutQuart',
       opacity: 0,
       zIndex: -1,
@@ -86,17 +86,12 @@ const Loader: React.FC<LoaderProps> = ({ finishLoading }) => {
   useEffect(() => {
     document.body.classList.add('hidden');
     const timeout = setTimeout(() => setIsMounted(true), 10);
+    animateLogo();
     return () => {
       clearTimeout(timeout);
       document.body.classList.remove('hidden');
     };
   }, []);
-
-  // Start the animation once mounted (ensures DOM is ready)
-  useEffect(() => {
-    if (isMounted) animateLogo();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isMounted]);
 
   return (
     <StyledLoader className="loader" isMounted={isMounted}>

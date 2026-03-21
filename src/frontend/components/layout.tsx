@@ -1,10 +1,8 @@
-import React, { useState, useEffect, lazy, Suspense } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
-import { Nav, Social, Email, Footer } from '@components';
+import { Loader, Nav, Social, Email, Footer } from '@components';
 import { GlobalStyle, theme } from '@styles';
 import { Location } from '../../types';
-
-const Loader = lazy(() => import('./loader' /* webpackChunkName: "loader" */));
 
 const StyledContent = styled.div`
   display: flex;
@@ -19,8 +17,7 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children, location }) => {
   const isHome = location.pathname === '/';
-  const hasLoaded = typeof window !== 'undefined' && sessionStorage.getItem('hasLoaded');
-  const [isLoading, setIsLoading] = useState(isHome && !hasLoaded);
+  const [isLoading, setIsLoading] = useState(isHome);
 
   // Sets target="_blank" rel="noopener noreferrer" on external links
   const handleExternalLinks = () => {
@@ -36,31 +33,22 @@ const Layout: React.FC<LayoutProps> = ({ children, location }) => {
   };
 
   useEffect(() => {
-    const hash = typeof window !== 'undefined' ? window.location.hash : location.hash;
-    console.log('[SCROLL DEBUG layout] useEffect fired, isLoading:', isLoading, 'hash:', hash, 'gatsbyHash:', location.hash);
-    if (isLoading) return;
+    if (isLoading) {
+      return;
+    }
+
+    if (location.hash) {
+      const id = location.hash.substring(1);
+      setTimeout(() => {
+        const el = document.getElementById(id);
+        if (el) {
+          el.scrollIntoView();
+          el.focus();
+        }
+      }, 0);
+    }
 
     handleExternalLinks();
-
-    if (hash) {
-      const id = hash.substring(1);
-      let tick = 0;
-      const interval = setInterval(() => {
-        tick++;
-        const el = document.getElementById(id);
-        const top = el ? el.getBoundingClientRect().top + window.scrollY : null;
-        console.log(`[SCROLL DEBUG layout] poll tick ${tick}, element #${id}:`, el ? `FOUND (top: ${top})` : 'NOT FOUND');
-        if (el && top !== null && top >= 0) {
-          clearInterval(interval);
-          console.log(`[SCROLL DEBUG layout] scrolling to ${top}`);
-          window.scrollTo({ top, behavior: 'instant' });
-          setTimeout(() => {
-            console.log(`[SCROLL DEBUG layout] after scroll, window.scrollY =`, window.scrollY);
-          }, 100);
-        }
-      }, 200);
-      setTimeout(() => clearInterval(interval), 10000);
-    }
   }, [isLoading]);
 
   return (
@@ -74,9 +62,7 @@ const Layout: React.FC<LayoutProps> = ({ children, location }) => {
           </a>
 
           {isLoading && isHome ? (
-            <Suspense fallback={null}>
-              <Loader finishLoading={() => { sessionStorage.setItem('hasLoaded', '1'); setIsLoading(false); }} />
-            </Suspense>
+            <Loader finishLoading={() => setIsLoading(false)} />
           ) : (
             <StyledContent>
               <Nav isHome={isHome} />
