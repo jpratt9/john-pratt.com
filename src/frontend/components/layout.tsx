@@ -48,10 +48,10 @@ const Layout: React.FC<LayoutProps> = ({ children, location }) => {
       const interval = setInterval(() => {
         tick++;
         const el = document.getElementById(id);
-        console.log(`[SCROLL DEBUG layout] poll tick ${tick}, element #${id}:`, el ? 'FOUND' : 'NOT FOUND');
-        if (el) {
+        const top = el ? el.getBoundingClientRect().top + window.scrollY : null;
+        console.log(`[SCROLL DEBUG layout] poll tick ${tick}, element #${id}:`, el ? `FOUND (top: ${top})` : 'NOT FOUND');
+        if (el && top !== null && top >= 0) {
           clearInterval(interval);
-          const top = el.getBoundingClientRect().top + window.scrollY;
           console.log(`[SCROLL DEBUG layout] scrolling to ${top}`);
           window.scrollTo({ top, behavior: 'instant' });
           setTimeout(() => {

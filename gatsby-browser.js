@@ -46,10 +46,10 @@ exports.onRouteUpdate = () => {
     const interval = setInterval(() => {
       tick++;
       const el = document.getElementById(id);
-      console.log(`[SCROLL DEBUG] poll tick ${tick}, element #${id}:`, el ? `FOUND (offsetTop: ${el.offsetTop})` : 'NOT FOUND', 'scrollY:', window.scrollY);
-      if (el) {
+      const top = el ? el.getBoundingClientRect().top + window.scrollY : null;
+      console.log(`[SCROLL DEBUG] poll tick ${tick}, element #${id}:`, el ? `FOUND (top: ${top})` : 'NOT FOUND', 'scrollY:', window.scrollY);
+      if (el && top !== null && top >= 0) {
         clearInterval(interval);
-        const top = el.getBoundingClientRect().top + window.scrollY;
         console.log(`[SCROLL DEBUG] scrolling to ${top}`);
         window.scrollTo({ top, behavior: 'instant' });
         setTimeout(() => {
