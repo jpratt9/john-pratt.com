@@ -17,8 +17,14 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children, location }) => {
   const isHome = location.pathname === '/';
-  const hasLoaded = typeof window !== 'undefined' && sessionStorage.getItem('hasLoaded');
-  const [isLoading, setIsLoading] = useState(isHome && !hasLoaded);
+  const [isLoading, setIsLoading] = useState(isHome);
+
+  // Skip loader if already loaded this session (must be in useEffect to avoid hydration mismatch)
+  useEffect(() => {
+    if (isHome && sessionStorage.getItem('hasLoaded')) {
+      setIsLoading(false);
+    }
+  }, []);
 
   // Sets target="_blank" rel="noopener noreferrer" on external links
   const handleExternalLinks = () => {
