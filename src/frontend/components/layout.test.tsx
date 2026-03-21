@@ -33,12 +33,13 @@ const mockLocation = (pathname: string, hash = '') => ({
 describe('Layout', () => {
   beforeEach(() => {
     vi.clearAllMocks();
+    sessionStorage.clear();
     document.body.classList.remove('hidden');
     mockFinishLoading = null;
   });
 
   describe('loader behavior', () => {
-    it('shows loader on homepage', () => {
+    it('shows loader on first visit to homepage', () => {
       render(
         <Layout location={mockLocation('/')}>
           <div data-testid="content">Home</div>
@@ -47,6 +48,35 @@ describe('Layout', () => {
 
       expect(screen.getByTestId('loader')).toBeTruthy();
       expect(screen.queryByTestId('content')).toBeNull();
+    });
+
+    it('sets sessionStorage hasLoaded after loader finishes', async () => {
+      expect(sessionStorage.getItem('hasLoaded')).toBeNull();
+
+      render(
+        <Layout location={mockLocation('/')}>
+          <div data-testid="content">Home</div>
+        </Layout>,
+      );
+
+      await act(async () => {
+        mockFinishLoading?.();
+      });
+
+      expect(sessionStorage.getItem('hasLoaded')).toBe('1');
+    });
+
+    it('skips loader on homepage when hasLoaded is set', () => {
+      sessionStorage.setItem('hasLoaded', '1');
+
+      render(
+        <Layout location={mockLocation('/')}>
+          <div data-testid="content">Home</div>
+        </Layout>,
+      );
+
+      expect(screen.queryByTestId('loader')).toBeNull();
+      expect(screen.getByTestId('content')).toBeTruthy();
     });
 
     it('renders content after loader finishes', async () => {
@@ -91,16 +121,14 @@ describe('Layout', () => {
   });
 
   describe('isHome detection', () => {
-    it('passes isHome=true to nav/social/email on homepage', async () => {
+    it('passes isHome=true to nav/social/email on homepage', () => {
+      sessionStorage.setItem('hasLoaded', '1');
+
       render(
         <Layout location={mockLocation('/')}>
           <div>Home</div>
         </Layout>,
       );
-
-      await act(async () => {
-        mockFinishLoading?.();
-      });
 
       expect(screen.getByTestId('nav').getAttribute('data-is-home')).toBe('true');
       expect(screen.getByTestId('social').getAttribute('data-is-home')).toBe('true');
