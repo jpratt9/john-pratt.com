@@ -22,16 +22,19 @@ describe('gatsby-browser', () => {
     });
 
     it('returns false when hash is present', () => {
+      window.location.hash = '#about';
       const result = shouldUpdateScroll({
         routerProps: { location: { hash: '#about' } },
         getSavedScrollPosition: () => [0, 0],
       });
       expect(result).toBe(false);
+      window.location.hash = '';
     });
   });
 
   describe('onRouteUpdate', () => {
     it('scrolls to element when hash is present and element exists', () => {
+      window.location.hash = '#about';
       const mockElement = document.createElement('div');
       mockElement.id = 'about';
       document.body.appendChild(mockElement);
@@ -46,6 +49,7 @@ describe('gatsby-browser', () => {
 
       scrollToSpy.mockRestore();
       document.body.removeChild(mockElement);
+      window.location.hash = '';
     });
 
     it('does not throw when hash element does not exist', () => {

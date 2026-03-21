@@ -36,10 +36,12 @@ exports.onInitialClientRender = () => {
   console.log('[SCROLL DEBUG] onInitialClientRender fired, scrollY:', window.scrollY);
 };
 
-exports.onRouteUpdate = ({ location }) => {
-  console.log('[SCROLL DEBUG] onRouteUpdate fired', { hash: location.hash, pathname: location.pathname, scrollY: window.scrollY });
-  if (location.hash) {
-    const id = location.hash.substring(1);
+exports.onRouteUpdate = () => {
+  // Use window.location.hash directly — Gatsby's location object strips the hash in production
+  const hash = window.location.hash;
+  console.log('[SCROLL DEBUG] onRouteUpdate fired', { hash, gatsbyHash: arguments[0]?.location?.hash, pathname: window.location.pathname, scrollY: window.scrollY });
+  if (hash) {
+    const id = hash.substring(1);
     let tick = 0;
     const interval = setInterval(() => {
       tick++;
@@ -59,10 +61,11 @@ exports.onRouteUpdate = ({ location }) => {
   }
 };
 
-exports.shouldUpdateScroll = ({ prevRouterProps, routerProps: { location }, getSavedScrollPosition }) => {
+exports.shouldUpdateScroll = ({ routerProps: { location }, getSavedScrollPosition }) => {
+  const hash = window.location.hash;
   const saved = getSavedScrollPosition(location);
-  console.log('[SCROLL DEBUG] shouldUpdateScroll called', { hash: location.hash, pathname: location.pathname, savedPosition: saved, scrollY: window.scrollY });
-  if (location.hash) {
+  console.log('[SCROLL DEBUG] shouldUpdateScroll called', { hash, gatsbyHash: location.hash, savedPosition: saved, scrollY: window.scrollY });
+  if (hash) {
     console.log('[SCROLL DEBUG] returning false (has hash)');
     return false;
   }

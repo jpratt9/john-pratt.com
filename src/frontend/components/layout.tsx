@@ -36,13 +36,14 @@ const Layout: React.FC<LayoutProps> = ({ children, location }) => {
   };
 
   useEffect(() => {
-    console.log('[SCROLL DEBUG layout] useEffect fired, isLoading:', isLoading, 'hash:', location.hash);
+    const hash = typeof window !== 'undefined' ? window.location.hash : location.hash;
+    console.log('[SCROLL DEBUG layout] useEffect fired, isLoading:', isLoading, 'hash:', hash, 'gatsbyHash:', location.hash);
     if (isLoading) return;
 
     handleExternalLinks();
 
-    if (location.hash) {
-      const id = location.hash.substring(1);
+    if (hash) {
+      const id = hash.substring(1);
       let tick = 0;
       const interval = setInterval(() => {
         tick++;

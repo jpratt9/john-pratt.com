@@ -207,6 +207,7 @@ describe('Layout', () => {
   describe('hash navigation', () => {
     it('scrolls to element matching location hash after loading', async () => {
       sessionStorage.setItem('hasLoaded', '1');
+      window.location.hash = '#jobs';
 
       const mockElement = document.createElement('div');
       mockElement.id = 'jobs';
@@ -228,6 +229,7 @@ describe('Layout', () => {
 
       scrollToSpy.mockRestore();
       document.body.removeChild(mockElement);
+      window.location.hash = '';
     });
   });
 
