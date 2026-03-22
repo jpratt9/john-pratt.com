@@ -27,35 +27,35 @@ const testimonials = [
   },
   {
     quote:
-      'John and I have bounced ideas off each other on everything from career networking and sales to automating full stack applications across Android, iOS, and web. He knows his stuff across the stack, and brings good technical and business insight to the table.',
+      'He knows his stuff across the stack, and brings good technical and business insight to the table.',
     name: 'Neil Chainani',
     role: 'Software Developer, CDC',
     avatar: neilAvatar,
   },
   {
     quote:
-      'John\'s work is top notch. Fast turnaround with all the features I needed. He was able to create a website that helped me reach more clients and enhance my professional credibility, allowing me to charge more for my coaching service. He was attentive to suggestions and communicates quickly and clearly. You can tell he really cares about his work and prioritizes customer satisfaction.',
+      'Fast turnaround with all the features I needed - he built my website so I could reach more clients and charge more for my services. You can tell he prioritizes customer satisfaction.',
     name: 'Dustin Lewis',
     role: 'English Tutor @ Preply',
     avatar: dustinAvatar,
   },
   {
     quote:
-      'John has been a great teacher and coach for me. He\'s helped me improve my confidence and networking skills in so many ways, and opened my eyes to things I realize are really important now.',
+      'John has been a great coach for me. He\'s helped me improve my confidence and networking skills, and opened my eyes to things I didn\'t realize were important.',
     name: 'Andrew Lackey',
     role: 'Student, University of North Carolina at Charlotte',
     avatar: lackeyAvatar,
   },
   {
     quote:
-      'John was my TDP mentor when I first joined Capital One under the Technology Development Program. He readily offered career advice and made sure I was able to get up to speed quickly with company culture.',
+      'John was my TDP mentor when I joined Capital One. He readily offered career advice and helped me get up to speed quickly with company culture.',
     name: 'Rohan Upponi',
     role: 'Software Engineer, Capital One',
     avatar: rohanAvatar,
   },
   {
     quote:
-      'John was my TDP mentor while I was a Capital One intern. We did biweekly check-ins where he made sure everything went smoothly with my team and was a major reason I received and accepted a full-time offer.',
+      'John was my TDP mentor during my Capital One internship. His biweekly check-ins kept me on track and were a major reason I received a full-time offer.',
     name: 'Trevor White',
     role: 'Software Engineer Intern, Capital One',
     avatar: trevorAvatar,
@@ -76,7 +76,7 @@ const testimonials = [
   },
   {
     quote:
-      'John was my TDP buddy during my Capital One internship. When I ended up on a tech stack that wasn\'t the right fit, he advocated for me and helped me switch to a project more aligned with my interests.',
+      'John was my TDP buddy during my internship at Capital One. He advocated for me and helped me switch to a project better aligned with my skills.',
     name: 'Helal Chowdhury',
     role: 'Software Engineer, Bloomberg',
     avatar: helalAvatar,
@@ -90,7 +90,7 @@ const testimonials = [
   },
   {
     quote:
-      'John was our Tech Lead on a contract through Pratt Solutions where we rebuilt a client\'s Python aerospace application from the ground up. He brought in best practices like automated testing, CI/CD, and scalable data engineering patterns that elevated the entire team\'s output.',
+      'John was our Tech Lead through Pratt Solutions where we rebuilt a Python aerospace app from scratch. He brought in automated testing, CI/CD, and scalable engineering practices that elevated the entire team.',
     name: 'Jefford Mamacus',
     role: 'Head of Research and Training, Ingenuity Global Consulting',
     avatar: jeffordAvatar,
@@ -154,78 +154,85 @@ const StyledHeading = styled.h2`
 
 const StyledMarqueeRow = styled.div<{ direction: 'left' | 'right' }>`
   display: flex;
-  gap: 24px;
+  align-items: center;
+  gap: 28px;
   width: max-content;
   animation: ${({ direction }) => (direction === 'left' ? scrollLeft : scrollRight)}
-    35s linear infinite;
-  margin-bottom: 24px;
+    40s linear infinite;
+  margin-bottom: 28px;
 
   &:hover {
     animation-play-state: paused;
   }
 
   ${media.tablet} {
-    gap: 16px;
-    margin-bottom: 16px;
-    animation-duration: 25s;
+    gap: 20px;
+    margin-bottom: 20px;
+    animation-duration: 30s;
   }
 `;
 
 const StyledCard = styled.div`
   flex-shrink: 0;
-  width: 340px;
+  width: 360px;
   background-color: var(--light-navy);
-  border-radius: var(--border-radius);
-  padding: 28px;
+  border-radius: 12px;
+  padding: 32px;
   font-family: var(--font-sans);
   transition: var(--transition);
+  box-shadow: 0 10px 30px -15px var(--navy-shadow);
 
   &:hover {
     transform: translateY(-5px);
+    box-shadow: 0 20px 30px -15px var(--navy-shadow);
   }
 
   ${media.desktop} {
-    width: 300px;
-    padding: 24px;
+    width: 320px;
+    padding: 28px;
   }
   ${media.mobile} {
-    width: 260px;
-    padding: 20px;
+    width: 280px;
+    padding: 24px;
   }
 `;
 
 const StyledQuoteMark = styled.span`
   font-family: Georgia, serif;
-  font-size: 48px;
-  line-height: 1;
+  font-size: 40px;
+  line-height: 0.5;
   color: var(--green);
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 14px;
+  opacity: 0.8;
 `;
 
 const StyledQuoteText = styled.p`
   font-size: var(--fz-md);
   color: var(--light-slate);
-  line-height: 1.6;
-  margin-bottom: 20px;
+  line-height: 1.7;
+  padding-bottom: 14px;
 `;
 
 const StyledAuthor = styled.div`
   display: flex;
   align-items: center;
   gap: 12px;
+  padding-top: 14px;
+  border-top: 1px solid var(--lightest-navy);
 `;
 
 const StyledAvatarWrapper = styled.div`
-  width: 40px;
-  height: 40px;
-  min-width: 40px;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
   border-radius: 50%;
   overflow: hidden;
   background-color: var(--light-navy);
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 2px solid var(--lightest-navy);
 `;
 
 const StyledAvatar = styled.img`
