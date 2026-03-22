@@ -15,6 +15,7 @@ import jeffreyAvatar from '@images/testimonials/jeffrey-yao.jpeg';
 import jeffordAvatar from '@images/testimonials/jefford.jpg';
 import mayaAvatar from '@images/testimonials/maya.jpg';
 import pottsAvatar from '@images/testimonials/john-potts.jpeg';
+import angelaAvatar from '@images/testimonials/angela.jpeg';
 
 const testimonials = [
   {
@@ -107,6 +108,13 @@ const testimonials = [
     name: 'John Potts',
     role: 'Principal Engineer, Duke Energy',
     avatar: pottsAvatar,
+  },
+  {
+    quote:
+      'John built me a professional portfolio site as a birthday gift — it turned out amazing and really captures my work in biophysical research.',
+    name: 'Angela Develin, Ph.D.',
+    role: 'Post Doctoral Fellow, Boehringer Ingelheim',
+    avatar: angelaAvatar,
   },
 ];
 
