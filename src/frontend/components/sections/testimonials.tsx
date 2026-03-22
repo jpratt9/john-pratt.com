@@ -16,6 +16,19 @@ import jeffordAvatar from '@images/testimonials/jefford.jpg';
 import mayaAvatar from '@images/testimonials/maya.jpg';
 import pottsAvatar from '@images/testimonials/john-potts.jpeg';
 import angelaAvatar from '@images/testimonials/angela.jpeg';
+import winstonAvatar from '@images/testimonials/winston.jpeg';
+import nickAvatar from '@images/testimonials/nickjordan.jpeg';
+import amberAvatar from '@images/testimonials/amber.jpeg';
+import michaelAvatar from '@images/testimonials/michael-ellis.jpeg';
+import aaronAvatar from '@images/testimonials/aaron.jpeg';
+import aatmayAvatar from '@images/testimonials/aatmay.jpeg';
+import aashishAvatar from '@images/testimonials/aashish.jpeg';
+import robbieAvatar from '@images/testimonials/robbie.jpeg';
+import leighAvatar from '@images/testimonials/leigh.jpeg';
+import coreyAvatar from '@images/testimonials/corey.jpeg';
+import praveenAvatar from '@images/testimonials/praveen.jpeg';
+import anmolAvatar from '@images/testimonials/anmol.png';
+import varunAvatar from '@images/testimonials/varun.jpeg';
 
 const testimonials = [
   {
@@ -116,6 +129,97 @@ const testimonials = [
     role: 'Post Doctoral Fellow, Boehringer Ingelheim',
     avatar: angelaAvatar,
   },
+  {
+    quote:
+      'He got Orbit up to speed with unit & integration testing and leveraging AWS services like S3 properly.',
+    name: 'Winston Rast',
+    role: 'Chief Architect, Cognizant',
+    avatar: winstonAvatar,
+  },
+  {
+    quote:
+      'A pleasure to work with.',
+    name: 'Nicholas Jordan',
+    role: 'IT Manager, Duke Energy',
+    avatar: nickAvatar,
+  },
+  {
+    quote:
+      'Positive and a team-player.',
+    name: 'Amber Chandler',
+    role: 'Scrum Master, SOP Evolution LLC',
+    avatar: amberAvatar,
+  },
+  {
+    quote:
+      'Very helpful, we\'ve learned tons from each other about career networking plus iOS and backend/devops engineering.',
+    name: 'Michael Ellis',
+    role: 'iOS Engineer, Duke Energy',
+    avatar: michaelAvatar,
+  },
+  {
+    quote:
+      'We\'ve been connected since our intern days at Capital One. John\'s great at networking and always willing to make an introduction when you need one.',
+    name: 'Aaron Stricker',
+    role: 'Software Engineer, Capital One',
+    avatar: aaronAvatar,
+  },
+  {
+    quote:
+      'John and I met at Georgia Tech, where he led study groups on Discrete Mathematics. Sharp, resourceful, and always the person you\'d want on your team.',
+    name: 'Aatmay Talati',
+    role: 'VP of ML & AI Products',
+    avatar: aatmayAvatar,
+  },
+  {
+    quote:
+      'He\'s always friendly, happy to help & eager to learn.',
+    name: 'Aashish Kapoor',
+    role: 'Senior Engineering Manager, Capital One',
+    avatar: aashishAvatar,
+  },
+  {
+    quote:
+      'John interned on my team in 2017. He fit right in immediately and was a natural with the team both technically and socially.',
+    name: 'Robert Rice',
+    role: 'Lead Software Engineer, Capital One',
+    avatar: robbieAvatar,
+  },
+  {
+    quote:
+      'I mentored and managed John in 2017 - he was always super friendly and glad to help!',
+    name: 'Leigh Kesler',
+    role: 'Senior Director of Software Engineering, Capital One',
+    avatar: leighAvatar,
+  },
+  {
+    quote:
+      'John and I led study sessions together at GT. Great to work with and always willing to put in the extra effort.',
+    name: 'Corey Fogg',
+    role: 'Software Engineer, Netflix',
+    avatar: coreyAvatar,
+  },
+  {
+    quote:
+      'Ready to help and a quick learner.',
+    name: 'Kandukuri Praveen',
+    role: 'Senior Software Engineering Manager, Capital One',
+    avatar: praveenAvatar,
+  },
+  {
+    quote:
+      'As teammates at Capital One, we led design discussions to lay the groundwork for Slingshot\'s Java Spring codebase.',
+    name: 'Anmol Dash',
+    role: 'Adjunct Professor, University of Maryland',
+    avatar: anmolAvatar,
+  },
+  {
+    quote:
+      'Very knowledgeable in IaC, public cloud, & scalable/secure engineering best practices.',
+    name: 'Varun Mathur',
+    role: 'Sr Tech Lead, Northern Trust',
+    avatar: varunAvatar,
+  },
 ];
 
 // Split into two rows
@@ -135,6 +239,8 @@ const scrollRight = keyframes`
 const StyledSection = styled.section`
   padding: 100px 0;
   overflow: hidden;
+  max-width: 1000px;
+  margin: 0 auto;
 
   ${media.desktop} {
     padding: 80px 0;
@@ -142,14 +248,6 @@ const StyledSection = styled.section`
   ${media.tablet} {
     padding: 60px 0;
   }
-`;
-
-const StyledHeading = styled.h2`
-  text-align: center;
-  font-family: var(--font-sans);
-  font-size: clamp(24px, 5vw, var(--fz-heading));
-  color: var(--lightest-slate);
-  margin-bottom: 50px;
 `;
 
 const StyledMarqueeRow = styled.div<{ direction: 'left' | 'right' }>`
@@ -302,7 +400,7 @@ const Testimonials: React.FC = () => {
 
   return (
     <StyledSection id="testimonials" ref={revealContainer}>
-      <StyledHeading>What People Say</StyledHeading>
+      <h2 className="numbered-heading">What People Say</h2>
       <MarqueeRow items={row1} direction="left" />
       <MarqueeRow items={row2} direction="right" />
     </StyledSection>
