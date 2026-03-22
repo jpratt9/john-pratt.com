@@ -29,6 +29,7 @@ import coreyAvatar from '@images/testimonials/corey.jpeg';
 import praveenAvatar from '@images/testimonials/praveen.jpeg';
 import anmolAvatar from '@images/testimonials/anmol.png';
 import varunAvatar from '@images/testimonials/varun.jpeg';
+import blumenAvatar from '@images/testimonials/blumen.jpeg';
 
 const testimonials = [
   {
@@ -219,6 +220,13 @@ const testimonials = [
     name: 'Varun Mathur',
     role: 'Sr Tech Lead, Northern Trust',
     avatar: varunAvatar,
+  },
+  {
+    quote:
+      'We\'ve known each other since we were kids, interning together at Capital One and doing several hackathons together. He\'s super passionate about tech.',
+    name: 'Matt Blumen',
+    role: 'Azure Software Engineer, Microsoft',
+    avatar: blumenAvatar,
   },
 ];
 
