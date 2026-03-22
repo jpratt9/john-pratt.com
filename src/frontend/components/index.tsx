@@ -16,3 +16,4 @@ export { default as Hero } from './sections/hero';
 export { default as Jobs } from './sections/jobs';
 export { default as Certs } from './sections/certs';
 export { default as Projects } from './sections/projects';
+export { default as Testimonials } from './sections/testimonials';
