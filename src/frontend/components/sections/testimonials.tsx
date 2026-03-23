@@ -169,7 +169,7 @@ const testimonials = [
     quote:
       'John and I met at Georgia Tech, where he led study groups on Discrete Mathematics. Sharp, resourceful, and always the person you\'d want on your team.',
     name: 'Aatmay Talati',
-    role: 'VP of ML & AI Products',
+    role: 'VP of ML & AI Products, JP Morgan Chase',
     avatar: aatmayAvatar,
   },
   {
@@ -230,9 +230,10 @@ const testimonials = [
   },
 ];
 
-// Split into two rows
-const row1 = testimonials;
-const row2 = [...testimonials].reverse();
+// Split into two rows — no card appears in both
+const mid = Math.ceil(testimonials.length / 2);
+const row1 = testimonials.slice(0, mid);
+const row2 = testimonials.slice(mid);
 
 const scrollLeft = keyframes`
   0% { transform: translateX(0); }
@@ -264,7 +265,7 @@ const StyledMarqueeRow = styled.div<{ direction: 'left' | 'right' }>`
   gap: 28px;
   width: max-content;
   animation: ${({ direction }) => (direction === 'left' ? scrollLeft : scrollRight)}
-    40s linear infinite;
+    58s linear infinite;
   margin-bottom: 28px;
 
   &:hover {
@@ -274,7 +275,7 @@ const StyledMarqueeRow = styled.div<{ direction: 'left' | 'right' }>`
   ${media.tablet} {
     gap: 20px;
     margin-bottom: 20px;
-    animation-duration: 30s;
+    animation-duration: 43s;
   }
 `;
 
